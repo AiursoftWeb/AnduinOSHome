@@ -11,6 +11,7 @@ using Aiursoft.AnduinOSHome.Sqlite;
 using Aiursoft.UiStack.Layout;
 using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Aiursoft.ClickhouseLoggerProvider;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -36,6 +37,11 @@ public class Startup : IWebStartup
                 new SqliteSupportedDb(allowCache: allowCache, splitQuery: true),
                 new InMemorySupportedDb()
             ]);
+
+        services.AddLogging(builder =>
+        {
+            builder.AddClickhouse(options => configuration.GetSection("Logging:Clickhouse").Bind(options));
+        });
 
         // Authentication and Authorization
         services.AddTemplateAuth(configuration);
