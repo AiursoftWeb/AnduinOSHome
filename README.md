@@ -1,9 +1,9 @@
 # AnduinOS Home
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.com/aiursoft/AnduinOS-Home/-/blob/master/LICENSE)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/aiursoftweb/AnduinOS-Home/blob/master/LICENSE)
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/AnduinOS-Home/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/AnduinOS-Home/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/AnduinOS-Home/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/AnduinOS-Home/-/pipelines)
-[![Man hours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/anduinos-home.svg)](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/anduinos-home.html)[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.anduinos.com%2F)](https://www.anduinos.com)
+[![Man hours](https://manhours.aiursoft.com/r/github.com/aiursoftweb/anduinos-home.svg)](https://manhours.aiursoft.com/r/github.com/aiursoftweb/anduinos-home.html)[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.anduinos.com%2F)](https://www.anduinos.com)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/anduinos-home.svg)](https://hub.docker.com/r/aiursoft/anduinos-home)
 
 AnduinOS-Home is the home page of AnduinOS, which is an Ubuntu based operating system. It hosts as the home page of the website, including downloading ISO files, read document and join community.
@@ -21,13 +21,13 @@ The following script will install\update this app on your Ubuntu server. Support
 On your Ubuntu server, run the following command:
 
 ```bash
-curl -sL https://gitlab.aiursoft.com/aiursoft/anduinos-home/-/raw/master/install.sh | sudo bash
+curl -sL https://github.com/aiursoftweb/anduinos-home/raw/master/install.sh | sudo bash
 ```
 
 Of course it is suggested that append a custom port number to the command:
 
 ```bash
-curl -sL https://gitlab.aiursoft.com/aiursoft/anduinos-home/-/raw/master/install.sh | sudo bash -s 8080
+curl -sL https://github.com/aiursoftweb/anduinos-home/raw/master/install.sh | sudo bash -s 8080
 ```
 
 It will install the app as a systemd service, and start it automatically. Binary files will be located at `/opt/apps`. Service files will be located at `/etc/systemd/system`.
