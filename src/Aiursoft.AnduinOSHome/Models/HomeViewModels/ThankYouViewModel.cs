@@ -6,6 +6,6 @@ public class ThankYouViewModel : UiStackLayoutViewModel
 {
     public ThankYouViewModel()
     {
-        PageTitle = "Thank You";
+        PageTitle = "Thank you for downloading AnduinOS!";
     }
 }

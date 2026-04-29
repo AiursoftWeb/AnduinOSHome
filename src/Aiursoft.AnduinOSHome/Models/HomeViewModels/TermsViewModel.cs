@@ -6,6 +6,6 @@ public class TermsViewModel : UiStackLayoutViewModel
 {
     public TermsViewModel()
     {
-        PageTitle = "Terms";
+        PageTitle = "Terms of Service";
     }
 }

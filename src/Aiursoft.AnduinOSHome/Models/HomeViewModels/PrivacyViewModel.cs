@@ -6,6 +6,6 @@ public class PrivacyViewModel : UiStackLayoutViewModel
 {
     public PrivacyViewModel()
     {
-        PageTitle = "Privacy";
+        PageTitle = "Privacy Statement";
     }
 }
