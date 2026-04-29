@@ -82,6 +82,10 @@ public class ViewModelArgsInjector(
         _ = localizer["Register"];
         _ = localizer["Terms"];
         _ = localizer["Thank You"];
+    
+        _ = localizer["Privacy Statement"];
+        _ = localizer["Terms of Service"];
+        _ = localizer["Thank you for downloading AnduinOS!"];
     }
 
     public void InjectSimple(
