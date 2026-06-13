@@ -1,4 +1,3 @@
-using Aiursoft.AnduinOSHome.Models;
 using Microsoft.AspNetCore.Mvc;
 using Aiursoft.Canon;
 using Aiursoft.WebTools.Attributes;
@@ -9,17 +8,17 @@ namespace Aiursoft.AnduinOSHome.Controllers;
 [LimitPerMin]
 public class UpgradeController(
     CacheService cacheService,
-    IOptions<List<VersionInfo>> versions,
     HttpClient httpClient,
     IOptions<List<string>> endpoints,
     RetryEngine retryEngine,
     ILogger<UpgradeController> logger) : ControllerBase
 {
+    private static readonly List<string> AvailableBranches = ["1.0", "1.1", "1.2", "1.3", "1.4", "2.0"];
+
     [HttpGet("upgrade/{branch}")]
     public async Task<IActionResult> Get(string branch)
     {
-        var isAvailableBranch = versions.Value.Any(t => t.Version == branch);
-        if (!isAvailableBranch)
+        if (!AvailableBranches.Contains(branch))
         {
             return NotFound();
         }

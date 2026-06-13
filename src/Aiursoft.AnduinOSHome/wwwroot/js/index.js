@@ -176,11 +176,23 @@ downloadModalEl.addEventListener('show.bs.modal', event => {
     const preferred = btn.dataset.preferedLanguage || '';
     const supportTorrent = btn.dataset.supportTorrent === 'true';
     const supportHttps   = btn.dataset.supportHttps   === 'true';
+    const singleIso      = btn.dataset.singleIso === 'true';
+    const downloadUrlBase = btn.dataset.downloadUrlBase || '';
 
     const additionalLangsRaw = btn.dataset.additionalLangs || '';
     const additionalLangs = additionalLangsRaw.split(',').filter(Boolean); // e.g., ['ro_RO'] or []
 
     downloadModalDescription.textContent = `${downloadModalDescriptionText} (${size})`;
+
+    if (singleIso) {
+        // v2.0+: single ISO for all languages — hide language picker, no lang suffix in URL
+        languageSelect.closest('.mb-3').style.display = 'none';
+        renderDownloadLinks({ version, latest, supportTorrent, supportHttps, singleIso: true, downloadUrlBase }, null);
+        return;
+    }
+
+    // Show language picker (in case it was hidden by a previous single-iso version)
+    languageSelect.closest('.mb-3').style.display = '';
 
     const allowedLanguageCodes = new Set([...defaultLanguageCodes, ...additionalLangs]);
 
@@ -205,30 +217,43 @@ downloadModalEl.addEventListener('show.bs.modal', event => {
         : languagesToShow.length > 0 ? languagesToShow[0].code : 'en_US';
 
     languageSelect.onchange = () => {
-        renderDownloadLinks({ version, latest, supportTorrent, supportHttps }, languageSelect.value);
+        renderDownloadLinks({ version, latest, supportTorrent, supportHttps, singleIso: false }, languageSelect.value);
     };
 
     const initialLang = languageSelect.value || (languagesToShow.length > 0 ? languagesToShow[0].code : 'en_US');
-    renderDownloadLinks({ version, latest, supportTorrent, supportHttps }, initialLang);
+    renderDownloadLinks({ version, latest, supportTorrent, supportHttps, singleIso: false }, initialLang);
 });
 
-function renderDownloadLinks({ version, latest, supportTorrent, supportHttps }, langCode) {
-    const lang = allLanguages.find(l => l.code === langCode);
-    if (!lang) {
-        console.error(`Language code ${langCode} not found in allLanguages array.`);
-        return;
-    }
-
+function renderDownloadLinks({ version, latest, supportTorrent, supportHttps, singleIso, downloadUrlBase }, langCode) {
     downloadLinksContainer.innerHTML = '';
 
-    const base = `https://download.anduinos.com/${version}/${latest}/AnduinOS-${latest}-${lang.code}`;
+    let base, torrentLabel, directLabel, checksumLabel;
+
+    if (singleIso) {
+        // Single ISO for all languages — use hardcoded URL base if provided, otherwise build default
+        base = downloadUrlBase || `https://download.anduinos.com/${version}/${latest}/AnduinOS-${latest}`;
+        torrentLabel = 'Torrent';
+        directLabel = 'Direct (HTTP)';
+        checksumLabel = 'Checksum';
+    } else {
+        const lang = allLanguages.find(l => l.code === langCode);
+        if (!lang) {
+            console.error(`Language code ${langCode} not found in allLanguages array.`);
+            return;
+        }
+        base = `https://download.anduinos.com/${version}/${latest}/AnduinOS-${latest}-${lang.code}`;
+        torrentLabel = lang.torrentLabel;
+        directLabel = lang.directLabel;
+        checksumLabel = lang.checksumLabel;
+    }
+
     if (supportTorrent) {
-        appendLink(`${base}.torrent`, lang.torrentLabel, 'btn-primary');
+        appendLink(`${base}.torrent`, torrentLabel, 'btn-primary');
     }
     if (supportHttps) {
-        appendLink(`${base}.iso`, lang.directLabel, 'btn-outline-primary');
+        appendLink(`${base}.iso`, directLabel, 'btn-outline-primary');
     }
-    appendLink(`${base}.sha256`,    lang.checksumLabel, 'btn-outline-primary');
+    appendLink(`${base}.sha256`, checksumLabel, 'btn-outline-primary');
 }
 
 function appendLink(href, label, btnClass) {

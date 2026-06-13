@@ -1,26 +1,16 @@
-using Aiursoft.AnduinOSHome.Models;
 using Aiursoft.AnduinOSHome.Models.HomeViewModels;
-using Aiursoft.WebTools.Attributes;
 using Aiursoft.AnduinOSHome.Services;
+using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 
 namespace Aiursoft.AnduinOSHome.Controllers;
 
 [LimitPerMin]
-public class HomeController(IOptions<List<VersionInfo>> versions) : Controller
+public class HomeController : Controller
 {
-    private readonly List<VersionInfo> _versions = versions.Value;
-
     public IActionResult Index()
     {
         return this.SimpleView(new IndexViewModel());
-    }
-
-    [Route("/versions.json")]
-    public IActionResult GetVersions()
-    {
-        return Json(_versions);
     }
 
     [Route("/privacy.html")]

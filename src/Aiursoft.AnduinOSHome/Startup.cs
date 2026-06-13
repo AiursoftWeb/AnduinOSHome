@@ -1,5 +1,4 @@
 using Aiursoft.AnduinOSHome.Configuration;
-using Aiursoft.AnduinOSHome.Models;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools.Switchable;
 using Aiursoft.Scanner;
@@ -27,7 +26,6 @@ public class Startup : IWebStartup
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
         services.Configure<List<string>>(configuration.GetSection("UpgradeScriptEndpoints"));
-        services.Configure<List<VersionInfo>>(configuration.GetSection("Versions"));
 
         // Relational database
         var (connectionString, dbType, allowCache) = configuration.GetDbSettings();
