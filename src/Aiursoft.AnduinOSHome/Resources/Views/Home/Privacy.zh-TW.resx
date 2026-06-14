@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>——若在建構過程中偵測到下列任一 Canonical 遙測或背景套件，該次建構將立即中止並被拒絕：</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>，除了以下詳細說明的特定、由使用者啟動的功能或必要服務外。</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>。</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>「硬性失敗」嚴格政策</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>（Canonical Livepatch / Pro 服務）</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>（Snap 守護程序）</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>（部分範例與參考資料可參閱</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>)，它會連線到這些外部伺服器。此程序對於系統安全至關重要，但會將您的 IP 位址暴露給您所連線的軟體庫鏡像站操作者。</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>)，系統更新，以及軟體套件（</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>)，您的系統將連線至我們的官方伺服器。</value>
   </data>
   <data name=")." xml:space="preserve">
     <value>)。</value>
@@ -71,6 +89,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. 上游軟體與隱私權考量</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. 嚴格零遙測建構流程</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. 如何處理潛在的 Ubuntu 遙測數據</value>
@@ -120,17 +141,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>AnduinOS GitHub 討論區</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>AnduinOS 不遺餘力地確保您的系統安裝乾淨且預設不含遙測功能。</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>AnduinOS 包含「SimpleWeather」GNOME 擴充功能以提供目前天氣狀況。</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>AnduinOS 內建「SimpleWeather」GNOME 擴充功能。為尊重您的隱私，此擴充功能預設為</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS 是一個由社群驅動的非營利專案</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS 是一款基於 Ubuntu 的免費開源 Linux 發行版，由 AIURSOFT LIMITED 維護。</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS 是一個基於 Ubuntu 的自由且開源的 Linux® 發行版。</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS 預設承諾保持您的安裝純淨且無遙測功能。</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS 由 AIURSOFT LIMITED 開發及維護。</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>AnduinOS 遵循以下授權條款發行：</value>
@@ -141,6 +174,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>AnduinOS 更新服務</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>AnduinOS 網站與 APT 套件庫</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>由於這些套件已從安裝媒體中徹底移除，AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Canonical Livepatch 服務</value>
   </data>
@@ -149,6 +188,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>控制權：</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>資料揭露：</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>預設停用</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>不會參與</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>電子郵件：</value>
@@ -189,11 +237,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>若這些套件尚未安裝（如全新安裝的 AnduinOS 系統），則無需採取任何動作。</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>若您選擇手動啟用它以檢視天氣狀況：</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>若您對本隱私權聲明或 AnduinOS 的隱私實務有任何疑問，請聯繫：</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>如果您手動選擇</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>在遠端遙測技術已無所不在的當今，AnduinOS 刻意減少外部依賴以保護使用者。</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>任何系統回報、使用統計資料提交或自動化崩潰回報。</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>簡介</value>
@@ -204,11 +261,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>它僅以原始未修改的狀態重新分發它們。</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>最後更新日期：2026 年 6 月 13 日</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>最後更新：2025年5月10日</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>本地執行意味著 AnduinOS 的所有功能與服務皆在</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>「本地執行」代表 AnduinOS 的功能與服務皆完全在您的電腦上執行。</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>本地執行意味著 AnduinOS 的大多數功能和服務都在</value>
@@ -228,6 +291,9 @@
   <data name="not" xml:space="preserve">
     <value>不</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>不用於遥測</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>特別注意：</value>
   </data>
@@ -237,14 +303,23 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>或其所使用的任何天氣資料供應商。連線至這些服務將無可避免地使您的 IP 位址暴露給它們。</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>或是天氣服務提供者。啟用此功能將會使您的 IP 位址對他們公開。</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>源自 Ubuntu、Debian、GNOME、Flathub 及其他來源。</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>我們的自動化 ISO 建置流程強制執行一</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>我們的團隊已審查此擴充功能的原始碼</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>請參考其各自上游的隱私權政策。</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>隱私保證：</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>隱私權政策</value>
@@ -261,6 +336,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>SimpleWeather 擴充功能</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>SimpleWeather 擴充功能（預設停用）</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Snap 守護程式</value>
   </data>
@@ -276,6 +354,9 @@
   <data name="such as:" xml:space="preserve">
     <value>例如：</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>該擴充功能必須連線至</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>AnduinOS 的開放特性讓使用者能獨立驗證系統確實尊重其隱私。</value>
   </data>
@@ -284,6 +365,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>除了明確繼承自 Ubuntu 的上游依賴項外，系統中不存在任何專有二進位檔案或封閉模組。</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>這些端點僅為純靜態檔案分發伺服器，完全不具备任何資料收集、分析或使用者檔案建置功能。</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>若您後續手動安裝這些套件，其各自的遥測機制將依據 Canonical 的政策啟動。</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>此連線對於保持系統安全與最新狀態至關重要。如同任何標準 HTTPS 連線，此過程將會向我們的伺服器暴露您的 IP 位址。</value>
@@ -309,11 +396,23 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>為檢查並下載系統更新，AnduinOS 會連線至我們的更新端點位於</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>為了在全球範圍內以低延遲方式提供這些檔案，流量會透過 Cloudflare 的內容分發網路 (CDN) 進行路由。如同任何標準的網頁請求，您的 IP 位址僅為路由與安全（DDoS 防護）之目的而暴露給 CDN。我們不會記錄或分析您的網頁瀏覽或更新請求。</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>根據您的 IP 地址判斷您的位置，並向第三方天氣服務提供商獲取預測數據。</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>根據您的 IP 位址來判斷您的位置。</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>為確保完全退出，您可以檢視並在必要時使用以下指令移除這些套件：</value>
+  </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>為確保其不含隱藏的資料收集功能，我們無法控制</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>為了提供我們的官方網站（</value>
   </data>
   <data name="Transparency:" xml:space="preserve">
     <value>透明度：</value>
@@ -324,6 +423,9 @@
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>我們致力於保護您的隱私。</value>
   </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>我們始終致力於保障您的隱私。</value>
+  </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>我們無法控制...的隱私權實務做法</value>
   </data>
@@ -333,11 +435,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>當您的系統檢查軟體更新時（例如，使用</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>雖然 AnduinOS 的設計理念是以本地為先，但某些基本功能需要網路存取。這些連線僅用於取得軟體更新或您要求的数据，並且</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>儘管 AnduinOS 的設計以本地優先操作為原則，但某些功能仍需網路連線才能正常運作。這些連線並非用於遙測數據收集，但確實涉及與外部伺服器的通訊，這是這些服務運作無可避免的要求，且將會暴露您的 IP 位址。</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>儘管 AnduinOS 本身不會收集任何資料，</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>儘管我們已稽核該延伸模組的原始碼</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>您可以調整程式碼以符合您的需求，包括移除任何您不信任的元件。</value>
