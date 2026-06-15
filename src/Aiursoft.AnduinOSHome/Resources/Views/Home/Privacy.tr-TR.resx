@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—yapı işlemi sırasında aşağıdaki Canonical telemetri veya arka plan paketlerinden herhangi biri tespit edilirse, yapı işlemi hemen sonlandırılır ve reddedilir:</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>, aşağıda ayrıntılı olarak belirtilen belirli, kullanıcı tarafından başlatılan özellikler veya temel hizmetler hariç olmak üzere.</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>&quot;sıkı&quot; politikası</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>(Canonical Livepatch / Pro hizmetleri)</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>(Snap arka plan servisi)</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>(Bazı örnekler ve referanslar bulunabilir</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>), bu harici sunuculara bağlanır. Bu işlem sistem güvenliği için gereklidir ancak IP adresinizi bağlandığınız depo aynasının operatörlerine açığa çıkaracaktır.</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>), sistem güncellemeleri ve yazılım paketleri (</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>), sisteminiz resmi sunucularımıza bağlanır.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. AnduinOS Tarafından Veri Toplama</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. Üst Yazılım ve Gizlilik Değerlendirmeleri</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. Kesinlikle Telemetrisiz Bir Oluşturma Hattı</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Potansiyel Ubuntu Telemetrisi Nasıl Ele Alınır</value>
@@ -114,17 +135,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>AnduinOS GitHub Tartışmaları</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>AnduinOS, kurulumunuzun varsayılan olarak temiz ve telemetriden arındırılmış olmasını sağlamak için büyük çaba gösterir.</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>AnduinOS, mevcut hava durumu koşullarını sağlamak için &apos;SimpleWeather&apos; GNOME uzantısını içerir.</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>AnduinOS, &apos;SimpleWeather&apos; GNOME uzantısını içerir. Gizliliğinize saygı duyarak bu uzantı</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS, topluluk tarafından yönlendirilen ve kar amacı gütmeyen bir projedir.</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS, Ubuntu tabanlı, AIURSOFT LIMITED tarafından sürdürülen ücretsiz ve açık kaynaklı bir Linux dağıtımıdır.</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS, Ubuntu tabanlı ücretsiz ve açık kaynaklı bir Linux® dağıtımıdır.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS, varsayılan olarak kurulumunuzu temiz ve telemetri içermeyen bir şekilde tutmaya kararlıdır.</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS, AIURSOFT LIMITED tarafından geliştirilmiş ve bakımı yapılmaktadır.</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>AnduinOS şu lisans altında dağıtılmaktadır:</value>
@@ -135,6 +168,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>AnduinOS Güncelleme Hizmeti</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>AnduinOS Web Sitesi ve APT Deposu</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>Bu paketler yükleme ortamından fiziksel olarak temizlendiğinden, AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Canonical Livepatch hizmeti</value>
   </data>
@@ -143,6 +182,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>Kontrol:</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>Veri Açıklığı:</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>varsayılan olarak devre dışı</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>katılmaz</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>E-posta:</value>
@@ -180,11 +228,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>Bu paketler yüklü değilse (temiz bir AnduinOS kurulumunda olduğu gibi), herhangi bir işlem yapmanız gerekmez.</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>Hava durumunu görüntülemek için bunu manuel olarak etkinleştirmeyi seçerseniz:</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Bu Gizlilik Bildirimi veya AnduinOS&apos;un gizlilik uygulamaları hakkında herhangi bir sorunuz varsa, lütfen iletişime geçin:</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>Manuel olarak bunları yüklemeyi seçerseniz</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>Uzaktan telemetrinin yaygınlaştığı bir dünyada, AnduinOS kullanıcıları korumak için bilinçli olarak harici bağımlılıkları en aza indirir.</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>herhangi bir sistem raporlaması, kullanım istatistikleri gönderimi veya otomatik çöküş raporlaması.</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Giriş</value>
@@ -195,11 +252,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>Yalnızca onları orijinal, değiştirilmemiş halleriyle yeniden dağıtır.</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>Son güncelleme: 13 Haziran 2026</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Son güncelleme: 10 Mayıs 2025</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>Yerel yürütme, AnduinOS&apos;un tüm özellik ve hizmetlerinin gerçekleştirildiği anlamına gelir</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>Yerel çalıştırma, AnduinOS&apos;un özellikleri ve hizmetlerinin tamamen bilgisayarınızda gerçekleştirildiği anlamına gelir.</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>Yerel yürütme, AnduinOS&apos;un çoğu özelliğinin ve hizmetinin gerçekleştirildiği anlamına gelir</value>
@@ -219,6 +282,9 @@
   <data name="not" xml:space="preserve">
     <value>değil</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>telemetri için kullanılmaz</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>Özellikle:</value>
   </data>
@@ -228,14 +294,23 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>veya kullandığı herhangi bir hava durumu veri sağlayıcısının gizlilik uygulamalarını kontrol edemeyiz. Bu hizmetlere bağlanmak, IP adresinizi onlara gösterecektir.</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>veya hava durumu sağlayıcılarına. Bu özelliği etkinleştirmek, IP adresinizin bu kuruluşlar tarafından görüntülenmesine neden olacaktır.</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>Ubuntu, Debian, GNOME, Flathub ve diğer kaynaklardan gelen.</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>Otomatik ISO oluşturma işlem hattımız,</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Ekibimiz bu eklentinin kaynak kodunu inceledi</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>lütfen ilgili üst akış gizlilik politikalarına başvurun.</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>Gizlilik Garantisi:</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Gizlilik Politikası</value>
@@ -252,6 +327,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>SimpleWeather Eklentisi</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>SimpleWeather Uzantısı (Varsayılan Olarak Devre Dışı)</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Snap arka plan hizmeti</value>
   </data>
@@ -267,6 +345,9 @@
   <data name="such as:" xml:space="preserve">
     <value>örneğin:</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>Eklenti bağlanmalıdır</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>AnduinOS&apos;un açık yapısı, kullanıcıların sistemin gizliliklerine saygı gösterdiğini bağımsız olarak doğrulamasını sağlar.</value>
   </data>
@@ -275,6 +356,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Ubuntu&apos;dan açıkça miras alınan yukarı akış bağımlılıkları dışında hiçbir tescilli blob veya kapalı modül bulunmamaktadır.</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>Bu uç noktalar saf statik dosya dağıtım sunucularıdır. Veri toplama, analiz veya kullanıcı profil oluşturma yeteneklerine kesinlikle sahip değillerdir.</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>bu paketleri daha sonra kurmayı seçerseniz, Canonical&apos;ın politikalarına uygun olarak ilgili telemetri mekanizmaları etkinleştirilecektir.</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Bu bağlantı, sisteminizin güvenli ve güncel kalması için gereklidir. Standart bir HTTPS bağlantısında olduğu gibi, bu işlem IP adresinizi sunucumuza açığa çıkaracaktır.</value>
@@ -300,17 +387,32 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>Sistem güncellemelerini kontrol etmek ve indirmek için AnduinOS, güncelleme uç noktamıza bağlanır:</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>Bu dosyaları küresel olarak düşük gecikme süresiyle teslim etmek için, trafik Cloudflare&apos;ın İçerik Dağıtım Ağı (CDN) üzerinden yönlendirilir. Herhangi bir standart web isteğinde olduğu gibi, IP adresiniz yalnızca yönlendirme ve güvenlik (DDoS koruması) amaçları için CDN&apos;ye açık hale gelir. Web tarama veya güncelleme isteklerinizi kayda almıyoruz veya analiz etmiyoruz.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>konumunuzu IP adresinize göre belirlemek ve hava tahmini verileri için üçüncü taraf hava durumu sağlayıcılarına bağlanmak.</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>IP adresinize dayalı olarak konumunuzu belirlemek için.</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>Tamamen devre dışı bırakmayı sağlamak için bu paketleri inceleyebilir ve gerekirse şu komutla kaldırabilirsiniz:</value>
   </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>gizli telemetri içermediğinden emin olmak için kod incelemesi yaptık, ancak gizlilik uygulamalarını kontrol edemiyoruz</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>Resmi web sitemizi sağlamak amacıyla (</value>
+  </data>
   <data name="Transparency:" xml:space="preserve">
     <value>Şeffaflık:</value>
   </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Gizliliğinizi korumaya kararlıyız.</value>
+  </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>Gizliliğinizi korumaya temelden bağlıyız.</value>
   </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>ipinfo.io` veya kullandığı herhangi bir hava durumu veri sağlayıcısının gizlilik uygulamalarını kontrol edemeyiz.</value>
@@ -321,11 +423,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>Sisteminiz yazılım güncellemelerini kontrol ettiğinde (örneğin,</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>AnduinOS yerel öncelikli çalışma için tasarlanmış olsa da, belirli temel işlevler ağ erişimini gerektirir. Bu bağlantılar yalnızca yazılım güncellemelerini veya istediğiniz verileri almak içindir ve</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>AnduinOS yerel-ilk işlem için tasarlanmış olsa da, belirli özelliklerin çalışması için ağ erişimi gereklidir. Bu bağlantılar telemetri için kullanılmaz, ancak bu hizmetlerin çalışması için kaçınılmaz bir gereklilik olan harici sunucularla iletişim içerir ve IP adresinizi açığa çıkaracaktır.</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>AnduinOS&apos;un kendisi herhangi bir veri toplamazken,</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>Eklentinin kaynak kodunu denetlemiş olsak da</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Kodunuza ihtiyaçlarınıza uyacak şekilde, güvenmediğiniz bileşenleri kaldırma dahil olmak üzere, düzenleme yapabilirsiniz.</value>
