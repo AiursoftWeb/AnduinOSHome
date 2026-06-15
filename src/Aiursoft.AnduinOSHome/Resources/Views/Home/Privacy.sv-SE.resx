@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—om något av följande paketer för telemetri eller bakgrundstjänster från Canonical upptäcks under byggprocessen avbryts och avslås bygget omedelbart:</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>, med undantag för specifika, användarinitierade funktioner eller väsentliga tjänster som beskrivs nedan.</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>”hård fail”-politik</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>(Canonical Livepatch/Pro-tjänster)</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>(Snap-demon)</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>(Några exempel och referenser finns att hitta</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>), ansluter den till dessa externa servrar. Denna process är avgörande för systemsäkerheten men kommer att exponera din IP-adress för operatörerna av den förvarosspegel du är ansluten till.</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>), systemuppdateringar och programvarupaket (</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>), ansluter ditt system till våra officiella servrar.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. Datainsamling av AnduinOS</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. Uppströmsprogramvara och integritetshänsyn</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. En strikt build-process utan telemetri</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Hantering av potentiell Ubuntu-telemetri</value>
@@ -114,17 +135,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>AnduinOS GitHub-diskussioner</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>AnduinOS går långt för att säkerställa att installationen är ren och fri från telemetri som standard.</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>AnduinOS inkluderar tillägget &quot;SimpleWeather&quot; för GNOME för att tillhandahålla aktuella väderförhållanden.</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>AnduinOS inkluderar GNOME-tillägg &apos;SimpleWeather&apos;. Utan avseende på din integritet är detta tillägg inaktiverat som standard.</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS är ett community-drivet, ideellt projekt.</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS är en gratis och öppen källkods Linux-distribution baserad på Ubuntu, underhållen av AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS är en fri och öppen källkods Linux®-distribution baserad på Ubuntu.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS strävar efter att hålla din installation ren och fri från telemetri som standard.</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS utvecklas och underhålls av AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>AnduinOS distribueras under</value>
@@ -135,6 +168,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>AnduinOS uppdateringstjänst</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>AnduinOS-webbplats och APT-arkiv</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>Eftersom dessa paket är fysiskt borttagna från installationsmedierna, AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Canonicals Livepatch-tjänst</value>
   </data>
@@ -143,6 +182,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>Kontroll:</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>Datadelning:</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>inaktiverad som standard</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>deltar inte</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>E-post:</value>
@@ -180,11 +228,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>Om dessa paket inte är installerade (vilket är fallet med en ren AnduinOS-installation), krävs ingen åtgärd.</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>Om du väljer att aktivera det manuellt för att se väderförhållandena:</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Om du har några frågor om denna sekretesspolicy eller AnduinOS:s sekretesspraxis, vänligen kontakta:</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>Om du manuellt väljer att</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>I en värld där fjärrtelemetri har blivit allestädes närvarande minimerar AnduinOS avsiktligt externa beroenden för att skydda användarna.</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>i någon form av systemrapportering, inskickning av användningsstatistik eller automatiserad kraschrapportering.</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Introduktion</value>
@@ -195,11 +252,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>Den fördelar bara dem i deras ursprungliga, oförändrade tillstånd.</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>Senast uppdaterad: 13 juni 2026</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Senast uppdaterad: 10 maj 2025</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>Lokal exekvering innebär att alla funktioner och tjänster i AnduinOS utförs</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>Lokal exekvering innebär att funktionerna och tjänsterna i AnduinOS körs helt på din dator.</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>Lokal exekvering innebär att de flesta funktioner och tjänster i AnduinOS utförs</value>
@@ -219,6 +282,9 @@
   <data name="not" xml:space="preserve">
     <value>inte</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>inte används för telemetri</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>Framför allt:</value>
   </data>
@@ -228,14 +294,23 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>eller några väderdataleverantörer som den använder. Anslutning till dessa tjänster kommer nödvändigtvis att exponera din IP-adress för dem.</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>eller väderleverantörerna. Att aktivera den här funktionen kommer att exponera din IP-adress för dem.</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>som härstammar från Ubuntu, Debian, GNOME, Flathub och andra källor.</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>Vår automatiserade ISO-byggledning genomför en</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Vårt team har granskat källkoden för detta tillägg</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>vänligen hänvisa till deras respektive uppströms sekretesspolicyer.</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>Integritetsgaranti:</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Integritetspolicy</value>
@@ -252,6 +327,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>SimpleWeather-tillägget</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>SimpleWeather-tillägget (inaktiverat som standard)</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Snap-daemon</value>
   </data>
@@ -267,6 +345,9 @@
   <data name="such as:" xml:space="preserve">
     <value>såsom:</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>Tillägget måste ansluta till</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>AnduinOS öppna natur ger användare möjlighet att självständigt verifiera att systemet respekterar deras integritet.</value>
   </data>
@@ -275,6 +356,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Det finns inga proprietära blobbar eller slutna moduler utanför uppströmsberoenden som uttryckligen ärvs från Ubuntu.</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>Dessa ändpunkter är rena server för distribution av statiska filer. De har inga möjligheter till datainsamling, analys eller användarprofilering alls.</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>dessa paket senare, aktiveras deras respektive telemetrimekanismer enligt Canonicals riktlinjer.</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Denna anslutning är avgörande för att hålla ditt system säkert och uppdaterat. Precis som med vilken standard HTTPS-anslutning som helst kommer denna process att exponera din IP-adress för vår server.</value>
@@ -300,17 +387,32 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>För att söka efter och ladda ner systemuppdateringar ansluter AnduinOS till vår uppdateringsändpunkt på</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>För att leverera dessa filer globalt med låg latens dirigeras trafik via Cloudflares Content Delivery Network (CDN). Som vid alla vanliga webbförfrågningar exponeras din IP-adress för CDN:t enbart i syfte att möjliggöra routning och säkerhet (DDoS-skydd). Vi loggar eller analyserar inte dina webbbläddrings- eller uppdateringsförfrågningar.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>för att bestämma din plats baserat på din IP-adress, och till väderleverantörer från tredje part för prognosdata.</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>för att bestämma din plats baserat på din IP-adress.</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>För att säkerställa en fullständig avanmälan kan du granska och, om nödvändigt, ta bort dessa paket med hjälp av:</value>
   </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>för att säkerställa att den inte innehåller dold telemetri, kan vi inte kontrollera integritetspraktikerna hos</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>För att tillhandahålla vår officiella webbplats (</value>
+  </data>
   <data name="Transparency:" xml:space="preserve">
     <value>Transparens:</value>
   </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Vi är engagerade i att skydda din integritet.</value>
+  </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>Vi är i grunden engagerade i att skydda din integritet.</value>
   </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>Vi kan inte kontrollera integritetspraxis för</value>
@@ -321,11 +423,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>När ditt system söker efter programuppdateringar (t.ex. med</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>Även om AnduinOS är utformad för att prioritera lokal drift kräver vissa grundläggande funktioner nätverksåtkomst. Dessa anslutningar används uteslutande för att hämta programuppdateringar eller data du har begärt, och är</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>Även om AnduinOS är utformat för lokalförsta drift kräver vissa funktioner nätverksåtkomst för att fungera. Dessa anslutningar används inte för telemetri, men de innebär kommunikation med externa servrar, vilket är ett oundvikligt krav för att dessa tjänster ska kunna fungera och kommer att exponera din IP-adress.</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>Medan AnduinOS självt inte samlar in några data,</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>Även om vi har granskat tilläggets källkod</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Du kan anpassa koden efter dina behov, inklusive att ta bort komponenter du inte litar på.</value>
