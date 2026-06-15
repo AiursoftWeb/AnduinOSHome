@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—jika salah satu paket telemetri Canonical atau paket latar belakang berikut terdeteksi selama proses pembuatan, pembuatan tersebut akan segera dihentikan dan ditolak:</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>, dengan pengecualian fitur spesifik yang diinisiasi pengguna atau layanan penting yang dijelaskan di bawah ini.</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>&quot;kriteria penolakan mutlak&quot; yang ketat</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>(Layanan Canonical Livepatch / Pro)</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>(daemon Snap)</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>(Beberapa contoh dan referensi dapat ditemukan</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>), sistem akan terhubung ke server-server eksternal ini. Proses ini penting untuk keamanan sistem tetapi akan memaparkan alamat IP Anda kepada operator cermin repositori yang Anda hubungi.</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>), pembaruan sistem, dan paket perangkat lunak (</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>), sistem Anda terhubung ke server resmi kami.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. Pengumpulan Data oleh AnduinOS</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. Perangkat Lunak Hulu dan Pertimbangan Privasi</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. Pipelina Pembuatan dengan Kebijakan Nol-Telemetri yang Ketat</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Cara Menangani Telemetri Ubuntu yang Berpotensi</value>
@@ -114,17 +135,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>Diskusi GitHub AnduinOS</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>AnduinOS berusaha semaksimal mungkin untuk memastikan instalasi Anda bersih dan bebas telemetri secara default.</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>AnduinOS menyertakan ekstensi GNOME &apos;SimpleWeather&apos; untuk menyediakan kondisi cuaca terkini.</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>AnduinOS menyertakan ekstensi GNOME &apos;SimpleWeather&apos;. Sebagai penghormatan terhadap privasi Anda, ekstensi ini</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS adalah proyek nirlaba yang digerakkan oleh komunitas.</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS adalah distribusi Linux gratis dan sumber terbuka yang berbasis pada Ubuntu, dikelola oleh AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS adalah distribusi Linux® gratis dan sumber terbuka yang berbasis pada Ubuntu.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS berkomitmen untuk menjaga instalasi Anda tetap bersih dan bebas telemetri secara default.</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS dikembangkan dan dipelihara oleh AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>AnduinOS didistribusikan di bawah</value>
@@ -135,6 +168,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>Layanan Pembaruan AnduinOS</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>Situs Web &amp; Repositori APT AnduinOS</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>Karena paket-paket ini secara fisik dihilangkan dari media instalasi, AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Layanan Canonical Livepatch</value>
   </data>
@@ -143,6 +182,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>Kendali:</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>Eksposur Data:</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>dinonaktifkan secara default</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>tidak berpartisipasi</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>Surel:</value>
@@ -180,11 +228,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>Jika paket-paket ini tidak terpasang (seperti pada instalasi AnduinOS yang bersih), tidak ada tindakan yang diperlukan.</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>Jika Anda memilih untuk mengaktifkannya secara manual untuk melihat kondisi cuaca:</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Jika Anda memiliki pertanyaan terkait Pernyataan Privasi ini atau praktik privasi AnduinOS, silakan hubungi:</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>Jika Anda secara manual memilih untuk</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>Di dunia di mana telemetri jarak jauh telah menjadi hal yang umum, AnduinOS sengaja meminimalkan ketergantungan eksternal untuk melindungi pengguna.</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>dalam pelaporan sistem apa pun, pengiriman statistik penggunaan, atau pelaporan crash otomatis.</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Pendahuluan</value>
@@ -195,11 +252,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>Sistem ini hanya mendistribusikan ulang komponen-komponen tersebut dalam keadaan aslinya yang tidak dimodifikasi.</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>Terakhir diperbarui: 13 Juni 2026</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Terakhir diperbarui: 10 Mei 2025</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>Eksekusi lokal berarti semua fitur dan layanan AnduinOS dijalankan</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>Eksekusi lokal berarti bahwa fitur dan layanan AnduinOS sepenuhnya dijalankan pada komputer Anda.</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>Eksekusi lokal berarti sebagian besar fitur dan layanan AnduinOS dilakukan</value>
@@ -219,6 +282,9 @@
   <data name="not" xml:space="preserve">
     <value>tidak</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>tidak digunakan untuk telemetri</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>Perlu diperhatikan:</value>
   </data>
@@ -228,14 +294,23 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>atau penyedia data cuaca apa pun yang digunakannya. Terhubung ke layanan-layanan ini akan secara otomatis memaparkan alamat IP Anda kepada mereka.</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>atau penyedia cuaca. Mengaktifkan fitur ini akan mengekspos alamat IP Anda kepada mereka.</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>berasal dari Ubuntu, Debian, GNOME, Flathub, dan sumber lainnya.</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>Saluran pembuatan ISO otomatis kami memberlakukan</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Tim kami telah meninjau kode sumber ekstensi ini</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>silakan merujuk ke kebijakan privasi upstream masing-masing.</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>Jaminan Privasi:</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Kebijakan Privasi</value>
@@ -252,6 +327,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>Ekstensi SimpleWeather</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>Ekstensi SimpleWeather (Nonaktif Secara Default)</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Layanan latar Snap</value>
   </data>
@@ -267,6 +345,9 @@
   <data name="such as:" xml:space="preserve">
     <value>seperti:</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>Ekstensi harus terhubung ke</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>Sifat terbuka AnduinOS memberdayakan pengguna untuk memverifikasi secara mandiri bahwa sistem menghargai privasi mereka.</value>
   </data>
@@ -275,6 +356,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Tidak ada blob berpemilik atau modul tertutup di luar dependensi upstream yang secara eksplisit diwarisi dari Ubuntu.</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>Endpoint ini adalah server distribusi file statis murni. Endpoint ini sama sekali tidak memiliki kemampuan pengumpulan data, analitik, atau pemprofilan pengguna.</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>paket-paket ini nanti, mekanisme telemetris masing-masing akan diaktifkan sesuai dengan kebijakan Canonical.</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Koneksi ini penting untuk menjaga sistem Anda tetap aman dan terkini. Seperti halnya koneksi HTTPS standar lainnya, proses ini akan memaparkan alamat IP Anda ke server kami.</value>
@@ -300,17 +387,32 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>Untuk memeriksa dan mengunduh pembaruan sistem, AnduinOS terhubung ke titik akhir pembaruan kami di</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>Untuk mendistribusikan file ini secara global dengan latensi rendah, lalu lintas dirutekan melalui Content Delivery Network (CDN) Cloudflare. Seperti permintaan web standar lainnya, alamat IP Anda terekspos ke CDN hanya untuk tujuan routing dan keamanan (perlindungan DDoS). Kami tidak mencatat atau menganalisis permintaan penjelajahan web atau pembaruan Anda.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>untuk menentukan lokasi Anda berdasarkan alamat IP, dan kepada penyedia cuaca pihak ketiga untuk data prakiraan.</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>untuk menentukan lokasi Anda berdasarkan alamat IP Anda.</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>Untuk memastikan opsi keluar sepenuhnya, Anda dapat meninjau dan, jika diperlukan, menghapus paket-paket ini menggunakan:</value>
   </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>untuk memastikan tidak ada telemetri tersembunyi, kami tidak dapat mengontrol praktik privasi dari</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>Untuk menyediakan situs web resmi kami (</value>
+  </data>
   <data name="Transparency:" xml:space="preserve">
     <value>Transparansi:</value>
   </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Kami berkomitmen untuk melindungi privasi Anda.</value>
+  </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>Kami secara mendasar berkomitmen untuk melindungi privasi Anda.</value>
   </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>Kami tidak dapat mengontrol praktik privasi dari</value>
@@ -321,11 +423,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>Ketika sistem Anda memeriksa pembaruan perangkat lunak (misalnya, menggunakan</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>Meskipun AnduinOS dirancang untuk beroperasi secara lokal terlebih dahulu, beberapa fungsi dasar memerlukan akses jaringan. Koneksi ini secara ketat hanya untuk mengambil pembaruan perangkat lunak atau data yang Anda minta, dan adalah</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>Meskipun AnduinOS dirancang untuk operasi yang mengutamakan lokal, fitur-fitur tertentu memerlukan akses jaringan untuk berfungsi. Koneksi ini tidak digunakan untuk telemetri, tetapi melibatkan komunikasi dengan server eksternal, yang merupakan persyaratan yang tidak dapat dihindari agar layanan-layanan ini dapat beroperasi dan akan memaparkan alamat IP Anda.</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>Meskipun AnduinOS sendiri tidak mengumpulkan data apa pun,</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>Meskipun kami telah memperiksa kode sumber ekstensi tersebut</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Anda dapat menyesuaikan kode sesuai kebutuhan Anda, termasuk menghapus komponen apa pun yang tidak Anda percayai.</value>
