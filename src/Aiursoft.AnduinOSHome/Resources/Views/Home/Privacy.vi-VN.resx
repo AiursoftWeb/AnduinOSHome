@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>— nếu bất kỳ gói thu thập dữ liệu hoặc gói chạy nền nào của Canonical được liệt kê dưới đây được phát hiện trong quá trình xây dựng, quy trình xây dựng sẽ lập tức bị hủy bỏ và từ chối:</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>, ngoại trừ các tính năng cụ thể do người dùng khởi xướng hoặc các dịch vụ thiết yếu được nêu chi tiết bên dưới.</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>chính sách &quot;bắt buộc thất bại&quot; nghiêm ngặt</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>(Các dịch vụ Canonical Livepatch / Pro)</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>(quá trình nền Snap)</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>(Một số ví dụ và tài liệu tham khảo có thể được tìm thấy</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>), nó sẽ kết nối đến các máy chủ bên ngoài này. Quá trình này rất cần thiết cho bảo mật hệ thống nhưng sẽ để lộ địa chỉ IP của bạn cho các nhà điều hành của gương kho lưu trữ mà bạn đang kết nối đến.</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>), bản cập nhật hệ thống, và các gói phần mềm (</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>), hệ thống của bạn sẽ kết nối với các máy chủ chính thức của chúng tôi.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. Thu thập Dữ liệu bởi AnduinOS</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. Phần Mềm Thượng Nguồn và Các Vấn Đề Về Quyền Riêng Tư</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. Quy trình xây dựng nghiêm ngặt loại bỏ hoàn toàn telemetry</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Cách Xử Lý Tính Năng Thu Thập Dữ Liệu Tiềm Ẩn Từ Ubuntu</value>
@@ -117,17 +138,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>Thảo luận GitHub của AnduinOS</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>AnduinOS đã không ngừng nỗ lực để đảm bảo rằng bản cài đặt của bạn sạch sẽ và không có tính năng thu thập dữ liệu (telemetry) theo mặc định.</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>AnduinOS bao gồm tiện ích mở rộng GNOME &apos;SimpleWeather&apos; để cung cấp thông tin thời tiết hiện tại.</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>AnduinOS đi kèm tiện ích mở rộng GNOME &apos;SimpleWeather&apos;. Vì tôn trọng quyền riêng tư của bạn, tiện ích này được</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS là một dự án phi lợi nhuận, được phát triển bởi cộng đồng.</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS là một bản phân phối Linux miễn phí và nguồn mở dựa trên Ubuntu, được duy trì bởi AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS là một bản phân phối Linux® miễn phí và mã nguồn mở dựa trên Ubuntu.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS cam kết duy trì bản cài đặt của bạn sạch sẽ và không có telemetry theo mặc định.</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS được phát triển và duy trì bởi AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>AnduinOS được phân phối theo</value>
@@ -138,6 +171,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>Dịch vụ Cập nhật AnduinOS</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>Trang web AnduinOS &amp; Kho lưu trữ APT</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>Vì các gói này bị xóa khỏi phương tiện cài đặt, AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Dịch vụ Canonical Livepatch</value>
   </data>
@@ -146,6 +185,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>Kiểm soát:</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>Tiết lộ dữ liệu:</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>mặc định bị tắt</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>không tham gia</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>Email:</value>
@@ -183,11 +231,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>Nếu các gói này chưa được cài đặt (như trường hợp của bản cài đặt AnduinOS sạch), không cần thực hiện hành động nào.</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>Nếu bạn chọn bật thủ công để xem điều kiện thời tiết:</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Nếu bạn có bất kỳ câu hỏi nào liên quan đến Tuyên bố Bảo mật này hoặc các hoạt động bảo mật của AnduinOS, vui lòng liên hệ:</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>Nếu bạn chủ động cài đặt</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>Trong một thế giới mà việc thu thập dữ liệu từ xa đã trở nên phổ biến, AnduinOS cố ý giảm thiểu các phụ thuộc bên ngoài để bảo vệ người dùng.</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>trong bất kỳ báo cáo hệ thống, gửi thống kê sử dụng hay báo cáo sự cố tự động nào.</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Giới thiệu</value>
@@ -198,11 +255,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>Nó chỉ phân phối lại chúng ở trạng thái ban đầu, không bị thay đổi.</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>Cập nhật lần cuối: 13 tháng 6 năm 2026</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Cập nhật lần cuối: 10 tháng 5, 2025</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>Thực thi cục bộ có nghĩa là tất cả tính năng và dịch vụ của AnduinOS được thực hiện</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>Thực thi cục bộ có nghĩa là các tính năng và dịch vụ của AnduinOS được thực hiện hoàn toàn trên máy tính của bạn.</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>Thực thi cục bộ có nghĩa là hầu hết các tính năng và dịch vụ của AnduinOS được thực hiện</value>
@@ -222,6 +285,9 @@
   <data name="not" xml:space="preserve">
     <value>không</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>không được sử dụng để thu thập dữ liệu sử dụng</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>Đáng chú ý:</value>
   </data>
@@ -231,8 +297,14 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>hoặc bất kỳ nhà cung cấp dữ liệu thời tiết nào mà nó sử dụng. Việc kết nối với các dịch vụ này chắc chắn sẽ để lộ địa chỉ IP của bạn cho họ.</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>hoặc các nhà cung cấp dữ liệu thời tiết. Việc bật tính năng này sẽ khiến địa chỉ IP của bạn bị lộ cho họ.</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>có nguồn gốc từ Ubuntu, Debian, GNOME, Flathub và các nguồn khác.</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>Quy trình xây dựng ISO tự động của chúng tôi thực thi một</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Đội ngũ của chúng tôi đã xem xét mã nguồn của tiện ích mở rộng này</value>
@@ -242,6 +314,9 @@
   </data>
   <data name="popularity-contest" xml:space="preserve">
     <value>cuộc thi phổ biến</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>Cam kết về quyền riêng tư:</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>Chính sách Bảo mật</value>
@@ -258,6 +333,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>Tiện ích SimpleWeather</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>Tiện ích SimpleWeather (Mặc định tắt)</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Trình nền Snap</value>
   </data>
@@ -273,6 +351,9 @@
   <data name="such as:" xml:space="preserve">
     <value>chẳng hạn như:</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>Tiện ích bổ sung phải kết nối với</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>Tính chất mã nguồn mở của AnduinOS trao quyền cho người dùng tự kiểm chứng hệ thống tôn trọng quyền riêng tư của họ.</value>
   </data>
@@ -281,6 +362,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Không có các blob độc quyền hoặc module đóng nào bên ngoài các phụ thuộc upstream được kế thừa rõ ràng từ Ubuntu.</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>Các điểm cuối này là máy chủ phân phối tệp tĩnh thuần túy. Chúng hoàn toàn không có khả năng thu thập dữ liệu, phân tích hoặc xây dựng hồ sơ người dùng.</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>các gói này sau này, các cơ chế thu thập dữ liệu tương ứng của chúng sẽ được kích hoạt theo chính sách của Canonical.</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Kết nối này là cần thiết để giữ cho hệ thống của bạn được bảo mật và cập nhật. Giống như bất kỳ kết nối HTTPS tiêu chuẩn nào, quá trình này sẽ để lộ địa chỉ IP của bạn cho máy chủ của chúng tôi.</value>
@@ -306,11 +393,23 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>Để kiểm tra và tải xuống các bản cập nhật hệ thống, AnduinOS kết nối đến điểm cuối cập nhật của chúng tôi tại</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>Để phân phối các tệp này trên toàn cầu với độ trễ thấp, lưu lượng truy cập được định tuyến qua Mạng phân phối nội dung (CDN) của Cloudflare. Tương tự như mọi yêu cầu web tiêu chuẩn, địa chỉ IP của bạn sẽ được hiển thị cho CDN chỉ nhằm mục đích định tuyến và bảo mật (bảo vệ chống DDoS). Chúng tôi không ghi nhật ký hoặc phân tích các yêu cầu duyệt web hoặc cập nhật của bạn.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>để xác định vị trí của bạn dựa trên địa chỉ IP, và đến các nhà cung cấp thời tiết bên thứ ba để lấy dữ liệu dự báo.</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>để xác định vị trí của bạn dựa trên địa chỉ IP của bạn.</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>Để đảm bảo từ chối hoàn toàn, bạn có thể kiểm tra và nếu cần, gỡ bỏ các gói này bằng cách sử dụng:</value>
+  </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>để đảm bảo rằng nó không chứa cơ chế theo dõi ẩn, chúng tôi không thể kiểm soát các chính sách bảo mật của</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>Để cung cấp trang web chính thức của chúng tôi (</value>
   </data>
   <data name="Transparency:" xml:space="preserve">
     <value>Tính minh bạch:</value>
@@ -321,6 +420,9 @@
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Chúng tôi cam kết bảo vệ quyền riêng tư của bạn.</value>
   </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>Chúng tôi cam kết toàn tâm bảo vệ quyền riêng tư của bạn.</value>
+  </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>Chúng tôi không thể kiểm soát các hoạt động bảo mật của</value>
   </data>
@@ -330,11 +432,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>Khi hệ thống của bạn kiểm tra các bản cập nhật phần mềm (ví dụ: sử dụng</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>Mặc dù AnduinOS được thiết kế để ưu tiên hoạt động cục bộ, một số chức năng cơ bản vẫn yêu cầu kết nối mạng. Các kết nối này chỉ nhằm mục đích lấy bản cập nhật phần mềm hoặc dữ liệu mà bạn đã yêu cầu, và được</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>Mặc dù AnduinOS được thiết kế để hoạt động theo hướng ưu tiên cục bộ, một số tính năng nhất định vẫn cần truy cập mạng để hoạt động. Các kết nối này không được sử dụng cho việc thu thập dữ liệu từ xa, nhưng chúng có liên quan đến việc giao tiếp với các máy chủ bên ngoài, đây là một yêu cầu không thể tránh khỏi để các dịch vụ này vận hành và sẽ tiết lộ địa chỉ IP của bạn.</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>Mặc dù bản thân AnduinOS không thu thập bất kỳ dữ liệu nào,</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>Mặc dù chúng tôi đã kiểm tra mã nguồn của tiện ích mở rộng này</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Bạn có thể điều chỉnh mã nguồn để phù hợp với nhu cầu của mình, bao gồm việc loại bỏ bất kỳ thành phần nào bạn không tin tưởng.</value>
