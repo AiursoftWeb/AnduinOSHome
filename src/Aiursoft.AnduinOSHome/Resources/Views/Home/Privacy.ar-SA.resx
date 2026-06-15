@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>— إذا تم اكتشاف أي من حزم Canonical الخاصة بالتتبع أو الخلفية المذكورة أدناه أثناء عملية الإنشاء، يتم إيقاف البناء ورفضه على الفور:</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
     <value>، باستثناء الميزات المحددة التي يبدأها المستخدم أو الخدمات الأساسية الموضحة أدناه.</value>
   </data>
   <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
@@ -36,6 +39,15 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+    <value>سياسة صارمة تعتمد على &quot;الفشل التام&quot;</value>
+  </data>
+  <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
+    <value>(خدمات Canonical Livepatch / Pro)</value>
+  </data>
+  <data name="(Snap daemon)" xml:space="preserve">
+    <value>(برنامج تشغيل Snap)</value>
+  </data>
   <data name="(Some examples and references can be found" xml:space="preserve">
     <value>(يمكن العثور على بعض الأمثلة والمراجع</value>
   </data>
@@ -44,6 +56,12 @@
   </data>
   <data name="), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to." xml:space="preserve">
     <value>)، فإنه يتصل بهذه الخوادم الخارجية. هذه العملية ضرورية لأمن النظام ولكنها ستعرض عنوان IP الخاص بك لمشغلي مرآة المستودع المتصلين بها.</value>
+  </data>
+  <data name="), system updates, and software packages (" xml:space="preserve">
+    <value>)، وتحديثات النظام، وحزم البرامج (</value>
+  </data>
+  <data name="), your system connects to our official servers." xml:space="preserve">
+    <value>)، يتصل نظامك بالخوادم الرسمية لدينا.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. جمع البيانات بواسطة AnduinOS</value>
@@ -68,6 +86,9 @@
   </data>
   <data name="5. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>5. البرامج الأم واعتبارات الخصوصية</value>
+  </data>
+  <data name="6. A Strict Zero-Telemetry Build Pipeline" xml:space="preserve">
+    <value>6. خط أنابيب بناء صارم بدون تتبع</value>
   </data>
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. كيفية التعامل مع إمكانية جمع بيانات Ubuntu</value>
@@ -114,17 +135,29 @@
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>مناقشات AnduinOS على GitHub</value>
   </data>
+  <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
+    <value>تسعى AnduinOS إلى بذل قصارى جهدها لضمان نظافة التثبيت وخلوّته من أدوات جمع البيانات بشكل افتراضي.</value>
+  </data>
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension to provide current weather conditions." xml:space="preserve">
     <value>يتضمن AnduinOS إضافة GNOME المسماة &apos;SimpleWeather&apos; لتوفير أحوال الطقس الحالية.</value>
   </data>
+  <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
+    <value>يتضمن نظام AnduinOS إضافة GNOME &apos;SimpleWeather&apos;. وتحترماً بخصوصيتك، يكون هذا الامتداد</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS هو مشروع مجتمعي غير ربحي.</value>
+  </data>
+  <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>تُعد AnduinOS توزيعة Linux مجانية ومفتوحة المصدر مبنية على Ubuntu، وتديرها شركة AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS هو توزيعة لينكس مجانية ومفتوحة المصدر تعتمد على أوبونتو.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>تلتزم AnduinOS بالحفاظ على تثبيت نظامك نظيفًا وخاليًا من جمع البيانات عن بُعد بشكل افتراضي.</value>
+  </data>
+  <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
+    <value>يتم تطوير AnduinOS وصيانته بواسطة AIURSOFT LIMITED.</value>
   </data>
   <data name="AnduinOS is distributed under the" xml:space="preserve">
     <value>يتم توزيع AnduinOS بموجب</value>
@@ -135,6 +168,12 @@
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>خدمة تحديث AnduinOS</value>
   </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>موقع AnduinOS ومستودع APT</value>
+  </data>
+  <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
+    <value>بسبب إزالة هذه الحزم جسدياً من وسائط التثبيت، فإن AnduinOS</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>خدمة Canonical Livepatch</value>
   </data>
@@ -143,6 +182,15 @@
   </data>
   <data name="Control:" xml:space="preserve">
     <value>التحكم:</value>
+  </data>
+  <data name="Data Exposure:" xml:space="preserve">
+    <value>تعرض البيانات:</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>معطّل بشكل افتراضي</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>لا يشارك</value>
   </data>
   <data name="Email:" xml:space="preserve">
     <value>البريد الإلكتروني:</value>
@@ -180,11 +228,20 @@
   <data name="If these packages are not installed (as is the case with a clean AnduinOS installation), no action is required." xml:space="preserve">
     <value>إذا لم تكن هذه الحزم مثبتة (كما هو الحال في تثبيت AnduinOS النظيف)، فلا يلزم اتخاذ أي إجراء.</value>
   </data>
+  <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
+    <value>إذا اخترت تفعيله يدوياً لعرض حالة الطقس:</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>إذا كان لديك أي استفسارات بخصوص بيان الخصوصية هذا أو ممارسات الخصوصية في AnduinOS، يرجى التواصل عبر:</value>
   </data>
+  <data name="If you manually choose to" xml:space="preserve">
+    <value>إذا قمت باختيار يدويًا لتثبيت</value>
+  </data>
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>في عالم أصبحت فيه المراقبة عن بُعد شائعة، يقلل AnduinOS عمدًا من التبعيات الخارجية لحماية المستخدمين.</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>في أي تقارير للنظام، أو إرسال إحصائيات الاستخدام، أو الإبلاغ التلقائي عن الأعطال.</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>مقدمة</value>
@@ -195,11 +252,17 @@
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>إنه يعيد توزيعها فقط في حالتها الأصلية غير المعدلة.</value>
   </data>
+  <data name="Last updated: June 13, 2026" xml:space="preserve">
+    <value>آخر تحديث: 13 يونيو 2026</value>
+  </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>آخر تحديث: 10 مايو 2025</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>التنفيذ المحلي يعني أن جميع ميزات وخدمات AnduinOS تُنفذ</value>
+  </data>
+  <data name="Local execution means that features and services of AnduinOS are performed entirely on your computer." xml:space="preserve">
+    <value>تشير التنفيذ المحلي إلى أن ميزات وخدمات AnduinOS تُنفَّذ بالكامل على جهاز الكمبيوتر الخاص بك.</value>
   </data>
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>يعني التنفيذ المحلي أن معظم ميزات وخدمات AnduinOS تُنفَّذ</value>
@@ -219,6 +282,9 @@
   <data name="not" xml:space="preserve">
     <value>لا</value>
   </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>غير مستخدمة لأغراض التتبع</value>
+  </data>
   <data name="Notably:" xml:space="preserve">
     <value>من الجدير بالذكر:</value>
   </data>
@@ -228,14 +294,23 @@
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>أو أي مزودي بيانات الطقس الذي يستخدمه. الاتصال بهذه الخدمات سيعرض عنوان IP الخاص بك لهم بالضرورة.</value>
   </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>أو مزودي خدمات الطقس. سيساعد تفعيل هذه الميزة في كشف عنوان IP الخاص بك لهم.</value>
+  </data>
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>منبثقة من Ubuntu و Debian و GNOME و Flathub ومصادر أخرى.</value>
+  </data>
+  <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
+    <value>يفرض خط أنابيب بناء ISO الآلي لدينا سياسة</value>
   </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>لقد راجع فريقنا الكود المصدري لهذا الامتداد</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>يرجى الرجوع إلى سياسات الخصوصية الخاصة بالمصادر الأصلية لكل منها.</value>
+  </data>
+  <data name="Privacy Guarantee:" xml:space="preserve">
+    <value>ضمان الخصوصية:</value>
   </data>
   <data name="Privacy Policy" xml:space="preserve">
     <value>سياسة الخصوصية</value>
@@ -252,6 +327,9 @@
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>امتداد SimpleWeather</value>
   </data>
+  <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
+    <value>امتداد SimpleWeather (معطل افتراضياً)</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>خادم سناب</value>
   </data>
@@ -267,6 +345,9 @@
   <data name="such as:" xml:space="preserve">
     <value>مثل:</value>
   </data>
+  <data name="The extension must connect to" xml:space="preserve">
+    <value>يجب على الامتداد الاتصال بـ</value>
+  </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>الطبيعة المفتوحة لنظام AnduinOS تُمكّن المستخدمين من التحقق بشكل مستقل من أن النظام يحترم خصوصيتهم.</value>
   </data>
@@ -275,6 +356,12 @@
   </data>
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>لا توجد أي حزم برمجية احتكارية أو وحدات مغلقة خارج التبعيات العلوية الموروثة صراحةً من Ubuntu.</value>
+  </data>
+  <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
+    <value>تُعد هذه النقاط النهائية مجرد خوادم لتوزيع الملفات الثابتة، ولا تتضمن أي إمكانيات لجمع البيانات، أو التحليلات، أو ملفات تعريف المستخدمين على الإطلاق.</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>هذه الحزم لاحقًا، سيتم تفعيل آليات التتبع الخاصة بها وفقًا لسياسات Canonical.</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>هذا الاتصال أساسي للحفاظ على نظامك آمنًا ومُحدَّثًا. كما هو الحال مع أي اتصال HTTPS قياسي، ستكشف هذه العملية عنوان IP الخاص بك لخادمنا.</value>
@@ -300,17 +387,32 @@
   <data name="To check for and download system updates, AnduinOS connects to our update endpoint at" xml:space="preserve">
     <value>للتحقق من تحديثات النظام وتنزيلها، يتصل AnduinOS بنقطة النهاية للتحديثات الخاصة بنا على</value>
   </data>
+  <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
+    <value>لتوصيل هذه الملفات عالميًا وبزمن استجابة منخفض، يتم توجيه حركة المرور عبر شبكة توصيل المحتوى (CDN) الخاصة بـ Cloudflare. وكما هو الحال مع أي طلب ويب قياسي، يتم كشف عنوان IP الخاص بك إلى شبكة CDN لأغراض التوجيه والأمان (الحماية من هجمات DDoS) فقط. نحن لا نسجل أو نحلل طلبات تصفح الويب أو التحديثات الخاصة بك.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>لتحديد موقعك بناءً على عنوان بروتوكول الإنترنت (IP) الخاص بك، وللمزودين сторонних للطقس للحصول على بيانات التوقعات.</value>
+  </data>
   <data name="to determine your location based on your IP address." xml:space="preserve">
     <value>لتحديد موقعك بناءً على عنوان IP الخاص بك.</value>
   </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>لضمان الانسحاب الكامل، يمكنك مراجعة وإزالة هذه الحزم إذا لزم الأمر باستخدام:</value>
   </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>لضمان عدم احتوائها على أي أدوات مراقبة خفية، لا يمكننا التحكم في ممارسات الخصوصية الخاصة بـ</value>
+  </data>
+  <data name="To provide our official website (" xml:space="preserve">
+    <value>لتوفير موقعنا الرسمي (</value>
+  </data>
   <data name="Transparency:" xml:space="preserve">
     <value>الشفافية:</value>
   </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>نحن ملتزمون بحماية خصوصيتك.</value>
+  </data>
+  <data name="We are fundamentally committed to protecting your privacy." xml:space="preserve">
+    <value>نحن ملتزمون أساسًا بحماية خصوصيتك.</value>
   </data>
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>لا يمكننا التحكم في ممارسات الخصوصية الخاصة بـ</value>
@@ -321,11 +423,17 @@
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>عندما يتحقق نظامك من وجود تحديثات للبرامج (مثل استخدام</value>
   </data>
+  <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
+    <value>وعلى الرغم من أن AnduinOS مصمم للعمل بشكل أساسي محلياً، فإن بعض الوظائف الأساسية تتطلب اتصالاً بالشبكة. وتُستخدم هذه الاتصالات حصرياً لجلب تحديثات البرامج أو البيانات التي طلبتها، وهي</value>
+  </data>
   <data name="While AnduinOS is designed for local-first operation, certain features require network access to function. These connections are not used for telemetry, but they do involve communication with external servers, which is an unavoidable requirement for these services to operate and will expose your IP address." xml:space="preserve">
     <value>على الرغم من أن AnduinOS مصمم للعمل المحلي أولاً، إلا أن بعض الميزات تتطلب الوصول إلى الشبكة لتعمل. هذه الاتصالات لا تُستخدم لجمع البيانات عن بُعد، لكنها تتضمن التواصل مع خوادم خارجية، وهو متطلب لا مفر منه لتشغيل هذه الخدمات وسيكشف عن عنوان IP الخاص بك.</value>
   </data>
   <data name="While AnduinOS itself does not collect any data," xml:space="preserve">
     <value>بينما لا يقوم نظام AnduinOS نفسه بجمع أي بيانات،</value>
+  </data>
+  <data name="While we have audited the extension&apos;s source code" xml:space="preserve">
+    <value>ورغم قيامنا بمراجعة الكود المصدري للإضافة</value>
   </data>
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>يمكنك تعديل الكود ليناسب احتياجاتك، بما في ذلك إزالة أي مكونات لا تثق بها.</value>
