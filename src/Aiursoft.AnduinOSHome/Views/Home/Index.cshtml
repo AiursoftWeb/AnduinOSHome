@@ -573,6 +573,191 @@
     <img class="iglmodal-content" id="iglmodal-img" alt="Image preview" src="#"/>
 </div>
 
+@* AnduinOS To Go section *@
+<section class="ai-section position-relative w-100 overflow-hidden d-flex align-items-center">
+
+    <div class="ai-immersive-bg">
+        <div class="togo-cyber-animation w-100 mx-auto position-relative" style="max-width: 1000px;aspect-ratio: 16/11;margin-top: 60px;">
+          <style>
+            .cyber-grid {
+              stroke: rgba(56, 189, 248, 0.05);
+              stroke-width: 1;
+            }
+            .usb-stick {
+              animation: usbPlug 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            }
+            .screen-content {
+              animation: screenBoot 12s ease-out infinite;
+            }
+            .screen-logo {
+              animation: logoBoot 12s ease-out infinite;
+              transform-origin: 400px 200px;
+            }
+            .status-light {
+              animation: blink 12s infinite;
+            }
+            .typing-text {
+              animation: typeFade 12s infinite;
+            }
+            .desktop-shot {
+              animation: desktopBoot 12s ease-out infinite;
+              transform-origin: 400px 184px;
+            }
+
+            @@keyframes usbPlug {
+              0%, 10% { transform: translateX(-40px); }
+              18%, 80% { transform: translateX(12px); }
+              88%, 100% { transform: translateX(-40px); }
+            }
+            @@keyframes screenBoot {
+              0%, 33% { fill: #050505; }
+              34%, 36% { fill: url(#screen-glow); }
+              38%, 100% { fill: #050505; }
+            }
+            @@keyframes logoBoot {
+              0%, 16% { opacity: 0; transform: scale(0.9); }
+              18%, 33% { opacity: 1; transform: scale(1); }
+              35%, 100% { opacity: 0; transform: scale(0.9); }
+            }
+            @@keyframes blink {
+              0%, 18% { fill: #333; }
+              19%, 75% { fill: #0ea5e9; }
+              76%, 100% { fill: #333; }
+            }
+            @@keyframes typeFade {
+              0%, 14% { opacity: 0; }
+              16%, 33% { opacity: 0.6; }
+              35%, 100% { opacity: 0; }
+            }
+            @@keyframes desktopBoot {
+              0%, 33% { opacity: 0; transform: scale(0.95); }
+              35%, 72% { opacity: 1; transform: scale(1); }
+              74%, 100% { opacity: 0; transform: scale(0.95); }
+            }
+          </style>
+
+          <svg viewBox="0 0 800 450" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="screen-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0052D4" />
+                <stop offset="50%" stop-color="#2a4b77" />
+                <stop offset="100%" stop-color="#020617" />
+              </linearGradient>
+
+              <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+
+              <clipPath id="screen-clip">
+                <rect x="190" y="66" width="420" height="236" rx="4" />
+              </clipPath>
+            </defs>
+
+            <rect width="800" height="450" fill="transparent" />
+
+            <g class="cyber-grid">
+              <path d="M 0 100 L 800 100 M 0 200 L 800 200 M 0 300 L 800 300 M 0 400 L 800 400" />
+              <path d="M 100 0 L 100 450 M 200 0 L 200 450 M 300 0 L 300 450 M 400 0 L 400 450 M 500 0 L 500 450 M 600 0 L 600 450 M 700 0 L 700 450" />
+            </g>
+
+            <rect x="300" y="338" width="200" height="6" fill="#0f172a" />
+
+            <rect x="180" y="56" width="440" height="256" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2" />
+
+            <rect class="screen-content" x="190" y="66" width="420" height="236" rx="4" fill="#050505" />
+
+            <g class="screen-logo">
+              <image href="/logo.svg" x="360" y="140" width="80" height="80" />
+              <text x="400" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="24" text-anchor="middle" letter-spacing="1">AnduinOS</text>
+
+              <g class="typing-text">
+                <text x="200" y="90" fill="#0ea5e9" font-family="monospace" font-size="10">Booting kernel 7.0...</text>
+                <text x="200" y="105" fill="#0ea5e9" font-family="monospace" font-size="10">Mounting overlayfs... [OK]</text>
+                <text x="200" y="120" fill="#0ea5e9" font-family="monospace" font-size="10">Setting locale fr_FR.UTF-8... [OK]</text>
+              </g>
+
+            </g>
+
+              <image class="desktop-shot" href="@Url.Content("~/sc.webp")" x="190" y="66" width="420" height="236" preserveAspectRatio="xMidYMid slice" clip-path="url(#screen-clip)" />
+
+            <rect x="125" y="316" width="550" height="10" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1" filter="url(#neon)"/>
+
+            <rect x="350" y="312" width="100" height="4" fill="#0f172a" />
+
+            <rect x="123" y="318" width="6" height="6" fill="#000" rx="1" />
+
+            <g class="usb-stick">
+              <rect x="111" y="318" width="12" height="6" fill="#cbd5e1" />
+              <rect x="50" y="314" width="60" height="14" rx="2" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" filter="url(#neon)" />
+              <circle cx="95" cy="321" r="2" class="status-light" filter="url(#neon)" />
+              <text x="60" y="323" fill="#475569" font-family="sans-serif" font-size="8" font-weight="bold">Live USB</text>
+            </g>
+          </svg>
+        </div>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <div class="container position-relative z-2 py-5">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6 col-md-12">
+
+                <div class="mb-5 text-start ps-lg-4">
+                    <div class="d-inline-flex align-items-center px-3 py-1 mb-3 rounded-pill border border-white-10 bg-dark-glass-sm backdrop-blur">
+                        <span class="text-info me-2"><i class="fas fa-usb"></i></span>
+                        <span class="text-gray-300 small fw-medium text-uppercase tracking-wider">@Localizer["The Ultimate Swiss Army Knife"]</span>
+                    </div>
+                    <h2 class="display-4 fw-bold text-white mb-3">
+                        @Localizer["Your Entire PC."]<br><span class="text-primary">@Localizer["In Your Pocket."]</span>
+                    </h2>
+                    <p class="lead text-gray-400 fs-5">
+                        @Localizer["Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds."]
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2"><i class="fas fa-floppy-disk me-1"></i> @Localizer["Persistent on USB"]</span>
+                        <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2"><i class="fas fa-language me-1"></i> @Localizer["Multi-language Ready"]</span>
+                        <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2"><i class="fas fa-bolt me-1"></i> @Localizer["No Installation Needed"]</span>
+                    </div>
+                </div>
+
+                <div class="row g-3 ps-lg-4">
+
+                    @* Card 1: Rescuer *@
+                    <div class="col-md-6">
+                        <div class="card bg-dark-glass border-white-10 h-100 hover-lift">
+                            <div class="card-body p-4">
+                                <div class="icon-box-sm bg-danger-subtle text-danger rounded-3 me-3 mb-3">
+                                    <i class="fas fa-truck-medical fa-lg"></i>
+                                </div>
+                                <h5 class="fw-bold text-white fs-6">@Localizer["The Rescuer"]</h5>
+                                <p class="text-gray-400 mb-0 lh-sm">@Localizer["Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data."]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    @* Card 2: Showroom *@
+                    <div class="col-md-6">
+                        <div class="card bg-dark-glass border-white-10 h-100 hover-lift">
+                            <div class="card-body p-4">
+                                <div class="icon-box-sm bg-success-subtle text-success rounded-3 me-3 mb-3">
+                                    <i class="fas fa-briefcase fa-lg"></i>
+                                </div>
+                                <h5 class="fw-bold text-white fs-6">@Localizer["The Showroom"]</h5>
+                                <p class="text-gray-400 mb-0 lh-sm">@Localizer["Select Persistent Mode to save your apps and files to the USB. Plug it into any machine to present your perfectly tailored environment, shortcuts, and Fluent UI."]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 @* App wall section *@
 <section class="bg-white">
     <div class="container-fluid">
