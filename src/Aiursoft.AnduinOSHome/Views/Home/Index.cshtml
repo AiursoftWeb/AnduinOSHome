@@ -583,6 +583,13 @@
               stroke: rgba(56, 189, 248, 0.05);
               stroke-width: 1;
             }
+            .laptop-lid {
+              transform-origin: 400px 315px;
+              transform-style: preserve-3d;
+              animation-name: lidOpen;
+              animation-duration: 12s;
+              animation-iteration-count: infinite;
+            }
             .usb-stick {
               animation: usbPlug 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
             }
@@ -591,7 +598,7 @@
             }
             .screen-logo {
               animation: logoBoot 12s ease-out infinite;
-              transform-origin: 400px 200px;
+              transform-origin: 400px 196px;
             }
             .status-light {
               animation: blink 12s infinite;
@@ -601,38 +608,46 @@
             }
             .desktop-shot {
               animation: desktopBoot 12s ease-out infinite;
-              transform-origin: 400px 184px;
+              transform-origin: 400px 196px;
             }
 
+            @@keyframes lidOpen {
+              0% { transform: perspective(1000px) rotateX(-90deg); }
+              4% { transform: perspective(1000px) rotateX(-90deg); animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }
+              12% { transform: perspective(1000px) rotateX(0deg); }
+              82% { transform: perspective(1000px) rotateX(0deg); animation-timing-function: linear; }
+              88% { transform: perspective(1000px) rotateX(-90deg); }
+              100% { transform: perspective(1000px) rotateX(-90deg); }
+            }
             @@keyframes usbPlug {
-              0%, 10% { transform: translateX(-40px); }
-              18%, 80% { transform: translateX(12px); }
-              88%, 100% { transform: translateX(-40px); }
+              0%, 13% { transform: translateX(-40px); }
+              18%, 78% { transform: translateX(12px); }
+              82%, 100% { transform: translateX(-40px); }
             }
             @@keyframes screenBoot {
-              0%, 33% { fill: #050505; }
-              34%, 36% { fill: url(#screen-glow); }
-              38%, 100% { fill: #050505; }
+              0%, 21% { fill: #050505; }
+              22%, 24% { fill: url(#screen-glow); }
+              81%, 100% { fill: #050505; }
             }
             @@keyframes logoBoot {
-              0%, 16% { opacity: 0; transform: scale(0.9); }
-              18%, 33% { opacity: 1; transform: scale(1); }
-              35%, 100% { opacity: 0; transform: scale(0.9); }
+              0%, 24% { opacity: 0; transform: scale(0.9); }
+              27%, 40% { opacity: 1; transform: scale(1); }
+              42%, 100% { opacity: 0; transform: scale(0.9); }
             }
             @@keyframes blink {
               0%, 18% { fill: #333; }
-              19%, 75% { fill: #0ea5e9; }
-              76%, 100% { fill: #333; }
+              19%, 78% { fill: #0ea5e9; }
+              79%, 100% { fill: #333; }
             }
             @@keyframes typeFade {
-              0%, 14% { opacity: 0; }
-              16%, 33% { opacity: 0.6; }
-              35%, 100% { opacity: 0; }
+              0%, 25% { opacity: 0; }
+              28%, 40% { opacity: 0.8; }
+              42%, 100% { opacity: 0; }
             }
             @@keyframes desktopBoot {
-              0%, 33% { opacity: 0; transform: scale(0.95); }
-              35%, 72% { opacity: 1; transform: scale(1); }
-              74%, 100% { opacity: 0; transform: scale(0.95); }
+              0%, 43% { opacity: 0; transform: scale(0.95); }
+              46%, 80% { opacity: 1; transform: scale(1); }
+              81%, 100% { opacity: 0; transform: scale(0.95); }
             }
           </style>
 
@@ -653,7 +668,7 @@
               </filter>
 
               <clipPath id="screen-clip">
-                <rect x="190" y="66" width="420" height="236" rx="4" />
+                <rect x="190" y="78" width="420" height="236" rx="4" />
               </clipPath>
             </defs>
 
@@ -664,37 +679,37 @@
               <path d="M 100 0 L 100 450 M 200 0 L 200 450 M 300 0 L 300 450 M 400 0 L 400 450 M 500 0 L 500 450 M 600 0 L 600 450 M 700 0 L 700 450" />
             </g>
 
-            <rect x="300" y="338" width="200" height="6" fill="#0f172a" />
+            <rect x="300" y="312" width="200" height="6" fill="#0f172a" />
 
-            <rect x="180" y="56" width="440" height="256" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2" />
+            <g class="laptop-lid">
+              <rect x="180" y="68" width="440" height="248" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2" />
+              <rect class="screen-content" x="190" y="78" width="420" height="236" rx="4" fill="#050505" />
 
-            <rect class="screen-content" x="190" y="66" width="420" height="236" rx="4" fill="#050505" />
+              <g class="screen-logo">
+                <image href="/logo.svg" x="360" y="156" width="80" height="80" />
+                <text x="400" y="266" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="24" text-anchor="middle" letter-spacing="1">AnduinOS</text>
 
-            <g class="screen-logo">
-              <image href="/logo.svg" x="360" y="140" width="80" height="80" />
-              <text x="400" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="24" text-anchor="middle" letter-spacing="1">AnduinOS</text>
-
-              <g class="typing-text">
-                <text x="200" y="90" fill="#0ea5e9" font-family="monospace" font-size="10">Booting kernel 7.0...</text>
-                <text x="200" y="105" fill="#0ea5e9" font-family="monospace" font-size="10">Mounting overlayfs... [OK]</text>
-                <text x="200" y="120" fill="#0ea5e9" font-family="monospace" font-size="10">Setting locale fr_FR.UTF-8... [OK]</text>
+                <g class="typing-text">
+                  <text x="200" y="106" fill="#0ea5e9" font-family="monospace" font-size="10">Booting kernel 7.0...</text>
+                  <text x="200" y="121" fill="#0ea5e9" font-family="monospace" font-size="10">Mounting overlayfs... [OK]</text>
+                  <text x="200" y="136" fill="#0ea5e9" font-family="monospace" font-size="10">Setting locale fr_FR.UTF-8... [OK]</text>
+                </g>
               </g>
 
+              <image class="desktop-shot" href="@Url.Content("~/sc.webp")" x="190" y="78" width="420" height="236" preserveAspectRatio="xMidYMid slice" clip-path="url(#screen-clip)" />
             </g>
 
-              <image class="desktop-shot" href="@Url.Content("~/sc.webp")" x="190" y="66" width="420" height="236" preserveAspectRatio="xMidYMid slice" clip-path="url(#screen-clip)" />
-
-            <rect x="125" y="316" width="550" height="10" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1" filter="url(#neon)"/>
+            <rect x="125" y="316" width="550" height="12" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1" filter="url(#neon)"/>
 
             <rect x="350" y="312" width="100" height="4" fill="#0f172a" />
 
-            <rect x="123" y="318" width="6" height="6" fill="#000" rx="1" />
+            <rect x="123" y="319" width="6" height="6" fill="#000" rx="1" />
 
             <g class="usb-stick">
-              <rect x="111" y="318" width="12" height="6" fill="#cbd5e1" />
-              <rect x="50" y="314" width="60" height="14" rx="2" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" filter="url(#neon)" />
-              <circle cx="95" cy="321" r="2" class="status-light" filter="url(#neon)" />
-              <text x="60" y="323" fill="#475569" font-family="sans-serif" font-size="8" font-weight="bold">Live USB</text>
+              <rect x="111" y="319" width="12" height="6" fill="#cbd5e1" />
+              <rect x="50" y="315" width="60" height="14" rx="2" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" filter="url(#neon)" />
+              <circle cx="95" cy="322" r="2" class="status-light" filter="url(#neon)" />
+              <text x="60" y="324" fill="#475569" font-family="sans-serif" font-size="8" font-weight="bold">Live USB</text>
             </g>
           </svg>
         </div>
