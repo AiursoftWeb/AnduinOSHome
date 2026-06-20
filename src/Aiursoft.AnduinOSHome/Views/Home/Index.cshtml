@@ -584,11 +584,13 @@
               stroke-width: 1;
             }
             .laptop-lid {
-              transform-origin: 400px 315px;
+              transform-origin: 400px 312px;
               transform-style: preserve-3d;
-              animation-name: lidOpen;
-              animation-duration: 12s;
-              animation-iteration-count: infinite;
+              animation: lidOpen 12s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+            }
+            /* 新增：B 面（屏幕侧）的内容隐现控制，解决纸片人穿模问题 */
+            .screen-b-cover {
+              animation: bCoverFade 12s infinite;
             }
             .usb-stick {
               animation: usbPlug 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -611,18 +613,32 @@
               transform-origin: 400px 196px;
             }
 
+            /* --- 物理级透视翻盖动画 --- */
             @@keyframes lidOpen {
-              0% { transform: perspective(1000px) rotateX(-90deg); }
-              4% { transform: perspective(1000px) rotateX(-90deg); animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }
-              12% { transform: perspective(1000px) rotateX(0deg); }
-              82% { transform: perspective(1000px) rotateX(0deg); animation-timing-function: linear; }
-              88% { transform: perspective(1000px) rotateX(-90deg); }
-              100% { transform: perspective(1000px) rotateX(-90deg); }
+              /* -88deg 完美趴平在键盘上 */
+              0% { transform: perspective(1200px) rotateX(-88deg); }
+              4% { transform: perspective(1200px) rotateX(-88deg); animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1); }
+              /* 掀开时后仰到 2deg */
+              12% { transform: perspective(1200px) rotateX(2deg); }
+              82% { transform: perspective(1200px) rotateX(2deg); animation-timing-function: ease-in; }
+              86% { transform: perspective(1200px) rotateX(-88deg); }
+              100% { transform: perspective(1200px) rotateX(-88deg); }
             }
+
+            /* 伴随翻盖，B 面（屏幕内容）在合盖时隐身，露出底层的 A 面金属外壳 */
+            @@keyframes bCoverFade {
+              0%, 6% { opacity: 0; }
+              10%, 82% { opacity: 1; }
+              86%, 100% { opacity: 0; }
+            }
+
+            /* U盘 X 轴滑动，完美对接左侧斜边 (X≈156) */
             @@keyframes usbPlug {
-              0%, 13% { transform: translateX(-40px); }
-              18%, 78% { transform: translateX(12px); }
-              82%, 100% { transform: translateX(-40px); }
+              0%, 11% { transform: translateX(-40px); opacity: 0; }
+              14% { opacity: 1; }
+              18%, 78% { transform: translateX(-3px); opacity: 1; }
+              82% { opacity: 1; }
+              85%, 100% { transform: translateX(-40px); opacity: 0; }
             }
             @@keyframes screenBoot {
               0%, 21% { fill: #050505; }
@@ -654,9 +670,14 @@
           <svg viewBox="0 0 800 450" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="screen-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0052D4" />
-                <stop offset="50%" stop-color="#2a4b77" />
-                <stop offset="100%" stop-color="#020617" />
+                <stop offset="0%" stop-color="#0a1628" />
+                <stop offset="50%" stop-color="#0d1f3c" />
+                <stop offset="100%" stop-color="#050d18" />
+              </linearGradient>
+
+              <linearGradient id="metal-cover" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#1e293b" />
+                <stop offset="100%" stop-color="#0f172a" />
               </linearGradient>
 
               <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
@@ -679,37 +700,60 @@
               <path d="M 100 0 L 100 450 M 200 0 L 200 450 M 300 0 L 300 450 M 400 0 L 400 450 M 500 0 L 500 450 M 600 0 L 600 450 M 700 0 L 700 450" />
             </g>
 
-            <rect x="300" y="312" width="200" height="6" fill="#0f172a" />
+            <g class="laptop-base">
+              <path d="M 180 312 L 620 312 L 685 420 L 115 420 Z" fill="#0f172a" stroke="#1e293b" stroke-width="2" />
+              <path d="M 200 325 L 600 325 L 629 380 L 171 380 Z" fill="#020617" />
 
-            <g class="laptop-lid">
-              <rect x="180" y="68" width="440" height="248" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2" />
-              <rect class="screen-content" x="190" y="78" width="420" height="236" rx="4" fill="#050505" />
+              <line x1="194.7" y1="335" x2="605.3" y2="335" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="188.8" y1="346" x2="611.2" y2="346" stroke="#0f172a" stroke-width="2" />
+              <line x1="182.4" y1="358" x2="617.6" y2="358" stroke="#0f172a" stroke-width="2.5" />
+              <line x1="175.5" y1="371" x2="624.5" y2="371" stroke="#0f172a" stroke-width="3" />
 
-              <g class="screen-logo">
-                <image href="/logo.svg" x="360" y="156" width="80" height="80" />
-                <text x="400" y="266" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="24" text-anchor="middle" letter-spacing="1">AnduinOS</text>
+              <line x1="400" y1="325" x2="400" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="350" y1="325" x2="342.7" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="450" y1="325" x2="457.3" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="300" y1="325" x2="285.3" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="500" y1="325" x2="514.7" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="250" y1="325" x2="228" y2="380" stroke="#0f172a" stroke-width="1.5" />
+              <line x1="550" y1="325" x2="572" y2="380" stroke="#0f172a" stroke-width="1.5" />
 
-                <g class="typing-text">
-                  <text x="200" y="106" fill="#0ea5e9" font-family="monospace" font-size="10">Booting kernel 7.0...</text>
-                  <text x="200" y="121" fill="#0ea5e9" font-family="monospace" font-size="10">Mounting overlayfs... [OK]</text>
-                  <text x="200" y="136" fill="#0ea5e9" font-family="monospace" font-size="10">Setting locale fr_FR.UTF-8... [OK]</text>
-                </g>
-              </g>
-
-              <image class="desktop-shot" href="@Url.Content("~/sc.webp")" x="190" y="78" width="420" height="236" preserveAspectRatio="xMidYMid slice" clip-path="url(#screen-clip)" />
+              <path d="M 340 388 L 460 388 L 463.7 415 L 336.3 415 Z" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+              <path d="M 115 420 L 685 420 L 685 424 C 685 428 680 430 670 430 L 130 430 C 120 430 115 428 115 424 Z" fill="#020617" />
+              <path d="M 130 430 L 670 430" stroke="#0ea5e9" stroke-width="2" filter="url(#neon)" opacity="0.8" />
             </g>
 
-            <rect x="125" y="316" width="550" height="12" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1" filter="url(#neon)"/>
+            <rect x="300" y="310" width="200" height="4" rx="2" fill="#020617" />
 
-            <rect x="350" y="312" width="100" height="4" fill="#0f172a" />
+            <g class="laptop-lid">
+              <rect x="180" y="68" width="440" height="248" rx="10" fill="url(#metal-cover)" stroke="#1e293b" stroke-width="2" />
+              <path d="M 182 70 L 618 70 C 622 70 626 74 626 78 L 626 120 L 182 120 Z" fill="rgba(255,255,255,0.02)" />
 
-            <rect x="123" y="319" width="6" height="6" fill="#000" rx="1" />
+              <g class="screen-b-cover">
+                <rect x="180" y="68" width="440" height="248" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2" />
+                <rect class="screen-content" x="190" y="78" width="420" height="236" rx="4" fill="#050505" />
+
+                <g class="screen-logo">
+                  <image href="/logo.svg" x="360" y="156" width="80" height="80" />
+                  <text x="400" y="266" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="700" font-size="24" text-anchor="middle" letter-spacing="1">AnduinOS</text>
+
+                  <g class="typing-text">
+                    <text x="200" y="106" fill="#0ea5e9" font-family="monospace" font-size="10">Booting kernel 7.0...</text>
+                    <text x="200" y="121" fill="#0ea5e9" font-family="monospace" font-size="10">Mounting overlayfs... [OK]</text>
+                    <text x="200" y="136" fill="#0ea5e9" font-family="monospace" font-size="10">Setting locale fr_FR.UTF-8... [OK]</text>
+                  </g>
+                </g>
+
+                <image class="desktop-shot" href="@Url.Content("~/sc.webp")" x="190" y="78" width="420" height="236" preserveAspectRatio="xMidYMid slice" clip-path="url(#screen-clip)" />
+              </g>
+            </g>
 
             <g class="usb-stick">
-              <rect x="111" y="319" width="12" height="6" fill="#cbd5e1" />
-              <rect x="50" y="315" width="60" height="14" rx="2" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" filter="url(#neon)" />
-              <circle cx="95" cy="322" r="2" class="status-light" filter="url(#neon)" />
-              <text x="60" y="324" fill="#475569" font-family="sans-serif" font-size="8" font-weight="bold">Live USB</text>
+              <path d="M 160 348 L 175 348 L 175 354 L 160 354 Z" fill="#cbd5e1" />
+              <path d="M 160 349 L 175 349 L 175 351 L 160 351 Z" fill="#94a3b8" />
+              
+              <rect x="100" y="345" width="60" height="12" rx="2" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5" filter="url(#neon)" />
+              <circle cx="150" cy="351" r="2" class="status-light" filter="url(#neon)" />
+              <text x="108" y="353" fill="#475569" font-family="sans-serif" font-size="7" font-weight="bold" letter-spacing="1">LIVE USB</text>
             </g>
           </svg>
         </div>
