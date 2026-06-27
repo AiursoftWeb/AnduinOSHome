@@ -23,14 +23,11 @@ public record VersionInfo(
     DateOnly? EndsSupport,
     VersionStatus Status,
     string LanguageCodes,
-    bool SingleIso,
     string Kernel,
     string Gnome,
     string UbuntuBase,
     string? SpecialNote
 );
-
-public record LanguageInfo(string Code, string Name);
 
 public static class VersionData
 {
@@ -51,7 +48,6 @@ public static class VersionData
             EndsSupport:     new DateOnly(2031, 4, 1),
             Status:          VersionStatus.Active,
             LanguageCodes:   "",
-            SingleIso:       true,
             Kernel:          "7.0",
             Gnome:           "50",
             UbuntuBase:      "26.04",
@@ -65,7 +61,7 @@ public static class VersionData
             EndsSupport:     new DateOnly(2026, 7, 1),
             Status:          VersionStatus.EOL,
             LanguageCodes:   WithRoRo,
-            SingleIso:       false,
+
             Kernel:          "6.17",
             Gnome:           "49",
             UbuntuBase:      "25.10",
@@ -79,7 +75,7 @@ public static class VersionData
             EndsSupport:     new DateOnly(2026, 1, 1),
             Status:          VersionStatus.EOL,
             LanguageCodes:   WithEnGb,
-            SingleIso:       false,
+
             Kernel:          "6.11",
             Gnome:           "48",
             UbuntuBase:      "25.04",
@@ -93,7 +89,7 @@ public static class VersionData
             EndsSupport:     new DateOnly(2025, 7, 1),
             Status:          VersionStatus.EOL,
             LanguageCodes:   WithEnGb,
-            SingleIso:       false,
+
             Kernel:          "6.8",
             Gnome:           "47",
             UbuntuBase:      "24.10",
@@ -107,7 +103,7 @@ public static class VersionData
             EndsSupport:     new DateOnly(2029, 4, 1),
             Status:          VersionStatus.Active,
             LanguageCodes:   WithEnGb,
-            SingleIso:       false,
+
             Kernel:          "6.14",
             Gnome:           "46",
             UbuntuBase:      "24.04",
@@ -121,7 +117,7 @@ public static class VersionData
             EndsSupport:     new DateOnly(2026, 6, 30),
             Status:          VersionStatus.EOL,
             LanguageCodes:   Base20,
-            SingleIso:       false,
+
             Kernel:          "6.8",
             Gnome:           "46",
             UbuntuBase:      "24.04",

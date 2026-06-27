@@ -206,7 +206,7 @@
                                      data-version="@v.Version"
                                      data-latest="@v.LatestPatch"
                                      data-languages="@v.LanguageCodes"
-                                     data-single-iso="false">
+>
                                     <label class="form-label fw-semibold">@Localizer["Language"]</label>
                                     <select class="form-select form-select-sm mb-3 history-lang-select"
                                             style="max-width: 320px;">
@@ -256,10 +256,12 @@
 
 <vc:marketing-footer></vc:marketing-footer>
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/js/history.js" asp-append-version="true" defer></script>
 }
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
 }
