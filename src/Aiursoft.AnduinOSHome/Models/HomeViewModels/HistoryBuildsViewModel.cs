@@ -26,7 +26,8 @@ public record VersionInfo(
     string Kernel,
     string Gnome,
     string UbuntuBase,
-    string? SpecialNote
+    string? SpecialNote,
+    bool ProvidesIso = false
 );
 
 public static class VersionData
@@ -107,7 +108,8 @@ public static class VersionData
             Kernel:          "6.14",
             Gnome:           "46",
             UbuntuBase:      "24.04",
-            SpecialNote:     null
+            SpecialNote:     null,
+            ProvidesIso:     true
         ),
         new(
             Version:         "1.0",

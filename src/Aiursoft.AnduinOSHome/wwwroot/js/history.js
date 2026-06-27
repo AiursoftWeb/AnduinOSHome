@@ -85,17 +85,19 @@ function renderDownloadLinks(container, langCode) {
         base = 'https://download.anduinos.com/' + version + '/' + latest + '/AnduinOS-' + latest + '-' + langCode;
     }
 
+    var providesIso = container.dataset.providesIso === 'true';
+
+    // ISO button
+    if (providesIso) {
+        appendLink(linksDiv, base + '.iso', 'ISO', 'btn-primary');
+    }
+
     // Torrent button
-    appendLink(linksDiv, base + '.torrent', 'Torrent', 'btn-primary');
+    appendLink(linksDiv, base + '.torrent', 'Torrent',
+        providesIso ? 'btn-outline-primary' : 'btn-primary');
 
     // Checksum button
-    var checksumLabel = 'Checksum';
-    if (!singleIso && languageMap[langCode]) {
-        // For known languages we could show a localized label, but since
-        // the language map only stores name, we keep a simple "Checksum" label.
-        // The torrent + checksum labels match the pattern users expect.
-    }
-    appendLink(linksDiv, base + '.sha256', checksumLabel, 'btn-outline-primary');
+    appendLink(linksDiv, base + '.sha256', 'Checksum', 'btn-outline-primary');
 }
 
 function appendLink(container, href, label, btnClass) {

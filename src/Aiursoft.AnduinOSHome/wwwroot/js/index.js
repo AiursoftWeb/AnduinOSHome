@@ -247,11 +247,11 @@ function renderDownloadLinks({ version, latest, supportTorrent, supportHttps, si
         checksumLabel = lang.checksumLabel;
     }
 
-    if (supportTorrent) {
-        appendLink(`${base}.torrent`, torrentLabel, 'btn-primary');
-    }
     if (supportHttps) {
-        appendLink(`${base}.iso`, directLabel, 'btn-outline-primary');
+        appendLink(`${base}.iso`, directLabel, 'btn-primary');
+    }
+    if (supportTorrent) {
+        appendLink(`${base}.torrent`, torrentLabel, 'btn-outline-primary');
     }
     appendLink(`${base}.sha256`, checksumLabel, 'btn-outline-primary');
 }
