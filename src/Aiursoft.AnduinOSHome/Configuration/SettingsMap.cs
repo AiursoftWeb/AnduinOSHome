@@ -34,7 +34,7 @@ public class SettingsMap
             Name = Localizer["Brand Name"],
             Description = Localizer["The brand name displayed in the footer."],
             Type = SettingType.Text,
-            DefaultValue = "Anduin"
+            DefaultValue = "Aiursoft"
         },
         new GlobalSettingDefinition
         {
@@ -42,7 +42,7 @@ public class SettingsMap
             Name = Localizer["Brand Home URL"],
             Description = Localizer[" The link to the brand's home page."],
             Type = SettingType.Text,
-            DefaultValue = "https://anduin.aiursoft.com/"
+            DefaultValue = "https://www.aiursoft.com/"
         },
         new GlobalSettingDefinition
         {

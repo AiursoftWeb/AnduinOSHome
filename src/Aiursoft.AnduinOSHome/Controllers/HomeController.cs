@@ -31,4 +31,10 @@ public class HomeController : Controller
         return this.SimpleView(new ThankYouViewModel());
     }
 
+    [Route("/HistoryBuilds.html")]
+    public IActionResult HistoryBuilds()
+    {
+        return this.SimpleView(new HistoryBuildsViewModel());
+    }
+
 }

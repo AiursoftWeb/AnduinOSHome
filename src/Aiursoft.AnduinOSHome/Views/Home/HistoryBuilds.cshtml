@@ -1,0 +1,265 @@
+@using Aiursoft.AnduinOSHome.Models.HomeViewModels
+@using Newtonsoft.Json
+
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<div class="container mt-5">
+    <main role="main" class="pb-3">
+
+        @* ── Back link ── *@
+        <div class="mb-4">
+            <a href="/" class="text-decoration-none">
+                <i class="fas fa-arrow-left me-1"></i>@Localizer["Back to latest version (2.0)"]
+            </a>
+        </div>
+
+        @* ── Header ── *@
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">@Localizer["Historical Builds"]</h1>
+
+<div class="alert alert-warning alert-outline alert-dismissible" role="alert">
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+<div class="alert-icon">
+<i class="far fa-fw fa-bell"></i>
+</div>
+<div class="alert-message">
+@Localizer["These are legacy versions of AnduinOS. We strongly recommend downloading the latest version instead."]
+</div>
+</div>
+
+
+        </div>
+
+        @* ── Version Release Schedule ── *@
+        <div class="mb-5">
+            <h2 class="h4 mb-3">@Localizer["Release Schedule"]</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>@Localizer["Version"]</th>
+                            <th>@Localizer["Release Date"]</th>
+                            <th>@Localizer["Based On"]</th>
+                            <th>@Localizer["End of Standard Support"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var v in HistoryBuildsViewModel.AllVersions)
+                        {
+                            <tr>
+                                <td>
+                                    <strong>AnduinOS @v.Version</strong>
+                                    @if (v.Status == VersionStatus.Active)
+                                    {
+                                        <span class="badge bg-success ms-2 extra-small">@Localizer["Active"]</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger ms-2 extra-small">@Localizer["EOL"]</span>
+                                    }
+                                </td>
+                                <td>@v.Released.ToString("yyyy-MM-dd")</td>
+                                <td>@v.Codename</td>
+                                <td>@(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "—")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        @* ── Download Accordion Cards ── *@
+        <h2 class="h4 mb-3">@Localizer["Downloads for Historical Versions"]</h2>
+        <p class="text-muted mb-4">
+            @Localizer["Expand a version to see details and download torrent files. Only torrents and checksums are available for historical versions."]
+        </p>
+
+        <div class="accordion" id="historyAccordion">
+            @foreach (var v in HistoryBuildsViewModel.AllVersions)
+            {
+                var isCurrent = v.Version == "2.0";
+                var collapseId = $"collapse{v.Version.Replace(".", "")}";
+                var headingId = $"heading{v.Version.Replace(".", "")}";
+
+                <div class="card border mb-3">
+                    @if (isCurrent)
+                    {
+                        @* ── 2.0: entire header links to home page ── *@
+                        <a href="/"
+                           class="card-header text-decoration-none d-flex justify-content-between align-items-center history-card-header"
+                           style="cursor: pointer;">
+                            <div>
+                                <strong>AnduinOS @v.Version</strong>
+                                <span class="ms-2 text-muted">@v.Codename</span>
+                                @if (v.Version == "2.0" || v.Version == "1.1")
+                                {
+                                    <span class="badge bg-primary ms-2 extra-small">LTS</span>
+                                }
+                            </div>
+                            <span class="badge bg-success">@Localizer["Active"] &mdash; @Localizer["Go to latest version"]</span>
+                        </a>
+                    }
+                    else
+                    {
+                        @* ── 1.x: collapsible accordion header ── *@
+                        <div class="card-header cursor-pointer d-flex justify-content-between align-items-center history-card-header"
+                             id="@headingId"
+                             data-bs-toggle="collapse"
+                             data-bs-target="#@collapseId"
+                             aria-expanded="false"
+                             aria-controls="@collapseId"
+                             role="button">
+                            <div>
+                                <strong>AnduinOS @v.Version</strong>
+                                <span class="ms-2 text-muted">@v.Codename</span>
+                                @if (v.Version == "1.1" || v.Version == "1.0")
+                                {
+                                    <span class="badge bg-primary ms-2 extra-small">LTS</span>
+                                }
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                @if (v.Status == VersionStatus.Active)
+                                {
+                                    <span class="badge bg-success">@Localizer["Active"]</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">@Localizer["EOL"]</span>
+                                }
+                                <i class="fas fa-chevron-down ms-1 accordion-chevron"></i>
+                            </div>
+                        </div>
+                    }
+
+                    @if (!isCurrent)
+                    {
+                        <div id="@collapseId" class="collapse" aria-labelledby="@headingId"
+                             data-bs-parent="#historyAccordion">
+                            <div class="card-body">
+
+                                @* ── EOL warning ── *@
+                                @if (v.Status == VersionStatus.EOL)
+                                {
+                                    <div class="alert alert-danger alert-outline alert-dismissible" role="alert">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <div class="alert-icon">
+                                            <i class="far fa-fw fa-times-circle"></i>
+                                        </div>
+                                        <div class="alert-message">
+                                            <strong>@Localizer["This version has reached End of Life."]</strong>
+                                            @Localizer["It no longer receives security updates or bug fixes. We strongly recommend upgrading to a supported version."]
+                                        </div>
+                                    </div>
+                                }
+
+                                @* ── Special note (e.g. 1.3 no ISO) ── *@
+                                @if (!string.IsNullOrEmpty(v.SpecialNote))
+                                {
+                                    <div class="alert alert-warning alert-outline alert-dismissible" role="alert">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <div class="alert-icon">
+                                            <i class="far fa-fw fa-bell"></i>
+                                        </div>
+                                        <div class="alert-message">@Localizer[v.SpecialNote]</div>
+                                    </div>
+                                }
+
+                                @* ── Version details grid ── *@
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <dl class="row mb-0">
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["Released"]</dt>
+                                            <dd class="col-sm-7">@v.Released.ToString("yyyy-MM-dd")</dd>
+
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["Ubuntu Base"]</dt>
+                                            <dd class="col-sm-7">Ubuntu @v.UbuntuBase</dd>
+
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["Kernel"]</dt>
+                                            <dd class="col-sm-7">Linux @v.Kernel</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <dl class="row mb-0">
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["GNOME"]</dt>
+                                            <dd class="col-sm-7">GNOME @v.Gnome</dd>
+
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["Support Status"]</dt>
+                                            <dd class="col-sm-7">
+                                                @if (v.Status == VersionStatus.Active)
+                                                {
+                                                    <span class="text-success">@Localizer["Supported until"] @(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "")</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-danger">@Localizer["End of Life (since"] @(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "")@Localizer[")"]</span>
+                                                }
+                                            </dd>
+
+                                            <dt class="col-sm-5 text-muted fw-normal">@Localizer["Latest Patch"]</dt>
+                                            <dd class="col-sm-7"><strong>@v.LatestPatch</strong></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+                                @* ── Language selector + Download buttons ── *@
+                                <div class="border-top pt-3 history-download-container"
+                                     data-version="@v.Version"
+                                     data-latest="@v.LatestPatch"
+                                     data-languages="@v.LanguageCodes"
+                                     data-single-iso="false">
+                                    <label class="form-label fw-semibold">@Localizer["Language"]</label>
+                                    <select class="form-select form-select-sm mb-3 history-lang-select"
+                                            style="max-width: 320px;">
+                                    </select>
+                                    <div class="d-flex flex-wrap gap-2 history-download-links">
+                                        @* Populated by JS *@
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+
+        @* ── Understanding AnduinOS Versions ── *@
+        <section class="mt-5 pt-4 border-top">
+            <h2 class="h3 mb-4">@Localizer["Understanding AnduinOS Versions"]</h2>
+
+            <h5>@Localizer["Version Numbering"]</h5>
+            <p>@Localizer["Before AnduinOS was restructured, its Major Version was always 1."]<sup>1</sup></p>
+            <p>@Localizer["Each time AnduinOS updates its corresponding Ubuntu code name, the Minor Version is incremented by 1. For example, Noble is 1.1, and Oracular is 1.2. In the future, AnduinOS will continue to align with new Ubuntu code names as they are introduced."]</p>
+
+            <h5>@Localizer["Support Lifecycle"]</h5>
+            <p>@Localizer["After AnduinOS is released, all package security updates and standard support will follow Canonical's support timeline for Ubuntu. Therefore, the corresponding LTS versions can receive up to five years of standard support."]<sup>2</sup></p>
+
+            <h5>@Localizer["LTS vs Standard Releases"]</h5>
+            <p>@Localizer["Like Ubuntu, AnduinOS offers both LTS versions and short-term support versions. We recommend regular users download the latest LTS version, which is currently 2.0."]</p>
+
+            <h5>@Localizer["Patch Versions"]</h5>
+            <p>@Localizer["Each Minor Version, such as 1.1, will continue to receive bug fix updates. These updates increase its Patch Version, for example, upgrading from 1.1.0 to 1.1.1. We always recommend users download the latest Patch Version within their chosen minor version."]</p>
+
+            <div class="text-muted small mt-4">
+                <p class="mb-1"><sup>1</sup> @Localizer["AnduinOS 2.0 is the first release to advance the Major Version, introducing the Apkg package manager and a restructured architecture."]</p>
+                <p class="mb-1"><sup>2</sup> @Localizer["Standard support duration is determined by Canonical's support timeline for the corresponding Ubuntu release."]</p>
+            </div>
+        </section>
+
+        @* ── Hidden language data for JS ── *@
+        <div id="history-lang-data" class="d-none"
+             data-all-languages='@JsonConvert.SerializeObject(HistoryBuildsViewModel.AllLanguages)'>
+        </div>
+
+    </main>
+</div>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@section scripts {
+    <script src="~/js/history.js" asp-append-version="true" defer></script>
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+}

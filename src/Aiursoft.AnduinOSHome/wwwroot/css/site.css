@@ -318,3 +318,27 @@ nav.navbar{
     line-height: 1.2;
     margin-top: 4px;
 }
+
+/* HistoryBuilds page */
+.history-card-header {
+    transition: background-color 0.2s ease;
+}
+.history-card-header:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.history-card-header a {
+    color: inherit;
+}
+.history-card-header a:hover {
+    color: inherit;
+}
+
+/* Rotate chevron when accordion is open */
+#historyAccordion .card-header[aria-expanded="true"] .accordion-chevron {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
+#historyAccordion .card-header[aria-expanded="false"] .accordion-chevron {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+}
