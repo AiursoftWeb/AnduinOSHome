@@ -86,6 +86,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Privacy Statement"];
         _ = localizer["Terms of Service"];
         _ = localizer["Thank you for downloading AnduinOS!"];
+    
+        _ = localizer["Historical Builds"];
+        _ = localizer["Migrate from AnduinOS 1.x"];
     }
 
     public void InjectSimple(

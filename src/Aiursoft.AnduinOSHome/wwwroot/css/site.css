@@ -48,8 +48,8 @@ img[gallery] {
     transform: scale(1.15);
     z-index: 1;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-left: -14px;
-    margin-right: -14px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .middle-card:hover {
@@ -57,8 +57,8 @@ img[gallery] {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.row.py-4 .col-sm-4:nth-child(1),
-.row.py-4 .col-sm-4:nth-child(3) {
+.row.py-4 .col-sm-3:nth-child(1),
+.row.py-4 .col-sm-3:nth-child(3) {
     z-index: 0;
 }
 
@@ -342,3 +342,7 @@ nav.navbar{
     transform: rotate(0deg);
     transition: transform 0.2s ease;
 }
+
+/* Opacity utilities */
+.opacity-10 { opacity: 0.1; }
+.opacity-20 { opacity: 0.2; }

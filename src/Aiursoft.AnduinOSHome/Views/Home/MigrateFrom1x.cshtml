@@ -1,0 +1,388 @@
+<vc:marketing-navbar></vc:marketing-navbar>
+
+@* ── Hero Banner ── *@
+<section class="landing-intro text-bg-dark pt-5 pt-lg-6 pb-5 pb-lg-7">
+    <div class="landing-intro-content container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-7 mx-auto text-center">
+                <div class="mb-3">
+                    <a href="/" class="text-decoration-none text-white-50">
+                        <i class="fas fa-arrow-left me-1"></i>@Localizer["Back to latest version (2.0)"]
+                    </a>
+                </div>
+                <h1 class="my-4 text-white" style="font-size: 3rem;">
+                    @Localizer["Upgrade to"]
+                    <span class="text-primary">@Localizer["AnduinOS 2.0"]</span>
+                </h1>
+                <p class="text-lg text-white-50 mb-4">
+                    @Localizer["Follow this guide to upgrade from AnduinOS 1.4.x to 2.0.0 Resolute Raccoon."]
+                </p>
+                <div class="d-inline-block bg-dark border border-secondary rounded-3 px-4 py-3">
+                    <code class="text-success fs-5" style="user-select: all;">$ do_anduinos_upgrade</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Before You Begin ── *@
+<section class="py-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Preparation"]</span>
+            <h2 class="h1">@Localizer["Before You Begin"]</h2>
+            <p class="text-muted fs-lg">@Localizer["A few things to check before starting the upgrade."]</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-save fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["Backup your data"]</h5>
+                        <p class="card-text text-muted">@Localizer["Although the upgrade is safe, always back up important files before major system changes."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-terminal fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["Use tmux or screen"]</h5>
+                        <p class="card-text text-muted">@Localizer["The desktop will restart during upgrade. Run inside tmux so the terminal survives GUI restarts."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-plug fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["Connect to power"]</h5>
+                        <p class="card-text text-muted">@Localizer["The upgrade may take 30-60 minutes. Plug in to avoid interruptions."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-wifi fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["Stable internet connection"]</h5>
+                        <p class="card-text text-muted">@Localizer["Packages will be downloaded during upgrade. A stable connection is required."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-check-circle fa-2x text-success"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["On AnduinOS 1.4.2"]</h5>
+                        <p class="card-text text-muted">@Localizer["Make sure you are on the latest 1.4.x version. Run the upgrade tool to update first if needed."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-hard-drive fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="card-title">@Localizer["At least 3 GB free space"]</h5>
+                        <p class="card-text text-muted">@Localizer["The upgrade needs space for package downloads and backups. Ensure you have enough free space in /."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── One Command ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Upgrade"]</span>
+                <h2 class="h1 mb-3">@Localizer["One Command to Upgrade"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["Run this single command in your terminal. The upgrade is fully automated — no manual intervention needed."]
+                </p>
+
+                <div class="row align-items-center g-4 mb-3">
+                    <div class="col-lg-6">
+                        <div class="card bg-dark border-0 shadow-lg">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="badge bg-secondary">terminal</span>
+                                    <span class="text-white-50 small">@Localizer["Run as root or with sudo"]</span>
+                                </div>
+                                <div class="bg-black rounded-3 p-4 text-start">
+                                    <code class="text-success fs-4" style="user-select: all;">$ do_anduinos_upgrade</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="~/migrate/running_anduinos_upgrade.png"
+                             alt="Running do_anduinos_upgrade in terminal"
+                             class="img-fluid rounded-3 shadow-lg"
+                             loading="lazy" />
+                    </div>
+                </div>
+                <p class="text-muted small">
+                    <i class="fas fa-info-circle me-1"></i>
+                    @Localizer["If the command is not found, run the system upgrade tool first to update to 1.4.2."]
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── What Happens During Upgrade ── *@
+<section class="py-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Process"]</span>
+            <h2 class="h1">@Localizer["What Happens During Upgrade"]</h2>
+            <p class="text-muted fs-lg">@Localizer["The upgrade script handles everything automatically. Here is what it does."]</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <ol class="list-group list-group-numbered list-group-flush">
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["System check & preparation"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Verifies disk space, configures unattended mode, and ensures the system is fully updated."]</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["Backup APT sources"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Safely backs up your current APT sources and temporarily removes PPAs to ensure a clean upgrade."]</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["Switch Ubuntu base"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Moves from Ubuntu 25.10 (plucky) to Ubuntu 26.04 (resolute) with optimized mirror selection."]</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["System dist-upgrade"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Performs a full distribution upgrade with retry logic, DKMS cleanup, and safe fallback handling."]</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["Install AnduinOS 2.0 packages"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Installs the GNOME 50 desktop, Apkg package manager, AnduinOS themes, fonts, wallpapers, and core applications."]</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex align-items-start gap-3 py-4 border-0">
+                        <div>
+                            <h5 class="mb-1">@Localizer["Restore PPAs & cleanup"]</h5>
+                            <p class="text-muted mb-0">@Localizer["Restores your PPAs (upgrading those compatible with resolute), removes orphans, and cleans the package cache."]</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── After Upgrade ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Next Steps"]</span>
+            <h2 class="h1">@Localizer["After the Upgrade"]</h2>
+            <p class="text-muted fs-lg">@Localizer["A few things to do once the upgrade completes."]</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-rotate-right fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5>@Localizer["Reboot your system"]</h5>
+                        <p class="text-muted">@Localizer["A reboot is required to load the new kernel and complete the upgrade."]</p>
+                        <div class="bg-dark rounded-3 p-3 text-start mt-3">
+                            <code class="text-success" style="user-select: all;">$ sudo reboot</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-arrows-rotate fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5>@Localizer["Update your packages"]</h5>
+                        <p class="text-muted">@Localizer["Run a full upgrade to ensure all packages are at the latest resolute versions."]</p>
+                        <div class="bg-dark rounded-3 p-3 text-start mt-3">
+                            <code class="text-success" style="user-select: all;">$ sudo apt upgrade</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success-subtle" style="width: 64px; height: 64px;">
+                                <i class="fas fa-circle-check fa-2x text-success"></i>
+                            </div>
+                        </div>
+                        <h5>@Localizer["Verify your version"]</h5>
+                        <p class="text-muted">@Localizer["Check that your system now reports AnduinOS 2.0.0."]</p>
+                        <div class="bg-dark rounded-3 p-3 text-start mt-3">
+                            <code class="text-success" style="user-select: all;">$ cat /etc/os-release</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── What's New in 2.0 ── *@
+<section class="py-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Features"]</span>
+            <h2 class="h1">@Localizer["What's New in AnduinOS 2.0"]</h2>
+            <p class="text-muted fs-lg">@Localizer["Resolute Raccoon brings major improvements across the entire system."]</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-box fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Apkg Package Manager"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["Modern declarative package management replacing traditional apt workflows."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-desktop fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["GNOME 50 Desktop"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["The latest GNOME desktop with improved performance, smoother animations, and new features."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-microchip fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Linux Kernel 7.0"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["Latest hardware support with improved scheduler, better power efficiency, and filesystem performance."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-wand-magic-sparkles fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Fresh Look & Performance"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["New wallpapers, refined themes, optimized performance tuning, and up-to-date software packages across the board."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-shield-halved fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["LTS Support until 2031"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["Five years of security updates and package maintenance — supported until April 2031."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary-subtle" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i class="fas fa-palette fa-lg text-primary"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Appearance & Firewall Apps"]</h5>
+                        </div>
+                        <p class="text-muted mb-0">@Localizer["Brand-new AnduinOS Appearance app for theming and AnduinOS Firewall app for easy network security management."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Still have questions? ── *@
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h3 class="mb-3">@Localizer["Need help?"]</h3>
+        <p class="text-muted fs-lg mb-4">
+            @Localizer["If you encounter any issues during the upgrade, we're here to help."]
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://docs.anduinos.com" target="_blank" class="btn btn-outline-primary btn-lg btn-pill">
+                <i class="fas fa-book me-1"></i>@Localizer["Documentation"]
+            </a>
+            <a href="https://github.com/Anduin2017/AnduinOS/discussions" target="_blank" class="btn btn-outline-primary btn-lg btn-pill">
+                <i class="fas fa-comments me-1"></i>@Localizer["Community Support"]
+            </a>
+        </div>
+    </div>
+</section>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+}

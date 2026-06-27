@@ -248,7 +248,7 @@
                 <p class="text-lg text-white-50">@Localizer["AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux."]</p>
 
                 <div class="my-4">
-                    <span class="badge badge-subtle-primary p-1">v1.4.2</span>
+                    <span class="badge badge-subtle-primary p-1">v2.0.0</span>
                 </div>
                 <div class="my-4">
                     <a class="btn btn-primary btn-lg btn-pill" href="#download-links">@Localizer["Download"]</a>
@@ -291,7 +291,7 @@
                     </div>
                     <div class="flex-grow-1">
                         <h4 class="mt-0">@Localizer["Ready to use"]</h4>
-                        <p class="fs-lg">@Localizer["The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations."]</p>
+                        <p class="fs-lg">@Localizer["The ISO is just 2.53 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations."]</p>
                     </div>
                 </div>
             </div>
@@ -369,107 +369,44 @@
                     </p>
                 </div>
                 <div class="row py-4">
-                        <div class="col-sm-4 mb-5 mb-md-0">
-                            <div class="card text-center h-100 ">
-                                <div class="card-body d-flex flex-column"
-                                     >
+                        @* ── Left: Upgrade from 1.x ── *@
+                        <div class="col-sm-3 mb-5 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
                                     <div class="mb-4">
-                                        <h5>Noble Numbat</h5>
-                                        <span class="display-5">
-                                            1.1
-                                        </span><br/>
-                                        <span>LTS</span>
+                                        <i class="fas fa-arrow-circle-up fa-3x text-primary mb-3"></i>
+                                        <h5>@Localizer["Upgrading from 1.x?"]</h5>
                                     </div>
-
-                                    <h6 class="mt-3">@Localizer["Includes:"]</h6>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">@Localizer["Support till"] Apr 2029</li>
-                                        <li class="mb-2">Gnome 46</li>
-                                        <li class="mb-2">Ubuntu 24.04 @Localizer["packages"]</li>
-                                        <li class="mb-2">Linux kernel 6.14</li>
-                                        <li class="mb-2">@Localizer["Released on"] 2025.01.06</li>
-                                        <li class="mb-2">
-                                            @Localizer["Latest version"] 1.1.12
-                                        </li>
-                                            <li class="mb-2">@Localizer["Recommended for users need a stable long-term version and on older hardware."]</li>
-                                    </ul>
-
-                                    <div class="mt-auto">
-                                        <button type="button"
-                                                class="btn btn-lg btn-pill btn-outline-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#download-modal"
-                                                data-version="1.1"
-                                                data-latest="1.1.12"
-                                                data-prefered-language="@currentCulture"
-                                                data-size="1.79 GiB"
-                                                data-support-torrent="true"
-                                                data-support-https="true"
-                                                data-additional-langs="">
-                                            @Localizer["Download"]
-                                        </button>
+                                    <p class="text-muted">@Localizer["Migration guides and tips for users coming from AnduinOS 1.x."]</p>
+                                    <div class="mt-3">
+                                        <a href="/MigrateFrom1x.html" class="btn btn-outline-primary btn-pill">
+                                            @Localizer["Learn more"]
+                                        </a>
+                                    </div>
+                                    <div class="mt-auto pt-4">
+                                        <hr class="text-muted opacity-25" />
+                                        <small class="text-muted">@Localizer["Looking for older versions?"]</small>
+                                        <a href="/HistoryBuilds.html" class="btn btn-sm btn-link text-primary d-block mt-1">
+                                            @Localizer["Historical Builds"] <i class="fas fa-arrow-right ms-1"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 mb-5 mb-md-0">
+
+                        @* ── Center: 2.0.0 flagship ── *@
+                        <div class="col-sm-6 mb-5 mb-md-0">
                             <div class="card text-center h-100 middle-card">
-                                <div class="card-body d-flex flex-column"
-                                     >
-                                    <div class="mb-4">
-                                        <h5>Questing Quokka</h5>
-                                        <span class="display-2">
-                                            1.4
-                                        </span><br/>
-                                        <span>Latest</span>
-                                    </div>
-
-                                    <h6 class="mt-3">@Localizer["Includes:"]</h6>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">@Localizer["Support till"] July 2026</li>
-                                        <li class="mb-2">Gnome 49</li>
-                                        <li class="mb-2">Ubuntu 25.10 @Localizer["packages"]</li>
-                                        <li class="mb-2">Linux kernel 6.17</li>
-                                        <li class="mb-2">@Localizer["Released on"] 2025.10.25</li>
-                                        <li class="mb-2">
-                                            @Localizer["Latest version"] 1.4.2
-                                        </li>
-                                            <li class="mb-2">@Localizer["Using Flatpak for graphical applications."]</li>
-                                            <li class="mb-2">
-                                                <span class="badge badge-subtle-primary">
-                                                    @Localizer["Recommended"]
-                                                </span>
-                                            </li>
-                                    </ul>
-
-                                    <div class="mt-auto">
-                                        <button type="button"
-                                                class="btn btn-lg btn-pill btn-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#download-modal"
-                                                data-version="1.4"
-                                                data-latest="1.4.2"
-                                                data-prefered-language="@currentCulture"
-                                                data-size="2.14 GiB"
-                                                data-support-torrent="true"
-                                                data-support-https="true"
-                                                data-additional-langs="ro_RO">
-                                            @Localizer["Download"]
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 mb-5 mb-md-0">
-                            <div class="card text-center h-100 ">
-                                <div class="card-body d-flex flex-column"
-                                     style="color:#999 !important">
+                                <div class="card-body d-flex flex-column">
                                     <div class="mb-4">
                                         <h5>Resolute Raccoon</h5>
-                                        <span class="display-5">
+                                        <span class="display-2">
                                             2.0
                                         </span><br/>
-                                        <span>Next LTS</span>
+                                        <span class="d-inline-flex gap-2 mt-2">
+                                            <span class="badge bg-primary">LTS</span>
+                                            <span class="badge bg-success">@Localizer["Recommended"]</span>
+                                        </span>
                                     </div>
 
                                     <h6 class="mt-3">@Localizer["Includes:"]</h6>
@@ -480,14 +417,14 @@
                                         <li class="mb-2">Linux kernel 7.0</li>
                                         <li class="mb-2">@Localizer["Released on"] 2026.06.30</li>
                                         <li class="mb-2">
-                                            @Localizer["Latest version"] 2.0.0 RC2
+                                            @Localizer["Latest version"] 2.0.0
                                         </li>
-                                            <li class="mb-2">@Localizer["Built on Apkg package manager."]</li>
+                                        <li class="mb-2">@Localizer["Built on Apkg package manager."]</li>
                                     </ul>
 
                                     <div class="mt-auto">
                                         <button type="button"
-                                                class="btn btn-lg btn-pill btn-outline-primary"
+                                                class="btn btn-lg btn-pill btn-primary"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#download-modal"
                                                 data-version="2.0"
@@ -496,11 +433,37 @@
                                                 data-size="2.53 GB"
                                                 data-support-torrent="true"
                                                 data-support-https="true"
-                                                data-additional-langs="ro_RO"
                                                 data-single-iso="true"
-                                                data-download-url-base="https://cf.anduinos.com/AnduinOS-2.0.0~rc2-2606231247">
+                                                data-download-url-base="https://cf.anduinos.com/AnduinOS-2.0.0">
                                             @Localizer["Download"]
                                         </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @* ── Right: Enterprise ── *@
+                        <div class="col-sm-3 mb-5 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                                        <h5>@Localizer["AnduinOS Enterprise"]</h5>
+                                    </div>
+                                    <ul class="list-unstyled text-start px-3">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Custom branding"]</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Cluster management"]</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Rapid deployment"]</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["7×24 on-call support"]</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Kiosk device customization"]</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Private package repository"]</li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="https://www.aiursoft.com/anduinos"
+                                           target="_blank"
+                                           class="btn btn-lg btn-pill btn-outline-primary">
+                                            @Localizer["Learn more"]
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -572,6 +535,137 @@
     <span class="close" onclick="igl_hide()">&times;</span>
     <img class="iglmodal-content" id="iglmodal-img" alt="Image preview" src="#"/>
 </div>
+
+@* ═══════════════════════════════════════════════════════════════════════════════
+   AnduinOS Specifications
+   ═══════════════════════════════════════════════════════════════════════════════ *@
+<section class="position-relative py-6 overflow-hidden" style="background-color: #0b0d14;">
+    @* Cyber Grid Background *@
+    <svg class="position-absolute top-0 start-0 w-100 h-100 opacity-10" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none; z-index: 0;">
+        <g stroke="#0ea5e9" stroke-width="0.5" opacity="0.3">
+            <path d="M 0 100 L 800 100 M 0 200 L 800 200 M 0 300 L 800 300 M 0 400 L 800 400 M 0 500 L 800 500" />
+            <path d="M 100 0 L 100 600 M 200 0 L 200 600 M 300 0 L 300 600 M 400 0 L 400 600 M 500 0 L 500 600 M 600 0 L 600 600 M 700 0 L 700 600" />
+        </g>
+    </svg>
+
+    <div class="container position-relative z-2">
+        <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold text-white">AnduinOS</h2>
+            <p class="lead text-gray-400">@Localizer["Built on a rock-solid foundation. Designed for everyone."]</p>
+        </div>
+
+        @* Feature Badges *@
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Familiar UX"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">2.53 GB</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Live Boot"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["LTS Support"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Without Snap"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Free Software"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["NVIDIA Graphics Support"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Secure Boot"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Ubuntu Base"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Wayland Ready"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["HDR Support"]</span>
+        </div>
+
+        <div class="row g-4">
+            @* Left: Tech Specs *@
+            <div class="col-lg-6">
+                <div class="card bg-dark-glass border-white-10 h-100">
+                    <div class="card-header bg-transparent border-white-10 pt-4">
+                        <h4 class="mb-0 text-white">@Localizer["Technical Specifications"]</h4>
+                    </div>
+                    <div class="card-body pt-0">
+                        <table class="table table-borderless mb-0">
+                            <tbody>
+                                <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["Release Date"]</td><td class="text-white fw-semibold pe-0">2026-06-30</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["End of Support"]</td><td class="text-white fw-semibold pe-0">@Localizer["April"] 2031</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["Image Size"]</td><td class="text-white fw-semibold pe-0">2.53 GB</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["Linux Kernel"]</td><td class="text-white fw-semibold pe-0">7.0.0</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["Desktop Environment"]</td><td class="text-white fw-semibold pe-0">GNOME 50</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["Display Server"]</td><td class="text-white fw-semibold pe-0">Wayland</td></tr>
+                            </tbody>
+                        </table>
+                        @* Collapsible Advanced Specs *@
+                        <div class="collapse" id="advancedSpecs">
+                            <table class="table table-borderless mb-0">
+                                <tbody>
+                                    <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["UI Toolkit"]</td><td class="text-white fw-semibold pe-0">GTK4</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Package Manager"]</td><td class="text-white fw-semibold pe-0">apt</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Package Format"]</td><td class="text-white fw-semibold pe-0">deb + Flatpak</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Architecture"]</td><td class="text-white fw-semibold pe-0">x86_64</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Init System"]</td><td class="text-white fw-semibold pe-0">systemd</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Default Filesystem"]</td><td class="text-white fw-semibold pe-0">ext4</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Default Browser"]</td><td class="text-white fw-semibold pe-0">Firefox</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button class="btn btn-sm btn-outline-light rounded-pill mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#advancedSpecs" aria-expanded="false">
+                            <i data-lucide="chevron-down" class="me-1" style="width: 14px; height: 14px;"></i>@Localizer["Advanced"]
+                        </button>
+                    </div>
+                </div>
+            </div>
+            @* Right: System Requirements *@
+            <div class="col-lg-6">
+                <div class="card bg-dark-glass border-white-10 h-100">
+                    <div class="card-header bg-transparent border-white-10 pt-4">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <h4 class="mb-0 text-white">@Localizer["System Requirements"]</h4>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button class="btn btn-outline-light rounded-pill active" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#minReqs, #recReqs"
+                                        onclick="document.getElementById('recReqs').classList.remove('show'); document.getElementById('minReqs').classList.add('show'); this.classList.add('active'); this.nextElementSibling.classList.remove('active');">
+                                    @Localizer["Minimum"]
+                                </button>
+                                <button class="btn btn-outline-light rounded-pill" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#minReqs, #recReqs"
+                                        onclick="document.getElementById('minReqs').classList.remove('show'); document.getElementById('recReqs').classList.add('show'); this.classList.add('active'); this.previousElementSibling.classList.remove('active');">
+                                    @Localizer["Recommended"]
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0">
+                        @* Minimum Requirements *@
+                        <div class="collapse show" id="minReqs">
+                            <table class="table table-borderless mb-0">
+                                <tbody>
+                                    <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["Architecture"]</td><td class="text-white fw-semibold pe-0">x86_64</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Firmware"]</td><td class="text-white fw-semibold pe-0">UEFI @Localizer["or"] BIOS</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Processor"]</td><td class="text-white fw-semibold pe-0">2 GHz</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["RAM"]</td><td class="text-white fw-semibold pe-0">4 GB</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Disk Space"]</td><td class="text-white fw-semibold pe-0">20 GB</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Screen"]</td><td class="text-white fw-semibold pe-0">1024 × 768</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Ports"]</td><td class="text-white fw-semibold pe-0">USB @Localizer["or"] DVD</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        @* Recommended Requirements *@
+                        <div class="collapse" id="recReqs">
+                            <table class="table table-borderless mb-0">
+                                <tbody>
+                                    <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["Architecture"]</td><td class="text-white fw-semibold pe-0">x86_64</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Firmware"]</td><td class="text-white fw-semibold pe-0">UEFI @Localizer["with Secure Boot"]</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Processor"]</td><td class="text-white fw-semibold pe-0">2.5 GHz @Localizer["quad-core"]</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["RAM"]</td><td class="text-white fw-semibold pe-0">8 GB</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Disk Space"]</td><td class="text-white fw-semibold pe-0">50 GB</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Screen"]</td><td class="text-white fw-semibold pe-0">2560 × 1440 @Localizer["27 inch"]</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Internet"]</td><td class="text-white fw-semibold pe-0">@Localizer["Internet access"]</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-3 p-3 bg-dark-glass rounded-3 text-center text-gray-400 small border-white-10 border">
+                            <i data-lucide="info" class="me-1" style="width: 14px; height: 14px;"></i>
+                            @Localizer["Compatible with most x86 PCs manufactured in the last decade."]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @* AnduinOS To Go section *@
 <section class="ai-section position-relative w-100 overflow-hidden d-flex align-items-center">
@@ -773,7 +867,7 @@
                         @Localizer["Your Entire PC."]<br><span class="text-primary">@Localizer["In Your Pocket."]</span>
                     </h2>
                     <p class="lead text-gray-400 fs-5">
-                        @Localizer["Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds."]
+                        @Localizer["Burn our ultra-compact 2.53 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds."]
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-4">
                         <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2"><i class="fas fa-floppy-disk me-1"></i> @Localizer["Persistent on USB"]</span>

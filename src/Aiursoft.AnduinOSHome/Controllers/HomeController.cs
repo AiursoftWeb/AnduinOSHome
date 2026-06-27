@@ -37,4 +37,10 @@ public class HomeController : Controller
         return this.SimpleView(new HistoryBuildsViewModel());
     }
 
+    [Route("/MigrateFrom1x.html")]
+    public IActionResult MigrateFrom1x()
+    {
+        return this.SimpleView(new MigrateFrom1xViewModel());
+    }
+
 }
