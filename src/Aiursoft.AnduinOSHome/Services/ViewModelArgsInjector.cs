@@ -89,6 +89,8 @@ public class ViewModelArgsInjector(
     
         _ = localizer["Historical Builds"];
         _ = localizer["Migrate from AnduinOS 1.x"];
+    
+        _ = localizer["AnduinOS Container"];
     }
 
     public void InjectSimple(
