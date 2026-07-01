@@ -1,0 +1,704 @@
+<vc:marketing-navbar></vc:marketing-navbar>
+
+@* ── Hero Banner ── *@
+<section class="landing-intro text-bg-dark pt-5 pt-lg-6 pb-5 pb-lg-7">
+    <div class="landing-intro-content container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-7">
+                <div class="mb-3">
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">87+ extra packages</span>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">100% Ubuntu compatible</span>
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">Ready out of the box</span>
+                </div>
+                <h1 class="my-4 text-white" style="font-size: 3.5rem; font-weight: 800; line-height: 1.15;">
+                    @Localizer["Slightly bigger."]<br />
+                    <span class="text-primary">@Localizer["Much more powerful."]</span>
+                </h1>
+                <p class="text-lg text-white-50 mb-4" style="font-size: 1.25rem; max-width: 540px;">
+                    @Localizer["Engineered via native debootstrap, strictly declarative, and loaded with the exact networking, security, and runtime tools that modern microservices demand. No bloated layers, just pure productivity."]
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#install" class="btn btn-primary btn-lg btn-pill px-4">
+                        <i class="fas fa-download me-2"></i>@Localizer["Get Started"]
+                    </a>
+                    <a href="#features" class="btn btn-outline-light btn-lg btn-pill px-4">
+                        <i class="fas fa-circle-info me-2"></i>@Localizer["Why AnduinOS?"]
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block text-center">
+                <div class="position-relative" style="perspective: 800px;">
+                    <img src="~/img/container-fastfetch.webp"
+                         alt="AnduinOS Container running fastfetch inside Docker"
+                         class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25"
+                         style="transform: rotateY(-8deg) rotateX(2deg);"
+                         loading="eager" />
+                    <div class="position-absolute top-0 start-100 translate-middle-x mt-4 ms-3">
+                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">✨ Just works</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Feature Grid ── *@
+<section id="features" class="py-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Why AnduinOS Container"]</span>
+            <h2 class="h1">@Localizer["Everything you need. Nothing to install."]</h2>
+            <p class="text-muted fs-lg">@Localizer["Ubuntu provides a blank canvas. We provide a fully-equipped workshop."]</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-globe fa-lg text-primary"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["Networking Built-in"]</h5>
+                        <p class="card-text text-muted small">@Localizer["curl, wget, iproute2, iputils-ping, lsof — preinstalled and ready to debug."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-success bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-box-archive fa-lg text-success"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["Official APT Repos"]</h5>
+                        <p class="card-text text-muted small">@Localizer["anduinos-apt-config and archive keyring preconfigured — install AnduinOS packages immediately."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-info bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-pen-to-square fa-lg text-info"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["Vim & Nano Ready"]</h5>
+                        <p class="card-text text-muted small">@Localizer["Edit configs, write scripts, fix typos — vim-tiny and nano are both included."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-warning bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-file-zipper fa-lg text-warning"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["Ready for Any Archive"]</h5>
+                        <p class="card-text text-muted small">@Localizer["zip, unzip, zstd, xz-utils — every compression format covered. Extract anything without `apt install` first."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fab fa-python fa-lg text-primary"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["Python 3.14 Ready"]</h5>
+                        <p class="card-text text-muted small">@Localizer["Python 3.14 preinstalled. Run your Python microservices the moment the container starts."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-danger bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-shield-halved fa-lg text-danger"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["GPG & Crypto Suite"]</h5>
+                        <p class="card-text text-muted small">@Localizer["Full gnupg suite, dirmngr, pinentry — verify signatures and encrypt data out of the box."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-user-gear fa-lg text-secondary"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["sudo Out of the Box"]</h5>
+                        <p class="card-text text-muted small">@Localizer["sudo and sudo-rs preconfigured — run privileged commands without extra setup."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm container-feature-card">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-success bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
+                            <i class="fas fa-certificate fa-lg text-success"></i>
+                        </div>
+                        <h5 class="card-title">@Localizer["TLS & SSL Complete"]</h5>
+                        <p class="card-text text-muted small">@Localizer["openssl and full TLS certificate stack included — secure connections without extra packages."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Comparison Showcase ── *@
+<section class="py-6" style="background: linear-gradient(135deg, #0b0d14 0%, #161925 50%, #0b0d14 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["The Difference"]</span>
+            <h2 class="h1 text-white">@Localizer["174 curated packages. Everything you need, nothing you don't."]</h2>
+            <p class="text-white-50 fs-lg">@Localizer["Same AnduinOS you love. Right-sized for containers. Zero setup."]</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="card bg-dark border-secondary border-opacity-25 h-100">
+                    <div class="card-header bg-danger bg-opacity-10 border-secondary border-opacity-25 d-flex align-items-center gap-2">
+                        <i class="fab fa-ubuntu fa-lg text-danger"></i>
+                        <span class="text-white fw-semibold">@Localizer["Ubuntu Container"]</span>
+                        <span class="badge bg-danger bg-opacity-25 text-danger ms-auto">87 packages</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="text-white-50 mb-3">@Localizer["Start from zero. Install everything yourself:"]</p>
+                        <div class="bg-black rounded-3 p-3 font-monospace small text-white-50">
+                            <div class="mb-1"><span class="text-danger">$</span> apt update</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y curl wget</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y vim nano</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y python3</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y ca-certificates</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y gnupg openssl</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y sudo</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y iproute2 iputils-ping</div>
+                            <div class="text-white-50"><span class="text-danger">$</span> <span class="text-white"># ... and 79 more packages</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-dark border-primary border-opacity-50 h-100 container-compare-winner">
+                    <div class="card-header bg-primary bg-opacity-10 border-primary border-opacity-25 d-flex align-items-center gap-2">
+                        <i class="fas fa-cube fa-lg text-primary"></i>
+                        <span class="text-white fw-semibold">@Localizer["AnduinOS Container"]</span>
+                        <span class="badge bg-primary text-white ms-auto">174 packages</span>
+                        <span class="badge bg-success ms-1">✨ Ready</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="text-white-50 mb-3">@Localizer["Everything is already installed. Just start building:"]</p>
+                        <div class="bg-black rounded-3 p-3 font-monospace small">
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">curl -s https://api.example.com</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">vim /etc/config.yml</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">python3 app.py</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">sudo systemctl start svc</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">gpg --verify app.sig</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">openssl s_client -connect host:443</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">ping -c 3 10.0.0.1</span></div>
+                            <div class="text-success">$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* ── Stats Row ── *@
+        <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+                <div class="container-stat text-white">
+                    <div class="display-4 fw-bold text-primary">174</div>
+                    <div class="text-white-50">@Localizer["curated packages"]</div>
+                </div>
+            </div>
+<div class="col-md-3 col-6">
+                <div class="container-stat text-white">
+                    <div class="display-4 fw-bold text-info">&lt;150MB</div>
+                    <div class="text-white-50">@Localizer["disk space"]</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="container-stat text-white">
+                    <div class="display-4 fw-bold text-warning">∞</div>
+                    <div class="text-white-50">@Localizer["time saved per deploy"]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Quick Install ── *@
+<section id="install" class="py-6 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Get Started"]</span>
+                <h2 class="h1 mb-3">@Localizer["One command. Instantly better."]</h2>
+                <p class="text-white-50 fs-lg mb-4">
+                    @Localizer["Standard Docker workflow. Drop it into any project — same commands, zero learning curve."]
+                </p>
+
+                <div class="bg-black rounded-4 p-4 mb-4 text-start border border-secondary border-opacity-25">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="badge bg-secondary text-white">terminal</span>
+                        <button class="btn btn-sm btn-outline-light border-0 container-copy-btn"
+                                onclick="navigator.clipboard.writeText('sudo docker run -it aiursoft/anduinos bash')"
+                                title="@Localizer["Copy to clipboard"]">
+                            <i class="far fa-copy me-1"></i>@Localizer["Copy"]
+                        </button>
+                    </div>
+                    <code class="text-success fs-4" style="user-select: all;">$ sudo docker run -it aiursoft/anduinos bash</code>
+                </div>
+                <p class="text-white-50">
+                    <i class="fas fa-check-circle text-success me-1"></i>
+                    @Localizer["Use as your daily driver container — all the essentials preloaded, ready to build."]
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Replace Ubuntu in Dockerfile ── *@
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Migration"]</span>
+            <h2 class="h1">@Localizer["Replace Ubuntu in your Dockerfile"]</h2>
+            <p class="text-muted fs-lg">@Localizer["One line change. Ten fewer `apt install` calls."]</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-header bg-light border-bottom d-flex align-items-center gap-2">
+                        <span class="badge bg-secondary">Dockerfile</span>
+                        <span class="text-muted small">@Localizer["Before — with Ubuntu"]</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <pre class="bg-dark text-white-50 rounded-bottom p-3 mb-0 small font-monospace" style="white-space: pre-wrap;"><span class="text-danger">FROM ubuntu:latest</span>
+
+RUN apt update && apt install -y \
+    curl wget ca-certificates \
+    python3 vim nano sudo \
+    gnupg openssl iproute2 \
+    iputils-ping lsof unzip zip \
+    && rm -rf /var/lib/apt/lists/*
+
+<span class="text-white-50"># ... and you probably forgot something</span>
+
+COPY . /app
+CMD ["python3", "/app/main.py"]</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-primary border-2 shadow container-dockerfile-after">
+                    <div class="card-header bg-primary bg-opacity-10 border-primary border-opacity-25 d-flex align-items-center gap-2">
+                        <span class="badge bg-primary">Dockerfile</span>
+                        <span class="text-muted small">@Localizer["After — with AnduinOS"]</span>
+                        <span class="badge bg-success ms-auto">✨ 10 lines saved</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <pre class="bg-dark rounded-bottom p-3 mb-0 small font-monospace" style="white-space: pre-wrap;"><span class="text-success">FROM aiursoft/anduinos:resolute</span>
+
+<span class="text-white"># No apt install needed!
+# curl, python3, vim, sudo, gnupg,
+# openssl, ca-certificates — all built-in</span>
+
+COPY . /app
+CMD ["python3", "/app/main.py"]</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: ARM Support ── *@
+<section class="ai-section container-compact py-6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-microchip fa-2x text-primary"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Multi-Arch. ARM & x64."]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["Run AnduinOS Container on ARM64 servers, AWS Graviton, Apple Silicon Macs, and traditional x86_64 hosts. One image, every platform."]
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <span class="badge bg-light text-dark border px-3 py-2"><i class="fas fa-check-circle text-success me-1"></i>amd64</span>
+                    <span class="badge bg-light text-dark border px-3 py-2"><i class="fas fa-check-circle text-success me-1"></i>arm64</span>
+                    <span class="badge bg-light text-dark border px-3 py-2"><i class="fas fa-check-circle text-success me-1"></i>arm/v7</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+                <div class="d-flex justify-content-center gap-4">
+                    <div class="text-center">
+                        <div class="bg-light rounded-4 p-4 mb-2 shadow-sm" style="width: 100px; height: 100px;">
+                            <i class="fas fa-server fa-3x text-primary mt-2"></i>
+                        </div>
+                        <small class="text-muted">x86_64</small>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-light rounded-4 p-4 mb-2 shadow-sm" style="width: 100px; height: 100px;">
+                            <i class="fas fa-cloud fa-3x text-info mt-2"></i>
+                        </div>
+                        <small class="text-muted">ARM64</small>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-light rounded-4 p-4 mb-2 shadow-sm" style="width: 100px; height: 100px;">
+                            <i class="fab fa-apple fa-3x text-dark mt-2"></i>
+                        </div>
+                        <small class="text-muted">Apple Silicon</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: Zero-Layer Architecture ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-layer-group fa-2x text-primary"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Zero-Layer Architecture"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["Most custom images stack `RUN apt install` on top of `ubuntu:latest` — generating hidden intermediate layers full of stale caches and deleted files. AnduinOS Container is built via debootstrap straight into `FROM scratch`: a single, atomic layer with zero intermediate artifacts."]
+                </p>
+                <div class="d-flex gap-3">
+                    <div class="text-center">
+                        <div class="h2 fw-bold text-primary mb-0">1</div>
+                        <small class="text-muted">@Localizer["atomic layer"]</small>
+                    </div>
+                    <div class="text-center">
+                        <div class="h2 fw-bold text-primary mb-0">0</div>
+                        <small class="text-muted">@Localizer["intermediate artifacts"]</small>
+                    </div>
+                    <div class="text-center">
+                        <div class="h2 fw-bold text-primary mb-0">100%</div>
+                        <small class="text-muted">@Localizer["declarative"]</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 d-none d-lg-block">
+                <div class="bg-white rounded-4 p-4 shadow-sm border">
+                    <div class="text-center mb-3">
+                        <small class="text-muted text-uppercase fw-semibold">@Localizer["Image Layer Comparison"]</small>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end gap-3" style="min-height: 180px;">
+                        @* Ubuntu stack *@
+                        <div class="text-center">
+                            <div class="bg-danger bg-opacity-10 rounded-3 px-3 py-2 mb-1 border border-danger border-opacity-25" style="width: 110px;">
+                                <small class="text-danger">RUN cleanup</small>
+                            </div>
+                            <div class="bg-danger bg-opacity-10 rounded-3 px-3 py-2 mb-1 border border-danger border-opacity-25" style="width: 110px;">
+                                <small class="text-danger">RUN apt install</small>
+                            </div>
+                            <div class="bg-danger bg-opacity-10 rounded-3 px-3 py-2 mb-1 border border-danger border-opacity-25" style="width: 110px;">
+                                <small class="text-danger">RUN apt update</small>
+                            </div>
+                            <div class="bg-secondary bg-opacity-25 rounded-3 px-3 py-2 mb-2 border border-secondary" style="width: 110px;">
+                                <small class="text-secondary">ubuntu:latest</small>
+                            </div>
+                            <small class="text-muted">4+ layers, hidden cruft</small>
+                        </div>
+                        @* Arrow *@
+                        <div class="text-primary fs-3 pb-4">→</div>
+                        @* AnduinOS stack *@
+                        <div class="text-center">
+                            <div class="bg-primary bg-opacity-10 rounded-3 px-3 py-2 mb-2 border border-primary border-opacity-50" style="width: 110px; height: 120px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <i class="fas fa-cube fa-2x text-primary mb-1 d-block"></i>
+                                    <small class="text-primary fw-semibold">AnduinOS</small>
+                                </div>
+                            </div>
+                            <div class="bg-dark rounded-3 px-3 py-2 border border-secondary" style="width: 110px;">
+                                <small class="text-white-50">FROM scratch</small>
+                            </div>
+                            <small class="text-success mt-1 d-block">1 layer, zero waste</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: Ideal Microservice Base ── *@
+<section class="ai-section container-compact py-6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-info bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-cubes fa-2x text-info"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Ideal Microservice Base"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["174 curated packages — everything a modern microservice needs. Python runtime, TLS stack, networking tools, GPG verification, and text editors. All there on day one."]
+                </p>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["Python 3.14 runtime"]</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["Full TLS/SSL stack"]</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["curl & wget clients"]</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["GPG signature tools"]</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["sudo & user mgmt"]</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>@Localizer["Network debugging"]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+                <div class="position-relative d-inline-block">
+                    <div class="bg-white rounded-4 p-4 shadow-lg border" style="width: 320px;">
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">python3</span>
+                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">curl</span>
+                            <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">openssl</span>
+                            <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">sudo</span>
+                            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">gnupg</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">wget</span>
+                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">vim</span>
+                            <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">nano</span>
+                            <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">ca-certs</span>
+                            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">lsof</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">iproute2</span>
+                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">zip</span>
+                            <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">unzip</span>
+                            <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">file</span>
+                            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">ping</span>
+                        </div>
+                    </div>
+                    <div class="position-absolute top-0 start-100 translate-middle">
+                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">174 packages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: Built from Scratch ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-warning bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-seedling fa-2x text-warning"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Built from Scratch, for Production"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["AnduinOS Container shares the same foundation with AnduinOS desktop. Every package is hand-picked by developers who build microservices every day — no bloat, just the right tools for the job."]
+                </p>
+                <a href="https://github.com/aiursoftweb/anduinos-container" target="_blank" class="btn btn-outline-dark btn-lg btn-pill">
+                    <i class="fab fa-github me-2"></i>@Localizer["View Container Source"]
+                </a>
+            </div>
+            <div class="col-lg-6 order-lg-1 d-none d-lg-block">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
+                        <i class="fas fa-wrench fa-2x text-secondary mb-1"></i>
+                        <div class="small text-muted">Debian<br/>Bootstrap</div>
+                    </div>
+                    <div class="text-primary fs-3">+</div>
+                    <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
+                        <i class="fab fa-ubuntu fa-2x text-danger mb-1"></i>
+                        <div class="small text-muted">Ubuntu<br/>Sources</div>
+                    </div>
+                    <div class="text-primary fs-3">+</div>
+                    <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
+                        <i class="fas fa-cubes fa-2x text-primary mb-1"></i>
+                        <div class="small text-muted">87 curated<br/>packages</div>
+                    </div>
+                    <div class="text-primary fs-3">=</div>
+                    <div class="bg-primary bg-opacity-10 rounded-4 p-3 border border-primary border-opacity-50 text-center" style="width: 95px;">
+                        <i class="fas fa-box fa-2x text-primary mb-1"></i>
+                        <div class="small text-primary fw-semibold">AnduinOS<br/>Container</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: Native Ecosystem Gateway ── *@
+<section class="ai-section container-compact py-6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-warning bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-satellite-dish fa-2x text-warning"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Native Ecosystem Gateway"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["AnduinOS Container isn't just a toolbox — it's your authenticated entry point to the full AnduinOS ecosystem. We preload `anduinos-apt-config` and `anduinos-archive-keyring`, so every container is cryptographically bound to our signed repositories. No GPG key hunting. No `add-apt-repository` incantations. The entire Aiursoft enterprise stack is one `apt install` away."]
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-3 py-2">
+                        <i class="fas fa-key me-1"></i>@Localizer["Pre-trusted GPG keys"]
+                    </span>
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-2">
+                        <i class="fas fa-shield me-1"></i>@Localizer["Signed repositories"]
+                    </span>
+                    <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 px-3 py-2">
+                        <i class="fas fa-globe me-1"></i>@Localizer["Full ecosystem access"]
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="bg-white rounded-4 p-4 shadow-sm border">
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <span class="rounded-circle bg-danger" style="width: 10px; height: 10px;"></span>
+                        <span class="rounded-circle bg-warning" style="width: 10px; height: 10px;"></span>
+                        <span class="rounded-circle bg-success" style="width: 10px; height: 10px;"></span>
+                        <small class="text-muted ms-2">root@anduinos — apt update && apt search anduinos</small>
+                    </div>
+                    <div class="font-monospace small mb-2">
+                        <div class="text-success mb-1">Hit:1 https://packages.anduinos.com resolute InRelease</div>
+                        <div class="text-muted mb-1">Get:2 https://packages.anduinos.com resolute/main amd64 Packages</div>
+                        <div class="text-white-50 mb-2">Reading package lists... Done</div>
+                    </div>
+                    <div class="font-monospace small" style="line-height: 1.6;">
+                        <div class="text-primary mb-1 fw-semibold">anduinos-desktop/stable</div>
+                        <div class="text-muted mb-1">  Full GNOME desktop meta-package</div>
+                        <div class="text-primary mb-1 fw-semibold">anduinos-firewall/stable</div>
+                        <div class="text-muted mb-1">  Graphical firewall manager</div>
+                        <div class="text-primary mb-1 fw-semibold">anduinos-appearance/stable</div>
+                        <div class="text-muted mb-1">  System theming & customization</div>
+                        <div class="text-muted">... and 50+ more packages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Hero: Developer-First ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                    <i class="fas fa-heart fa-2x text-primary"></i>
+                </div>
+                <h2 class="h1 mb-3">@Localizer["Developer-First Philosophy"]</h2>
+                <p class="text-muted fs-lg mb-4">
+                    @Localizer["We got tired of installing the same packages every time we spun up a container. curl, vim, python, openssl — they should just be there. AnduinOS Container is built by developers, for developers, so you can focus on your code, not your OS."]
+                </p>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="https://hub.docker.com/r/aiursoft/anduinos" target="_blank" class="btn btn-primary btn-lg btn-pill">
+                        <i class="fab fa-docker me-2"></i>@Localizer["Docker Hub"]
+                    </a>
+                    <a href="https://github.com/Anduin2017/AnduinOS/discussions" target="_blank" class="btn btn-outline-primary btn-lg btn-pill">
+                        <i class="fas fa-comments me-2"></i>@Localizer["Join Discussion"]
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 d-none d-lg-block">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-3 shadow-sm border text-center h-100">
+                            <i class="fas fa-clock fa-2x text-primary mb-2"></i>
+                            <h5 class="mb-1">@Localizer["Save Time"]</h5>
+                            <small class="text-muted">@Localizer["No more waiting for apt install in CI"]</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-3 shadow-sm border text-center h-100">
+                            <i class="fas fa-brain fa-2x text-success mb-2"></i>
+                            <h5 class="mb-1">@Localizer["Reduce Friction"]</h5>
+                            <small class="text-muted">@Localizer["Tools you need are already there"]</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-3 shadow-sm border text-center h-100">
+                            <i class="fas fa-shield-halved fa-2x text-info mb-2"></i>
+                            <h5 class="mb-1">@Localizer["Secure by Default"]</h5>
+                            <small class="text-muted">@Localizer["TLS, GPG, ca-certs preloaded"]</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-white rounded-4 p-3 shadow-sm border text-center h-100">
+                            <i class="fas fa-code fa-2x text-warning mb-2"></i>
+                            <h5 class="mb-1">@Localizer["Just Code"]</h5>
+                            <small class="text-muted">@Localizer["Your Dockerfile describes your app"]</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Bottom CTA ── *@
+<section class="py-6 text-white" style="background: linear-gradient(135deg, #0f1729 0%, #1a1040 50%, #0f1729 100%);">
+    <div class="container text-center">
+        <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Switch Today"]</span>
+        <h2 class="h1 mb-3">@Localizer["Ready to upgrade your containers?"]</h2>
+        <p class="text-white-50 fs-lg mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+            @Localizer["Join developers who have already switched to AnduinOS Container as their go-to base image. One command, ten fewer headaches."]
+        </p>
+
+        <div class="d-inline-block bg-black rounded-4 p-4 mb-4 border border-secondary border-opacity-25">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge bg-secondary text-white">terminal</span>
+                <button class="btn btn-sm btn-outline-light border-0"
+                        onclick="navigator.clipboard.writeText('sudo docker run -it aiursoft/anduinos bash')"
+                        title="@Localizer["Copy to clipboard"]">
+                    <i class="far fa-copy me-1"></i>@Localizer["Copy"]
+                </button>
+            </div>
+            <code class="text-success fs-3" style="user-select: all;">$ sudo docker run -it aiursoft/anduinos bash</code>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://hub.docker.com/r/aiursoft/anduinos" target="_blank" class="btn btn-primary btn-lg btn-pill px-4">
+                <i class="fab fa-docker me-2"></i>@Localizer["View on Docker Hub"]
+            </a>
+            <a href="https://github.com/aiursoftweb/anduinos-container" target="_blank" class="btn btn-outline-light btn-lg btn-pill px-4">
+                <i class="fab fa-github me-2"></i>@Localizer["Container Source"]
+            </a>
+        </div>
+
+        <p class="text-white-50 small mt-4 mb-0">
+            <i class="fas fa-sync-alt me-1"></i>
+            @Localizer["Regularly updated. Built fresh from source with every release."]
+        </p>
+    </div>
+</section>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+}

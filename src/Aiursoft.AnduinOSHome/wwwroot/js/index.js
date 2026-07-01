@@ -254,6 +254,15 @@ function renderDownloadLinks({ version, latest, supportTorrent, supportHttps, si
         appendLink(`${base}.torrent`, torrentLabel, 'btn-outline-primary');
     }
     appendLink(`${base}.sha256`, checksumLabel, 'btn-outline-primary');
+    appendContainerLink();
+}
+
+function appendContainerLink() {
+    const a = document.createElement('a');
+    a.href      = '/Container.html';
+    a.className = 'btn btn-lg btn-pill btn-outline-success';
+    a.textContent = 'Container';
+    downloadLinksContainer.appendChild(a);
 }
 
 function appendLink(href, label, btnClass) {

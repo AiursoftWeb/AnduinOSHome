@@ -346,3 +346,71 @@ nav.navbar{
 /* Opacity utilities */
 .opacity-10 { opacity: 0.1; }
 .opacity-20 { opacity: 0.2; }
+
+/* ── AnduinOS Container page ── */
+
+/* Override ai-section min-height for non-immersive sections */
+.ai-section.container-compact {
+    min-height: auto;
+}
+
+/* Feature card hover effect */
+.container-feature-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 1rem;
+}
+.container-feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Comparison winner glow */
+.container-compare-winner {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container-compare-winner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(13, 110, 253, 0.15) !important;
+}
+
+/* Stat number animation */
+.container-stat .display-4 {
+    transition: transform 0.3s ease;
+}
+.container-stat:hover .display-4 {
+    transform: scale(1.1);
+}
+
+/* Command block copy button */
+.container-copy-btn {
+    transition: color 0.2s ease;
+}
+.container-copy-btn:hover {
+    color: #0d6efd !important;
+}
+
+/* Dockerfile after card glow */
+.container-dockerfile-after {
+    transition: box-shadow 0.3s ease;
+}
+.container-dockerfile-after:hover {
+    box-shadow: 0 0 32px rgba(13, 110, 253, 0.2) !important;
+}
+
+/* Fade-in animation for sections */
+@keyframes containerFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.container-fade-in {
+    animation: containerFadeIn 0.6s ease-out forwards;
+}
+
+/* Subtle floating animation for hero terminal */
+@keyframes containerFloat {
+    0%, 100% { transform: rotateY(-12deg) rotateX(3deg) translateY(0); }
+    50%      { transform: rotateY(-12deg) rotateX(3deg) translateY(-8px); }
+}
+.landing-intro .bg-black.rounded-4 {
+    animation: containerFloat 4s ease-in-out infinite;
+}

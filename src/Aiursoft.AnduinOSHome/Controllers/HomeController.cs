@@ -43,4 +43,10 @@ public class HomeController : Controller
         return this.SimpleView(new MigrateFrom1xViewModel());
     }
 
+    [Route("/Container.html")]
+    public IActionResult Container()
+    {
+        return this.SimpleView(new ContainerViewModel());
+    }
+
 }
