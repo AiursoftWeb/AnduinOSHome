@@ -133,7 +133,7 @@
     <value>大多数自定义镜像会在 `ubuntu:latest` 之上叠加 `RUN apt install` 命令——从而生成包含陈旧缓存和已删除文件的隐藏中间层。AnduinOS 容器通过 debootstrap 直接构建于 `FROM scratch` 之上：这是一个单一、原子的层级，不包含任何中间产物。</value>
   </data>
   <data name="Much more powerful." xml:space="preserve">
-    <value>更强大。</value>
+    <value>强大很多。</value>
   </data>
   <data name="Multi-Arch. ARM &amp; x64." xml:space="preserve">
     <value>多架构。ARM 与 x64。</value>
@@ -205,7 +205,7 @@
     <value>签名仓库</value>
   </data>
   <data name="Slightly bigger." xml:space="preserve">
-    <value>略大一点。</value>
+    <value>稍大一点，</value>
   </data>
   <data name="Standard Docker workflow. Drop it into any project — same commands, zero learning curve." xml:space="preserve">
     <value>标准 Docker 工作流。将其嵌入任何项目——指令完全一致，零学习成本。</value>
