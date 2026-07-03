@@ -133,7 +133,7 @@
     <value>多くのカスタムイメージは `ubuntu:latest` の上に `RUN apt install` を重ねるため、古くなったキャッシュや削除されたファイルに満ちた見えない中間レイヤーが生成されます。AnduinOS Container は debootstrap を通じて `FROM scratch` に直接ビルドされ、中間アーティファクトが存在しない単一のアトミックなレイヤーから構成されます。</value>
   </data>
   <data name="Much more powerful." xml:space="preserve">
-    <value>遥かに強力。</value>
+    <value>はるかに強力。</value>
   </data>
   <data name="Multi-Arch. ARM &amp; x64." xml:space="preserve">
     <value>マルチアーキテクチャ。ARM &amp; x64 対応。</value>
@@ -205,7 +205,7 @@
     <value>署名済みリポジトリ</value>
   </data>
   <data name="Slightly bigger." xml:space="preserve">
-    <value>少し大きいが。</value>
+    <value>少し大きく、</value>
   </data>
   <data name="Standard Docker workflow. Drop it into any project — same commands, zero learning curve." xml:space="preserve">
     <value>標準的なDockerワークフロー。どのプロジェクトにもそのまま導入可能——同じコマンドで、学習コストゼロ。</value>

@@ -133,7 +133,7 @@
     <value>大多數自訂映像檔會在 `ubuntu:latest` 之上堆疊 `RUN apt install`，產生充滿陳舊快取與已刪除檔案的隱藏中間層。AnduinOS Container 則透過 debootstrap 直接建構於 `FROM scratch` 之上：僅有單一原子化層級，且無任何中間產物。</value>
   </data>
   <data name="Much more powerful." xml:space="preserve">
-    <value>更為強大。</value>
+    <value>強大得多。</value>
   </data>
   <data name="Multi-Arch. ARM &amp; x64." xml:space="preserve">
     <value>多架構支援。ARM 與 x64。</value>
@@ -205,7 +205,7 @@
     <value>已簽署的軟體套件存放庫</value>
   </data>
   <data name="Slightly bigger." xml:space="preserve">
-    <value>規模稍大。</value>
+    <value>稍大一點，</value>
   </data>
   <data name="Standard Docker workflow. Drop it into any project — same commands, zero learning curve." xml:space="preserve">
     <value>標準的 Docker 工作流程。將其放入任何專案——相同的指令，零學習曲線。</value>
