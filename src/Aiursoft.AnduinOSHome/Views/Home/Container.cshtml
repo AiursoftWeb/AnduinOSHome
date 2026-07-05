@@ -79,8 +79,8 @@
                         <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-info bg-opacity-10 mb-3" style="width: 48px; height: 48px;">
                             <i class="fas fa-pen-to-square fa-lg text-info"></i>
                         </div>
-                        <h5 class="card-title">@Localizer["Vim & Nano Ready"]</h5>
-                        <p class="card-text text-muted small">@Localizer["Edit configs, write scripts, fix typos — vim-tiny and nano are both included."]</p>
+                        <h5 class="card-title">@Localizer["Vi & Nano Ready"]</h5>
+                        <p class="card-text text-muted small">@Localizer["Edit configs, write scripts, fix typos — vi and nano are both included."]</p>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                         <div class="bg-black rounded-3 p-3 font-monospace small text-white-50">
                             <div class="mb-1"><span class="text-danger">$</span> apt update</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y curl wget</div>
-                            <div class="mb-1"><span class="text-danger">$</span> apt install -y vim nano</div>
+                            <div class="mb-1"><span class="text-danger">$</span> apt install -y vi nano</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y python3</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y ca-certificates</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y gnupg openssl</div>
@@ -188,7 +188,7 @@
                         <p class="text-white-50 mb-3">@Localizer["Everything is already installed. Just start building:"]</p>
                         <div class="bg-black rounded-3 p-3 font-monospace small">
                             <div class="mb-1"><span class="text-success">$</span> <span class="text-white">curl -s https://api.example.com</span></div>
-                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">vim /etc/config.yml</span></div>
+                            <div class="mb-1"><span class="text-success">$</span> <span class="text-white">vi /etc/config.yml</span></div>
                             <div class="mb-1"><span class="text-success">$</span> <span class="text-white">python3 app.py</span></div>
                             <div class="mb-1"><span class="text-success">$</span> <span class="text-white">sudo systemctl start svc</span></div>
                             <div class="mb-1"><span class="text-success">$</span> <span class="text-white">gpg --verify app.sig</span></div>
@@ -276,7 +276,7 @@
 
 RUN apt update && apt install -y \
     curl wget ca-certificates \
-    python3 vim nano sudo \
+    python3 vi nano sudo \
     gnupg openssl iproute2 \
     iputils-ping lsof unzip zip \
     && rm -rf /var/lib/apt/lists/*
@@ -299,7 +299,7 @@ CMD ["python3", "/app/main.py"]</pre>
                         <pre class="bg-dark rounded-bottom p-3 mb-0 small font-monospace" style="white-space: pre-wrap;"><span class="text-success">FROM aiursoft/anduinos:resolute</span>
 
 <span class="text-white"># No apt install needed!
-# curl, python3, vim, sudo, gnupg,
+# curl, python3, vi, sudo, gnupg,
 # openssl, ca-certificates — all built-in</span>
 
 COPY . /app
@@ -487,7 +487,7 @@ CMD ["python3", "/app/main.py"]</pre>
                             <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">sudo</span>
                             <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">gnupg</span>
                             <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">wget</span>
-                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">vim</span>
+                            <span class="badge bg-success bg-opacity-10 text-success px-3 py-2">vi</span>
                             <span class="badge bg-info bg-opacity-10 text-info px-3 py-2">nano</span>
                             <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2">ca-certs</span>
                             <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">lsof</span>
@@ -612,7 +612,7 @@ CMD ["python3", "/app/main.py"]</pre>
                 </div>
                 <h2 class="h1 mb-3">@Localizer["Developer-First Philosophy"]</h2>
                 <p class="text-muted fs-lg mb-4">
-                    @Localizer["We got tired of installing the same packages every time we spun up a container. curl, vim, python, openssl — they should just be there. AnduinOS Container is built by developers, for developers, so you can focus on your code, not your OS."]
+                    @Localizer["We got tired of installing the same packages every time we spun up a container. curl, vi, python, openssl — they should just be there. AnduinOS Container is built by developers, for developers, so you can focus on your code, not your OS."]
                 </p>
                 <div class="d-flex align-items-center gap-3">
                     <a href="https://hub.docker.com/r/aiursoft/anduinos" target="_blank" class="btn btn-primary btn-lg btn-pill">
