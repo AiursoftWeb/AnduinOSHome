@@ -91,6 +91,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Migrate from AnduinOS 1.x"];
     
         _ = localizer["AnduinOS Container"];
+    
+        _ = localizer["Delete Account"];
     }
 
     public void InjectSimple(
