@@ -3,6 +3,7 @@ using Aiursoft.AnduinOSHome.Models.ManageViewModels;
 using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.FileStorage;
 using Aiursoft.AnduinOSHome.Entities;
+using Aiursoft.UiStack.Layout;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
@@ -193,7 +194,7 @@ public class ManageController(
     [HttpGet]
     public IActionResult DeleteAccount()
     {
-        return StackView(new UiStackLayoutViewModel { PageTitle = "Delete Account" });
+        return this.StackView(new UiStackLayoutViewModel { PageTitle = "Delete Account" });
     }
 
     //
