@@ -11,16 +11,7 @@
                     <span class='text-primary'>@Localizer["AnduinOS"]</span>
                     @Localizer["!"]
                 </h1>
-                <p class="text-lg text-white-50">
-                    @Localizer["After downloading, you may want to learn how to"]
-                    <a href="https://docs.anduinos.com/Install/Download-AnduinOS.html">@Localizer["verify the checksum"]</a>
-                    @Localizer["and"]
-                    <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html">@Localizer["burn the ISO to a USB drive"]</a>@Localizer["."]
-                </p>
-                <p class="text-lg text-white-50">
-                    @Localizer["If you are new to AnduinOS, you may also want to check out the"]
-                    <a href="https://docs.anduinos.com/Install/System-Requirements.html">@Localizer["System requirement"]</a>@Localizer["."]
-                </p>
+                <p class="text-lg text-white-50">@Localizer["Follow the steps below to get started with your new operating system."]</p>
                 <p class="text-lg text-white-90">@Localizer["Enjoy your new OS!"]</p>
             </div>
             <div class="col-lg-5 d-none d-lg-flex mx-auto text-center">
@@ -32,46 +23,108 @@
     </div>
 </section>
 
-@* Features section *@
+@* Steps section *@
 <section class="py-6">
     <div class="container">
         <div class="mb-5 text-center">
-            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Information"]</span>
-            <h2 class="h1">@Localizer["What's next?"]</h2>
+            <h2 class="display-4 fw-bold">@Localizer["What's next?"]</h2>
         </div>
+
         <div class="row text-start">
-            <div class="col-12 col-md-4">
-                <div class="d-flex align-items-start py-3">
-                    <div class="landing-feature">
-                        <i data-lucide="book-text"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                        <h4 class="mt-0"><a href="https://docs.anduinos.com/">@Localizer["Documentation"]</a></h4>
-                        <p class="fs-lg">@Localizer["Take a look at documentation, you may find your answers there."]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="d-flex align-items-start py-3">
-                    <div class="landing-feature">
-                        <i data-lucide="life-buoy"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                        <h4 class="mt-0"><a href="https://github.com/Anduin2017/AnduinOS/discussions">@Localizer["Report a problem"]</a></h4>
-                        <p class="fs-lg">@Localizer["Something not working? Have a suggestion? Post about it to discussion."]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="d-flex align-items-start py-3">
-                    <div class="landing-feature">
-                        <i data-lucide="hand-coins"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                        <h4 class="mt-0"><a href="https://ko-fi.com/anduinxue/goal?g=0">@Localizer["Donate"]</a></h4>
-                        <p class="fs-lg">@Localizer["Feeling generous? AnduinOS works based on donations from users. We are grateful for your support."]</p>
+            <div class="col-12">
+
+                @* Step 1: Verify Checksum *@
+                <div class="card border mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="landing-feature me-3">
+                                <i data-lucide="fingerprint"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">1</span>@Localizer["verify the checksum"]</h4>
+                                <p class="fs-lg">@Localizer["After downloading the ISO file, you should verify its integrity to ensure it has not been tampered with."]</p>
+                                <p class="fs-lg">@Localizer["On Linux or macOS, use the sha256sum command. On Windows, use 7-Zip."]</p>
+                                <div class="bg-dark rounded-3 p-3 mb-3">
+                                    <code class="text-white" style="font-size: 0.9rem;">sha256sum ./AnduinOS.iso</code>
+                                </div>
+                                <img src="~/images/checksum.png" alt="@Localizer["Verify ISO checksum"]" class="img-fluid rounded-3 mb-3 d-block mx-auto" />
+                                <p class="fs-lg mb-0">
+                                    @Localizer["Compare the output with the"]
+                                    <a href="https://cf.anduinos.com/AnduinOS-2.0.0.sha256">@Localizer["official SHA256 checksum"]</a>@Localizer[". If the checksums match, the ISO file is valid and untampered."]
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                @* Step 2: Burn ISO to USB *@
+                <div class="card border mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="landing-feature me-3">
+                                <i data-lucide="hard-drive"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">2</span>@Localizer["burn the ISO to a USB drive"]</h4>
+                                <p class="fs-lg">@Localizer["Create a bootable USB drive to install AnduinOS on your computer. We recommend using"] <a href="https://etcher.balena.io/">Etcher</a> @Localizer["or"] <a href="https://rufus.ie/">Rufus</a>@Localizer["."]</p>
+                                <p class="fs-lg mb-0">
+                                    <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-pill">
+                                        @Localizer["Learn how to create a bootable USB drive"]
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @* Step 3: Documentation *@
+                <div class="card border mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="landing-feature me-3">
+                                <i data-lucide="book-text"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">3</span>@Localizer["Documentation"]</h4>
+                                <p class="fs-lg">@Localizer["Take a look at documentation, you may find your answers there."]</p>
+                                <a href="https://docs.anduinos.com/" class="btn btn-outline-primary btn-pill">@Localizer["Browse Documentation"]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @* Step 4: Report Problems *@
+                <div class="card border mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="landing-feature me-3">
+                                <i data-lucide="life-buoy"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">4</span>@Localizer["Report a problem"]</h4>
+                                <p class="fs-lg">@Localizer["Something not working? Have a suggestion? Post about it to discussion."]</p>
+                                <a href="https://github.com/Anduin2017/AnduinOS/discussions" class="btn btn-outline-primary btn-pill">@Localizer["Join the Discussion"]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @* Step 5: Donate *@
+                <div class="card border mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="landing-feature me-3">
+                                <i data-lucide="hand-coins"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">5</span>@Localizer["Donate"]</h4>
+                                <p class="fs-lg">@Localizer["Feeling generous? AnduinOS works based on donations from users. We are grateful for your support."]</p>
+                                <a href="https://ko-fi.com/anduinxue/goal?g=0" class="btn btn-outline-primary btn-pill">@Localizer["Support AnduinOS"]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
