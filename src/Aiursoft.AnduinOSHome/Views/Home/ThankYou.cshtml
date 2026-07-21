@@ -65,15 +65,70 @@
                                 <i data-lucide="hard-drive"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">2</span>@Localizer["burn the ISO to a USB drive"]</h4>
-                                <p class="fs-lg">@Localizer["Create a bootable USB drive to install AnduinOS on your computer. We recommend using"] <a href="https://etcher.balena.io/">Etcher</a> @Localizer["or"] <a href="https://rufus.ie/">Rufus</a>@Localizer["."]</p>
-                                <p class="fs-lg mb-0">
-                                    <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-pill">
-                                        @Localizer["Learn how to create a bootable USB drive"]
-                                    </a>
-                                </p>
+                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">2</span>@Localizer["Create a USB installation disk"]</h4>
+                                <p class="fs-lg mb-0">@Localizer["Use the downloaded ISO file to create a bootable USB drive. You will need a USB drive with at least 4 GB of storage."]</p>
                             </div>
                         </div>
+
+                        @* Windows *@
+                        <h4 class="mt-4 mb-2 fw-bold">Windows</h4>
+                        <p class="fs-lg">@Localizer["If you are using a Windows computer, we recommend using Rufus to create the bootable USB drive."]</p>
+                        <div class="bg-body-tertiary border-start border-4 border-primary rounded-2 p-3 my-3">
+                            <p class="fw-semibold mb-2">@Localizer["ℹ️ Rufus"]</p>
+                            <p class="mb-0">@Localizer["You can download Rufus from its"] <a href="https://rufus.ie/">@Localizer["official website"]</a>@Localizer["."]</p>
+                        </div>
+                        <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 my-3">
+                            <p class="fw-semibold mb-2">@Localizer["⚠️ Use dd mode in Rufus, not ISO mode!"]</p>
+                            <p class="mb-0">@Localizer["When using Rufus, make sure to select"] <strong><code>@Localizer["dd mode"]</code></strong> @Localizer["to create the bootable USB drive. This will ensure the USB drive is bootable on both UEFI and legacy BIOS systems. The default"] <code>@Localizer["ISO mode"]</code> @Localizer["may cause AnduinOS to fail to boot."]</p>
+                        </div>
+
+                        @* Linux *@
+                        <h4 class="mt-4 mb-2 fw-bold">Linux</h4>
+                        <p class="fs-lg">@Localizer["If you are using a Linux computer, using Impression to flash the ISO is the most user-friendly way."]</p>
+                        <p class="fs-lg">@Localizer["You can easily install Impression via Flatpak:"]</p>
+                        <p class="fs-lg">
+                            <a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="btn btn-primary btn-pill">
+                                @Localizer["Get Impression on Flathub"]
+                            </a>
+                        </p>
+                        <p>
+                            <img class="img-fluid d-block mx-auto" src="~/images/impression.png" alt="Impression" />
+                        </p>
+                        <p class="fs-lg mt-3">@Localizer["Alternatively, if you prefer the command line, you can use the"] <code>dd</code> @Localizer["command to write the ISO file to the USB drive."]</p>
+                        <p class="fs-lg">@Localizer["First, identify the device name of your USB drive using"] <code>fdisk</code> @Localizer["or"] <code>lsblk</code>@Localizer[":"]</p>
+                        <div class="bg-dark rounded-3 p-3 mb-2">
+                            <code class="text-white" style="font-size: 0.9rem;">sudo fdisk -l</code>
+                        </div>
+                        <p class="fs-lg">@Localizer["Then, write the ISO file to the USB drive using"] <code>dd</code>@Localizer[". Replace"] <code>&lt;device&gt;</code> @Localizer["with your USB drive device name (e.g."] <code>/dev/sdb</code>@Localizer[", never use"] <code>/dev/sdb1</code>@Localizer[")."]</p>
+                        <div class="bg-dark rounded-3 p-3 mb-2">
+                            <code class="text-white" style="font-size: 0.9rem;">sudo dd if=./AnduinOS.iso of=&lt;device&gt; status=progress oflag=sync bs=4M</code>
+                        </div>
+                        <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 my-3">
+                            <p class="fw-semibold mb-2">@Localizer["⚠️ Data Loss!"]</p>
+                            <p class="mb-0">@Localizer["This command will erase all data on the USB drive. Make sure to back up your data before running this command, and double-check the"] <code>&lt;device&gt;</code> @Localizer["path!"]</p>
+                        </div>
+
+                        @* macOS *@
+                        <h4 class="mt-4 mb-2 fw-bold">macOS</h4>
+                        <p class="fs-lg">@Localizer["If you are using a Mac, we recommend"] <strong>BalenaEtcher</strong>@Localizer[", a cross-platform graphical tool that makes flashing ISO images extremely simple and safe."]</p>
+                        <ol class="fs-lg">
+                            <li>@Localizer["Download and install"] <a href="https://etcher.balena.io/">BalenaEtcher</a>@Localizer["."]</li>
+                            <li>@Localizer["Open BalenaEtcher, click \"Flash from file\" and select the AnduinOS ISO file."]</li>
+                            <li>@Localizer["Select your target USB drive."]</li>
+                            <li>@Localizer["Click \"Flash!\"."]</li>
+                        </ol>
+                        <p class="fs-lg">@Localizer["Alternatively, advanced macOS users can use the built-in"] <code>dd</code> @Localizer["command in the terminal (similar to Linux)."]</p>
+
+                        @* Ventoy *@
+                        <h4 class="mt-4 mb-2 fw-bold">@Localizer["Advanced: Ventoy"]</h4>
+                        <p class="fs-lg">@Localizer["If you frequently install operating systems, or want to keep your USB drive bootable while still using it for regular file storage, we highly recommend"] <strong>Ventoy</strong>@Localizer["."]</p>
+                        <ol class="fs-lg">
+                            <li>@Localizer["Install"] <a href="https://www.ventoy.net/">Ventoy</a> @Localizer["to your USB drive."]</li>
+                            <li>@Localizer["Once installed, you will have an empty partition on your USB drive."]</li>
+                            <li>@Localizer["Simply"] <strong>@Localizer["copy and paste"]</strong> @Localizer["the AnduinOS ISO file onto the drive like a regular file."]</li>
+                            <li>@Localizer["Boot from the USB drive and Ventoy will show a menu allowing you to select the AnduinOS ISO file to boot."]</li>
+                        </ol>
+                        <p class="fs-lg mb-0">@Localizer["This method completely avoids the need to repeatedly flash or erase your USB drive!"]</p>
                     </div>
                 </div>
 
