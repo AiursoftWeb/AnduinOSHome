@@ -1,240 +1,459 @@
 <vc:marketing-navbar></vc:marketing-navbar>
 
-
-@* Main content section *@
+@* ── Hero Banner ── *@
 <section class="landing-intro text-bg-dark pt-5 pt-lg-6 pb-5 pb-lg-7">
     <div class="landing-intro-content container h-100">
         <div class="row align-items-center h-100">
-            <div class="col-lg-7 mx-auto">
-                <h1 id="main-slogan" class="my-4 text-white" style="font-size: 3rem;">
+            <div class="col-lg-7">
+                <div class="mb-3">
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">
+                        <i data-lucide="check-circle" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Started"]
+                    </span>
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">~2.5 GB ISO</span>
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">100% @Localizer["Free & Open Source"]</span>
+                </div>
+                <h1 class="my-4 text-white" style="font-size: 3rem; font-weight: 800; line-height: 1.15;">
                     @Localizer["Thank you for downloading"]
-                    <span class='text-primary'>@Localizer["AnduinOS"]</span>
-                    @Localizer["!"]
+                    <span class="text-primary">@Localizer["AnduinOS"]</span>
                 </h1>
-                <p class="text-lg text-white-50">@Localizer["Follow the steps below to get started with your new operating system."]</p>
-                <p class="text-lg text-white-90">@Localizer["Enjoy your new OS!"]</p>
+                <p class="text-lg text-white-50 mb-4" style="font-size: 1.25rem; max-width: 540px;">
+                    @Localizer["Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes."]
+                </p>
             </div>
             <div class="col-lg-5 d-none d-lg-flex mx-auto text-center">
                 <div class="landing-intro-screenshot">
-                    <img src="sc.webp" alt="AnduinOS Main screenshot" class="img-fluid"/>
+                    <img src="sc.webp" alt="AnduinOS Main screenshot" class="img-fluid" />
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-@* Steps section *@
-<section class="py-6">
+@* ── Phase 1: Create Installation Media ── *@
+<section class="py-6 bg-white">
     <div class="container">
-        <div class="mb-5 text-center">
-            <h2 class="display-4 fw-bold">@Localizer["What's next?"]</h2>
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Phase 1"]</span>
+            <h2 class="h1">@Localizer["Create Installation Media"]</h2>
+            <p class="text-muted fs-lg">@Localizer["Verify your download and create a bootable USB drive."]</p>
         </div>
 
-        <div class="row text-start">
+        @* Checksum Verification *@
+        <div class="row mb-5">
             <div class="col-12">
-
-                @* Step 1: Verify Checksum *@
-                <div class="card border mb-4">
+                <div class="card border-0 shadow-sm">
                     <div class="card-body p-4">
                         <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="fingerprint"></i>
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10 me-3" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="fingerprint" class="text-primary" style="width: 22px; height: 22px;"></i>
                             </div>
                             <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">1</span>@Localizer["verify the checksum"]</h4>
-                                <p class="fs-lg">@Localizer["After downloading the ISO file, you should verify its integrity to ensure it has not been tampered with."]</p>
-                                <p class="fs-lg">@Localizer["On Linux or macOS, use the sha256sum command. On Windows, use 7-Zip."]</p>
-                                <div class="bg-dark rounded-3 p-3 mb-3">
-                                    <code class="text-white" style="font-size: 0.9rem;">sha256sum ./AnduinOS.iso</code>
+                                <h4 class="mt-0">@Localizer["1. Verify the checksum"]</h4>
+                                <p class="fs-lg">@Localizer["After downloading the ISO file, verify its integrity to ensure it has not been tampered with."]</p>
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-4">
+                                        <div class="bg-dark rounded-3 p-3 mb-3">
+                                            <code class="text-white" style="font-size: 0.9rem;">sha256sum ./AnduinOS.iso</code>
+                                        </div>
+                                        <p class="fs-lg mb-0">
+                                            @Localizer["Compare the output with the"]
+                                            <a href="https://cf.anduinos.com/AnduinOS-2.0.0.sha256">@Localizer["official SHA256 checksum"]</a>@Localizer[". If they match, your ISO is valid."]
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8 text-center">
+                                        <img src="~/images/checksum.webp" alt="@Localizer["Verify ISO checksum"]" class="img-fluid rounded-3" style="max-height: 340px;" />
+                                    </div>
                                 </div>
-                                <img src="~/images/checksum.png" alt="@Localizer["Verify ISO checksum"]" class="img-fluid rounded-3 mb-3 d-block mx-auto" />
-                                <p class="fs-lg mb-0">
-                                    @Localizer["Compare the output with the"]
-                                    <a href="https://cf.anduinos.com/AnduinOS-2.0.0.sha256">@Localizer["official SHA256 checksum"]</a>@Localizer[". If the checksums match, the ISO file is valid and untampered."]
-                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* Platform Tabs *@
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-transparent border-bottom pt-4 pb-3">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <h4 class="mb-0">@Localizer["2. Create a bootable USB drive"]</h4>
+                    <div class="d-flex gap-2 flex-wrap" role="group" id="platform-tabs">
+                        <button class="btn btn-outline-primary rounded-pill active" type="button"
+                                onclick="switchPlatform('windows')">
+                            <i class="fab fa-windows me-1"></i>Windows
+                        </button>
+                        <button class="btn btn-outline-primary rounded-pill" type="button"
+                                onclick="switchPlatform('linux')">
+                            <i class="fab fa-linux me-1"></i>Linux
+                        </button>
+                        <button class="btn btn-outline-primary rounded-pill" type="button"
+                                onclick="switchPlatform('macos')">
+                            <i class="fab fa-apple me-1"></i>macOS
+                        </button>
+                        <button class="btn btn-outline-primary rounded-pill" type="button"
+                                onclick="switchPlatform('ventoy')">
+                            <i data-lucide="usb" style="width:14px;height:14px;" class="me-1"></i>Ventoy
+                        </button>
+                    </div>
+                    <script>
+                        function switchPlatform(name) {
+                            document.querySelectorAll('.platform-panel').forEach(p => p.classList.remove('show'));
+                            document.getElementById('panel-' + name).classList.add('show');
+                            document.querySelectorAll('#platform-tabs .btn').forEach(b => b.classList.remove('active'));
+                            event.target.closest('button').classList.add('active');
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="card-body p-4">
+                @* Windows Panel *@
+                <div class="collapse show platform-panel" id="panel-windows">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge bg-primary bg-opacity-10 text-primary px-2 py-1">Rufus</span>
+                                <span class="text-muted small">@Localizer["Free, open-source USB flashing tool"]</span>
+                            </div>
+                            <p class="text-muted mb-3">@Localizer["We recommend using Rufus to create the bootable USB drive. Make sure to select"] <strong>@Localizer["dd mode"]</strong> @Localizer["instead of ISO mode."]</p>
+                            <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 mb-3">
+                                <p class="fw-semibold mb-1 small">⚠️ @Localizer["Use dd mode, not ISO mode!"]</p>
+                                <p class="mb-0 small text-muted">@Localizer["ISO mode may cause AnduinOS to fail to boot."]</p>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="https://rufus.ie/" class="btn btn-primary btn-sm btn-pill" target="_blank">
+                                    <i data-lucide="download" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Rufus"]
+                                </a>
+                                <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                    @Localizer["Full Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="~/images/rufus.webp" alt="Rufus" class="img-fluid rounded-3" style="max-height: 280px;" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+
+                @* Linux Panel *@
+                <div class="collapse platform-panel" id="panel-linux">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge bg-success bg-opacity-10 text-success px-2 py-1">Impression</span>
+                                <span class="text-muted small">@Localizer["Simple, modern ISO flashing tool"]</span>
+                            </div>
+                            <p class="text-muted mb-3">@Localizer["Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:"]</p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="btn btn-primary btn-sm btn-pill" target="_blank">
+                                    <i data-lucide="download" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Get Impression on Flathub"]
+                                </a>
+                                <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                    @Localizer["Full Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                </a>
+                            </div>
+                            <p class="text-muted small mb-2">@Localizer["Or use the command line:"]</p>
+                            <div class="bg-dark rounded-3 p-2 mb-0">
+                                <code class="text-white" style="font-size: 0.8rem;">sudo dd if=./AnduinOS.iso of=&lt;device&gt; status=progress oflag=sync bs=4M</code>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="~/images/impression.webp" alt="Impression" class="img-fluid rounded-3" style="max-height: 280px;" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+
+                @* macOS Panel *@
+                <div class="collapse platform-panel" id="panel-macos">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge bg-info bg-opacity-10 text-info px-2 py-1">BalenaEtcher</span>
+                                <span class="text-muted small">@Localizer["Cross-platform, safe ISO flasher"]</span>
+                            </div>
+                            <p class="text-muted mb-3">@Localizer["BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe."]</p>
+                            <ol class="small text-muted mb-3">
+                                <li>@Localizer["Download and install"] <a href="https://etcher.balena.io/">BalenaEtcher</a>.</li>
+                                <li>@Localizer["Click \"Flash from file\" and select the AnduinOS ISO."]</li>
+                                <li>@Localizer["Select your target USB drive and click \"Flash!\"."]</li>
+                            </ol>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="https://etcher.balena.io/" class="btn btn-primary btn-sm btn-pill" target="_blank">
+                                    <i data-lucide="download" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Etcher"]
+                                </a>
+                                <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                    @Localizer["Full Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center d-none d-lg-block">
+                            <div class="bg-light rounded-4 d-inline-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                                <i class="fab fa-apple fa-4x text-dark"></i>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                @* Step 2: Burn ISO to USB *@
-                <div class="card border mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="hard-drive"></i>
+                @* Ventoy Panel *@
+                <div class="collapse platform-panel" id="panel-ventoy">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge bg-warning bg-opacity-10 text-warning px-2 py-1">Ventoy</span>
+                                <span class="text-muted small">@Localizer["Multi-ISO, reusable USB solution"]</span>
                             </div>
-                            <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">2</span>@Localizer["Create a USB installation disk"]</h4>
-                                <p class="fs-lg mb-0">@Localizer["Use the downloaded ISO file to create a bootable USB drive. You will need a USB drive with at least 4 GB of storage."]</p>
-                            </div>
-                        </div>
-
-                        @* Windows *@
-                        <h4 class="mt-4 mb-2 fw-bold">Windows</h4>
-                        <p class="fs-lg">@Localizer["If you are using a Windows computer, we recommend using Rufus to create the bootable USB drive."]</p>
-                        <div class="bg-body-tertiary border-start border-4 border-primary rounded-2 p-3 my-3">
-                            <p class="fw-semibold mb-2">@Localizer["ℹ️ Rufus"]</p>
-                            <p class="mb-0">@Localizer["You can download Rufus from its"] <a href="https://rufus.ie/">@Localizer["official website"]</a>@Localizer["."]</p>
-                        </div>
-                        <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 my-3">
-                            <p class="fw-semibold mb-2">@Localizer["⚠️ Use dd mode in Rufus, not ISO mode!"]</p>
-                            <p class="mb-0">@Localizer["When using Rufus, make sure to select"] <strong><code>@Localizer["dd mode"]</code></strong> @Localizer["to create the bootable USB drive. This will ensure the USB drive is bootable on both UEFI and legacy BIOS systems. The default"] <code>@Localizer["ISO mode"]</code> @Localizer["may cause AnduinOS to fail to boot."]</p>
-                        </div>
-
-                        @* Linux *@
-                        <h4 class="mt-4 mb-2 fw-bold">Linux</h4>
-                        <p class="fs-lg">@Localizer["If you are using a Linux computer, using Impression to flash the ISO is the most user-friendly way."]</p>
-                        <p class="fs-lg">@Localizer["You can easily install Impression via Flatpak:"]</p>
-                        <p class="fs-lg">
-                            <a href="https://flathub.org/en/apps/io.gitlab.adhami3310.Impression" class="btn btn-primary btn-pill">
-                                @Localizer["Get Impression on Flathub"]
-                            </a>
-                        </p>
-                        <p>
-                            <img class="img-fluid d-block mx-auto" src="~/images/impression.png" alt="Impression" />
-                        </p>
-                        <p class="fs-lg mt-3">@Localizer["Alternatively, if you prefer the command line, you can use the"] <code>dd</code> @Localizer["command to write the ISO file to the USB drive."]</p>
-                        <p class="fs-lg">@Localizer["First, identify the device name of your USB drive using"] <code>fdisk</code> @Localizer["or"] <code>lsblk</code>@Localizer[":"]</p>
-                        <div class="bg-dark rounded-3 p-3 mb-2">
-                            <code class="text-white" style="font-size: 0.9rem;">sudo fdisk -l</code>
-                        </div>
-                        <p class="fs-lg">@Localizer["Then, write the ISO file to the USB drive using"] <code>dd</code>@Localizer[". Replace"] <code>&lt;device&gt;</code> @Localizer["with your USB drive device name (e.g."] <code>/dev/sdb</code>@Localizer[", never use"] <code>/dev/sdb1</code>@Localizer[")."]</p>
-                        <div class="bg-dark rounded-3 p-3 mb-2">
-                            <code class="text-white" style="font-size: 0.9rem;">sudo dd if=./AnduinOS.iso of=&lt;device&gt; status=progress oflag=sync bs=4M</code>
-                        </div>
-                        <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 my-3">
-                            <p class="fw-semibold mb-2">@Localizer["⚠️ Data Loss!"]</p>
-                            <p class="mb-0">@Localizer["This command will erase all data on the USB drive. Make sure to back up your data before running this command, and double-check the"] <code>&lt;device&gt;</code> @Localizer["path!"]</p>
-                        </div>
-
-                        @* macOS *@
-                        <h4 class="mt-4 mb-2 fw-bold">macOS</h4>
-                        <p class="fs-lg">@Localizer["If you are using a Mac, we recommend"] <strong>BalenaEtcher</strong>@Localizer[", a cross-platform graphical tool that makes flashing ISO images extremely simple and safe."]</p>
-                        <ol class="fs-lg">
-                            <li>@Localizer["Download and install"] <a href="https://etcher.balena.io/">BalenaEtcher</a>@Localizer["."]</li>
-                            <li>@Localizer["Open BalenaEtcher, click \"Flash from file\" and select the AnduinOS ISO file."]</li>
-                            <li>@Localizer["Select your target USB drive."]</li>
-                            <li>@Localizer["Click \"Flash!\"."]</li>
-                        </ol>
-                        <p class="fs-lg">@Localizer["Alternatively, advanced macOS users can use the built-in"] <code>dd</code> @Localizer["command in the terminal (similar to Linux)."]</p>
-
-                        @* Ventoy *@
-                        <h4 class="mt-4 mb-2 fw-bold">@Localizer["Advanced: Ventoy"]</h4>
-                        <p class="fs-lg">@Localizer["If you frequently install operating systems, or want to keep your USB drive bootable while still using it for regular file storage, we highly recommend"] <strong>Ventoy</strong>@Localizer["."]</p>
-                        <ol class="fs-lg">
-                            <li>@Localizer["Install"] <a href="https://www.ventoy.net/">Ventoy</a> @Localizer["to your USB drive."]</li>
-                            <li>@Localizer["Once installed, you will have an empty partition on your USB drive."]</li>
-                            <li>@Localizer["Simply"] <strong>@Localizer["copy and paste"]</strong> @Localizer["the AnduinOS ISO file onto the drive like a regular file."]</li>
-                            <li>@Localizer["Boot from the USB drive and Ventoy will show a menu allowing you to select the AnduinOS ISO file to boot."]</li>
-                        </ol>
-                        <p class="fs-lg mb-0">@Localizer["This method completely avoids the need to repeatedly flash or erase your USB drive!"]</p>
-                    </div>
-                </div>
-
-                @* Step 3: Install AnduinOS from USB *@
-                <div class="card border mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="monitor"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">3</span>@Localizer["Install AnduinOS from USB"]</h4>
-                                <p class="fs-lg">@Localizer["After writing the AnduinOS ISO file to a USB drive, you can boot your computer from that drive to install AnduinOS."]</p>
+                            <p class="text-muted mb-3">@Localizer["If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot."]</p>
+                            <ol class="small text-muted mb-3">
+                                <li>@Localizer["Install"] <a href="https://www.ventoy.net/">Ventoy</a> @Localizer["to your USB drive."]</li>
+                                <li>@Localizer["Copy the AnduinOS ISO onto the drive like a regular file."]</li>
+                                <li>@Localizer["Boot from USB and select the ISO from Ventoy's menu."]</li>
+                            </ol>
+                            <p class="small text-success mb-3 fw-semibold">@Localizer["No repeated flashing or erasing needed!"]</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="https://www.ventoy.net/" class="btn btn-primary btn-sm btn-pill" target="_blank">
+                                    <i data-lucide="download" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Ventoy"]
+                                </a>
+                                <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                    @Localizer["Full Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                                </a>
                             </div>
                         </div>
-
-                        @* Optional Pre-installation Steps *@
-                        <div class="bg-body-tertiary border-start border-4 border-primary rounded-2 p-3 my-3">
-                            <p class="fw-semibold mb-2">💡 @Localizer["Optional Pre-installation Steps"]</p>
-                            <ul class="mb-0 fs-lg">
-                                <li><strong>@Localizer["Secure Boot"]</strong>@Localizer[": If you wish to use Secure Boot, please read the"] <a href="https://docs.anduinos.com/Install/First-Boot-For-Secure-Boot.md/">@Localizer["Secure Boot guide"]</a> @Localizer["to enable it in BIOS before booting from USB."]</li>
-                                <li><strong>@Localizer["NVMe Optimization"]</strong>@Localizer[": If you are installing on an NVMe SSD, you may want to"] <a href="https://docs.anduinos.com/Install/Change-NVME-LBA-Size.md/">@Localizer["change the NVMe LBA size to 4K for optimal performance"]</a>@Localizer["."]</li>
-                            </ul>
-                        </div>
-
-                        @* Boot from USB *@
-                        <h4 class="mt-4 mb-2 fw-bold">@Localizer["Boot from USB"]</h4>
-                        <p class="fs-lg">@Localizer["The key to enter the boot device menu varies by computer manufacturer. Common keys include"] <strong>F12</strong>@Localizer[", "] <strong>F11</strong>@Localizer[", "] <strong>Esc</strong>@Localizer[", "] <strong>F10</strong>@Localizer[", or "] <strong>@Localizer["Volume Down + Power"]</strong>@Localizer["."]</p>
-                        <ol class="fs-lg">
-                            <li>@Localizer["Insert the USB drive and power on your computer."]</li>
-                            <li>@Localizer["Immediately press your manufacturer's boot menu key."]</li>
-                            <li>@Localizer["Select the USB drive in the boot menu."]</li>
-                            <li>@Localizer["In the GRUB menu, select your language and choose"] <strong>@Localizer["Install AnduinOS"]</strong>@Localizer["."]</li>
-                        </ol>
-
-                        @* Installation Process *@
-                        <h4 class="mt-4 mb-2 fw-bold">@Localizer["Installation Process"]</h4>
-                        <p class="fs-lg">@Localizer["The graphical installer will guide you through setup:"]</p>
-                        <ol class="fs-lg">
-                            <li><strong>@Localizer["Select language"]</strong>@Localizer[": Choose the language to use during installation."]</li>
-                            <li><strong>@Localizer["Select keyboard layout"]</strong>@Localizer[": Choose your keyboard layout."]</li>
-                            <li><strong>@Localizer["Updates and other software"]</strong>@Localizer[": Choose whether to install updates and third-party software."]
-                                <div class="bg-warning-subtle border-start border-4 border-warning rounded-2 p-3 my-3">
-                                    <p class="fw-semibold mb-2">@Localizer["⚠️ Note"]</p>
-                                    <p class="mb-0">@Localizer["If Secure Boot is enabled, you will be asked to set a Secure Boot password here. Remember this password! It is needed to enroll third-party drivers on first boot."]</p>
-                                </div>
-                            </li>
-                            <li><strong>@Localizer["Set up disk"]</strong>@Localizer[": Choose the disk to install AnduinOS on. You can also choose to use LVM and LUKS2 to encrypt the disk."]</li>
-                            <li><strong>@Localizer["Location"]</strong>@Localizer[": Choose your location to set timezone, regional format, and APT source."]</li>
-                            <li><strong>@Localizer["User information"]</strong>@Localizer[": Enter the name, username, and password for the new user account."]</li>
-                            <li><strong>@Localizer["Install"]</strong>@Localizer[": The installation process will begin."]</li>
-                            <li><strong>@Localizer["Finish"]</strong>@Localizer[": When complete, you will be prompted to restart your computer and remove the USB drive."]</li>
-                        </ol>
-                    </div>
-                </div>
-
-                @* Step 4: Documentation *@
-                <div class="card border mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="book-text"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">4</span>@Localizer["Documentation"]</h4>
-                                <p class="fs-lg">@Localizer["Take a look at documentation, you may find your answers there."]</p>
-                                <a href="https://docs.anduinos.com/" class="btn btn-outline-primary btn-pill">@Localizer["Browse Documentation"]</a>
+                        <div class="col-lg-6 text-center d-none d-lg-block">
+                            <div class="bg-light rounded-4 d-inline-flex align-items-center justify-content-center" style="width: 120px; height: 120px;">
+                                <i data-lucide="usb" style="width: 56px; height: 56px;" class="text-warning"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                @* Step 5: Report Problems *@
-                <div class="card border mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="life-buoy"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">5</span>@Localizer["Report a problem"]</h4>
-                                <p class="fs-lg">@Localizer["Something not working? Have a suggestion? Post about it to discussion."]</p>
-                                <a href="https://github.com/Anduin2017/AnduinOS/discussions" class="btn btn-outline-primary btn-pill">@Localizer["Join the Discussion"]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                @* Step 6: Donate *@
-                <div class="card border mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="landing-feature me-3">
-                                <i data-lucide="hand-coins"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="mt-0"><span class="badge badge-subtle-primary me-2">6</span>@Localizer["Donate"]</h4>
-                                <p class="fs-lg">@Localizer["Feeling generous? AnduinOS works based on donations from users. We are grateful for your support."]</p>
-                                <a href="https://ko-fi.com/anduinxue/goal?g=0" class="btn btn-outline-primary btn-pill">@Localizer["Support AnduinOS"]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </section>
+
+@* ── Phase 2: Install AnduinOS ── *@
+<section class="py-6 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Phase 2"]</span>
+            <h2 class="h1">@Localizer["Install AnduinOS"]</h2>
+            <p class="text-muted fs-lg">@Localizer["Boot from USB and follow the graphical installer."]</p>
+        </div>
+
+        <div class="row align-items-center g-5">
+            @* Left: Installation steps *@
+            <div class="col-lg-6">
+                @* Pre-installation tips *@
+                <div class="bg-white border-start border-4 border-primary rounded-2 p-3 mb-4 shadow-sm">
+                    <p class="fw-semibold mb-2">💡 @Localizer["Optional Pre-installation Steps"]</p>
+                    <ul class="mb-0 small">
+                        <li><strong>@Localizer["Secure Boot"]</strong> — <a href="https://docs.anduinos.com/Install/First-Boot-For-Secure-Boot.html">@Localizer["Enable it in BIOS before booting"]</a></li>
+                        <li><strong>@Localizer["NVMe SSD?"]</strong> — <a href="https://docs.anduinos.com/Install/Change-NVME-LBA-Size.html">@Localizer["Change LBA size to 4K for optimal performance"]</a></li>
+                        <li><strong>@Localizer["Dual Boot?"]</strong> — <a href="https://docs.anduinos.com/Install/Dual-Boot-With-Windows.html">@Localizer["Read the dual-boot guide first"]</a></li>
+                    </ul>
+                </div>
+
+                @* Boot from USB *@
+                <h4 class="fw-bold mb-2">@Localizer["Boot from USB"]</h4>
+                <p class="text-muted">@Localizer["Common boot menu keys:"] <strong>F12, F11, Esc, F10,</strong> @Localizer["or"] <strong>@Localizer["Vol Down + Power"]</strong></p>
+                <ol class="mb-4">
+                    <li>@Localizer["Insert the USB drive and power on your computer."]</li>
+                    <li>@Localizer["Press your manufacturer's boot menu key immediately."]</li>
+                    <li>@Localizer["Select the USB drive in the boot menu."]</li>
+                    <li>@Localizer["In GRUB, select your language and choose"] <strong>@Localizer["Install AnduinOS"]</strong>.</li>
+                </ol>
+            </div>
+
+            @* Right: Installer screenshot *@
+            <div class="col-lg-6 text-center">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-3">
+                        <img src="~/images/run_installer.webp"
+                             alt="@Localizer["AnduinOS Installer"]"
+                             class="img-fluid rounded-3"
+                             loading="lazy" />
+                    </div>
+                    <div class="card-footer bg-light border-0 text-muted small py-2">
+                        <i data-lucide="info" style="width: 14px; height: 14px;" class="me-1"></i>
+                        @Localizer["The AnduinOS graphical installer — straightforward and guided."]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Phase 3: First Boot Setup ── *@
+<section class="py-6 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Phase 3"]</span>
+            <h2 class="h1">@Localizer["After Installation"]</h2>
+            <p class="text-muted fs-lg">@Localizer["First things to set up when you boot into AnduinOS."]</p>
+        </div>
+
+        <div class="row g-4">
+            @* Secure Boot *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-success bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="shield-check" class="text-success" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Secure Boot Enrollment"]</h5>
+                        </div>
+                        <img src="~/images/set-secure-boot-password.webp" alt="@Localizer["Secure Boot"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers."]</p>
+                        <a href="https://docs.anduinos.com/Install/First-Boot-For-Secure-Boot.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Secure Boot Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Switch Language *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="languages" class="text-primary" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Switch Language"]</h5>
+                        </div>
+                        <img src="~/images/settings-region-language.webp" alt="@Localizer["Language Settings"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy."]</p>
+                        <a href="https://docs.anduinos.com/Install/Switch-To-Your-Language.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Language Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Update System *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-info bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="refresh-cw" class="text-info" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Update Your System"]</h5>
+                        </div>
+                        <img src="~/images/app-store-updates.webp" alt="@Localizer["System Updates"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["Security patches are applied automatically. For feature updates, use the App Store's offline update mechanism."]</p>
+                        <a href="https://docs.anduinos.com/Install/Update-Your-System.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Update Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Firewall *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-danger bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="shield" class="text-danger" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Enable Firewall"]</h5>
+                        </div>
+                        <img src="~/images/ufwall-gtk-main.webp" alt="@Localizer["Firewall"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed."]</p>
+                        <a href="https://docs.anduinos.com/Install/Enable-Firewall.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Firewall Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Drivers *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-warning bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="cpu" class="text-warning" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Install Drivers"]</h5>
+                        </div>
+                        <img src="~/images/anduinos-oobe-nvidia.webp" alt="@Localizer["Drivers"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click."]</p>
+                        <a href="https://docs.anduinos.com/Install/Install-Drivers.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Drivers Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            @* Backup *@
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
+                                <i data-lucide="hard-drive" class="text-secondary" style="width: 22px; height: 22px;"></i>
+                            </div>
+                            <h5 class="mb-0">@Localizer["Setup Backup"]</h5>
+                        </div>
+                        <img src="~/images/deja-dup-backups.webp" alt="@Localizer["Backup"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
+                        <p class="text-muted small mb-3">@Localizer["Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it."]</p>
+                        <a href="https://docs.anduinos.com/Install/Backup-And-Restore.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
+                            @Localizer["Backup Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* ── Community & Support ── *@
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                            <i data-lucide="book-text" class="text-primary" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h5>@Localizer["Documentation"]</h5>
+                        <p class="text-muted small">@Localizer["Browse the full documentation for detailed guides, tips, and troubleshooting."]</p>
+                        <a href="https://docs.anduinos.com/" class="btn btn-outline-primary btn-pill">@Localizer["Browse Documentation"]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                            <i data-lucide="life-buoy" class="text-success" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h5>@Localizer["Community Support"]</h5>
+                        <p class="text-muted small">@Localizer["Something not working? Have a suggestion? Join the discussion on GitHub."]</p>
+                        <a href="https://github.com/Anduin2017/AnduinOS/discussions" class="btn btn-outline-primary btn-pill">@Localizer["Join the Discussion"]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-danger bg-opacity-10 mb-3" style="width: 56px; height: 56px;">
+                            <i data-lucide="hand-coins" class="text-danger" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <h5>@Localizer["Donate"]</h5>
+                        <p class="text-muted small">@Localizer["AnduinOS is community-supported. Your donation helps keep development active and independent."]</p>
+                        <a href="https://ko-fi.com/anduinxue/goal?g=0" class="btn btn-outline-primary btn-pill">@Localizer["Support AnduinOS"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+}
