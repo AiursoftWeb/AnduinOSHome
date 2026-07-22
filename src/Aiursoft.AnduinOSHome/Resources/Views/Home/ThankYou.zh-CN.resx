@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>。</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>如果一致，则说明您的 ISO 文件有效。</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. 校验校验和</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. 制作可启动的 USB 驱动器</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>下载 ISO 文件后，请验证其完整性以确保文件未被篡改。</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>下载完成后，您可能需要了解如何</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>安装完成后</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>以及</value>
@@ -33,8 +48,71 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>AnduinOS 安装程序</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS 由社区支持。您的捐赠有助于保持开发的活跃和独立。</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>备份</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>备份指南</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcher 是一款跨平台的图形化工具，可让 ISO 镜像的烧录变得简单且安全。</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>从 USB 启动</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>从 USB 启动并按照图形安装程序的指引操作。</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>从 USB 启动，并在 Ventoy 菜单中选择 ISO 文件。</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>浏览文档</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>浏览完整文档，获取详细指南、技巧及故障排除方法。</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>将ISO镜像烧录到U盘</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>将 LBA 大小更改为 4K 以获得最佳性能</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>更改系统语言、区域格式，并添加中文拼音或日本 Anthy 等输入法。</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>点击“从文件写入”并选择 AnduinOS ISO。</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>常见启动菜单按键：</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>社区支持</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>将输出结果与</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>在首次启动时完成 MOK 注册，以启用 NVIDIA 显卡和 Xbox 手柄等第三方驱动程序。</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>像普通文件一样将 AnduinOS ISO 复制到驱动器中。</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>创建安装介质</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>跨平台、安全的 ISO 写入工具</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd 模式</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>文档</value>
@@ -42,26 +120,185 @@
   <data name="Donate" xml:space="preserve">
     <value>捐赠</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>下载并安装</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>下载 Etcher</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>下载 Rufus</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>下载已开始</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>下载 Ventoy</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>驱动程序</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>驱动程序指南</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>双系统启动？</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>启用防火墙</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>在启动前于 BIOS 中启用它</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>尽情享受您的新操作系统吧！</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>想要支持我们？AnduinOS 的运营依赖用户捐赠。感谢您的慷慨相助！</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>防火墙</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>防火墙指南</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>首次启动 AnduinOS 后需配置的首要事项。</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>免费且开源</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>免费、开源的 USB 写入工具</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>完整指南</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>在 Flathub 上获取 Impression</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>如果您是AnduinOS的新用户，可能还需要查看</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>如果您经常安装操作系统，Ventoy 可以让您的 U 盘在保持可引导的同时继续用作普通存储设备。只需将 ISO 文件复制到驱动器中即可启动。</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impression 是在 Linux 上写入 ISO 镜像最简便的方式。请通过 Flatpak 安装：</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>在 GRUB 中，选择语言并点击</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>信息</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>插入 USB 驱动器并开启计算机电源。</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>安装</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>安装 AnduinOS</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>安装驱动程序</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>而非 ISO 模式。</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO 模式可能导致 AnduinOS 无法启动。</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>参与讨论</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>语言指南</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>语言设置</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>多 ISO、可重复使用的 USB 解决方案</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>无需反复刷写或擦除！</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>NVMe SSD？</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>官方 SHA256 校验和</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>可选的安装前步骤</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>或</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>或使用命令行：</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>第一阶段</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>第二阶段</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>阶段 3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>请立即按下您设备制造商的启动菜单键。</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>请先阅读双系统安装指南</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>报告问题</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>安全启动</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>安全启动注册</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>安全启动指南</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>安全补丁将自动应用。功能更新请使用应用商店的离线更新机制。</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>在启动菜单中选择 USB 驱动器。</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>选择目标 USB 驱动器，然后点击“刷写！”。</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>设置备份</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>简单、现代的 ISO 写入工具</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>遇到问题？有建议？欢迎加入 GitHub 讨论。</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>遇到问题或有建议？欢迎到讨论区发帖交流！</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>支持 AnduinOS</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>切换语言</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>系统要求</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>系统更新</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>查阅文档，您可能会在那里找到答案。</value>
@@ -69,11 +306,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>感谢您下载</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>AnduinOS 图形化安装程序——简洁直观，引导式操作。</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>到您的 USB 驱动器。</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW 默认处于禁用状态（无开放端口即无风险）。需要时，请通过欢迎中心或图形化防火墙应用启用它。</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>更新指南</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>更新您的系统</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>请使用 dd 模式，而非 ISO 模式！</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>使用 Deja Dup 将数据自动加密备份到外部驱动器或云存储。只需设置一次，便可一劳永逸。</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>使用欢迎中心一键安装 NVIDIA 驱动程序、Xbox 控制器支持以及其他硬件驱动程序。</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>验证 ISO 校验和</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>验证校验和</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>验证您的下载并创建可启动 USB 驱动器。</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>音量减 + 电源键</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>我们建议使用 Rufus 来创建可启动的 USB 驱动器。请确保选择</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>接下来做什么？</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>您的 AnduinOS 之旅由此开始。请按照以下步骤操作，30 分钟内即可上手使用。</value>
   </data>
 
 </root>
