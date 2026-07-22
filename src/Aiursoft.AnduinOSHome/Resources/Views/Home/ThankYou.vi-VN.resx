@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>Nếu khớp nhau, file ISO của bạn là hợp lệ.</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. Xác minh tổng kiểm tra</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. Tạo ổ USB có thể khởi động</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>Sau khi tải xuống tệp ISO, hãy xác minh tính toàn vẹn của nó để đảm bảo rằng nó không bị giả mạo.</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Sau khi tải xuống, bạn có thể muốn tìm hiểu cách để</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Sau khi cài đặt</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>và</value>
@@ -33,8 +48,71 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>Trình cài đặt AnduinOS</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS được cộng đồng hỗ trợ. Sự đóng góp của bạn giúp duy trì hoạt động phát triển và tính độc lập.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Sao lưu</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>Hướng dẫn sao lưu</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcher là một công cụ đồ họa đa nền tảng giúp việc ghi hình ảnh ISO trở nên đơn giản và an toàn.</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>Khởi động từ USB</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>Khởi động từ USB và làm theo trình cài đặt có giao diện đồ họa.</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>Khởi động từ USB và chọn file ISO từ menu của Ventoy.</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>Xem Tài liệu</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>Khám phá toàn bộ tài liệu để tìm hướng dẫn chi tiết, mẹo và cách khắc phục sự cố.</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>ghi file ISO vào USB</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>Đổi kích thước LBA thành 4K để đạt hiệu suất tối ưu</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>Thay đổi ngôn ngữ hệ thống, định dạng khu vực và thêm phương thức nhập liệu như Pinyin tiếng Trung hoặc Anthy tiếng Nhật.</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>Nhấp vào &quot;Flash from file&quot; và chọn tệp ISO AnduinOS.</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>Các phím menu khởi động phổ biến:</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>Hỗ trợ Cộng đồng</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>So sánh kết quả với</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>Hoàn tất đăng ký MOK khi khởi động lần đầu để kích hoạt các trình điều khiển bên thứ ba như NVIDIA và tay cầm Xbox.</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>Sao chép tệp AnduinOS ISO vào ổ đĩa như một tệp thông thường.</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>Tạo phương tiện cài đặt</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>Công cụ ghi ISO đa nền tảng, an toàn</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>chế độ dd</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>Tài liệu</value>
@@ -42,26 +120,185 @@
   <data name="Donate" xml:space="preserve">
     <value>Quyên góp</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Tải xuống và cài đặt</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>Tải xuống Etcher</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>Tải Rufus về</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>Đã bắt đầu tải xuống</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>Tải xuống Ventoy</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>Trình điều khiển</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>Hướng dẫn trình điều khiển</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>Khởi động kép?</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>Bật Tường lửa</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>Bật tính năng này trong BIOS trước khi khởi động</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Chúc bạn trải nghiệm hệ điều hành mới thật vui!</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Bạn muốn đóng góp? AnduinOS hoạt động dựa trên sự hỗ trợ từ người dùng. Chúng tôi vô cùng biết ơn sự giúp đỡ của bạn.</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>Tường lửa</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>Hướng dẫn Tường lửa</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>Các việc cần thiết lập đầu tiên khi khởi động vào AnduinOS.</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Miễn phí &amp; Mã nguồn mở</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>Công cụ ghi USB miễn phí, mã nguồn mở</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>Hướng dẫn đầy đủ</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>Tải Impression trên Flathub</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Nếu bạn mới làm quen với AnduinOS, bạn cũng có thể muốn xem qua</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>Nếu bạn thường xuyên cài đặt hệ điều hành, Ventoy cho phép ổ USB của bạn vẫn dùng được để lưu trữ dữ liệu thông thường trong khi vẫn có thể khởi động. Chỉ cần sao chép tệp ISO vào ổ và khởi động.</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impression là cách thân thiện nhất với người dùng để ghi ISO trên Linux. Cài đặt nó qua Flatpak:</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>Trong GRUB, chọn ngôn ngữ và chọn</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Thông tin</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>Cắm ổ USB và bật máy tính của bạn.</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>Cài đặt AnduinOS</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>Cài đặt trình điều khiển</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>thay vì chế độ ISO.</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>Chế độ ISO có thể khiến AnduinOS không khởi động được.</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>Tham gia thảo luận</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>Hướng dẫn Ngôn ngữ</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>Cài đặt ngôn ngữ</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>Giải pháp USB tái sử dụng, hỗ trợ đa ISO</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Không cần ghi hoặc xóa đi xóa lại!</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>SSD NVMe?</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>checksum SHA256 chính thức</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>Các bước trước khi cài đặt (Tùy chọn)</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>hoặc</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>Hoặc sử dụng dòng lệnh:</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>Giai đoạn 1</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>Giai đoạn 2</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>Giai đoạn 3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>Nhấn ngay phím menu khởi động của nhà sản xuất thiết bị của bạn.</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>Đọc hướng dẫn khởi động kép trước</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Báo cáo sự cố</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>Khởi động an toàn</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>Đăng ký Secure Boot</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>Hướng dẫn Secure Boot</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>Các bản vá bảo mật được áp dụng tự động. Đối với các bản cập nhật tính năng, hãy sử dụng cơ chế cập nhật ngoại tuyến của App Store.</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>Chọn ổ USB trong menu khởi động.</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>Chọn ổ USB đích của bạn và nhấp vào &quot;Flash!&quot;.</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>Cài đặt Sao lưu</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>Công cụ ghi ISO đơn giản, hiện đại</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>Gặp sự cố? Có đề xuất? Tham gia thảo luận trên GitHub.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Gặp sự cố? Có đề xuất? Hãy đăng thảo luận về nó.</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>Hỗ trợ AnduinOS</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>Đổi ngôn ngữ</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>Yêu cầu hệ thống</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>Cập nhật hệ thống</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Hãy xem tài liệu, bạn có thể tìm thấy câu trả lời ở đó.</value>
@@ -69,11 +306,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>Cảm ơn bạn đã tải xuống</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>Trình cài đặt đồ họa AnduinOS — đơn giản và có hướng dẫn.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>vào thiết bị USB của bạn.</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW bị tắt theo mặc định (không có cổng mở = không có rủi ro). Hãy bật nó qua Trung tâm Chào mừng hoặc ứng dụng Tường lửa đồ họa khi cần thiết.</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>Hướng dẫn cập nhật</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>Cập nhật hệ thống của bạn</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Hãy dùng chế độ dd, không dùng chế độ ISO!</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>Sử dụng Deja Dup để sao lưu tự động và mã hóa dữ liệu ra ổ đĩa ngoài hoặc đám mây. Cấu hình một lần, sau đó cứ yên tâm.</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>Sử dụng Welcome Center để cài đặt trình điều khiển NVIDIA, hỗ trợ tay cầm Xbox và các trình điều khiển phần cứng khác chỉ với một cú nhấp chuột.</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>Xác minh checksum ISO</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>kiểm tra checksum</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>Xác minh bản tải xuống và tạo ổ USB khởi động.</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>Giảm âm + Nguồn</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>Chúng tôi khuyên bạn nên sử dụng Rufus để tạo thiết bị USB khởi động. Hãy chắc chắn chọn</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Bước tiếp theo là gì?</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>Hành trình AnduinOS của bạn bắt đầu từ đây. Hãy làm theo các bước bên dưới để thiết lập và chạy hệ thống trong vòng chưa đầy 30 phút.</value>
   </data>
 
 </root>

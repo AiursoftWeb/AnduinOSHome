@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>。</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>一致すれば、ISOファイルは有効です。</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. チェックサムを確認する</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. ブータブルUSBドライブの作成</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>ISO ファイルのダウンロード後、改ざんされていないことを確認するために整合性を検証してください。</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>ダウンロード後、以下の方法を学ぶことをおすすめします：</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>インストール後</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>および</value>
@@ -33,8 +48,71 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>AnduinOS インストーラー</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOSはコミュニティの支援によって運営されています。あなたの寄付は、開発を継続的かつ独立した形で維持するのに役立ちます。</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>バックアップ</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>バックアップガイド</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcherは、ISOイメージの書き込みを簡単かつ安全に行えるクロスプラットフォームのグラフィカルツールです。</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>USBから起動する</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>USBからブートし、グラフィカルインストーラの指示に従ってください。</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>USBからブートし、VentoyのメニューからISOを選択します。</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>ドキュメントを参照する</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>詳細なガイド、ヒント、トラブルシューティングを含む完全なドキュメントを参照してください。</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>ISOをUSBドライブに書き込む</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>最適なパフォーマンスのためにLBAサイズを4Kに変更する</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>システム言語、地域設定を変更し、中国語ピンインや日本語Anthyなどの入力メソッドを追加します。</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>「ファイルからフラッシュ」をクリックし、AnduinOS ISO を選択します。</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>一般的なブートメニューキー：</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>コミュニティサポート</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>出力を以下の公式SHA256チェックサムと比較してください。</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>初回起動時にMOK登録を完了し、NVIDIAやXboxコントローラーなどのサードパーティ製ドライバーを有効にしてください。</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>AnduinOSのISOファイルを通常のファイルのようにドライブにコピーします。</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>インストールメディアの作成</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>クロスプラットフォーム、安全なISO書き込みツール</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd モード</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>ドキュメンテーション</value>
@@ -42,26 +120,185 @@
   <data name="Donate" xml:space="preserve">
     <value>寄付</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>ダウンロードしてインストールする</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>Etcherをダウンロード</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>Rufusをダウンロード</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>ダウンロードが開始されました</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>Ventoy をダウンロード</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>ドライバー</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>ドライバーガイド</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>デュアルブート？</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>ファイアウォールを有効にする</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>起動前にBIOSで有効にしてください</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>新しいOSをお楽しみください！</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>気前が良いですか？AnduinOSはユーザーの寄付によって運営されています。ご支援に心から感謝いたします。</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>ファイアウォール</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>ファイアウォールガイド</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>AnduinOS にブートした際に最初に設定すべき事項。</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>無料 &amp; オープンソース</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>無料のオープンソースUSBフラッシュツール</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>詳細ガイド</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>FlathubでImpressionを取得</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>AnduinOSを初めてお使いの場合は、こちらもご確認ください。</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>オペレーティングシステムのインストールを頻繁に行う場合、Ventoyを使用すれば、USBドライブをブータブルなまま通常のストレージとして使用し続けることができます。ISOファイルをドライブにコピーするだけでブート可能です。</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impressionは、LinuxでISOをフラッシュする最もユーザーフレンドリーな方法です。Flatpak経由でインストールしてください：</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>GRUBで言語を選択し、</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>情報</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>USBドライブを挿入し、コンピューターを起動します。</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>インストール</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>AnduinOS をインストールする</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>ドライバーをインストール</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>ISO モードではなく、</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISOモードはAnduinOSのブート失敗を引き起こす可能性があります。</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>ディスカッションに参加する</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>言語ガイド</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>言語設定</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>複数のISOファイルを扱える、再利用可能なUSBソリューション</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>フラッシュや消去の繰り返しは不要です！</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>NVMe SSDをお使いですか？</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>公式SHA256チェックサム</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>オプションのインストール前手順</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>または</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>またはコマンドラインを使用します：</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>フェーズ 1</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>フェーズ2</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>フェーズ3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>直ちにメーカー指定のブートメニューキーを押してください。</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>デュアルブートガイドを先に読んでください</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>問題を報告</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>セキュアブート</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>セキュアブートの登録</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>セキュアブートガイド</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>セキュリティパッチは自動的に適用されます。機能アップデートについては、App Storeのオフライン更新メカニズムを使用してください。</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>ブートメニューでUSBドライブを選択します。</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>ターゲットのUSBドライブを選択し、「Flash!」をクリックします。</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>バックアップの設定</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>シンプルでモダンなISO書き込みツール</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>問題が発生していますか？提案はありますか？GitHub でディスカッションにご参加ください。</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>動作しない点やご提案はありますか？ディスカッションに投稿してください。</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>AnduinOS をサポートする</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>言語を切り替える</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>システム要件</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>システムアップデート</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>ドキュメントを確認してみてください。答えが見つかるかもしれません。</value>
@@ -69,11 +306,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>AnduinOSのダウンロードありがとうございます</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>AnduinOSのグラフィカルインストーラー — 直感的でガイド付き。</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>USBドライブに。</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW はデフォルトで無効化されています（開いているポートがない = リスクなし）。必要に応じて、ウェルカムセンターまたはグラフィカルなファイアウォールアプリから有効にしてください。</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>アップデートガイド</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>システムの更新</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>dd モードを使用し、ISO モードは使用しないでください！</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>Deja Dup を使用して、外部ドライブまたはクラウドストレージへの自動暗号化バックアップを行います。一度設定すれば、あとは忘れてください。</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>ウェルカムセンターを使用して、ワンクリックでNVIDIAドライバー、Xboxコントローラーサポート、およびその他のハードウェアドライバーをインストールします。</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>ISO チェックサムを検証</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>チェックサムを確認する</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>ダウンロードしたファイルを確認し、ブータブルUSBドライブを作成してください。</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>音量下 + 電源ボタン</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>起動可能なUSBドライブを作成するには、Rufusの使用を推奨します。必ず選択してください</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>次は何をしますか？</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>AnduinOSとの出会いはここから始まります。以下の手順に従うと、30分以内にセットアップが完了します。</value>
   </data>
 
 </root>
