@@ -428,12 +428,7 @@
                                                 data-bs-target="#download-modal"
                                                 data-version="2.0"
                                                 data-latest="2.0.1"
-                                                data-prefered-language="@currentCulture"
-                                                data-size="2.53 GB"
-                                                data-support-torrent="true"
-                                                data-support-https="true"
-                                                data-single-iso="true"
-                                                data-download-url-base="https://cf.anduinos.com/AnduinOS-2.0.1-amd64">
+                                                data-size="2.53 GB">
                                             @Localizer["Download"]
                                         </button>
                                     </div>
@@ -1311,7 +1306,7 @@
         <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
                 <div class="accordion" id="accordionFaq">
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqZero" data-bs-toggle="collapse"
                              data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
                             <h6 class="mb-0">
@@ -1325,7 +1320,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqOne" data-bs-toggle="collapse"
                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <h6 class="mb-0">
@@ -1341,7 +1336,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqTwo" data-bs-toggle="collapse"
                              data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             <h6 class="mb-0">
@@ -1355,7 +1350,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqThree" data-bs-toggle="collapse"
                              data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                             <h6 class="mb-0">
@@ -1371,7 +1366,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqFour" data-bs-toggle="collapse"
                              data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                             <h6 class="mb-0">
@@ -1392,7 +1387,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border mb-3">
+                    <div class="card border mb-3 shadow-none">
                         <div class="card-header cursor-pointer" id="faqFive" data-bs-toggle="collapse"
                              data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                             <h6 class="mb-0">
@@ -1446,22 +1441,67 @@
 
 @* modal for download links *@
 <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 id="download-modal-title" class="modal-title">@Localizer["Download AnduinOS"]</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body m-3">
-                <p id="download-modal-description"
-                   class="mb-0">@Localizer["To download AnduinOS, select the correct edition below:"]</p>
-                <hr>
-                <div class="mb-3">
-                    <label for="language-select" class="form-label">@Localizer["Language"]</label>
-                    <select id="language-select" class="form-select"></select>
+            <div class="modal-body">
+                @* ── amd64 ── *@
+                <div class="card border mb-3 shadow-none">
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">x86-64 ISO <small class="text-muted fw-normal">(Intel / AMD)</small></h6>
+                        <p class="card-text text-muted small mb-2">@Localizer["For most Intel and AMD computers."]</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-amd64.iso"
+                               class="btn btn-pill btn-primary"
+                               onclick="setTimeout(function(){top.location.href='/thankyou.html';},500)">
+                                @Localizer["Direct (HTTP)"]
+                            </a>
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-amd64.torrent"
+                               class="btn btn-sm btn-pill btn-outline-secondary">
+                                @Localizer["Torrent"]
+                            </a>
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-amd64.sha256"
+                               class="btn btn-sm btn-pill btn-outline-secondary">
+                                @Localizer["Checksum"]
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div id="download-links-container" class="d-flex flex-wrap gap-2">
-                    <!-- Dynamic insert download links -->
+                @* ── arm64 ── *@
+                <div class="card border mb-3 shadow-none">
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">ARM64 ISO <small class="text-muted fw-normal">(Snapdragon / ARM SBCs)</small></h6>
+                        <p class="card-text text-muted small mb-2">@Localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]</p>
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-arm64.iso"
+                               class="btn btn-pill btn-primary"
+                               onclick="setTimeout(function(){top.location.href='/thankyou.html';},500)">
+                                @Localizer["Direct (HTTP)"]
+                            </a>
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-arm64.torrent"
+                               class="btn btn-sm btn-pill btn-outline-secondary">
+                                @Localizer["Torrent"]
+                            </a>
+                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-arm64.sha256"
+                               class="btn btn-sm btn-pill btn-outline-secondary">
+                                @Localizer["Checksum"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                @* ── Docker / Podman ── *@
+                <div class="card border mb-3 shadow-none">
+                    <div class="card-body">
+                        <h6 class="card-title mb-1">@Localizer["Container Edition"]</h6>
+                        <p class="card-text text-muted small mb-2">@Localizer["Run AnduinOS in Docker or Podman."]</p>
+                        <a href="/Container.html"
+                           class="btn btn-pill btn-outline-success">
+                            @Localizer["Container"]
+                        </a>
+                    </div>
                 </div>
                 <div class="mt-3">
                     <p class="text-muted">
