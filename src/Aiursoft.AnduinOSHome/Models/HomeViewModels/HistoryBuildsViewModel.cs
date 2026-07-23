@@ -43,7 +43,7 @@ public static class VersionData
     {
         new(
             Version:         "2.0",
-            LatestPatch:     "2.0.0",
+            LatestPatch:     "2.0.1",
             Codename:        "Resolute Raccoon",
             Released:        new DateOnly(2026, 6, 30),
             EndsSupport:     new DateOnly(2031, 4, 1),
