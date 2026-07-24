@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>S&apos;ils correspondent, votre ISO est valide.</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. Vérifier la somme de contrôle</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. Créez une clé USB amorçable</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>Après le téléchargement du fichier ISO, vérifiez son intégrité pour vous assurer qu&apos;il n&apos;a pas été altéré.</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Après le téléchargement, vous voudrez peut-être apprendre à</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Après l&apos;installation</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>et</value>
@@ -33,8 +48,71 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>Programme d&apos;installation d&apos;AnduinOS</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS est soutenu par la communauté. Votre don aide à maintenir le développement actif et indépendant.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Sauvegarde</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>Guide de sauvegarde</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcher est un outil graphique multiplateforme qui simplifie et sécurise le processus de gravure d&apos;images ISO.</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>Démarrer sur le lecteur USB</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>Démarrer depuis la clé USB et suivez l&apos;installateur graphique.</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>Démarrer depuis le lecteur USB et sélectionner l&apos;ISO dans le menu de Ventoy.</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>Parcourir la documentation</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>Consultez la documentation complète pour des guides détaillés, des conseils et du dépannage.</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>graver l&apos;ISO sur une clé USB</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>Modifier la taille du LBA à 4 Ko pour des performances optimales</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>Modifiez la langue du système, les formats régionaux et ajoutez des méthodes de saisie telles que Pinyin chinois ou Anthy japonais.</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>Cliquez sur « Flasher depuis un fichier » et sélectionnez l’ISO d’AnduinOS.</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>Touches courantes du menu de démarrage :</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>Support de la communauté</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>Comparez la sortie avec le</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>Terminez l&apos;inscription MOK au premier démarrage pour activer les pilotes tiers tels que NVIDIA et les manettes Xbox.</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>Copiez l&apos;ISO d&apos;AnduinOS sur la clé comme un fichier ordinaire.</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>Créer le support d&apos;installation</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>Graveur ISO sécurisé et multiplateforme</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>mode dd</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>Documentation</value>
@@ -42,26 +120,185 @@
   <data name="Donate" xml:space="preserve">
     <value>Faire un don</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Télécharger et installer</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>Télécharger Etcher</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>Télécharger Rufus</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>Téléchargement démarré</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>Télécharger Ventoy</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>Pilotes</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>Guide des pilotes</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>Dual boot ?</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>Activer le pare-feu</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>Activez-le dans le BIOS avant le démarrage</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Profitez de votre nouveau système d&apos;exploitation !</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Vous vous sentez généreux ? AnduinOS fonctionne grâce aux dons des utilisateurs. Nous vous remercions pour votre soutien.</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>Pare-feu</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>Guide du pare-feu</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>Premières configurations à effectuer au démarrage d&apos;AnduinOS.</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Gratuit et open source</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>Outil de gravure USB gratuit et open source</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>Guide complet</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>Obtenir Impression sur Flathub</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Si vous êtes nouveau sur AnduinOS, vous voudrez peut-être aussi consulter les</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>Si vous installez fréquemment des systèmes d&apos;exploitation, Ventoy vous permet de conserver votre clé USB utilisable pour le stockage standard tout en restant amorçable. Il suffit de copier le fichier ISO sur la clé et de démarrer dessus.</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impression est la méthode la plus conviviale pour graver l&apos;ISO sous Linux. Installez-le via Flatpak :</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>Dans GRUB, sélectionnez votre langue et choisissez</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Informations</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>Insérez la clé USB et allumez votre ordinateur.</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installer</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>Installer AnduinOS</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>Installer les pilotes</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>au lieu du mode ISO.</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>Le mode ISO peut empêcher AnduinOS de démarrer.</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>Rejoindre la discussion</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>Guide des langues</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>Paramètres de langue</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>Solution USB réutilisable multi-ISO</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Aucun clignotement ou effacement répété n&apos;est nécessaire !</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>SSD NVMe ?</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>somme de contrôle SHA256 officielle</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>Étapes de préinstallation facultatives</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>Ou utilisez la ligne de commande :</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>Phase 1</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>Phase 2</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>Phase 3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>Appuyez immédiatement sur la touche du menu de démarrage de votre fabricant.</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>Lisez d&apos;abord le guide du dual-boot</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Signaler un problème</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>Démarrage sécurisé</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>Enrôlement Secure Boot</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>Guide Secure Boot</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>Les correctifs de sécurité sont appliqués automatiquement. Pour les mises à jour fonctionnelles, utilisez le mécanisme de mise à jour hors ligne de l&apos;App Store.</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>Sélectionnez la clé USB dans le menu de démarrage.</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>Sélectionnez votre clé USB cible et cliquez sur « Flash ! ».</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>Configurer la sauvegarde</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>Outil simple et moderne de gravure d&apos;images ISO</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>Un problème ? Une suggestion ? Rejoignez la discussion sur GitHub.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Un problème ? Une suggestion ? Postez-en une discussion.</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>Soutenir AnduinOS</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>Changer de langue</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>Configuration requise</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>Mises à jour du système</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Consultez la documentation, vous y trouverez peut-être vos réponses.</value>
@@ -69,11 +306,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>Merci d&apos;avoir téléchargé</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>L’installateur graphique d’AnduinOS — simple et guidé.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>sur votre clé USB.</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW est désactivé par défaut (aucun port ouvert = aucun risque). Activez-le via le Centre de bienvenue ou l&apos;application graphique Pare-feu si nécessaire.</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>Guide de mise à jour</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>Mettre à jour votre système</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Utilisez le mode dd, pas le mode ISO !</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>Utilisez Deja Dup pour des sauvegardes automatisées et chiffrées sur un disque externe ou un stockage cloud. Configurez-le une fois, puis oubliez-le.</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>Utilisez le Centre d&apos;accueil pour installer les pilotes NVIDIA, la prise en charge des manettes Xbox et d&apos;autres pilotes matériels en un seul clic.</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>Vérifier la somme de contrôle ISO</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>vérifier la somme de contrôle</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>Vérifiez votre téléchargement et créez une clé USB amorçable.</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>Vol Bas + Marche</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>Nous vous recommandons d&apos;utiliser Rufus pour créer la clé USB amorçable. Assurez-vous de sélectionner</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Et ensuite ?</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>Votre aventure avec AnduinOS commence ici. Suivez les étapes ci-dessous pour être opérationnel en moins de 30 minutes.</value>
   </data>
 
 </root>
