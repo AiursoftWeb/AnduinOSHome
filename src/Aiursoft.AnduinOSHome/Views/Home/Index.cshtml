@@ -1256,7 +1256,7 @@
 		@* Section header *@
 		<div class="text-center mb-5">
 			<span class="text-uppercase text-primary text-sm fw-medium mb-2 d-block">@Localizer["All-in-Latest"]</span>
-			<h2 class="display-5 fw-bold text-white mb-2">@Localizer["Developer's Dream. AI's Ideal."]</h2>
+			<h2 class="display-5 fw-bold text-white mb-2">@Localizer["Developer's Dream."] <span style="background: linear-gradient(135deg, #0ea5e9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">@Localizer["AI's Ideal."]</span></h2>
 			<p class="text-gray-400 fs-lg mb-0">@Localizer["Bleeding-edge kernel, toolchains, and drivers — all pre-configured, zero friction. No Snap, no legacy dead weight, no compromises."]</p>
 		</div>
 
@@ -1349,14 +1349,14 @@
 
 			@* ── Right: AI's Ideal ── *@
 			<div class="col-lg-6">
-				<div class="card bg-dark-glass border-white-10 h-100" style="border-left: 3px solid #10b981;">
+				<div class="card bg-dark-glass border-white-10 h-100" style="border-left: 3px solid #0ea5e9;">
 					<div class="card-body p-4">
 						<div class="d-flex align-items-center gap-3 mb-4">
-							<div class="d-inline-flex align-items-center justify-content-center rounded-3" style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981, #0ea5e9);">
+							<div class="d-inline-flex align-items-center justify-content-center rounded-3" style="width: 48px; height: 48px; background: linear-gradient(135deg, #0ea5e9, #8b5cf6);">
 								<i data-lucide="sparkles" class="text-white" style="width: 24px; height: 24px;"></i>
 							</div>
 							<div>
-								<h4 class="text-white mb-0">@Localizer["AI's Ideal"]</h4>
+								<h4 class="text-white mb-0">@Localizer["Ideal Toolset"]</h4>
 								<small class="text-gray-400">@Localizer["Modern infrastructure. Dual architecture. Production ready."]</small>
 							</div>
 						</div>
@@ -1389,27 +1389,27 @@
 									<div class="text-warning mb-1"><i data-lucide="container" style="width: 16px; height: 16px;"></i></div>
 									<h6 class="text-white mb-1 small fw-semibold">KVM + Docker</h6>
 									<small class="text-gray-500">Native virtualization. Containers without a VM inside a VM.</small>
-									</div>
 								</div>
-								<div class="col-6">
-									<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
-										<div class="mb-1" style="color: #f59e0b;"><i data-lucide="sun" style="width: 16px; height: 16px;"></i></div>
-										<h6 class="text-white mb-1 small fw-semibold">Wayland + HDR</h6>
-										<small class="text-gray-500">Pure Wayland. No X11 fallback. HDR out of the box.</small>
-									</div>
+							</div>
+							<div class="col-6">
+								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
+									<div class="mb-1" style="color: #f59e0b;"><i data-lucide="sun" style="width: 16px; height: 16px;"></i></div>
+									<h6 class="text-white mb-1 small fw-semibold">Wayland + HDR</h6>
+									<small class="text-gray-500">Pure Wayland. No X11 fallback. HDR out of the box.</small>
 								</div>
-								<div class="col-6">
-									<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
-										<div class="mb-1" style="color: #a855f7;"><i data-lucide="sparkles" style="width: 16px; height: 16px;"></i></div>
-										<h6 class="text-white mb-1 small fw-semibold">Edge AI</h6>
-										<small class="text-gray-500"><code class="text-gray-300">sudo apt install anduinos-why-ai</code> — local LLM, one command away.</small>
+							</div>
+							<div class="col-6">
+								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
+									<div class="mb-1" style="color: #a855f7;"><i data-lucide="sparkles" style="width: 16px; height: 16px;"></i></div>
+									<h6 class="text-white mb-1 small fw-semibold">Edge AI</h6>
+									<small class="text-gray-500"><code class="text-gray-300">sudo apt install anduinos-why-ai</code> — local LLM, one command away.</small>
 								</div>
 							</div>
 						</div>
 
 						@* AI-ready callout *@
-						<div class="p-3 rounded-3 d-flex align-items-center gap-2" style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2);">
-							<i data-lucide="zap" class="text-success" style="width: 16px; height: 16px; flex-shrink: 0;"></i>
+						<div class="p-3 rounded-3 d-flex align-items-center gap-2" style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2);">
+							<i data-lucide="zap" class="text-primary" style="width: 16px; height: 16px; flex-shrink: 0;"></i>
 							<small class="text-gray-300">@Localizer["AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux."]</small>
 						</div>
 					</div>
