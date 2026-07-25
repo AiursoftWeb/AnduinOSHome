@@ -8,7 +8,7 @@
         "Everything you do on Ubuntu, you can do it on <span class='text-primary'>AnduinOS</span>",
         "Reveal the power of your computer, choose <span class='text-primary'>AnduinOS</span>",
         "Transitioning to <span class='text-primary'>AnduinOS</span> will be the best decision you've ever made",
-        "<span class='text-primary'>AnduinOS</span> 1.0 is released on 2024.09.01",
+        "<span class='text-primary'>AnduinOS</span> 2.0 is released on 2026.06.30",
     };
     var appWallIcons = new Dictionary<string, string>
     {
@@ -561,6 +561,9 @@
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Ubuntu Base"]</span>
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Wayland Ready"]</span>
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["HDR Support"]</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["ARM64 Support"]</span>
+            <a href="https://docs.anduinos.com/Applications/Development/Why-AI/Why-AI.html" target="_blank" class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill text-decoration-none">@Localizer["Edge AI"]</a>
+            <a href="https://apkg.aiursoft.com" target="_blank" class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill text-decoration-none">@Localizer["Declarative Built"]</a>
         </div>
 
         <div class="row g-4">
@@ -591,6 +594,7 @@
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Architecture"]</td><td class="text-white fw-semibold pe-0">x86_64 / ARM64</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Init System"]</td><td class="text-white fw-semibold pe-0">systemd</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Default Filesystem"]</td><td class="text-white fw-semibold pe-0">ext4</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Memory Compression"]</td><td class="text-white fw-semibold pe-0">ZRAM</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Default Browser"]</td><td class="text-white fw-semibold pe-0">Firefox</td></tr>
                                 </tbody>
                             </table>
@@ -1277,7 +1281,7 @@
 						</div>
 
 						@* Terminal window *@
-						<div class="bg-dark rounded-3 p-3 mb-4 font-monospace" style="font-size: 0.82rem; border: 1px solid rgba(255,255,255,0.08);">
+						<div class="bg-black rounded-3 p-3 mb-4 font-monospace" style="font-size: 0.82rem; border: 1px solid rgba(255,255,255,0.06);">
 							<div class="d-flex gap-2 mb-3">
 								<span class="rounded-circle bg-danger" style="width: 10px; height: 10px;"></span>
 								<span class="rounded-circle bg-warning" style="width: 10px; height: 10px;"></span>
@@ -1314,15 +1318,24 @@
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								☕ Java
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🔮 Kotlin
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								<i class="fab fa-php me-1" style="color:#777BB4;"></i> PHP
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								💎 Ruby
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🌙 Lua
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								<i class="fab fa-node-js me-1" style="color:#68A063;"></i> Node.js
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🔷 TypeScript
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								λ Haskell
@@ -1335,9 +1348,24 @@
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								🐍 Anaconda
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									📊 R
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								<i class="fab fa-docker me-1"></i> Docker
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🐘 PostgreSQL
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🔴 Redis
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									🟢 NGINX
+								</span>
+								<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
+									<i class="fas fa-code-branch me-1" style="color:#f05133;"></i> Git
 							</span>
 							<span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">
 								<i data-lucide="terminal" style="width: 13px; height: 13px;" class="me-1"></i> GNU Bash
