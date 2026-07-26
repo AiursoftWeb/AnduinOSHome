@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>Hvis de matcher, er din ISO gyldig.</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. Verificer checksummet</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. Opret en bootbar USB-drev</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>Når du har downloadet ISO-filen, skal du verificere dets integritet for at sikre, at den ikke er blevet manipuleret.</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Efter download kan det være en god idé at lære, hvordan man</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Efter installationen</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>og</value>
@@ -33,8 +48,74 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>AnduinOS-installationsprogrammet</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS støttes af fællesskabet. Din donation hjælper med at holde udviklingen aktiv og uafhængig.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>Sikkerhedskopi vejledning</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcher er et tværplatforms grafisk værktøj, der gør det enkelt og sikkert at flashe ISO-billeder.</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>Start fra USB</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>Boot fra USB og følg den grafiske installer.</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>Start fra USB og vælg ISO-filen i Ventoy-menuen.</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>Gennemse dokumentation</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>Gennemse den fulde dokumentation for detaljerede vejledninger, tips og fejlfinding.</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>brænd ISO-filen på en USB-stick</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>Skift LBA-størrelse til 4K for optimal ydeevne</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>Skift systemets sprog, regionale formater og tilføj indtastningsmetoder som kinesisk Pinyin eller japansk Anthy.</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>Klik på &quot;Flash fra fil&quot; og vælg AnduinOS ISO-filen.</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>klik her</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>Almindelige bootmenu-taster:</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>Fællesskabsunderstøttelse</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>Sammenlign outputtet med den</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>Udfør MOK-registreringen ved første opstart for at aktivere tredjepartsdrivere som NVIDIA og Xbox-controllere.</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>Kopier AnduinOS ISO-filen til drevet som en almindelig fil.</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>Opret installationsmedie</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>Tvers-platforms, sikker ISO-flasher</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd-tilstand</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>Dokumentation</value>
@@ -42,26 +123,188 @@
   <data name="Donate" xml:space="preserve">
     <value>Donér</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Download og installer</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>Download Etcher</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>Download Rufus</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>Download started</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>Download Ventoy</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>Drivere</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>Driverguide</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>Dual-boot?</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>Aktivér firewall</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>Aktivér det i BIOS før opstart</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Nyd dit nye OS!</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Føler du dig generøs? AnduinOS drives af donationer fra brugere. Vi er taknemmelige for din støtte.</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>Brandmur</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>Brandvægsvejledning</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>Første ting, der skal indstilles, når du booter til AnduinOS.</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Gratis &amp; Open Source</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>Gratis USB-brændingsværktøj med åben kildekode</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>Komplet vejledning</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>Hent Impression på Flathub</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Hvis du er ny til AnduinOS, kan du også have lyst til at tjekke</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>Hvis du ofte installerer operativsystemer, kan Ventoy gøre det muligt for dig at bruge din USB-drev til almindelig lagring, mens den stadig er bootbar. Kopier blot ISO-filen til drevet og start op.</value>
+  </data>
+  <data name="If your download doesn&apos;t start automatically," xml:space="preserve">
+    <value>Hvis din download ikke starter automatisk,</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impression er den mest brugervenlige måde at flashe ISO&apos;en på Linux. Installer det via Flatpak:</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>I GRUB vælger du dit sprog og vælger</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>Indsæt USB-drevet og tænd for din computer.</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installér</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>Installer AnduinOS</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>Installer drivere</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>i stedet for ISO-tilstand.</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO-tilstand kan få AnduinOS til ikke at starte.</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>Deltag i diskussionen</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>Sprogguide</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>Sprogindstillinger</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>Multi-ISO, genanvendelig USB-løsning</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Ingen gentagen flashning eller sletning nødvendig!</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>NVMe SSD?</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>officiel SHA256-checksum</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>Valgfrie trin før installation</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>eller</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>Eller brug kommandolinjen:</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>Fase 1</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>Fase 2</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>Fase 3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>Tryk med det samme på din producent&apos;s boot-menu-tast.</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>Læs vejledningen til dobbeltstart først</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Rapporter et problem</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>Sikker opstart</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>Tilmelding af Secure Boot</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>Guide til Secure Boot</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>Sikkerhedspatches installeres automatisk. Ved funktionsspecifikke opdateringer skal du bruge App Store&apos;s offline-opdateringsmekanisme.</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>Vælg USB-drevet i boot-menuen.</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>Vælg dit mål-USB-drev og klik på &quot;Flash!&quot;.</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>Konfigurer sikkerhedskopiering</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>Simpelt, moderne ISO-flashværktøj</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>Virker noget ikke? Har du et forslag? Deltag i diskussionen på GitHub.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Virker noget ikke? Har du en idé? Skriv om det i diskussionen.</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>Støt AnduinOS</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>Skift sprog</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>Systemkrav</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>Systemopdateringer</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Kig på dokumentationen, du kan måske finde dine svar der.</value>
@@ -69,11 +312,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>Tak for at downloade</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>AnduinOS&apos; grafiske installer — enkel og vejledet.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>til din USB-drev.</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW er deaktiveret som standard (ingen åbne porte = ingen risiko). Aktiver det via Welcome Center eller den grafiske firewall-app, når det er nødvendigt.</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>Opdateringsvejledning</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>Opdater dit system</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Brug dd-tilstand, ikke ISO-tilstand!</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>Brug Deja Dup til automatiske, krypterede sikkerhedskopier til en ekstern harddisk eller skyopbevaring. Indstil det én gang, og glem det så.</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>Brug Welcome Center til at installere NVIDIA-drivere, understøttelse af Xbox-controller og andre hardware-drivere med ét klik.</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>Bekræft ISO-checksummen</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>bekræft checksummen</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>Bekræft din download og opret en bootbar USB-disk.</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>Lydstyrke ned + Tænd/sluk-knap</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>Vi anbefaler at bruge Rufus til at oprette den bootbare USB-enhed. Sørg for at vælge</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Hvad nu?</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>Din AnduinOS-rejse starter her. Følg trinene nedenfor for at komme i gang på under 30 minutter.</value>
   </data>
 
 </root>
