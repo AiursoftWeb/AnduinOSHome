@@ -8,4 +8,6 @@ public class ThankYouViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Thank you for downloading AnduinOS!";
     }
+
+    public string? DownloadUrl { get; set; }
 }

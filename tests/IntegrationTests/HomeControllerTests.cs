@@ -25,4 +25,21 @@ public class HomeControllerTests : TestBase
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
         Assert.IsTrue(html.Contains("1.0"));
     }
+
+    [TestMethod]
+    public async Task GetThankYouWithDownloadParam()
+    {
+        var response = await Http.GetAsync("/thankyou.html?download=amd64");
+        response.EnsureSuccessStatusCode();
+        var html = await response.Content.ReadAsStringAsync();
+        Assert.IsTrue(html.Contains("https://cf.anduinos.com/AnduinOS-2.0.1-amd64.iso"));
+        
+        response = await Http.GetAsync("/thankyou.html?download=arm64-torrent");
+        response.EnsureSuccessStatusCode();
+        html = await response.Content.ReadAsStringAsync();
+        Assert.IsTrue(html.Contains("https://cf.anduinos.com/AnduinOS-2.0.1-arm64.torrent"));
+
+        response = await Http.GetAsync("/thankyou.html");
+        Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
+    }
 }

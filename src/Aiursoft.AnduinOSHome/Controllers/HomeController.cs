@@ -8,6 +8,13 @@ namespace Aiursoft.AnduinOSHome.Controllers;
 [LimitPerMin]
 public class HomeController : Controller
 {
+    private readonly IConfiguration _configuration;
+
+    public HomeController(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
     public IActionResult Index()
     {
         return this.SimpleView(new IndexViewModel());
@@ -26,9 +33,19 @@ public class HomeController : Controller
     }
 
     [Route("/thankyou.html")]
-    public IActionResult ThankYou()
+    public IActionResult ThankYou([FromQuery] string download)
     {
-        return this.SimpleView(new ThankYouViewModel());
+        var links = _configuration.GetSection("DownloadLinks").Get<Dictionary<string, string>>();
+        if (links == null || string.IsNullOrEmpty(download) || !links.ContainsKey(download))
+        {
+            return NotFound();
+        }
+
+        var model = new ThankYouViewModel
+        {
+            DownloadUrl = links[download]
+        };
+        return this.SimpleView(model);
     }
 
     [Route("/HistoryBuilds.html")]

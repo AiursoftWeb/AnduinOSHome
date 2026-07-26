@@ -19,6 +19,12 @@
                 <p class="text-lg text-white-50 mb-4" style="font-size: 1.25rem; max-width: 540px;">
                     @Localizer["Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes."]
                 </p>
+                @if (!string.IsNullOrEmpty(Model.DownloadUrl))
+                {
+                    <p class="text-white-50 small mb-0">
+                        @Localizer["If your download doesn't start automatically,"] <a href="@Model.DownloadUrl" class="text-primary text-decoration-none">@Localizer["click here"]</a>.
+                    </p>
+                }
             </div>
             <div class="col-lg-5 d-none d-lg-flex mx-auto text-center">
                 <div class="landing-intro-screenshot">
@@ -452,6 +458,18 @@
 </section>
 
 <vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    @if (!string.IsNullOrEmpty(Model.DownloadUrl))
+    {
+        <script>
+            setTimeout(function () {
+                window.location.href = '@Html.Raw(Model.DownloadUrl)';
+            }, 1000);
+        </script>
+    }
+}
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
