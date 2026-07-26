@@ -57,17 +57,29 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>หลังจากดาวน์โหลด คุณอาจต้องการเรียนรู้วิธี</value>
   </data>
+  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
+    <value>เอไอเอเจนต์สามารถ SSH เข้ามา ติดตั้งแพ็กเกจ แก้ไขไฟล์กำหนดค่า และดีบักได้ — โดยเนทีฟ ไม่มี API Wrapper ไม่มีระบบไฟล์แบบแซนด์บ็อกซ์ มีแค่ลินุกซ์แท้ๆ</value>
+  </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>สภาพแวดล้อมเครื่องมือปัญญาประดิษฐ์</value>
   </data>
   <data name="AI-Native Environment" xml:space="preserve">
     <value>สภาพแวดล้อมที่รองรับ AI</value>
   </data>
+  <data name="AI&apos;s Ideal." xml:space="preserve">
+    <value>อุดมคติของ AI</value>
+  </data>
   <data name="Aiursoft is funded by user donations. We are grateful for your support. And you can" xml:space="preserve">
     <value>Aiursoft ได้รับเงินทุนจากการบริจาคของผู้ใช้ เราขอขอบคุณสำหรับคำสนับสนุนของคุณ และคุณสามารถ</value>
   </data>
+  <data name="All languages. One OS. Zero setup." xml:space="preserve">
+    <value>ทุกภาษา ระบบปฏิบัติการเดียว ติดตั้งศูนย์ขั้นตอน</value>
+  </data>
   <data name="All versions" xml:space="preserve">
     <value>ทุกเวอร์ชัน</value>
+  </data>
+  <data name="All-in-Latest" xml:space="preserve">
+    <value>ใหม่ล่าสุดครบวงจร</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>และ</value>
@@ -138,6 +150,12 @@
   <data name="Architecture" xml:space="preserve">
     <value>สถาปัตยกรรม</value>
   </data>
+  <data name="ARM64 Support" xml:space="preserve">
+    <value>รองรับ ARM64</value>
+  </data>
+  <data name="Bleeding-edge kernel, toolchains, and drivers — all pre-configured, zero friction. No Snap, no legacy dead weight, no compromises." xml:space="preserve">
+    <value>เคอร์เนล เครื่องมือพัฒนา และไดรเวอร์ล่าสุด — พร้อมใช้งานทันที ไร้ข้อขัดข้อง ไม่ใช้ Snap ไม่มีภาระจากเทคโนโลยีเก่า และไม่ประนีประนอมกับประสิทธิภาพ</value>
+  </data>
   <data name="Browsing" xml:space="preserve">
     <value>เบราส์เซอร์</value>
   </data>
@@ -180,6 +198,9 @@
   <data name="Cluster management" xml:space="preserve">
     <value>การจัดการคลัสเตอร์</value>
   </data>
+  <data name="Compatible with most x86 PCs and ARM64 UEFI devices." xml:space="preserve">
+    <value>รองรับพีซี x86 ส่วนใหญ่และอุปกรณ์ UEFI แบบ ARM64</value>
+  </data>
   <data name="Compatible with most x86 PCs manufactured in the last decade." xml:space="preserve">
     <value>รองรับพีซีสถาปัตยกรรม x86 ส่วนใหญ่ที่ผลิตในช่วงทศวรรษที่ผ่านมา</value>
   </data>
@@ -198,6 +219,9 @@
   <data name="Custom branding" xml:space="preserve">
     <value>การปรับแต่งแบรนด์เฉพาะ</value>
   </data>
+  <data name="Declarative Built" xml:space="preserve">
+    <value>สร้างด้วยรูปแบบประกาศนัย</value>
+  </data>
   <data name="Default Browser" xml:space="preserve">
     <value>เบราว์เซอร์เริ่มต้น</value>
   </data>
@@ -212,6 +236,12 @@
   </data>
   <data name="Developer" xml:space="preserve">
     <value>นักพัฒนา</value>
+  </data>
+  <data name="Developer&apos;s Dream" xml:space="preserve">
+    <value>ความฝันของนักพัฒนา</value>
+  </data>
+  <data name="Developer&apos;s Dream." xml:space="preserve">
+    <value>ความฝันของนักพัฒนาซอฟต์แวร์.</value>
   </data>
   <data name="Direct (HTTP)" xml:space="preserve">
     <value>ดาวน์โหลดโดยตรง (HTTP)</value>
@@ -242,6 +272,9 @@
   </data>
   <data name="Ecological perfection" xml:space="preserve">
     <value>ระบบนิเวศที่สมบูรณ์แบบ</value>
+  </data>
+  <data name="Edge AI" xml:space="preserve">
+    <value>AI ปลายทาง</value>
   </data>
   <data name="Editing" xml:space="preserve">
     <value>แก้ไข</value>
@@ -327,6 +360,9 @@
   <data name="How can I search for solutions to problems?" xml:space="preserve">
     <value>ฉันจะค้นหาแนวทางแก้ไขปัญหาได้อย่างไร?</value>
   </data>
+  <data name="Ideal Toolset" xml:space="preserve">
+    <value>ชุดเครื่องมือในอุดมคติ</value>
+  </data>
   <data name="Image Size" xml:space="preserve">
     <value>ขนาดไฟล์ภาพ</value>
   </data>
@@ -411,11 +447,17 @@
   <data name="LTS Support" xml:space="preserve">
     <value>การรองรับ LTS</value>
   </data>
+  <data name="Memory Compression" xml:space="preserve">
+    <value>การบีบอัดหน่วยความจำ</value>
+  </data>
   <data name="Migration guides and tips for users coming from AnduinOS 1.x." xml:space="preserve">
     <value>คู่มือและการแนะนำในการย้ายข้อมูลสำหรับผู้ใช้ที่มาจาก AnduinOS 1.x</value>
   </data>
   <data name="Minimum" xml:space="preserve">
     <value>ขั้นต่ำ</value>
+  </data>
+  <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
+    <value>โครงสร้างพื้นฐานสมัยใหม่ สถาปัตยกรรมคู่ พร้อมใช้งานจริง</value>
   </data>
   <data name="Most of the software you rely on runs perfectly on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. AnduinOS provides instant, integrated access to the massive libraries of Flatpak and Ubuntu, making your perfect workflow just a click away." xml:space="preserve">
     <value>ซอฟต์แวร์ส่วนใหญ่ที่คุณพึ่งพาสามารถทำงานได้อย่างสมบูรณ์แบบบน AnduinOS พร้อมกับทางเลือกอันทรงพลัง ฟรี และโอเพนซอร์สนับพัน AnduinOS ให้การเข้าถึงคลังขนาดใหญ่ของ Flatpak และ Ubuntu อย่างทันทีและบูรณาการ ทำให้เวิร์กโฟลว์ที่สมบูรณ์แบบของคุณอยู่ห่างเพียงคลิกเดียว</value>
