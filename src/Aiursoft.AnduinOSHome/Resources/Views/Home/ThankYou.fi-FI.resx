@@ -24,8 +24,23 @@
   <data name="." xml:space="preserve">
     <value>.</value>
   </data>
+  <data name=". If they match, your ISO is valid." xml:space="preserve">
+    <value>Jos ne täsmäävät, ISO-tiedostosi on kelvollinen.</value>
+  </data>
+  <data name="1. Verify the checksum" xml:space="preserve">
+    <value>1. Varmista tarkiste</value>
+  </data>
+  <data name="2. Create a bootable USB drive" xml:space="preserve">
+    <value>2. Luo käynnistettävä USB-muistilaite</value>
+  </data>
+  <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
+    <value>Tarkista ISO-tiedoston eheys lataamisen jälkeen varmistaaksesi, että sitä ei ole muutettu.</value>
+  </data>
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Latauksen jälkeen saatat haluta oppia, miten</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Asennuksen jälkeen</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>ja</value>
@@ -33,8 +48,74 @@
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
+  <data name="AnduinOS Installer" xml:space="preserve">
+    <value>AnduinOS-asennusohjelma</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS on yhteisön tukema. Lahjoituksesi auttaa pitämään kehitystyön aktiivisena ja itsenäisenä.</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Varmuuskopiointi</value>
+  </data>
+  <data name="Backup Guide" xml:space="preserve">
+    <value>Varmuuskopiopäätös</value>
+  </data>
+  <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
+    <value>BalenaEtcher on alustariippumaton graafinen työkalu, joka tekee ISO-kuvien kirjoittamisesta yksinkertaista ja turvallista.</value>
+  </data>
+  <data name="Boot from USB" xml:space="preserve">
+    <value>Käynnistä USB-muistista</value>
+  </data>
+  <data name="Boot from USB and follow the graphical installer." xml:space="preserve">
+    <value>Käynnistä USB-muistista ja seuraa graafista asennusohjelmaa.</value>
+  </data>
+  <data name="Boot from USB and select the ISO from Ventoy&apos;s menu." xml:space="preserve">
+    <value>Käynnistä USB-tikulta ja valitse ISO-tiedosto Ventoyn valikosta.</value>
+  </data>
+  <data name="Browse Documentation" xml:space="preserve">
+    <value>Selaa dokumentaatiota</value>
+  </data>
+  <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
+    <value>Selaa koko dokumentaatiota löytääksesi yksityiskohtaiset ohjeet, vinkit ja virheenkorjaustiedot.</value>
+  </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>polta ISO-kuva USB-tikulle</value>
+  </data>
+  <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
+    <value>Muuta LBA-koko 4K:n parhaan suorituskyvyn saavuttamiseksi</value>
+  </data>
+  <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
+    <value>Muuta järjestelmän kieltä, alueellisia muotoja ja lisää syöttötapoja kuten kiinalainen Pinyin tai japanilainen Anthy.</value>
+  </data>
+  <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
+    <value>Napsauta &quot;Flash from file&quot; ja valitse AnduinOS-ISO.</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>napsauta tästä</value>
+  </data>
+  <data name="Common boot menu keys:" xml:space="preserve">
+    <value>Yleiset käynnistysvalikon näppäimet:</value>
+  </data>
+  <data name="Community Support" xml:space="preserve">
+    <value>Yhteisön tuki</value>
+  </data>
+  <data name="Compare the output with the" xml:space="preserve">
+    <value>Vertaa tulos</value>
+  </data>
+  <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
+    <value>Suorita MOK-rekisteröinti ensimmäisellä käynnistyksellä, jotta kolmansien osapuolten ajurit kuten NVIDIA ja Xbox-ohjaimet voidaan ottaa käyttöön.</value>
+  </data>
+  <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
+    <value>Kopioi AnduinOS-ISO-tiedosto asemalle kuten tavallinen tiedosto.</value>
+  </data>
+  <data name="Create Installation Media" xml:space="preserve">
+    <value>Luo asennusmedia</value>
+  </data>
+  <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
+    <value>Alustariippumaton, turvallinen ISO-työkalu</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd-tila</value>
   </data>
   <data name="Documentation" xml:space="preserve">
     <value>Dokumentaatio</value>
@@ -42,26 +123,188 @@
   <data name="Donate" xml:space="preserve">
     <value>Lahjoita</value>
   </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Lataa ja asenna</value>
+  </data>
+  <data name="Download Etcher" xml:space="preserve">
+    <value>Lataa Etcher</value>
+  </data>
+  <data name="Download Rufus" xml:space="preserve">
+    <value>Lataa Rufus</value>
+  </data>
+  <data name="Download Started" xml:space="preserve">
+    <value>Lataus aloitettu</value>
+  </data>
+  <data name="Download Ventoy" xml:space="preserve">
+    <value>Lataa Ventoy</value>
+  </data>
+  <data name="Drivers" xml:space="preserve">
+    <value>Kuljettimet</value>
+  </data>
+  <data name="Drivers Guide" xml:space="preserve">
+    <value>Ohjainten opas</value>
+  </data>
+  <data name="Dual Boot?" xml:space="preserve">
+    <value>Kaksoiskäynnistys?</value>
+  </data>
+  <data name="Enable Firewall" xml:space="preserve">
+    <value>Ota palomuuri käyttöön</value>
+  </data>
+  <data name="Enable it in BIOS before booting" xml:space="preserve">
+    <value>Ota se käyttöön BIOS-asetuksista ennen käynnistystä</value>
+  </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Nauti uudesta käyttöjärjestelmästäsi!</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Tunnetko anteliaisuutta? AnduinOS toimii käyttäjien lahjoituksilla. Olemme kiitollisia tuestasi.</value>
   </data>
+  <data name="Firewall" xml:space="preserve">
+    <value>Palomuuri</value>
+  </data>
+  <data name="Firewall Guide" xml:space="preserve">
+    <value>Palomuurin opas</value>
+  </data>
+  <data name="First things to set up when you boot into AnduinOS." xml:space="preserve">
+    <value>Ensimmäiset asetukset käynnistettäessä AnduinOSiin.</value>
+  </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Ilmainen ja avoin lähdekoodi</value>
+  </data>
+  <data name="Free, open-source USB flashing tool" xml:space="preserve">
+    <value>Ilmainen, avoimen lähdekoodin USB-levylle polttotyökalu</value>
+  </data>
+  <data name="Full Guide" xml:space="preserve">
+    <value>Täydellinen opas</value>
+  </data>
+  <data name="Get Impression on Flathub" xml:space="preserve">
+    <value>Hanki Impression -ohjelma Flathubista</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Jos olet uusi AnduinOS-käyttäjä, saatat haluta myös tutustua</value>
+  </data>
+  <data name="If you frequently install operating systems, Ventoy lets you keep your USB drive usable for regular storage while still being bootable. Simply copy the ISO file onto the drive and boot." xml:space="preserve">
+    <value>Jos asennat käyttöjärjestelmiä usein, Ventoy mahdollistaa USB-muistitikun käytön normaalina tallennuslaitteena samalla kun se pysyy käynnistysohjelmattavana. Kopioi ISO-tiedosto vain muistitikulle ja käynnistä siitä.</value>
+  </data>
+  <data name="If your download doesn&apos;t start automatically," xml:space="preserve">
+    <value>Jos lataus ei ala automaattisesti,</value>
+  </data>
+  <data name="Impression is the most user-friendly way to flash the ISO on Linux. Install it via Flatpak:" xml:space="preserve">
+    <value>Impression on Linuxissa helppokäyttöisin tapa kirjoittaa ISO-tiedosto USB-muistille. Asenna se Flatpakilla:`</value>
+  </data>
+  <data name="In GRUB, select your language and choose" xml:space="preserve">
+    <value>GRUB-valikossa valitse kieli ja klikkaa</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Tiedot</value>
   </data>
+  <data name="Insert the USB drive and power on your computer." xml:space="preserve">
+    <value>Aseta USB-tikku ja käynnistä tietokoneesi.</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Asenna</value>
+  </data>
+  <data name="Install AnduinOS" xml:space="preserve">
+    <value>Asenna AnduinOS</value>
+  </data>
+  <data name="Install Drivers" xml:space="preserve">
+    <value>Asenna laiteohjaimet</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>sen sijaan kuin ISO-tila.</value>
+  </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO-tila voi aiheuttaa AnduinOS:n käynnistymisen epäonnistumisen.</value>
+  </data>
+  <data name="Join the Discussion" xml:space="preserve">
+    <value>Liity keskusteluun</value>
+  </data>
+  <data name="Language Guide" xml:space="preserve">
+    <value>Kieliohje</value>
+  </data>
+  <data name="Language Settings" xml:space="preserve">
+    <value>Kieliasetukset</value>
+  </data>
+  <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
+    <value>Moni-ISO-, uudelleenkäytettävä USB-ratkaisu</value>
+  </data>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Toistuva kirjoittaminen tai tyhjentäminen ei ole tarpeen!</value>
+  </data>
+  <data name="NVMe SSD?" xml:space="preserve">
+    <value>NVMe-SSD?</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>virallinen SHA256-tarkiste</value>
+  </data>
+  <data name="Optional Pre-installation Steps" xml:space="preserve">
+    <value>Valinnaiset asennusta edeltävät vaiheet</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>tai</value>
+  </data>
+  <data name="Or use the command line:" xml:space="preserve">
+    <value>Tai käytä komentoriviä:</value>
+  </data>
+  <data name="Phase 1" xml:space="preserve">
+    <value>Vaihe 1</value>
+  </data>
+  <data name="Phase 2" xml:space="preserve">
+    <value>Vaihe 2</value>
+  </data>
+  <data name="Phase 3" xml:space="preserve">
+    <value>Vaihe 3</value>
+  </data>
+  <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
+    <value>Paina valmistajan käynnistysvalikkonäppäintä välittömästi.</value>
+  </data>
+  <data name="Read the dual-boot guide first" xml:space="preserve">
+    <value>Lue kaksoiskäynnistysopas ensin</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Ilmoita ongelmasta</value>
+  </data>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>Turvavarrastus</value>
+  </data>
+  <data name="Secure Boot Enrollment" xml:space="preserve">
+    <value>Turvallisen käynnistyksen rekisteröinti</value>
+  </data>
+  <data name="Secure Boot Guide" xml:space="preserve">
+    <value>Turvallisen käynnistyksen opas</value>
+  </data>
+  <data name="Security patches are applied automatically. For feature updates, use the App Store&apos;s offline update mechanism." xml:space="preserve">
+    <value>Tietoturvakorjaukset asennetaan automaattisesti. Ominaisuuspäivityksiin käytä Sovelluskaupan offline-päivitysmekanismia.</value>
+  </data>
+  <data name="Select the USB drive in the boot menu." xml:space="preserve">
+    <value>Valitse USB-asema käynnistysvalikosta.</value>
+  </data>
+  <data name="Select your target USB drive and click &quot;Flash!&quot;." xml:space="preserve">
+    <value>Valitse kohde-USB-asema ja napsauta &quot;Flash!&quot;.</value>
+  </data>
+  <data name="Setup Backup" xml:space="preserve">
+    <value>Varmuuskopioiden asennus</value>
+  </data>
+  <data name="Simple, modern ISO flashing tool" xml:space="preserve">
+    <value>Yksinkertainen, moderni ISO-levyjen poltto-ohjelma</value>
+  </data>
+  <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
+    <value>Ei toimi? Onko sinulla ehdotus? Liity keskusteluun GitHubissa.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Jotain ei toimi? Sinulla ehdotus? Kirjoita siitä keskusteluun.</value>
   </data>
+  <data name="Support AnduinOS" xml:space="preserve">
+    <value>Tue AnduinOS:ia</value>
+  </data>
+  <data name="Switch Language" xml:space="preserve">
+    <value>Vaihda kieli</value>
+  </data>
   <data name="System requirement" xml:space="preserve">
     <value>Järjestelmävaatimukset</value>
+  </data>
+  <data name="System Updates" xml:space="preserve">
+    <value>Järjestelmäpäivitykset</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Tutustu dokumentaatioon, saatat löytää sieltä vastauksia kysymyksiisi.</value>
@@ -69,11 +312,50 @@
   <data name="Thank you for downloading" xml:space="preserve">
     <value>Kiitos, että latasit</value>
   </data>
+  <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
+    <value>AnduinOS:n graafinen asennusohjelma — suoraviivainen ja ohjattu.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>USB-muistilaitteeseesi.</value>
+  </data>
+  <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
+    <value>UFW on oletusarvoisesti poissa käytöstä (ei avoimia portteja = ei riskiä). Ota se käyttöön Welcome Centerin tai graafisen Palomuuri-sovelluksen kautta tarvittaessa.</value>
+  </data>
+  <data name="Update Guide" xml:space="preserve">
+    <value>Päivitysohje</value>
+  </data>
+  <data name="Update Your System" xml:space="preserve">
+    <value>Päivitä järjestelmäsi</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Käytä dd-tilaa, ei ISO-tilaa!</value>
+  </data>
+  <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
+    <value>Käytä Deja Dupia automatisoituja ja salattuja varmuuskopioita ulkoiselle levylle tai pilvipalveluun varten. Aseta se kerran, ja unohda sitten.</value>
+  </data>
+  <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
+    <value>Asenna NVIDIA-ajurit, Xbox-ohjaintuki ja muut laiteohjaimet yhdellä napsautuksella Tervetuloa-keskuksen avulla.</value>
+  </data>
+  <data name="Verify ISO checksum" xml:space="preserve">
+    <value>Varmista ISO-tarkiste</value>
+  </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>vahvista tarkistussumma</value>
   </data>
+  <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
+    <value>Vahvista lataus ja luo käynnistettävä USB-muisti.</value>
+  </data>
+  <data name="Vol Down + Power" xml:space="preserve">
+    <value>Vol Down + Virtua</value>
+  </data>
+  <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
+    <value>Suosittelemme Rufuksen käyttöä käynnistettävän USB-tiukkeen luomiseen. Varmista, että valitset</value>
+  </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Mitä seuraavaksi?</value>
+  </data>
+  <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
+    <value>AnduinOS-matka alkaa täältä. Noudata alla olevia ohjeita päästäksesi alkuun alle 30 minuutissa.</value>
   </data>
 
 </root>
