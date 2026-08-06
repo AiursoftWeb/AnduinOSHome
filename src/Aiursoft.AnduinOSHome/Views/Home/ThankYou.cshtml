@@ -59,15 +59,26 @@
                                 <div class="row align-items-center g-4">
                                     <div class="col-lg-4">
                                         <div class="bg-dark rounded-3 p-3 mb-3">
-                                            <code class="text-white" style="font-size: 0.9rem;">sha256sum ./AnduinOS.iso</code>
+                                            <code class="text-white" style="font-size: 0.9rem;">sha256sum ./@Model.IsoFileName</code>
                                         </div>
                                         <p class="fs-lg mb-0">
                                             @Localizer["Compare the output with the"]
-                                            <a href="https://cf.anduinos.com/">@Localizer["official SHA256 checksum"]</a>@Localizer[". If they match, your ISO is valid."]
+                                            <a id="official-checksum-link" href="@Model.ChecksumUrl" target="_blank">@Localizer["official SHA256 checksum"]</a>@Localizer[". If they match, your ISO is valid."]
                                         </p>
                                     </div>
-                                    <div class="col-lg-8 text-center">
-                                        <img src="~/images/checksum.webp" alt="@Localizer["Verify ISO checksum"]" class="img-fluid rounded-3" style="max-height: 340px;" />
+                                    <div class="col-lg-8">
+                                        <div class="bg-dark rounded-3 overflow-hidden shadow-sm" role="img" aria-label="@Localizer["Verify ISO checksum"]">
+                                            <div class="d-flex align-items-center gap-2 px-3 py-2 border-bottom border-secondary">
+                                                <span class="rounded-circle bg-danger" style="width: 10px; height: 10px;"></span>
+                                                <span class="rounded-circle bg-warning" style="width: 10px; height: 10px;"></span>
+                                                <span class="rounded-circle bg-success" style="width: 10px; height: 10px;"></span>
+                                                <span class="text-white-50 small ms-2">~/Downloads</span>
+                                            </div>
+                                            <div class="p-4 font-monospace text-start">
+                                                <div><span class="text-success">$</span> <code class="text-white">sha256sum ./@Model.IsoFileName</code></div>
+                                                <div class="text-white-50 mt-2">&lt;SHA256 hash&gt;&nbsp; ./@Model.IsoFileName</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

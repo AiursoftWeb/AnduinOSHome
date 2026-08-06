@@ -1667,7 +1667,8 @@
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Torrent"]
                             </a>
-                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-amd64.sha256"
+                            <a id="amd64-checksum-link"
+                               href="@Model.Amd64ChecksumUrl"
                                target="_blank"
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Checksum"]
@@ -1689,7 +1690,8 @@
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Torrent"]
                             </a>
-                            <a href="https://cf.anduinos.com/AnduinOS-2.0.1-arm64.sha256"
+                            <a id="arm64-checksum-link"
+                               href="@Model.Arm64ChecksumUrl"
                                target="_blank"
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Checksum"]

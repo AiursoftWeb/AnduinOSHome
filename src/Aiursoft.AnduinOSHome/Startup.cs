@@ -27,6 +27,11 @@ public class Startup : IWebStartup
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
         services.Configure<List<string>>(configuration.GetSection("UpgradeScriptEndpoints"));
+        services.AddOptions<ReleaseArtifactsOptions>()
+            .Bind(configuration.GetSection(ReleaseArtifactsOptions.SectionName))
+            .Validate(options => options.IsValid(),
+                "Every release architecture must provide valid HTTPS ISO, torrent, and checksum URLs.")
+            .ValidateOnStart();
 
         // Relational database
         var (connectionString, dbType, allowCache) = configuration.GetDbSettings();
