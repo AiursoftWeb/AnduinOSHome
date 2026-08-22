@@ -3,8 +3,8 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 [TestClass]
 public class HomeControllerTests : TestBase
 {
-    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.1-amd64.sha256";
-    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.1-arm64.sha256";
+    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.sha256";
+    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.sha256";
 
     [TestMethod]
     public async Task GetIndex()
@@ -33,14 +33,14 @@ public class HomeControllerTests : TestBase
     }
 
     [TestMethod]
-    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.1-amd64.iso", Amd64ChecksumUrl,
-        "AnduinOS-2.0.1-amd64.iso")]
-    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.1-amd64.torrent", Amd64ChecksumUrl,
-        "AnduinOS-2.0.1-amd64.iso")]
-    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.1-arm64.iso", Arm64ChecksumUrl,
-        "AnduinOS-2.0.1-arm64.iso")]
-    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.1-arm64.torrent", Arm64ChecksumUrl,
-        "AnduinOS-2.0.1-arm64.iso")]
+    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.iso", Amd64ChecksumUrl,
+        "AnduinOS-2.0.2-amd64.iso")]
+    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.torrent", Amd64ChecksumUrl,
+        "AnduinOS-2.0.2-amd64.iso")]
+    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.iso", Arm64ChecksumUrl,
+        "AnduinOS-2.0.2-arm64.iso")]
+    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.torrent", Arm64ChecksumUrl,
+        "AnduinOS-2.0.2-arm64.iso")]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
