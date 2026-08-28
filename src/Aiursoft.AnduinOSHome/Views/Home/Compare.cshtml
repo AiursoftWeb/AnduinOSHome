@@ -1,0 +1,26 @@
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<main class="comparison-page">
+    <div class="comparison-page-nav">
+        <div class="container">
+            <a asp-controller="Home" asp-action="Index" class="comparison-page-back">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+                @Localizer["Back to AnduinOS overview"]
+            </a>
+        </div>
+    </div>
+    <vc:distribution-comparison></vc:distribution-comparison>
+</main>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/compare.js" asp-append-version="true" defer></script>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/compare.css" asp-append-version="true">
+}

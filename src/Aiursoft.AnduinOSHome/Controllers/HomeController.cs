@@ -27,6 +27,12 @@ public class HomeController : Controller
         });
     }
 
+    [Route("/Compare.html")]
+    public IActionResult Compare()
+    {
+        return this.SimpleView(new CompareViewModel());
+    }
+
     [Route("/privacy.html")]
     public IActionResult Privacy()
     {

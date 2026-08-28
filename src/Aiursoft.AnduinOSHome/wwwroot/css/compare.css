@@ -1,0 +1,1245 @@
+/* Distribution architecture comparison */
+.comparison-page {
+    position: relative;
+    min-height: 100vh;
+    background: #060a12;
+}
+
+body:has(.comparison-page) .main,
+body:has(.comparison-page) main {
+    overflow: visible;
+}
+
+.comparison-page-nav {
+    position: absolute;
+    top: 1.4rem;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.comparison-page-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 999px;
+    color: #94a3b8;
+    background: rgba(8, 13, 24, 0.72);
+    text-decoration: none;
+    backdrop-filter: blur(14px);
+    pointer-events: auto;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.comparison-page-back:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    color: #e0f2fe;
+    background: rgba(14, 165, 233, 0.08);
+}
+
+.comparison-page-back svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.comparison-section {
+    --comparison-bg: #060a12;
+    --comparison-surface: rgba(10, 16, 29, 0.88);
+    --comparison-surface-raised: rgba(15, 23, 42, 0.94);
+    --comparison-border: rgba(148, 163, 184, 0.16);
+    --comparison-border-strong: rgba(148, 163, 184, 0.25);
+    --comparison-text: #f8fafc;
+    --comparison-muted: #94a3b8;
+    --comparison-blue: #38bdf8;
+    --comparison-indigo: #6366f1;
+    --comparison-green: #3ddc84;
+    --comparison-amber: #fbbf24;
+    --comparison-red: #fb7185;
+    --comparison-gray: #94a3b8;
+    isolation: isolate;
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+    padding: 7.5rem 0;
+    color: var(--comparison-text);
+    background:
+        radial-gradient(circle at 50% -20%, rgba(30, 64, 175, 0.24), transparent 46%),
+        linear-gradient(180deg, #070b14 0%, var(--comparison-bg) 58%, #080c15 100%);
+}
+
+.comparison-section-content {
+    z-index: 2;
+}
+
+.comparison-orb {
+    position: absolute;
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    opacity: 0.14;
+    filter: blur(110px);
+    pointer-events: none;
+}
+
+.comparison-orb--blue {
+    top: 18%;
+    left: -20rem;
+    background: #0284c7;
+}
+
+.comparison-orb--violet {
+    right: -21rem;
+    bottom: 4%;
+    background: #7c3aed;
+}
+
+.comparison-grid-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0.28;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent 78%);
+    mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.comparison-intro {
+    max-width: 830px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.comparison-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    border-radius: 999px;
+    color: #bae6fd;
+    background: rgba(14, 165, 233, 0.07);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.comparison-kicker-dot {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--comparison-blue);
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1), 0 0 18px rgba(56, 189, 248, 0.8);
+}
+
+.comparison-intro h2 {
+    max-width: 760px;
+    margin: 1.4rem auto 1rem;
+    color: var(--comparison-text);
+    font-size: clamp(2.25rem, 5vw, 4.2rem);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+}
+
+.comparison-intro h2::after {
+    content: "";
+    display: block;
+    width: 6.5rem;
+    height: 2px;
+    margin: 1.35rem auto 0;
+    background: linear-gradient(90deg, transparent, var(--comparison-blue), #818cf8, transparent);
+}
+
+.comparison-intro > p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #a9b7ca;
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.comparison-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem 1rem;
+    margin-top: 1.6rem;
+    color: #718096;
+    font-size: 0.78rem;
+}
+
+.comparison-snapshot {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: #9fb1c7;
+}
+
+.comparison-snapshot svg {
+    width: 0.95rem;
+    height: 0.95rem;
+    color: var(--comparison-blue);
+}
+
+.comparison-shell {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    overflow: visible;
+    border: 1px solid var(--comparison-border-strong);
+    border-radius: 1.4rem;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.86), rgba(5, 10, 20, 0.94));
+    box-shadow:
+        0 35px 100px rgba(0, 0, 0, 0.48),
+        0 1px 0 rgba(255, 255, 255, 0.035) inset,
+        0 0 0 1px rgba(15, 23, 42, 0.55);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+.comparison-shell::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 28%;
+    width: 36%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.85), transparent);
+}
+
+.comparison-table-scroll {
+    position: relative;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgba(100, 116, 139, 0.65) rgba(15, 23, 42, 0.5);
+    scrollbar-width: thin;
+}
+
+.comparison-table-scroll:focus-visible {
+    outline: 2px solid var(--comparison-blue);
+    outline-offset: -2px;
+}
+
+.comparison-table {
+    min-width: 820px;
+}
+
+.comparison-table-header,
+.comparison-row {
+    display: grid;
+    grid-template-columns: minmax(250px, 1.08fr) minmax(275px, 1fr) minmax(275px, 1fr);
+}
+
+.comparison-table-header {
+    min-height: 5rem;
+    border-bottom: 1px solid var(--comparison-border-strong);
+    background: rgba(3, 7, 18, 0.58);
+}
+
+.comparison-mobile-columns {
+    display: none;
+}
+
+.comparison-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.38rem 0.9rem;
+}
+
+.comparison-heading + .comparison-heading {
+    border-left: 1px solid var(--comparison-border);
+}
+
+.comparison-heading-eyebrow {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: #687991;
+    font-size: 0.65rem;
+    font-weight: 750;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.comparison-heading > strong,
+.comparison-product-lockup strong {
+    color: #e7edf6;
+    font-size: 1.06rem;
+    line-height: 1.2;
+}
+
+.comparison-heading--anduinos {
+    overflow: hidden;
+    border-color: rgba(56, 189, 248, 0.22) !important;
+    background:
+        radial-gradient(circle at 75% 10%, rgba(99, 102, 241, 0.26), transparent 55%),
+        linear-gradient(135deg, rgba(14, 116, 230, 0.22), rgba(30, 64, 175, 0.1));
+}
+
+.comparison-heading--anduinos::after {
+    content: "";
+    position: absolute;
+    right: -2.5rem;
+    bottom: -4rem;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid rgba(56, 189, 248, 0.12);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.5rem rgba(56, 189, 248, 0.025), 0 0 0 3rem rgba(99, 102, 241, 0.018);
+}
+
+.comparison-product-lockup {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.comparison-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.78rem;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.28);
+}
+
+.comparison-logo img {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.comparison-reference-badge {
+    position: relative;
+    z-index: 1;
+    align-self: flex-start;
+    margin: 0.2rem 0 0 2.8rem;
+    padding: 0.12rem 0.45rem;
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    border-radius: 999px;
+    color: #a5e4ff;
+    background: rgba(14, 165, 233, 0.08);
+    font-size: 0.63rem;
+    font-weight: 700;
+}
+
+.comparison-heading--competitor {
+    gap: 0.12rem;
+}
+
+.comparison-switcher {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.15rem;
+    padding: 0.12rem;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 0.75rem;
+    background: rgba(2, 6, 23, 0.56);
+}
+
+.comparison-switcher-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-width: 0;
+    padding: 0.28rem 0.35rem;
+    border: 0;
+    border-radius: 0.56rem;
+    color: #8191a7;
+    background: transparent;
+    font-size: 0.7rem;
+    font-weight: 700;
+    transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.comparison-switcher-button:hover {
+    color: #dbe6f3;
+    background: rgba(148, 163, 184, 0.08);
+}
+
+.comparison-switcher-button:focus-visible {
+    outline: 2px solid var(--comparison-blue);
+    outline-offset: 1px;
+}
+
+.comparison-switcher-button.is-active {
+    color: #f8fafc;
+    background: linear-gradient(135deg, rgba(51, 65, 85, 0.95), rgba(30, 41, 59, 0.95));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24), 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+.comparison-brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    flex: 0 0 1.1rem;
+    border-radius: 0.34rem;
+    color: #fff;
+    font-size: 0.54rem;
+    font-weight: 850;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.comparison-brand-mark--zorin {
+    color: #06111d;
+    background: #15a8e8;
+}
+
+.comparison-brand-mark--mint {
+    background: #69b53f;
+}
+
+.comparison-brand-mark--ubuntu {
+    border-radius: 50%;
+    background: #e95420;
+}
+
+.comparison-selected-product {
+    color: #dce6f2 !important;
+    font-size: 0.78rem !important;
+}
+
+.comparison-selected-product span {
+    margin-left: 0.25rem;
+    color: #66768b;
+    font-weight: 600;
+}
+
+.comparison-row {
+    position: relative;
+    min-height: 3rem;
+    border-bottom: 1px solid var(--comparison-border);
+    background: rgba(2, 6, 23, 0.08);
+    transition: background 180ms ease;
+}
+
+.comparison-row:hover {
+    z-index: 3;
+    background: rgba(30, 41, 59, 0.2);
+}
+
+.comparison-row:last-child {
+    border-bottom: 0;
+}
+
+.comparison-row--extra.is-revealed {
+    animation: comparisonRowReveal 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--comparison-row-index, 0) * 24ms);
+}
+
+@keyframes comparisonRowReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.comparison-capability,
+.comparison-result-cell {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    padding: 0.38rem 0.9rem;
+}
+
+.comparison-capability {
+    gap: 0.65rem;
+    background: rgba(5, 10, 19, 0.28);
+}
+
+.comparison-capability-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    flex: 0 0 1.8rem;
+    border: 1px solid rgba(56, 189, 248, 0.13);
+    border-radius: 0.58rem;
+    color: #7dd3fc;
+    background: linear-gradient(145deg, rgba(14, 165, 233, 0.11), rgba(30, 64, 175, 0.04));
+}
+
+.comparison-capability-icon svg {
+    width: 0.92rem;
+    height: 0.92rem;
+    stroke-width: 1.8;
+}
+
+.comparison-capability-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.12rem;
+}
+
+.comparison-capability-copy strong {
+    color: #e6edf6;
+    font-size: 0.86rem;
+    font-weight: 690;
+    line-height: 1.25;
+}
+
+.comparison-capability-copy small {
+    color: #66768b;
+    font-size: 0.68rem;
+    line-height: 1.35;
+}
+
+.comparison-result-cell {
+    border-left: 1px solid var(--comparison-border);
+}
+
+.comparison-result-cell--anduinos {
+    border-color: rgba(56, 189, 248, 0.17);
+    background: linear-gradient(90deg, rgba(14, 116, 230, 0.07), rgba(79, 70, 229, 0.045));
+}
+
+.comparison-competitor-result {
+    width: 100%;
+}
+
+.comparison-status {
+    --status-color: var(--comparison-gray);
+    --status-bg: rgba(148, 163, 184, 0.06);
+    --status-border: rgba(148, 163, 184, 0.13);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.55rem minmax(0, 1fr) 0.85rem;
+    align-items: center;
+    gap: 0.48rem;
+    width: 100%;
+    min-width: 0;
+    padding: 0.25rem 0.35rem;
+    border: 1px solid transparent;
+    border-radius: 0.68rem;
+    color: inherit;
+    text-align: left;
+    background: transparent;
+    transition: border-color 180ms ease, background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.comparison-status:hover {
+    z-index: 4;
+    border-color: var(--status-border);
+    background: var(--status-bg);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.comparison-status:focus-visible {
+    z-index: 5;
+    outline: 2px solid var(--status-color);
+    outline-offset: 2px;
+}
+
+.comparison-status--first {
+    --status-color: var(--comparison-green);
+    --status-bg: rgba(61, 220, 132, 0.065);
+    --status-border: rgba(61, 220, 132, 0.19);
+}
+
+.comparison-status--provided {
+    --status-color: var(--comparison-blue);
+    --status-bg: rgba(56, 189, 248, 0.06);
+    --status-border: rgba(56, 189, 248, 0.2);
+}
+
+.comparison-status--supported {
+    --status-color: var(--comparison-amber);
+    --status-bg: rgba(251, 191, 36, 0.06);
+    --status-border: rgba(251, 191, 36, 0.18);
+}
+
+.comparison-status--experimental {
+    --status-color: var(--comparison-red);
+    --status-bg: rgba(251, 113, 133, 0.065);
+    --status-border: rgba(251, 113, 133, 0.2);
+}
+
+.comparison-status--undocumented {
+    --status-color: #7c91aa;
+    --status-bg: rgba(124, 145, 170, 0.055);
+    --status-border: rgba(124, 145, 170, 0.16);
+}
+
+.comparison-status-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.55rem;
+    height: 1.55rem;
+    border: 1px solid color-mix(in srgb, var(--status-color) 30%, transparent);
+    border-radius: 50%;
+    color: var(--status-color);
+    background: color-mix(in srgb, var(--status-color) 11%, transparent);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--status-color) 12%, transparent);
+}
+
+.comparison-status-indicator svg {
+    width: 0.82rem;
+    height: 0.82rem;
+    stroke-width: 2.2;
+}
+
+.comparison-status-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+}
+
+.comparison-status-copy > span {
+    overflow: hidden;
+    color: #c6d1df;
+    font-size: 0.74rem;
+    font-weight: 570;
+    line-height: 1.36;
+    text-overflow: ellipsis;
+}
+
+.comparison-status-arrow {
+    width: 0.85rem;
+    height: 0.85rem;
+    color: #48586e;
+    opacity: 0;
+    transform: translate(-3px, 3px);
+    transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+.comparison-status:hover .comparison-status-arrow,
+.comparison-status:focus-visible .comparison-status-arrow {
+    color: var(--status-color);
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.comparison-status::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 0.45rem);
+    z-index: 10;
+    width: max-content;
+    max-width: 12rem;
+    padding: 0.42rem 0.58rem;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 0.45rem;
+    color: #dbe6f3;
+    background: rgba(2, 6, 23, 0.96);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+    font-size: 0.63rem;
+    font-weight: 600;
+    line-height: 1.3;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 4px);
+    transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.comparison-status:hover::after {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.comparison-footer {
+    display: grid;
+    place-items: center;
+    gap: 0.8rem;
+    padding: 1.35rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.09);
+    background: rgba(2, 6, 23, 0.42);
+}
+
+.comparison-expand-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 18rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid rgba(56, 189, 248, 0.16);
+    border-radius: 0.9rem;
+    color: #dce8f5;
+    text-align: left;
+    background: rgba(14, 165, 233, 0.055);
+    transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.comparison-expand-button:hover {
+    border-color: rgba(56, 189, 248, 0.34);
+    background: rgba(14, 165, 233, 0.1);
+    transform: translateY(-1px);
+}
+
+.comparison-expand-button:focus-visible {
+    outline: 2px solid var(--comparison-blue);
+    outline-offset: 2px;
+}
+
+.comparison-expand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    flex: 0 0 2.2rem;
+    border-radius: 0.68rem;
+    color: var(--comparison-blue);
+    background: rgba(56, 189, 248, 0.09);
+}
+
+.comparison-expand-icon svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 240ms ease;
+}
+
+.comparison-expand-button[aria-expanded="true"] .comparison-expand-icon svg {
+    transform: rotate(180deg);
+}
+
+.comparison-expand-button > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.18rem;
+}
+
+.comparison-expand-button strong {
+    font-size: 0.77rem;
+    font-weight: 700;
+}
+
+.comparison-expand-button small {
+    color: #708198;
+    font-size: 0.65rem;
+}
+
+.comparison-dialog {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(34rem, 92vw);
+    max-width: none;
+    height: 100dvh;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    color: var(--comparison-text);
+    background: transparent;
+}
+
+.comparison-dialog[open] {
+    animation: comparisonDialogIn 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.comparison-dialog.is-closing {
+    animation: comparisonDialogOut 180ms ease-in both;
+}
+
+.comparison-dialog::backdrop {
+    background: rgba(2, 6, 23, 0.72);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    animation: comparisonBackdropIn 220ms ease-out both;
+}
+
+.comparison-dialog-panel {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    border-left: 1px solid rgba(148, 163, 184, 0.2);
+    background:
+        radial-gradient(circle at 100% 0%, rgba(30, 64, 175, 0.18), transparent 35%),
+        linear-gradient(180deg, #0d1422 0%, #080d17 100%);
+    box-shadow: -30px 0 80px rgba(0, 0, 0, 0.46);
+}
+
+@keyframes comparisonDialogIn {
+    from { opacity: 0; transform: translateX(2rem); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes comparisonDialogOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(2rem); }
+}
+
+@keyframes comparisonBackdropIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.comparison-dialog-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.6rem 1.6rem 1.35rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.comparison-dialog-project {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #60c9f7;
+    font-size: 0.68rem;
+    font-weight: 760;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.comparison-dialog-header h3 {
+    margin: 0;
+    color: #f1f5f9;
+    font-size: 1.4rem;
+    font-weight: 720;
+    letter-spacing: -0.025em;
+}
+
+.comparison-dialog-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex: 0 0 2.4rem;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 0.72rem;
+    color: #94a3b8;
+    background: rgba(148, 163, 184, 0.05);
+    transition: color 160ms ease, background 160ms ease;
+}
+
+.comparison-dialog-close:hover {
+    color: #f8fafc;
+    background: rgba(148, 163, 184, 0.12);
+}
+
+.comparison-dialog-close svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.comparison-dialog-body {
+    overflow-y: auto;
+    padding: 1.6rem;
+    overscroll-behavior: contain;
+}
+
+.comparison-detail-summary {
+    margin: 0 0 0.75rem;
+    color: #f1f5f9;
+    font-size: 1.15rem;
+    font-weight: 680;
+    line-height: 1.45;
+}
+
+.comparison-detail-description {
+    margin: 0;
+    color: #a9b7c9;
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+.comparison-detail-evidence {
+    margin-top: 1.8rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.13);
+}
+
+.comparison-detail-evidence h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.48rem;
+    margin: 0 0 0.8rem;
+    color: #dce6f2;
+    font-size: 0.77rem;
+    font-weight: 700;
+}
+
+.comparison-detail-evidence h4 svg {
+    width: 1rem;
+    height: 1rem;
+    color: var(--comparison-blue);
+}
+
+.comparison-detail-evidence ul {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.comparison-detail-evidence a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.78rem 0.85rem;
+    border: 1px solid rgba(56, 189, 248, 0.12);
+    border-radius: 0.75rem;
+    color: #9edfff;
+    background: rgba(14, 165, 233, 0.045);
+    font-size: 0.77rem;
+    font-weight: 620;
+    text-decoration: none;
+    transition: border-color 160ms ease, background 160ms ease;
+}
+
+.comparison-detail-evidence a:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    color: #d1f1ff;
+    background: rgba(14, 165, 233, 0.09);
+}
+
+.comparison-detail-evidence a svg {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex: 0 0 0.9rem;
+}
+
+.comparison-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.35rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.13);
+    background: rgba(2, 6, 23, 0.42);
+}
+
+.comparison-dialog-footer span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    color: #6f8097;
+    font-size: 0.66rem;
+}
+
+.comparison-dialog-footer span svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.comparison-dialog-footer button {
+    padding: 0.52rem 0.9rem;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 0.65rem;
+    color: #d9f2ff;
+    background: rgba(14, 165, 233, 0.1);
+    font-size: 0.73rem;
+    font-weight: 680;
+}
+
+body:has(.comparison-dialog[open]) {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .comparison-section {
+        padding: 6rem 0;
+    }
+
+    .comparison-capability {
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        box-shadow: 8px 0 20px rgba(0, 0, 0, 0.18);
+        background: rgba(7, 12, 22, 0.98);
+    }
+
+    .comparison-heading--capability {
+        position: sticky;
+        left: 0;
+        z-index: 3;
+        box-shadow: 8px 0 20px rgba(0, 0, 0, 0.18);
+        background: rgba(5, 10, 19, 0.98);
+    }
+}
+
+@media (max-width: 767px) {
+    .comparison-section {
+        padding: 4.8rem 0;
+    }
+
+    .comparison-intro {
+        margin-bottom: 2.5rem;
+        padding: 0 0.35rem;
+    }
+
+    .comparison-intro h2 {
+        font-size: clamp(2.15rem, 11vw, 3.2rem);
+    }
+
+    .comparison-intro > p {
+        font-size: 0.96rem;
+    }
+
+    .comparison-shell {
+        margin-inline: -0.25rem;
+        border-radius: 1rem;
+    }
+
+    .comparison-table-scroll {
+        overflow-x: visible;
+    }
+
+    .comparison-table {
+        min-width: 0;
+    }
+
+    .comparison-table-header,
+    .comparison-row {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .comparison-table-header {
+        min-height: 0;
+    }
+
+    .comparison-mobile-columns {
+        position: sticky;
+        top: 0;
+        z-index: 12;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        min-height: 2.85rem;
+        border-top: 1px solid rgba(56, 189, 248, 0.14);
+        border-bottom: 1px solid var(--comparison-border-strong);
+        color: #dce7f5;
+        background: rgba(5, 10, 19, 0.94);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+        backdrop-filter: blur(16px);
+    }
+
+    .comparison-mobile-columns span {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        padding: 0.65rem 0.8rem;
+        overflow: hidden;
+        font-size: 0.69rem;
+        font-weight: 720;
+        letter-spacing: 0.015em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .comparison-mobile-columns span:first-child {
+        color: #a5e4ff;
+        background: linear-gradient(90deg, rgba(14, 116, 230, 0.12), rgba(79, 70, 229, 0.06));
+    }
+
+    .comparison-mobile-columns span + span {
+        border-left: 1px solid var(--comparison-border);
+    }
+
+    .comparison-heading--capability,
+    .comparison-capability {
+        position: static;
+        left: auto;
+        z-index: auto;
+        grid-column: 1 / -1;
+        box-shadow: none;
+    }
+
+    .comparison-heading--capability {
+        min-height: 5.75rem;
+        padding: 1.15rem 1.2rem;
+        border-bottom: 1px solid var(--comparison-border);
+        background: rgba(5, 10, 19, 0.72);
+    }
+
+    .comparison-heading {
+        min-width: 0;
+        padding: 1rem 0.8rem;
+    }
+
+    .comparison-heading + .comparison-heading {
+        border-left: 0;
+    }
+
+    .comparison-heading--competitor,
+    .comparison-result-cell:not(.comparison-result-cell--anduinos) {
+        border-left: 1px solid var(--comparison-border);
+    }
+
+    .comparison-product-lockup {
+        gap: 0.55rem;
+    }
+
+    .comparison-logo {
+        width: 2.2rem;
+        height: 2.2rem;
+        flex-basis: 2.2rem;
+    }
+
+    .comparison-logo img {
+        width: 1.45rem;
+        height: 1.45rem;
+    }
+
+    .comparison-heading > strong,
+    .comparison-product-lockup strong {
+        font-size: 0.9rem;
+    }
+
+    .comparison-reference-badge {
+        display: none;
+    }
+
+    .comparison-switcher {
+        gap: 0.15rem;
+        padding: 0.2rem;
+    }
+
+    .comparison-switcher-button {
+        gap: 0;
+        padding: 0.42rem 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .comparison-brand-mark {
+        display: none;
+    }
+
+    .comparison-selected-product {
+        font-size: 0.68rem !important;
+    }
+
+    .comparison-row {
+        min-height: 0;
+        background: rgba(2, 6, 23, 0.18);
+    }
+
+    .comparison-capability {
+        min-height: 4.75rem;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        background: rgba(7, 12, 22, 0.86);
+    }
+
+    .comparison-capability-icon {
+        width: 2.05rem;
+        height: 2.05rem;
+        flex-basis: 2.05rem;
+    }
+
+    .comparison-result-cell {
+        align-items: stretch;
+        min-height: 6.8rem;
+        padding: 0.5rem 0.35rem;
+        border-left: 0;
+    }
+
+    .comparison-status {
+        grid-template-columns: 1.7rem minmax(0, 1fr);
+        gap: 0.45rem;
+        padding: 0.6rem 0.4rem;
+    }
+
+    .comparison-status-indicator {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .comparison-status-indicator svg {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .comparison-status-copy span {
+        font-size: 0.68rem;
+        line-height: 1.3;
+    }
+
+    .comparison-status-arrow {
+        display: none;
+    }
+
+    .comparison-dialog {
+        inset: auto 0 0;
+        width: 100%;
+        height: min(82dvh, 46rem);
+    }
+
+    .comparison-dialog[open] {
+        animation-name: comparisonDialogMobileIn;
+    }
+
+    .comparison-dialog.is-closing {
+        animation-name: comparisonDialogMobileOut;
+    }
+
+    .comparison-dialog-panel {
+        border-top: 1px solid rgba(148, 163, 184, 0.2);
+        border-left: 0;
+        border-radius: 1.25rem 1.25rem 0 0;
+        box-shadow: 0 -30px 80px rgba(0, 0, 0, 0.46);
+    }
+
+    .comparison-dialog-header,
+    .comparison-dialog-body {
+        padding-inline: 1.2rem;
+    }
+
+    .comparison-dialog-footer span {
+        display: none;
+    }
+
+    .comparison-dialog-footer {
+        justify-content: flex-end;
+    }
+
+    @keyframes comparisonDialogMobileIn {
+        from { opacity: 0; transform: translateY(2rem); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes comparisonDialogMobileOut {
+        from { opacity: 1; transform: translateY(0); }
+        to { opacity: 0; transform: translateY(2rem); }
+    }
+}
+
+@media (max-width: 420px) {
+    .comparison-expand-button {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .comparison-row--extra.is-revealed,
+    .comparison-dialog[open],
+    .comparison-dialog.is-closing,
+    .comparison-status,
+    .comparison-status-arrow,
+    .comparison-expand-button,
+    .comparison-expand-icon svg {
+        animation: none !important;
+        transition: none !important;
+    }
+}

@@ -1,0 +1,259 @@
+@using Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison
+@model DistributionComparisonViewModel
+
+@{
+    var competitors = new[]
+    {
+        (Key: "zorin", Name: "Zorin OS", Version: "18.1", ShortName: "Zorin", Mark: "Z"),
+        (Key: "mint", Name: "Linux Mint", Version: "22.3", ShortName: "Mint", Mark: "lm"),
+        (Key: "ubuntu", Name: "Ubuntu", Version: "26.04 LTS", ShortName: "Ubuntu", Mark: "u")
+    };
+    var extraCount = Model.Items.Count(item => !item.IsCore);
+}
+
+<section class="comparison-section position-relative" id="compare" data-comparison-root>
+    <div class="comparison-orb comparison-orb--blue" aria-hidden="true"></div>
+    <div class="comparison-orb comparison-orb--violet" aria-hidden="true"></div>
+    <div class="comparison-grid-glow" aria-hidden="true"></div>
+
+    <div class="container position-relative comparison-section-content">
+        <header class="comparison-intro">
+            <div class="comparison-kicker">
+                <span class="comparison-kicker-dot"></span>
+                @Localizer["Architecture, not aesthetics"]
+            </div>
+            <h2>@Localizer["Compare the system beneath the desktop."]</h2>
+            <p>
+                @Localizer["A familiar interface is only the surface. Explore which capabilities are defaults, which are optional, and how deeply each operating system integrates them."]
+            </p>
+            <div class="comparison-meta-row">
+                <span class="comparison-snapshot">
+                    <i data-lucide="calendar-check" aria-hidden="true"></i>
+                    @Localizer["Comparison snapshot: 28 August 2026"]
+                </span>
+            </div>
+        </header>
+
+        <div class="comparison-shell">
+            <div class="comparison-table-scroll" tabindex="0" aria-label="@Localizer["Distribution comparison table"]">
+                <div class="comparison-table" role="table" aria-colcount="3" aria-rowcount="@(Model.Items.Count + 1)">
+                    <div class="comparison-table-header" role="row">
+                        <div class="comparison-heading comparison-heading--capability" role="columnheader">
+                            <span class="comparison-heading-eyebrow">@Localizer["Capability"]</span>
+                            <strong>@Localizer["Current product implementation"]</strong>
+                        </div>
+                        <div class="comparison-heading comparison-heading--anduinos" role="columnheader">
+                            <span class="comparison-product-lockup">
+                                <span class="comparison-logo comparison-logo--anduinos">
+                                    <img src="/logo.svg" alt="" />
+                                </span>
+                                <span>
+                                    <span class="comparison-heading-eyebrow">@Localizer["Reference"]</span>
+                                    <strong>AnduinOS 2</strong>
+                                </span>
+                            </span>
+                            <span class="comparison-reference-badge">@Localizer["Integrated by design"]</span>
+                        </div>
+                        <div class="comparison-heading comparison-heading--competitor" role="columnheader">
+                            <span class="comparison-heading-eyebrow">@Localizer["Compare with"]</span>
+                            <div class="comparison-switcher" role="radiogroup" aria-label="@Localizer["Choose a distribution to compare"]">
+                                @foreach (var competitor in competitors)
+                                {
+                                    <button type="button"
+                                            class="comparison-switcher-button @(competitor.Key == "zorin" ? "is-active" : string.Empty)"
+                                            data-comparison-select="@competitor.Key"
+                                            data-project-name="@competitor.Name"
+                                            data-project-version="@competitor.Version"
+                                            role="radio"
+                                            aria-checked="@(competitor.Key == "zorin" ? "true" : "false")">
+                                        <span class="comparison-brand-mark comparison-brand-mark--@competitor.Key" aria-hidden="true">@competitor.Mark</span>
+                                        <span>@competitor.ShortName</span>
+                                    </button>
+                                }
+                            </div>
+                            <strong class="comparison-selected-product" data-comparison-selected-label>Zorin OS <span>18.1</span></strong>
+                        </div>
+                    </div>
+
+                    <div class="comparison-mobile-columns" aria-hidden="true">
+                        <span>AnduinOS 2</span>
+                        <span data-comparison-mobile-selected-label>Zorin OS 18.1</span>
+                    </div>
+
+                    <div class="comparison-table-body" role="rowgroup">
+                        @foreach (var item in Model.Items)
+                        {
+                            <div class="comparison-row @(!item.IsCore ? "comparison-row--extra" : string.Empty)"
+                                 role="row"
+                                 data-comparison-row="@item.Id"
+                                 hidden="@(!item.IsCore)">
+                                <div class="comparison-capability" role="rowheader">
+                                    <span class="comparison-capability-icon">
+                                        <i data-lucide="@item.Icon" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="comparison-capability-copy">
+                                        <strong>@Localizer[item.Title]</strong>
+                                        <small>@Localizer[item.Subtitle]</small>
+                                    </span>
+                                </div>
+
+                                <div class="comparison-result-cell comparison-result-cell--anduinos" role="cell">
+                                    @RenderStatusButton(item, "anduinos", "AnduinOS 2", item.AnduinOs)
+                                </div>
+
+                                <div class="comparison-result-cell comparison-result-cell--competitor" role="cell">
+                                    @foreach (var competitor in competitors)
+                                    {
+                                        var competitorCell = GetCell(item, competitor.Key);
+                                        <div class="comparison-competitor-result"
+                                             data-comparison-result="@competitor.Key"
+                                             hidden="@(competitor.Key != "zorin")">
+                                            @RenderStatusButton(item, competitor.Key, $"{competitor.Name} {competitor.Version}", competitorCell)
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-footer">
+                <button type="button"
+                        class="comparison-expand-button"
+                        data-comparison-expand
+                        data-expand-title="@Localizer["Show technical details"]"
+                        data-collapse-title="@Localizer["Show only the essentials"]"
+                        data-expand-subtitle="@Localizer["Reveal {0} deeper architecture comparisons", extraCount]"
+                        data-collapse-subtitle="@Localizer["Return to the eight essential comparisons"]"
+                        aria-expanded="false">
+                    <span class="comparison-expand-icon">
+                        <i data-lucide="chevrons-down" aria-hidden="true"></i>
+                    </span>
+                    <span>
+                        <strong data-comparison-expand-title>@Localizer["Show technical details"]</strong>
+                        <small data-comparison-expand-subtitle>@Localizer["Reveal {0} deeper architecture comparisons", extraCount]</small>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    @foreach (var item in Model.Items)
+    {
+        foreach (var project in new[]
+                 {
+                     (Key: "anduinos", Name: "AnduinOS 2", Cell: item.AnduinOs),
+                     (Key: "zorin", Name: "Zorin OS 18.1", Cell: item.Zorin),
+                     (Key: "mint", Name: "Linux Mint 22.3", Cell: item.Mint),
+                     (Key: "ubuntu", Name: "Ubuntu 26.04 LTS", Cell: item.Ubuntu)
+                 })
+        {
+            <template id="comparison-detail-@item.Id-@project.Key">
+                <p class="comparison-detail-summary">@Localizer[project.Cell.Summary]</p>
+                <p class="comparison-detail-description">@Localizer[project.Cell.Detail]</p>
+                <div class="comparison-detail-evidence">
+                    <h4>
+                        <i data-lucide="book-open-check" aria-hidden="true"></i>
+                        @Localizer["Evidence and verification"]
+                    </h4>
+                    <ul>
+                        @foreach (var source in project.Cell.Sources)
+                        {
+                            <li>
+                                <a href="@source.Url" target="_blank" rel="noreferrer">
+                                    <span>@Localizer[source.Label]</span>
+                                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </template>
+        }
+    }
+
+    <dialog class="comparison-dialog" data-comparison-dialog aria-labelledby="comparison-dialog-title">
+        <div class="comparison-dialog-panel">
+            <header class="comparison-dialog-header">
+                <div>
+                    <span class="comparison-dialog-project" data-comparison-dialog-project></span>
+                    <h3 id="comparison-dialog-title" data-comparison-dialog-title></h3>
+                </div>
+                <button type="button" class="comparison-dialog-close" data-comparison-dialog-close aria-label="@Localizer["Close details"]">
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="comparison-dialog-body" data-comparison-dialog-body></div>
+            <footer class="comparison-dialog-footer">
+                <span>
+                    <i data-lucide="calendar-check" aria-hidden="true"></i>
+                    @Localizer["Verified for the 28 August 2026 snapshot"]
+                </span>
+                <button type="button" data-comparison-dialog-close>@Localizer["Done"]</button>
+            </footer>
+        </div>
+    </dialog>
+</section>
+
+@functions {
+    private static ComparisonCell GetCell(ComparisonItem item, string project)
+    {
+        return project switch
+        {
+            "zorin" => item.Zorin,
+            "mint" => item.Mint,
+            "ubuntu" => item.Ubuntu,
+            _ => item.AnduinOs
+        };
+    }
+
+    private Microsoft.AspNetCore.Html.IHtmlContent RenderStatusButton(
+        ComparisonItem item,
+        string projectKey,
+        string projectName,
+        ComparisonCell cell)
+    {
+        var button = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("button");
+        button.Attributes["type"] = "button";
+        button.Attributes["class"] = $"comparison-status comparison-status--{LevelClass(cell.Level)}";
+        button.Attributes["data-comparison-detail"] = $"comparison-detail-{item.Id}-{projectKey}";
+        button.Attributes["data-comparison-capability"] = Localizer[item.Title].Value;
+        button.Attributes["data-comparison-project"] = projectName;
+        button.Attributes["data-tooltip"] = Localizer["Open details and evidence"].Value;
+        button.Attributes["aria-label"] = $"{projectName}: {Localizer[item.Title].Value} — {Localizer[cell.Summary].Value}. {Localizer["Open details and evidence"].Value}";
+
+        button.InnerHtml.AppendHtml($"<span class=\"comparison-status-indicator\"><i data-lucide=\"{LevelIcon(cell.Level)}\" aria-hidden=\"true\"></i></span>");
+        button.InnerHtml.AppendHtml("<span class=\"comparison-status-copy\">");
+        button.InnerHtml.AppendHtml($"<span>{System.Net.WebUtility.HtmlEncode(Localizer[cell.Summary].Value)}</span>");
+        button.InnerHtml.AppendHtml("</span><i class=\"comparison-status-arrow\" data-lucide=\"arrow-up-right\" aria-hidden=\"true\"></i>");
+        return button;
+    }
+
+    private static string LevelClass(ComparisonLevel level)
+    {
+        return level switch
+        {
+            ComparisonLevel.FirstClass => "first",
+            ComparisonLevel.DefaultProvided => "provided",
+            ComparisonLevel.Supported => "supported",
+            ComparisonLevel.Experimental => "experimental",
+            ComparisonLevel.NotDocumented => "undocumented",
+            _ => "none"
+        };
+    }
+
+    private static string LevelIcon(ComparisonLevel level)
+    {
+        return level switch
+        {
+            ComparisonLevel.FirstClass => "check",
+            ComparisonLevel.DefaultProvided => "circle-check",
+            ComparisonLevel.Supported => "circle-dashed",
+            ComparisonLevel.Experimental => "flask-conical",
+            ComparisonLevel.NotDocumented => "search",
+            _ => "minus"
+        };
+    }
+
+}

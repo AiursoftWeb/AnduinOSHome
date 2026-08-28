@@ -593,7 +593,7 @@
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Package Format"]</td><td class="text-white fw-semibold pe-0">deb + Flatpak</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Architecture"]</td><td class="text-white fw-semibold pe-0">x86_64 / ARM64</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Init System"]</td><td class="text-white fw-semibold pe-0">systemd</td></tr>
-                                    <tr><td class="text-gray-500 ps-0">@Localizer["Default Filesystem"]</td><td class="text-white fw-semibold pe-0">ext4</td></tr>
+                                    <tr><td class="text-gray-500 ps-0">@Localizer["Default Filesystem"]</td><td class="text-white fw-semibold pe-0">Btrfs (@Localizer["ext4 optional"])</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Memory Compression"]</td><td class="text-white fw-semibold pe-0">ZRAM</td></tr>
                                     <tr><td class="text-gray-500 ps-0">@Localizer["Default Browser"]</td><td class="text-white fw-semibold pe-0">Firefox</td></tr>
                                 </tbody>
@@ -661,6 +661,14 @@
                     </div>
                 </div>
             </div>
+        <div class="text-center mt-5" style="display: none;">
+            <a id="compare-distributions-link" asp-controller="Home" asp-action="Compare" class="btn btn-lg btn-outline-info rounded-pill px-4">
+                <i data-lucide="scale" class="me-2" style="width: 18px; height: 18px;"></i>
+                @Localizer["Compare with Zorin OS, Linux Mint or Ubuntu"]
+                <i data-lucide="arrow-right" class="ms-2" style="width: 18px; height: 18px;"></i>
+            </a>
+            <p class="text-gray-500 small mt-2 mb-0">@Localizer["Compare defaults, integration depth and architecture choices."]</p>
+        </div>
         </div>
     </div>
 </section>

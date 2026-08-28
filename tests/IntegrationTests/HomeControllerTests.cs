@@ -15,6 +15,39 @@ public class HomeControllerTests : TestBase
         var html = await response.Content.ReadAsStringAsync();
         Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "amd64-checksum-link"));
         Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "arm64-checksum-link"));
+        Assert.AreEqual("/Compare.html", GetAnchorHrefById(html, "compare-distributions-link"));
+        Assert.Contains("Technical Specifications", html, StringComparison.Ordinal);
+        Assert.Contains("System Requirements", html, StringComparison.Ordinal);
+        Assert.Contains("Btrfs", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("data-comparison-root", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("css/compare.css", html, StringComparison.Ordinal);
+    }
+
+    [TestMethod]
+    public async Task CompareRendersInteractiveDistributionComparisonContract()
+    {
+        var response = await Http.GetAsync("/Compare.html");
+        response.EnsureSuccessStatusCode();
+        var html = await response.Content.ReadAsStringAsync();
+
+        Assert.Contains("data-comparison-root", html, StringComparison.Ordinal);
+        Assert.AreEqual(20, CountOccurrences(html, "data-comparison-row=\""));
+        Assert.AreEqual(12, CountOccurrences(html, "comparison-row--extra"));
+        Assert.AreEqual(3, CountOccurrences(html, "data-comparison-select=\""));
+        Assert.AreEqual(80, CountOccurrences(html, "data-comparison-detail=\""));
+        Assert.AreEqual(80, CountOccurrences(html, "<template id=\"comparison-detail-"));
+        Assert.Contains("Btrfs default · ext4 optional", html, StringComparison.Ordinal);
+        Assert.Contains("data-comparison-expand", html, StringComparison.Ordinal);
+        Assert.Contains("data-comparison-dialog", html, StringComparison.Ordinal);
+        Assert.Contains("distribution comparison", html, StringComparison.OrdinalIgnoreCase);
+        Assert.Contains("css/compare.css", html, StringComparison.Ordinal);
+        Assert.Contains("js/compare.js", html, StringComparison.Ordinal);
+        Assert.Contains("comparison-status--first", html, StringComparison.Ordinal);
+        Assert.Contains("comparison-status--provided", html, StringComparison.Ordinal);
+        Assert.Contains("comparison-status--none", html, StringComparison.Ordinal);
+        Assert.Contains("data-comparison-mobile-selected-label", html, StringComparison.Ordinal);
+        Assert.Contains("Linux Mint 22.3 release announcement", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("Linux Mint installation guide", html, StringComparison.Ordinal);
     }
 
     [TestMethod]
@@ -81,5 +114,17 @@ public class HomeControllerTests : TestBase
             System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         Assert.IsTrue(href.Success, $"Anchor with id '{id}' does not contain an href attribute.");
         return System.Net.WebUtility.HtmlDecode(href.Groups[1].Value);
+    }
+
+    private static int CountOccurrences(string value, string pattern)
+    {
+        var count = 0;
+        var offset = 0;
+        while ((offset = value.IndexOf(pattern, offset, StringComparison.Ordinal)) >= 0)
+        {
+            count++;
+            offset += pattern.Length;
+        }
+        return count;
     }
 }
