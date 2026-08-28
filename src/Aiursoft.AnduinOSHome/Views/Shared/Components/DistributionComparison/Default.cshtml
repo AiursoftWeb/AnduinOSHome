@@ -214,7 +214,7 @@
         string projectName,
         ComparisonCell cell)
     {
-        var button = new Microsoft.AspNetCore.Mvc.Rendering.TagBuilder("button");
+        var button = new TagBuilder("button");
         button.Attributes["type"] = "button";
         button.Attributes["class"] = $"comparison-status comparison-status--{LevelClass(cell.Level)}";
         button.Attributes["data-comparison-detail"] = $"comparison-detail-{item.Id}-{projectKey}";
