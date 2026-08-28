@@ -93,6 +93,8 @@ public class ViewModelArgsInjector(
         _ = localizer["AnduinOS Container"];
     
         _ = localizer["Delete Account"];
+    
+        _ = localizer["Compare AnduinOS"];
     }
 
     public void InjectSimple(
