@@ -5,6 +5,10 @@ public class HomeControllerTests : TestBase
 {
     private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.sha256";
     private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.sha256";
+    private const string ReadyToUseText = "The ISO is just 2.54 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations.";
+    private const string FriendlyInterfaceText = "The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve.";
+    private const string OldReadyToUseText = "The ISO is just 2.54 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
+    private const string OldFriendlyInterfaceText = "The GNOME-based desktop environment have beautiful interfaces and human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without too much learning cost.";
 
     [TestMethod]
     public async Task GetIndex()
@@ -19,8 +23,28 @@ public class HomeControllerTests : TestBase
         Assert.Contains("Technical Specifications", html, StringComparison.Ordinal);
         Assert.Contains("System Requirements", html, StringComparison.Ordinal);
         Assert.Contains("Btrfs", html, StringComparison.Ordinal);
+        Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
+        Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
+        Assert.DoesNotContain(OldReadyToUseText, html, StringComparison.Ordinal);
+        Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
         Assert.DoesNotContain("data-comparison-root", html, StringComparison.Ordinal);
         Assert.DoesNotContain("css/compare.css", html, StringComparison.Ordinal);
+    }
+
+    [TestMethod]
+    public async Task GetIndexInEnGb()
+    {
+        var cultureResponse = await Http.GetAsync("/Culture/Set?culture=en-GB&returnUrl=/");
+        Assert.AreEqual(System.Net.HttpStatusCode.Found, cultureResponse.StatusCode);
+
+        var response = await Http.GetAsync("/");
+        response.EnsureSuccessStatusCode();
+        var html = await response.Content.ReadAsStringAsync();
+
+        Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
+        Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
+        Assert.DoesNotContain(OldReadyToUseText, html, StringComparison.Ordinal);
+        Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
     }
 
     [TestMethod]
