@@ -84,6 +84,19 @@ public class HomeControllerTests : TestBase
         Assert.Contains("data-comparison-mobile-selected-label", html, StringComparison.Ordinal);
         Assert.Contains("Linux Mint 22.3 release announcement", html, StringComparison.Ordinal);
         Assert.DoesNotContain("Linux Mint installation guide", html, StringComparison.Ordinal);
+        Assert.Contains("Ubuntu 26.04 LTS · Linux 7.0", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("Ubuntu 26.04 · Linux 7.0 HWE", html, StringComparison.Ordinal);
+        Assert.Contains("Wayland-only · end-to-end tested", html, StringComparison.Ordinal);
+        Assert.Contains("Xorg session: Not included", html, StringComparison.Ordinal);
+        Assert.Contains("All first-party graphical system tools use GTK4/libadwaita", html, StringComparison.Ordinal);
+        Assert.Contains("No equivalent first-party workflow enabled by default", html, StringComparison.Ordinal);
+        Assert.Contains("Public automated release evidence", html, StringComparison.Ordinal);
+        Assert.Contains("No comparable public suite identified as of 2026-08-28", html, StringComparison.Ordinal);
+        Assert.Contains("data-comparison-methodology", html, StringComparison.Ordinal);
+        Assert.Contains("No competitor ISO was installed specifically for this snapshot", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("Deployment rollback not documented", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("No health dashboard documented", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("public suite not documented", html, StringComparison.OrdinalIgnoreCase);
     }
 
     [TestMethod]

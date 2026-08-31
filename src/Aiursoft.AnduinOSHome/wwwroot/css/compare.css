@@ -188,6 +188,36 @@ body:has(.comparison-page) main {
     color: var(--comparison-blue);
 }
 
+.comparison-methodology {
+    max-width: 760px;
+    margin: 1rem auto 0;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 0.85rem;
+    color: #9fb1c7;
+    background: rgba(8, 13, 24, 0.58);
+    text-align: left;
+}
+
+.comparison-methodology summary {
+    padding: 0.7rem 0.9rem;
+    color: #bae6fd;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.comparison-methodology-body {
+    padding: 0 0.9rem 0.8rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.comparison-methodology-body p {
+    margin: 0.7rem 0 0;
+    color: #91a3ba;
+    font-size: 0.76rem;
+    line-height: 1.65;
+}
+
 .comparison-shell {
     position: relative;
     max-width: 1180px;
