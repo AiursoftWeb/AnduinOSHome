@@ -64,7 +64,8 @@ public class HomeController : Controller
         {
             DownloadUrl = isTorrent ? artifact.TorrentUrl : artifact.IsoUrl,
             ChecksumUrl = artifact.ChecksumUrl,
-            IsoFileName = artifact.IsoFileName
+            IsoFileName = artifact.IsoFileName,
+            IsTorrent = isTorrent
         };
         return this.SimpleView(model);
     }

@@ -116,18 +116,19 @@ public class HomeControllerTests : TestBase
 
     [TestMethod]
     [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.iso", Amd64ChecksumUrl,
-        "AnduinOS-2.0.2-amd64.iso")]
+        "AnduinOS-2.0.2-amd64.iso", false)]
     [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.torrent", Amd64ChecksumUrl,
-        "AnduinOS-2.0.2-amd64.iso")]
+        "AnduinOS-2.0.2-amd64.iso", true)]
     [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.iso", Arm64ChecksumUrl,
-        "AnduinOS-2.0.2-arm64.iso")]
+        "AnduinOS-2.0.2-arm64.iso", false)]
     [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.torrent", Arm64ChecksumUrl,
-        "AnduinOS-2.0.2-arm64.iso")]
+        "AnduinOS-2.0.2-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
         string expectedChecksumUrl,
-        string expectedIsoFileName)
+        string expectedIsoFileName,
+        bool expectedTorrentGuide)
     {
         var response = await Http.GetAsync($"/thankyou.html?download={download}");
         response.EnsureSuccessStatusCode();
@@ -137,6 +138,15 @@ public class HomeControllerTests : TestBase
         Assert.AreEqual(expectedChecksumUrl, GetAnchorHrefById(html, "official-checksum-link"));
         Assert.IsTrue(html.Contains($"sha256sum ./{expectedIsoFileName}", StringComparison.Ordinal));
         Assert.IsFalse(html.Contains("https://cf.anduinos.com/\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-guide\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-platform-tabs\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/open-torrent.png", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/download-iso.png", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/verify-iso.png", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-screenshot-modal\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("data-bs-target=\"#torrent-screenshot-modal\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("https://www.qbittorrent.org/download", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("https://transmissionbt.com/download", StringComparison.Ordinal));
     }
 
     [TestMethod]
