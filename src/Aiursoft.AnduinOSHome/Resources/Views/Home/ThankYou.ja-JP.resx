@@ -63,6 +63,9 @@
   <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
     <value>BalenaEtcherは、ISOイメージの書き込みを簡単かつ安全に行えるクロスプラットフォームのグラフィカルツールです。</value>
   </data>
+  <data name="BitTorrent client recommendations" xml:space="preserve">
+    <value>BitTorrentクライアントのおすすめ</value>
+  </data>
   <data name="Boot from USB" xml:space="preserve">
     <value>USBから起動する</value>
   </data>
@@ -87,11 +90,17 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>システム言語、地域設定を変更し、中国語ピンインや日本語Anthyなどの入力メソッドを追加します。</value>
   </data>
+  <data name="Choose your current operating system" xml:space="preserve">
+    <value>現在のオペレーティングシステムを選択してください</value>
+  </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>「ファイルからフラッシュ」をクリックし、AnduinOS ISO を選択します。</value>
   </data>
   <data name="click here" xml:space="preserve">
     <value>こちらをクリックしてください</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
   </data>
   <data name="Common boot menu keys:" xml:space="preserve">
     <value>一般的なブートメニューキー：</value>
@@ -126,8 +135,14 @@
   <data name="Download and install" xml:space="preserve">
     <value>ダウンロードしてインストールする</value>
   </data>
+  <data name="Download AnduinOS in three steps" xml:space="preserve">
+    <value>3つのステップでAnduinOSをダウンロード</value>
+  </data>
   <data name="Download Etcher" xml:space="preserve">
     <value>Etcherをダウンロード</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Windows用qBittorrentをダウンロード</value>
   </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Rufusをダウンロード</value>
@@ -135,8 +150,20 @@
   <data name="Download Started" xml:space="preserve">
     <value>ダウンロードが開始されました</value>
   </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>ISOをダウンロード</value>
+  </data>
+  <data name="Download Transmission for macOS" xml:space="preserve">
+    <value>macOS用Transmissionをダウンロード</value>
+  </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Ventoy をダウンロード</value>
+  </data>
+  <data name="Download with BitTorrent" xml:space="preserve">
+    <value>BitTorrentでダウンロード</value>
+  </data>
+  <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
+    <value>qBittorrentでAnduinOSのISOをダウンロード</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>ドライバー</value>
@@ -180,6 +207,9 @@
   <data name="Get Impression on Flathub" xml:space="preserve">
     <value>FlathubでImpressionを取得</value>
   </data>
+  <data name="Get qBittorrent for Linux" xml:space="preserve">
+    <value>Linux 用 qBittorrent を入手</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>AnduinOSを初めてお使いの場合は、こちらもご確認ください。</value>
   </data>
@@ -210,6 +240,9 @@
   <data name="Install Drivers" xml:space="preserve">
     <value>ドライバーをインストール</value>
   </data>
+  <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
+    <value>ディストリビューションのソフトウェアセンターからqBittorrentをインストールするか、公式サイトからダウンロードして、ダウンロードした.torrentファイルを開きます。</value>
+  </data>
   <data name="instead of ISO mode." xml:space="preserve">
     <value>ISO モードではなく、</value>
   </data>
@@ -219,11 +252,20 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>ディスカッションに参加する</value>
   </data>
+  <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
+    <value>AnduinOS ISOが100%になるまで、クライアントを開いたままにしてください。</value>
+  </data>
   <data name="Language Guide" xml:space="preserve">
     <value>言語ガイド</value>
   </data>
   <data name="Language Settings" xml:space="preserve">
     <value>言語設定</value>
+  </data>
+  <data name="Linux" xml:space="preserve">
+    <value>Linux</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
   </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>複数のISOファイルを扱える、再利用可能なUSBソリューション</value>
@@ -237,6 +279,15 @@
   <data name="official SHA256 checksum" xml:space="preserve">
     <value>公式SHA256チェックサム</value>
   </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>ダウンロードしたばかりのAnduinOSの.torrentファイルを、お使いのBitTorrentクライアントで開きます。</value>
+  </data>
+  <data name="Open the Torrent file" xml:space="preserve">
+    <value>Torrentファイルを開く</value>
+  </data>
+  <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
+    <value>qBittorrentでAnduinOSのTorrentファイルを開く</value>
+  </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>オプションのインストール前手順</value>
   </data>
@@ -245,6 +296,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>またはコマンドラインを使用します：</value>
+  </data>
+  <data name="Phase 0" xml:space="preserve">
+    <value>フェーズ0</value>
   </data>
   <data name="Phase 1" xml:space="preserve">
     <value>フェーズ 1</value>
@@ -258,11 +312,29 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>直ちにメーカー指定のブートメニューキーを押してください。</value>
   </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrentは、広告なしの無料かつオープンソースのBitTorrentクライアントです。インストールした後、ダウンロードした.torrentファイルを開いてください。</value>
+  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>デュアルブートガイドを先に読んでください</value>
   </data>
+  <data name="Recommended for Linux" xml:space="preserve">
+    <value>Linux 向け推奨</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>macOS 向け推奨</value>
+  </data>
+  <data name="Recommended for Windows" xml:space="preserve">
+    <value>Windows向け推奨</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>問題を報告</value>
+  </data>
+  <data name="Screenshot preview" xml:space="preserve">
+    <value>スクリーンショットのプレビュー</value>
   </data>
   <data name="Secure Boot" xml:space="preserve">
     <value>セキュアブート</value>
@@ -294,6 +366,15 @@
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>動作しない点やご提案はありますか？ディスカッションに投稿してください。</value>
   </data>
+  <data name="Step 1" xml:space="preserve">
+    <value>ステップ 1</value>
+  </data>
+  <data name="Step 2" xml:space="preserve">
+    <value>手順2</value>
+  </data>
+  <data name="Step 3" xml:space="preserve">
+    <value>ステップ 3</value>
+  </data>
   <data name="Support AnduinOS" xml:space="preserve">
     <value>AnduinOS をサポートする</value>
   </data>
@@ -315,8 +396,23 @@
   <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
     <value>AnduinOSのグラフィカルインストーラー — 直感的でガイド付き。</value>
   </data>
+  <data name="The downloaded AnduinOS ISO and checksum files" xml:space="preserve">
+    <value>ダウンロード済みのAnduinOS ISOおよびチェックサムファイル</value>
+  </data>
+  <data name="The example below uses qBittorrent on Linux. The same Torrent workflow applies on Windows and macOS." xml:space="preserve">
+    <value>下の例はLinux上でqBittorrentを使用しています。同じTorrentのワークフローはWindowsとmacOSにも適用されます。</value>
+  </data>
+  <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
+    <value>小さな .torrent ファイルにはダウンロード手順が含まれており、AnduinOS の ISO 自体は含まれていません。クライアントをインストールしてから、ファイルを開いて ISO をダウンロードしてください。</value>
+  </data>
   <data name="to your USB drive." xml:space="preserve">
     <value>USBドライブに。</value>
+  </data>
+  <data name="Transmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="Transmission is a lightweight, open-source BitTorrent client with a native macOS interface. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Transmissionは、ネイティブなmacOSインターフェースを備えた軽量なオープンソースのBitTorrentクライアントです。インストールした後、ダウンロードした.torrentファイルを開いてください。</value>
   </data>
   <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
     <value>UFW はデフォルトで無効化されています（開いているポートがない = リスクなし）。必要に応じて、ウェルカムセンターまたはグラフィカルなファイアウォールアプリから有効にしてください。</value>
@@ -342,8 +438,20 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>チェックサムを確認する</value>
   </data>
+  <data name="Verify the ISO" xml:space="preserve">
+    <value>ISOを検証する</value>
+  </data>
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>ダウンロードしたファイルを確認し、ブータブルUSBドライブを作成してください。</value>
+  </data>
+  <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
+    <value>全サイズスクリーンショットを表示：ISOをダウンロード</value>
+  </data>
+  <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
+    <value>全サイズスクリーンショットを表示: Torrentファイルを開く</value>
+  </data>
+  <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
+    <value>全サイズスクリーンショットの表示: ISOの検証</value>
   </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>音量下 + 電源ボタン</value>
@@ -353,6 +461,12 @@
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>次は何をしますか？</value>
+  </data>
+  <data name="When the download finishes, continue below to compare the ISO&apos;s SHA256 checksum." xml:space="preserve">
+    <value>ダウンロードが完了したら、下の手順に従って ISO の SHA256 チェックサムを照合してください。</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>AnduinOSとの出会いはここから始まります。以下の手順に従うと、30分以内にセットアップが完了します。</value>
