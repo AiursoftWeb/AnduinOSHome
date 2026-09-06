@@ -63,6 +63,9 @@
   <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
     <value>BalenaEtcher 是一款跨平台圖形化工具，讓 ISO 映像檔的寫入變得簡單且安全。</value>
   </data>
+  <data name="BitTorrent client recommendations" xml:space="preserve">
+    <value>BitTorrent 用戶端建議</value>
+  </data>
   <data name="Boot from USB" xml:space="preserve">
     <value>從 USB 開機</value>
   </data>
@@ -87,11 +90,17 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>變更系統語言、區域格式，並新增如中文拼音或日文 Anthy 等輸入法。</value>
   </data>
+  <data name="Choose your current operating system" xml:space="preserve">
+    <value>選擇您目前的作業系統</value>
+  </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>點擊「從檔案燒錄」並選取 AnduinOS ISO。</value>
   </data>
   <data name="click here" xml:space="preserve">
     <value>請按這裡</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
   </data>
   <data name="Common boot menu keys:" xml:space="preserve">
     <value>常見的開機選單按鍵：</value>
@@ -126,8 +135,14 @@
   <data name="Download and install" xml:space="preserve">
     <value>下載並安裝</value>
   </data>
+  <data name="Download AnduinOS in three steps" xml:space="preserve">
+    <value>三個步驟下載 AnduinOS</value>
+  </data>
   <data name="Download Etcher" xml:space="preserve">
     <value>下載 Etcher</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>下載 qBittorrent for Windows</value>
   </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>下載 Rufus</value>
@@ -135,8 +150,20 @@
   <data name="Download Started" xml:space="preserve">
     <value>下載已開始</value>
   </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>下載 ISO</value>
+  </data>
+  <data name="Download Transmission for macOS" xml:space="preserve">
+    <value>下載 macOS 版 Transmission</value>
+  </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>下載 Ventoy</value>
+  </data>
+  <data name="Download with BitTorrent" xml:space="preserve">
+    <value>使用 BitTorrent 下載</value>
+  </data>
+  <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
+    <value>使用 qBittorrent 下載 AnduinOS ISO</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>驅動程式</value>
@@ -180,6 +207,9 @@
   <data name="Get Impression on Flathub" xml:space="preserve">
     <value>在 Flathub 上取得 Impression</value>
   </data>
+  <data name="Get qBittorrent for Linux" xml:space="preserve">
+    <value>取得適用於 Linux 的 qBittorrent</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>如果你是 AnduinOS 的新用戶，也可以查看</value>
   </data>
@@ -210,6 +240,9 @@
   <data name="Install Drivers" xml:space="preserve">
     <value>安裝驅動程式</value>
   </data>
+  <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
+    <value>請從您的發行版軟體中心安裝 qBittorrent，或從官方網站下載，然後開啟下載的 .torrent 檔案。</value>
+  </data>
   <data name="instead of ISO mode." xml:space="preserve">
     <value>而非 ISO 模式。</value>
   </data>
@@ -219,11 +252,20 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>參與討論</value>
   </data>
+  <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
+    <value>請保持下載客戶端開啟，直到 AnduinOS ISO 下載進度達到 100%。</value>
+  </data>
   <data name="Language Guide" xml:space="preserve">
     <value>語言指南</value>
   </data>
   <data name="Language Settings" xml:space="preserve">
     <value>語言設定</value>
+  </data>
+  <data name="Linux" xml:space="preserve">
+    <value>Linux</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
   </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>支援多 ISO、可重複使用的 USB 解決方案</value>
@@ -237,6 +279,15 @@
   <data name="official SHA256 checksum" xml:space="preserve">
     <value>官方 SHA256 校驗和</value>
   </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>請使用您的 BitTorrent 客戶端開啟剛下載的 AnduinOS .torrent 檔案。</value>
+  </data>
+  <data name="Open the Torrent file" xml:space="preserve">
+    <value>開啟 Torrent 檔案</value>
+  </data>
+  <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
+    <value>在 qBittorrent 中開啟 AnduinOS 的 Torrent 檔案</value>
+  </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>選用的安裝前步驟</value>
   </data>
@@ -245,6 +296,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>或使用命令列：</value>
+  </data>
+  <data name="Phase 0" xml:space="preserve">
+    <value>階段 0</value>
   </data>
   <data name="Phase 1" xml:space="preserve">
     <value>階段 1</value>
@@ -258,11 +312,29 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>請立即按下您電腦製造商的開機選單鍵。</value>
   </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent 是一款免費、開源的 BitTorrent 客戶端，且無廣告。安裝後，請開啟下載的 .torrent 檔案。</value>
+  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>請先閱讀雙重開機指南</value>
   </data>
+  <data name="Recommended for Linux" xml:space="preserve">
+    <value>Linux 推薦</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>macOS 推薦</value>
+  </data>
+  <data name="Recommended for Windows" xml:space="preserve">
+    <value>推薦用於 Windows</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>回報問題</value>
+  </data>
+  <data name="Screenshot preview" xml:space="preserve">
+    <value>截圖預覽</value>
   </data>
   <data name="Secure Boot" xml:space="preserve">
     <value>安全啟動</value>
@@ -294,6 +366,15 @@
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>遇到問題了嗎？有建議嗎？歡迎到討論區發文討論。</value>
   </data>
+  <data name="Step 1" xml:space="preserve">
+    <value>步驟 1</value>
+  </data>
+  <data name="Step 2" xml:space="preserve">
+    <value>步驟 2</value>
+  </data>
+  <data name="Step 3" xml:space="preserve">
+    <value>第 3 步</value>
+  </data>
   <data name="Support AnduinOS" xml:space="preserve">
     <value>支持 AnduinOS</value>
   </data>
@@ -315,8 +396,23 @@
   <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
     <value>AnduinOS 圖形化安裝程式——簡潔明瞭，全程引導。</value>
   </data>
+  <data name="The downloaded AnduinOS ISO and checksum files" xml:space="preserve">
+    <value>已下載的 AnduinOS ISO 與校驗和檔案</value>
+  </data>
+  <data name="The example below uses qBittorrent on Linux. The same Torrent workflow applies on Windows and macOS." xml:space="preserve">
+    <value>下方的範例使用 Linux 上的 qBittorrent。相同的 Torrent 工作流程也適用於 Windows 和 macOS。</value>
+  </data>
+  <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
+    <value>小型的 .torrent 檔案包含的是下載指示，而非 AnduinOS ISO 本身。請安裝 BitTorrent 客戶端，然後開啟該檔案以下載 ISO。</value>
+  </data>
   <data name="to your USB drive." xml:space="preserve">
     <value>到您的 USB 隨身碟。</value>
+  </data>
+  <data name="Transmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="Transmission is a lightweight, open-source BitTorrent client with a native macOS interface. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Transmission 是一款輕量級、開源的 BitTorrent 客戶端，具有原生 macOS 介面。安裝後，開啟下載的 .torrent 檔案。</value>
   </data>
   <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
     <value>UFW 預設為停用狀態（無開放連接埠 = 無風險）。如需使用，可透過歡迎中心或圖形化防火牆應用程式來啟用。</value>
@@ -342,8 +438,20 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>驗證校驗碼</value>
   </data>
+  <data name="Verify the ISO" xml:space="preserve">
+    <value>驗證 ISO</value>
+  </data>
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>驗證您的下載檔案並建立可開機 USB 磁碟。</value>
+  </data>
+  <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
+    <value>檢視全尺寸截圖：下載 ISO</value>
+  </data>
+  <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
+    <value>檢視完整尺寸截圖：開啟 Torrent 檔案</value>
+  </data>
+  <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
+    <value>檢視全尺寸截圖：驗證 ISO</value>
   </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>音量減鍵 + 電源鍵</value>
@@ -353,6 +461,12 @@
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>接下來呢？</value>
+  </data>
+  <data name="When the download finishes, continue below to compare the ISO&apos;s SHA256 checksum." xml:space="preserve">
+    <value>下載完成後，請繼續往下，比對 ISO 的 SHA256 檢查碼。</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>您的 AnduinOS 之旅由此開始。請按照以下步驟操作，即可在 30 分鐘內完成設定並順利運行。</value>
