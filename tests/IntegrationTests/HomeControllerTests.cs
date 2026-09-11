@@ -12,6 +12,7 @@ public class HomeControllerTests : TestBase
     private const string FriendlyInterfaceText = "The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve.";
     private const string OldReadyToUseText = "The ISO is just 2.54 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
     private const string OldFriendlyInterfaceText = "The GNOME-based desktop environment have beautiful interfaces and human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without too much learning cost.";
+    private const string VultrReferralUrl = "https://www.vultr.com/?ref=9692114-9J";
 
     [TestMethod]
     public async Task GetIndex()
@@ -32,6 +33,16 @@ public class HomeControllerTests : TestBase
         Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
         Assert.DoesNotContain("data-comparison-root", html, StringComparison.Ordinal);
         Assert.DoesNotContain("css/compare.css", html, StringComparison.Ordinal);
+        Assert.Contains("AnduinOS infrastructure is hosted on Vultr.", html, StringComparison.Ordinal);
+        Assert.Contains("Get $300 in Vultr credits", html, StringComparison.Ordinal);
+        Assert.Contains("data-bs-target=\"#vultr-referral-modal\"", html, StringComparison.Ordinal);
+        Assert.Contains("id=\"vultr-referral-modal\"", html, StringComparison.Ordinal);
+        Assert.Contains($"href=\"{VultrReferralUrl}\"", html, StringComparison.Ordinal);
+        Assert.Contains("This is a referral link.", html, StringComparison.Ordinal);
+        Assert.Contains("Go to Vultr", html, StringComparison.Ordinal);
+        Assert.Contains("Cancel", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("Voxihost", html, StringComparison.OrdinalIgnoreCase);
+        Assert.DoesNotContain("voxihost.pl", html, StringComparison.OrdinalIgnoreCase);
         Assert.Contains($"<meta property=\"og:title\" content=\"{SocialPreviewTitle}\">", html, StringComparison.Ordinal);
         Assert.Contains("<meta property=\"og:description\"", html, StringComparison.Ordinal);
         Assert.Contains($"content=\"{SocialPreviewDescription}\">", html, StringComparison.Ordinal);
