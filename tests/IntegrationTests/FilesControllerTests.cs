@@ -13,6 +13,34 @@ public class FilesControllerTests : TestBase
         new HttpClientHandler { AllowAutoRedirect = false });
 
     [TestMethod]
+    public async Task TestSvgLogoRendersInlineOnlyInLogoFolder()
+    {
+        await LoginAsAdmin();
+        var storage = GetService<StorageService>();
+        const string svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\"><rect width=\"24\" height=\"24\" fill=\"blue\"/></svg>";
+
+        foreach (var folder in new[] { "project-logo", "documents", "project-logo-other" })
+        {
+            using var content = new MultipartFormDataContent();
+            content.Add(new StringContent(svg), "file", "logo.svg");
+            var upload = await Http.PostAsync(storage.GetUploadUrl(folder, allowedExtensions: "svg"), content);
+            upload.EnsureSuccessStatusCode();
+            var uploaded = await upload.Content.ReadFromJsonAsync<UploadResult>();
+            Assert.IsNotNull(uploaded);
+
+            var response = await Http.GetAsync(uploaded.InternetPath);
+            response.EnsureSuccessStatusCode();
+            var isLogo = folder == "project-logo";
+            Assert.AreEqual(isLogo ? "image/svg+xml" : "application/octet-stream",
+                response.Content.Headers.ContentType?.MediaType);
+            Assert.AreEqual(isLogo ? "inline" : "attachment",
+                response.Content.Headers.ContentDisposition?.DispositionType);
+            Assert.AreEqual("nosniff", response.Headers.GetValues("X-Content-Type-Options").Single());
+            Assert.Contains("sandbox", response.Headers.GetValues("Content-Security-Policy").Single());
+        }
+    }
+
+    [TestMethod]
     public async Task TestUploadAndDownload()
     {
         await LoginAsAdmin();

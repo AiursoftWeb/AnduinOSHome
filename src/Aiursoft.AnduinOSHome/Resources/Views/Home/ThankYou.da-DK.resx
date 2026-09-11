@@ -63,6 +63,9 @@
   <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
     <value>BalenaEtcher er et tværplatforms grafisk værktøj, der gør det enkelt og sikkert at flashe ISO-billeder.</value>
   </data>
+  <data name="BitTorrent client recommendations" xml:space="preserve">
+    <value>Anbefalinger til BitTorrent-klienter</value>
+  </data>
   <data name="Boot from USB" xml:space="preserve">
     <value>Start fra USB</value>
   </data>
@@ -87,11 +90,17 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>Skift systemets sprog, regionale formater og tilføj indtastningsmetoder som kinesisk Pinyin eller japansk Anthy.</value>
   </data>
+  <data name="Choose your current operating system" xml:space="preserve">
+    <value>Vælg dit nuværende operativsystem</value>
+  </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>Klik på &quot;Flash fra fil&quot; og vælg AnduinOS ISO-filen.</value>
   </data>
   <data name="click here" xml:space="preserve">
     <value>klik her</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Luk</value>
   </data>
   <data name="Common boot menu keys:" xml:space="preserve">
     <value>Almindelige bootmenu-taster:</value>
@@ -126,8 +135,14 @@
   <data name="Download and install" xml:space="preserve">
     <value>Download og installer</value>
   </data>
+  <data name="Download AnduinOS in three steps" xml:space="preserve">
+    <value>Download AnduinOS på tre trin</value>
+  </data>
   <data name="Download Etcher" xml:space="preserve">
     <value>Download Etcher</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Download qBittorrent til Windows</value>
   </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Download Rufus</value>
@@ -135,8 +150,20 @@
   <data name="Download Started" xml:space="preserve">
     <value>Download started</value>
   </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>Download ISO-filen</value>
+  </data>
+  <data name="Download Transmission for macOS" xml:space="preserve">
+    <value>Download Transmission til macOS</value>
+  </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Download Ventoy</value>
+  </data>
+  <data name="Download with BitTorrent" xml:space="preserve">
+    <value>Download med BitTorrent</value>
+  </data>
+  <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
+    <value>Downloader AnduinOS ISO&apos;en med qBittorrent</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>Drivere</value>
@@ -180,6 +207,9 @@
   <data name="Get Impression on Flathub" xml:space="preserve">
     <value>Hent Impression på Flathub</value>
   </data>
+  <data name="Get qBittorrent for Linux" xml:space="preserve">
+    <value>Hent qBittorrent til Linux</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Hvis du er ny til AnduinOS, kan du også have lyst til at tjekke</value>
   </data>
@@ -210,6 +240,9 @@
   <data name="Install Drivers" xml:space="preserve">
     <value>Installer drivere</value>
   </data>
+  <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Installer qBittorrent fra din distributions softwarecenter eller download det fra den officielle hjemmeside, og åbn derefter den downloadede .torrent-fil.</value>
+  </data>
   <data name="instead of ISO mode." xml:space="preserve">
     <value>i stedet for ISO-tilstand.</value>
   </data>
@@ -219,11 +252,20 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>Deltag i diskussionen</value>
   </data>
+  <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
+    <value>Hold klienten åben, indtil AnduinOS-ISO&apos;en har nået 100 %.</value>
+  </data>
   <data name="Language Guide" xml:space="preserve">
     <value>Sprogguide</value>
   </data>
   <data name="Language Settings" xml:space="preserve">
     <value>Sprogindstillinger</value>
+  </data>
+  <data name="Linux" xml:space="preserve">
+    <value>Linux</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
   </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Multi-ISO, genanvendelig USB-løsning</value>
@@ -237,6 +279,15 @@
   <data name="official SHA256 checksum" xml:space="preserve">
     <value>officiel SHA256-checksum</value>
   </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Åbn den nydownloadede AnduinOS .torrent-fil med din BitTorrent-klient.</value>
+  </data>
+  <data name="Open the Torrent file" xml:space="preserve">
+    <value>Åbn Torrent-filen</value>
+  </data>
+  <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
+    <value>Åbner AnduinOS Torrent-filen i qBittorrent</value>
+  </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>Valgfrie trin før installation</value>
   </data>
@@ -245,6 +296,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Eller brug kommandolinjen:</value>
+  </data>
+  <data name="Phase 0" xml:space="preserve">
+    <value>Fase 0</value>
   </data>
   <data name="Phase 1" xml:space="preserve">
     <value>Fase 1</value>
@@ -258,11 +312,29 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Tryk med det samme på din producent&apos;s boot-menu-tast.</value>
   </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent er en gratis, open-source BitTorrent-klient uden reklamer. Installer det, og åbn derefter den downloadede .torrent-fil.</value>
+  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Læs vejledningen til dobbeltstart først</value>
   </data>
+  <data name="Recommended for Linux" xml:space="preserve">
+    <value>Anbefalet til Linux</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>Anbefalet til macOS</value>
+  </data>
+  <data name="Recommended for Windows" xml:space="preserve">
+    <value>Anbefalet til Windows</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Rapporter et problem</value>
+  </data>
+  <data name="Screenshot preview" xml:space="preserve">
+    <value>Skærmbillede forudvisning</value>
   </data>
   <data name="Secure Boot" xml:space="preserve">
     <value>Sikker opstart</value>
@@ -294,6 +366,15 @@
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Virker noget ikke? Har du en idé? Skriv om det i diskussionen.</value>
   </data>
+  <data name="Step 1" xml:space="preserve">
+    <value>Trin 1</value>
+  </data>
+  <data name="Step 2" xml:space="preserve">
+    <value>Trin 2</value>
+  </data>
+  <data name="Step 3" xml:space="preserve">
+    <value>Trin 3</value>
+  </data>
   <data name="Support AnduinOS" xml:space="preserve">
     <value>Støt AnduinOS</value>
   </data>
@@ -315,8 +396,23 @@
   <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
     <value>AnduinOS&apos; grafiske installer — enkel og vejledet.</value>
   </data>
+  <data name="The downloaded AnduinOS ISO and checksum files" xml:space="preserve">
+    <value>De downloadede AnduinOS ISO- og checksumfiler</value>
+  </data>
+  <data name="The example below uses qBittorrent on Linux. The same Torrent workflow applies on Windows and macOS." xml:space="preserve">
+    <value>Eksemplet nedenfor bruger qBittorrent på Linux. Den samme Torrent-arbejdsflow gælder også på Windows og macOS.</value>
+  </data>
+  <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
+    <value>Den lille .torrent-fil indeholder downloadinstruktioner, ikke AnduinOS ISO&apos;en selv. Installer en klient og åbn derefter filen for at downloade ISO&apos;en.</value>
+  </data>
   <data name="to your USB drive." xml:space="preserve">
     <value>til din USB-drev.</value>
+  </data>
+  <data name="Transmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="Transmission is a lightweight, open-source BitTorrent client with a native macOS interface. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Transmission er en letvægts, open source BitTorrent-klient med et nativt macOS-grænseflade. Installer den, og åbn derefter den downloadede .torrent-fil.</value>
   </data>
   <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
     <value>UFW er deaktiveret som standard (ingen åbne porte = ingen risiko). Aktiver det via Welcome Center eller den grafiske firewall-app, når det er nødvendigt.</value>
@@ -342,8 +438,20 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>bekræft checksummen</value>
   </data>
+  <data name="Verify the ISO" xml:space="preserve">
+    <value>Verificér ISO&apos;en</value>
+  </data>
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>Bekræft din download og opret en bootbar USB-disk.</value>
+  </data>
+  <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
+    <value>Vis fuld størrelse skærmbillede: Download ISO</value>
+  </data>
+  <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
+    <value>Se fuldskærms-skærmbillede: Åbn Torrent-filen</value>
+  </data>
+  <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
+    <value>Se fuldskærmsbillede: Verificér ISO&apos;en</value>
   </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>Lydstyrke ned + Tænd/sluk-knap</value>
@@ -353,6 +461,12 @@
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Hvad nu?</value>
+  </data>
+  <data name="When the download finishes, continue below to compare the ISO&apos;s SHA256 checksum." xml:space="preserve">
+    <value>Når downloaden er færdig, fortsætter du nedenfor for at sammenligne ISO-filens SHA256-tjeksum.</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>Din AnduinOS-rejse starter her. Følg trinene nedenfor for at komme i gang på under 30 minutter.</value>

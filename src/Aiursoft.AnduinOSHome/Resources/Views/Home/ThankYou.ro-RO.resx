@@ -63,6 +63,9 @@
   <data name="BalenaEtcher is a cross-platform graphical tool that makes flashing ISO images simple and safe." xml:space="preserve">
     <value>BalenaEtcher este un instrument grafic multiplăformă care face scrierea imaginilor ISO simplă și sigură.</value>
   </data>
+  <data name="BitTorrent client recommendations" xml:space="preserve">
+    <value>Recomandări pentru clienți BitTorrent</value>
+  </data>
   <data name="Boot from USB" xml:space="preserve">
     <value>Pornește de pe USB</value>
   </data>
@@ -87,11 +90,17 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>Modificați limba sistemului, formatele regionale și adăugați metode de introducere a textului, cum ar fi Pinyin chinez sau Anthy japonez.</value>
   </data>
+  <data name="Choose your current operating system" xml:space="preserve">
+    <value>Alegeți sistemul de operare actual</value>
+  </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>Faceți clic pe „Flash from file” și selectați ISO-ul AnduinOS.</value>
   </data>
   <data name="click here" xml:space="preserve">
     <value>faceți clic aici</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Închide</value>
   </data>
   <data name="Common boot menu keys:" xml:space="preserve">
     <value>Taste comune pentru meniul de boot:</value>
@@ -126,8 +135,14 @@
   <data name="Download and install" xml:space="preserve">
     <value>Descărcați și instalați</value>
   </data>
+  <data name="Download AnduinOS in three steps" xml:space="preserve">
+    <value>Descarcă AnduinOS în trei pași</value>
+  </data>
   <data name="Download Etcher" xml:space="preserve">
     <value>Descarcă Etcher</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Descarcă qBittorrent pentru Windows</value>
   </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Descarcă Rufus</value>
@@ -135,8 +150,20 @@
   <data name="Download Started" xml:space="preserve">
     <value>Descărcarea a început</value>
   </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>Descărcați ISO</value>
+  </data>
+  <data name="Download Transmission for macOS" xml:space="preserve">
+    <value>Descarcă Transmission pentru macOS</value>
+  </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Descarcă Ventoy</value>
+  </data>
+  <data name="Download with BitTorrent" xml:space="preserve">
+    <value>Descărcare cu BitTorrent</value>
+  </data>
+  <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
+    <value>Descărcarea imaginii ISO AnduinOS cu qBittorrent</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>Drivere</value>
@@ -180,6 +207,9 @@
   <data name="Get Impression on Flathub" xml:space="preserve">
     <value>Obțineți Impression de pe Flathub</value>
   </data>
+  <data name="Get qBittorrent for Linux" xml:space="preserve">
+    <value>Obțineți qBittorrent pentru Linux</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Dacă ești nou în AnduinOS, poți să consulți și</value>
   </data>
@@ -210,6 +240,9 @@
   <data name="Install Drivers" xml:space="preserve">
     <value>Instalează driverele</value>
   </data>
+  <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Instalați qBittorrent din centrul de software al distribuției dvs. sau descărcați-l de pe site-ul oficial, apoi deschideți fișierul .torrent descărcat.</value>
+  </data>
   <data name="instead of ISO mode." xml:space="preserve">
     <value>în loc de modul ISO.</value>
   </data>
@@ -219,11 +252,20 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>Alătură-te discuției</value>
   </data>
+  <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
+    <value>Păstrați clientul deschis până când ISO-ul AnduinOS atinge 100%.</value>
+  </data>
   <data name="Language Guide" xml:space="preserve">
     <value>Ghid de limbă</value>
   </data>
   <data name="Language Settings" xml:space="preserve">
     <value>Setări de limbă</value>
+  </data>
+  <data name="Linux" xml:space="preserve">
+    <value>Linux</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
   </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Soluție USB multi-ISO, reutilizabilă</value>
@@ -237,6 +279,15 @@
   <data name="official SHA256 checksum" xml:space="preserve">
     <value>suma de control SHA256 oficială</value>
   </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Deschideți fișierul .torrent AnduinOS descărcat recent cu clientul BitTorrent.</value>
+  </data>
+  <data name="Open the Torrent file" xml:space="preserve">
+    <value>Deschideți fișierul Torrent</value>
+  </data>
+  <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
+    <value>Deschiderea fișierului Torrent AnduinOS în qBittorrent</value>
+  </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>Pași opționali de preinstalare</value>
   </data>
@@ -245,6 +296,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Sau utilizați linia de comandă:</value>
+  </data>
+  <data name="Phase 0" xml:space="preserve">
+    <value>Faza 0</value>
   </data>
   <data name="Phase 1" xml:space="preserve">
     <value>Faza 1</value>
@@ -258,11 +312,29 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Apăsați imediat tasta meniului de boot al producătorului dvs.</value>
   </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent este un client BitTorrent gratuit, cu sursă deschisă, fără reclame. Instalați-l, apoi deschideți fișierul .torrent descărcat.</value>
+  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Citiți mai întâi ghidul de pornire duală</value>
   </data>
+  <data name="Recommended for Linux" xml:space="preserve">
+    <value>Recomandat pentru Linux</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>Recomandat pentru macOS</value>
+  </data>
+  <data name="Recommended for Windows" xml:space="preserve">
+    <value>Recomandat pentru Windows</value>
+  </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Raportează o problemă</value>
+  </data>
+  <data name="Screenshot preview" xml:space="preserve">
+    <value>Previzualizare captură de ecran</value>
   </data>
   <data name="Secure Boot" xml:space="preserve">
     <value>Securitatea de pornire</value>
@@ -294,6 +366,15 @@
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Ceva nu funcționează? Ai o sugestie? Postează despre asta în discuții.</value>
   </data>
+  <data name="Step 1" xml:space="preserve">
+    <value>Pasul 1</value>
+  </data>
+  <data name="Step 2" xml:space="preserve">
+    <value>Pasul 2</value>
+  </data>
+  <data name="Step 3" xml:space="preserve">
+    <value>Pasul 3</value>
+  </data>
   <data name="Support AnduinOS" xml:space="preserve">
     <value>Susțineți AnduinOS</value>
   </data>
@@ -315,8 +396,23 @@
   <data name="The AnduinOS graphical installer — straightforward and guided." xml:space="preserve">
     <value>Instalatorul grafic AnduinOS — simplu și ghidat.</value>
   </data>
+  <data name="The downloaded AnduinOS ISO and checksum files" xml:space="preserve">
+    <value>Fișierele ISO AnduinOS și de sume de control descărcate</value>
+  </data>
+  <data name="The example below uses qBittorrent on Linux. The same Torrent workflow applies on Windows and macOS." xml:space="preserve">
+    <value>Exemplul de mai jos utilizează qBittorrent pe Linux. Același flux de lucru pentru Torrent se aplică și pe Windows și macOS.</value>
+  </data>
+  <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
+    <value>Fișierul .torrent mic conține instrucțiuni de descărcare, nu ISO-ul propriu-zis al AnduinOS. Instalați un client, apoi deschideți fișierul pentru a descărca ISO-ul.</value>
+  </data>
   <data name="to your USB drive." xml:space="preserve">
     <value>pe unitatea USB.</value>
+  </data>
+  <data name="Transmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="Transmission is a lightweight, open-source BitTorrent client with a native macOS interface. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>Transmission este un client BitTorrent ușor, cu sursă deschisă, cu o interfață nativă pentru macOS. Instalați-l, apoi deschideți fișierul .torrent descărcat.</value>
   </data>
   <data name="UFW is disabled by default (no open ports = no risk). Enable it via the Welcome Center or graphical Firewall app when needed." xml:space="preserve">
     <value>UFW este dezactivat în mod implicit (niciun port deschis = niciun risc). Activați-l prin Centrul de binevenire sau aplicația grafică Firewall când este necesar.</value>
@@ -342,8 +438,20 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>verifică suma de control</value>
   </data>
+  <data name="Verify the ISO" xml:space="preserve">
+    <value>Verifica ISO</value>
+  </data>
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>Verificați descărcarea și creați o unitate USB bootabilă.</value>
+  </data>
+  <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
+    <value>Vizualizați captura de ecran în dimensiune completă: Descărcați ISO</value>
+  </data>
+  <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
+    <value>Vizualizează captura de ecran în mărime completă: Deschideți fișierul Torrent</value>
+  </data>
+  <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
+    <value>Vezi captura de ecran în mărime completă: Verifică ISO</value>
   </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>Vol Down + Power</value>
@@ -353,6 +461,12 @@
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Ce urmează?</value>
+  </data>
+  <data name="When the download finishes, continue below to compare the ISO&apos;s SHA256 checksum." xml:space="preserve">
+    <value>Când descărcarea se termină, continuați mai jos pentru a compara suma de control SHA256 a ISO.</value>
+  </data>
+  <data name="Windows" xml:space="preserve">
+    <value>Windows</value>
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>Călătoria ta cu AnduinOS începe aici. Urmărește pașii de mai jos pentru a fi operational în mai puțin de 30 de minute.</value>
