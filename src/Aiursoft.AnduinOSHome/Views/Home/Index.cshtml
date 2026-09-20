@@ -2,13 +2,12 @@
 @{
     var slogans = new[]
     {
-        "No telemetry integrated! Choose <span class='text-primary'>AnduinOS</span> to regain your privacy",
-        "Today is the best day for you to switch to <span class='text-primary'>AnduinOS</span>",
-        "<span class='text-primary'>AnduinOS</span> is Ubuntu's package base + <span class='text-primary'>Flatpak</span> app experience",
-        "Everything you do on Ubuntu, you can do it on <span class='text-primary'>AnduinOS</span>",
-        "Reveal the power of your computer, choose <span class='text-primary'>AnduinOS</span>",
-        "Transitioning to <span class='text-primary'>AnduinOS</span> will be the best decision you've ever made",
-        "<span class='text-primary'>AnduinOS</span> 2.0 is released on 2026.06.30",
+        Localizer["No telemetry integrated! Choose <span class='text-primary'>AnduinOS</span> to regain your privacy"].Value,
+        Localizer["Today is the best day for you to switch to <span class='text-primary'>AnduinOS</span>"].Value,
+        Localizer["<span class='text-primary'>AnduinOS</span> is Ubuntu's package base + <span class='text-primary'>Flatpak</span> app experience"].Value,
+        Localizer["Everything you do on Ubuntu, you can do it on <span class='text-primary'>AnduinOS</span>"].Value,
+        Localizer["Reveal the power of your computer, choose <span class='text-primary'>AnduinOS</span>"].Value,
+        Localizer["Transitioning to <span class='text-primary'>AnduinOS</span> will be the best decision you've ever made"].Value,
     };
     var appWallIcons = new Dictionary<string, string>
     {
@@ -230,7 +229,7 @@
             @Localizer["Get $300 in Vultr credits"]
         </button>
     </div>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="padding: .8rem"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@Localizer["Close"]" style="padding: .8rem"></button>
 </div>
 
 <div class="modal fade" id="vultr-referral-modal" tabindex="-1" aria-labelledby="vultr-referral-modal-title" aria-hidden="true">
@@ -238,7 +237,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="vultr-referral-modal-title">@Localizer["Continue to Vultr"]</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
             </div>
             <div class="modal-body">
                 @Localizer["This is a referral link. If you become a paying Vultr customer, we may receive a referral reward at no additional cost to you."]
@@ -269,7 +268,7 @@
                 <p class="text-lg text-white-50">@Localizer["AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux."]</p>
 
                 <div class="my-4">
-                    <span class="badge badge-subtle-primary p-1">v2.0.2</span>
+                    <span class="badge badge-subtle-primary p-1">v2.0.3</span>
                 </div>
                 <div class="my-4 d-flex gap-2 flex-wrap">
                     <a class="btn btn-primary btn-lg btn-pill" href="#download-links">@Localizer["Download"]</a>
@@ -288,7 +287,7 @@
             </div>
             <div class="col-lg-7 d-none d-lg-flex mx-auto text-center">
                 <div class="landing-intro-screenshot">
-                    <img src="sc.webp" alt="AnduinOS Main screenshot" class="img-fluid"/>
+                    <img src="sc.webp" alt="@Localizer["AnduinOS Main screenshot"]" class="img-fluid"/>
                 </div>
             </div>
         </div>
@@ -312,7 +311,7 @@
                     </div>
                     <div class="flex-grow-1">
                         <h4 class="mt-0">@Localizer["Ready to use"]</h4>
-                        <p class="fs-lg">@Localizer["The ISO is just 2.54 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations."]</p>
+                        <p class="fs-lg">@Localizer["The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations."]</p>
                     </div>
                 </div>
             </div>
@@ -415,7 +414,7 @@
                             </div>
                         </div>
 
-                        @* ── Center: 2.0.2 flagship ── *@
+                        @* ── Center: latest 2.0 release ── *@
                         <div class="col-sm-6 mb-5 mb-md-0">
                             <div class="card text-center h-100 middle-card">
                                 <div class="card-body d-flex flex-column">
@@ -433,12 +432,12 @@
                                     <h6 class="mt-3">@Localizer["Includes:"]</h6>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">@Localizer["Support till"] Apr 2031</li>
-                                        <li class="mb-2">Gnome 50</li>
+									<li class="mb-2">GNOME 50</li>
                                         <li class="mb-2">Ubuntu 26.04 @Localizer["packages"]</li>
                                         <li class="mb-2">Linux kernel 7.0</li>
                                         <li class="mb-2">@Localizer["Released on"] 2026.06.30</li>
                                         <li class="mb-2">
-                                            @Localizer["Latest version"] 2.0.2
+                                            @Localizer["Latest version"] 2.0.3
                                         </li>
                                     </ul>
 
@@ -448,8 +447,8 @@
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#download-modal"
                                                 data-version="2.0"
-                                                data-latest="2.0.2"
-                                                data-size="2.54 GB">
+                                                data-latest="2.0.3"
+                                                data-size="2.35 GB">
                                             @Localizer["Download"]
                                         </button>
                                     </div>
@@ -510,33 +509,33 @@
                 <div class="row">
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/watch_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Watching Youtube Videos on AnduinOS"/>
+                             alt="@Localizer["Watching Youtube Videos on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Browsing"]</h4>
                     </div>
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/steam_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Steam Playing Games on AnduinOS"/>
+                             alt="@Localizer["Steam Playing Games on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Gaming"] <sup><small
                                     class="badge badge-subtle-primary">@Localizer["With Steam"]</small></sup></h4>
                     </div>
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/build_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Writing Code on AnduinOS"/>
+                             alt="@Localizer["Writing Code on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Build"]</h4>
                     </div>
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/office_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Working on mail and chat on AnduinOS"/>
+                             alt="@Localizer["Working on mail and chat on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Work"]</h4>
                     </div>
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/serve_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Hosting a server on AnduinOS"/>
+                             alt="@Localizer["Hosting a server on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Serve"]</h4>
                     </div>
                     <div class="col-md-4 py-3">
                         <img gallery src="scs/blender_comp.webp" class="img-fluid rounded-3 landing-img" loading="lazy"
-                             alt="Editing blender 3D model on AnduinOS"/>
+                             alt="@Localizer["Editing blender 3D model on AnduinOS"]"/>
                         <h4 class="mt-3">@Localizer["Editing"]</h4>
                     </div>
                 </div>
@@ -546,9 +545,9 @@
 </section>
 
 @* Image modal for gallery *@
-<div id="iglmodal" class="iglmodal" onclick="igl_hide()">
-    <span class="close" onclick="igl_hide()">&times;</span>
-    <img class="iglmodal-content" id="iglmodal-img" alt="Image preview" src="#"/>
+<div id="iglmodal" class="iglmodal">
+    <span class="close">&times;</span>
+    <img class="iglmodal-content" id="iglmodal-img" alt="@Localizer["Image preview"]" src="#"/>
 </div>
 
 @* ═══════════════════════════════════════════════════════════════════════════════
@@ -572,7 +571,7 @@
         @* Feature Badges *@
         <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Familiar UX"]</span>
-            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">2.54 GB</span>
+            <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">2.35 GB</span>
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Live Boot"]</span>
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["LTS Support"]</span>
             <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2 rounded-pill">@Localizer["Without Snap"]</span>
@@ -597,9 +596,9 @@
                     <div class="card-body pt-0">
                         <table class="table table-borderless mb-0">
                             <tbody>
-                                <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["Release Date"]</td><td class="text-white fw-semibold pe-0">2026-06-30</td></tr>
+                                <tr><td class="text-gray-500 ps-0" style="width: 40%;">@Localizer["Release Date"]</td><td class="text-white fw-semibold pe-0">2026-09-20</td></tr>
                                 <tr><td class="text-gray-500 ps-0">@Localizer["End of Support"]</td><td class="text-white fw-semibold pe-0">@Localizer["April"] 2031</td></tr>
-                                <tr><td class="text-gray-500 ps-0">@Localizer["Image Size"]</td><td class="text-white fw-semibold pe-0">2.54 GB</td></tr>
+                                <tr><td class="text-gray-500 ps-0">@Localizer["Image Size"]</td><td class="text-white fw-semibold pe-0">2.35 GB</td></tr>
                                 <tr><td class="text-gray-500 ps-0">@Localizer["Linux Kernel"]</td><td class="text-white fw-semibold pe-0">7.0.0</td></tr>
                                 <tr><td class="text-gray-500 ps-0">@Localizer["Desktop Environment"]</td><td class="text-white fw-semibold pe-0">GNOME 50</td></tr>
                                 <tr><td class="text-gray-500 ps-0">@Localizer["Display Server"]</td><td class="text-white fw-semibold pe-0">Wayland</td></tr>
@@ -634,13 +633,11 @@
                             <h4 class="mb-0 text-white">@Localizer["System Requirements"]</h4>
                             <div class="btn-group btn-group-sm" role="group">
                                 <button class="btn btn-outline-light rounded-pill active" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#minReqs, #recReqs"
-                                        onclick="document.getElementById('recReqs').classList.remove('show'); document.getElementById('minReqs').classList.add('show'); this.classList.add('active'); this.nextElementSibling.classList.remove('active');">
+                                        data-requirement-panel="minReqs">
                                     @Localizer["Minimum"]
                                 </button>
                                 <button class="btn btn-outline-light rounded-pill" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#minReqs, #recReqs"
-                                        onclick="document.getElementById('minReqs').classList.remove('show'); document.getElementById('recReqs').classList.add('show'); this.classList.add('active'); this.previousElementSibling.classList.remove('active');">
+                                        data-requirement-panel="recReqs">
                                     @Localizer["Recommended"]
                                 </button>
                             </div>
@@ -682,7 +679,7 @@
                     </div>
                 </div>
             </div>
-        <div class="text-center mt-5" style="display: none;">
+        <div class="text-center mt-5">
             <a id="compare-distributions-link" asp-controller="Home" asp-action="Compare" class="btn btn-lg btn-outline-info rounded-pill px-4">
                 <i data-lucide="scale" class="me-2" style="width: 18px; height: 18px;"></i>
                 @Localizer["Compare with Zorin OS, Linux Mint or Ubuntu"]
@@ -894,7 +891,7 @@
                         @Localizer["Your Entire PC."]<br><span class="text-primary">@Localizer["In Your Pocket."]</span>
                     </h2>
                     <p class="lead text-gray-400 fs-5">
-                        @Localizer["Burn our ultra-compact 2.54 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds."]
+                        @Localizer["Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds."]
                     </p>
                     <div class="d-flex flex-wrap gap-2 mt-4">
                         <span class="badge bg-dark-glass border-white-10 text-gray-300 px-3 py-2"><i class="fas fa-floppy-disk me-1"></i> @Localizer["Persistent on USB"]</span>
@@ -983,7 +980,7 @@
     
     <div class="ai-immersive-bg">
         <div class="bg-image-wrapper">
-             <img src="~/images/ainative.webp" alt="AI Native Environment" class="img-fluid object-fit-cover w-100 h-100">
+             <img src="~/images/ainative.webp" alt="@Localizer["AI Native Environment"]" class="img-fluid object-fit-cover w-100 h-100">
         </div>
         <div class="bg-overlay"></div>
     </div>
@@ -1070,7 +1067,7 @@
                         <div class="card bg-dark-glass border-white-10 h-100 hover-lift text-center py-2">
                             <div class="card-body p-2">
                                 <i class="fas fa-unlock text-success mb-2 fs-5"></i>
-                                <div class="text-gray-300 fw-bold" style="font-size: 0.75rem">Unsigned</div>
+                                <div class="text-gray-300 fw-bold" style="font-size: 0.75rem">@Localizer["Unsigned"]</div>
                                 <div class="text-gray-500">@Localizer["No execution signing or modification restrictions"]</div>
                             </div>
                         </div>
@@ -1079,7 +1076,7 @@
                         <div class="card bg-dark-glass border-white-10 h-100 hover-lift text-center py-2">
                             <div class="card-body p-2">
                                 <i class="fas fa-robot text-info mb-2 fs-5"></i>
-                                <div class="text-gray-300 fw-bold" style="font-size: 0.75rem">AI Fix</div>
+                                <div class="text-gray-300 fw-bold" style="font-size: 0.75rem">@Localizer["AI Fix"]</div>
                                 <div class="text-gray-500">@Localizer["Use natural language AI to automatically fix system and environment issues"]</div>
                             </div>
                         </div>
@@ -1108,7 +1105,7 @@
                             <div>
                                 <a href="https://www.linkedin.com/in/johnathon-horner-0513bb193/" target="_blank">
                                     <img src="ava/johnathon.webp" width="48" height="48"
-                                         alt="User Johnathon's avatar" loading="lazy"/>
+                                         alt="@Localizer["User {0}'s avatar", "Johnathon"]" loading="lazy"/>
                                 </a>
                             </div>
                             <div class="ps-3">
@@ -1136,7 +1133,7 @@
                             <div>
                                 <a href="https://www.linkedin.com/in/marco-neumann-fisi/" target="_blank">
                                     <img src="ava/marco-neumann.webp" width="48" height="48"
-                                         alt="User Marco Neumann's avatar" loading="lazy"/>
+                                         alt="@Localizer["User {0}'s avatar", "Marco Neumann"]" loading="lazy"/>
                                 </a>
                             </div>
                             <div class="ps-3">
@@ -1165,7 +1162,7 @@
                             <div>
                                 <a href="https://github.com/vinceliuice" target="_blank">
                                     <img src="ava/vinceliuice.webp" width="48" height="48"
-                                         alt="User vinceliuice's avatar" loading="lazy"/>
+                                         alt="@Localizer["User {0}'s avatar", "vinceliuice"]" loading="lazy"/>
                                 </a>
                             </div>
                             <div class="ps-3">
@@ -1193,7 +1190,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <div>
                                 <a href="https://yuyuyuyublog.aiursoft.com/" target="_blank">
-                                    <img src="ava/yuyuyuyu.webp" width="48" height="48" alt="User yuyuyuyu's avatar"
+                                    <img src="ava/yuyuyuyu.webp" width="48" height="48" alt="@Localizer["User {0}'s avatar", "yuyuyuyu"]"
                                          loading="lazy"/>
                                 </a>
                             </div>
@@ -1221,7 +1218,7 @@
                         <div class="d-flex align-items-center mb-3">
                             <div>
                                 <a href="https://aimer.aiursoft.com/en/" target="_blank">
-                                    <img src="ava/aimer.webp" width="48" height="48" alt="User Aimer's avatar"
+                                    <img src="ava/aimer.webp" width="48" height="48" alt="@Localizer["User {0}'s avatar", "Aimer"]"
                                          loading="lazy"/>
                                 </a>
                             </div>
@@ -1251,7 +1248,7 @@
                             <div>
                                 <a href="https://cody.aiursoft.com/" target="_blank">
                                     <img src="ava/coderay.webp" width="48" height="48" loading="lazy"
-                                         alt="User Cody Ray's avatar"/>
+                                         alt="@Localizer["User {0}'s avatar", "Cody Ray"]"/>
                                 </a>
                             </div>
                             <div class="ps-3">
@@ -1280,7 +1277,7 @@
                             <div>
                                 <a href="https://www.linkedin.com/in/arne-rohloff-a14747350/" target="_blank">
                                     <img src="ava/arne.webp" width="48" height="48"
-                                         alt="User Arne's avatar" loading="lazy"/>
+                                         alt="@Localizer["User {0}'s avatar", "Arne"]" loading="lazy"/>
                                 </a>
                             </div>
                             <div class="ps-3">
@@ -1347,14 +1344,14 @@
 								<small class="text-gray-500 ms-2">developer@@anduinos ~</small>
 							</div>
 							<div class="mb-1"><span class="text-success">$</span> <span class="text-white">sudo apt install build-essential cargo python3-pip</span></div>
-							<div class="text-gray-500 small mb-2">Reading package lists... Done. 0 upgraded, 142 newly installed.</div>
+							<div class="text-gray-500 small mb-2">@Localizer["Reading package lists... Done. 0 upgraded, 142 newly installed."]</div>
 							<div class="mb-1"><span class="text-success">$</span> <span class="text-white">cat data.csv | python3 analyze.py | cargo run -- plot</span></div>
-							<div class="text-info small mb-1">  ⚡ Python → Rust → PNG. One pipe. Zero RPC.</div>
+							<div class="text-info small mb-1">⚡ @Localizer["Python → Rust → PNG. One pipe. Zero RPC."]</div>
 							<div class="mb-1"><span class="text-success">$</span> <span class="text-white">g++ -std=c++20 -O3 daemon.cpp -o daemon</span></div>
 							<div class="mb-1"><span class="text-success">$</span> <span class="text-white">bash deploy.sh && ./daemon &</span></div>
-							<div class="text-gray-500 small mb-2">  C++ daemon + Bash orchestration. 3 seconds flat.</div>
+							<div class="text-gray-500 small mb-2">@Localizer["C++ daemon + Bash orchestration. 3 seconds flat."]</div>
 							<div class="mb-1"><span class="text-success">$</span> <span class="text-white">docker compose up -d</span></div>
-							<div class="text-gray-500 small">  ✓ Containerized. Portable. Done.</div>
+							<div class="text-gray-500 small">✓ @Localizer["Containerized. Portable. Done."]</div>
 						</div>
 
 						@* Language & tool badges *@
@@ -1453,42 +1450,42 @@
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="text-primary mb-1"><i data-lucide="cpu" style="width: 16px; height: 16px;"></i></div>
 									<h6 class="text-white mb-1 small fw-semibold">ARM64 + AMD64</h6>
-									<small class="text-gray-500">x86_64 + ARM64. Two ISOs. One experience.</small>
+									<small class="text-gray-500">@Localizer["x86_64 + ARM64. Two ISOs. One experience."]</small>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="text-success mb-1"><i data-lucide="shield-check" style="width: 16px; height: 16px;"></i></div>
-									<h6 class="text-white mb-1 small fw-semibold">Secure Boot</h6>
-									<small class="text-gray-500">Signed kernel &amp; drivers. No MOK enrollment nightmares.</small>
+									<h6 class="text-white mb-1 small fw-semibold">@Localizer["Secure Boot"]</h6>
+									<small class="text-gray-500">@Localizer["Signed kernel & drivers. No MOK enrollment nightmares."]</small>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="text-info mb-1"><i data-lucide="monitor" style="width: 16px; height: 16px;"></i></div>
 									<h6 class="text-white mb-1 small fw-semibold">GTK4 + libadwaita</h6>
-									<small class="text-gray-500">Modern, responsive, GPU-accelerated. No legacy GTK3 cruft.</small>
+									<small class="text-gray-500">@Localizer["Modern, responsive, GPU-accelerated. No legacy GTK3 cruft."]</small>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="text-warning mb-1"><i data-lucide="container" style="width: 16px; height: 16px;"></i></div>
 									<h6 class="text-white mb-1 small fw-semibold">KVM + Docker</h6>
-									<small class="text-gray-500">Native virtualization. Containers without a VM inside a VM.</small>
+									<small class="text-gray-500">@Localizer["Native virtualization. Containers without a VM inside a VM."]</small>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="mb-1" style="color: #f59e0b;"><i data-lucide="sun" style="width: 16px; height: 16px;"></i></div>
 									<h6 class="text-white mb-1 small fw-semibold">Wayland + HDR</h6>
-									<small class="text-gray-500">Pure Wayland. No X11 fallback. HDR out of the box.</small>
+									<small class="text-gray-500">@Localizer["Pure Wayland. No X11 fallback. HDR out of the box."]</small>
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="bg-dark rounded-3 p-3 h-100" style="border: 1px solid rgba(255,255,255,0.06);">
 									<div class="mb-1" style="color: #a855f7;"><i data-lucide="sparkles" style="width: 16px; height: 16px;"></i></div>
-									<h6 class="text-white mb-1 small fw-semibold">Edge AI</h6>
-									<small class="text-gray-500"><code class="text-gray-300">sudo apt install anduinos-why-ai</code> — local LLM, one command away.</small>
+									<h6 class="text-white mb-1 small fw-semibold">@Localizer["Edge AI"]</h6>
+									<small class="text-gray-500"><code class="text-gray-300">sudo apt install anduinos-why-ai</code> — @Localizer["local LLM, one command away."]</small>
 								</div>
 							</div>
 						</div>
@@ -1708,13 +1705,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 id="download-modal-title" class="modal-title">@Localizer["Download AnduinOS"]</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
             </div>
             <div class="modal-body">
                 @* ── amd64 ── *@
                 <div class="card border mb-3 shadow-none">
                     <div class="card-body">
-                        <h6 class="card-title mb-1">x86-64 ISO <small class="text-muted fw-normal">(Intel / AMD)</small></h6>
+                        <h6 class="card-title mb-1">x86-64 ISO <small class="text-muted fw-normal">@Localizer["(Intel / AMD)"]</small></h6>
                         <p class="card-text text-muted small mb-2">@Localizer["For most Intel and AMD computers."]</p>
                         <div class="d-flex flex-wrap align-items-center gap-2">
                             <a href="/thankyou.html?download=amd64"
@@ -1737,7 +1734,7 @@
                 @* ── arm64 ── *@
                 <div class="card border mb-3 shadow-none">
                     <div class="card-body">
-                        <h6 class="card-title mb-1">ARM64 ISO <small class="text-muted fw-normal">(Snapdragon / ARM SBCs)</small></h6>
+                        <h6 class="card-title mb-1">ARM64 ISO <small class="text-muted fw-normal">@Localizer["(Snapdragon / ARM SBCs)"]</small></h6>
                         <p class="card-text text-muted small mb-2">@Localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]</p>
                         <div class="d-flex flex-wrap align-items-center gap-2">
                             <a href="/thankyou.html?download=arm64"

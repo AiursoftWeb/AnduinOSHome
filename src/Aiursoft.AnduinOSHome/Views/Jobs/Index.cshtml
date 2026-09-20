@@ -62,7 +62,7 @@
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex align-items-start mb-2">
-                            <span class="badge bg-primary-subtle text-primary me-2 mt-1" style="font-size: 0.7rem;">JOB</span>
+                            <span class="badge bg-primary-subtle text-primary me-2 mt-1" style="font-size: 0.7rem;">@Localizer["JOB"]</span>
                             <h6 class="card-title mb-0 fw-semibold">@job.Name</h6>
                         </div>
                         <p class="card-text text-muted small mb-3 flex-grow-1">@job.Description</p>
@@ -224,37 +224,5 @@ else
 @* ReSharper disable once Razor.SectionNotResolved *@
 
 @section scripts {
-    <script>
-        // Progress bar calculation function
-        function calculateProgress(elapsedSeconds) {
-            var x = elapsedSeconds;
-            var k = 5; // Speed parameter (1-100, higher = slower growth)
-
-            // y = 100 * (x - k * sqrt(x)) / (x - k^2)
-            var y = 100 * (x - k * Math.sqrt(x)) / (x - k * k);
-
-            // Ensure progress is between 0 and 99.9
-            return Math.max(0, Math.min(99.9, y));
-        }
-
-        // Update progress bars
-        function updateProgressBars() {
-            var now = new Date();
-            document.querySelectorAll('.progress-bar[data-started-at]').forEach(function (progressBar) {
-                var startedAt = new Date(progressBar.getAttribute('data-started-at'));
-                var elapsedSeconds = (now - startedAt) / 1000;
-                var progress = calculateProgress(elapsedSeconds);
-                progressBar.style.width = progress + '%';
-            });
-        }
-
-        // Update progress bars immediately and every 500ms
-        updateProgressBars();
-        setInterval(updateProgressBars, 500);
-
-        // Auto-refresh page every 5 seconds
-        setTimeout(function () {
-            window.location.reload();
-        }, 5000);
-    </script>
+    <script src="~/js/jobs.js" asp-append-version="true" defer></script>
 }

@@ -6,9 +6,9 @@
         <div class="row align-items-center h-100">
             <div class="col-lg-7">
                 <div class="mb-3">
-                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">87+ extra packages</span>
-                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">100% Ubuntu compatible</span>
-                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">Ready out of the box</span>
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">@Localizer["87+ extra packages"]</span>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">@Localizer["100% Ubuntu compatible"]</span>
+                    <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">@Localizer["Ready out of the box"]</span>
                 </div>
                 <h1 class="my-4 text-white" style="font-size: 3.5rem; font-weight: 800; line-height: 1.15;">
                     @Localizer["Slightly bigger."]<br />
@@ -29,12 +29,12 @@
             <div class="col-lg-5 d-none d-lg-block text-center">
                 <div class="position-relative" style="perspective: 800px;">
                     <img src="~/img/container-fastfetch.webp"
-                         alt="AnduinOS Container running fastfetch inside Docker"
+                         alt="@Localizer["AnduinOS Container running fastfetch inside Docker"]"
                          class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25"
                          style="transform: rotateY(-8deg) rotateX(2deg);"
                          loading="eager" />
                     <div class="position-absolute top-0 start-100 translate-middle-x mt-4 ms-3">
-                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">✨ Just works</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">✨ @Localizer["Just works"]</span>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <div class="card-header bg-danger bg-opacity-10 border-secondary border-opacity-25 d-flex align-items-center gap-2">
                         <i class="fab fa-ubuntu fa-lg text-danger"></i>
                         <span class="text-white fw-semibold">@Localizer["Ubuntu Container"]</span>
-                        <span class="badge bg-danger bg-opacity-25 text-danger ms-auto">87 packages</span>
+                        <span class="badge bg-danger bg-opacity-25 text-danger ms-auto">@Localizer["87 packages"]</span>
                     </div>
                     <div class="card-body p-4">
                         <p class="text-white-50 mb-3">@Localizer["Start from zero. Install everything yourself:"]</p>
@@ -171,7 +171,7 @@
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y gnupg openssl</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y sudo</div>
                             <div class="mb-1"><span class="text-danger">$</span> apt install -y iproute2 iputils-ping</div>
-                            <div class="text-white-50"><span class="text-danger">$</span> <span class="text-white"># ... and 79 more packages</span></div>
+                            <div class="text-white-50"><span class="text-danger">$</span> <span class="text-white"># @Localizer["... and 79 more packages"]</span></div>
                         </div>
                     </div>
                 </div>
@@ -181,8 +181,8 @@
                     <div class="card-header bg-primary bg-opacity-10 border-primary border-opacity-25 d-flex align-items-center gap-2">
                         <i class="fas fa-cube fa-lg text-primary"></i>
                         <span class="text-white fw-semibold">@Localizer["AnduinOS Container"]</span>
-                        <span class="badge bg-primary text-white ms-auto">174 packages</span>
-                        <span class="badge bg-success ms-1">✨ Ready</span>
+                        <span class="badge bg-primary text-white ms-auto">@Localizer["174 packages"]</span>
+                        <span class="badge bg-success ms-1">✨ @Localizer["Ready"]</span>
                     </div>
                     <div class="card-body p-4">
                         <p class="text-white-50 mb-3">@Localizer["Everything is already installed. Just start building:"]</p>
@@ -238,9 +238,8 @@
 
                 <div class="bg-black rounded-4 p-4 mb-4 text-start border border-secondary border-opacity-25">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                        <span class="badge bg-secondary text-white">terminal</span>
+                        <span class="badge bg-secondary text-white">@Localizer["Terminal"]</span>
                         <button class="btn btn-sm btn-outline-light border-0 container-copy-btn"
-                                onclick="navigator.clipboard.writeText('sudo docker run -it aiursoft/anduinos bash')"
                                 title="@Localizer["Copy to clipboard"]">
                             <i class="far fa-copy me-1"></i>@Localizer["Copy"]
                         </button>
@@ -281,7 +280,7 @@ RUN apt update && apt install -y \
     iputils-ping lsof unzip zip \
     && rm -rf /var/lib/apt/lists/*
 
-<span class="text-white-50"># ... and you probably forgot something</span>
+<span class="text-white-50"># @Localizer["... and you probably forgot something"]</span>
 
 COPY . /app
 CMD ["python3", "/app/main.py"]</pre>
@@ -293,7 +292,7 @@ CMD ["python3", "/app/main.py"]</pre>
                     <div class="card-header bg-primary bg-opacity-10 border-primary border-opacity-25 d-flex align-items-center gap-2">
                         <span class="badge bg-primary">Dockerfile</span>
                         <span class="text-muted small">@Localizer["After — with AnduinOS"]</span>
-                        <span class="badge bg-success ms-auto">✨ 10 lines saved</span>
+                        <span class="badge bg-success ms-auto">✨ @Localizer["10 lines saved"]</span>
                     </div>
                     <div class="card-body p-0">
                         <pre class="bg-dark rounded-bottom p-3 mb-0 small font-monospace" style="white-space: pre-wrap;"><span class="text-success">FROM aiursoft/anduinos:resolute</span>
@@ -347,7 +346,7 @@ CMD ["python3", "/app/main.py"]</pre>
                         <div class="bg-light rounded-4 p-4 mb-2 shadow-sm" style="width: 100px; height: 100px;">
                             <i class="fab fa-apple fa-3x text-dark mt-2"></i>
                         </div>
-                        <small class="text-muted">Apple Silicon</small>
+                        <small class="text-muted">@Localizer["Apple Silicon"]</small>
                     </div>
                 </div>
             </div>
@@ -402,7 +401,7 @@ CMD ["python3", "/app/main.py"]</pre>
                             <div class="bg-secondary bg-opacity-25 rounded-3 px-3 py-2 mb-2 border border-secondary" style="width: 110px;">
                                 <small class="text-secondary">ubuntu:latest</small>
                             </div>
-                            <small class="text-muted">4+ layers, hidden cruft</small>
+                            <small class="text-muted">@Localizer["4+ layers, hidden cruft"]</small>
                         </div>
                         @* Arrow *@
                         <div class="text-primary fs-3 pb-4">→</div>
@@ -417,7 +416,7 @@ CMD ["python3", "/app/main.py"]</pre>
                             <div class="bg-dark rounded-3 px-3 py-2 border border-secondary" style="width: 110px;">
                                 <small class="text-white-50">FROM scratch</small>
                             </div>
-                            <small class="text-success mt-1 d-block">1 layer, zero waste</small>
+                            <small class="text-success mt-1 d-block">@Localizer["1 layer, zero waste"]</small>
                         </div>
                     </div>
                 </div>
@@ -499,7 +498,7 @@ CMD ["python3", "/app/main.py"]</pre>
                         </div>
                     </div>
                     <div class="position-absolute top-0 start-100 translate-middle">
-                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">174 packages</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 shadow">@Localizer["174 packages"]</span>
                     </div>
                 </div>
             </div>
@@ -527,17 +526,17 @@ CMD ["python3", "/app/main.py"]</pre>
                 <div class="d-flex align-items-center gap-2">
                     <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
                         <i class="fas fa-wrench fa-2x text-secondary mb-1"></i>
-                        <div class="small text-muted">Debian<br/>Bootstrap</div>
+                        <div class="small text-muted">@Localizer["Debian Bootstrap"]</div>
                     </div>
                     <div class="text-primary fs-3">+</div>
                     <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
                         <i class="fab fa-ubuntu fa-2x text-danger mb-1"></i>
-                        <div class="small text-muted">Ubuntu<br/>Sources</div>
+                        <div class="small text-muted">@Localizer["Ubuntu Sources"]</div>
                     </div>
                     <div class="text-primary fs-3">+</div>
                     <div class="bg-white rounded-4 p-3 shadow-sm border text-center" style="width: 85px;">
                         <i class="fas fa-cubes fa-2x text-primary mb-1"></i>
-                        <div class="small text-muted">87 curated<br/>packages</div>
+                        <div class="small text-muted">@Localizer["87 curated packages"]</div>
                     </div>
                     <div class="text-primary fs-3">=</div>
                     <div class="bg-primary bg-opacity-10 rounded-4 p-3 border border-primary border-opacity-50 text-center" style="width: 95px;">
@@ -589,12 +588,12 @@ CMD ["python3", "/app/main.py"]</pre>
                     </div>
                     <div class="font-monospace small" style="line-height: 1.6;">
                         <div class="text-primary mb-1 fw-semibold">anduinos-desktop/stable</div>
-                        <div class="text-muted mb-1">  Full GNOME desktop meta-package</div>
+                        <div class="text-muted mb-1">@Localizer["Full GNOME desktop meta-package"]</div>
                         <div class="text-primary mb-1 fw-semibold">anduinos-firewall/stable</div>
-                        <div class="text-muted mb-1">  Graphical firewall manager</div>
+                        <div class="text-muted mb-1">@Localizer["Graphical firewall manager"]</div>
                         <div class="text-primary mb-1 fw-semibold">anduinos-appearance/stable</div>
-                        <div class="text-muted mb-1">  System theming & customization</div>
-                        <div class="text-muted">... and 50+ more packages</div>
+                        <div class="text-muted mb-1">@Localizer["System theming & customization"]</div>
+                        <div class="text-muted">@Localizer["... and 50+ more packages"]</div>
                     </div>
                 </div>
             </div>
@@ -670,9 +669,8 @@ CMD ["python3", "/app/main.py"]</pre>
 
         <div class="d-inline-block bg-black rounded-4 p-4 mb-4 border border-secondary border-opacity-25">
             <div class="d-flex align-items-center justify-content-between mb-2">
-                <span class="badge bg-secondary text-white">terminal</span>
-                <button class="btn btn-sm btn-outline-light border-0"
-                        onclick="navigator.clipboard.writeText('sudo docker run -it aiursoft/anduinos bash')"
+                <span class="badge bg-secondary text-white">@Localizer["Terminal"]</span>
+                <button class="btn btn-sm btn-outline-light border-0 container-copy-btn"
                         title="@Localizer["Copy to clipboard"]">
                     <i class="far fa-copy me-1"></i>@Localizer["Copy"]
                 </button>
@@ -697,6 +695,11 @@ CMD ["python3", "/app/main.py"]</pre>
 </section>
 
 <vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/container.js" asp-append-version="true" defer></script>
+}
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {

@@ -9,7 +9,7 @@
                     <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">
                         <i data-lucide="check-circle" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Started"]
                     </span>
-                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">~2.5 GB ISO</span>
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">@Localizer["~2.35 GB ISO"]</span>
                     <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">100% @Localizer["Free & Open Source"]</span>
                 </div>
                 <h1 class="my-4 text-white" style="font-size: 3rem; font-weight: 800; line-height: 1.15;">
@@ -28,7 +28,7 @@
             </div>
             <div class="col-lg-5 d-none d-lg-flex mx-auto text-center">
                 <div class="landing-intro-screenshot">
-                    <img src="sc.webp" alt="AnduinOS Main screenshot" class="img-fluid" />
+                    <img src="sc.webp" alt="@Localizer["AnduinOS Main screenshot"]" class="img-fluid" />
                 </div>
             </div>
         </div>
@@ -54,15 +54,15 @@
                         <h3 class="h4 mb-0">@Localizer["Choose your current operating system"]</h3>
                         <div class="d-flex gap-2 flex-wrap" role="group" id="torrent-platform-tabs" aria-label="@Localizer["BitTorrent client recommendations"]">
                             <button class="btn btn-outline-primary rounded-pill active" type="button"
-                                    data-torrent-platform="windows" onclick="switchTorrentPlatform('windows', this)" aria-pressed="true">
+                                    data-torrent-platform="windows" aria-pressed="true">
                                 <i class="fab fa-windows me-1"></i>@Localizer["Windows"]
                             </button>
                             <button class="btn btn-outline-primary rounded-pill" type="button"
-                                    data-torrent-platform="linux" onclick="switchTorrentPlatform('linux', this)" aria-pressed="false">
+                                    data-torrent-platform="linux" aria-pressed="false">
                                 <i class="fab fa-linux me-1"></i>@Localizer["Linux"]
                             </button>
                             <button class="btn btn-outline-primary rounded-pill" type="button"
-                                    data-torrent-platform="macos" onclick="switchTorrentPlatform('macos', this)" aria-pressed="false">
+                                    data-torrent-platform="macos" aria-pressed="false">
                                 <i class="fab fa-apple me-1"></i>@Localizer["macOS"]
                             </button>
                         </div>
@@ -271,30 +271,22 @@
                     <h4 class="mb-0">@Localizer["2. Create a bootable USB drive"]</h4>
                     <div class="d-flex gap-2 flex-wrap" role="group" id="platform-tabs">
                         <button class="btn btn-outline-primary rounded-pill active" type="button"
-                                onclick="switchPlatform('windows')">
-                            <i class="fab fa-windows me-1"></i>Windows
+                                data-install-platform="windows">
+                            <i class="fab fa-windows me-1"></i>@Localizer["Windows"]
                         </button>
                         <button class="btn btn-outline-primary rounded-pill" type="button"
-                                onclick="switchPlatform('linux')">
-                            <i class="fab fa-linux me-1"></i>Linux
+                                data-install-platform="linux">
+                            <i class="fab fa-linux me-1"></i>@Localizer["Linux"]
                         </button>
                         <button class="btn btn-outline-primary rounded-pill" type="button"
-                                onclick="switchPlatform('macos')">
-                            <i class="fab fa-apple me-1"></i>macOS
+                                data-install-platform="macos">
+                            <i class="fab fa-apple me-1"></i>@Localizer["macOS"]
                         </button>
                         <button class="btn btn-outline-primary rounded-pill" type="button"
-                                onclick="switchPlatform('ventoy')">
+                                data-install-platform="ventoy">
                             <i data-lucide="usb" style="width:14px;height:14px;" class="me-1"></i>Ventoy
                         </button>
                     </div>
-                    <script>
-                        function switchPlatform(name) {
-                            document.querySelectorAll('.platform-panel').forEach(p => p.classList.remove('show'));
-                            document.getElementById('panel-' + name).classList.add('show');
-                            document.querySelectorAll('#platform-tabs .btn').forEach(b => b.classList.remove('active'));
-                            event.target.closest('button').classList.add('active');
-                        }
-                    </script>
                 </div>
             </div>
             <div class="card-body p-4">
@@ -648,53 +640,11 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    @if (Model.IsTorrent)
-    {
-        <script>
-            function switchTorrentPlatform(name, button) {
-                document.querySelectorAll('.torrent-platform-panel').forEach(panel => {
-                    panel.classList.toggle('d-none', panel.id !== 'torrent-panel-' + name);
-                });
-                document.querySelectorAll('#torrent-platform-tabs [data-torrent-platform]').forEach(tab => {
-                    const active = tab === button;
-                    tab.classList.toggle('active', active);
-                    tab.setAttribute('aria-pressed', active.toString());
-                });
-            }
-
-            document.addEventListener('DOMContentLoaded', function () {
-                const detectedPlatform = (navigator.userAgentData?.platform || navigator.platform || navigator.userAgent).toLowerCase();
-                const platform = detectedPlatform.includes('mac')
-                    ? 'macos'
-                    : detectedPlatform.includes('linux') || detectedPlatform.includes('x11')
-                        ? 'linux'
-                        : 'windows';
-                const button = document.querySelector('[data-torrent-platform="' + platform + '"]');
-                if (button)
-                    switchTorrentPlatform(platform, button);
-
-                const screenshotModal = document.getElementById('torrent-screenshot-modal');
-                const screenshotPreview = document.getElementById('torrent-screenshot-preview');
-                screenshotModal.addEventListener('show.bs.modal', function (event) {
-                    const trigger = event.relatedTarget;
-                    screenshotPreview.src = trigger.dataset.torrentImage;
-                    screenshotPreview.alt = trigger.dataset.torrentAlt;
-                });
-                screenshotModal.addEventListener('hidden.bs.modal', function () {
-                    screenshotPreview.src = '';
-                    screenshotPreview.alt = '';
-                });
-            });
-        </script>
-    }
     @if (!string.IsNullOrEmpty(Model.DownloadUrl))
     {
-        <script>
-            setTimeout(function () {
-                window.location.href = '@Html.Raw(Model.DownloadUrl)';
-            }, 1000);
-        </script>
+        <div id="thankyou-download-data" data-url="@Model.DownloadUrl" hidden></div>
     }
+    <script src="~/js/thankyou.js" asp-append-version="true" defer></script>
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@

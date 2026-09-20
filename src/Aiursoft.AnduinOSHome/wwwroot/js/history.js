@@ -4,6 +4,11 @@
 
 let languageMap = {};
 
+function getLocalizedHistoryText(key, fallback) {
+    const element = document.querySelector(`#history-loc-data span[data-key="${key}"]`);
+    return element?.textContent?.trim() || fallback;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Read the language map from the hidden element (single source of truth)
     var langDataEl = document.getElementById('history-lang-data');
@@ -89,15 +94,15 @@ function renderDownloadLinks(container, langCode) {
 
     // ISO button
     if (providesIso) {
-        appendLink(linksDiv, base + '.iso', 'ISO', 'btn-primary');
+        appendLink(linksDiv, base + '.iso', getLocalizedHistoryText('iso', 'ISO'), 'btn-primary');
     }
 
     // Torrent button
-    appendLink(linksDiv, base + '.torrent', 'Torrent',
+    appendLink(linksDiv, base + '.torrent', getLocalizedHistoryText('torrent', 'Torrent'),
         providesIso ? 'btn-outline-primary' : 'btn-primary');
 
     // Checksum button
-    appendLink(linksDiv, base + '.sha256', 'Checksum', 'btn-outline-primary');
+    appendLink(linksDiv, base + '.sha256', getLocalizedHistoryText('checksum', 'Checksum'), 'btn-outline-primary');
 }
 
 function appendLink(container, href, label, btnClass) {

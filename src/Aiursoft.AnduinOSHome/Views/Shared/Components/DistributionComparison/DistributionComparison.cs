@@ -10,15 +10,20 @@ public class DistributionComparison : ViewComponent
     private const string BtrfsDesign = AnduinPackages + "/blob/master/anduinos-installer-beta/BTRFS-DESIGN.md";
     private const string SwapDesign = AnduinPackages + "/blob/master/anduinos-swapcontrol-gtk/ARCHITECTURE.md";
     private const string SnapshotDesign = AnduinPackages + "/tree/master/anduinos-btrfs-snapshots-manager";
+    private const string SnapshotRecoveryScope = AnduinPackages + "/blob/master/anduinos-btrfs-snapshots-manager/docs/RECOVERY-SCOPE.md";
     private const string ZorinDetails = "https://zorin.com/os/details/";
+    private const string ZorinReinstall = "https://help.zorin.com/docs/getting-started/replace-your-zorin-os-installation/";
     private const string ZorinNvidia = "https://help.zorin.com/docs/hardware/activate-nvidia-drivers/";
     private const string ZorinWindowsApps = "https://help.zorin.com/docs/apps-games/windows-app-support/";
     private const string MintRelease = "https://blog.linuxmint.com/?p=4981";
     private const string MintHwe = "https://blog.linuxmint.com/?p=5050";
     private const string MintWayland = "https://blog.linuxmint.com/?p=5046";
     private const string MintTimeshift = "https://linuxmint-installation-guide.readthedocs.io/en/latest/timeshift.html";
+    private const string MintTimeshiftSource = "https://github.com/linuxmint/timeshift/blob/master/README.md";
     private const string UbuntuRelease = "https://documentation.ubuntu.com/release-notes/26.04/summary-for-lts-users/";
     private const string UbuntuDesktop = "https://ubuntu.com/download/desktop";
+    private const string UbuntuDesktopInstall = "https://ubuntu.com/desktop/docs/en/26.04/tutorial/install-ubuntu-desktop/";
+    private const string UbuntuCoreRecovery = "https://documentation.ubuntu.com/core/explanation/recovery-modes/";
     private const string UbuntuSecureBoot = "https://documentation.ubuntu.com/security/docs/security-features/platform-protections/secure-boot/";
     private const string GnomeRelease = "https://release.gnome.org/50/";
 
@@ -273,6 +278,21 @@ public class DistributionComparison : ViewComponent
                 Cell(ComparisonLevel.NotDocumented, "No equivalent first-party workflow enabled by default",
                     "Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model.",
                     Source("Ubuntu 26.04 release notes", UbuntuRelease))),
+
+            new ComparisonItem(
+                "factory-reset", "rotate-ccw", "Factory reset to initial installation", "Built-in recovery without reinstall media", false,
+                Cell(ComparisonLevel.FirstClass, "Btrfs: protected New OS baseline",
+                    "On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager's guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure.",
+                    Source("Disk Snapshots Manager", SnapshotDesign), Source("Recovery scope and safeguards", SnapshotRecoveryScope)),
+                Cell(ComparisonLevel.NotDocumented, "Reinstall from USB for a clean state",
+                    "Zorin's official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset.",
+                    Source("Zorin OS clean reinstall guide", ZorinReinstall)),
+                Cell(ComparisonLevel.NotDocumented, "Timeshift restore, not factory reset",
+                    "Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state.",
+                    Source("Linux Mint system snapshots", MintTimeshift), Source("Timeshift design and restore behavior", MintTimeshiftSource)),
+                Cell(ComparisonLevel.NotDocumented, "Desktop reinstall from installation media",
+                    "Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here.",
+                    Source("Ubuntu Desktop installation", UbuntuDesktopInstall), Source("Ubuntu Core recovery modes", UbuntuCoreRecovery))),
 
             new ComparisonItem(
                 "swap-health", "gauge", "Swap and hibernation health", "Sizing, resume identity and diagnostics", false,

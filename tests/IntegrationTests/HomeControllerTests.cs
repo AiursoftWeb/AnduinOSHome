@@ -3,14 +3,14 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 [TestClass]
 public class HomeControllerTests : TestBase
 {
-    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.sha256";
-    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.sha256";
+    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.sha256";
+    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.sha256";
     private const string SocialPreviewImageUrl = "https://www.anduinos.com/sc.webp";
     private const string SocialPreviewTitle = "Open Source &amp; Linux";
     private const string SocialPreviewDescription = "AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux.";
-    private const string ReadyToUseText = "The ISO is just 2.54 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations.";
+    private const string ReadyToUseText = "The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations.";
     private const string FriendlyInterfaceText = "The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve.";
-    private const string OldReadyToUseText = "The ISO is just 2.54 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
+    private const string OldReadyToUseText = "The ISO is just 2.35 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
     private const string OldFriendlyInterfaceText = "The GNOME-based desktop environment have beautiful interfaces and human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without too much learning cost.";
     private const string VultrReferralUrl = "https://www.vultr.com/?ref=9692114-9J";
 
@@ -24,10 +24,15 @@ public class HomeControllerTests : TestBase
         Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "amd64-checksum-link"));
         Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "arm64-checksum-link"));
         Assert.AreEqual("/Compare.html", GetAnchorHrefById(html, "compare-distributions-link"));
+        Assert.DoesNotContain("class=\"text-center mt-5\" style=\"display: none;\"", html, StringComparison.Ordinal);
         Assert.Contains("Technical Specifications", html, StringComparison.Ordinal);
         Assert.Contains("System Requirements", html, StringComparison.Ordinal);
         Assert.Contains("Btrfs", html, StringComparison.Ordinal);
         Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
+        Assert.Contains("v2.0.3", html, StringComparison.Ordinal);
+        Assert.Contains("data-latest=\"2.0.3\"", html, StringComparison.Ordinal);
+        Assert.Contains("data-size=\"2.35 GB\"", html, StringComparison.Ordinal);
+        Assert.Contains("2026-09-20", html, StringComparison.Ordinal);
         Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
         Assert.DoesNotContain(OldReadyToUseText, html, StringComparison.Ordinal);
         Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
@@ -78,11 +83,39 @@ public class HomeControllerTests : TestBase
         var html = await response.Content.ReadAsStringAsync();
 
         Assert.Contains("data-comparison-root", html, StringComparison.Ordinal);
-        Assert.AreEqual(20, CountOccurrences(html, "data-comparison-row=\""));
-        Assert.AreEqual(12, CountOccurrences(html, "comparison-row--extra"));
+        var catalogStart = html.IndexOf("<template id=\"comparison-localization-catalog\">", StringComparison.Ordinal);
+        var catalogEnd = html.IndexOf("</template>", catalogStart, StringComparison.Ordinal);
+        Assert.IsTrue(catalogStart >= 0 && catalogEnd > catalogStart);
+        var catalog = System.Net.WebUtility.HtmlDecode(html[catalogStart..catalogEnd]);
+        var component = new Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison.DistributionComparison();
+        var componentResult = (Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult)component.Invoke();
+        var comparisonItems = ((Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison.DistributionComparisonViewModel)componentResult.ViewData!.Model!).Items;
+        foreach (var item in comparisonItems)
+        {
+            var keys = new[] { item.Title, item.Subtitle }
+                .Concat(new[] { item.AnduinOs, item.Zorin, item.Mint, item.Ubuntu }
+                    .SelectMany(cell => new[] { cell.Summary, cell.Detail }.Concat(cell.Sources.Select(source => source.Label))));
+            foreach (var key in keys)
+            {
+                Assert.Contains($"data-key=\"{key}\"", catalog, StringComparison.Ordinal);
+            }
+        }
+        Assert.AreEqual(21, CountOccurrences(html, "data-comparison-row=\""));
+        Assert.AreEqual(13, CountOccurrences(html, "comparison-row--extra"));
         Assert.AreEqual(3, CountOccurrences(html, "data-comparison-select=\""));
-        Assert.AreEqual(80, CountOccurrences(html, "data-comparison-detail=\""));
-        Assert.AreEqual(80, CountOccurrences(html, "<template id=\"comparison-detail-"));
+        Assert.AreEqual(84, CountOccurrences(html, "data-comparison-detail=\""));
+        Assert.AreEqual(84, CountOccurrences(html, "<template id=\"comparison-detail-"));
+        Assert.Contains("data-comparison-row=\"factory-reset\"", html, StringComparison.Ordinal);
+        Assert.Contains("comparison-detail-factory-reset-mint", html, StringComparison.Ordinal);
+        Assert.Contains("Btrfs: protected New OS baseline", html, StringComparison.Ordinal);
+        Assert.Contains("Ext4 installs do not support this", html, StringComparison.Ordinal);
+        Assert.Contains("keeps Home by default", html, StringComparison.Ordinal);
+        Assert.Contains("Timeshift restore, not factory reset", html, StringComparison.Ordinal);
+        Assert.Contains("Ubuntu Core has a separate factory-reset mode", html, StringComparison.Ordinal);
+        Assert.Contains("https://help.zorin.com/docs/getting-started/replace-your-zorin-os-installation/", html, StringComparison.Ordinal);
+        Assert.Contains("https://linuxmint-installation-guide.readthedocs.io/en/latest/timeshift.html", html, StringComparison.Ordinal);
+        Assert.Contains("https://ubuntu.com/desktop/docs/en/26.04/tutorial/install-ubuntu-desktop/", html, StringComparison.Ordinal);
+        Assert.Contains("Comparison snapshot: 20 September 2026", html, StringComparison.Ordinal);
         Assert.Contains("Btrfs default · ext4 optional", html, StringComparison.Ordinal);
         Assert.Contains("data-comparison-expand", html, StringComparison.Ordinal);
         Assert.Contains("data-comparison-dialog", html, StringComparison.Ordinal);
@@ -120,20 +153,24 @@ public class HomeControllerTests : TestBase
         Assert.IsTrue(html.Contains("Historical Builds"));
         Assert.IsTrue(html.Contains("historyAccordion"));
         Assert.IsTrue(html.Contains("history.js"));
+        Assert.Contains("id=\"history-loc-data\"", html, StringComparison.Ordinal);
+        Assert.Contains("data-key=\"torrent\"", html, StringComparison.Ordinal);
+        Assert.Contains("data-key=\"checksum\"", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("2.0"));
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
+        Assert.AreEqual("2.0.3", Aiursoft.AnduinOSHome.Models.HomeViewModels.VersionData.All[0].LatestPatch);
         Assert.IsTrue(html.Contains("1.0"));
     }
 
     [TestMethod]
-    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.iso", Amd64ChecksumUrl,
-        "AnduinOS-2.0.2-amd64.iso", false)]
-    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-amd64.torrent", Amd64ChecksumUrl,
-        "AnduinOS-2.0.2-amd64.iso", true)]
-    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.iso", Arm64ChecksumUrl,
-        "AnduinOS-2.0.2-arm64.iso", false)]
-    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.2-arm64.torrent", Arm64ChecksumUrl,
-        "AnduinOS-2.0.2-arm64.iso", true)]
+    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.iso", Amd64ChecksumUrl,
+        "AnduinOS-2.0.3-amd64.iso", false)]
+    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.torrent", Amd64ChecksumUrl,
+        "AnduinOS-2.0.3-amd64.iso", true)]
+    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.iso", Arm64ChecksumUrl,
+        "AnduinOS-2.0.3-arm64.iso", false)]
+    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.torrent", Arm64ChecksumUrl,
+        "AnduinOS-2.0.3-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,

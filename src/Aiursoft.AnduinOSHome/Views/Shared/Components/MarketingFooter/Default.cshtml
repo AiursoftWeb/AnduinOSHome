@@ -7,7 +7,7 @@
         <div class="row mb-4">
             <div class="col-12 col-lg-4">
                 <div class="mb-3">
-                    <img src="@Model.LogoUrl" alt="logo" style="width: 24px; height: 24px;" loading="lazy" />
+                    <img src="@Model.LogoUrl" alt="@Localizer["AnduinOS logo"]" style="width: 24px; height: 24px;" loading="lazy" />
                 </div>
                 <p class="text-white-50">
                     @Localizer["AnduinOS - a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux."]
@@ -19,7 +19,7 @@
                             .RequestCulture.Culture.Name;
                     }
                     <form asp-controller="Culture" asp-action="Set" method="post" class="d-inline" asp-route-returnUrl="@(Context.Request.Path + Context.Request.QueryString)">
-                        <select name="culture" onchange="this.form.submit()" class="form-select form-select-sm w-auto">
+                        <select name="culture" class="form-select form-select-sm w-auto auto-submit-select">
                             @foreach (var culture in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures)
                             {
                                 <option value="@culture.Key"
@@ -67,7 +67,7 @@
                     </li>
                     <li class="mt-2">
                         <a href="https://www.debian.org/devel/debian-desktop/"
-                           class="text-white-50">Debian Desktop</a>
+                           class="text-white-50">@Localizer["Debian Desktop"]</a>
                     </li>
                 </ul>
             </div>
@@ -140,3 +140,4 @@
         </div>
     </div>
 </footer>
+<script src="~/js/auto-submit-select.js" asp-append-version="true" defer></script>

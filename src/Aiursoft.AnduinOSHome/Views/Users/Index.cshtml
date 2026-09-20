@@ -93,18 +93,5 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const rows = document.querySelectorAll(".clickable-row");
-            rows.forEach(row => {
-                row.addEventListener("click", function (event) {
-                    const target = event.target;
-                    // Prevent navigation if a link or button was clicked
-                    if (!target.matches('a, a *, button, button *')) {
-                        window.location.href = row.dataset.href;
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="~/js/clickable-rows.js" asp-append-version="true" defer></script>
 }

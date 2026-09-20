@@ -8,20 +8,9 @@
     var progressId = $"progress-{Model.UniqueId}";
     var progressbarId = $"progressbar-{Model.UniqueId}";
 
-    var extensionAttributes = " ";
-    if (!string.IsNullOrWhiteSpace(Model.AllowedExtensions))
-    {
-        extensionAttributes += $"data-allowed-file-extensions=\"{Model.AllowedExtensions}\" ";
-    }
     var defaultValue = Model.AspFor.Model as string;
-    if (!string.IsNullOrWhiteSpace(defaultValue))
-    {
-        extensionAttributes += $"data-default-file=\"{Storage.RelativePathToInternetUrl(defaultValue, Model.IsVault)}\" ";
-    }
-    if (Model.MaxSizeInMb > 0)
-    {
-        extensionAttributes += $"data-max-file-size=\"{Model.MaxSizeInMb}M\"";
-    }
+    var defaultFileUrl = string.IsNullOrWhiteSpace(defaultValue) ? null : Storage.RelativePathToInternetUrl(defaultValue, Model.IsVault);
+    var maxFileSize = Model.MaxSizeInMb > 0 ? $"{Model.MaxSizeInMb}M" : null;
 
     // Use custom FieldName if provided, otherwise use AspFor.Name
     var fieldName = Model.FieldName ?? Model.AspFor.Name;
@@ -35,65 +24,34 @@
         htmlAttributes: new { style = "width:0;height:0;padding:0;border:none;" });
 }
 
+<div data-file-upload data-field-name="@fieldName" data-size-in-mb="@Model.MaxSizeInMb"
+     data-valid-extensions="@Model.AllowedExtensions" data-upload-url="@Model.UploadEndpoint">
 <input
     form="fakeForm"
     type="file"
     id="@fileInputId"
     class="dropify"
     data-show-remove="false"
-    @Html.Raw(extensionAttributes) />
+    data-allowed-file-extensions="@Model.AllowedExtensions"
+    data-default-file="@defaultFileUrl"
+    data-max-file-size="@maxFileSize" />
 <div id="@progressId" class="progress mb-3 mt-3 d-none">
     <div id="@progressbarId" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
 </div>
 @hiddenInputTag
-
-<script type="module">
-    import Uploader from "/scripts/uploader.js";
-    window.addEventListener('load', function () {
-
-        const fileInput = $(`#@fileInputId`);
-        const progress = $(`#@progressId`);
-        const progressbar = $(`#@progressbarId`);
-
-        const addressInput = $(`[name="@fieldName"]`);
-
-        new Uploader({
-            fileInput: fileInput,
-            progress: progress,
-            progressbar: progressbar,
-            addressInput: addressInput,
-
-            sizeInMb: @Model.MaxSizeInMb,
-            validExtensions: ('@Model.AllowedExtensions' || '').split(' ').filter(Boolean),
-            uploadUrl: '@Model.UploadEndpoint'
-        }).init({
-            messages: {
-                'default': @Json.Serialize(Localizer["Drag and drop a file here or click"].Value),
-                'replace': @Json.Serialize(Localizer["Drag and drop or click to replace"].Value),
-                'remove':  @Json.Serialize(Localizer["Remove"].Value),
-                'error':   @Json.Serialize(Localizer["Ooops, something wrong happended."].Value)
-            },
-            error: {
-                'fileSize': @Json.Serialize(Localizer["The file size is too big ({{ value }} max)."].Value),
-                'minWidth': @Json.Serialize(Localizer["The image width is too small ({{ value }}px min)."].Value),
-                'maxWidth': @Json.Serialize(Localizer["The image width is too big ({{ value }}px max)."].Value),
-                'minHeight': @Json.Serialize(Localizer["The image height is too small ({{ value }}px min)."].Value),
-                'maxHeight': @Json.Serialize(Localizer["The image height is too big ({{ value }}px max)."].Value),
-                'imageFormat': @Json.Serialize(Localizer["The image format is not allowed ({{ value }} only)."].Value),
-                'fileExtension': @Json.Serialize(Localizer["The file is not allowed ({{ value }} only)."].Value),
-            }
-        });
-    })
-</script>
-
-@* @Localizer["Drag and drop a file here or click"] *@
-@* @Localizer["Drag and drop or click to replace"] *@
-@* @Localizer["Remove"] *@
-@* @Localizer["Ooops, something wrong happended."] *@
-@* @Localizer["The file size is too big ({{ value }} max)."] *@
-@* @Localizer["The image width is too small ({{ value }}px min)."] *@
-@* @Localizer["The image width is too big ({{ value }}px max)."] *@
-@* @Localizer["The image height is too small ({{ value }}px min)."] *@
-@* @Localizer["The image height is too big ({{ value }}px max)."] *@
-@* @Localizer["The image format is not allowed ({{ value }} only)."] *@
-@* @Localizer["The file is not allowed ({{ value }} only)."] *@
+<div class="file-upload-loc-data" hidden>
+    <span data-key="default">@Localizer["Drag and drop a file here or click"]</span>
+    <span data-key="replace">@Localizer["Drag and drop or click to replace"]</span>
+    <span data-key="remove">@Localizer["Remove"]</span>
+    <span data-key="error">@Localizer["Ooops, something wrong happended."]</span>
+    <span data-key="fileSize">@Localizer["The file size is too big ({{ value }} max)."]</span>
+    <span data-key="minWidth">@Localizer["The image width is too small ({{ value }}px min)."]</span>
+    <span data-key="maxWidth">@Localizer["The image width is too big ({{ value }}px max)."]</span>
+    <span data-key="minHeight">@Localizer["The image height is too small ({{ value }}px min)."]</span>
+    <span data-key="maxHeight">@Localizer["The image height is too big ({{ value }}px max)."]</span>
+    <span data-key="imageFormat">@Localizer["The image format is not allowed ({{ value }} only)."]</span>
+    <span data-key="fileExtension">@Localizer["The file is not allowed ({{ value }} only)."]</span>
+    <span data-key="beforeUnload">@Localizer["Your file is still uploading. Are you sure to quit?"]</span>
+</div>
+</div>
+<script type="module" src="~/js/file-upload.js" asp-append-version="true"></script>

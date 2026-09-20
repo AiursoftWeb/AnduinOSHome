@@ -18,7 +18,7 @@
             <h1 class="display-4 fw-bold">@Localizer["Historical Builds"]</h1>
 
 <div class="alert alert-warning alert-outline alert-dismissible" role="alert">
-<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@Localizer["Close"]"></button>
 <div class="alert-icon">
 <i class="far fa-fw fa-bell"></i>
 </div>
@@ -141,7 +141,7 @@
                                 @if (v.Status == VersionStatus.EOL)
                                 {
                                     <div class="alert alert-danger alert-outline alert-dismissible" role="alert">
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@Localizer["Close"]"></button>
                                         <div class="alert-icon">
                                             <i class="far fa-fw fa-times-circle"></i>
                                         </div>
@@ -156,7 +156,7 @@
                                 @if (!string.IsNullOrEmpty(v.SpecialNote))
                                 {
                                     <div class="alert alert-warning alert-outline alert-dismissible" role="alert">
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@Localizer["Close"]"></button>
                                         <div class="alert-icon">
                                             <i class="far fa-fw fa-bell"></i>
                                         </div>
@@ -249,6 +249,11 @@
         @* ── Hidden language data for JS ── *@
         <div id="history-lang-data" class="d-none"
              data-all-languages='@JsonConvert.SerializeObject(HistoryBuildsViewModel.AllLanguages)'>
+        </div>
+        <div id="history-loc-data" hidden>
+            <span data-key="iso">@Localizer["ISO"]</span>
+            <span data-key="torrent">@Localizer["Torrent"]</span>
+            <span data-key="checksum">@Localizer["Checksum"]</span>
         </div>
 
     </main>

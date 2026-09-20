@@ -22,3 +22,16 @@ function igl_show(img) {
 function igl_hide() {
     document.getElementById('iglmodal').style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('iglmodal')?.addEventListener('click', igl_hide);
+    document.querySelectorAll('[data-requirement-panel]').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('[data-requirement-panel]').forEach(tab => {
+                const active = tab === button;
+                tab.classList.toggle('active', active);
+                document.getElementById(tab.dataset.requirementPanel)?.classList.toggle('show', active);
+            });
+        });
+    });
+});

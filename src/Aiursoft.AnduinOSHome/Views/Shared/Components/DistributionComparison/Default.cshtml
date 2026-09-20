@@ -16,6 +16,250 @@
     <div class="comparison-orb comparison-orb--violet" aria-hidden="true"></div>
     <div class="comparison-grid-glow" aria-hidden="true"></div>
 
+    @* Static extraction catalog for text defined by DistributionComparison.cs.
+       Runtime rendering uses the same keys through Localizer[item.*] and Localizer[cell.*].
+       Keep this catalog in sync when adding or changing comparison data. *@
+    <template id="comparison-localization-catalog">
+        <span data-key="Platform generation">@Localizer["Platform generation"]</span>
+        <span data-key="Ubuntu foundation and kernel">@Localizer["Ubuntu foundation and kernel"]</span>
+        <span data-key="Wayland desktop">@Localizer["Wayland desktop"]</span>
+        <span data-key="Primary display architecture">@Localizer["Primary display architecture"]</span>
+        <span data-key="Desktop architectures">@Localizer["Desktop architectures"]</span>
+        <span data-key="Installable AMD64 and ARM64 products">@Localizer["Installable AMD64 and ARM64 products"]</span>
+        <span data-key="Secure Boot lifecycle">@Localizer["Secure Boot lifecycle"]</span>
+        <span data-key="Boot trust, MOK and third-party modules">@Localizer["Boot trust, MOK and third-party modules"]</span>
+        <span data-key="Default storage model">@Localizer["Default storage model"]</span>
+        <span data-key="Filesystem defaults and system topology">@Localizer["Filesystem defaults and system topology"]</span>
+        <span data-key="System recovery model">@Localizer["System recovery model"]</span>
+        <span data-key="Snapshots, update protection and rollback">@Localizer["Snapshots, update protection and rollback"]</span>
+        <span data-key="Memory pressure strategy">@Localizer["Memory pressure strategy"]</span>
+        <span data-key="Compressed RAM, disk Swap and health">@Localizer["Compressed RAM, disk Swap and health"]</span>
+        <span data-key="First-party system tools">@Localizer["First-party system tools"]</span>
+        <span data-key="Toolkit and graphical control surfaces">@Localizer["Toolkit and graphical control surfaces"]</span>
+        <span data-key="Display pipeline">@Localizer["Display pipeline"]</span>
+        <span data-key="HDR, VRR and fractional scaling">@Localizer["HDR, VRR and fractional scaling"]</span>
+        <span data-key="NVIDIA on Wayland">@Localizer["NVIDIA on Wayland"]</span>
+        <span data-key="Drivers, frame timing and recovery paths">@Localizer["Drivers, frame timing and recovery paths"]</span>
+        <span data-key="Early-boot architecture">@Localizer["Early-boot architecture"]</span>
+        <span data-key="Initramfs implementation and migration policy">@Localizer["Initramfs implementation and migration policy"]</span>
+        <span data-key="Live system layers">@Localizer["Live system layers"]</span>
+        <span data-key="Temporary and persistent USB overlays">@Localizer["Temporary and persistent USB overlays"]</span>
+        <span data-key="Installer architecture">@Localizer["Installer architecture"]</span>
+        <span data-key="UI, privilege boundary and execution model">@Localizer["UI, privilege boundary and execution model"]</span>
+        <span data-key="System composition">@Localizer["System composition"]</span>
+        <span data-key="Package source and product composition">@Localizer["Package source and product composition"]</span>
+        <span data-key="Package transaction safety">@Localizer["Package transaction safety"]</span>
+        <span data-key="Recovery points around APT changes">@Localizer["Recovery points around APT changes"]</span>
+        <span data-key="Personal file history">@Localizer["Personal file history"]</span>
+        <span data-key="Separate recovery for user data">@Localizer["Separate recovery for user data"]</span>
+        <span data-key="Factory reset to initial installation">@Localizer["Factory reset to initial installation"]</span>
+        <span data-key="Built-in recovery without reinstall media">@Localizer["Built-in recovery without reinstall media"]</span>
+        <span data-key="Swap and hibernation health">@Localizer["Swap and hibernation health"]</span>
+        <span data-key="Sizing, resume identity and diagnostics">@Localizer["Sizing, resume identity and diagnostics"]</span>
+        <span data-key="Application model">@Localizer["Application model"]</span>
+        <span data-key="APT, Flatpak and Snap policy">@Localizer["APT, Flatpak and Snap policy"]</span>
+        <span data-key="System telemetry policy">@Localizer["System telemetry policy"]</span>
+        <span data-key="Diagnostics and remote news">@Localizer["Diagnostics and remote news"]</span>
+        <span data-key="Public automated release evidence">@Localizer["Public automated release evidence"]</span>
+        <span data-key="Published boot, install, reboot and desktop reports">@Localizer["Published boot, install, reboot and desktop reports"]</span>
+        <span data-key="Ubuntu 26.04 LTS · Linux 7.0">@Localizer["Ubuntu 26.04 LTS · Linux 7.0"]</span>
+        <span data-key="AnduinOS 2 targets Ubuntu 26.04 Resolute and ships its Linux 7.0 GA kernel. The core package retains that kernel contract through normal installs and upgrades instead of treating it as an ISO-only customization.">@Localizer["AnduinOS 2 targets Ubuntu 26.04 Resolute and ships its Linux 7.0 GA kernel. The core package retains that kernel contract through normal installs and upgrades instead of treating it as an ISO-only customization."]</span>
+        <span data-key="Ubuntu 24.04 · Linux 6.17">@Localizer["Ubuntu 24.04 · Linux 6.17"]</span>
+        <span data-key="Zorin OS 18.1 uses the Ubuntu 24.04 LTS foundation and Linux 6.17. Its desktop and userspace therefore remain on the Ubuntu 24.04 generation rather than the Ubuntu 26.04 and GNOME 50 generation used by AnduinOS 2.">@Localizer["Zorin OS 18.1 uses the Ubuntu 24.04 LTS foundation and Linux 6.17. Its desktop and userspace therefore remain on the Ubuntu 24.04 generation rather than the Ubuntu 26.04 and GNOME 50 generation used by AnduinOS 2."]</span>
+        <span data-key="Ubuntu 24.04 · 6.14 / 7.0 HWE">@Localizer["Ubuntu 24.04 · 6.14 / 7.0 HWE"]</span>
+        <span data-key="Linux Mint 22.3 was released with Linux 6.14. Mint now also publishes fully QA-tested HWE images with Linux 7.0 for newer hardware, so the selected image matters.">@Localizer["Linux Mint 22.3 was released with Linux 6.14. Mint now also publishes fully QA-tested HWE images with Linux 7.0 for newer hardware, so the selected image matters."]</span>
+        <span data-key="Ubuntu 26.04 · Linux 7.0">@Localizer["Ubuntu 26.04 · Linux 7.0"]</span>
+        <span data-key="Ubuntu 26.04 LTS is the upstream reference for this generation and ships the Linux 7.0 kernel series with five years of standard LTS maintenance.">@Localizer["Ubuntu 26.04 LTS is the upstream reference for this generation and ships the Linux 7.0 kernel series with five years of standard LTS maintenance."]</span>
+        <span data-key="Wayland-only · end-to-end tested">@Localizer["Wayland-only · end-to-end tested"]</span>
+        <span data-key="AnduinOS maintains and tests one desktop display stack end to end. Xorg session: Not included. XWayland remains available for legacy applications, but there is no Xorg desktop fallback if a Wayland-specific problem occurs.">@Localizer["AnduinOS maintains and tests one desktop display stack end to end. Xorg session: Not included. XWayland remains available for legacy applications, but there is no Xorg desktop fallback if a Wayland-specific problem occurs."]</span>
+        <span data-key="Wayland with Xorg fallback">@Localizer["Wayland with Xorg fallback"]</span>
+        <span data-key="Zorin OS 18 defaults to Wayland while retaining selectable Xorg sessions. The fallback is useful for compatibility, particularly when troubleshooting graphics drivers.">@Localizer["Zorin OS 18 defaults to Wayland while retaining selectable Xorg sessions. The fallback is useful for compatibility, particularly when troubleshooting graphics drivers."]</span>
+        <span data-key="X11 default · Wayland experimental">@Localizer["X11 default · Wayland experimental"]</span>
+        <span data-key="Cinnamon's Wayland session remains experimental in Linux Mint 22.3. Mint has announced that both X11 and Wayland will become fully supported in the next Cinnamon release.">@Localizer["Cinnamon's Wayland session remains experimental in Linux Mint 22.3. Mint has announced that both X11 and Wayland will become fully supported in the next Cinnamon release."]</span>
+        <span data-key="Wayland-only GNOME">@Localizer["Wayland-only GNOME"]</span>
+        <span data-key="Ubuntu 26.04 runs the GNOME desktop session only on Wayland. XWayland is retained for applications written for X.org.">@Localizer["Ubuntu 26.04 runs the GNOME desktop session only on Wayland. XWayland is retained for applications written for X.org."]</span>
+        <span data-key="AMD64 + ARM64">@Localizer["AMD64 + ARM64"]</span>
+        <span data-key="Both architectures are product targets. The ISO builder, native installer, UEFI layout, signed boot payloads and acceptance matrix model AMD64 and ARM64 explicitly.">@Localizer["Both architectures are product targets. The ISO builder, native installer, UEFI layout, signed boot payloads and acceptance matrix model AMD64 and ARM64 explicitly."]</span>
+        <span data-key="Official x86-64 desktop">@Localizer["Official x86-64 desktop"]</span>
+        <span data-key="Zorin's official desktop images target 64-bit Intel and AMD processors. No official ARM64 desktop product is listed for Zorin OS 18.1.">@Localizer["Zorin's official desktop images target 64-bit Intel and AMD processors. No official ARM64 desktop product is listed for Zorin OS 18.1."]</span>
+        <span data-key="Official x86-64 images">@Localizer["Official x86-64 images"]</span>
+        <span data-key="Linux Mint 22.3 publishes its Cinnamon, MATE and Xfce desktop editions as 64-bit x86 images. No equivalent official ARM64 Mint desktop image is offered.">@Localizer["Linux Mint 22.3 publishes its Cinnamon, MATE and Xfce desktop editions as 64-bit x86 images. No equivalent official ARM64 Mint desktop image is offered."]</span>
+        <span data-key="Canonical publishes official Ubuntu 26.04 desktop downloads for both Intel or AMD 64-bit systems and ARM 64-bit systems.">@Localizer["Canonical publishes official Ubuntu 26.04 desktop downloads for both Intel or AMD 64-bit systems and ARM 64-bit systems."]</span>
+        <span data-key="Installer + MOK + DKMS health">@Localizer["Installer + MOK + DKMS health"]</span>
+        <span data-key="Secure Boot is modeled during installation on AMD64 and ARM64. A shared GTK4 toolkit exposes MOK enrollment and DKMS signing health to the installer, OOBE and Driver Center.">@Localizer["Secure Boot is modeled during installation on AMD64 and ARM64. A shared GTK4 toolkit exposes MOK enrollment and DKMS signing health to the installer, OOBE and Driver Center."]</span>
+        <span data-key="Ubuntu trust chain">@Localizer["Ubuntu trust chain"]</span>
+        <span data-key="Zorin supports Secure Boot through its Ubuntu foundation and documents firmware fallbacks for problem hardware. NVIDIA guidance may still recommend disabling Secure Boot or using Xorg when drivers fail.">@Localizer["Zorin supports Secure Boot through its Ubuntu foundation and documents firmware fallbacks for problem hardware. NVIDIA guidance may still recommend disabling Secure Boot or using Xorg when drivers fail."]</span>
+        <span data-key="Ubuntu signed foundation">@Localizer["Ubuntu signed foundation"]</span>
+        <span data-key="Linux Mint inherits Ubuntu's signed shim, GRUB and kernel foundation. Mint documents workarounds for systems that report Secure Boot violations.">@Localizer["Linux Mint inherits Ubuntu's signed shim, GRUB and kernel foundation. Mint documents workarounds for systems that report Secure Boot violations."]</span>
+        <span data-key="Canonical-signed chain">@Localizer["Canonical-signed chain"]</span>
+        <span data-key="Ubuntu provides Microsoft-signed shim, Canonical-signed GRUB, kernels and modules on AMD64 and ARM64, together with mature MOK and DKMS signing workflows.">@Localizer["Ubuntu provides Microsoft-signed shim, Canonical-signed GRUB, kernels and modules on AMD64 and ARM64, together with mature MOK and DKMS signing workflows."]</span>
+        <span data-key="Btrfs default · ext4 optional">@Localizer["Btrfs default · ext4 optional"]</span>
+        <span data-key="The native installer selects Btrfs by default and creates named subvolumes that define snapshot, home, log, container, virtual-machine and recovery boundaries. ext4 remains available as a classic alternative.">@Localizer["The native installer selects Btrfs by default and creates named subvolumes that define snapshot, home, log, container, virtual-machine and recovery boundaries. ext4 remains available as a classic alternative."]</span>
+        <span data-key="ext4-centered default">@Localizer["ext4-centered default"]</span>
+        <span data-key="Zorin follows an ext4-centered Ubuntu 24.04 installation path. No equivalent first-party Btrfs topology and recovery ABI is enabled by default in the reviewed product scope.">@Localizer["Zorin follows an ext4-centered Ubuntu 24.04 installation path. No equivalent first-party Btrfs topology and recovery ABI is enabled by default in the reviewed product scope."]</span>
+        <span data-key="ext4 default · Btrfs selectable">@Localizer["ext4 default · Btrfs selectable"]</span>
+        <span data-key="Mint installs to ext4 by default. Btrfs can be selected and Timeshift can use Btrfs snapshots, but Mint does not define the same default subvolume ABI as AnduinOS.">@Localizer["Mint installs to ext4 by default. Btrfs can be selected and Timeshift can use Btrfs snapshots, but Mint does not define the same default subvolume ABI as AnduinOS."]</span>
+        <span data-key="ext4 default · other options">@Localizer["ext4 default · other options"]</span>
+        <span data-key="Ubuntu's guided desktop installation remains ext4-centered. Other layouts can be configured, but Ubuntu does not ship the AnduinOS Btrfs desktop ABI as its default.">@Localizer["Ubuntu's guided desktop installation remains ext4-centered. Other layouts can be configured, but Ubuntu does not ship the AnduinOS Btrfs desktop ABI as its default."]</span>
+        <span data-key="APT snapshots + bootable rollback">@Localizer["APT snapshots + bootable rollback"]</span>
+        <span data-key="System snapshots are connected to APT transactions, retention policy, Dracut, GRUB, deployment metadata and boot confirmation. Recovery is an operating-system protocol rather than a standalone backup utility.">@Localizer["System snapshots are connected to APT transactions, retention policy, Dracut, GRUB, deployment metadata and boot confirmation. Recovery is an operating-system protocol rather than a standalone backup utility."]</span>
+        <span data-key="No equivalent first-party workflow enabled by default">@Localizer["No equivalent first-party workflow enabled by default"]</span>
+        <span data-key="Zorin provides recovery mechanisms, but the reviewed product scope identified no default first-party workflow connecting filesystem deployments, package transactions, boot entries and confirmation services.">@Localizer["Zorin provides recovery mechanisms, but the reviewed product scope identified no default first-party workflow connecting filesystem deployments, package transactions, boot entries and confirmation services."]</span>
+        <span data-key="Timeshift system snapshots">@Localizer["Timeshift system snapshots"]</span>
+        <span data-key="Timeshift provides Mint system snapshots with scheduling and retention. Its restoration model is separate from the bootable-deployment and package-transaction protocol used by AnduinOS.">@Localizer["Timeshift provides Mint system snapshots with scheduling and retention. Its restoration model is separate from the bootable-deployment and package-transaction protocol used by AnduinOS."]</span>
+        <span data-key="Ubuntu provides recovery mechanisms and third-party options, but the reviewed default desktop scope identified no integrated protocol connecting Btrfs deployments, APT and boot confirmation.">@Localizer["Ubuntu provides recovery mechanisms and third-party options, but the reviewed default desktop scope identified no integrated protocol connecting Btrfs deployments, APT and boot confirmation."]</span>
+        <span data-key="Zram + disk Swap + health UI">@Localizer["Zram + disk Swap + health UI"]</span>
+        <span data-key="AnduinOS layers 50%-of-RAM LZ4 Zram above a dynamically sized disk Swap partition. The native GTK4 tool manages Zram, optional Zswap, stress tests and hibernation health.">@Localizer["AnduinOS layers 50%-of-RAM LZ4 Zram above a dynamically sized disk Swap partition. The native GTK4 tool manages Zram, optional Zswap, stress tests and hibernation health."]</span>
+        <span data-key="Ubuntu-derived policy">@Localizer["Ubuntu-derived policy"]</span>
+        <span data-key="Zorin inherits the Ubuntu 24.04 memory and Swap foundation. The reviewed product scope identified no equivalent first-party virtual-memory control plane enabled by default.">@Localizer["Zorin inherits the Ubuntu 24.04 memory and Swap foundation. The reviewed product scope identified no equivalent first-party virtual-memory control plane enabled by default."]</span>
+        <span data-key="Standard memory and Swap controls">@Localizer["Standard memory and Swap controls"]</span>
+        <span data-key="Linux Mint provides standard Linux memory and Swap capabilities. The reviewed release scope identified no default integrated Zram, Zswap, stress-test and hibernation-health interface.">@Localizer["Linux Mint provides standard Linux memory and Swap capabilities. The reviewed release scope identified no default integrated Zram, Zswap, stress-test and hibernation-health interface."]</span>
+        <span data-key="General-purpose policy">@Localizer["General-purpose policy"]</span>
+        <span data-key="Ubuntu supplies the underlying kernel memory features and a general-purpose desktop policy, without the same default AnduinOS Zram, partition and health-dashboard contract.">@Localizer["Ubuntu supplies the underlying kernel memory features and a general-purpose desktop policy, without the same default AnduinOS Zram, partition and health-dashboard contract."]</span>
+        <span data-key="All first-party graphical system tools use GTK4/libadwaita">@Localizer["All first-party graphical system tools use GTK4/libadwaita"]</span>
+        <span data-key="AnduinOS first-party graphical system tools—including Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager—share GTK4, libadwaita and adaptive conventions. This claim does not extend to third-party applications or non-graphical components.">@Localizer["AnduinOS first-party graphical system tools—including Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager—share GTK4, libadwaita and adaptive conventions. This claim does not extend to third-party applications or non-graphical components."]</span>
+        <span data-key="Mixed first-party estate">@Localizer["Mixed first-party estate"]</span>
+        <span data-key="Zorin combines GNOME applications, extensions and Zorin-specific tools from the Ubuntu 24.04 generation, resulting in a mixed first-party graphical stack rather than an all-GTK4/libadwaita control plane.">@Localizer["Zorin combines GNOME applications, extensions and Zorin-specific tools from the Ubuntu 24.04 generation, resulting in a mixed first-party graphical stack rather than an all-GTK4/libadwaita control plane."]</span>
+        <span data-key="Cinnamon and XApp tools">@Localizer["Cinnamon and XApp tools"]</span>
+        <span data-key="Mint deliberately maintains its Cinnamon and XApp design system. Major administration tools remain primarily GTK3/XApp while GTK4 applications are supported.">@Localizer["Mint deliberately maintains its Cinnamon and XApp design system. Major administration tools remain primarily GTK3/XApp while GTK4 applications are supported."]</span>
+        <span data-key="Modern GNOME applications">@Localizer["Modern GNOME applications"]</span>
+        <span data-key="Ubuntu benefits from modern GTK4 and libadwaita GNOME applications, while its installer and distribution-specific surfaces use a broader mix of technologies.">@Localizer["Ubuntu benefits from modern GTK4 and libadwaita GNOME applications, while its installer and distribution-specific surfaces use a broader mix of technologies."]</span>
+        <span data-key="GNOME 50 graphics pipeline">@Localizer["GNOME 50 graphics pipeline"]</span>
+        <span data-key="AnduinOS inherits GNOME 50's HDR screen sharing, Wayland color-management v2, improved VRR, optimized fractional scaling and low-latency cursor path.">@Localizer["AnduinOS inherits GNOME 50's HDR screen sharing, Wayland color-management v2, improved VRR, optimized fractional scaling and low-latency cursor path."]</span>
+        <span data-key="Ubuntu 24.04 GNOME generation">@Localizer["Ubuntu 24.04 GNOME generation"]</span>
+        <span data-key="Zorin's Ubuntu 24.04-era GNOME foundation supports useful Wayland display features, but predates the GNOME 50 HDR, VRR and color-management generation.">@Localizer["Zorin's Ubuntu 24.04-era GNOME foundation supports useful Wayland display features, but predates the GNOME 50 HDR, VRR and color-management generation."]</span>
+        <span data-key="Wayland graphics still maturing">@Localizer["Wayland graphics still maturing"]</span>
+        <span data-key="Cinnamon 6.6 remains centered on its mature X11 path in Mint 22.3. The next release is where Mint plans to graduate Wayland support from experimental status.">@Localizer["Cinnamon 6.6 remains centered on its mature X11 path in Mint 22.3. The next release is where Mint plans to graduate Wayland support from experimental status."]</span>
+        <span data-key="Ubuntu 26.04 ships GNOME 50 and its current Wayland display improvements, including optimized fractional scaling.">@Localizer["Ubuntu 26.04 ships GNOME 50 and its current Wayland display improvements, including optimized fractional scaling."]</span>
+        <span data-key="Wayland + Driver Center">@Localizer["Wayland + Driver Center"]</span>
+        <span data-key="GNOME 50 frame-timing improvements, Ubuntu 26.04 drivers and the AnduinOS Driver Center are connected to Secure Boot and DKMS trust health.">@Localizer["GNOME 50 frame-timing improvements, Ubuntu 26.04 drivers and the AnduinOS Driver Center are connected to Secure Boot and DKMS trust health."]</span>
+        <span data-key="Modern drivers · Xorg fallback">@Localizer["Modern drivers · Xorg fallback"]</span>
+        <span data-key="Zorin offers a modern-NVIDIA Live boot option and proprietary-driver workflow. Its own troubleshooting guide retains Xorg and Secure Boot fallbacks.">@Localizer["Zorin offers a modern-NVIDIA Live boot option and proprietary-driver workflow. Its own troubleshooting guide retains Xorg and Secure Boot fallbacks."]</span>
+        <span data-key="Wayland improvements in progress">@Localizer["Wayland improvements in progress"]</span>
+        <span data-key="Mint announced accelerated NVIDIA Wayland improvements for the next Cinnamon release. In 22.3, the Wayland session itself remains experimental.">@Localizer["Mint announced accelerated NVIDIA Wayland improvements for the next Cinnamon release. In 22.3, the Wayland session itself remains experimental."]</span>
+        <span data-key="Fully supported on Wayland">@Localizer["Fully supported on Wayland"]</span>
+        <span data-key="Ubuntu 26.04 states that machines using NVIDIA graphics are fully supported on its Wayland desktop session.">@Localizer["Ubuntu 26.04 states that machines using NVIDIA graphics are fully supported on its Wayland desktop session."]</span>
+        <span data-key="Single verified Dracut stack">@Localizer["Single verified Dracut stack"]</span>
+        <span data-key="AnduinOS core depends on Dracut and conflicts with initramfs-tools, Casper and finalrd. Generated images are verified and guarded so competing generators cannot silently coexist.">@Localizer["AnduinOS core depends on Dracut and conflicts with initramfs-tools, Casper and finalrd. Generated images are verified and guarded so competing generators cannot silently coexist."]</span>
+        <span data-key="Inherited initramfs-tools + Casper">@Localizer["Inherited initramfs-tools + Casper"]</span>
+        <span data-key="Zorin OS 18.1 uses the Ubuntu 24.04 initramfs-tools and Casper generation. This is its default inherited early-boot design rather than a single pure-Dracut product contract.">@Localizer["Zorin OS 18.1 uses the Ubuntu 24.04 initramfs-tools and Casper generation. This is its default inherited early-boot design rather than a single pure-Dracut product contract."]</span>
+        <span data-key="Inherited Ubuntu 24.04 stack">@Localizer["Inherited Ubuntu 24.04 stack"]</span>
+        <span data-key="Linux Mint 22.3 uses the Ubuntu 24.04-era early-boot and Live generation. The reviewed scope identified no Mint-specific single-generator Dracut contract enabled by default.">@Localizer["Linux Mint 22.3 uses the Ubuntu 24.04-era early-boot and Live generation. The reviewed scope identified no Mint-specific single-generator Dracut contract enabled by default."]</span>
+        <span data-key="Dracut default · compatibility retained">@Localizer["Dracut default · compatibility retained"]</span>
+        <span data-key="Ubuntu now uses Dracut by default, but initramfs-tools remains supported. Ubuntu 26.04 is therefore a transition-compatible implementation rather than an exclusive single-generator policy.">@Localizer["Ubuntu now uses Dracut by default, but initramfs-tools remains supported. Ubuntu 26.04 is therefore a transition-compatible implementation rather than an exclusive single-generator policy."]</span>
+        <span data-key="Dracut Live Layers">@Localizer["Dracut Live Layers"]</span>
+        <span data-key="The ISO uses dmsquash-live plus AnduinOS Live Layers for temporary Try mode, persistent USB overlays, media preservation, installer-source exposure and expanded-USB repair.">@Localizer["The ISO uses dmsquash-live plus AnduinOS Live Layers for temporary Try mode, persistent USB overlays, media preservation, installer-source exposure and expanded-USB repair."]</span>
+        <span data-key="Ubuntu-derived Live persistence">@Localizer["Ubuntu-derived Live persistence"]</span>
+        <span data-key="Zorin provides an Ubuntu-derived Live environment. The reviewed product scope identified no equivalent first-party Dracut Live Layers and installer-source contract enabled by default.">@Localizer["Zorin provides an Ubuntu-derived Live environment. The reviewed product scope identified no equivalent first-party Dracut Live Layers and installer-source contract enabled by default."]</span>
+        <span data-key="Mint Live session">@Localizer["Mint Live session"]</span>
+        <span data-key="Mint offers a Live desktop and persistence workflows. The reviewed product scope identified no equivalent first-party Dracut overlay protocol enabled by default.">@Localizer["Mint offers a Live desktop and persistence workflows. The reviewed product scope identified no equivalent first-party Dracut overlay protocol enabled by default."]</span>
+        <span data-key="Ubuntu Desktop Live media">@Localizer["Ubuntu Desktop Live media"]</span>
+        <span data-key="Ubuntu provides robust official Live desktop media, using its own installer and media lifecycle rather than the AnduinOS Live Layers contract.">@Localizer["Ubuntu provides robust official Live desktop media, using its own installer and media lifecycle rather than the AnduinOS Live Layers contract."]</span>
+        <span data-key="Native GTK4 · typed install plan">@Localizer["Native GTK4 · typed install plan"]</span>
+        <span data-key="An unprivileged GTK4 planner produces a canonical typed plan. A fixed privileged executor revalidates it and constructs commands itself; the UI cannot inject arbitrary shell commands or paths.">@Localizer["An unprivileged GTK4 planner produces a canonical typed plan. A fixed privileged executor revalidates it and constructs commands itself; the UI cannot inject arbitrary shell commands or paths."]</span>
+        <span data-key="Established installer path">@Localizer["Established installer path"]</span>
+        <span data-key="Zorin offers an Ubuntu-derived graphical installation experience. The reviewed product scope identified no equivalent typed-plan and fixed semantic executor contract in its default first-party workflow.">@Localizer["Zorin offers an Ubuntu-derived graphical installation experience. The reviewed product scope identified no equivalent typed-plan and fixed semantic executor contract in its default first-party workflow."]</span>
+        <span data-key="Mint graphical installer">@Localizer["Mint graphical installer"]</span>
+        <span data-key="Mint provides its established graphical installer. Its default first-party workflow uses a different design from the native GTK4 planner and fixed semantic executor contract used by AnduinOS.">@Localizer["Mint provides its established graphical installer. Its default first-party workflow uses a different design from the native GTK4 planner and fixed semantic executor contract used by AnduinOS."]</span>
+        <span data-key="Modern Flutter frontend">@Localizer["Modern Flutter frontend"]</span>
+        <span data-key="Ubuntu's current desktop installer has a modern frontend/backend architecture and broad platform engineering, but it is a different design from the native GTK4 AnduinOS plan contract.">@Localizer["Ubuntu's current desktop installer has a modern frontend/backend architecture and broad platform engineering, but it is a different design from the native GTK4 AnduinOS plan contract."]</span>
+        <span data-key="APKG + .aosproj projects">@Localizer["APKG + .aosproj projects"]</span>
+        <span data-key="AnduinOS package projects declare suites, architectures, dependencies, conflicts, assets, services, AppStream metadata, lifecycle scripts and build gates together. Layered metapackages compose the final product.">@Localizer["AnduinOS package projects declare suites, architectures, dependencies, conflicts, assets, services, AppStream metadata, lifecycle scripts and build gates together. Layered metapackages compose the final product."]</span>
+        <span data-key="Debian packages + Zorin composition">@Localizer["Debian packages + Zorin composition"]</span>
+        <span data-key="Zorin uses mature Debian and Ubuntu packaging together with its own repositories and product package selection. It follows a different source and composition model.">@Localizer["Zorin uses mature Debian and Ubuntu packaging together with its own repositories and product package selection. It follows a different source and composition model."]</span>
+        <span data-key="Debian packages + Mint tooling">@Localizer["Debian packages + Mint tooling"]</span>
+        <span data-key="Mint uses established Debian packaging, metapackages and Mint project tooling. It does not use the unified AnduinOS .aosproj format.">@Localizer["Mint uses established Debian packaging, metapackages and Mint project tooling. It does not use the unified AnduinOS .aosproj format."]</span>
+        <span data-key="Seeds, metapackages and archive QA">@Localizer["Seeds, metapackages and archive QA"]</span>
+        <span data-key="Ubuntu has seed, metapackage, archive and automated-testing infrastructure at much larger scale. Its implementation model differs from APKG and .aosproj projects.">@Localizer["Ubuntu has seed, metapackage, archive and automated-testing infrastructure at much larger scale. Its implementation model differs from APKG and .aosproj projects."]</span>
+        <span data-key="Automatic pre/post snapshots">@Localizer["Automatic pre/post snapshots"]</span>
+        <span data-key="APT hooks create structured recovery points before and after package changes. Snapshot metadata records package state and feeds the same retention and rollback protocol.">@Localizer["APT hooks create structured recovery points before and after package changes. Snapshot metadata records package state and feeds the same retention and rollback protocol."]</span>
+        <span data-key="The reviewed product scope identified no default first-party policy creating symmetric recovery points around each APT transaction.">@Localizer["The reviewed product scope identified no default first-party policy creating symmetric recovery points around each APT transaction."]</span>
+        <span data-key="Timeshift advised before upgrades">@Localizer["Timeshift advised before upgrades"]</span>
+        <span data-key="Mint explicitly recommends creating a Timeshift snapshot before a release upgrade. This is a manual upgrade safeguard rather than an automatic symmetric APT transaction contract.">@Localizer["Mint explicitly recommends creating a Timeshift snapshot before a release upgrade. This is a manual upgrade safeguard rather than an automatic symmetric APT transaction contract."]</span>
+        <span data-key="Ubuntu supports many backup and snapshot technologies, but its reviewed default desktop scope identified no automatic recovery points around every APT transaction.">@Localizer["Ubuntu supports many backup and snapshot technologies, but its reviewed default desktop scope identified no automatic recovery points around every APT transaction."]</span>
+        <span data-key="Personal Files snapshots">@Localizer["Personal Files snapshots"]</span>
+        <span data-key="AnduinOS separates system recovery from Personal Files history. The Snapshot Manager and Files integration can browse and restore earlier versions without conflating them with OS rollback.">@Localizer["AnduinOS separates system recovery from Personal Files history. The Snapshot Manager and Files integration can browse and restore earlier versions without conflating them with OS rollback."]</span>
+        <span data-key="The reviewed product scope identified no default first-party personal-file snapshot history integrated with Zorin's filesystem and file manager.">@Localizer["The reviewed product scope identified no default first-party personal-file snapshot history integrated with Zorin's filesystem and file manager."]</span>
+        <span data-key="Timeshift covers system state">@Localizer["Timeshift covers system state"]</span>
+        <span data-key="Timeshift intentionally protects system state and is not a personal backup tool. Personal files require a separate backup approach.">@Localizer["Timeshift intentionally protects system state and is not a personal backup tool. Personal files require a separate backup approach."]</span>
+        <span data-key="Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model.">@Localizer["Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model."]</span>
+        <span data-key="Btrfs: protected New OS baseline">@Localizer["Btrfs: protected New OS baseline"]</span>
+        <span data-key="On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager's guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure.">@Localizer["On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager's guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure."]</span>
+        <span data-key="Reinstall from USB for a clean state">@Localizer["Reinstall from USB for a clean state"]</span>
+        <span data-key="Zorin's official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset.">@Localizer["Zorin's official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset."]</span>
+        <span data-key="Timeshift restore, not factory reset">@Localizer["Timeshift restore, not factory reset"]</span>
+        <span data-key="Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state.">@Localizer["Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state."]</span>
+        <span data-key="Desktop reinstall from installation media">@Localizer["Desktop reinstall from installation media"]</span>
+        <span data-key="Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here.">@Localizer["Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here."]</span>
+        <span data-key="Capacity-aware policy + health UI">@Localizer["Capacity-aware policy + health UI"]</span>
+        <span data-key="The installer sizes dedicated disk Swap with hibernation capacity in mind. Swap Control verifies the resume target, active capacity, UUID or path resolution and unsafe swapfile offsets.">@Localizer["The installer sizes dedicated disk Swap with hibernation capacity in mind. Swap Control verifies the resume target, active capacity, UUID or path resolution and unsafe swapfile offsets."]</span>
+        <span data-key="Zorin supports Linux Swap and hibernation mechanisms. The reviewed product scope identified no default first-party sizing and health-verification dashboard of this scope.">@Localizer["Zorin supports Linux Swap and hibernation mechanisms. The reviewed product scope identified no default first-party sizing and health-verification dashboard of this scope."]</span>
+        <span data-key="Mint exposes standard Linux Swap and hibernation capabilities. The reviewed product scope identified no integrated first-party sizing and health-verification control plane enabled by default.">@Localizer["Mint exposes standard Linux Swap and hibernation capabilities. The reviewed product scope identified no integrated first-party sizing and health-verification control plane enabled by default."]</span>
+        <span data-key="Ubuntu supplies the underlying kernel and installer mechanisms. The reviewed default desktop scope identified no first-party sizing and health UI with the same scope enabled by default.">@Localizer["Ubuntu supplies the underlying kernel and installer mechanisms. The reviewed default desktop scope identified no first-party sizing and health UI with the same scope enabled by default."]</span>
+        <span data-key="APT system · Flatpak apps · no Snap">@Localizer["APT system · Flatpak apps · no Snap"]</span>
+        <span data-key="AnduinOS uses native APT packages for the system and Flatpak for sandboxed applications. snapd is conflicted, pinned out, unmounted and purged by product policy.">@Localizer["AnduinOS uses native APT packages for the system and Flatpak for sandboxed applications. snapd is conflicted, pinned out, unmounted and purged by product policy."]</span>
+        <span data-key="APT + Flatpak + Snap">@Localizer["APT + Flatpak + Snap"]</span>
+        <span data-key="Zorin deliberately supports a broad application estate: APT, Flatpak, Snap, AppImage, web apps and optional Windows application support.">@Localizer["Zorin deliberately supports a broad application estate: APT, Flatpak, Snap, AppImage, web apps and optional Windows application support."]</span>
+        <span data-key="APT + Flatpak · Snap blocked">@Localizer["APT + Flatpak · Snap blocked"]</span>
+        <span data-key="Mint provides first-class APT and Flatpak integration and blocks Snap by default, while still allowing users to deliberately re-enable it.">@Localizer["Mint provides first-class APT and Flatpak integration and blocks Snap by default, while still allowing users to deliberately re-enable it."]</span>
+        <span data-key="APT + Snap by default">@Localizer["APT + Snap by default"]</span>
+        <span data-key="Ubuntu uses APT for the base system and Snap as a default application-delivery route. Flatpak remains available but is not the default Ubuntu path.">@Localizer["Ubuntu uses APT for the base system and Snap as a default application-delivery route. Flatpak remains available but is not the default Ubuntu path."]</span>
+        <span data-key="Explicit zero-system-telemetry">@Localizer["Explicit zero-system-telemetry"]</span>
+        <span data-key="AnduinOS removes or conflicts with Ubuntu reporting components such as whoopsie and disables Canonical remote MOTD news. The policy is expressed in packages rather than only in a privacy statement.">@Localizer["AnduinOS removes or conflicts with Ubuntu reporting components such as whoopsie and disables Canonical remote MOTD news. The policy is expressed in packages rather than only in a privacy statement."]</span>
+        <span data-key="No equivalent package-level policy enabled by default">@Localizer["No equivalent package-level policy enabled by default"]</span>
+        <span data-key="The reviewed product scope identified no equivalent first-party distribution-wide package-conflict and remote-news contract. This is not a claim that Zorin profiles individual users.">@Localizer["The reviewed product scope identified no equivalent first-party distribution-wide package-conflict and remote-news contract. This is not a claim that Zorin profiles individual users."]</span>
+        <span data-key="Privacy-oriented defaults">@Localizer["Privacy-oriented defaults"]</span>
+        <span data-key="Linux Mint publishes privacy-oriented defaults. The reviewed scope identified no equivalent package-level conflict and replacement contract for every Ubuntu reporting component.">@Localizer["Linux Mint publishes privacy-oriented defaults. The reviewed scope identified no equivalent package-level conflict and replacement contract for every Ubuntu reporting component."]</span>
+        <span data-key="Diagnostics with release controls">@Localizer["Diagnostics with release controls"]</span>
+        <span data-key="Ubuntu includes diagnostics and online-service components with release-specific controls. This is a broader product policy rather than AnduinOS's explicit zero-component contract.">@Localizer["Ubuntu includes diagnostics and online-service components with release-specific controls. This is a broader product policy rather than AnduinOS's explicit zero-component contract."]</span>
+        <span data-key="QEMU / QMP / AT-SPI reports published">@Localizer["QEMU / QMP / AT-SPI reports published"]</span>
+        <span data-key="The published black-box framework boots real ISOs, drives the GTK installer through semantic accessibility data and QEMU input, reboots the installed system and records screenshots, serial logs and contract evidence.">@Localizer["The published black-box framework boots real ISOs, drives the GTK installer through semantic accessibility data and QEMU input, reboots the installed system and records screenshots, serial logs and contract evidence."]</span>
+        <span data-key="No comparable public suite identified as of 2026-08-28">@Localizer["No comparable public suite identified as of 2026-08-28"]</span>
+        <span data-key="Zorin performs release engineering and quality assurance. No comparable distribution-level public suite publishing installer and desktop acceptance evidence was identified in the stated official research scope as of 28 August 2026. This compares public evidence; it does not imply that Zorin does no QA.">@Localizer["Zorin performs release engineering and quality assurance. No comparable distribution-level public suite publishing installer and desktop acceptance evidence was identified in the stated official research scope as of 28 August 2026. This compares public evidence; it does not imply that Zorin does no QA."]</span>
+        <span data-key="Release QA">@Localizer["Release QA"]</span>
+        <span data-key="Mint performs release and ISO quality assurance, including fully QA-tested HWE images. The reviewed public scope identified no acceptance contract directly comparable to the published AnduinOS QEMU/QMP/AT-SPI framework.">@Localizer["Mint performs release and ISO quality assurance, including fully QA-tested HWE images. The reviewed public scope identified no acceptance contract directly comparable to the published AnduinOS QEMU/QMP/AT-SPI framework."]</span>
+        <span data-key="Extensive image and release QA">@Localizer["Extensive image and release QA"]</span>
+        <span data-key="Canonical operates extensive archive, image, hardware and release validation at upstream scale. Its implementation and evidence model differ from the AnduinOS acceptance framework.">@Localizer["Canonical operates extensive archive, image, hardware and release validation at upstream scale. Its implementation and evidence model differ from the AnduinOS acceptance framework."]</span>
+        <span data-key="AnduinOS package architecture">@Localizer["AnduinOS package architecture"]</span>
+        <span data-key="Zorin OS technical details">@Localizer["Zorin OS technical details"]</span>
+        <span data-key="Linux Mint 22.3 release">@Localizer["Linux Mint 22.3 release"]</span>
+        <span data-key="Linux 7.0 HWE images">@Localizer["Linux 7.0 HWE images"]</span>
+        <span data-key="Ubuntu 26.04 release notes">@Localizer["Ubuntu 26.04 release notes"]</span>
+        <span data-key="AnduinOS desktop packages">@Localizer["AnduinOS desktop packages"]</span>
+        <span data-key="Zorin NVIDIA and session guidance">@Localizer["Zorin NVIDIA and session guidance"]</span>
+        <span data-key="Linux Mint Wayland status">@Localizer["Linux Mint Wayland status"]</span>
+        <span data-key="Ubuntu Wayland session">@Localizer["Ubuntu Wayland session"]</span>
+        <span data-key="AnduinOS ISO source">@Localizer["AnduinOS ISO source"]</span>
+        <span data-key="Installer design">@Localizer["Installer design"]</span>
+        <span data-key="Ubuntu Desktop downloads">@Localizer["Ubuntu Desktop downloads"]</span>
+        <span data-key="Installer Secure Boot design">@Localizer["Installer Secure Boot design"]</span>
+        <span data-key="AnduinOS packages">@Localizer["AnduinOS packages"]</span>
+        <span data-key="Zorin Secure Boot guidance">@Localizer["Zorin Secure Boot guidance"]</span>
+        <span data-key="Ubuntu Secure Boot architecture">@Localizer["Ubuntu Secure Boot architecture"]</span>
+        <span data-key="Btrfs system design">@Localizer["Btrfs system design"]</span>
+        <span data-key="Linux Mint system snapshots">@Localizer["Linux Mint system snapshots"]</span>
+        <span data-key="Ubuntu Desktop installation">@Localizer["Ubuntu Desktop installation"]</span>
+        <span data-key="Disk Snapshots Manager">@Localizer["Disk Snapshots Manager"]</span>
+        <span data-key="Swap Control architecture">@Localizer["Swap Control architecture"]</span>
+        <span data-key="AnduinOS component catalog">@Localizer["AnduinOS component catalog"]</span>
+        <span data-key="Zorin OS 18.1 details">@Localizer["Zorin OS 18.1 details"]</span>
+        <span data-key="GNOME 50 release notes">@Localizer["GNOME 50 release notes"]</span>
+        <span data-key="GNOME 50 display improvements">@Localizer["GNOME 50 display improvements"]</span>
+        <span data-key="Ubuntu Desktop">@Localizer["Ubuntu Desktop"]</span>
+        <span data-key="Zorin NVIDIA guidance">@Localizer["Zorin NVIDIA guidance"]</span>
+        <span data-key="Ubuntu Dracut transition">@Localizer["Ubuntu Dracut transition"]</span>
+        <span data-key="AnduinOS ISO architecture">@Localizer["AnduinOS ISO architecture"]</span>
+        <span data-key="Native installer design">@Localizer["Native installer design"]</span>
+        <span data-key="Linux Mint 22.3 release announcement">@Localizer["Linux Mint 22.3 release announcement"]</span>
+        <span data-key="Recovery scope and safeguards">@Localizer["Recovery scope and safeguards"]</span>
+        <span data-key="Zorin OS clean reinstall guide">@Localizer["Zorin OS clean reinstall guide"]</span>
+        <span data-key="Timeshift design and restore behavior">@Localizer["Timeshift design and restore behavior"]</span>
+        <span data-key="Ubuntu Core recovery modes">@Localizer["Ubuntu Core recovery modes"]</span>
+        <span data-key="Zorin Windows App Support">@Localizer["Zorin Windows App Support"]</span>
+        <span data-key="AnduinOS ISO acceptance framework">@Localizer["AnduinOS ISO acceptance framework"]</span>
+        <span data-key="Linux Mint HWE QA">@Localizer["Linux Mint HWE QA"]</span>
+    </template>
+
     <div class="container position-relative comparison-section-content">
         <header class="comparison-intro">
             <div class="comparison-kicker">
@@ -29,14 +273,14 @@
             <div class="comparison-meta-row">
                 <span class="comparison-snapshot">
                     <i data-lucide="calendar-check" aria-hidden="true"></i>
-                    @Localizer["Comparison snapshot: 28 August 2026"]
+                    @Localizer["Comparison snapshot: 20 September 2026"]
                 </span>
             </div>
             <details class="comparison-methodology" data-comparison-methodology>
                 <summary>@Localizer["Method and evidence scope"]</summary>
                 <div class="comparison-methodology-body">
                     <p>
-                        @Localizer["Method: comparison of first-party defaults, published source repositories and official product documentation available on 28 August 2026."]
+                        @Localizer["Method: comparison of first-party defaults, published source repositories and official product documentation available on 20 September 2026."]
                     </p>
                     <p>
                         @Localizer["Official research scope: AnduinOS package and ISO repositories; Zorin OS technical details, published package lists and Help documentation; Linux Mint release posts and documentation; Ubuntu and GNOME release documentation."]
@@ -202,7 +446,7 @@
             <footer class="comparison-dialog-footer">
                 <span>
                     <i data-lucide="calendar-check" aria-hidden="true"></i>
-                    @Localizer["Verified for the 28 August 2026 snapshot"]
+                    @Localizer["Verified for the 20 September 2026 snapshot"]
                 </span>
                 <button type="button" data-comparison-dialog-close>@Localizer["Done"]</button>
             </footer>

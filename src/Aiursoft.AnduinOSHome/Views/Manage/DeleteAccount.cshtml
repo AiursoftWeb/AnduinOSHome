@@ -26,28 +26,11 @@ else
             <button type="submit" class="btn btn-danger" id="delete-btn" disabled>
                 <i class="align-middle me-1" data-lucide="trash-2"></i> 
                 <span id="btn-text">@Localizer["Yes, delete my account"]</span> 
-                (<span id="countdown">10</span>s)
+                <span id="countdown-wrapper">(<span id="countdown">10</span>@Localizer["s"])</span>
             </button>
             <a asp-action="Index" class="btn btn-outline-secondary ms-2">@Localizer["Cancel"]</a>
         </form>
     </div>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let timeLeft = 10;
-        const btn = document.getElementById("delete-btn");
-        const countdownSpan = document.getElementById("countdown");
-        
-        const timer = setInterval(function() {
-            timeLeft--;
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                btn.removeAttribute("disabled");
-                countdownSpan.parentElement.innerHTML = document.getElementById("btn-text").innerHTML;
-            } else {
-                countdownSpan.textContent = timeLeft;
-            }
-        }, 1000);
-    });
-</script>
+<script src="~/js/delete-account.js" asp-append-version="true" defer></script>
