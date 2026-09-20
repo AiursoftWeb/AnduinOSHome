@@ -1,3 +1,7 @@
+using Aiursoft.AnduinOSHome.Models.HomeViewModels;
+using Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison;
+using Microsoft.AspNetCore.Mvc.ViewComponents;
+
 namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 
 [TestClass]
@@ -87,9 +91,9 @@ public class HomeControllerTests : TestBase
         var catalogEnd = html.IndexOf("</template>", catalogStart, StringComparison.Ordinal);
         Assert.IsTrue(catalogStart >= 0 && catalogEnd > catalogStart);
         var catalog = System.Net.WebUtility.HtmlDecode(html[catalogStart..catalogEnd]);
-        var component = new Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison.DistributionComparison();
-        var componentResult = (Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult)component.Invoke();
-        var comparisonItems = ((Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison.DistributionComparisonViewModel)componentResult.ViewData!.Model!).Items;
+        var component = new DistributionComparison();
+        var componentResult = (ViewViewComponentResult)component.Invoke();
+        var comparisonItems = ((DistributionComparisonViewModel)componentResult.ViewData!.Model!).Items;
         foreach (var item in comparisonItems)
         {
             var keys = new[] { item.Title, item.Subtitle }
@@ -158,7 +162,7 @@ public class HomeControllerTests : TestBase
         Assert.Contains("data-key=\"checksum\"", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("2.0"));
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
-        Assert.AreEqual("2.0.3", Aiursoft.AnduinOSHome.Models.HomeViewModels.VersionData.All[0].LatestPatch);
+        Assert.AreEqual("2.0.3", VersionData.All[0].LatestPatch);
         Assert.IsTrue(html.Contains("1.0"));
     }
 
