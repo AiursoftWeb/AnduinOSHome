@@ -171,6 +171,9 @@
   <data name="Run this single command in your terminal. The upgrade is fully automated — no manual intervention needed." xml:space="preserve">
     <value>喺終端機執行呢個單一指令。升級過程完全自動化，毋需人手操作。</value>
   </data>
+  <data name="Running do_anduinos_upgrade in terminal" xml:space="preserve">
+    <value>在終端機中執行 do_anduinos_upgrade</value>
+  </data>
   <data name="Safely backs up your current APT sources and temporarily removes PPAs to ensure a clean upgrade." xml:space="preserve">
     <value>安全備份當前的 APT 來源，並暫時移除 PPA 以確保升級過程乾淨順利。</value>
   </data>
@@ -185,6 +188,9 @@
   </data>
   <data name="System dist-upgrade" xml:space="preserve">
     <value>系統發行版升級</value>
+  </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>終端機</value>
   </data>
   <data name="The desktop will restart during upgrade. Run inside tmux so the terminal survives GUI restarts." xml:space="preserve">
     <value>升級期間桌面會重新啟動。請在 tmux 中執行，以便終端機能於圖形介面重新啟動後保持運作。</value>
