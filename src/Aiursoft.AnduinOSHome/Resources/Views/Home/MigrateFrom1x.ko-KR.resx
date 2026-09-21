@@ -171,6 +171,9 @@
   <data name="Run this single command in your terminal. The upgrade is fully automated — no manual intervention needed." xml:space="preserve">
     <value>터미널에서 이 하나의 명령어만 실행하세요. 업그레이드는 완전히 자동화되어 있으며, 별도의 수작업은 필요하지 않습니다.</value>
   </data>
+  <data name="Running do_anduinos_upgrade in terminal" xml:space="preserve">
+    <value>터미널에서 do_anduinos_upgrade 실행 중</value>
+  </data>
   <data name="Safely backs up your current APT sources and temporarily removes PPAs to ensure a clean upgrade." xml:space="preserve">
     <value>현재 APT 소스를 안전하게 백업하고 PPA를 임시로 제거하여 깨끗한 업그레이드를 보장합니다.</value>
   </data>
@@ -185,6 +188,9 @@
   </data>
   <data name="System dist-upgrade" xml:space="preserve">
     <value>시스템 dist-upgrade</value>
+  </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>터미널</value>
   </data>
   <data name="The desktop will restart during upgrade. Run inside tmux so the terminal survives GUI restarts." xml:space="preserve">
     <value>업그레이드 중 데스크톱이 재부팅됩니다. GUI 재부팅 시에도 터미널이 유지되도록 tmux 내에서 실행하세요.</value>
