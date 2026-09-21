@@ -33,6 +33,12 @@
   <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
     <value>&quot;...我们不能忘记它只是一个 1.8 GB 的镜像。它振奋了我的精神...我真的认为它值得安装，时间会证明一切。&quot;</value>
   </data>
+  <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(骁龙 / ARM 单板计算机)</value>
+  </data>
   <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
     <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 是 Ubuntu 的软件包基础 + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; 应用体验</value>
   </data>
@@ -56,6 +62,12 @@
   </data>
   <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
     <value>AI 智能体可原生通过 SSH 登录、安装软件包、编辑配置文件及进行调试。无需 API 封装，无需沙盒文件系统，就是纯正的 Linux。</value>
+  </data>
+  <data name="AI Fix" xml:space="preserve">
+    <value>AI 修复</value>
+  </data>
+  <data name="AI Native Environment" xml:space="preserve">
+    <value>AI原生环境</value>
   </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>AI 工具环境</value>
@@ -132,6 +144,9 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>&quot;AnduinOS 是您的最终 Linux 发行版！它为开发者打造，轻量却功能强大。凭借精心构建的主题和快捷方式，Windows 用户可以平滑过渡到 AnduinOS，无需再烦恼系统设置。&quot;</value>
   </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>AnduinOS 主截图</value>
+  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>安装并配置好所有应用程序和工具，AnduinOS 耗时不到半小时。如果您正在寻找一款简洁、无压力的 Linux 桌面体验，这里正是您要找的。</value>
   </data>
@@ -171,17 +186,20 @@
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>基于 Apkg 软件包管理器构建。</value>
   </data>
-  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
-    <value>将我们超小巧的 2.4GB ISO 镜像写入任意 USB 驱动器，随身携带完整的现代化 Linux 工作站。仅需 10 秒即可启动完全硬件加速的桌面环境。</value>
-  </data>
   <data name="Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>将我们超紧凑的 2.35 GB ISO 镜像刻录到任意 USB 驱动器，随身携带完整的现代 Linux 工作站。仅用 10 秒即可启动完全硬件加速的桌面环境。</value>
+  </data>
+  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
+    <value>将我们超小巧的 2.4GB ISO 镜像写入任意 USB 驱动器，随身携带完整的现代化 Linux 工作站。仅需 10 秒即可启动完全硬件加速的桌面环境。</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>将ISO镜像烧录到U盘</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>下载即表示您同意我们的</value>
+  </data>
+  <data name="C++ daemon + Bash orchestration. 3 seconds flat." xml:space="preserve">
+    <value>C++ 守护进程 + Bash 编排。仅需 3 秒。</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
@@ -224,6 +242,9 @@
   </data>
   <data name="Containerized" xml:space="preserve">
     <value>容器化</value>
+  </data>
+  <data name="Containerized. Portable. Done." xml:space="preserve">
+    <value>容器化。可移植。完成。</value>
   </data>
   <data name="Continue to Vultr" xml:space="preserve">
     <value>继续前往 Vultr</value>
@@ -293,6 +314,9 @@
   </data>
   <data name="Editing" xml:space="preserve">
     <value>编辑创作</value>
+  </data>
+  <data name="Editing blender 3D model on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上编辑 Blender 3D 模型</value>
   </data>
   <data name="End of Support" xml:space="preserve">
     <value>支持终止日期</value>
@@ -378,6 +402,9 @@
   <data name="Historical versions" xml:space="preserve">
     <value>历史版本</value>
   </data>
+  <data name="Hosting a server on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上托管服务器</value>
+  </data>
   <data name="How can I contact the AnduinOS team?" xml:space="preserve">
     <value>如何联系 AnduinOS 团队？</value>
   </data>
@@ -386,6 +413,9 @@
   </data>
   <data name="Ideal Toolset" xml:space="preserve">
     <value>理想工具集</value>
+  </data>
+  <data name="Image preview" xml:space="preserve">
+    <value>图片预览</value>
   </data>
   <data name="Image Size" xml:space="preserve">
     <value>映像大小</value>
@@ -468,6 +498,9 @@
   <data name="Live Boot" xml:space="preserve">
     <value>即时启动</value>
   </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>本地 LLM，一条命令即可安装。</value>
+  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>正在寻找旧版本？</value>
   </data>
@@ -489,6 +522,9 @@
   <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
     <value>现代化基础设施。双架构支持。生产就绪。</value>
   </data>
+  <data name="Modern, responsive, GPU-accelerated. No legacy GTK3 cruft." xml:space="preserve">
+    <value>现代、响应迅速、GPU 加速。摒弃过时的 GTK3 冗余代码。</value>
+  </data>
   <data name="Most of the software you rely on is already here on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. With instant access to the massive libraries of Flatpak and Ubuntu, your perfect workflow is just a click away." xml:space="preserve">
     <value>您所依赖的大多数软件都已预置在 AnduinOS 中，更有数千款强大、免费的开源替代方案可供选择。通过即时访问 Flatpak 和 Ubuntu 的海量软件库，您理想的工作流程仅需点击即可实现。</value>
   </data>
@@ -500,6 +536,9 @@
   </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>原生 Shell 体验</value>
+  </data>
+  <data name="Native virtualization. Containers without a VM inside a VM." xml:space="preserve">
+    <value>原生虚拟化。容器无需在虚拟机中嵌套虚拟机。</value>
   </data>
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>原生预装，系统级集成，开箱即用。</value>
@@ -564,6 +603,12 @@
   <data name="Processor" xml:space="preserve">
     <value>处理器</value>
   </data>
+  <data name="Pure Wayland. No X11 fallback. HDR out of the box." xml:space="preserve">
+    <value>纯 Wayland 架构，无 X11 回退机制，开箱即支持 HDR。</value>
+  </data>
+  <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
+    <value>Python → Rust → PNG。一条管道。零 RPC。</value>
+  </data>
   <data name="quad-core" xml:space="preserve">
     <value>四核</value>
   </data>
@@ -575,6 +620,9 @@
   </data>
   <data name="Read more" xml:space="preserve">
     <value>了解更多</value>
+  </data>
+  <data name="Reading package lists... Done. 0 upgraded, 142 newly installed." xml:space="preserve">
+    <value>正在读取软件包列表... 完成。0 个已升级，142 个新安装。</value>
   </data>
   <data name="Ready to use" xml:space="preserve">
     <value>开箱即用</value>
@@ -630,6 +678,9 @@
   <data name="Sign up today!" xml:space="preserve">
     <value>立即注册！</value>
   </data>
+  <data name="Signed kernel &amp; drivers. No MOK enrollment nightmares." xml:space="preserve">
+    <value>内核与驱动程序均已签名，无需经历 MOK 注册的噩梦。</value>
+  </data>
   <data name="Smaller image, friendly interface, unbeatable performance, safe and secure." xml:space="preserve">
     <value>更小的 ISO，友好的界面，无与伦比的性能，安全可靠。</value>
   </data>
@@ -638,6 +689,9 @@
   </data>
   <data name="Start exploring on Flathub now" xml:space="preserve">
     <value>立即开始在 Flathub 上探索</value>
+  </data>
+  <data name="Steam Playing Games on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上通过 Steam 玩游戏</value>
   </data>
   <data name="Stoat channel" xml:space="preserve">
     <value>Stoat 频道</value>
@@ -672,11 +726,11 @@
   <data name="The ISO is just 2.0GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>ISO 文件仅有 2.0GB 大小。与 Ubuntu 类似，安装简单，无需额外配置或复杂操作即可满足日常需求。</value>
   </data>
-  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
-    <value>ISO 镜像仅 2.4GB。与 Ubuntu 类似，它安装简便，无需额外配置或复杂操作即可满足您的日常需求。</value>
-  </data>
   <data name="The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>ISO 镜像仅 2.35 GB。与 Ubuntu 类似，它安装简便，无需额外配置或复杂操作即可满足您的日常需求。</value>
+  </data>
+  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
+    <value>ISO 镜像仅 2.4GB。与 Ubuntu 类似，它安装简便，无需额外配置或复杂操作即可满足您的日常需求。</value>
   </data>
   <data name="The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features." xml:space="preserve">
     <value>LTS 版本推荐给需要稳定长期支持的用户，而标准版推荐给拥有较新设备并希望探索最新功能的用户。</value>
@@ -723,6 +777,9 @@
   <data name="UI Toolkit" xml:space="preserve">
     <value>UI 工具包</value>
   </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>未签名</value>
+  </data>
   <data name="Upgrading from 1.x?" xml:space="preserve">
     <value>从 1.x 升级？</value>
   </data>
@@ -746,6 +803,9 @@
   </data>
   <data name="Voxihost" xml:space="preserve">
     <value>Voxihost</value>
+  </data>
+  <data name="Watching Youtube Videos on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上观看 YouTube 视频</value>
   </data>
   <data name="Wayland Ready" xml:space="preserve">
     <value>支持 Wayland</value>
@@ -776,6 +836,15 @@
   </data>
   <data name="Work" xml:space="preserve">
     <value>办公</value>
+  </data>
+  <data name="Working on mail and chat on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上处理邮件和聊天</value>
+  </data>
+  <data name="Writing Code on AnduinOS" xml:space="preserve">
+    <value>在 AnduinOS 上编写代码</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64。两个 ISO 镜像。一种体验。</value>
   </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>是的，AnduinOS 是免费自由使用的。它是一个遵循 GPL-v3 许可证的开源项目。您可以查看源代码，修改它，并重新分发它。它是免费的，并将永远免费。</value>
