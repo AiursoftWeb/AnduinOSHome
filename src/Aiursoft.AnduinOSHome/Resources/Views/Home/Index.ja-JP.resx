@@ -33,6 +33,12 @@
   <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
     <value>...1.8GBのイメージであることを忘れてはいけません。私の気持ちを高揚させました...本当にインストールする価値があると思います。きっと時間が証明してくれるでしょう。</value>
   </data>
+  <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / ARM SBC)</value>
+  </data>
   <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
     <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;はUbuntuのパッケージベース + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;アプリエクスペリエンス</value>
   </data>
@@ -56,6 +62,12 @@
   </data>
   <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
     <value>AI エージェントは SSH 経由で接続し、パッケージのインストール、設定ファイルの編集、デバッグなどをネイティブに実行できます。API ラッパーなし。サンドボックス化されたファイルシステムなし。ただの、本物の Linux です。</value>
+  </data>
+  <data name="AI Fix" xml:space="preserve">
+    <value>AI修正</value>
+  </data>
+  <data name="AI Native Environment" xml:space="preserve">
+    <value>AIネイティブ環境</value>
   </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>AIツール環境</value>
@@ -135,6 +147,9 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOSはあなたの最終的なLinuxディストリビューションです！開発者向けに構築され、軽量でありながら強力です。よく構築されたテーマとショートカットにより、WindowsユーザーはスムーズにAnduinOSに移行でき、システムの設定について忘れることができます。</value>
   </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>AnduinOS メインスクリーンショット</value>
+  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>AnduinOSのインストールと、すべてのアプリケーションやツールのセットアップには30分もかかりませんでした。シンプルでストレスのないLinuxデスクトップ体験をお探しの方は、ここが正解です。</value>
   </data>
@@ -177,17 +192,20 @@
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Apkgパッケージマネージャーに基づいて構築されています。</value>
   </data>
-  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
-    <value>超薄型2.4GBのISOイメージを任意のUSBメモリに書き込み、キーホルダーに完全なモダンなLinuxワークステーションを持ち歩けます。わずか10秒でハードウェア完全アクセラレーション対応のデスクトップへ起動。</value>
-  </data>
   <data name="Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>超コンパクトな2.35 GBのISOイメージをUSBドライブに書き込み、キーチェーンに繋げるだけで最新のLinuxワークステーションを携帯できます。わずか10秒で、ハードウェアアクセラレーション完全対応のデスクトップ環境を起動できます。</value>
+  </data>
+  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
+    <value>超薄型2.4GBのISOイメージを任意のUSBメモリに書き込み、キーホルダーに完全なモダンなLinuxワークステーションを持ち歩けます。わずか10秒でハードウェア完全アクセラレーション対応のデスクトップへ起動。</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>ISOをUSBドライブに書き込む</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>ダウンロードすることで、私たちの</value>
+  </data>
+  <data name="C++ daemon + Bash orchestration. 3 seconds flat." xml:space="preserve">
+    <value>C++デーモン + Bashによるオーケストレーション。わずか3秒。</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>キャンセル</value>
@@ -230,6 +248,9 @@
   </data>
   <data name="Containerized" xml:space="preserve">
     <value>コンテナ化</value>
+  </data>
+  <data name="Containerized. Portable. Done." xml:space="preserve">
+    <value>コンテナ化。ポータブル。完了。</value>
   </data>
   <data name="Continue to Vultr" xml:space="preserve">
     <value>Vultr へ続行</value>
@@ -299,6 +320,9 @@
   </data>
   <data name="Editing" xml:space="preserve">
     <value>編集</value>
+  </data>
+  <data name="Editing blender 3D model on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでBlenderの3Dモデルを編集</value>
   </data>
   <data name="End of Support" xml:space="preserve">
     <value>サポート終了日</value>
@@ -384,6 +408,9 @@
   <data name="Historical versions" xml:space="preserve">
     <value>過去のバージョン</value>
   </data>
+  <data name="Hosting a server on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでサーバーをホスティング</value>
+  </data>
   <data name="How can I contact the AnduinOS team?" xml:space="preserve">
     <value>AnduinOSチームにどのように連絡できますか？</value>
   </data>
@@ -392,6 +419,9 @@
   </data>
   <data name="Ideal Toolset" xml:space="preserve">
     <value>理想的なツールセット</value>
+  </data>
+  <data name="Image preview" xml:space="preserve">
+    <value>画像プレビュー</value>
   </data>
   <data name="Image Size" xml:space="preserve">
     <value>イメージサイズ</value>
@@ -471,6 +501,9 @@
   <data name="Live Boot" xml:space="preserve">
     <value>ライブブート</value>
   </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>ローカルLLM、ワンコマンドで利用可能。</value>
+  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>旧バージョンをお探しですか？</value>
   </data>
@@ -492,6 +525,9 @@
   <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
     <value>モダンなインフラストラクチャ。デュアルアーキテクチャ。本番環境対応。</value>
   </data>
+  <data name="Modern, responsive, GPU-accelerated. No legacy GTK3 cruft." xml:space="preserve">
+    <value>モダンでレスポンシブ、GPUアクセラレーション対応。レガシーなGTK3の不要な要素は一切なし。</value>
+  </data>
   <data name="Most of the software you rely on is already here on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. With instant access to the massive libraries of Flatpak and Ubuntu, your perfect workflow is just a click away." xml:space="preserve">
     <value>あなたが頼っているソフトウェアのほとんどは、すでにAnduinOS上で利用可能です。さらに、強力で無料、かつオープンソースの代替アプリケーションが何千も用意されています。FlatpakとUbuntuの巨大なライブラリに即時アクセスできるため、あなたに最適なワークフローはクリック一つで実現します。</value>
   </data>
@@ -503,6 +539,9 @@
   </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>ネイティブシェル体験</value>
+  </data>
+  <data name="Native virtualization. Containers without a VM inside a VM." xml:space="preserve">
+    <value>ネイティブ仮想化。VMの中にVMを配置せずにコンテナを実行。</value>
   </data>
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>ネイティブにプリインストールされ、システムレベルの統合が行われており、即時使用可能。</value>
@@ -567,6 +606,12 @@
   <data name="Processor" xml:space="preserve">
     <value>プロセッサ</value>
   </data>
+  <data name="Pure Wayland. No X11 fallback. HDR out of the box." xml:space="preserve">
+    <value>純粋なWayland。X11フォールバックなし。HDRは標準対応。</value>
+  </data>
+  <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
+    <value>Python → Rust → PNG。パイプ1本。RPCゼロ。</value>
+  </data>
   <data name="quad-core" xml:space="preserve">
     <value>クアッドコア</value>
   </data>
@@ -578,6 +623,9 @@
   </data>
   <data name="Read more" xml:space="preserve">
     <value>詳しく読む</value>
+  </data>
+  <data name="Reading package lists... Done. 0 upgraded, 142 newly installed." xml:space="preserve">
+    <value>パッケージリストを読み込み中... 完了。アップグレード: 0、新規インストール: 142。</value>
   </data>
   <data name="Ready to use" xml:space="preserve">
     <value>すぐに使える</value>
@@ -633,6 +681,9 @@
   <data name="Sign up today!" xml:space="preserve">
     <value>今すぐ登録！</value>
   </data>
+  <data name="Signed kernel &amp; drivers. No MOK enrollment nightmares." xml:space="preserve">
+    <value>署名済みカーネルおよびドライバー。MOK登録の煩雑さなし。</value>
+  </data>
   <data name="Smaller image, friendly interface, unbeatable performance, safe and secure." xml:space="preserve">
     <value>小さなイメージ、フレンドリーなインターフェース、比類のないパフォーマンス、安全でセキュア。</value>
   </data>
@@ -641,6 +692,9 @@
   </data>
   <data name="Start exploring on Flathub now" xml:space="preserve">
     <value>Flathubで今すぐ探検を始めましょう</value>
+  </data>
+  <data name="Steam Playing Games on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでのSteamでのゲームプレイ</value>
   </data>
   <data name="Stoat channel" xml:space="preserve">
     <value>Stoatチャンネル</value>
@@ -675,11 +729,11 @@
   <data name="The ISO is just 2.0GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>ISOファイルはわずか2.0GBのサイズです。Ubuntuと同様に、インストールが簡単で、追加の設定や複雑な操作なしに日常のニーズを満たすことができます。</value>
   </data>
-  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
-    <value>ISO イメージのサイズはわずか 2.4GB です。Ubuntuと同様にインストールが簡単で、追加の設定や複雑な操作を行わなくても日常のニーズを満たすことができます。</value>
-  </data>
   <data name="The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>ISO ファイルのサイズはわずか 2.35 GB です。Ubuntu と同様にインストールが簡単で、追加の設定や複雑な操作を行わなくても、日々のニーズを満たすことができます。</value>
+  </data>
+  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
+    <value>ISO イメージのサイズはわずか 2.4GB です。Ubuntuと同様にインストールが簡単で、追加の設定や複雑な操作を行わなくても日常のニーズを満たすことができます。</value>
   </data>
   <data name="The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features." xml:space="preserve">
     <value>LTSバージョンは安定した長期サポートが必要なユーザーにお勧めで、スタンダードバージョンは新しいデバイスを持ち、最新機能を探求したいユーザーにお勧めです。</value>
@@ -726,6 +780,9 @@
   <data name="UI Toolkit" xml:space="preserve">
     <value>UIツールキット</value>
   </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>未署名</value>
+  </data>
   <data name="Upgrading from 1.x?" xml:space="preserve">
     <value>1.x からのアップグレード</value>
   </data>
@@ -749,6 +806,9 @@
   </data>
   <data name="Voxihost" xml:space="preserve">
     <value>Voxihost</value>
+  </data>
+  <data name="Watching Youtube Videos on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでYouTubeの動画を視聴</value>
   </data>
   <data name="Wayland Ready" xml:space="preserve">
     <value>Wayland対応</value>
@@ -779,6 +839,15 @@
   </data>
   <data name="Work" xml:space="preserve">
     <value>作業</value>
+  </data>
+  <data name="Working on mail and chat on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでのメールとチャットの作業</value>
+  </data>
+  <data name="Writing Code on AnduinOS" xml:space="preserve">
+    <value>AnduinOSでのコーディング</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64。2つのISO。1つの体験。</value>
   </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>はい、AnduinOSは無料で使用できます。GPL-v3ライセンスに従うオープンソースプロジェクトです。ソースコードを閲覧、修正、再配布できます。無料で、これからも無料です。</value>
