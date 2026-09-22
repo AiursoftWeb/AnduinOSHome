@@ -33,6 +33,12 @@
   <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
     <value>...Chúng ta không được quên rằng đây là một hình ảnh 1.8 GB. Nó đã nâng cao tinh thần của tôi... Tôi thực sự nghĩ rằng nó đáng để cài đặt, chắc chắn thời gian sẽ trả lời.</value>
   </data>
+  <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / SBC ARM)</value>
+  </data>
   <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
     <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; là nền tảng gói Ubuntu + trải nghiệm ứng dụng &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;</value>
   </data>
@@ -56,6 +62,12 @@
   </data>
   <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
     <value>Các tác nhân AI có thể kết nối SSH, cài đặt gói, chỉnh sửa cấu hình và gỡ lỗi — ngay trên hệ thống gốc. Không cần lớp bọc API. Không có hệ thống tệp bị cô lập. Chỉ là Linux thật sự.</value>
+  </data>
+  <data name="AI Fix" xml:space="preserve">
+    <value>AI Fix</value>
+  </data>
+  <data name="AI Native Environment" xml:space="preserve">
+    <value>Môi trường AI Native</value>
   </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>Môi trường Công cụ AI</value>
@@ -135,6 +147,9 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOS là bản phân phối Linux cuối cùng của bạn! Nó được xây dựng cho các nhà phát triển và nhẹ nhưng vẫn mạnh mẽ. Với các chủ đề và phím tắt được xây dựng tốt, người dùng Windows có thể chuyển đổi mượt mà sang AnduinOS và quên đi việc thiết lập hệ thống.</value>
   </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>Ảnh chụp màn hình chính của AnduinOS</value>
+  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>AnduinOS chỉ mất chưa đầy nửa giờ để cài đặt và thiết lập với tất cả các ứng dụng và công cụ của tôi. Nếu bạn đang tìm kiếm một trải nghiệm bàn làm việc Linux sạch sẽ và không gây căng thẳng, bạn đã đến đúng nơi.</value>
   </data>
@@ -174,17 +189,20 @@
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Được xây dựng trên trình quản lý gói Apkg.</value>
   </data>
-  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
-    <value>Đặt tệp ISO 2,4GB siêu gọn của chúng tôi vào bất kỳ ổ USB nào và mang theo một trạm làm việc Linux hiện đại, hoàn chỉnh trên móc khóa của bạn. Khởi động vào giao diện máy tính để bàn được tăng tốc phần cứng đầy đủ chỉ trong 10 giây.</value>
-  </data>
   <data name="Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Đốt file ISO siêu nhỏ gọn 2,35 GB của chúng tôi vào bất kỳ ổ USB nào và mang theo một trạm làm việc Linux hiện đại hoàn chỉnh trên chìa khóa của bạn. Khởi động vào một môi trường desktop được tăng tốc phần cứng hoàn toàn chỉ trong 10 giây.</value>
+  </data>
+  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
+    <value>Đặt tệp ISO 2,4GB siêu gọn của chúng tôi vào bất kỳ ổ USB nào và mang theo một trạm làm việc Linux hiện đại, hoàn chỉnh trên móc khóa của bạn. Khởi động vào giao diện máy tính để bàn được tăng tốc phần cứng đầy đủ chỉ trong 10 giây.</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>ghi file ISO vào ổ USB</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>Bằng cách tải xuống, bạn đồng ý với</value>
+  </data>
+  <data name="C++ daemon + Bash orchestration. 3 seconds flat." xml:space="preserve">
+    <value>Daemon C++ + điều phối bằng Bash. Chỉ 3 giây.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
@@ -227,6 +245,9 @@
   </data>
   <data name="Containerized" xml:space="preserve">
     <value>Được container hóa</value>
+  </data>
+  <data name="Containerized. Portable. Done." xml:space="preserve">
+    <value>Chạy trong container. Dễ di chuyển. Xong.</value>
   </data>
   <data name="Continue to Vultr" xml:space="preserve">
     <value>Tiếp tục đến Vultr</value>
@@ -296,6 +317,9 @@
   </data>
   <data name="Editing" xml:space="preserve">
     <value>Chỉnh sửa</value>
+  </data>
+  <data name="Editing blender 3D model on AnduinOS" xml:space="preserve">
+    <value>Chỉnh sửa mô hình 3D bằng Blender trên AnduinOS</value>
   </data>
   <data name="End of Support" xml:space="preserve">
     <value>Kết thúc hỗ trợ</value>
@@ -381,6 +405,9 @@
   <data name="Historical versions" xml:space="preserve">
     <value>Phiên bản cũ</value>
   </data>
+  <data name="Hosting a server on AnduinOS" xml:space="preserve">
+    <value>Chạy máy chủ trên AnduinOS</value>
+  </data>
   <data name="How can I contact the AnduinOS team?" xml:space="preserve">
     <value>Làm thế nào tôi có thể liên hệ với đội ngũ AnduinOS?</value>
   </data>
@@ -389,6 +416,9 @@
   </data>
   <data name="Ideal Toolset" xml:space="preserve">
     <value>Bộ công cụ lý tưởng</value>
+  </data>
+  <data name="Image preview" xml:space="preserve">
+    <value>Xem trước hình ảnh</value>
   </data>
   <data name="Image Size" xml:space="preserve">
     <value>Kích thước hình ảnh</value>
@@ -468,6 +498,9 @@
   <data name="Live Boot" xml:space="preserve">
     <value>Khởi động trực tiếp</value>
   </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>LLM cục bộ, chỉ cách một lệnh.</value>
+  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>Tìm các phiên bản cũ?</value>
   </data>
@@ -489,6 +522,9 @@
   <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
     <value>Cơ sở hạ tầng hiện đại. Kiến trúc kép. Sẵn sàng cho môi trường sản xuất.</value>
   </data>
+  <data name="Modern, responsive, GPU-accelerated. No legacy GTK3 cruft." xml:space="preserve">
+    <value>Hiện đại, phản hồi nhanh, tăng tốc bằng GPU. Không có phần thừa kế cũ GTK3.</value>
+  </data>
   <data name="Most of the software you rely on is already here on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. With instant access to the massive libraries of Flatpak and Ubuntu, your perfect workflow is just a click away." xml:space="preserve">
     <value>Phần lớn phần mềm bạn đang sử dụng đã có mặt trên AnduinOS, cùng với hàng ngàn lựa chọn thay thế mạnh mẽ, miễn phí và mã nguồn mở. Với quyền truy cập tức thì vào kho ứng dụng khổng lồ của Flatpak và Ubuntu, quy trình làm việc hoàn hảo của bạn chỉ cách một cú nhấp chuột.</value>
   </data>
@@ -500,6 +536,9 @@
   </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>Trải nghiệm Shell gốc</value>
+  </data>
+  <data name="Native virtualization. Containers without a VM inside a VM." xml:space="preserve">
+    <value>Ảo hóa bản địa. Container mà không cần máy ảo bên trong máy ảo.</value>
   </data>
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>Cài đặt sẵn natively, tích hợp ở cấp hệ thống, sẵn sàng sử dụng ngay lập tức.</value>
@@ -564,6 +603,12 @@
   <data name="Processor" xml:space="preserve">
     <value>Bộ xử lý</value>
   </data>
+  <data name="Pure Wayland. No X11 fallback. HDR out of the box." xml:space="preserve">
+    <value>Wayland thuần túy. Không có chế độ dự phòng X11. HDR sẵn có ngay từ đầu.</value>
+  </data>
+  <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
+    <value>Python → Rust → PNG. Một đường ống. Không RPC.</value>
+  </data>
   <data name="quad-core" xml:space="preserve">
     <value>bốn nhân</value>
   </data>
@@ -575,6 +620,9 @@
   </data>
   <data name="Read more" xml:space="preserve">
     <value>Đọc thêm</value>
+  </data>
+  <data name="Reading package lists... Done. 0 upgraded, 142 newly installed." xml:space="preserve">
+    <value>Đang đọc danh sách gói... Hoàn tất. 0 nâng cấp, 142 mới cài đặt.</value>
   </data>
   <data name="Ready to use" xml:space="preserve">
     <value>Sẵn sàng sử dụng</value>
@@ -630,6 +678,9 @@
   <data name="Sign up today!" xml:space="preserve">
     <value>Đăng ký ngay hôm nay!</value>
   </data>
+  <data name="Signed kernel &amp; drivers. No MOK enrollment nightmares." xml:space="preserve">
+    <value>Lõi và trình điều khiển đã ký. Không còn rắc rối với đăng ký MOK.</value>
+  </data>
   <data name="Smaller image, friendly interface, unbeatable performance, safe and secure." xml:space="preserve">
     <value>Hình ảnh nhỏ gọn, giao diện thân thiện, hiệu suất tuyệt vời, an toàn và bảo mật.</value>
   </data>
@@ -638,6 +689,9 @@
   </data>
   <data name="Start exploring on Flathub now" xml:space="preserve">
     <value>Bắt đầu khám phá trên Flathub ngay</value>
+  </data>
+  <data name="Steam Playing Games on AnduinOS" xml:space="preserve">
+    <value>Chơi game trên Steam với AnduinOS</value>
   </data>
   <data name="Stoat channel" xml:space="preserve">
     <value>kênh Stoat</value>
@@ -672,11 +726,11 @@
   <data name="The ISO is just 2.0GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>File ISO chỉ có kích thước 2.0GB. Tương tự như Ubuntu, nó đơn giản để cài đặt và có thể đáp ứng nhu cầu hằng ngày của bạn mà không cần cấu hình thêm hoặc các thao tác phức tạp.</value>
   </data>
-  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
-    <value>Tập tin ISO chỉ nặng 2,4GB. Tương tự như Ubuntu, việc cài đặt rất đơn giản và đáp ứng được nhu cầu hàng ngày của bạn mà không cần cấu hình bổ sung hay các thao tác phức tạp.</value>
-  </data>
   <data name="The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>Tập tin ISO chỉ nặng 2,35 GB. Giống như Ubuntu, hệ điều hành này dễ dàng cài đặt và đáp ứng được nhu cầu sử dụng hàng ngày của bạn mà không cần cấu hình bổ sung hay thực hiện các thao tác phức tạp.</value>
+  </data>
+  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
+    <value>Tập tin ISO chỉ nặng 2,4GB. Tương tự như Ubuntu, việc cài đặt rất đơn giản và đáp ứng được nhu cầu hàng ngày của bạn mà không cần cấu hình bổ sung hay các thao tác phức tạp.</value>
   </data>
   <data name="The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features." xml:space="preserve">
     <value>Phiên bản LTS được khuyến nghị cho người dùng cần hỗ trợ dài hạn ổn định, trong khi phiên bản Standard được khuyến nghị cho người dùng có thiết bị mới hơn và muốn khám phá các tính năng mới nhất.</value>
@@ -723,6 +777,9 @@
   <data name="UI Toolkit" xml:space="preserve">
     <value>Công cụ giao diện người dùng</value>
   </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>Không ký</value>
+  </data>
   <data name="Upgrading from 1.x?" xml:space="preserve">
     <value>Nâng cấp từ 1.x?</value>
   </data>
@@ -746,6 +803,9 @@
   </data>
   <data name="Voxihost" xml:space="preserve">
     <value>Voxihost</value>
+  </data>
+  <data name="Watching Youtube Videos on AnduinOS" xml:space="preserve">
+    <value>Xem video YouTube trên AnduinOS</value>
   </data>
   <data name="Wayland Ready" xml:space="preserve">
     <value>Hỗ trợ Wayland</value>
@@ -776,6 +836,15 @@
   </data>
   <data name="Work" xml:space="preserve">
     <value>Làm việc</value>
+  </data>
+  <data name="Working on mail and chat on AnduinOS" xml:space="preserve">
+    <value>Làm việc với thư và trò chuyện trên AnduinOS</value>
+  </data>
+  <data name="Writing Code on AnduinOS" xml:space="preserve">
+    <value>Viết mã trên AnduinOS</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64. Hai tệp ISO. Một trải nghiệm.</value>
   </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>Có, AnduinOS miễn phí để sử dụng. Đây là một dự án mã nguồn mở tuân theo giấy phép GPL-v3. Bạn có thể xem mã nguồn, chỉnh sửa và phân phối lại. Nó miễn phí và sẽ luôn miễn phí.</value>
