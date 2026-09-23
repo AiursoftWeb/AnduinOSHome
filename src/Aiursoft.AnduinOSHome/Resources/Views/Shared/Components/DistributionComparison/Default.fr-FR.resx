@@ -21,14 +21,143 @@
       <data name="A familiar interface is only the surface. Explore which capabilities are defaults, which are optional, and how deeply each operating system integrates them." xml:space="preserve">
     <value>Une interface familière n&apos;est que la surface. Découvrez quelles fonctionnalités sont activées par défaut, lesquelles sont optionnelles et dans quelle mesure chaque système d&apos;exploitation les intègre.</value>
   </data>
+  <data name="All first-party graphical system tools use GTK4/libadwaita" xml:space="preserve">
+    <value>Tous les outils graphiques système de premier parti utilisent GTK4/libadwaita</value>
+  </data>
+  <data name="AMD64 + ARM64" xml:space="preserve">
+    <value>AMD64 + ARM64</value>
+  </data>
+  <data name="An unprivileged GTK4 planner produces a canonical typed plan. A fixed privileged executor revalidates it and constructs commands itself; the UI cannot inject arbitrary shell commands or paths." xml:space="preserve">
+    <value>Un planificateur GTK4 non privilégié génère un plan typé canonique. Un exécuteur privilégié fixe le revalide et construit lui-même les commandes ; l&apos;interface utilisateur ne peut pas injecter de commandes shell ou de chemins arbitraires.</value>
+  </data>
+  <data name="AnduinOS 2 targets Ubuntu 26.04 Resolute and ships its Linux 7.0 GA kernel. The core package retains that kernel contract through normal installs and upgrades instead of treating it as an ISO-only customization." xml:space="preserve">
+    <value>AnduinOS 2 cible Ubuntu 26.04 Resolute et intègre son noyau Linux 7.0 GA. Le paquet principal conserve ce contrat de noyau lors des installations et des mises à niveau standard, au lieu de le traiter comme une personnalisation réservée à l&apos;ISO.</value>
+  </data>
+  <data name="AnduinOS component catalog" xml:space="preserve">
+    <value>Catalogue des composants AnduinOS</value>
+  </data>
+  <data name="AnduinOS core depends on Dracut and conflicts with initramfs-tools, Casper and finalrd. Generated images are verified and guarded so competing generators cannot silently coexist." xml:space="preserve">
+    <value>Le noyau d&apos;AnduinOS dépend de Dracut et est en conflit avec initramfs-tools, Casper et finalrd. Les images générées sont vérifiées et protégées afin que les générateurs concurrents ne puissent pas coexister silencieusement.</value>
+  </data>
+  <data name="AnduinOS desktop packages" xml:space="preserve">
+    <value>Paquets bureau AnduinOS</value>
+  </data>
+  <data name="AnduinOS first-party graphical system tools—including Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager—share GTK4, libadwaita and adaptive conventions. This claim does not extend to third-party applications or non-graphical components." xml:space="preserve">
+    <value>Les outils graphiques système de premier ordre d&apos;AnduinOS — notamment l&apos;installateur, le panneau de configuration, l&apos;apparence, l&apos;OOBE, le centre de pilotes, la boîte à outils Secure Boot, le contrôle du Swap et le gestionnaire d&apos;instantsanés — partagent GTK4, libadwaita et des conventions adaptatives. Cette affirmation ne s&apos;étend pas aux applications tierces ni aux composants non graphiques.</value>
+  </data>
+  <data name="AnduinOS inherits GNOME 50&apos;s HDR screen sharing, Wayland color-management v2, improved VRR, optimized fractional scaling and low-latency cursor path." xml:space="preserve">
+    <value>AnduinOS hérite du partage d&apos;écran HDR de GNOME 50, de la gestion des couleurs Wayland v2, d&apos;un VRR amélioré, d&apos;un fractionnement optimisé et d&apos;un cheminement du curseur à faible latence.</value>
+  </data>
+  <data name="AnduinOS ISO acceptance framework" xml:space="preserve">
+    <value>Cadre d’acceptation de l’ISO AnduinOS</value>
+  </data>
+  <data name="AnduinOS ISO architecture" xml:space="preserve">
+    <value>Architecture ISO d&apos;AnduinOS</value>
+  </data>
+  <data name="AnduinOS ISO source" xml:space="preserve">
+    <value>Source ISO AnduinOS</value>
+  </data>
+  <data name="AnduinOS layers 50%-of-RAM LZ4 Zram above a dynamically sized disk Swap partition. The native GTK4 tool manages Zram, optional Zswap, stress tests and hibernation health." xml:space="preserve">
+    <value>AnduinOS superpose un Zram LZ4 de 50 % de la RAM au-dessus d&apos;une partition de Swap sur disque de taille dynamique. L&apos;outil natif GTK4 gère le Zram, le Zswap facultatif, les tests de charge et l&apos;état de la hibernation.</value>
+  </data>
+  <data name="AnduinOS maintains and tests one desktop display stack end to end. Xorg session: Not included. XWayland remains available for legacy applications, but there is no Xorg desktop fallback if a Wayland-specific problem occurs." xml:space="preserve">
+    <value>AnduinOS maintient et teste une pile d’affichage de bureau de bout en bout. Session Xorg : non incluse. XWayland reste disponible pour les applications héritées, mais il n’existe aucun retour à un bureau Xorg en cas de problème spécifique à Wayland.</value>
+  </data>
+  <data name="AnduinOS package architecture" xml:space="preserve">
+    <value>Architecture des packages d&apos;AnduinOS</value>
+  </data>
+  <data name="AnduinOS package projects declare suites, architectures, dependencies, conflicts, assets, services, AppStream metadata, lifecycle scripts and build gates together. Layered metapackages compose the final product." xml:space="preserve">
+    <value>Les projets de paquets AnduinOS déclarent ensemble les suites, architectures, dépendances, conflits, ressources, services, métadonnées AppStream, scripts de cycle de vie et contrôles de construction. Les métapaquets superposés composent le produit final.</value>
+  </data>
+  <data name="AnduinOS packages" xml:space="preserve">
+    <value>Paquets AnduinOS</value>
+  </data>
+  <data name="AnduinOS removes or conflicts with Ubuntu reporting components such as whoopsie and disables Canonical remote MOTD news. The policy is expressed in packages rather than only in a privacy statement." xml:space="preserve">
+    <value>AnduinOS supprime ou entre en conflit avec les composants de rapport d&apos;Ubuntu tels que whoopsie et désactive les nouvelles distantes MOTD de Canonical. Cette politique est exprimée au niveau des paquets plutôt que par une simple déclaration de confidentialité.</value>
+  </data>
+  <data name="AnduinOS separates system recovery from Personal Files history. The Snapshot Manager and Files integration can browse and restore earlier versions without conflating them with OS rollback." xml:space="preserve">
+    <value>AnduinOS sépare la récupération du système de l&apos;historique des Fichiers personnels. L&apos;intégration du Gestionnaire d&apos;instantanés et des Fichiers permet de parcourir et de restaurer des versions antérieures sans les confondre avec le retour arrière du système d&apos;exploitation.</value>
+  </data>
+  <data name="AnduinOS uses native APT packages for the system and Flatpak for sandboxed applications. snapd is conflicted, pinned out, unmounted and purged by product policy." xml:space="preserve">
+    <value>AnduinOS utilise des packages APT natifs pour le système et Flatpak pour les applications sandboxées. snapd est en conflit, épinglé, démonté et purgé par politique de produit.</value>
+  </data>
+  <data name="APKG + .aosproj projects" xml:space="preserve">
+    <value>Projets APKG + .aosproj</value>
+  </data>
+  <data name="Application model" xml:space="preserve">
+    <value>Modèle d&apos;application</value>
+  </data>
+  <data name="APT + Flatpak · Snap blocked" xml:space="preserve">
+    <value>APT + Flatpak · Snap bloqué</value>
+  </data>
+  <data name="APT + Flatpak + Snap" xml:space="preserve">
+    <value>APT + Flatpak + Snap</value>
+  </data>
+  <data name="APT + Snap by default" xml:space="preserve">
+    <value>APT + Snap par défaut</value>
+  </data>
+  <data name="APT hooks create structured recovery points before and after package changes. Snapshot metadata records package state and feeds the same retention and rollback protocol." xml:space="preserve">
+    <value>Les hooks APT créent des points de restauration structurés avant et après les modifications de paquets. Les métadonnées des instantanés enregistrent l&apos;état des paquets et alimentent le même protocole de rétention et de retour arrière.</value>
+  </data>
+  <data name="APT snapshots + bootable rollback" xml:space="preserve">
+    <value>Instantanés APT + retour arrière amorçable</value>
+  </data>
+  <data name="APT system · Flatpak apps · no Snap" xml:space="preserve">
+    <value>Système APT · applications Flatpak · sans Snap</value>
+  </data>
+  <data name="APT, Flatpak and Snap policy" xml:space="preserve">
+    <value>Politique APT, Flatpak et Snap</value>
+  </data>
   <data name="Architecture, not aesthetics" xml:space="preserve">
     <value>L&apos;architecture, pas l&apos;esthétique</value>
+  </data>
+  <data name="Automatic pre/post snapshots" xml:space="preserve">
+    <value>Instantanés automatiques avant/après</value>
+  </data>
+  <data name="Boot trust, MOK and third-party modules" xml:space="preserve">
+    <value>Confiance au démarrage, MOK et modules tiers</value>
+  </data>
+  <data name="Both architectures are product targets. The ISO builder, native installer, UEFI layout, signed boot payloads and acceptance matrix model AMD64 and ARM64 explicitly." xml:space="preserve">
+    <value>Les deux architectures sont des cibles produit. Le générateur ISO, l&apos;installeur natif, la structure UEFI, les charges de démarrage signées et la matrice d&apos;acceptation modélisent explicitement AMD64 et ARM64.</value>
+  </data>
+  <data name="Btrfs default · ext4 optional" xml:space="preserve">
+    <value>Btrfs par défaut · ext4 facultatif</value>
+  </data>
+  <data name="Btrfs system design" xml:space="preserve">
+    <value>Conception du système Btrfs</value>
+  </data>
+  <data name="Btrfs: protected New OS baseline" xml:space="preserve">
+    <value>Btrfs : référence système d&apos;exploitation neuve protégée</value>
+  </data>
+  <data name="Built-in recovery without reinstall media" xml:space="preserve">
+    <value>Récupération intégrée sans support d&apos;installation</value>
+  </data>
+  <data name="Canonical operates extensive archive, image, hardware and release validation at upstream scale. Its implementation and evidence model differ from the AnduinOS acceptance framework." xml:space="preserve">
+    <value>Canonical assure une validation exhaustive des archives, des images, du matériel et des versions à l&apos;échelle amont. Son modèle d&apos;implémentation et de preuve diffère du cadre d&apos;acceptation d&apos;AnduinOS.</value>
+  </data>
+  <data name="Canonical publishes official Ubuntu 26.04 desktop downloads for both Intel or AMD 64-bit systems and ARM 64-bit systems." xml:space="preserve">
+    <value>Canonical publie les téléchargements officiels du bureau Ubuntu 26.04 pour les systèmes 64 bits Intel ou AMD et les systèmes 64 bits ARM.</value>
+  </data>
+  <data name="Canonical-signed chain" xml:space="preserve">
+    <value>Chaîne signée par Canonical</value>
   </data>
   <data name="Capability" xml:space="preserve">
     <value>Capacité</value>
   </data>
+  <data name="Capacity-aware policy + health UI" xml:space="preserve">
+    <value>Politique tenant compte de la capacité + interface de santé</value>
+  </data>
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Choisissez une distribution à comparer</value>
+  </data>
+  <data name="Cinnamon 6.6 remains centered on its mature X11 path in Mint 22.3. The next release is where Mint plans to graduate Wayland support from experimental status." xml:space="preserve">
+    <value>Cinnamon 6.6 reste centré sur son chemin X11 mature dans Mint 22.3. La prochaine version est celle où Mint prévoit de faire passer le support de Wayland du statut expérimental.</value>
+  </data>
+  <data name="Cinnamon and XApp tools" xml:space="preserve">
+    <value>Outils Cinnamon et XApp</value>
+  </data>
+  <data name="Cinnamon&apos;s Wayland session remains experimental in Linux Mint 22.3. Mint has announced that both X11 and Wayland will become fully supported in the next Cinnamon release." xml:space="preserve">
+    <value>La session Wayland de Cinnamon reste expérimentale dans Linux Mint 22.3. Mint a annoncé que X11 et Wayland seront pleinement pris en charge dans la prochaine version de Cinnamon.</value>
   </data>
   <data name="Close details" xml:space="preserve">
     <value>Fermer les détails</value>
@@ -42,8 +171,38 @@
   <data name="Comparison snapshot: 20 September 2026" xml:space="preserve">
     <value>Instantané de comparaison : 20 septembre 2026</value>
   </data>
+  <data name="Compressed RAM, disk Swap and health" xml:space="preserve">
+    <value>RAM compressée, swap sur disque et santé</value>
+  </data>
   <data name="Current product implementation" xml:space="preserve">
     <value>Implémentation du produit actuel</value>
+  </data>
+  <data name="Debian packages + Mint tooling" xml:space="preserve">
+    <value>Paquets Debian + outils Mint</value>
+  </data>
+  <data name="Debian packages + Zorin composition" xml:space="preserve">
+    <value>Paquets Debian + composition Zorin</value>
+  </data>
+  <data name="Default storage model" xml:space="preserve">
+    <value>Modèle de stockage par défaut</value>
+  </data>
+  <data name="Desktop architectures" xml:space="preserve">
+    <value>Architectures de bureau</value>
+  </data>
+  <data name="Desktop reinstall from installation media" xml:space="preserve">
+    <value>Réinstallation du bureau à partir des supports d&apos;installation</value>
+  </data>
+  <data name="Diagnostics and remote news" xml:space="preserve">
+    <value>Diagnostics et actualité à distance</value>
+  </data>
+  <data name="Diagnostics with release controls" xml:space="preserve">
+    <value>Diagnostics avec contrôles de version</value>
+  </data>
+  <data name="Disk Snapshots Manager" xml:space="preserve">
+    <value>Gestionnaire des instantanés de disque</value>
+  </data>
+  <data name="Display pipeline" xml:space="preserve">
+    <value>Pipeline d’affichage</value>
   </data>
   <data name="Distribution comparison table" xml:space="preserve">
     <value>Tableau comparatif des distributions</value>
@@ -51,11 +210,140 @@
   <data name="Done" xml:space="preserve">
     <value>Terminé</value>
   </data>
+  <data name="Dracut default · compatibility retained" xml:space="preserve">
+    <value>Dracut par défaut · compatibilité conservée</value>
+  </data>
+  <data name="Dracut Live Layers" xml:space="preserve">
+    <value>Dracut Live Layers</value>
+  </data>
+  <data name="Drivers, frame timing and recovery paths" xml:space="preserve">
+    <value>Pilotes, synchronisation des images et chemins de récupération</value>
+  </data>
+  <data name="Early-boot architecture" xml:space="preserve">
+    <value>Architecture de démarrage initial</value>
+  </data>
+  <data name="Established installer path" xml:space="preserve">
+    <value>Chemin d&apos;installation établi</value>
+  </data>
   <data name="Evidence and verification" xml:space="preserve">
     <value>Preuves et vérification</value>
   </data>
+  <data name="Explicit zero-system-telemetry" xml:space="preserve">
+    <value>Télémétrie système explicitement nulle</value>
+  </data>
+  <data name="ext4 default · Btrfs selectable" xml:space="preserve">
+    <value>ext4 par défaut · Btrfs sélectionnable</value>
+  </data>
+  <data name="ext4 default · other options" xml:space="preserve">
+    <value>ext4 par défaut · autres options</value>
+  </data>
+  <data name="ext4-centered default" xml:space="preserve">
+    <value>Défaut centré sur ext4</value>
+  </data>
+  <data name="Extensive image and release QA" xml:space="preserve">
+    <value>Contrôle qualité étendu des images et des versions</value>
+  </data>
+  <data name="Factory reset to initial installation" xml:space="preserve">
+    <value>Réinitialisation usine vers l&apos;installation initiale</value>
+  </data>
+  <data name="Filesystem defaults and system topology" xml:space="preserve">
+    <value>Paramètres par défaut du système de fichiers et topologie du système</value>
+  </data>
+  <data name="First-party system tools" xml:space="preserve">
+    <value>Outils système intégrés</value>
+  </data>
+  <data name="Fully supported on Wayland" xml:space="preserve">
+    <value>Entièrement pris en charge sur Wayland</value>
+  </data>
+  <data name="General-purpose policy" xml:space="preserve">
+    <value>Politique polyvalente</value>
+  </data>
+  <data name="GNOME 50 display improvements" xml:space="preserve">
+    <value>Améliorations de l&apos;affichage de GNOME 50</value>
+  </data>
+  <data name="GNOME 50 frame-timing improvements, Ubuntu 26.04 drivers and the AnduinOS Driver Center are connected to Secure Boot and DKMS trust health." xml:space="preserve">
+    <value>Les améliorations du calage des images de GNOME 50, les pilotes d&apos;Ubuntu 26.04 et le Centre de pilotes AnduinOS sont liés à la santé de Secure Boot et de la confiance DKMS.</value>
+  </data>
+  <data name="GNOME 50 graphics pipeline" xml:space="preserve">
+    <value>pipeline graphique GNOME 50</value>
+  </data>
+  <data name="GNOME 50 release notes" xml:space="preserve">
+    <value>Notes de version de GNOME 50</value>
+  </data>
+  <data name="HDR, VRR and fractional scaling" xml:space="preserve">
+    <value>HDR, VRR et échelle fractionnaire</value>
+  </data>
+  <data name="Inherited initramfs-tools + Casper" xml:space="preserve">
+    <value>initramfs-tools + Casper hérités</value>
+  </data>
+  <data name="Inherited Ubuntu 24.04 stack" xml:space="preserve">
+    <value>Pile héritée d&apos;Ubuntu 24.04</value>
+  </data>
+  <data name="Initramfs implementation and migration policy" xml:space="preserve">
+    <value>Implémentation d&apos;initramfs et politique de migration</value>
+  </data>
+  <data name="Installable AMD64 and ARM64 products" xml:space="preserve">
+    <value>Produits installables AMD64 et ARM64</value>
+  </data>
+  <data name="Installer + MOK + DKMS health" xml:space="preserve">
+    <value>Installateur + MOK + santé DKMS</value>
+  </data>
+  <data name="Installer architecture" xml:space="preserve">
+    <value>Architecture de l&apos;installateur</value>
+  </data>
+  <data name="Installer design" xml:space="preserve">
+    <value>Conception de l&apos;installateur</value>
+  </data>
+  <data name="Installer Secure Boot design" xml:space="preserve">
+    <value>Conception du Secure Boot de l&apos;installateur</value>
+  </data>
   <data name="Integrated by design" xml:space="preserve">
     <value>Intégré par conception</value>
+  </data>
+  <data name="Linux 7.0 HWE images" xml:space="preserve">
+    <value>Images HWE Linux 7.0</value>
+  </data>
+  <data name="Linux Mint 22.3 publishes its Cinnamon, MATE and Xfce desktop editions as 64-bit x86 images. No equivalent official ARM64 Mint desktop image is offered." xml:space="preserve">
+    <value>Linux Mint 22.3 publie ses éditions bureau Cinnamon, MATE et Xfce sous forme d&apos;images x86 64 bits. Aucune image bureau Mint ARM64 officielle équivalente n&apos;est proposée.</value>
+  </data>
+  <data name="Linux Mint 22.3 release" xml:space="preserve">
+    <value>Sortie de Linux Mint 22.3</value>
+  </data>
+  <data name="Linux Mint 22.3 release announcement" xml:space="preserve">
+    <value>Annonce de la sortie de Linux Mint 22.3</value>
+  </data>
+  <data name="Linux Mint 22.3 uses the Ubuntu 24.04-era early-boot and Live generation. The reviewed scope identified no Mint-specific single-generator Dracut contract enabled by default." xml:space="preserve">
+    <value>Linux Mint 22.3 utilise la génération de démarrage initial et de session Live de l&apos;ère Ubuntu 24.04. Le périmètre examiné n&apos;a identifié aucun contrat Dracut à générateur unique spécifique à Mint activé par défaut.</value>
+  </data>
+  <data name="Linux Mint 22.3 was released with Linux 6.14. Mint now also publishes fully QA-tested HWE images with Linux 7.0 for newer hardware, so the selected image matters." xml:space="preserve">
+    <value>Linux Mint 22.3 a été publié avec Linux 6.14. Mint publie désormais également des images HWE entièrement testées par le contrôle qualité avec Linux 7.0 pour le matériel plus récent, de sorte que l&apos;image sélectionnée est importante.</value>
+  </data>
+  <data name="Linux Mint HWE QA" xml:space="preserve">
+    <value>QA HWE de Linux Mint</value>
+  </data>
+  <data name="Linux Mint inherits Ubuntu&apos;s signed shim, GRUB and kernel foundation. Mint documents workarounds for systems that report Secure Boot violations." xml:space="preserve">
+    <value>Linux Mint hérite de la base signée de shim, GRUB et du noyau d&apos;Ubuntu. Mint documente les solutions de contournement pour les systèmes qui signalent des violations du Secure Boot.</value>
+  </data>
+  <data name="Linux Mint provides standard Linux memory and Swap capabilities. The reviewed release scope identified no default integrated Zram, Zswap, stress-test and hibernation-health interface." xml:space="preserve">
+    <value>Linux Mint fournit les capacités standard de mémoire et de Swap de Linux. Le périmètre de la version examinée n&apos;a identifié aucune interface intégrée par défaut pour Zram, Zswap, les tests de charge et l&apos;intégrité de la veille sur disque.</value>
+  </data>
+  <data name="Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state." xml:space="preserve">
+    <value>Linux Mint propose un retour système Timeshift si une image de sauvegarde appropriée a été configurée et créée. Son guide invite les utilisateurs à configurer des images de sauvegarde avant d&apos;utiliser le système d&apos;exploitation ; il ne décrit pas une référence d&apos;usine automatiquement verrouillée. Timeshift exclut les fichiers personnels par défaut, ce qui ne constitue donc pas un réinitialisation équivalente en une étape du système et du dossier Home à l&apos;état d&apos;installation.</value>
+  </data>
+  <data name="Linux Mint publishes privacy-oriented defaults. The reviewed scope identified no equivalent package-level conflict and replacement contract for every Ubuntu reporting component." xml:space="preserve">
+    <value>Linux Mint publie des valeurs par défaut axées sur la confidentialité. La portée examinée n&apos;a identifié aucun contrat de conflit et de remplacement au niveau du paquet équivalent pour chaque composante de reporting d&apos;Ubuntu.</value>
+  </data>
+  <data name="Linux Mint system snapshots" xml:space="preserve">
+    <value>Instantanés système Linux Mint</value>
+  </data>
+  <data name="Linux Mint Wayland status" xml:space="preserve">
+    <value>Statut de Wayland sur Linux Mint</value>
+  </data>
+  <data name="Live system layers" xml:space="preserve">
+    <value>Couches du système en direct</value>
+  </data>
+  <data name="Memory pressure strategy" xml:space="preserve">
+    <value>Stratégie de pression mémoire</value>
   </data>
   <data name="Method and evidence scope" xml:space="preserve">
     <value>Méthodologie et périmètre des preuves</value>
@@ -63,17 +351,146 @@
   <data name="Method: comparison of first-party defaults, published source repositories and official product documentation available on 20 September 2026." xml:space="preserve">
     <value>Méthode : comparaison des valeurs par défaut de premier niveau, des dépôts de code source publiés et de la documentation produit officielle disponibles au 20 septembre 2026.</value>
   </data>
+  <data name="Mint announced accelerated NVIDIA Wayland improvements for the next Cinnamon release. In 22.3, the Wayland session itself remains experimental." xml:space="preserve">
+    <value>Mint a annoncé des améliorations accélérées de Wayland pour NVIDIA en vue de la prochaine version de Cinnamon. Dans la version 22.3, la session Wayland elle-même reste expérimentale.</value>
+  </data>
+  <data name="Mint deliberately maintains its Cinnamon and XApp design system. Major administration tools remain primarily GTK3/XApp while GTK4 applications are supported." xml:space="preserve">
+    <value>Mint maintient délibérément son système de conception Cinnamon et XApp. Les principaux outils d&apos;administration restent principalement basés sur GTK3/XApp, tandis que les applications GTK4 sont prises en charge.</value>
+  </data>
+  <data name="Mint explicitly recommends creating a Timeshift snapshot before a release upgrade. This is a manual upgrade safeguard rather than an automatic symmetric APT transaction contract." xml:space="preserve">
+    <value>Mint recommande explicitement de créer une instantanée Timeshift avant une mise à niveau de version. Il s&apos;agit d&apos;une mesure de sécurité manuelle lors de la mise à niveau, et non d&apos;un contrat automatique et symétrique de transaction APT.</value>
+  </data>
+  <data name="Mint exposes standard Linux Swap and hibernation capabilities. The reviewed product scope identified no integrated first-party sizing and health-verification control plane enabled by default." xml:space="preserve">
+    <value>Mint expose les fonctionnalités standard de Swap et d&apos;hibernation de Linux. Le périmètre du produit examiné n&apos;a identifié aucun plan de contrôle intégré de dimensionnement et de vérification de l&apos;intégrité, fourni par l&apos;éditeur, activé par défaut.</value>
+  </data>
+  <data name="Mint graphical installer" xml:space="preserve">
+    <value>Installateur graphique de Mint</value>
+  </data>
+  <data name="Mint installs to ext4 by default. Btrfs can be selected and Timeshift can use Btrfs snapshots, but Mint does not define the same default subvolume ABI as AnduinOS." xml:space="preserve">
+    <value>Mint installe sur ext4 par défaut. Btrfs peut être sélectionné et Timeshift peut utiliser des instantanés Btrfs, mais Mint ne définit pas la même ABI de sous-volumes par défaut qu&apos;AnduinOS.</value>
+  </data>
+  <data name="Mint Live session" xml:space="preserve">
+    <value>Session Live Mint</value>
+  </data>
+  <data name="Mint offers a Live desktop and persistence workflows. The reviewed product scope identified no equivalent first-party Dracut overlay protocol enabled by default." xml:space="preserve">
+    <value>Mint propose un bureau Live et des workflows de persistance. Le périmètre du produit examiné n&apos;a identifié aucun protocole de superposition Dracut de premier niveau équivalent activé par défaut.</value>
+  </data>
+  <data name="Mint performs release and ISO quality assurance, including fully QA-tested HWE images. The reviewed public scope identified no acceptance contract directly comparable to the published AnduinOS QEMU/QMP/AT-SPI framework." xml:space="preserve">
+    <value>Mint effectue l&apos;assurance qualité des versions et des images ISO, y compris les images HWE entièrement testées. Le périmètre public examiné n&apos;a identifié aucun contrat d&apos;acceptation directement comparable au cadre AnduinOS QEMU/QMP/AT-SPI publié.</value>
+  </data>
+  <data name="Mint provides first-class APT and Flatpak integration and blocks Snap by default, while still allowing users to deliberately re-enable it." xml:space="preserve">
+    <value>Mint offre une intégration de premier ordre d&apos;APT et de Flatpak et bloque Snap par défaut, tout en permettant aux utilisateurs de le réactiver délibérément.</value>
+  </data>
+  <data name="Mint provides its established graphical installer. Its default first-party workflow uses a different design from the native GTK4 planner and fixed semantic executor contract used by AnduinOS." xml:space="preserve">
+    <value>Mint fournit son installateur graphique éprouvé. Son flux de travail par défaut de première partie utilise une conception différente du planificateur GTK4 natif et du contrat d&apos;exécutant sémantique fixe utilisé par AnduinOS.</value>
+  </data>
+  <data name="Mint uses established Debian packaging, metapackages and Mint project tooling. It does not use the unified AnduinOS .aosproj format." xml:space="preserve">
+    <value>Mint utilise l&apos;emballage Debian éprouvé, les méta-paquets et les outils de projet Mint. Il n&apos;utilise pas le format unifié AnduinOS .aosproj.</value>
+  </data>
+  <data name="Mixed first-party estate" xml:space="preserve">
+    <value>Parc mixte de premier éditeur</value>
+  </data>
+  <data name="Modern drivers · Xorg fallback" xml:space="preserve">
+    <value>Pilotes modernes · Repli Xorg</value>
+  </data>
+  <data name="Modern Flutter frontend" xml:space="preserve">
+    <value>Frontend Flutter moderne</value>
+  </data>
+  <data name="Modern GNOME applications" xml:space="preserve">
+    <value>Applications GNOME modernes</value>
+  </data>
+  <data name="Native GTK4 · typed install plan" xml:space="preserve">
+    <value>GTK4 natif · plan d’installation typé</value>
+  </data>
+  <data name="Native installer design" xml:space="preserve">
+    <value>Conception de l&apos;installateur natif</value>
+  </data>
+  <data name="No comparable public suite identified as of 2026-08-28" xml:space="preserve">
+    <value>Aucune suite publique comparable identifiée au 28/08/2026</value>
+  </data>
   <data name="No competitor ISO was installed specifically for this snapshot. Therefore no competitor test ISO, SHA256, installation date, screenshots or logs are presented as direct test evidence. Statements that no equivalent workflow was identified refer only to the official research scope above; they do not claim that a project performs no internal QA or that users cannot assemble similar functionality." xml:space="preserve">
     <value>Aucune ISO concurrente n&apos;a été installée spécifiquement pour ce cliché. Par conséquent, aucune ISO de test concurrente, SHA256, date d&apos;installation, capture d&apos;écran ou journal n&apos;est présentée comme preuve directe de test. Les affirmations selon lesquelles aucun flux de travail équivalent n&apos;a été identifié ne se réfèrent qu&apos;à la portée officielle de la recherche ci-dessus ; elles ne prétendent pas qu&apos;un projet ne réalise aucun QA interne ou que les utilisateurs ne peuvent pas assembler une fonctionnalité similaire.</value>
+  </data>
+  <data name="No equivalent first-party workflow enabled by default" xml:space="preserve">
+    <value>Aucun flux de travail équivalent d&apos;origine activé par défaut</value>
+  </data>
+  <data name="No equivalent package-level policy enabled by default" xml:space="preserve">
+    <value>Aucune politique équivalente au niveau des packages activée par défaut</value>
+  </data>
+  <data name="NVIDIA on Wayland" xml:space="preserve">
+    <value>NVIDIA sur Wayland</value>
   </data>
   <data name="Official research scope: AnduinOS package and ISO repositories; Zorin OS technical details, published package lists and Help documentation; Linux Mint release posts and documentation; Ubuntu and GNOME release documentation." xml:space="preserve">
     <value>Périmètre officiel de la recherche : dépôts de paquets et ISO d&apos;AnduinOS ; détails techniques, listes de paquets publiées et documentation d&apos;aide de Zorin OS ; publications et documentation des versions de Linux Mint ; documentation des versions d&apos;Ubuntu et de GNOME.</value>
   </data>
+  <data name="Official x86-64 desktop" xml:space="preserve">
+    <value>Bureau officiel x86-64</value>
+  </data>
+  <data name="Official x86-64 images" xml:space="preserve">
+    <value>Images officielles x86-64</value>
+  </data>
+  <data name="On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager&apos;s guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure." xml:space="preserve">
+    <value>Sur les installations Btrfs, l&apos;installeur crée des instantanés initiaux protégés du Système et de Home. Le Panneau de configuration ouvre le flux de travail de Réinitialisation d&apos;usine protégé du Gestionnaire d&apos;instantanés de disque : il restaure le système à l&apos;état New OS, conserve Home par défaut, ou facultativement annule également les données utilisateur. Le gestionnaire vérifie les prérequis, enregistre un instantané de sécurité et finalise la bascule au redémarrage. Les installations Ext4 ne prennent pas en charge cette fonctionnalité ; la restauration de Home ne constitue pas un effacement sécurisé des données.</value>
+  </data>
+  <data name="Package source and product composition" xml:space="preserve">
+    <value>Source des paquets et composition du produit</value>
+  </data>
+  <data name="Package transaction safety" xml:space="preserve">
+    <value>Sécurité des transactions de paquets</value>
+  </data>
+  <data name="Personal file history" xml:space="preserve">
+    <value>Historique des fichiers personnels</value>
+  </data>
+  <data name="Personal Files snapshots" xml:space="preserve">
+    <value>Instantanés des Fichiers personnels</value>
+  </data>
+  <data name="Platform generation" xml:space="preserve">
+    <value>Génération de la plateforme</value>
+  </data>
+  <data name="Primary display architecture" xml:space="preserve">
+    <value>Architecture principale d&apos;affichage</value>
+  </data>
+  <data name="Privacy-oriented defaults" xml:space="preserve">
+    <value>Paramètres par défaut axés sur la confidentialité</value>
+  </data>
+  <data name="Public automated release evidence" xml:space="preserve">
+    <value>Preuves automatiques de publication publique</value>
+  </data>
+  <data name="Published boot, install, reboot and desktop reports" xml:space="preserve">
+    <value>Rapports publiés sur le démarrage, l&apos;installation, le redémarrage et le bureau</value>
+  </data>
+  <data name="QEMU / QMP / AT-SPI reports published" xml:space="preserve">
+    <value>Rapports QEMU / QMP / AT-SPI publiés</value>
+  </data>
+  <data name="Recovery points around APT changes" xml:space="preserve">
+    <value>Points de récupération lors des modifications APT</value>
+  </data>
+  <data name="Recovery scope and safeguards" xml:space="preserve">
+    <value>Portée de la récupération et mesures de protection</value>
+  </data>
   <data name="Reference" xml:space="preserve">
     <value>Référence</value>
   </data>
+  <data name="Reinstall from USB for a clean state" xml:space="preserve">
+    <value>Réinstaller depuis une clé USB pour un état propre</value>
+  </data>
+  <data name="Release QA" xml:space="preserve">
+    <value>QA de la version</value>
+  </data>
   <data name="Return to the eight essential comparisons" xml:space="preserve">
     <value>Retourner aux huit comparaisons essentielles</value>
+  </data>
+  <data name="Secure Boot is modeled during installation on AMD64 and ARM64. A shared GTK4 toolkit exposes MOK enrollment and DKMS signing health to the installer, OOBE and Driver Center." xml:space="preserve">
+    <value>Secure Boot est modélisé lors de l&apos;installation sur AMD64 et ARM64. Un kit d&apos;outils GTK4 partagé expose l&apos;inscription MOK et l&apos;état de la signature DKMS à l&apos;installeur, à l&apos;OOBE et au Centre de pilotes.</value>
+  </data>
+  <data name="Secure Boot lifecycle" xml:space="preserve">
+    <value>Cycle de vie du Secure Boot</value>
+  </data>
+  <data name="Seeds, metapackages and archive QA" xml:space="preserve">
+    <value>Semences, métapaquets et QA d&apos;archive</value>
+  </data>
+  <data name="Separate recovery for user data" xml:space="preserve">
+    <value>Récupération distincte des données utilisateur</value>
   </data>
   <data name="Show only the essentials" xml:space="preserve">
     <value>Afficher uniquement l’essentiel</value>
@@ -81,8 +498,305 @@
   <data name="Show technical details" xml:space="preserve">
     <value>Afficher les détails techniques</value>
   </data>
+  <data name="Single verified Dracut stack" xml:space="preserve">
+    <value>Pile Dracut unique et vérifiée</value>
+  </data>
+  <data name="Sizing, resume identity and diagnostics" xml:space="preserve">
+    <value>Dimensionnement, identité de reprise et diagnostics</value>
+  </data>
+  <data name="Snapshots, update protection and rollback" xml:space="preserve">
+    <value>Instantanés, protection des mises à jour et restauration</value>
+  </data>
+  <data name="Standard memory and Swap controls" xml:space="preserve">
+    <value>Contrôles standard de la mémoire et de la partition d&apos;échange</value>
+  </data>
+  <data name="Swap and hibernation health" xml:space="preserve">
+    <value>Santé du swap et de la veille prolongée</value>
+  </data>
+  <data name="Swap Control architecture" xml:space="preserve">
+    <value>Architecture de Swap Control</value>
+  </data>
+  <data name="System composition" xml:space="preserve">
+    <value>Composition du système</value>
+  </data>
+  <data name="System recovery model" xml:space="preserve">
+    <value>Modèle de récupération du système</value>
+  </data>
+  <data name="System snapshots are connected to APT transactions, retention policy, Dracut, GRUB, deployment metadata and boot confirmation. Recovery is an operating-system protocol rather than a standalone backup utility." xml:space="preserve">
+    <value>Les instantanés du système sont liés aux transactions APT, à la politique de rétention, à Dracut, à GRUB, aux métadonnées de déploiement et à la confirmation de démarrage. La récupération est un protocole du système d&apos;exploitation plutôt qu&apos;un utilitaire de sauvegarde autonome.</value>
+  </data>
+  <data name="System telemetry policy" xml:space="preserve">
+    <value>Politique de télémétrie système</value>
+  </data>
+  <data name="Temporary and persistent USB overlays" xml:space="preserve">
+    <value>Superpositions USB temporaires et persistantes</value>
+  </data>
+  <data name="The installer sizes dedicated disk Swap with hibernation capacity in mind. Swap Control verifies the resume target, active capacity, UUID or path resolution and unsafe swapfile offsets." xml:space="preserve">
+    <value>L&apos;installateur dimensionne l&apos;espace d&apos;échange (Swap) dédié au disque en tenant compte de la capacité de hibernation. Le contrôle de Swap vérifie la cible de reprise, la capacité active, la résolution d&apos;UUID ou de chemin et les décalages d&apos;espace d&apos;échange non sécurisés.</value>
+  </data>
+  <data name="The ISO uses dmsquash-live plus AnduinOS Live Layers for temporary Try mode, persistent USB overlays, media preservation, installer-source exposure and expanded-USB repair." xml:space="preserve">
+    <value>L&apos;ISO utilise dmsquash-live ainsi que les couches live d&apos;AnduinOS pour le mode Essai temporaire, les superpositions USB persistantes, la préservation des supports, l&apos;exposition de la source de l&apos;installeur et la réparation étendue USB.</value>
+  </data>
+  <data name="The native installer selects Btrfs by default and creates named subvolumes that define snapshot, home, log, container, virtual-machine and recovery boundaries. ext4 remains available as a classic alternative." xml:space="preserve">
+    <value>L&apos;installeur natif sélectionne Btrfs par défaut et crée des sous-volumes nommés qui définissent les limites de l&apos;instantané, de l&apos;espace personnel, des journaux, des conteneurs, des machines virtuelles et de la récupération. ext4 reste disponible en tant qu&apos;alternative classique.</value>
+  </data>
+  <data name="The published black-box framework boots real ISOs, drives the GTK installer through semantic accessibility data and QEMU input, reboots the installed system and records screenshots, serial logs and contract evidence." xml:space="preserve">
+    <value>Le cadre de test en boîte noire publié démarre de véritables ISO, pilote l&apos;installeur GTK via des données sémantiques d&apos;accessibilité et des entrées QEMU, redémarre le système installé et enregistre des captures d&apos;écran, des journaux de communication série et des preuves contractuelles.</value>
+  </data>
+  <data name="The reviewed product scope identified no default first-party personal-file snapshot history integrated with Zorin&apos;s filesystem and file manager." xml:space="preserve">
+    <value>Le périmètre du produit examiné n&apos;a identifié aucune historique de capture d&apos;instantanés des fichiers personnels par défaut, intégrée au système de fichiers et au gestionnaire de fichiers de Zorin.</value>
+  </data>
+  <data name="The reviewed product scope identified no default first-party policy creating symmetric recovery points around each APT transaction." xml:space="preserve">
+    <value>Le périmètre du produit examiné n&apos;a identifié aucune politique par défaut de premier éditeur créant des points de récupération symétriques autour de chaque transaction APT.</value>
+  </data>
+  <data name="The reviewed product scope identified no equivalent first-party distribution-wide package-conflict and remote-news contract. This is not a claim that Zorin profiles individual users." xml:space="preserve">
+    <value>Le périmètre du produit examiné n&apos;a identifié aucun contrat de conflit de paquets et de nouvelles à distance équivalent, au niveau de la distribution et de première partie. Il ne s&apos;agit pas d&apos;une affirmation selon laquelle Zorin crée des profils des utilisateurs individuels.</value>
+  </data>
+  <data name="Timeshift advised before upgrades" xml:space="preserve">
+    <value>Timeshift recommandé avant les mises à niveau</value>
+  </data>
+  <data name="Timeshift covers system state" xml:space="preserve">
+    <value>Timeshift couvre l&apos;état du système</value>
+  </data>
+  <data name="Timeshift design and restore behavior" xml:space="preserve">
+    <value>Conception de Timeshift et comportement de restauration</value>
+  </data>
+  <data name="Timeshift intentionally protects system state and is not a personal backup tool. Personal files require a separate backup approach." xml:space="preserve">
+    <value>Timeshift protège intentionnellement l&apos;état du système et n&apos;est pas un outil de sauvegarde personnelle. Les fichiers personnels nécessitent une approche de sauvegarde distincte.</value>
+  </data>
+  <data name="Timeshift provides Mint system snapshots with scheduling and retention. Its restoration model is separate from the bootable-deployment and package-transaction protocol used by AnduinOS." xml:space="preserve">
+    <value>Timeshift fournit des instantanés système Mint avec planification et rétention. Son modèle de restauration est distinct du protocole de déploiement amorçable et de transaction de packages utilisé par AnduinOS.</value>
+  </data>
+  <data name="Timeshift restore, not factory reset" xml:space="preserve">
+    <value>Restauration Timeshift, pas une réinitialisation usine</value>
+  </data>
+  <data name="Timeshift system snapshots" xml:space="preserve">
+    <value>Instantanés système Timeshift</value>
+  </data>
+  <data name="Toolkit and graphical control surfaces" xml:space="preserve">
+    <value>Boîte à outils et surfaces de contrôle graphique</value>
+  </data>
+  <data name="Ubuntu 24.04 · 6.14 / 7.0 HWE" xml:space="preserve">
+    <value>Ubuntu 24.04 · 6.14 / 7.0 HWE</value>
+  </data>
+  <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
+    <value>Ubuntu 24.04 · Linux 6.17</value>
+  </data>
+  <data name="Ubuntu 24.04 GNOME generation" xml:space="preserve">
+    <value>Génération GNOME d&apos;Ubuntu 24.04</value>
+  </data>
+  <data name="Ubuntu 26.04 · Linux 7.0" xml:space="preserve">
+    <value>Ubuntu 26.04 · Linux 7.0</value>
+  </data>
+  <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
+    <value>Ubuntu 26.04 LTS · Linux 7.0</value>
+  </data>
+  <data name="Ubuntu 26.04 LTS is the upstream reference for this generation and ships the Linux 7.0 kernel series with five years of standard LTS maintenance." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS est la référence en amont pour cette génération et intègre la série de noyaux Linux 7.0 avec cinq ans de maintenance standard LTS.</value>
+  </data>
+  <data name="Ubuntu 26.04 release notes" xml:space="preserve">
+    <value>Notes de version d&apos;Ubuntu 26.04</value>
+  </data>
+  <data name="Ubuntu 26.04 runs the GNOME desktop session only on Wayland. XWayland is retained for applications written for X.org." xml:space="preserve">
+    <value>Ubuntu 26.04 exécute la session bureau GNOME uniquement sur Wayland. XWayland est conservé pour les applications écrites pour X.org.</value>
+  </data>
+  <data name="Ubuntu 26.04 ships GNOME 50 and its current Wayland display improvements, including optimized fractional scaling." xml:space="preserve">
+    <value>Ubuntu 26.04 intègre GNOME 50 et ses améliorations actuelles de l&apos;affichage Wayland, y compris le redimensionnement fractionnaire optimisé.</value>
+  </data>
+  <data name="Ubuntu 26.04 states that machines using NVIDIA graphics are fully supported on its Wayland desktop session." xml:space="preserve">
+    <value>Ubuntu 26.04 indique que les machines utilisant des graphiques NVIDIA sont entièrement prises en charge dans sa session de bureau Wayland.</value>
+  </data>
+  <data name="Ubuntu benefits from modern GTK4 and libadwaita GNOME applications, while its installer and distribution-specific surfaces use a broader mix of technologies." xml:space="preserve">
+    <value>Ubuntu bénéficie d’applications GNOME modernes basées sur GTK4 et libadwaita, tandis que son installateur et ses interfaces spécifiques à la distribution utilisent un mélange plus large de technologies.</value>
+  </data>
+  <data name="Ubuntu Core recovery modes" xml:space="preserve">
+    <value>Modes de récupération d&apos;Ubuntu Core</value>
+  </data>
+  <data name="Ubuntu Desktop" xml:space="preserve">
+    <value>Ubuntu Desktop</value>
+  </data>
+  <data name="Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Ubuntu Desktop documente une installation propre via clé USB amovible et installateur, et non une réinitialisation sur place par défaut vers un état initial automatiquement enregistré. Ubuntu Core dispose d&apos;un mode de réinitialisation d&apos;usine distinct, mais Ubuntu Core est un produit différent et ne correspond pas à l&apos;édition Ubuntu Desktop comparée ici.</value>
+  </data>
+  <data name="Ubuntu Desktop downloads" xml:space="preserve">
+    <value>Téléchargements d&apos;Ubuntu Desktop</value>
+  </data>
+  <data name="Ubuntu Desktop installation" xml:space="preserve">
+    <value>Installation d&apos;Ubuntu Desktop</value>
+  </data>
+  <data name="Ubuntu Desktop Live media" xml:space="preserve">
+    <value>Support Ubuntu Desktop Live</value>
+  </data>
+  <data name="Ubuntu Dracut transition" xml:space="preserve">
+    <value>Passage d&apos;Ubuntu à Dracut</value>
+  </data>
+  <data name="Ubuntu foundation and kernel" xml:space="preserve">
+    <value>Fondation Ubuntu et noyau</value>
+  </data>
+  <data name="Ubuntu has seed, metapackage, archive and automated-testing infrastructure at much larger scale. Its implementation model differs from APKG and .aosproj projects." xml:space="preserve">
+    <value>Ubuntu dispose d&apos;une infrastructure de graines, de métapackages, d&apos;archives et de tests automatisés à une échelle beaucoup plus importante. Son modèle d&apos;implémentation diffère des projets APKG et .aosproj.</value>
+  </data>
+  <data name="Ubuntu includes diagnostics and online-service components with release-specific controls. This is a broader product policy rather than AnduinOS&apos;s explicit zero-component contract." xml:space="preserve">
+    <value>Ubuntu inclut des composants de diagnostic et de service en ligne avec des contrôles spécifiques à chaque version. Il s&apos;agit d&apos;une politique produit plus large plutôt que du contrat explicite de zéro composant d&apos;AnduinOS.</value>
+  </data>
+  <data name="Ubuntu now uses Dracut by default, but initramfs-tools remains supported. Ubuntu 26.04 is therefore a transition-compatible implementation rather than an exclusive single-generator policy." xml:space="preserve">
+    <value>Ubuntu utilise désormais Dracut par défaut, mais initramfs-tools reste pris en charge. Ubuntu 26.04 est donc une implémentation compatible avec la transition, plutôt qu&apos;une politique exclusive de générateur unique.</value>
+  </data>
+  <data name="Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model." xml:space="preserve">
+    <value>Ubuntu propose des applications de sauvegarde et des fonctionnalités de système de fichiers, mais son périmètre de bureau par défaut examiné n&apos;a identifié aucune couche d&apos;historique personnel liée à son modèle de récupération.</value>
+  </data>
+  <data name="Ubuntu provides Microsoft-signed shim, Canonical-signed GRUB, kernels and modules on AMD64 and ARM64, together with mature MOK and DKMS signing workflows." xml:space="preserve">
+    <value>Ubuntu fournit un shim signé par Microsoft, un GRUB signé par Canonical, des noyaux et des modules sur AMD64 et ARM64, ainsi que des flux de travail de signature MOK et DKMS matures.</value>
+  </data>
+  <data name="Ubuntu provides recovery mechanisms and third-party options, but the reviewed default desktop scope identified no integrated protocol connecting Btrfs deployments, APT and boot confirmation." xml:space="preserve">
+    <value>Ubuntu propose des mécanismes de récupération et des options tierces, mais le périmètre du bureau par défaut examiné n&apos;a identifié aucun protocole intégré reliant les déploiements Btrfs, APT et la confirmation du démarrage.</value>
+  </data>
+  <data name="Ubuntu provides robust official Live desktop media, using its own installer and media lifecycle rather than the AnduinOS Live Layers contract." xml:space="preserve">
+    <value>Ubuntu propose des supports Live bureau officiels robustes, en utilisant son propre installateur et son cycle de vie des médias plutôt que le contrat Live Layers d&apos;AnduinOS.</value>
+  </data>
+  <data name="Ubuntu Secure Boot architecture" xml:space="preserve">
+    <value>Architecture Secure Boot d&apos;Ubuntu</value>
+  </data>
+  <data name="Ubuntu signed foundation" xml:space="preserve">
+    <value>Fondation signée Ubuntu</value>
+  </data>
+  <data name="Ubuntu supplies the underlying kernel and installer mechanisms. The reviewed default desktop scope identified no first-party sizing and health UI with the same scope enabled by default." xml:space="preserve">
+    <value>Ubuntu fournit les mécanismes sous-jacents du noyau et de l&apos;installateur. Le périmètre du bureau par défaut examiné n&apos;a identifié aucune interface utilisateur de dimensionnement et de santé de première partie, avec le même périmètre, activée par défaut.</value>
+  </data>
+  <data name="Ubuntu supplies the underlying kernel memory features and a general-purpose desktop policy, without the same default AnduinOS Zram, partition and health-dashboard contract." xml:space="preserve">
+    <value>Ubuntu fournit les fonctionnalités de mémoire du noyau sous-jacentes et une politique de bureau polyvalente, sans le même contrat par défaut AnduinOS Zram, partition et tableau de bord d&apos;état.</value>
+  </data>
+  <data name="Ubuntu supports many backup and snapshot technologies, but its reviewed default desktop scope identified no automatic recovery points around every APT transaction." xml:space="preserve">
+    <value>Ubuntu prend en charge de nombreuses technologies de sauvegarde et d&apos;instantanés, mais son périmètre d&apos;examen du bureau par défaut n&apos;a identifié aucun point de récupération automatique autour de chaque transaction APT.</value>
+  </data>
+  <data name="Ubuntu trust chain" xml:space="preserve">
+    <value>Chaîne de confiance Ubuntu</value>
+  </data>
+  <data name="Ubuntu uses APT for the base system and Snap as a default application-delivery route. Flatpak remains available but is not the default Ubuntu path." xml:space="preserve">
+    <value>Ubuntu utilise APT pour le système de base et Snap comme voie de livraison d&apos;applications par défaut. Flatpak reste disponible, mais n&apos;est pas la voie par défaut d&apos;Ubuntu.</value>
+  </data>
+  <data name="Ubuntu Wayland session" xml:space="preserve">
+    <value>Session Wayland Ubuntu</value>
+  </data>
+  <data name="Ubuntu-derived Live persistence" xml:space="preserve">
+    <value>Persistance Live dérivée d&apos;Ubuntu</value>
+  </data>
+  <data name="Ubuntu-derived policy" xml:space="preserve">
+    <value>Politique dérivée d&apos;Ubuntu</value>
+  </data>
+  <data name="Ubuntu&apos;s current desktop installer has a modern frontend/backend architecture and broad platform engineering, but it is a different design from the native GTK4 AnduinOS plan contract." xml:space="preserve">
+    <value>L&apos;installateur actuel du bureau Ubuntu dispose d&apos;une architecture moderne frontend/backend et d&apos;un vaste génie logiciel de plateforme, mais il présente une conception différente du contrat de plan GTK4 natif d&apos;AnduinOS.</value>
+  </data>
+  <data name="Ubuntu&apos;s guided desktop installation remains ext4-centered. Other layouts can be configured, but Ubuntu does not ship the AnduinOS Btrfs desktop ABI as its default." xml:space="preserve">
+    <value>L&apos;installation de bureau guidée d&apos;Ubuntu reste axée sur ext4. D&apos;autres configurations peuvent être définies, mais Ubuntu ne propose pas l&apos;ABI de bureau Btrfs d&apos;AnduinOS par défaut.</value>
+  </data>
+  <data name="UI, privilege boundary and execution model" xml:space="preserve">
+    <value>Interface utilisateur, limite de privilèges et modèle d&apos;exécution</value>
+  </data>
   <data name="Verified for the 20 September 2026 snapshot" xml:space="preserve">
     <value>Vérifié pour l&apos;instantané du 20 septembre 2026</value>
+  </data>
+  <data name="Wayland + Driver Center" xml:space="preserve">
+    <value>Wayland + Driver Center</value>
+  </data>
+  <data name="Wayland desktop" xml:space="preserve">
+    <value>Bureau Wayland</value>
+  </data>
+  <data name="Wayland graphics still maturing" xml:space="preserve">
+    <value>Grafismes Wayland encore en cours de maturation</value>
+  </data>
+  <data name="Wayland improvements in progress" xml:space="preserve">
+    <value>Améliorations Wayland en cours</value>
+  </data>
+  <data name="Wayland with Xorg fallback" xml:space="preserve">
+    <value>Wayland avec retour à Xorg</value>
+  </data>
+  <data name="Wayland-only · end-to-end tested" xml:space="preserve">
+    <value>Wayland uniquement · testé de bout en bout</value>
+  </data>
+  <data name="Wayland-only GNOME" xml:space="preserve">
+    <value>GNOME exclusif Wayland</value>
+  </data>
+  <data name="X11 default · Wayland experimental" xml:space="preserve">
+    <value>X11 par défaut · Wayland expérimental</value>
+  </data>
+  <data name="Zorin combines GNOME applications, extensions and Zorin-specific tools from the Ubuntu 24.04 generation, resulting in a mixed first-party graphical stack rather than an all-GTK4/libadwaita control plane." xml:space="preserve">
+    <value>Zorin combine des applications, des extensions et des outils spécifiques à Zorin issus de la génération Ubuntu 24.04, aboutissant à une pile graphique mixte de première partie plutôt qu&apos;à un plan de contrôle entièrement basé sur GTK4/libadwaita.</value>
+  </data>
+  <data name="Zorin deliberately supports a broad application estate: APT, Flatpak, Snap, AppImage, web apps and optional Windows application support." xml:space="preserve">
+    <value>Zorin prend délibérément en charge un large écosystème d&apos;applications : APT, Flatpak, Snap, AppImage, applications Web et prise en charge optionnelle des applications Windows.</value>
+  </data>
+  <data name="Zorin follows an ext4-centered Ubuntu 24.04 installation path. No equivalent first-party Btrfs topology and recovery ABI is enabled by default in the reviewed product scope." xml:space="preserve">
+    <value>Zorin suit un parcours d&apos;installation d&apos;Ubuntu 24.04 centré sur ext4. Aucune topologie Btrfs de premier éditeur et aucun ABI de récupération équivalents ne sont activés par défaut dans le périmètre du produit évalué.</value>
+  </data>
+  <data name="Zorin inherits the Ubuntu 24.04 memory and Swap foundation. The reviewed product scope identified no equivalent first-party virtual-memory control plane enabled by default." xml:space="preserve">
+    <value>Zorin hérite des bases mémoire et Swap d&apos;Ubuntu 24.04. Le périmètre produit examiné n&apos;a identifié aucun plan de contrôle de la mémoire virtuelle de premier équivalent activé par défaut.</value>
+  </data>
+  <data name="Zorin NVIDIA and session guidance" xml:space="preserve">
+    <value>Zorin, conseils NVIDIA et session</value>
+  </data>
+  <data name="Zorin NVIDIA guidance" xml:space="preserve">
+    <value>Guides NVIDIA de Zorin</value>
+  </data>
+  <data name="Zorin offers a modern-NVIDIA Live boot option and proprietary-driver workflow. Its own troubleshooting guide retains Xorg and Secure Boot fallbacks." xml:space="preserve">
+    <value>Zorin propose une option de démarrage Live moderne pour NVIDIA et un flux de travail pour les pilotes propriétaires. Son propre guide de dépannage conserve les solutions de repli Xorg et Secure Boot.</value>
+  </data>
+  <data name="Zorin offers an Ubuntu-derived graphical installation experience. The reviewed product scope identified no equivalent typed-plan and fixed semantic executor contract in its default first-party workflow." xml:space="preserve">
+    <value>Zorin propose une expérience d&apos;installation graphique dérivée d&apos;Ubuntu. Le périmètre de produit examiné n&apos;a identifié aucun contrat de plan typé et d&apos;exécutant sémantique fixe équivalent dans son flux de travail natif par défaut.</value>
+  </data>
+  <data name="Zorin OS 18 defaults to Wayland while retaining selectable Xorg sessions. The fallback is useful for compatibility, particularly when troubleshooting graphics drivers." xml:space="preserve">
+    <value>Zorin OS 18 utilise Wayland par défaut tout en conservant des sessions Xorg sélectionnables. Ce repli est utile pour la compatibilité, en particulier lors du dépannage des pilotes graphiques.</value>
+  </data>
+  <data name="Zorin OS 18.1 details" xml:space="preserve">
+    <value>Détails de Zorin OS 18.1</value>
+  </data>
+  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 initramfs-tools and Casper generation. This is its default inherited early-boot design rather than a single pure-Dracut product contract." xml:space="preserve">
+    <value>Zorin OS 18.1 utilise la génération initramfs-tools et Casper d&apos;Ubuntu 24.04. Il s&apos;agit de sa conception d&apos;amorçage précoce par défaut héritée, plutôt que d&apos;un contrat de produit unique purement basé sur Dracut.</value>
+  </data>
+  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 LTS foundation and Linux 6.17. Its desktop and userspace therefore remain on the Ubuntu 24.04 generation rather than the Ubuntu 26.04 and GNOME 50 generation used by AnduinOS 2." xml:space="preserve">
+    <value>Zorin OS 18.1 utilise la base Ubuntu 24.04 LTS et Linux 6.17. Son environnement de bureau et son espace utilisateur restent donc sur la génération Ubuntu 24.04, plutôt que sur la génération Ubuntu 26.04 et GNOME 50 utilisée par AnduinOS 2.</value>
+  </data>
+  <data name="Zorin OS clean reinstall guide" xml:space="preserve">
+    <value>Guide de réinstallation propre de Zorin OS</value>
+  </data>
+  <data name="Zorin OS technical details" xml:space="preserve">
+    <value>Détails techniques de Zorin OS</value>
+  </data>
+  <data name="Zorin performs release engineering and quality assurance. No comparable distribution-level public suite publishing installer and desktop acceptance evidence was identified in the stated official research scope as of 28 August 2026. This compares public evidence; it does not imply that Zorin does no QA." xml:space="preserve">
+    <value>Zorin réalise l&apos;ingénierie de version et l&apos;assurance qualité. Aucune suite publique comparable au niveau de la distribution, publiant des preuves d&apos;acceptation de l&apos;installateur et du bureau, n&apos;a été identifiée dans le périmètre de recherche officiel déclaré au 28 août 2026. Cela compare des preuves publiques ; cela ne signifie pas que Zorin ne réalise aucune assurance qualité.</value>
+  </data>
+  <data name="Zorin provides an Ubuntu-derived Live environment. The reviewed product scope identified no equivalent first-party Dracut Live Layers and installer-source contract enabled by default." xml:space="preserve">
+    <value>Zorin fournit un environnement Live dérivé d’Ubuntu. Le périmètre du produit examiné n’a identifié aucun contrat équivalent de première partie pour les couches Live Dracut et la source de l’installateur activé par défaut.</value>
+  </data>
+  <data name="Zorin provides recovery mechanisms, but the reviewed product scope identified no default first-party workflow connecting filesystem deployments, package transactions, boot entries and confirmation services." xml:space="preserve">
+    <value>Zorin fournit des mécanismes de récupération, mais le périmètre du produit examiné n&apos;a identifié aucun flux de travail par défaut de premier éditeur reliant les déploiements de systèmes de fichiers, les transactions de paquets, les entrées de démarrage et les services de confirmation.</value>
+  </data>
+  <data name="Zorin Secure Boot guidance" xml:space="preserve">
+    <value>Conseils Zorin Secure Boot</value>
+  </data>
+  <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed product scope identified no default first-party sizing and health-verification dashboard of this scope." xml:space="preserve">
+    <value>Zorin prend en charge les mécanismes de Swap et de hibernation de Linux. Le périmètre du produit examiné n&apos;a identifié aucun tableau de bord par défaut de dimensionnement et de vérification de l&apos;intégrité de ce périmètre, proposé par l&apos;éditeur.</value>
+  </data>
+  <data name="Zorin supports Secure Boot through its Ubuntu foundation and documents firmware fallbacks for problem hardware. NVIDIA guidance may still recommend disabling Secure Boot or using Xorg when drivers fail." xml:space="preserve">
+    <value>Zorin prend en charge Secure Boot grâce à sa base Ubuntu et documente les solutions de secours firmware pour le matériel problématique. Les recommandations de NVIDIA peuvent toujours conseiller de désactiver Secure Boot ou d&apos;utiliser Xorg en cas d&apos;échec des pilotes.</value>
+  </data>
+  <data name="Zorin uses mature Debian and Ubuntu packaging together with its own repositories and product package selection. It follows a different source and composition model." xml:space="preserve">
+    <value>Zorin utilise l&apos;empaquetage éprouvé de Debian et d&apos;Ubuntu, associé à ses propres dépôts et à sa sélection de packages produit. Il suit un modèle de source et de composition différent.</value>
+  </data>
+  <data name="Zorin Windows App Support" xml:space="preserve">
+    <value>Prise en charge des applications Windows de Zorin</value>
+  </data>
+  <data name="Zorin&apos;s official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset." xml:space="preserve">
+    <value>La procédure officielle d&apos;installation propre de Zorin nécessite le téléchargement d&apos;un ISO, la création d&apos;un support d&apos;installation, la sauvegarde des données et la réinstallation. Son application Backups peut restaurer les fichiers personnels enregistrés par la suite ; le flux de travail bureau de première partie examiné ne fournit pas de référence protégée au moment de l&apos;installation pour une remise à zéro en place.</value>
+  </data>
+  <data name="Zorin&apos;s official desktop images target 64-bit Intel and AMD processors. No official ARM64 desktop product is listed for Zorin OS 18.1." xml:space="preserve">
+    <value>Les images de bureau officielles de Zorin ciblent les processeurs Intel et AMD 64 bits. Aucun produit de bureau ARM64 officiel n&apos;est répertorié pour Zorin OS 18.1.</value>
+  </data>
+  <data name="Zorin&apos;s Ubuntu 24.04-era GNOME foundation supports useful Wayland display features, but predates the GNOME 50 HDR, VRR and color-management generation." xml:space="preserve">
+    <value>La base GNOME de Zorin, issue de l&apos;ère Ubuntu 24.04, prend en charge des fonctionnalités d&apos;affichage Wayland utiles, mais précède la génération GNOME 50 avec son support HDR, VRR et de la gestion des couleurs.</value>
+  </data>
+  <data name="Zram + disk Swap + health UI" xml:space="preserve">
+    <value>Zram + Swap disque + interface de santé</value>
   </data>
 
 </root>
