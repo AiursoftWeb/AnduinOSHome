@@ -21,14 +21,143 @@
       <data name="A familiar interface is only the surface. Explore which capabilities are defaults, which are optional, and how deeply each operating system integrates them." xml:space="preserve">
     <value>Tanıdık bir arayüz yalnızca yüzeydir. Hangi yeteneklerin varsayılan, hangilerinin isteğe bağlı olduğunu ve her işletim sisteminin bunları ne denli derinlemesine entegre ettiğini keşfedin.</value>
   </data>
+  <data name="All first-party graphical system tools use GTK4/libadwaita" xml:space="preserve">
+    <value>Tüm birinci taraf grafik sistem araçları GTK4/libadwaita kullanır</value>
+  </data>
+  <data name="AMD64 + ARM64" xml:space="preserve">
+    <value>AMD64 + ARM64</value>
+  </data>
+  <data name="An unprivileged GTK4 planner produces a canonical typed plan. A fixed privileged executor revalidates it and constructs commands itself; the UI cannot inject arbitrary shell commands or paths." xml:space="preserve">
+    <value>Yetkisiz çalışan bir GTK4 planlayıcısı, standartlaştırılmış ve türü belirtilmiş bir plan oluşturur. Sabit ve ayrıcalıklı bir yürütücü planı yeniden doğrular ve komutları kendisi oluşturur; kullanıcı arayüzü rastgele kabuk komutları veya yollar ekleyemez.</value>
+  </data>
+  <data name="AnduinOS 2 targets Ubuntu 26.04 Resolute and ships its Linux 7.0 GA kernel. The core package retains that kernel contract through normal installs and upgrades instead of treating it as an ISO-only customization." xml:space="preserve">
+    <value>AnduinOS 2, Ubuntu 26.04 Resolute’u hedefler ve Linux 7.0 GA çekirdeğiyle gelir. Temel paket, bu çekirdek taahhüdünü yalnızca ISO’ya özgü bir özelleştirme olarak ele almak yerine, normal kurulumlar ve yükseltmeler boyunca korur.</value>
+  </data>
+  <data name="AnduinOS component catalog" xml:space="preserve">
+    <value>AnduinOS bileşen kataloğu</value>
+  </data>
+  <data name="AnduinOS core depends on Dracut and conflicts with initramfs-tools, Casper and finalrd. Generated images are verified and guarded so competing generators cannot silently coexist." xml:space="preserve">
+    <value>AnduinOS çekirdeği Dracut’a bağlıdır ve initramfs-tools, Casper ve finalrd ile çakışır. Oluşturulan imajlar doğrulanır ve koruma altına alınır; böylece birbiriyle yarışan oluşturucular fark edilmeden bir arada bulunamaz.</value>
+  </data>
+  <data name="AnduinOS desktop packages" xml:space="preserve">
+    <value>AnduinOS masaüstü paketleri</value>
+  </data>
+  <data name="AnduinOS first-party graphical system tools—including Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager—share GTK4, libadwaita and adaptive conventions. This claim does not extend to third-party applications or non-graphical components." xml:space="preserve">
+    <value>AnduinOS’un birinci taraf grafik sistem araçları (Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control ve Snapshot Manager dâhil) GTK4, libadwaita ve uyarlanabilir tasarım ilkelerini paylaşır. Bu ifade üçüncü taraf uygulamalarını veya grafiksel olmayan bileşenleri kapsamaz.</value>
+  </data>
+  <data name="AnduinOS inherits GNOME 50&apos;s HDR screen sharing, Wayland color-management v2, improved VRR, optimized fractional scaling and low-latency cursor path." xml:space="preserve">
+    <value>AnduinOS, GNOME 50&apos;ın HDR ekran paylaşımını, Wayland renk yönetimi v2&apos;yi, geliştirilmiş VRR&apos;yi, optimize edilmiş kesirli ölçeklendirmeyi ve düşük gecikmeli imleç yolunu devralır.</value>
+  </data>
+  <data name="AnduinOS ISO acceptance framework" xml:space="preserve">
+    <value>AnduinOS ISO kabul çerçevesi</value>
+  </data>
+  <data name="AnduinOS ISO architecture" xml:space="preserve">
+    <value>AnduinOS ISO mimarisi</value>
+  </data>
+  <data name="AnduinOS ISO source" xml:space="preserve">
+    <value>AnduinOS ISO kaynağı</value>
+  </data>
+  <data name="AnduinOS layers 50%-of-RAM LZ4 Zram above a dynamically sized disk Swap partition. The native GTK4 tool manages Zram, optional Zswap, stress tests and hibernation health." xml:space="preserve">
+    <value>AnduinOS, RAM’in %50’si boyutunda LZ4 Zram’ı dinamik boyutlu bir disk Swap bölümünün üzerine katman olarak ekler. Yerel GTK4 aracı Zram’ı, isteğe bağlı Zswap’ı, stres testlerini ve hazırda bekletme sağlığını yönetir.</value>
+  </data>
+  <data name="AnduinOS maintains and tests one desktop display stack end to end. Xorg session: Not included. XWayland remains available for legacy applications, but there is no Xorg desktop fallback if a Wayland-specific problem occurs." xml:space="preserve">
+    <value>AnduinOS, uçtan uca tek bir masaüstü görüntüleme yığınını sürdürür ve test eder. Xorg oturumu: Dahil değildir. Eski uygulamalar için XWayland kullanılabilir olmaya devam eder; ancak Wayland&apos;a özgü bir sorun ortaya çıkarsa kullanılabilecek bir Xorg masaüstü alternatifi yoktur.</value>
+  </data>
+  <data name="AnduinOS package architecture" xml:space="preserve">
+    <value>AnduinOS paket mimarisi</value>
+  </data>
+  <data name="AnduinOS package projects declare suites, architectures, dependencies, conflicts, assets, services, AppStream metadata, lifecycle scripts and build gates together. Layered metapackages compose the final product." xml:space="preserve">
+    <value>AnduinOS paket projeleri; sürüm kümelerini, mimarileri, bağımlılıkları, çakışmaları, varlıkları, hizmetleri, AppStream üst verilerini, yaşam döngüsü betiklerini ve derleme kontrollerini birlikte tanımlar. Katmanlı üst paketler nihai ürünü oluşturur.</value>
+  </data>
+  <data name="AnduinOS packages" xml:space="preserve">
+    <value>AnduinOS paketleri</value>
+  </data>
+  <data name="AnduinOS removes or conflicts with Ubuntu reporting components such as whoopsie and disables Canonical remote MOTD news. The policy is expressed in packages rather than only in a privacy statement." xml:space="preserve">
+    <value>AnduinOS, whoopsie gibi Ubuntu raporlama bileşenlerini kaldırır veya bunlarla çakışır ve Canonical&apos;ın uzaktan MOTD haberlerini devre dışı bırakır. Bu politika yalnızca bir gizlilik bildiriminde değil, paketler aracılığıyla da uygulanır.</value>
+  </data>
+  <data name="AnduinOS separates system recovery from Personal Files history. The Snapshot Manager and Files integration can browse and restore earlier versions without conflating them with OS rollback." xml:space="preserve">
+    <value>AnduinOS, sistem kurtarmayı Kişisel Dosyalar geçmişinden ayrı tutar. Anlık Görüntü Yöneticisi ve Dosyalar entegrasyonu, işletim sistemini önceki bir duruma döndürmeyle karıştırmadan önceki sürümlere göz atıp bunları geri yüklemenizi sağlar.</value>
+  </data>
+  <data name="AnduinOS uses native APT packages for the system and Flatpak for sandboxed applications. snapd is conflicted, pinned out, unmounted and purged by product policy." xml:space="preserve">
+    <value>AnduinOS, sistem için yerel APT paketlerini, yalıtılmış uygulamalar için ise Flatpak&apos;i kullanır. Ürün politikası gereği snapd için paket çakışması tanımlanmış, paketin kurulumu engellenmiş, bağlaması kaldırılmış ve paket sistemden temizlenmiştir.</value>
+  </data>
+  <data name="APKG + .aosproj projects" xml:space="preserve">
+    <value>APKG + .aosproj projeleri</value>
+  </data>
+  <data name="Application model" xml:space="preserve">
+    <value>Uygulama modeli</value>
+  </data>
+  <data name="APT + Flatpak · Snap blocked" xml:space="preserve">
+    <value>APT + Flatpak · Snap engelli</value>
+  </data>
+  <data name="APT + Flatpak + Snap" xml:space="preserve">
+    <value>APT + Flatpak + Snap</value>
+  </data>
+  <data name="APT + Snap by default" xml:space="preserve">
+    <value>Varsayılan olarak APT + Snap</value>
+  </data>
+  <data name="APT hooks create structured recovery points before and after package changes. Snapshot metadata records package state and feeds the same retention and rollback protocol." xml:space="preserve">
+    <value>APT kancaları, paket değişikliklerinden önce ve sonra yapılandırılmış kurtarma noktaları oluşturur. Anlık görüntü meta verileri paket durumunu kaydeder ve aynı saklama ve geri alma protokolüne aktarılır.</value>
+  </data>
+  <data name="APT snapshots + bootable rollback" xml:space="preserve">
+    <value>APT anlık görüntüleri + önyüklenebilir geri alma</value>
+  </data>
+  <data name="APT system · Flatpak apps · no Snap" xml:space="preserve">
+    <value>APT sistemi · Flatpak uygulamaları · Snap yok</value>
+  </data>
+  <data name="APT, Flatpak and Snap policy" xml:space="preserve">
+    <value>APT, Flatpak ve Snap politikası</value>
+  </data>
   <data name="Architecture, not aesthetics" xml:space="preserve">
     <value>Mimari, estetik değil</value>
+  </data>
+  <data name="Automatic pre/post snapshots" xml:space="preserve">
+    <value>Otomatik işlem öncesi/sonrası anlık görüntüler</value>
+  </data>
+  <data name="Boot trust, MOK and third-party modules" xml:space="preserve">
+    <value>Önyükleme güveni, MOK ve üçüncü taraf modüller</value>
+  </data>
+  <data name="Both architectures are product targets. The ISO builder, native installer, UEFI layout, signed boot payloads and acceptance matrix model AMD64 and ARM64 explicitly." xml:space="preserve">
+    <value>Her iki mimari de ürün hedefidir. ISO derleyicisi, yerel yükleyici, UEFI düzeni, imzalı önyükleme yükleri ve kabul matrisi AMD64 ve ARM64&apos;ü açıkça temel alır.</value>
+  </data>
+  <data name="Btrfs default · ext4 optional" xml:space="preserve">
+    <value>Btrfs varsayılan · ext4 isteğe bağlı</value>
+  </data>
+  <data name="Btrfs system design" xml:space="preserve">
+    <value>Btrfs sistem tasarımı</value>
+  </data>
+  <data name="Btrfs: protected New OS baseline" xml:space="preserve">
+    <value>Btrfs: korumalı Yeni İşletim Sistemi temel durumu</value>
+  </data>
+  <data name="Built-in recovery without reinstall media" xml:space="preserve">
+    <value>Yeniden kurulum medyası olmadan yerleşik kurtarma</value>
+  </data>
+  <data name="Canonical operates extensive archive, image, hardware and release validation at upstream scale. Its implementation and evidence model differ from the AnduinOS acceptance framework." xml:space="preserve">
+    <value>Canonical, üst akış ölçeğinde kapsamlı arşiv, imaj, donanım ve sürüm doğrulaması yürütür. Uygulama biçimi ve kanıt modeli, AnduinOS kabul çerçevesinden farklıdır.</value>
+  </data>
+  <data name="Canonical publishes official Ubuntu 26.04 desktop downloads for both Intel or AMD 64-bit systems and ARM 64-bit systems." xml:space="preserve">
+    <value>Canonical, hem Intel veya AMD 64 bit sistemler hem de ARM 64 bit sistemler için resmî Ubuntu 26.04 masaüstü indirmelerini yayımlar.</value>
+  </data>
+  <data name="Canonical-signed chain" xml:space="preserve">
+    <value>Canonical tarafından imzalanmış zincir</value>
   </data>
   <data name="Capability" xml:space="preserve">
     <value>Özellik</value>
   </data>
+  <data name="Capacity-aware policy + health UI" xml:space="preserve">
+    <value>Kapasiteyi gözeten ilke + sistem durumu arayüzü</value>
+  </data>
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Karşılaştırılacak dağıtımı seçin</value>
+  </data>
+  <data name="Cinnamon 6.6 remains centered on its mature X11 path in Mint 22.3. The next release is where Mint plans to graduate Wayland support from experimental status." xml:space="preserve">
+    <value>Mint 22.3’te Cinnamon 6.6, olgunlaşmış X11 altyapısını temel almaya devam ediyor. Mint, Wayland desteğini deneysel statüden çıkarmayı bir sonraki sürümde planlıyor.</value>
+  </data>
+  <data name="Cinnamon and XApp tools" xml:space="preserve">
+    <value>Cinnamon ve XApp araçları</value>
+  </data>
+  <data name="Cinnamon&apos;s Wayland session remains experimental in Linux Mint 22.3. Mint has announced that both X11 and Wayland will become fully supported in the next Cinnamon release." xml:space="preserve">
+    <value>Cinnamon&apos;ın Wayland oturumu Linux Mint 22.3&apos;te hâlâ deneysel. Mint, bir sonraki Cinnamon sürümünde hem X11&apos;in hem de Wayland&apos;ın tam olarak destekleneceğini duyurdu.</value>
   </data>
   <data name="Close details" xml:space="preserve">
     <value>Detayları kapat</value>
@@ -42,8 +171,38 @@
   <data name="Comparison snapshot: 20 September 2026" xml:space="preserve">
     <value>Karşılaştırma anlık görüntüsü: 20 Eylül 2026</value>
   </data>
+  <data name="Compressed RAM, disk Swap and health" xml:space="preserve">
+    <value>Sıkıştırılmış RAM, disk takas alanı ve sistem sağlığı</value>
+  </data>
   <data name="Current product implementation" xml:space="preserve">
     <value>Mevcut ürün uygulaması</value>
+  </data>
+  <data name="Debian packages + Mint tooling" xml:space="preserve">
+    <value>Debian paketleri + Mint araçları</value>
+  </data>
+  <data name="Debian packages + Zorin composition" xml:space="preserve">
+    <value>Debian paketleri + Zorin bileşimi</value>
+  </data>
+  <data name="Default storage model" xml:space="preserve">
+    <value>Varsayılan depolama modeli</value>
+  </data>
+  <data name="Desktop architectures" xml:space="preserve">
+    <value>Masaüstü mimarileri</value>
+  </data>
+  <data name="Desktop reinstall from installation media" xml:space="preserve">
+    <value>Kurulum medyasından masaüstünü yeniden yükleme</value>
+  </data>
+  <data name="Diagnostics and remote news" xml:space="preserve">
+    <value>Tanılama ve uzaktan haberler</value>
+  </data>
+  <data name="Diagnostics with release controls" xml:space="preserve">
+    <value>Sürüm kontrollerine tabi tanılama</value>
+  </data>
+  <data name="Disk Snapshots Manager" xml:space="preserve">
+    <value>Disk Anlık Görüntüleri Yöneticisi</value>
+  </data>
+  <data name="Display pipeline" xml:space="preserve">
+    <value>Görüntüleme hattı</value>
   </data>
   <data name="Distribution comparison table" xml:space="preserve">
     <value>Dağıtım karşılaştırma tablosu</value>
@@ -51,11 +210,140 @@
   <data name="Done" xml:space="preserve">
     <value>Tamam</value>
   </data>
+  <data name="Dracut default · compatibility retained" xml:space="preserve">
+    <value>Varsayılan Dracut · uyumluluk korunuyor</value>
+  </data>
+  <data name="Dracut Live Layers" xml:space="preserve">
+    <value>Dracut Live Layers</value>
+  </data>
+  <data name="Drivers, frame timing and recovery paths" xml:space="preserve">
+    <value>Sürücüler, kare zamanlaması ve kurtarma yolları</value>
+  </data>
+  <data name="Early-boot architecture" xml:space="preserve">
+    <value>Erken önyükleme mimarisi</value>
+  </data>
+  <data name="Established installer path" xml:space="preserve">
+    <value>Yerleşik yükleyici yolu</value>
+  </data>
   <data name="Evidence and verification" xml:space="preserve">
     <value>Kanıt ve doğrulama</value>
   </data>
+  <data name="Explicit zero-system-telemetry" xml:space="preserve">
+    <value>Açıkça sıfır sistem telemetrisi</value>
+  </data>
+  <data name="ext4 default · Btrfs selectable" xml:space="preserve">
+    <value>ext4 varsayılan · Btrfs seçilebilir</value>
+  </data>
+  <data name="ext4 default · other options" xml:space="preserve">
+    <value>ext4 varsayılan · diğer seçenekler</value>
+  </data>
+  <data name="ext4-centered default" xml:space="preserve">
+    <value>ext4&apos;ün temel alındığı varsayılan</value>
+  </data>
+  <data name="Extensive image and release QA" xml:space="preserve">
+    <value>Kapsamlı imaj ve sürüm kalite güvencesi</value>
+  </data>
+  <data name="Factory reset to initial installation" xml:space="preserve">
+    <value>Fabrika ayarlarına sıfırlayarak ilk kuruluma dönme</value>
+  </data>
+  <data name="Filesystem defaults and system topology" xml:space="preserve">
+    <value>Dosya sistemi varsayılanları ve sistem topolojisi</value>
+  </data>
+  <data name="First-party system tools" xml:space="preserve">
+    <value>Birinci taraf sistem araçları</value>
+  </data>
+  <data name="Fully supported on Wayland" xml:space="preserve">
+    <value>Wayland&apos;de tam destek</value>
+  </data>
+  <data name="General-purpose policy" xml:space="preserve">
+    <value>Genel amaçlı politika</value>
+  </data>
+  <data name="GNOME 50 display improvements" xml:space="preserve">
+    <value>GNOME 50 ekran iyileştirmeleri</value>
+  </data>
+  <data name="GNOME 50 frame-timing improvements, Ubuntu 26.04 drivers and the AnduinOS Driver Center are connected to Secure Boot and DKMS trust health." xml:space="preserve">
+    <value>GNOME 50 kare zamanlaması iyileştirmeleri, Ubuntu 26.04 sürücüleri ve AnduinOS Sürücü Merkezi, Güvenli Önyükleme ve DKMS güven durumu ile bağlantılıdır.</value>
+  </data>
+  <data name="GNOME 50 graphics pipeline" xml:space="preserve">
+    <value>GNOME 50 grafik işlem hattı</value>
+  </data>
+  <data name="GNOME 50 release notes" xml:space="preserve">
+    <value>GNOME 50 sürüm notları</value>
+  </data>
+  <data name="HDR, VRR and fractional scaling" xml:space="preserve">
+    <value>HDR, VRR ve kesirli ölçeklendirme</value>
+  </data>
+  <data name="Inherited initramfs-tools + Casper" xml:space="preserve">
+    <value>Kalıtsal initramfs-tools + Casper</value>
+  </data>
+  <data name="Inherited Ubuntu 24.04 stack" xml:space="preserve">
+    <value>Ubuntu 24.04&apos;ten devralınan yığın</value>
+  </data>
+  <data name="Initramfs implementation and migration policy" xml:space="preserve">
+    <value>Initramfs uygulaması ve geçiş politikası</value>
+  </data>
+  <data name="Installable AMD64 and ARM64 products" xml:space="preserve">
+    <value>Kurulabilir AMD64 ve ARM64 ürünleri</value>
+  </data>
+  <data name="Installer + MOK + DKMS health" xml:space="preserve">
+    <value>Kurulum aracı + MOK + DKMS durumu</value>
+  </data>
+  <data name="Installer architecture" xml:space="preserve">
+    <value>Yükleyici mimarisi</value>
+  </data>
+  <data name="Installer design" xml:space="preserve">
+    <value>Yükleyici tasarımı</value>
+  </data>
+  <data name="Installer Secure Boot design" xml:space="preserve">
+    <value>Yükleyicinin Güvenli Önyükleme tasarımı</value>
+  </data>
   <data name="Integrated by design" xml:space="preserve">
     <value>Tasarımda bütünleşik</value>
+  </data>
+  <data name="Linux 7.0 HWE images" xml:space="preserve">
+    <value>Linux 7.0 HWE kalıpları</value>
+  </data>
+  <data name="Linux Mint 22.3 publishes its Cinnamon, MATE and Xfce desktop editions as 64-bit x86 images. No equivalent official ARM64 Mint desktop image is offered." xml:space="preserve">
+    <value>Linux Mint 22.3, Cinnamon, MATE ve Xfce masaüstü sürümlerini 64 bit x86 imajları olarak sunar. ARM64 için eşdeğer bir resmî Mint masaüstü imajı sunulmamaktadır.</value>
+  </data>
+  <data name="Linux Mint 22.3 release" xml:space="preserve">
+    <value>Linux Mint 22.3 sürümü</value>
+  </data>
+  <data name="Linux Mint 22.3 release announcement" xml:space="preserve">
+    <value>Linux Mint 22.3 sürüm duyurusu</value>
+  </data>
+  <data name="Linux Mint 22.3 uses the Ubuntu 24.04-era early-boot and Live generation. The reviewed scope identified no Mint-specific single-generator Dracut contract enabled by default." xml:space="preserve">
+    <value>Linux Mint 22.3, Ubuntu 24.04 döneminin erken açılış ve Live neslini kullanır. İncelenen kapsamda, varsayılan olarak etkinleştirilmiş Mint&apos;e özgü tek üreteçli bir Dracut sözleşmesi tespit edilmemiştir.</value>
+  </data>
+  <data name="Linux Mint 22.3 was released with Linux 6.14. Mint now also publishes fully QA-tested HWE images with Linux 7.0 for newer hardware, so the selected image matters." xml:space="preserve">
+    <value>Linux Mint 22.3, Linux 6.14 ile yayımlandı. Mint artık daha yeni donanımlar için Linux 7.0 içeren, kalite güvencesi testleri tamamen tamamlanmış HWE imajları da yayımlıyor; bu nedenle seçilen imaj önem taşıyor.</value>
+  </data>
+  <data name="Linux Mint HWE QA" xml:space="preserve">
+    <value>Linux Mint HWE Kalite Güvencesi</value>
+  </data>
+  <data name="Linux Mint inherits Ubuntu&apos;s signed shim, GRUB and kernel foundation. Mint documents workarounds for systems that report Secure Boot violations." xml:space="preserve">
+    <value>Linux Mint, Ubuntu&apos;nun imzalı shim, GRUB ve çekirdek temelini devralır. Mint, Güvenli Önyükleme ihlali bildiren sistemler için geçici çözümleri belgeliyor.</value>
+  </data>
+  <data name="Linux Mint provides standard Linux memory and Swap capabilities. The reviewed release scope identified no default integrated Zram, Zswap, stress-test and hibernation-health interface." xml:space="preserve">
+    <value>Linux Mint standart Linux bellek ve takas alanı (Swap) özellikleri sunar. İncelenen sürüm kapsamında varsayılan olarak entegre Zram, Zswap, stres testi ve hazırda bekletme sağlığı arayüzü bulunmadığı tespit edilmiştir.</value>
+  </data>
+  <data name="Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state." xml:space="preserve">
+    <value>Linux Mint, uygun bir anlık görüntü yapılandırılıp oluşturulmuşsa Timeshift ile sistemi geri almayı sağlar. Kılavuzu, işletim sistemini kullanmaya başlamadan önce anlık görüntülerin ayarlanmasını ister; otomatik olarak sabitlenmiş bir fabrika başlangıç durumundan söz etmez. Timeshift, kişisel dosyaları varsayılan olarak kapsam dışında bırakır; bu nedenle sistem ve Home bölümünü kurulum durumuna tek adımda döndüren eşdeğer bir sıfırlama değildir.</value>
+  </data>
+  <data name="Linux Mint publishes privacy-oriented defaults. The reviewed scope identified no equivalent package-level conflict and replacement contract for every Ubuntu reporting component." xml:space="preserve">
+    <value>Linux Mint, gizlilik odaklı varsayılanlar sunar. İncelenen kapsamda, Ubuntu’nun tüm raporlama bileşenleri için eşdeğer bir paket düzeyinde çakışma ve ikame politikası belirlenmedi.</value>
+  </data>
+  <data name="Linux Mint system snapshots" xml:space="preserve">
+    <value>Linux Mint sistem anlık görüntüleri</value>
+  </data>
+  <data name="Linux Mint Wayland status" xml:space="preserve">
+    <value>Linux Mint Wayland durumu</value>
+  </data>
+  <data name="Live system layers" xml:space="preserve">
+    <value>Canlı sistem katmanları</value>
+  </data>
+  <data name="Memory pressure strategy" xml:space="preserve">
+    <value>Bellek baskısı stratejisi</value>
   </data>
   <data name="Method and evidence scope" xml:space="preserve">
     <value>Yöntem ve kanıt kapsamı</value>
@@ -63,17 +351,146 @@
   <data name="Method: comparison of first-party defaults, published source repositories and official product documentation available on 20 September 2026." xml:space="preserve">
     <value>Yöntem: 20 Eylül 2026 tarihinde erişilebilir olan birincil taraf varsayılanları, yayımlanmış kaynak depoları ve resmi ürün dokümantasyonunun karşılaştırılması.</value>
   </data>
+  <data name="Mint announced accelerated NVIDIA Wayland improvements for the next Cinnamon release. In 22.3, the Wayland session itself remains experimental." xml:space="preserve">
+    <value>Mint, bir sonraki Cinnamon sürümü için NVIDIA Wayland iyileştirmelerini hızlandıracağını duyurdu. 22.3&apos;te Wayland oturumunun kendisi deneysel olmayı sürdürüyor.</value>
+  </data>
+  <data name="Mint deliberately maintains its Cinnamon and XApp design system. Major administration tools remain primarily GTK3/XApp while GTK4 applications are supported." xml:space="preserve">
+    <value>Mint, Cinnamon ve XApp tasarım sistemini bilinçli olarak sürdürmektedir. Başlıca yönetim araçları ağırlıklı olarak GTK3/XApp tabanlıdır; GTK4 uygulamaları da desteklenir.</value>
+  </data>
+  <data name="Mint explicitly recommends creating a Timeshift snapshot before a release upgrade. This is a manual upgrade safeguard rather than an automatic symmetric APT transaction contract." xml:space="preserve">
+    <value>Mint, sürüm yükseltmesinden önce Timeshift anlık görüntüsü oluşturulmasını özellikle önerir. Bu, otomatik ve her APT işlemi öncesi/sonrası simetrik olarak uygulanan bir sözleşme değil, yükseltme sırasında elle alınan bir önlemdir.</value>
+  </data>
+  <data name="Mint exposes standard Linux Swap and hibernation capabilities. The reviewed product scope identified no integrated first-party sizing and health-verification control plane enabled by default." xml:space="preserve">
+    <value>Mint, standart Linux takas alanı ve hazırda bekletme özelliklerini sunar. İncelenen ürün kapsamı, varsayılan olarak etkinleştirilmiş, boyutlandırma ve sağlık doğrulaması sağlayan entegre bir birinci taraf yönetim düzlemi belirlememiştir.</value>
+  </data>
+  <data name="Mint graphical installer" xml:space="preserve">
+    <value>Mint&apos;in grafik yükleyicisi</value>
+  </data>
+  <data name="Mint installs to ext4 by default. Btrfs can be selected and Timeshift can use Btrfs snapshots, but Mint does not define the same default subvolume ABI as AnduinOS." xml:space="preserve">
+    <value>Mint varsayılan olarak ext4&apos;e kurulur. Btrfs seçilebilir ve Timeshift Btrfs anlık görüntülerini kullanabilir; ancak Mint, AnduinOS ile aynı varsayılan alt birim ABI&apos;sini tanımlamaz.</value>
+  </data>
+  <data name="Mint Live session" xml:space="preserve">
+    <value>Mint Canlı oturumu</value>
+  </data>
+  <data name="Mint offers a Live desktop and persistence workflows. The reviewed product scope identified no equivalent first-party Dracut overlay protocol enabled by default." xml:space="preserve">
+    <value>Mint, Canlı masaüstü ve kalıcılık iş akışları sunar. İncelenen ürün kapsamı, varsayılan olarak etkinleştirilmiş eşdeğer bir birinci taraf Dracut overlay protokolü belirlememiştir.</value>
+  </data>
+  <data name="Mint performs release and ISO quality assurance, including fully QA-tested HWE images. The reviewed public scope identified no acceptance contract directly comparable to the published AnduinOS QEMU/QMP/AT-SPI framework." xml:space="preserve">
+    <value>Mint, sürüm ve ISO kalite güvencesi süreçlerini yürütür; HWE imajları da kapsamlı kalite testlerinden geçirilir. İncelenen kamuya açık kaynaklarda, yayımlanmış AnduinOS QEMU/QMP/AT-SPI çerçevesiyle doğrudan karşılaştırılabilecek bir kabul sözleşmesine rastlanmamıştır.</value>
+  </data>
+  <data name="Mint provides first-class APT and Flatpak integration and blocks Snap by default, while still allowing users to deliberately re-enable it." xml:space="preserve">
+    <value>Mint, APT ve Flatpak ile kapsamlı entegrasyon sunar ve Snap&apos;i varsayılan olarak engeller; ancak kullanıcıların Snap&apos;i istedikleri takdirde yeniden etkinleştirmelerine izin verir.</value>
+  </data>
+  <data name="Mint provides its established graphical installer. Its default first-party workflow uses a different design from the native GTK4 planner and fixed semantic executor contract used by AnduinOS." xml:space="preserve">
+    <value>Mint, köklü grafik yükleyicisini sunar. Varsayılan birinci taraf iş akışında, AnduinOS&apos;un kullandığı yerel GTK4 planlayıcısından ve sabit anlamsal yürütücü sözleşmesinden farklı bir tasarım kullanılır.</value>
+  </data>
+  <data name="Mint uses established Debian packaging, metapackages and Mint project tooling. It does not use the unified AnduinOS .aosproj format." xml:space="preserve">
+    <value>Mint, yerleşik Debian paketleme sistemini, meta paketleri ve Mint proje araçlarını kullanır. Birleşik AnduinOS .aosproj biçimini kullanmaz.</value>
+  </data>
+  <data name="Mixed first-party estate" xml:space="preserve">
+    <value>Karma birinci taraf yazılım ekosistemi</value>
+  </data>
+  <data name="Modern drivers · Xorg fallback" xml:space="preserve">
+    <value>Modern sürücüler · Xorg yedek seçeneği</value>
+  </data>
+  <data name="Modern Flutter frontend" xml:space="preserve">
+    <value>Modern Flutter ön yüzü</value>
+  </data>
+  <data name="Modern GNOME applications" xml:space="preserve">
+    <value>Modern GNOME uygulamaları</value>
+  </data>
+  <data name="Native GTK4 · typed install plan" xml:space="preserve">
+    <value>Yerel GTK4 · tür belirtilmiş kurulum planı</value>
+  </data>
+  <data name="Native installer design" xml:space="preserve">
+    <value>Yerel yükleyici tasarımı</value>
+  </data>
+  <data name="No comparable public suite identified as of 2026-08-28" xml:space="preserve">
+    <value>28.08.2026 itibarıyla karşılaştırılabilir bir kamuya açık test paketi tespit edilmedi</value>
+  </data>
   <data name="No competitor ISO was installed specifically for this snapshot. Therefore no competitor test ISO, SHA256, installation date, screenshots or logs are presented as direct test evidence. Statements that no equivalent workflow was identified refer only to the official research scope above; they do not claim that a project performs no internal QA or that users cannot assemble similar functionality." xml:space="preserve">
     <value>Bu anlık görüntü için özellikle herhangi bir rakip ISO kurulmamıştır. Dolayısıyla rakip test ISO&apos;su, SHA256, kurulum tarihi, ekran görüntüleri veya günlükler doğrudan test kanıtı olarak sunulmamaktadır. Eşdeğer bir iş akışının tespit edilmediğine ilişkin ifadeler yalnızca yukarıdaki resmi araştırma kapsamına atıfta bulunur; bunlar, bir projenin dahili kalite güvencesi (QA) gerçekleştirmemesi veya kullanıcıların benzer işlevselliği oluşturamaması iddiasında bulunmaz.</value>
+  </data>
+  <data name="No equivalent first-party workflow enabled by default" xml:space="preserve">
+    <value>Varsayılan olarak etkinleştirilmiş, eşdeğer bir birinci taraf iş akışı yok</value>
+  </data>
+  <data name="No equivalent package-level policy enabled by default" xml:space="preserve">
+    <value>Varsayılan olarak etkinleştirilmiş eşdeğer bir paket düzeyi politika yok</value>
+  </data>
+  <data name="NVIDIA on Wayland" xml:space="preserve">
+    <value>Wayland&apos;de NVIDIA</value>
   </data>
   <data name="Official research scope: AnduinOS package and ISO repositories; Zorin OS technical details, published package lists and Help documentation; Linux Mint release posts and documentation; Ubuntu and GNOME release documentation." xml:space="preserve">
     <value>Resmî araştırma kapsamı: AnduinOS paket ve ISO depoları; Zorin OS teknik detayları, yayınlanan paket listeleri ve Yardım belgeleri; Linux Mint sürüm duyuruları ve belgeleri; Ubuntu ve GNOME sürüm belgeleri.</value>
   </data>
+  <data name="Official x86-64 desktop" xml:space="preserve">
+    <value>Resmî x86-64 masaüstü</value>
+  </data>
+  <data name="Official x86-64 images" xml:space="preserve">
+    <value>Resmî x86-64 kalıpları</value>
+  </data>
+  <data name="On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager&apos;s guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure." xml:space="preserve">
+    <value>Btrfs kurulumlarında yükleyici, başlangıçtaki Sistem ve Ev anlık görüntülerini korumalı olarak oluşturur. Denetim Masası, Disk Anlık Görüntüleri Yöneticisi&apos;ndeki korumalı Fabrika Ayarlarına Sıfırlama iş akışını açar: sistemi Yeni İşletim Sistemi durumuna geri yükler, varsayılan olarak Ev&apos;i korur veya isteğe bağlı olarak kullanıcı verilerini de önceki hâline döndürür. Yönetici, ön koşulları denetler, bir güvenlik anlık görüntüsü kaydeder ve yeniden başlatma sırasında geçişi tamamlar. ext4 kurulumları bu özelliği desteklemez; Ev&apos;i geri yüklemek güvenli veri silme işlemi değildir.</value>
+  </data>
+  <data name="Package source and product composition" xml:space="preserve">
+    <value>Paket kaynağı ve ürün bileşimi</value>
+  </data>
+  <data name="Package transaction safety" xml:space="preserve">
+    <value>Paket işlemi güvenliği</value>
+  </data>
+  <data name="Personal file history" xml:space="preserve">
+    <value>Kişisel dosya geçmişi</value>
+  </data>
+  <data name="Personal Files snapshots" xml:space="preserve">
+    <value>Kişisel dosya anlık görüntüleri</value>
+  </data>
+  <data name="Platform generation" xml:space="preserve">
+    <value>Platform nesli</value>
+  </data>
+  <data name="Primary display architecture" xml:space="preserve">
+    <value>Birincil görüntü mimarisi</value>
+  </data>
+  <data name="Privacy-oriented defaults" xml:space="preserve">
+    <value>Gizlilik odaklı varsayılanlar</value>
+  </data>
+  <data name="Public automated release evidence" xml:space="preserve">
+    <value>Kamuya açık otomatik sürüm kanıtları</value>
+  </data>
+  <data name="Published boot, install, reboot and desktop reports" xml:space="preserve">
+    <value>Yayımlanan açılış, kurulum, yeniden başlatma ve masaüstü raporları</value>
+  </data>
+  <data name="QEMU / QMP / AT-SPI reports published" xml:space="preserve">
+    <value>QEMU / QMP / AT-SPI raporları yayımlandı</value>
+  </data>
+  <data name="Recovery points around APT changes" xml:space="preserve">
+    <value>APT değişiklikleriyle ilgili kurtarma noktaları</value>
+  </data>
+  <data name="Recovery scope and safeguards" xml:space="preserve">
+    <value>Kurtarma kapsamı ve güvenlik önlemleri</value>
+  </data>
   <data name="Reference" xml:space="preserve">
     <value>Referans</value>
   </data>
+  <data name="Reinstall from USB for a clean state" xml:space="preserve">
+    <value>Temiz bir durum için USB&apos;den yeniden kurulum</value>
+  </data>
+  <data name="Release QA" xml:space="preserve">
+    <value>Sürüm kalite güvencesi</value>
+  </data>
   <data name="Return to the eight essential comparisons" xml:space="preserve">
     <value>Sekiz temel karşılaştırmaya dön</value>
+  </data>
+  <data name="Secure Boot is modeled during installation on AMD64 and ARM64. A shared GTK4 toolkit exposes MOK enrollment and DKMS signing health to the installer, OOBE and Driver Center." xml:space="preserve">
+    <value>Güvenli Önyükleme, AMD64 ve ARM64 sistemlerde kurulum sırasında yapılandırılır. Ortak GTK4 araç takımı, MOK kaydını ve DKMS imza durumunu yükleyiciye, OOBE&apos;ye ve Sürücü Merkezi&apos;ne sunar.</value>
+  </data>
+  <data name="Secure Boot lifecycle" xml:space="preserve">
+    <value>Güvenli Önyükleme yaşam döngüsü</value>
+  </data>
+  <data name="Seeds, metapackages and archive QA" xml:space="preserve">
+    <value>Seed&apos;ler, meta paketler ve arşiv kalite güvencesi</value>
+  </data>
+  <data name="Separate recovery for user data" xml:space="preserve">
+    <value>Kullanıcı verileri için ayrı kurtarma</value>
   </data>
   <data name="Show only the essentials" xml:space="preserve">
     <value>Sadece temel özellikleri göster</value>
@@ -81,8 +498,305 @@
   <data name="Show technical details" xml:space="preserve">
     <value>Teknik ayrıntıları göster</value>
   </data>
+  <data name="Single verified Dracut stack" xml:space="preserve">
+    <value>Doğrulanmış tek Dracut yığını</value>
+  </data>
+  <data name="Sizing, resume identity and diagnostics" xml:space="preserve">
+    <value>Boyutlandırma, devam kimliği ve tanılama</value>
+  </data>
+  <data name="Snapshots, update protection and rollback" xml:space="preserve">
+    <value>Anlık görüntüler, güncelleme koruması ve geri alma</value>
+  </data>
+  <data name="Standard memory and Swap controls" xml:space="preserve">
+    <value>Standart bellek ve takas denetimleri</value>
+  </data>
+  <data name="Swap and hibernation health" xml:space="preserve">
+    <value>Takas alanı ve hazırda bekletme sağlığı</value>
+  </data>
+  <data name="Swap Control architecture" xml:space="preserve">
+    <value>Swap Control mimarisi</value>
+  </data>
+  <data name="System composition" xml:space="preserve">
+    <value>Sistem bileşimi</value>
+  </data>
+  <data name="System recovery model" xml:space="preserve">
+    <value>Sistem kurtarma modeli</value>
+  </data>
+  <data name="System snapshots are connected to APT transactions, retention policy, Dracut, GRUB, deployment metadata and boot confirmation. Recovery is an operating-system protocol rather than a standalone backup utility." xml:space="preserve">
+    <value>Sistem anlık görüntüleri APT işlemleri, saklama ilkesi, Dracut, GRUB, dağıtım meta verileri ve önyükleme onayıyla bağlantılıdır. Kurtarma, bağımsız bir yedekleme aracından ziyade bir işletim sistemi protokolüdür.</value>
+  </data>
+  <data name="System telemetry policy" xml:space="preserve">
+    <value>Sistem telemetri politikası</value>
+  </data>
+  <data name="Temporary and persistent USB overlays" xml:space="preserve">
+    <value>Geçici ve kalıcı USB katmanları</value>
+  </data>
+  <data name="The installer sizes dedicated disk Swap with hibernation capacity in mind. Swap Control verifies the resume target, active capacity, UUID or path resolution and unsafe swapfile offsets." xml:space="preserve">
+    <value>Yükleyici, özel disk takas alanının (Swap) boyutunu hazırda bekletme kapasitesini dikkate alarak belirler. Swap Control; devam etme hedefini, etkin kapasiteyi, UUID&apos;nin veya yolun çözümlenmesini ve güvenli olmayan takas dosyası ofsetlerini doğrular.</value>
+  </data>
+  <data name="The ISO uses dmsquash-live plus AnduinOS Live Layers for temporary Try mode, persistent USB overlays, media preservation, installer-source exposure and expanded-USB repair." xml:space="preserve">
+    <value>ISO, geçici Try modu, kalıcı USB katmanları, medyanın korunması, kurulum kaynağının kullanıma sunulması ve genişletilmiş USB onarımı için dmsquash-live ile AnduinOS Live Layers&apos;ı kullanır.</value>
+  </data>
+  <data name="The native installer selects Btrfs by default and creates named subvolumes that define snapshot, home, log, container, virtual-machine and recovery boundaries. ext4 remains available as a classic alternative." xml:space="preserve">
+    <value>Yerel yükleyici, varsayılan olarak Btrfs&apos;yi seçer ve anlık görüntü, ev dizini, günlük, kapsayıcı, sanal makine ve kurtarma sınırlarını tanımlayan adlandırılmış alt birimler oluşturur. ext4, klasik bir alternatif olarak kullanılabilir.</value>
+  </data>
+  <data name="The published black-box framework boots real ISOs, drives the GTK installer through semantic accessibility data and QEMU input, reboots the installed system and records screenshots, serial logs and contract evidence." xml:space="preserve">
+    <value>Yayımlanan kara kutu test çerçevesi, gerçek ISO dosyalarını başlatır; GTK yükleyicisini anlamsal erişilebilirlik verileri ve QEMU girdisiyle yönetir; kurulu sistemi yeniden başlatır ve ekran görüntülerini, seri günlüklerini ve sözleşme kanıtlarını kaydeder.</value>
+  </data>
+  <data name="The reviewed product scope identified no default first-party personal-file snapshot history integrated with Zorin&apos;s filesystem and file manager." xml:space="preserve">
+    <value>İncelenen ürün kapsamında, Zorin&apos;in dosya sistemi ve dosya yöneticisiyle entegre, varsayılan olarak sunulan birinci taraf kişisel dosya anlık görüntü geçmişi bulunmadığı tespit edildi.</value>
+  </data>
+  <data name="The reviewed product scope identified no default first-party policy creating symmetric recovery points around each APT transaction." xml:space="preserve">
+    <value>İncelenen ürün kapsamı, her APT işleminin öncesinde ve sonrasında simetrik kurtarma noktaları oluşturan varsayılan bir birinci taraf politikası bulunmadığını ortaya koydu.</value>
+  </data>
+  <data name="The reviewed product scope identified no equivalent first-party distribution-wide package-conflict and remote-news contract. This is not a claim that Zorin profiles individual users." xml:space="preserve">
+    <value>İncelenen ürün kapsamı, dağıtım genelinde paket çakışmalarını ve uzaktan haberleri düzenleyen eşdeğer bir birinci taraf sözleşmesi bulunmadığını ortaya koydu. Bu, Zorin&apos;in bireysel kullanıcıların profilini çıkardığı anlamına gelmez.</value>
+  </data>
+  <data name="Timeshift advised before upgrades" xml:space="preserve">
+    <value>Yükseltmelerden önce Timeshift önerilir</value>
+  </data>
+  <data name="Timeshift covers system state" xml:space="preserve">
+    <value>Timeshift sistem durumunu kapsar</value>
+  </data>
+  <data name="Timeshift design and restore behavior" xml:space="preserve">
+    <value>Timeshift tasarımı ve geri yükleme davranışı</value>
+  </data>
+  <data name="Timeshift intentionally protects system state and is not a personal backup tool. Personal files require a separate backup approach." xml:space="preserve">
+    <value>Timeshift, sistem durumunu korumak için tasarlanmıştır ve kişisel yedekleme aracı değildir. Kişisel dosyalar için ayrı bir yedekleme yöntemi gerekir.</value>
+  </data>
+  <data name="Timeshift provides Mint system snapshots with scheduling and retention. Its restoration model is separate from the bootable-deployment and package-transaction protocol used by AnduinOS." xml:space="preserve">
+    <value>Timeshift, Mint için zamanlama ve saklama ilkeleriyle sistem anlık görüntüleri sunar. Geri yükleme modeli, AnduinOS tarafından kullanılan önyüklenebilir dağıtım ve paket işlemi protokolünden ayrıdır.</value>
+  </data>
+  <data name="Timeshift restore, not factory reset" xml:space="preserve">
+    <value>Fabrika ayarlarına sıfırlama değil, Timeshift ile geri yükleme</value>
+  </data>
+  <data name="Timeshift system snapshots" xml:space="preserve">
+    <value>Timeshift sistem anlık görüntüleri</value>
+  </data>
+  <data name="Toolkit and graphical control surfaces" xml:space="preserve">
+    <value>Araç seti ve grafiksel kontrol arayüzleri</value>
+  </data>
+  <data name="Ubuntu 24.04 · 6.14 / 7.0 HWE" xml:space="preserve">
+    <value>Ubuntu 24.04 · 6.14 / 7.0 HWE</value>
+  </data>
+  <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
+    <value>Ubuntu 24.04 · Linux 6.17</value>
+  </data>
+  <data name="Ubuntu 24.04 GNOME generation" xml:space="preserve">
+    <value>Ubuntu 24.04 GNOME nesli</value>
+  </data>
+  <data name="Ubuntu 26.04 · Linux 7.0" xml:space="preserve">
+    <value>Ubuntu 26.04 · Linux 7.0</value>
+  </data>
+  <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
+    <value>Ubuntu 26.04 LTS · Linux 7.0</value>
+  </data>
+  <data name="Ubuntu 26.04 LTS is the upstream reference for this generation and ships the Linux 7.0 kernel series with five years of standard LTS maintenance." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS, bu nesil için temel alınan üst akış sürümüdür ve beş yıllık standart LTS bakımıyla Linux 7.0 çekirdek serisini sunar.</value>
+  </data>
+  <data name="Ubuntu 26.04 release notes" xml:space="preserve">
+    <value>Ubuntu 26.04 sürüm notları</value>
+  </data>
+  <data name="Ubuntu 26.04 runs the GNOME desktop session only on Wayland. XWayland is retained for applications written for X.org." xml:space="preserve">
+    <value>Ubuntu 26.04, GNOME masaüstü oturumunu yalnızca Wayland üzerinde çalıştırır. X.org için yazılmış uygulamalar için XWayland desteği korunur.</value>
+  </data>
+  <data name="Ubuntu 26.04 ships GNOME 50 and its current Wayland display improvements, including optimized fractional scaling." xml:space="preserve">
+    <value>Ubuntu 26.04, optimize edilmiş kesirli ölçeklendirme dâhil olmak üzere GNOME 50&apos;yi ve Wayland ekranındaki güncel iyileştirmeleri sunuyor.</value>
+  </data>
+  <data name="Ubuntu 26.04 states that machines using NVIDIA graphics are fully supported on its Wayland desktop session." xml:space="preserve">
+    <value>Ubuntu 26.04, NVIDIA grafik kartı kullanan makinelerin Wayland masaüstü oturumunda tamamen desteklendiğini belirtiyor.</value>
+  </data>
+  <data name="Ubuntu benefits from modern GTK4 and libadwaita GNOME applications, while its installer and distribution-specific surfaces use a broader mix of technologies." xml:space="preserve">
+    <value>Ubuntu, modern GTK4 ve libadwaita GNOME uygulamalarından yararlanırken yükleyicisi ve dağıtıma özgü arayüzleri daha geniş bir teknoloji yelpazesi kullanır.</value>
+  </data>
+  <data name="Ubuntu Core recovery modes" xml:space="preserve">
+    <value>Ubuntu Core kurtarma modları</value>
+  </data>
+  <data name="Ubuntu Desktop" xml:space="preserve">
+    <value>Ubuntu Desktop</value>
+  </data>
+  <data name="Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Ubuntu Desktop, önyüklenebilir bir USB bellek ve kurulum programı aracılığıyla temiz kurulum yapılmasını açıklar; otomatik olarak kaydedilmiş başlangıç durumuna varsayılan olarak yerinde sıfırlama yapılmasını değil. Ubuntu Core&apos;un ayrı bir fabrika ayarlarına sıfırlama modu vardır; ancak Ubuntu Core farklı bir üründür ve burada karşılaştırılan Ubuntu Desktop sürümü değildir.</value>
+  </data>
+  <data name="Ubuntu Desktop downloads" xml:space="preserve">
+    <value>Ubuntu Desktop indirmeleri</value>
+  </data>
+  <data name="Ubuntu Desktop installation" xml:space="preserve">
+    <value>Ubuntu Desktop kurulumu</value>
+  </data>
+  <data name="Ubuntu Desktop Live media" xml:space="preserve">
+    <value>Ubuntu Masaüstü Canlı medyası</value>
+  </data>
+  <data name="Ubuntu Dracut transition" xml:space="preserve">
+    <value>Ubuntu Dracut geçişi</value>
+  </data>
+  <data name="Ubuntu foundation and kernel" xml:space="preserve">
+    <value>Ubuntu tabanı ve çekirdeği</value>
+  </data>
+  <data name="Ubuntu has seed, metapackage, archive and automated-testing infrastructure at much larger scale. Its implementation model differs from APKG and .aosproj projects." xml:space="preserve">
+    <value>Ubuntu, çok daha büyük ölçekte seed, metapaket, arşiv ve otomatik test altyapısına sahiptir. Uygulama modeli APKG ve .aosproj projelerinden farklıdır.</value>
+  </data>
+  <data name="Ubuntu includes diagnostics and online-service components with release-specific controls. This is a broader product policy rather than AnduinOS&apos;s explicit zero-component contract." xml:space="preserve">
+    <value>Ubuntu, sürüme özgü denetimlere sahip tanılama ve çevrimiçi hizmet bileşenleri içerir. Bu, AnduinOS&apos;un açıkça belirttiği sıfır bileşen politikasından ziyade daha kapsamlı bir ürün politikasıdır.</value>
+  </data>
+  <data name="Ubuntu now uses Dracut by default, but initramfs-tools remains supported. Ubuntu 26.04 is therefore a transition-compatible implementation rather than an exclusive single-generator policy." xml:space="preserve">
+    <value>Ubuntu artık varsayılan olarak Dracut kullanıyor, ancak initramfs-tools desteği devam ediyor. Bu nedenle Ubuntu 26.04, yalnızca tek bir oluşturucuyu zorunlu kılan bir politika yerine geçişle uyumlu bir uygulamadır.</value>
+  </data>
+  <data name="Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model." xml:space="preserve">
+    <value>Ubuntu yedekleme uygulamaları ve dosya sistemi özellikleri sunar; ancak incelenen varsayılan masaüstü kapsamı, kurtarma modeliyle bağlantılı kişisel geçmiş katmanı bulunmadığını ortaya koymuştur.</value>
+  </data>
+  <data name="Ubuntu provides Microsoft-signed shim, Canonical-signed GRUB, kernels and modules on AMD64 and ARM64, together with mature MOK and DKMS signing workflows." xml:space="preserve">
+    <value>Ubuntu, AMD64 ve ARM64 üzerinde Microsoft imzalı shim, Canonical imzalı GRUB, çekirdekler ve modüllerin yanı sıra olgun MOK ve DKMS imzalama iş akışları sunar.</value>
+  </data>
+  <data name="Ubuntu provides recovery mechanisms and third-party options, but the reviewed default desktop scope identified no integrated protocol connecting Btrfs deployments, APT and boot confirmation." xml:space="preserve">
+    <value>Ubuntu kurtarma mekanizmaları ve üçüncü taraf seçenekleri sunar; ancak incelenen varsayılan masaüstü kapsamı, Btrfs dağıtımlarını, APT&apos;yi ve önyükleme onayını birbirine bağlayan tümleşik bir protokol belirlememiştir.</value>
+  </data>
+  <data name="Ubuntu provides robust official Live desktop media, using its own installer and media lifecycle rather than the AnduinOS Live Layers contract." xml:space="preserve">
+    <value>Ubuntu, AnduinOS Live Layers sözleşmesi yerine kendi yükleyicisini ve medya yaşam döngüsünü kullanan, kapsamlı ve resmî Live masaüstü medyası sunar.</value>
+  </data>
+  <data name="Ubuntu Secure Boot architecture" xml:space="preserve">
+    <value>Ubuntu Güvenli Önyükleme mimarisi</value>
+  </data>
+  <data name="Ubuntu signed foundation" xml:space="preserve">
+    <value>Ubuntu imzalı temel</value>
+  </data>
+  <data name="Ubuntu supplies the underlying kernel and installer mechanisms. The reviewed default desktop scope identified no first-party sizing and health UI with the same scope enabled by default." xml:space="preserve">
+    <value>Ubuntu, temel çekirdek ve yükleyici mekanizmalarını sağlar. İncelenen varsayılan masaüstü kapsamı, aynı kapsamda varsayılan olarak etkinleştirilmiş, birinci tarafça sunulan bir boyutlandırma ve sistem durumu arayüzü olmadığını ortaya koydu.</value>
+  </data>
+  <data name="Ubuntu supplies the underlying kernel memory features and a general-purpose desktop policy, without the same default AnduinOS Zram, partition and health-dashboard contract." xml:space="preserve">
+    <value>Ubuntu, temel çekirdek bellek özelliklerini ve genel amaçlı bir masaüstü politikasını sunar; ancak varsayılan olarak AnduinOS’takiyle aynı Zram, bölüm ve sistem durumu panosu bütünlüğünü sağlamaz.</value>
+  </data>
+  <data name="Ubuntu supports many backup and snapshot technologies, but its reviewed default desktop scope identified no automatic recovery points around every APT transaction." xml:space="preserve">
+    <value>Ubuntu birçok yedekleme ve anlık görüntü teknolojisini destekler; ancak incelenen varsayılan masaüstü kapsamı, her APT işlemi öncesinde ve sonrasında otomatik kurtarma noktaları oluşturulmadığını ortaya koymuştur.</value>
+  </data>
+  <data name="Ubuntu trust chain" xml:space="preserve">
+    <value>Ubuntu güven zinciri</value>
+  </data>
+  <data name="Ubuntu uses APT for the base system and Snap as a default application-delivery route. Flatpak remains available but is not the default Ubuntu path." xml:space="preserve">
+    <value>Ubuntu, temel sistem için APT’yi, uygulamaları sunmak içinse varsayılan olarak Snap’i kullanır. Flatpak kullanılabilir durumda olsa da Ubuntu’da varsayılan tercih değildir.</value>
+  </data>
+  <data name="Ubuntu Wayland session" xml:space="preserve">
+    <value>Ubuntu Wayland oturumu</value>
+  </data>
+  <data name="Ubuntu-derived Live persistence" xml:space="preserve">
+    <value>Ubuntu türevi Canlı kalıcılık</value>
+  </data>
+  <data name="Ubuntu-derived policy" xml:space="preserve">
+    <value>Ubuntu&apos;dan türetilen politika</value>
+  </data>
+  <data name="Ubuntu&apos;s current desktop installer has a modern frontend/backend architecture and broad platform engineering, but it is a different design from the native GTK4 AnduinOS plan contract." xml:space="preserve">
+    <value>Ubuntu’nun mevcut masaüstü yükleyicisi modern bir ön uç/arka uç mimarisine ve kapsamlı platform mühendisliğine sahiptir; ancak yerel GTK4 AnduinOS plan sözleşmesinden farklı bir tasarıma sahiptir.</value>
+  </data>
+  <data name="Ubuntu&apos;s guided desktop installation remains ext4-centered. Other layouts can be configured, but Ubuntu does not ship the AnduinOS Btrfs desktop ABI as its default." xml:space="preserve">
+    <value>Ubuntu’nun yönlendirmeli masaüstü kurulumu ext4 odaklı olmaya devam ediyor. Diğer disk düzenleri yapılandırılabilir, ancak Ubuntu, AnduinOS’un Btrfs masaüstü ABI’sini varsayılan olarak sunmuyor.</value>
+  </data>
+  <data name="UI, privilege boundary and execution model" xml:space="preserve">
+    <value>Kullanıcı arayüzü, ayrıcalık sınırı ve yürütme modeli</value>
+  </data>
   <data name="Verified for the 20 September 2026 snapshot" xml:space="preserve">
     <value>20 Eylül 2026 anlık görüntüsü için doğrulandı</value>
+  </data>
+  <data name="Wayland + Driver Center" xml:space="preserve">
+    <value>Wayland + Sürücü Merkezi</value>
+  </data>
+  <data name="Wayland desktop" xml:space="preserve">
+    <value>Wayland masaüstü</value>
+  </data>
+  <data name="Wayland graphics still maturing" xml:space="preserve">
+    <value>Wayland grafikleri hâlâ gelişiyor</value>
+  </data>
+  <data name="Wayland improvements in progress" xml:space="preserve">
+    <value>Wayland iyileştirmeleri devam ediyor</value>
+  </data>
+  <data name="Wayland with Xorg fallback" xml:space="preserve">
+    <value>Wayland ve Xorg&apos;a geçiş seçeneği</value>
+  </data>
+  <data name="Wayland-only · end-to-end tested" xml:space="preserve">
+    <value>Yalnızca Wayland · uçtan uca test edildi</value>
+  </data>
+  <data name="Wayland-only GNOME" xml:space="preserve">
+    <value>Yalnızca Wayland · GNOME</value>
+  </data>
+  <data name="X11 default · Wayland experimental" xml:space="preserve">
+    <value>X11 varsayılan · Wayland deneysel</value>
+  </data>
+  <data name="Zorin combines GNOME applications, extensions and Zorin-specific tools from the Ubuntu 24.04 generation, resulting in a mixed first-party graphical stack rather than an all-GTK4/libadwaita control plane." xml:space="preserve">
+    <value>Zorin, Ubuntu 24.04 neslinden GNOME uygulamalarını, uzantılarını ve Zorin&apos;e özgü araçları bir araya getirerek tamamen GTK4/libadwaita tabanlı bir denetim düzlemi yerine karma bir birinci taraf grafik yığını sunar.</value>
+  </data>
+  <data name="Zorin deliberately supports a broad application estate: APT, Flatpak, Snap, AppImage, web apps and optional Windows application support." xml:space="preserve">
+    <value>Zorin, geniş bir uygulama ekosistemini bilinçli olarak destekler: APT, Flatpak, Snap, AppImage, web uygulamaları ve isteğe bağlı Windows uygulama desteği.</value>
+  </data>
+  <data name="Zorin follows an ext4-centered Ubuntu 24.04 installation path. No equivalent first-party Btrfs topology and recovery ABI is enabled by default in the reviewed product scope." xml:space="preserve">
+    <value>Zorin, ext4 merkezli bir Ubuntu 24.04 kurulum yolunu izler. İncelenen ürün kapsamındaki varsayılan kurulumda, buna denk bir birinci taraf Btrfs disk düzeni ve kurtarma ABI’si etkin değildir.</value>
+  </data>
+  <data name="Zorin inherits the Ubuntu 24.04 memory and Swap foundation. The reviewed product scope identified no equivalent first-party virtual-memory control plane enabled by default." xml:space="preserve">
+    <value>Zorin, Ubuntu 24.04’ün bellek ve Swap altyapısını devralır. İncelenen ürün kapsamı dâhilinde, varsayılan olarak etkinleştirilmiş eşdeğer bir birinci taraf sanal bellek yönetim arayüzü tespit edilmemiştir.</value>
+  </data>
+  <data name="Zorin NVIDIA and session guidance" xml:space="preserve">
+    <value>Zorin NVIDIA ve oturum kılavuzu</value>
+  </data>
+  <data name="Zorin NVIDIA guidance" xml:space="preserve">
+    <value>Zorin için NVIDIA rehberi</value>
+  </data>
+  <data name="Zorin offers a modern-NVIDIA Live boot option and proprietary-driver workflow. Its own troubleshooting guide retains Xorg and Secure Boot fallbacks." xml:space="preserve">
+    <value>Zorin, modern NVIDIA ekran kartları için Canlı USB’den başlatma seçeneği ve tescilli sürücü kurulum iş akışı sunar. Kendi sorun giderme kılavuzunda Xorg ve Güvenli Önyükleme geri dönüş seçenekleri de yer alır.</value>
+  </data>
+  <data name="Zorin offers an Ubuntu-derived graphical installation experience. The reviewed product scope identified no equivalent typed-plan and fixed semantic executor contract in its default first-party workflow." xml:space="preserve">
+    <value>Zorin, Ubuntu tabanlı grafik arayüzlü bir kurulum deneyimi sunar. İncelenen ürün kapsamındaki varsayılan birinci taraf iş akışında, eşdeğer bir türlenmiş plan ve sabit anlamsal yürütücü sözleşmesi bulunmadığı tespit edilmiştir.</value>
+  </data>
+  <data name="Zorin OS 18 defaults to Wayland while retaining selectable Xorg sessions. The fallback is useful for compatibility, particularly when troubleshooting graphics drivers." xml:space="preserve">
+    <value>Zorin OS 18, seçilebilir Xorg oturumlarını korurken varsayılan olarak Wayland’ı kullanır. Geri dönüş seçeneği, özellikle grafik sürücülerindeki sorunları giderirken uyumluluk açısından faydalıdır.</value>
+  </data>
+  <data name="Zorin OS 18.1 details" xml:space="preserve">
+    <value>Zorin OS 18.1 ayrıntıları</value>
+  </data>
+  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 initramfs-tools and Casper generation. This is its default inherited early-boot design rather than a single pure-Dracut product contract." xml:space="preserve">
+    <value>Zorin OS 18.1, Ubuntu 24.04’ün initramfs-tools ve Casper neslini kullanır. Bu, tek ve saf Dracut ürün sözleşmesi yerine varsayılan olarak devralınan erken açılış tasarımıdır.</value>
+  </data>
+  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 LTS foundation and Linux 6.17. Its desktop and userspace therefore remain on the Ubuntu 24.04 generation rather than the Ubuntu 26.04 and GNOME 50 generation used by AnduinOS 2." xml:space="preserve">
+    <value>Zorin OS 18.1, Ubuntu 24.04 LTS temelini ve Linux 6.17&apos;yi kullanır. Bu nedenle masaüstü ortamı ve kullanıcı alanı, AnduinOS 2&apos;nin kullandığı Ubuntu 26.04 ve GNOME 50 nesli yerine Ubuntu 24.04 neslinde kalır.</value>
+  </data>
+  <data name="Zorin OS clean reinstall guide" xml:space="preserve">
+    <value>Zorin OS&apos;u temiz kurulum kılavuzu</value>
+  </data>
+  <data name="Zorin OS technical details" xml:space="preserve">
+    <value>Zorin OS teknik ayrıntıları</value>
+  </data>
+  <data name="Zorin performs release engineering and quality assurance. No comparable distribution-level public suite publishing installer and desktop acceptance evidence was identified in the stated official research scope as of 28 August 2026. This compares public evidence; it does not imply that Zorin does no QA." xml:space="preserve">
+    <value>Zorin, sürüm mühendisliği ve kalite güvencesi çalışmaları yürütür. Belirtilen resmî araştırma kapsamı dâhilinde, 28 Ağustos 2026 itibarıyla kurulum programı ve masaüstü kabul testlerine ilişkin kanıtları yayımlayan, dağıtım düzeyinde karşılaştırılabilir bir herkese açık test paketi tespit edilmemiştir. Bu karşılaştırma herkese açık kanıtlara dayanır; Zorin&apos;in kalite güvencesi yapmadığı anlamına gelmez.</value>
+  </data>
+  <data name="Zorin provides an Ubuntu-derived Live environment. The reviewed product scope identified no equivalent first-party Dracut Live Layers and installer-source contract enabled by default." xml:space="preserve">
+    <value>Zorin, Ubuntu türevi bir canlı ortam sunar. İncelenen ürün kapsamı, varsayılan olarak etkinleştirilmiş eşdeğer bir birinci taraf Dracut Live Layers ve kurulum kaynağı sözleşmesi tespit etmemiştir.</value>
+  </data>
+  <data name="Zorin provides recovery mechanisms, but the reviewed product scope identified no default first-party workflow connecting filesystem deployments, package transactions, boot entries and confirmation services." xml:space="preserve">
+    <value>Zorin kurtarma mekanizmaları sunar; ancak incelenen ürün kapsamı, dosya sistemi dağıtımlarını, paket işlemlerini, önyükleme girdilerini ve onay hizmetlerini birbirine bağlayan varsayılan bir birinci taraf iş akışı belirlememiştir.</value>
+  </data>
+  <data name="Zorin Secure Boot guidance" xml:space="preserve">
+    <value>Zorin Güvenli Önyükleme kılavuzu</value>
+  </data>
+  <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed product scope identified no default first-party sizing and health-verification dashboard of this scope." xml:space="preserve">
+    <value>Zorin, Linux Swap ve hazırda bekletme mekanizmalarını destekler. İncelenen ürün kapsamı, bu ölçekte varsayılan olarak sunulan birinci taraf disk alanı boyutlandırma ve sistem sağlığı doğrulama panosu bulunmadığını ortaya koymuştur.</value>
+  </data>
+  <data name="Zorin supports Secure Boot through its Ubuntu foundation and documents firmware fallbacks for problem hardware. NVIDIA guidance may still recommend disabling Secure Boot or using Xorg when drivers fail." xml:space="preserve">
+    <value>Zorin, Ubuntu temelini kullanarak Güvenli Önyükleme desteği sunar ve sorunlu donanımlar için aygıt yazılımı geri dönüş seçeneklerini belgeler. Sürücüler çalışmadığında NVIDIA yönergeleri yine de Güvenli Önyükleme&apos;yi devre dışı bırakmayı veya Xorg kullanmayı önerebilir.</value>
+  </data>
+  <data name="Zorin uses mature Debian and Ubuntu packaging together with its own repositories and product package selection. It follows a different source and composition model." xml:space="preserve">
+    <value>Zorin, olgun Debian ve Ubuntu paketleme altyapısını kendi depoları ve ürününe özgü paket seçimiyle birlikte kullanır. Farklı bir kaynak ve bileşim modelini benimser.</value>
+  </data>
+  <data name="Zorin Windows App Support" xml:space="preserve">
+    <value>Zorin&apos;de Windows uygulaması desteği</value>
+  </data>
+  <data name="Zorin&apos;s official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset." xml:space="preserve">
+    <value>Zorin&apos;in resmi temiz kurulum yöntemi, bir ISO dosyasının indirilmesini, kurulum medyasının oluşturulmasını, verilerin yedeklenmesini ve sistemin yeniden kurulmasını gerektirir. Backups uygulaması daha sonra kaydedilmiş kişisel dosyaları geri yükleyebilir; incelenen birinci taraf masaüstü iş akışı, sistem içinden fabrika ayarlarına sıfırlama için kurulum sırasında oluşturulup korunan bir başlangıç noktası sunmaz.</value>
+  </data>
+  <data name="Zorin&apos;s official desktop images target 64-bit Intel and AMD processors. No official ARM64 desktop product is listed for Zorin OS 18.1." xml:space="preserve">
+    <value>Zorin&apos;in resmî masaüstü imajları 64 bit Intel ve AMD işlemcileri hedefler. Zorin OS 18.1 için resmî bir ARM64 masaüstü ürünü listelenmemiştir.</value>
+  </data>
+  <data name="Zorin&apos;s Ubuntu 24.04-era GNOME foundation supports useful Wayland display features, but predates the GNOME 50 HDR, VRR and color-management generation." xml:space="preserve">
+    <value>Zorin&apos;in Ubuntu 24.04 dönemi GNOME temeli, kullanışlı Wayland görüntü özelliklerini destekler; ancak GNOME 50&apos;nin HDR, VRR ve renk yönetimi neslinden öncedir.</value>
+  </data>
+  <data name="Zram + disk Swap + health UI" xml:space="preserve">
+    <value>Zram + disk takas alanı + sistem durumu arayüzü</value>
   </data>
 
 </root>
