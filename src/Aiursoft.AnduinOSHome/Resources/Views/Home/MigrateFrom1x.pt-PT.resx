@@ -171,6 +171,9 @@
   <data name="Run this single command in your terminal. The upgrade is fully automated — no manual intervention needed." xml:space="preserve">
     <value>Execute este único comando no seu terminal. A atualização é totalmente automatizada — não é necessária qualquer intervenção manual.</value>
   </data>
+  <data name="Running do_anduinos_upgrade in terminal" xml:space="preserve">
+    <value>A executar do_anduinos_upgrade no terminal</value>
+  </data>
   <data name="Safely backs up your current APT sources and temporarily removes PPAs to ensure a clean upgrade." xml:space="preserve">
     <value>Faz backup seguro das suas origens APT atuais e remove temporariamente os PPAs para garantir uma atualização limpa.</value>
   </data>
@@ -185,6 +188,9 @@
   </data>
   <data name="System dist-upgrade" xml:space="preserve">
     <value>Atualização completa do sistema</value>
+  </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>Terminal</value>
   </data>
   <data name="The desktop will restart during upgrade. Run inside tmux so the terminal survives GUI restarts." xml:space="preserve">
     <value>O ambiente de trabalho será reiniciado durante a atualização. Execute dentro do tmux para que o terminal sobreviva às reinicializações da interface gráfica.</value>
