@@ -33,6 +33,12 @@
   <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
     <value>...Δεν πρέπει να ξεχνάμε ότι πρόκειται για εικόνα 1,8 GB. Μου ανέβασε τη διάθεση... Πραγματικά πιστεύω ότι αξίζει μια εγκατάσταση, σίγουρα ο χρόνος θα δείξει.</value>
   </data>
+  <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / υπολογιστές μίας πλακέτας ARM)</value>
+  </data>
   <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
     <value>Το &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; βασίζεται στα πακέτα του Ubuntu + την εμπειρία εφαρμογών &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;</value>
   </data>
@@ -56,6 +62,12 @@
   </data>
   <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
     <value>Οι πράκτορες ΤΝ μπορούν να συνδεθούν μέσω SSH, να εγκαταστήσουν πακέτα, να επεξεργαστούν αρχεία ρυθμίσεων και να εντοπίσουν σφάλματα — εγγενώς. Χωρίς περιτυλίγματα API. Χωρίς απομονωμένο σύστημα αρχείων. Μόνο αληθινό Linux.</value>
+  </data>
+  <data name="AI Fix" xml:space="preserve">
+    <value>Επιδιόρθωση με AI</value>
+  </data>
+  <data name="AI Native Environment" xml:space="preserve">
+    <value>Περιβάλλον εγγενές στην τεχνητή νοημοσύνη</value>
   </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>Περιβάλλον Εργαλείου Τεχνητής Νοημοσύνης</value>
@@ -132,6 +144,9 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>Το AnduinOS είναι η τελική σας διανομή Linux! Αποτελείται για προγραμματιστές και είναι ελαφριά αλλά εξακολουθεί να είναι ισχυρή. Με τα καλά δομημένα θέματα και τις συντομεύσεις της, οι χρήστες των Windows μπορούν να μεταβούν ομαλά στο AnduinOS και να ξεχάσουν τη ρύθμιση του συστήματός σας.</value>
   </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>Κύριο στιγμιότυπο οθόνης του AnduinOS</value>
+  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>Το AnduinOS εγκαταστάθηκε και ρυθμίστηκε με όλες τις εφαρμογές και τα εργαλεία μου σε λιγότερο από μισή ώρα. Αν ψάχνετε για μια καθαρή και χωρίς άγχος εμπειρία επιφάνειας εργασίας Linux, είστε στο σωστό μέρος.</value>
   </data>
@@ -168,17 +183,20 @@
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Δημιουργημένο στη διαχειριστή πακέτων Apkg.</value>
   </data>
-  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
-    <value>Εγγραψτε τον εξαιρετικά συμπαγή ISO δίσκο 2.4GB μας σε οποιονδήποτε μονάδα USB και μεταφέρετε μια πλήρη, σύγχρονη σταθμό εργασίας Linux στα κλειδιά σας. Εκκινήστε σε μια πλήρως επιταχυμένη υλικολογισμικού επιφάνεια εργασίας σε μόλις 10 δευτερόλεπτα.</value>
-  </data>
   <data name="Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Γράψτε το εξαιρετικά συμπαγές ISO των 2,35 GB μας σε οποιαδήποτε συσκευή USB και μεταφέρετε έναν πλήρη, σύγχρονο σταθμό εργασίας Linux στον κρίκο των κλειδιών σας. Εκκινήστε μια πλήρως επιταχυνόμενη από το hardware γραφическое περιβάλλον σε μόλις 10 δευτερόλεπτα.</value>
+  </data>
+  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
+    <value>Εγγραψτε τον εξαιρετικά συμπαγή ISO δίσκο 2.4GB μας σε οποιονδήποτε μονάδα USB και μεταφέρετε μια πλήρη, σύγχρονη σταθμό εργασίας Linux στα κλειδιά σας. Εκκινήστε σε μια πλήρως επιταχυμένη υλικολογισμικού επιφάνεια εργασίας σε μόλις 10 δευτερόλεπτα.</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>καταγράψτε το ISO σε μια μονάδα USB</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>Με τη λήψη, συμφωνείτε με τους</value>
+  </data>
+  <data name="C++ daemon + Bash orchestration. 3 seconds flat." xml:space="preserve">
+    <value>Δαίμονας σε C++ + αυτοματοποίηση με Bash. Μόλις 3 δευτερόλεπτα.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Containerized" xml:space="preserve">
     <value>Σε κοντέινερ</value>
+  </data>
+  <data name="Containerized. Portable. Done." xml:space="preserve">
+    <value>Σε κοντέινερ. Φορητό. Έτοιμο.</value>
   </data>
   <data name="Continue to Vultr" xml:space="preserve">
     <value>Συνέχεια στο Vultr</value>
@@ -287,6 +308,9 @@
   </data>
   <data name="Editing" xml:space="preserve">
     <value>Επεξεργασία</value>
+  </data>
+  <data name="Editing blender 3D model on AnduinOS" xml:space="preserve">
+    <value>Επεξεργασία τρισδιάστατου μοντέλου στο Blender στο AnduinOS</value>
   </data>
   <data name="End of Support" xml:space="preserve">
     <value>Τέλος Υποστήριξης</value>
@@ -372,6 +396,9 @@
   <data name="Historical versions" xml:space="preserve">
     <value>Ιστορικές εκδόσεις</value>
   </data>
+  <data name="Hosting a server on AnduinOS" xml:space="preserve">
+    <value>Φιλοξενία διακομιστή στο AnduinOS</value>
+  </data>
   <data name="How can I contact the AnduinOS team?" xml:space="preserve">
     <value>Πώς μπορώ να επικοινωνήσω με την ομάδα του AnduinOS;</value>
   </data>
@@ -380,6 +407,9 @@
   </data>
   <data name="Ideal Toolset" xml:space="preserve">
     <value>Ιδανικό Σετ Εργαλείων</value>
+  </data>
+  <data name="Image preview" xml:space="preserve">
+    <value>Προεπισκόπηση εικόνας</value>
   </data>
   <data name="Image Size" xml:space="preserve">
     <value>Μέγεθος εικόνας</value>
@@ -456,6 +486,9 @@
   <data name="Live Boot" xml:space="preserve">
     <value>Άμεση Εκκίνηση</value>
   </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>Τοπικό LLM, με μία μόνο εντολή.</value>
+  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>Ψάχνετε παλαιότερες εκδόσεις;</value>
   </data>
@@ -477,6 +510,9 @@
   <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
     <value>Σύγχρονη υποδομή. Διπλή αρχιτεκτονική. Έτοιμο για παραγωγή.</value>
   </data>
+  <data name="Modern, responsive, GPU-accelerated. No legacy GTK3 cruft." xml:space="preserve">
+    <value>Σύγχρονο, προσαρμοστικό, με επιτάχυνση GPU. Χωρίς περιττά στοιχεία από την παρωχημένη GTK3.</value>
+  </data>
   <data name="Most of the software you rely on runs perfectly on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. AnduinOS provides instant, integrated access to the massive libraries of Flatpak and Ubuntu, making your perfect workflow just a click away." xml:space="preserve">
     <value>Τα περισσότερα από τα λογισμικά που χρησιμοποιείτε λειτουργούν άψογα στο AnduinOS, μαζί με χιλιάδες ισχυρές, δωρεάν και ανοιχτού κώδικα εναλλακτικές. Το AnduinOS παρέχει άμεση, ενσωματωμένη πρόσβαση στις τεράστιες βιβλιοθήκες του Flatpak και του Ubuntu, κάνοντας την ιδανική ροή εργασίας σας μόνο ένα κλικ μακριά.</value>
   </data>
@@ -485,6 +521,9 @@
   </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>Εμπειρία Φυσικού Θαλάμου</value>
+  </data>
+  <data name="Native virtualization. Containers without a VM inside a VM." xml:space="preserve">
+    <value>Εγγενής εικονικοποίηση. Κοντέινερ χωρίς εικονική μηχανή μέσα σε εικονική μηχανή.</value>
   </data>
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>Φυσικά προεγκατεστημένο, ενσωματωμένο σε επίπεδο συστήματος, έτοιμο για χρήση.</value>
@@ -549,6 +588,12 @@
   <data name="Processor" xml:space="preserve">
     <value>Επεξεργαστής</value>
   </data>
+  <data name="Pure Wayland. No X11 fallback. HDR out of the box." xml:space="preserve">
+    <value>Αμιγώς Wayland. Χωρίς εφεδρική λειτουργία X11. HDR έτοιμο προς χρήση.</value>
+  </data>
+  <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
+    <value>Python → Rust → PNG. Ένας αγωγός. Μηδέν RPC.</value>
+  </data>
   <data name="quad-core" xml:space="preserve">
     <value>τετραπύρηνος</value>
   </data>
@@ -560,6 +605,9 @@
   </data>
   <data name="Read more" xml:space="preserve">
     <value>Διαβάστε περισσότερα</value>
+  </data>
+  <data name="Reading package lists... Done. 0 upgraded, 142 newly installed." xml:space="preserve">
+    <value>Ανάγνωση των λιστών πακέτων... Ολοκληρώθηκε. 0 αναβαθμίστηκαν, 142 εγκαταστάθηκαν πρόσφατα.</value>
   </data>
   <data name="Ready to use" xml:space="preserve">
     <value>Έτοιμο προς χρήση</value>
@@ -612,6 +660,9 @@
   <data name="Sign up today!" xml:space="preserve">
     <value>Εγγραφείτε σήμερα!</value>
   </data>
+  <data name="Signed kernel &amp; drivers. No MOK enrollment nightmares." xml:space="preserve">
+    <value>Υπογεγραμμένος πυρήνας και οδηγοί. Χωρίς μπελάδες με την εγγραφή MOK.</value>
+  </data>
   <data name="Smaller image, friendly interface, unbeatable performance, safe and secure." xml:space="preserve">
     <value>Μικρότερη εικόνα, φιλική διεπαφή, ακατανίκητη απόδοση, ασφαλές και ασφαλές.</value>
   </data>
@@ -620,6 +671,9 @@
   </data>
   <data name="Start exploring on Flathub now" xml:space="preserve">
     <value>Ξεκινήστε την εξερεύνηση στο Flathub τώρα</value>
+  </data>
+  <data name="Steam Playing Games on AnduinOS" xml:space="preserve">
+    <value>Παιχνίδια μέσω Steam στο AnduinOS</value>
   </data>
   <data name="Stoat channel" xml:space="preserve">
     <value>Κανάλι Stoat</value>
@@ -654,11 +708,11 @@
   <data name="The ISO is just 2.0GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>Το αρχείο ISO έχει μόνο 2.0GB σε μέγεθος. Παρόμοια με το Ubuntu, είναι απλό στην εγκατάσταση και μπορεί να καλύψει τις καθημερινές σας ανάγκες χωρίς πρόσθετες ρυθμίσεις ή περίπλοκες διαδικασίες.</value>
   </data>
-  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
-    <value>Το ISO έχει μέγεθος μόλις 2,4 GB. Παρόμοιο με το Ubuntu, είναι απλό στην εγκατάσταση και μπορεί να καλύψει τις καθημερινές σας ανάγκες χωρίς επιπλέον ρυθμίσεις ή περίπλοκες ενέργειες.</value>
-  </data>
   <data name="The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>Το ISO είναι μόλις 2,35 GB σε μέγεθος. Παρόμοιο με το Ubuntu, είναι απλό στην εγκατάσταση και μπορεί να καλύψει τις καθημερινές σας ανάγκες χωρίς επιπλέον ρυθμίσεις ή σύνθετες λειτουργίες.</value>
+  </data>
+  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
+    <value>Το ISO έχει μέγεθος μόλις 2,4 GB. Παρόμοιο με το Ubuntu, είναι απλό στην εγκατάσταση και μπορεί να καλύψει τις καθημερινές σας ανάγκες χωρίς επιπλέον ρυθμίσεις ή περίπλοκες ενέργειες.</value>
   </data>
   <data name="The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features." xml:space="preserve">
     <value>Η έκδοση LTS συνιστάται για χρήστες που χρειάζονται σταθερή υποστήριξη μακροπρόθεσμα, ενώ η Standard έκδοση συνιστάται για χρήστες με νεότερες συσκευές που θέλουν να εξερευνήσουν τις τελευταίες λειτουργίες.</value>
@@ -705,6 +759,9 @@
   <data name="UI Toolkit" xml:space="preserve">
     <value>Βιβλιοθήκη UI</value>
   </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>Χωρίς ψηφιακή υπογραφή</value>
+  </data>
   <data name="Upgrading from 1.x?" xml:space="preserve">
     <value>Αναβαθμίση από την 1.x;</value>
   </data>
@@ -725,6 +782,9 @@
   </data>
   <data name="Voxihost" xml:space="preserve">
     <value>Voxihost</value>
+  </data>
+  <data name="Watching Youtube Videos on AnduinOS" xml:space="preserve">
+    <value>Παρακολούθηση βίντεο στο YouTube με το AnduinOS</value>
   </data>
   <data name="Wayland Ready" xml:space="preserve">
     <value>Ετοιμότητα για Wayland</value>
@@ -755,6 +815,15 @@
   </data>
   <data name="Work" xml:space="preserve">
     <value>Εργασία</value>
+  </data>
+  <data name="Working on mail and chat on AnduinOS" xml:space="preserve">
+    <value>Εργασία με email και συνομιλίες στο AnduinOS</value>
+  </data>
+  <data name="Writing Code on AnduinOS" xml:space="preserve">
+    <value>Συγγραφή κώδικα στο AnduinOS</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64. Δύο αρχεία ISO. Μία εμπειρία.</value>
   </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>Ναι, το AnduinOS είναι δωρεάν για χρήση. Είναι ένα έργο ανοικτού κώδικα που ακολουθεί την άδεια GPL-v3. Μπορείτε να δείτε τον πηγαίο κώδικα, να τον τροποποιήσετε και να τον αναδιανείμετε. Είναι δωρεάν και θα παραμείνει πάντα δωρεάν.</value>
