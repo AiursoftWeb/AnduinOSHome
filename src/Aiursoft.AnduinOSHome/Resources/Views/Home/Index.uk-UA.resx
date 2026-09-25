@@ -33,6 +33,12 @@
   <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
     <value>...Не можна забувати, що це образ розміром 1,8 ГБ. Він підняв мені настрій... Я справді вважаю, що він вартий встановлення, і час покаже.</value>
   </data>
+  <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / одноплатні комп’ютери ARM)</value>
+  </data>
   <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
     <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; — це пакетна база Ubuntu + додатки у форматі &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;</value>
   </data>
@@ -56,6 +62,12 @@
   </data>
   <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
     <value>Штучний інтелект може підключатися через SSH, встановлювати пакети, редагувати конфігурації та налагоджувати код — нативно. Без API-обгортки. Без пісочниці. Просто справжній Linux.</value>
+  </data>
+  <data name="AI Fix" xml:space="preserve">
+    <value>Виправлення за допомогою ШІ</value>
+  </data>
+  <data name="AI Native Environment" xml:space="preserve">
+    <value>Середовище, орієнтоване на ШІ</value>
   </data>
   <data name="AI Tool Environment" xml:space="preserve">
     <value>Середовище інструментів штучного інтелекту</value>
@@ -132,6 +144,9 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOS — це ваша остаточна Linux-дистрибуція! Вона створена для розробників, легка, але все ще потужна. Завдяки продуманим темам та швидким клавішам користувачі Windows можуть плавно перейти на AnduinOS і забути про налаштування системи.</value>
   </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>Головний знімок екрана AnduinOS</value>
+  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>AnduinOS встановився й налаштувався разом із усіма моїми додатками та інструментами менш ніж за півгодини. Якщо ви шукаєте чистий і безстресовий досвід роботи з робочим столом Linux, ви покликали за правильною адресою.</value>
   </data>
@@ -168,17 +183,20 @@
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Побудовано на основі менеджера пакетів Apkg.</value>
   </data>
-  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
-    <value>Запишіть наш надкомпактний ISO-образ розміром 2,4 ГБ на будь-який USB-накопичувач і носіть повноцінну сучасну Linux-робочу станцію на брелоку. Завантажте повністю апаратно прискорений робочий стіл всього за 10 секунд.</value>
-  </data>
   <data name="Burn our ultra-compact 2.35 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Запишіть наш надкомпактний ISO-образ розміром 2,35 ГБ на будь-який USB-накопичувач і носіть повноцінну сучасну Linux-робочу станцію на брелоку. Завантажтеся у повністю прискорений апаратним забезпеченням робочий стіл всього за 10 секунд.</value>
+  </data>
+  <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
+    <value>Запишіть наш надкомпактний ISO-образ розміром 2,4 ГБ на будь-який USB-накопичувач і носіть повноцінну сучасну Linux-робочу станцію на брелоку. Завантажте повністю апаратно прискорений робочий стіл всього за 10 секунд.</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
     <value>записати ISO-образ на USB-накопичувач</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>Завантажуючи, ви погоджуєтесь з нашими</value>
+  </data>
+  <data name="C++ daemon + Bash orchestration. 3 seconds flat." xml:space="preserve">
+    <value>Демон на C++ + оркестрація за допомогою Bash. Усього 3 секунди.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Containerized" xml:space="preserve">
     <value>Контейнеризовано</value>
+  </data>
+  <data name="Containerized. Portable. Done." xml:space="preserve">
+    <value>У контейнері. Переносне. Готово.</value>
   </data>
   <data name="Continue to Vultr" xml:space="preserve">
     <value>Продовжити до Vultr</value>
@@ -287,6 +308,9 @@
   </data>
   <data name="Editing" xml:space="preserve">
     <value>Редагування</value>
+  </data>
+  <data name="Editing blender 3D model on AnduinOS" xml:space="preserve">
+    <value>Редагування 3D-моделі в Blender в AnduinOS</value>
   </data>
   <data name="End of Support" xml:space="preserve">
     <value>Кінець підтримки</value>
@@ -372,6 +396,9 @@
   <data name="Historical versions" xml:space="preserve">
     <value>Архівні версії</value>
   </data>
+  <data name="Hosting a server on AnduinOS" xml:space="preserve">
+    <value>Розміщення сервера на AnduinOS</value>
+  </data>
   <data name="How can I contact the AnduinOS team?" xml:space="preserve">
     <value>Як я можу зв&apos;язатися з командою AnduinOS?</value>
   </data>
@@ -380,6 +407,9 @@
   </data>
   <data name="Ideal Toolset" xml:space="preserve">
     <value>Ідеальний набір інструментів</value>
+  </data>
+  <data name="Image preview" xml:space="preserve">
+    <value>Попередній перегляд зображення</value>
   </data>
   <data name="Image Size" xml:space="preserve">
     <value>Розмір образу</value>
@@ -456,6 +486,9 @@
   <data name="Live Boot" xml:space="preserve">
     <value>Пряме завантаження</value>
   </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>локальна LLM — лише одна команда</value>
+  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>Шукаєте старіші версії?</value>
   </data>
@@ -477,6 +510,9 @@
   <data name="Modern infrastructure. Dual architecture. Production ready." xml:space="preserve">
     <value>Сучасна інфраструктура. Подвійна архітектура. Готова до виробництва.</value>
   </data>
+  <data name="Modern, responsive, GPU-accelerated. No legacy GTK3 cruft." xml:space="preserve">
+    <value>Сучасний, адаптивний, з апаратним прискоренням GPU. Без застарілого мотлоху GTK3.</value>
+  </data>
   <data name="Most of the software you rely on runs perfectly on AnduinOS, alongside thousands of powerful, free, and open-source alternatives. AnduinOS provides instant, integrated access to the massive libraries of Flatpak and Ubuntu, making your perfect workflow just a click away." xml:space="preserve">
     <value>Більшість програм, які ви використовуєте, ідеально працюють на AnduinOS, разом із тисячами потужних, безкоштовних та відкритих альтернатив. AnduinOS надає миттєвий, інтегрований доступ до величезних бібліотек Flatpak та Ubuntu, роблячи ваш ідеальний робочий процес на відстані одного кліку.</value>
   </data>
@@ -485,6 +521,9 @@
   </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>Нативний досвід оболонки</value>
+  </data>
+  <data name="Native virtualization. Containers without a VM inside a VM." xml:space="preserve">
+    <value>Віртуалізація на апаратному рівні. Контейнери без віртуальної машини всередині віртуальної машини.</value>
   </data>
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>Нативно встановлено, інтеграція на рівні системи, готово до використання.</value>
@@ -549,6 +588,12 @@
   <data name="Processor" xml:space="preserve">
     <value>Процесор</value>
   </data>
+  <data name="Pure Wayland. No X11 fallback. HDR out of the box." xml:space="preserve">
+    <value>Чистий Wayland. Без резервного переходу на X11. HDR працює одразу.</value>
+  </data>
+  <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
+    <value>Python → Rust → PNG. Один канал. Жодного RPC.</value>
+  </data>
   <data name="quad-core" xml:space="preserve">
     <value>чотирьох&apos;ядерний</value>
   </data>
@@ -560,6 +605,9 @@
   </data>
   <data name="Read more" xml:space="preserve">
     <value>Докладніше</value>
+  </data>
+  <data name="Reading package lists... Done. 0 upgraded, 142 newly installed." xml:space="preserve">
+    <value>Читання списків пакунків... Виконано. Оновлено: 0, нових встановлено: 142.</value>
   </data>
   <data name="Ready to use" xml:space="preserve">
     <value>Готовий до використання</value>
@@ -612,6 +660,9 @@
   <data name="Sign up today!" xml:space="preserve">
     <value>Зареєструйтеся сьогодні!</value>
   </data>
+  <data name="Signed kernel &amp; drivers. No MOK enrollment nightmares." xml:space="preserve">
+    <value>Підписані ядро та драйвери. Жодних проблем із реєстрацією MOK.</value>
+  </data>
   <data name="Smaller image, friendly interface, unbeatable performance, safe and secure." xml:space="preserve">
     <value>Компактний образ, зручний інтерфейс, неперевершена продуктивність, безпека та захист.</value>
   </data>
@@ -620,6 +671,9 @@
   </data>
   <data name="Start exploring on Flathub now" xml:space="preserve">
     <value>Почніть досліджувати на Flathub зараз</value>
+  </data>
+  <data name="Steam Playing Games on AnduinOS" xml:space="preserve">
+    <value>Ігри в Steam на AnduinOS</value>
   </data>
   <data name="Stoat channel" xml:space="preserve">
     <value>Канал Stoat</value>
@@ -654,11 +708,11 @@
   <data name="The ISO is just 2.0GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>Розмір ISO-файлу становить лише 2.0 ГБ. Подібно до Ubuntu, його легко встановити, і він може задовольнити ваші повсякденні потреби без додаткового налаштування чи складних операцій.</value>
   </data>
-  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
-    <value>Розмір ISO-образу всього 2,4 ГБ. Як і Ubuntu, його легко встановити, і він задовольнить ваші повсякденні потреби без додаткових налаштувань чи складних операцій.</value>
-  </data>
   <data name="The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations." xml:space="preserve">
     <value>Розмір ISO-образу всього 2,35 ГБ. Так само як і в Ubuntu, його легко встановити, і він забезпечує всі ваші повсякденні потреби без додаткових налаштувань чи складних дій.</value>
+  </data>
+  <data name="The ISO is just 2.4GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations." xml:space="preserve">
+    <value>Розмір ISO-образу всього 2,4 ГБ. Як і Ubuntu, його легко встановити, і він задовольнить ваші повсякденні потреби без додаткових налаштувань чи складних операцій.</value>
   </data>
   <data name="The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features." xml:space="preserve">
     <value>Версія LTS рекомендується для користувачів, яким потрібна стабільна довготривала підтримка, тоді як стандартна версія підходить для користувачів з новітніми пристроями, які хочуть випробувати найновіші функції.</value>
@@ -705,6 +759,9 @@
   <data name="UI Toolkit" xml:space="preserve">
     <value>Набір інструментів UI</value>
   </data>
+  <data name="Unsigned" xml:space="preserve">
+    <value>Без підпису</value>
+  </data>
   <data name="Upgrading from 1.x?" xml:space="preserve">
     <value>Оновлення з 1.x?</value>
   </data>
@@ -725,6 +782,9 @@
   </data>
   <data name="Voxihost" xml:space="preserve">
     <value>Voxihost</value>
+  </data>
+  <data name="Watching Youtube Videos on AnduinOS" xml:space="preserve">
+    <value>Перегляд відео на YouTube в AnduinOS</value>
   </data>
   <data name="Wayland Ready" xml:space="preserve">
     <value>Wayland Ready</value>
@@ -755,6 +815,15 @@
   </data>
   <data name="Work" xml:space="preserve">
     <value>Робота</value>
+  </data>
+  <data name="Working on mail and chat on AnduinOS" xml:space="preserve">
+    <value>Робота з електронною поштою та чатами в AnduinOS</value>
+  </data>
+  <data name="Writing Code on AnduinOS" xml:space="preserve">
+    <value>Написання коду в AnduinOS</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64. Два ISO-образи. Єдиний досвід.</value>
   </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>Так, AnduinOS є безкоштовним для використання. Це проект з відкритим кодом, який ліцензований за GPL-v3. Ви можете переглядати вихідний код, змінювати його та поширювати. Він безкоштовний і завжди буде таким.</value>
