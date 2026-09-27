@@ -30,14 +30,26 @@
   <data name="Category" xml:space="preserve">
     <value>분류</value>
   </data>
+  <data name="Clickable compatibility details" xml:space="preserve">
+    <value>클릭 가능한 호환성 세부 정보</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>설명</value>
   </data>
   <data name="Desktop performance" xml:space="preserve">
     <value>데스크톱 성능</value>
   </data>
+  <data name="Desktop performance detail" xml:space="preserve">
+    <value>데스크톱 성능 세부 정보</value>
+  </data>
+  <data name="Device type" xml:space="preserve">
+    <value>장치 유형</value>
+  </data>
   <data name="Display scaling" xml:space="preserve">
     <value>디스플레이 배율</value>
+  </data>
+  <data name="Display scaling detail" xml:space="preserve">
+    <value>화면 배율 세부 정보</value>
   </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>언어 편집(예: en, de-DE, zh-CN)</value>
@@ -51,6 +63,9 @@
   <data name="Graphics acceleration" xml:space="preserve">
     <value>그래픽 가속</value>
   </data>
+  <data name="Graphics acceleration detail" xml:space="preserve">
+    <value>그래픽 가속 상세 정보</value>
+  </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>이미지 출처 및 사용 허가</value>
   </data>
@@ -59,6 +74,9 @@
   </data>
   <data name="Installation" xml:space="preserve">
     <value>설치</value>
+  </data>
+  <data name="Installation detail" xml:space="preserve">
+    <value>설치 세부 정보</value>
   </data>
   <data name="Installation guide or test report URL" xml:space="preserve">
     <value>설치 가이드 또는 테스트 보고서 URL</value>
@@ -75,11 +93,20 @@
   <data name="Load language" xml:space="preserve">
     <value>언어 불러오기</value>
   </data>
+  <data name="Localized hardware configuration" xml:space="preserve">
+    <value>현지화된 하드웨어 구성</value>
+  </data>
+  <data name="Localized image credit" xml:space="preserve">
+    <value>이미지 출처 및 크레딧(현지화)</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>하드웨어 관리</value>
   </data>
   <data name="Model" xml:space="preserve">
     <value>모델</value>
+  </data>
+  <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
+    <value>선택 사항입니다. 이 언어 또는 영어 대체 문구에 텍스트가 있는 경우에만 상태 카드의 설명이 열립니다.</value>
   </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>이 장치에서 AnduinOS가 실행 중인 사진</value>
@@ -117,6 +144,12 @@
   <data name="Secure Boot" xml:space="preserve">
     <value>보안 부팅</value>
   </data>
+  <data name="Secure Boot detail" xml:space="preserve">
+    <value>보안 부팅 세부 정보</value>
+  </data>
+  <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
+    <value>SKU (정확한 판매 구성, 알고 있는 경우)</value>
+  </data>
   <data name="Sort order" xml:space="preserve">
     <value>정렬 순서</value>
   </data>
@@ -141,8 +174,14 @@
   <data name="Virtualization (KVM)" xml:space="preserve">
     <value>가상화(KVM)</value>
   </data>
+  <data name="Virtualization (KVM) detail" xml:space="preserve">
+    <value>가상화(KVM) 세부 정보</value>
+  </data>
   <data name="Wi-Fi in Live" xml:space="preserve">
     <value>라이브 환경에서 Wi-Fi</value>
+  </data>
+  <data name="Wi-Fi in Live detail" xml:space="preserve">
+    <value>라이브 환경에서의 Wi-Fi 상세 정보</value>
   </data>
 
 </root>

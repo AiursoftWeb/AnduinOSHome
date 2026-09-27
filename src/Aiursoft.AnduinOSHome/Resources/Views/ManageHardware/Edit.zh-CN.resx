@@ -30,14 +30,26 @@
   <data name="Category" xml:space="preserve">
     <value>类别</value>
   </data>
+  <data name="Clickable compatibility details" xml:space="preserve">
+    <value>可点击的兼容性详情</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>描述</value>
   </data>
   <data name="Desktop performance" xml:space="preserve">
     <value>桌面性能</value>
   </data>
+  <data name="Desktop performance detail" xml:space="preserve">
+    <value>桌面性能说明</value>
+  </data>
+  <data name="Device type" xml:space="preserve">
+    <value>设备类型</value>
+  </data>
   <data name="Display scaling" xml:space="preserve">
     <value>显示缩放</value>
+  </data>
+  <data name="Display scaling detail" xml:space="preserve">
+    <value>显示缩放说明</value>
   </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>编辑语言（例如 en、de-DE、zh-CN）</value>
@@ -51,6 +63,9 @@
   <data name="Graphics acceleration" xml:space="preserve">
     <value>图形加速</value>
   </data>
+  <data name="Graphics acceleration detail" xml:space="preserve">
+    <value>图形加速说明</value>
+  </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>图片来源及使用授权</value>
   </data>
@@ -59,6 +74,9 @@
   </data>
   <data name="Installation" xml:space="preserve">
     <value>安装</value>
+  </data>
+  <data name="Installation detail" xml:space="preserve">
+    <value>安装说明</value>
   </data>
   <data name="Installation guide or test report URL" xml:space="preserve">
     <value>安装指南或测试报告网址</value>
@@ -75,11 +93,20 @@
   <data name="Load language" xml:space="preserve">
     <value>加载语言</value>
   </data>
+  <data name="Localized hardware configuration" xml:space="preserve">
+    <value>本地化的硬件配置说明</value>
+  </data>
+  <data name="Localized image credit" xml:space="preserve">
+    <value>本地化的图片来源与授权说明</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>管理硬件</value>
   </data>
   <data name="Model" xml:space="preserve">
     <value>型号</value>
+  </data>
+  <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
+    <value>可选。只有当前语言或英文回退内容填写了说明，状态卡片才可以点击。</value>
   </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>此设备上运行 AnduinOS 的照片</value>
@@ -117,6 +144,12 @@
   <data name="Secure Boot" xml:space="preserve">
     <value>安全启动</value>
   </data>
+  <data name="Secure Boot detail" xml:space="preserve">
+    <value>安全启动说明</value>
+  </data>
+  <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
+    <value>SKU（如已知，请填写具体销售配置编号）</value>
+  </data>
   <data name="Sort order" xml:space="preserve">
     <value>排序顺序</value>
   </data>
@@ -141,21 +174,14 @@
   <data name="Virtualization (KVM)" xml:space="preserve">
     <value>虚拟化（KVM）</value>
   </data>
+  <data name="Virtualization (KVM) detail" xml:space="preserve">
+    <value>虚拟化（KVM）说明</value>
+  </data>
   <data name="Wi-Fi in Live" xml:space="preserve">
     <value>Live 环境下的 Wi-Fi</value>
   </data>
+  <data name="Wi-Fi in Live detail" xml:space="preserve">
+    <value>Live 环境 Wi-Fi 说明</value>
+  </data>
 
-  <data name="Device type" xml:space="preserve"><value>设备类型</value></data>
-  <data name="SKU (exact sales configuration, if known)" xml:space="preserve"><value>SKU（如已知，请填写具体销售配置编号）</value></data>
-  <data name="Clickable compatibility details" xml:space="preserve"><value>可点击的兼容性详情</value></data>
-  <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve"><value>可选。只有当前语言或英文回退内容填写了说明，状态卡片才可以点击。</value></data>
-  <data name="Installation detail" xml:space="preserve"><value>安装说明</value></data>
-  <data name="Desktop performance detail" xml:space="preserve"><value>桌面性能说明</value></data>
-  <data name="Secure Boot detail" xml:space="preserve"><value>安全启动说明</value></data>
-  <data name="Wi-Fi in Live detail" xml:space="preserve"><value>Live 环境 Wi-Fi 说明</value></data>
-  <data name="Graphics acceleration detail" xml:space="preserve"><value>图形加速说明</value></data>
-  <data name="Virtualization (KVM) detail" xml:space="preserve"><value>虚拟化（KVM）说明</value></data>
-  <data name="Display scaling detail" xml:space="preserve"><value>显示缩放说明</value></data>
-  <data name="Localized hardware configuration" xml:space="preserve"><value>本地化的硬件配置说明</value></data>
-  <data name="Localized image credit" xml:space="preserve"><value>本地化的图片来源与授权说明</value></data>
 </root>

@@ -20,6 +20,16 @@
 <vc:marketing-navbar></vc:marketing-navbar>
 
 <main class="hardware-detail">
+    @* The insight labels are constructed in the Razor code block above. Keep direct calls for dotlang extraction. *@
+    <template id="hardware-details-localization-catalog">
+        <span>@Localizer["Installation"]</span>
+        <span>@Localizer["Desktop performance"]</span>
+        <span>@Localizer["Secure Boot"]</span>
+        <span>@Localizer["Wi-Fi in Live"]</span>
+        <span>@Localizer["Graphics acceleration"]</span>
+        <span>@Localizer["Virtualization (KVM)"]</span>
+        <span>@Localizer["Display scaling"]</span>
+    </template>
     <div class="hardware-orb hardware-orb--blue" aria-hidden="true"></div>
     <div class="hardware-orb hardware-orb--violet" aria-hidden="true"></div>
     <div class="container hardware-content">

@@ -18,11 +18,47 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="AnduinOS recommended hardware" xml:space="preserve">
+      <data name="All architectures" xml:space="preserve">
+    <value>すべてのアーキテクチャ</value>
+  </data>
+  <data name="All device types" xml:space="preserve">
+    <value>すべてのデバイス種類</value>
+  </data>
+  <data name="AnduinOS recommended hardware" xml:space="preserve">
     <value>AnduinOS 推奨ハードウェア</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
+    <value>アーキテクチャ</value>
+  </data>
+  <data name="Back to AnduinOS overview" xml:space="preserve">
+    <value>AnduinOS の概要に戻る</value>
+  </data>
+  <data name="Brand, model, SKU, or configuration" xml:space="preserve">
+    <value>メーカー、モデル、SKU、構成</value>
+  </data>
+  <data name="Browse all hardware" xml:space="preserve">
+    <value>すべてのハードウェアを見る</value>
+  </data>
+  <data name="Clear filters" xml:space="preserve">
+    <value>フィルターを解除</value>
   </data>
   <data name="Compatibility applies to the listed configuration and tested software versions. Reference prices are not quotations." xml:space="preserve">
     <value>互換性は、記載された構成およびテスト済みのソフトウェアバージョンに適用されます。参考価格は見積価格ではありません。</value>
+  </data>
+  <data name="Development team devices only" xml:space="preserve">
+    <value>開発チームの使用機種のみ</value>
+  </data>
+  <data name="Device type" xml:space="preserve">
+    <value>デバイスの種類</value>
+  </data>
+  <data name="Explore tested devices" xml:space="preserve">
+    <value>実機検証済みデバイスを探す</value>
+  </data>
+  <data name="Find an AnduinOS-ready device with real installation notes and clearly scoped compatibility results." xml:space="preserve">
+    <value>実際のインストール記録と検証範囲が明確な互換性情報から、AnduinOS に適したデバイスを探せます。</value>
+  </data>
+  <data name="HARDWARE CATALOG" xml:space="preserve">
+    <value>ハードウェアカタログ</value>
   </data>
   <data name="Hardware pages" xml:space="preserve">
     <value>ハードウェアのページ</value>
@@ -33,29 +69,35 @@
   <data name="Next" xml:space="preserve">
     <value>次へ</value>
   </data>
+  <data name="No matching hardware yet" xml:space="preserve">
+    <value>条件に一致するハードウェアはありません</value>
+  </data>
   <data name="Previous" xml:space="preserve">
     <value>前へ</value>
   </data>
+  <data name="Price not listed" xml:space="preserve">
+    <value>価格未掲載</value>
+  </data>
+  <data name="Recommended hardware" xml:space="preserve">
+    <value>推奨ハードウェア</value>
+  </data>
+  <data name="Reference price: US$ {0}" xml:space="preserve">
+    <value>参考価格：US$ {0}</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Search hardware" xml:space="preserve">
+    <value>ハードウェアを検索</value>
+  </data>
+  <data name="SKU" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="TESTED IN THE REAL WORLD" xml:space="preserve">
+    <value>実機で検証</value>
+  </data>
+  <data name="Try a different search or clear the filters to browse every published device." xml:space="preserve">
+    <value>条件を変えるかフィルターを解除すると、公開中のすべてのデバイスを閲覧できます。</value>
+  </data>
 
-  <data name="All architectures" xml:space="preserve"><value>すべてのアーキテクチャ</value></data>
-  <data name="All device types" xml:space="preserve"><value>すべてのデバイス種類</value></data>
-  <data name="Architecture" xml:space="preserve"><value>アーキテクチャ</value></data>
-  <data name="Back to AnduinOS overview" xml:space="preserve"><value>AnduinOS の概要に戻る</value></data>
-  <data name="Brand, model, SKU, or configuration" xml:space="preserve"><value>メーカー、モデル、SKU、構成</value></data>
-  <data name="Browse all hardware" xml:space="preserve"><value>すべてのハードウェアを見る</value></data>
-  <data name="Clear filters" xml:space="preserve"><value>フィルターを解除</value></data>
-  <data name="Development team devices only" xml:space="preserve"><value>開発チームの使用機種のみ</value></data>
-  <data name="Device type" xml:space="preserve"><value>デバイスの種類</value></data>
-  <data name="Explore tested devices" xml:space="preserve"><value>実機検証済みデバイスを探す</value></data>
-  <data name="Find an AnduinOS-ready device with real installation notes and clearly scoped compatibility results." xml:space="preserve"><value>実際のインストール記録と検証範囲が明確な互換性情報から、AnduinOS に適したデバイスを探せます。</value></data>
-  <data name="HARDWARE CATALOG" xml:space="preserve"><value>ハードウェアカタログ</value></data>
-  <data name="No matching hardware yet" xml:space="preserve"><value>条件に一致するハードウェアはありません</value></data>
-  <data name="Price not listed" xml:space="preserve"><value>価格未掲載</value></data>
-  <data name="Recommended hardware" xml:space="preserve"><value>推奨ハードウェア</value></data>
-  <data name="Reference price: US$ {0}" xml:space="preserve"><value>参考価格：US$ {0}</value></data>
-  <data name="SKU" xml:space="preserve"><value>SKU</value></data>
-  <data name="Search" xml:space="preserve"><value>検索</value></data>
-  <data name="Search hardware" xml:space="preserve"><value>ハードウェアを検索</value></data>
-  <data name="TESTED IN THE REAL WORLD" xml:space="preserve"><value>実機で検証</value></data>
-  <data name="Try a different search or clear the filters to browse every published device." xml:space="preserve"><value>条件を変えるかフィルターを解除すると、公開中のすべてのデバイスを閲覧できます。</value></data>
 </root>

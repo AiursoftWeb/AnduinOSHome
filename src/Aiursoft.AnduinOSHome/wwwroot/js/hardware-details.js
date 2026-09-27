@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[data-hardware-insight]:not(:disabled)').forEach(button => {
         button.addEventListener('click', () => {
-            if (!button.dataset.hardwareDetail) return;
+            const explanation = button.querySelector('[data-hardware-detail]')?.textContent?.trim();
+            if (!explanation) return;
             trigger = button;
-            title.textContent = button.dataset.hardwareTitle || '';
-            status.textContent = button.dataset.hardwareStatus || '';
-            detail.textContent = button.dataset.hardwareDetail;
+            title.textContent = button.querySelector('small')?.textContent?.trim()
+                || button.querySelector('span:not([hidden])')?.textContent?.trim() || '';
+            status.textContent = button.querySelector('strong')?.textContent?.trim() || '';
+            detail.textContent = explanation;
             dialog.showModal();
         });
     });

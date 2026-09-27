@@ -65,9 +65,9 @@ public class HardwareTests : TestBase
         }
 
         var html = await Http.GetStringAsync("/hardware/" + item.Slug);
-        Assert.Contains("data-hardware-detail=\"KVM &lt;verified&gt;\"", html);
-        Assert.Contains("data-hardware-detail=\"External monitor scaling depends on the monitor.\"", html);
-        Assert.DoesNotContain("data-hardware-detail=\"KVM <verified>\"", html);
+        Assert.IsTrue(System.Text.RegularExpressions.Regex.IsMatch(html, "data-hardware-detail[^>]*>KVM &lt;verified&gt;</span>"));
+        Assert.IsTrue(System.Text.RegularExpressions.Regex.IsMatch(html, "data-hardware-detail[^>]*>External monitor scaling depends on the monitor.</span>"));
+        Assert.DoesNotContain("KVM <verified>", html);
         Assert.Contains("data-hardware-dialog", html);
         Assert.Contains("/js/hardware-details.js", html);
         Assert.AreEqual(7, System.Text.RegularExpressions.Regex.Matches(html, "data-hardware-insight(?:\\s|>)").Count);

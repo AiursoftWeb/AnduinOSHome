@@ -21,32 +21,68 @@
       <data name="All recommended hardware" xml:space="preserve">
     <value>所有推荐硬件</value>
   </data>
+  <data name="AnduinOS on this device." xml:space="preserve">
+    <value>此设备上的 AnduinOS。</value>
+  </data>
   <data name="AnduinOS running on this device" xml:space="preserve">
     <value>在此设备上运行的 AnduinOS</value>
   </data>
   <data name="Architecture" xml:space="preserve">
     <value>架构</value>
   </data>
+  <data name="Breadcrumb" xml:space="preserve">
+    <value>面包屑导航</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>类别</value>
+  </data>
+  <data name="Close details" xml:space="preserve">
+    <value>关闭详情</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>兼容性</value>
+  </data>
+  <data name="Compatibility detail" xml:space="preserve">
+    <value>兼容性详情</value>
   </data>
   <data name="Desktop performance" xml:space="preserve">
     <value>桌面性能</value>
   </data>
+  <data name="Device type" xml:space="preserve">
+    <value>设备类型</value>
+  </data>
   <data name="Display scaling" xml:space="preserve">
     <value>显示缩放</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Each status reflects the listed configuration and tested software version." xml:space="preserve">
+    <value>每项状态均基于所列硬件配置及已测试的软件版本。</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>实测记录</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>固件和外设支持</value>
   </data>
+  <data name="From the test bench." xml:space="preserve">
+    <value>来自测试现场。</value>
+  </data>
   <data name="Graphics acceleration" xml:space="preserve">
     <value>图形加速</value>
+  </data>
+  <data name="Hardware profile" xml:space="preserve">
+    <value>硬件档案</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>图片来源及使用授权</value>
   </data>
   <data name="Image source" xml:space="preserve">
     <value>图片来源</value>
+  </data>
+  <data name="In use" xml:space="preserve">
+    <value>实际使用</value>
   </data>
   <data name="Installation" xml:space="preserve">
     <value>安装</value>
@@ -69,6 +105,9 @@
   <data name="Not a quotation; prices and availability may change." xml:space="preserve">
     <value>此价格仅供参考；价格和库存情况可能会有变动。</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>概览</value>
+  </data>
   <data name="Price checked on" xml:space="preserve">
     <value>价格核实日期</value>
   </data>
@@ -87,17 +126,35 @@
   <data name="Secure Boot" xml:space="preserve">
     <value>安全启动</value>
   </data>
+  <data name="SKU" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>技术记录</value>
+  </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>已测试的 AnduinOS 版本</value>
   </data>
   <data name="Tested drivers" xml:space="preserve">
     <value>已测试的驱动程序</value>
   </data>
+  <data name="Tested firsthand by the development team." xml:space="preserve">
+    <value>开发团队亲自实测。</value>
+  </data>
   <data name="Tested hardware configuration" xml:space="preserve">
     <value>已测试的硬件配置</value>
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>测试所用内核</value>
+  </data>
+  <data name="Tested on real hardware" xml:space="preserve">
+    <value>真机实测</value>
+  </data>
+  <data name="The configuration we tested." xml:space="preserve">
+    <value>我们测试的配置。</value>
+  </data>
+  <data name="The essentials, at a glance." xml:space="preserve">
+    <value>核心信息，一目了然。</value>
   </data>
   <data name="This is a device used by our team for development and testing. See the individual verification results below." xml:space="preserve">
     <value>这是我们团队用于开发和测试的设备。请参阅下方的各项验证结果。</value>
@@ -108,28 +165,11 @@
   <data name="Virtualization (KVM)" xml:space="preserve">
     <value>虚拟化（KVM）</value>
   </data>
+  <data name="What works on this device." xml:space="preserve">
+    <value>这台设备上哪些功能可用。</value>
+  </data>
   <data name="Wi-Fi in Live" xml:space="preserve">
     <value>Live 环境下的 Wi-Fi</value>
   </data>
 
-  <data name="Device type" xml:space="preserve"><value>设备类型</value></data>
-  <data name="SKU" xml:space="preserve"><value>SKU</value></data>
-  <data name="Compatibility detail" xml:space="preserve"><value>兼容性详情</value></data>
-  <data name="Close details" xml:space="preserve"><value>关闭详情</value></data>
-  <data name="Done" xml:space="preserve"><value>完成</value></data>
-  <data name="AnduinOS on this device." xml:space="preserve"><value>此设备上的 AnduinOS。</value></data>
-  <data name="Breadcrumb" xml:space="preserve"><value>面包屑导航</value></data>
-  <data name="Compatibility" xml:space="preserve"><value>兼容性</value></data>
-  <data name="Each status reflects the listed configuration and tested software version." xml:space="preserve"><value>每项状态均基于所列硬件配置及已测试的软件版本。</value></data>
-  <data name="Field notes" xml:space="preserve"><value>实测记录</value></data>
-  <data name="From the test bench." xml:space="preserve"><value>来自测试现场。</value></data>
-  <data name="Hardware profile" xml:space="preserve"><value>硬件档案</value></data>
-  <data name="In use" xml:space="preserve"><value>实际使用</value></data>
-  <data name="Overview" xml:space="preserve"><value>概览</value></data>
-  <data name="Technical record" xml:space="preserve"><value>技术记录</value></data>
-  <data name="Tested firsthand by the development team." xml:space="preserve"><value>开发团队亲自实测。</value></data>
-  <data name="Tested on real hardware" xml:space="preserve"><value>真机实测</value></data>
-  <data name="The configuration we tested." xml:space="preserve"><value>我们测试的配置。</value></data>
-  <data name="The essentials, at a glance." xml:space="preserve"><value>核心信息，一目了然。</value></data>
-  <data name="What works on this device." xml:space="preserve"><value>这台设备上哪些功能可用。</value></data>
 </root>

@@ -6,6 +6,8 @@
 <vc:marketing-navbar></vc:marketing-navbar>
 
 <main class="hardware-catalog">
+    @* This key is otherwise only referenced inside a Razor conditional expression. *@
+    <template id="hardware-index-localization-catalog"><span>@Localizer["Price not listed"]</span></template>
     <header class="hardware-catalog-hero">
         <div class="container">
             <a asp-controller="Home" asp-action="Index" class="hardware-catalog-back"><i data-lucide="arrow-left" aria-hidden="true"></i>@Localizer["Back to AnduinOS overview"]</a>

@@ -30,14 +30,26 @@
   <data name="Category" xml:space="preserve">
     <value>類別</value>
   </data>
+  <data name="Clickable compatibility details" xml:space="preserve">
+    <value>可點擊的相容性詳情</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>描述</value>
   </data>
   <data name="Desktop performance" xml:space="preserve">
     <value>桌面效能</value>
   </data>
+  <data name="Desktop performance detail" xml:space="preserve">
+    <value>桌面效能詳細資料</value>
+  </data>
+  <data name="Device type" xml:space="preserve">
+    <value>裝置類型</value>
+  </data>
   <data name="Display scaling" xml:space="preserve">
     <value>顯示縮放</value>
+  </data>
+  <data name="Display scaling detail" xml:space="preserve">
+    <value>顯示縮放詳情</value>
   </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>編輯語言（例如 en、de-DE、zh-CN）</value>
@@ -51,6 +63,9 @@
   <data name="Graphics acceleration" xml:space="preserve">
     <value>圖像加速</value>
   </data>
+  <data name="Graphics acceleration detail" xml:space="preserve">
+    <value>圖像加速詳情</value>
+  </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>圖片來源及使用授權</value>
   </data>
@@ -59,6 +74,9 @@
   </data>
   <data name="Installation" xml:space="preserve">
     <value>安裝</value>
+  </data>
+  <data name="Installation detail" xml:space="preserve">
+    <value>安裝詳情</value>
   </data>
   <data name="Installation guide or test report URL" xml:space="preserve">
     <value>安裝指南或測試報告網址</value>
@@ -75,11 +93,20 @@
   <data name="Load language" xml:space="preserve">
     <value>載入語言</value>
   </data>
+  <data name="Localized hardware configuration" xml:space="preserve">
+    <value>本地化硬件配置</value>
+  </data>
+  <data name="Localized image credit" xml:space="preserve">
+    <value>本地化圖片來源註明</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>管理硬件</value>
   </data>
   <data name="Model" xml:space="preserve">
     <value>型號</value>
+  </data>
+  <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
+    <value>可選。只有在此語言或英文後備版本有文字時，狀態卡才會開啟其說明。</value>
   </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>此裝置執行 AnduinOS 的相片</value>
@@ -117,6 +144,12 @@
   <data name="Secure Boot" xml:space="preserve">
     <value>安全啟動</value>
   </data>
+  <data name="Secure Boot detail" xml:space="preserve">
+    <value>Secure Boot 詳情</value>
+  </data>
+  <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
+    <value>SKU（如知道，請填寫確切的銷售配置）</value>
+  </data>
   <data name="Sort order" xml:space="preserve">
     <value>排序次序</value>
   </data>
@@ -141,8 +174,14 @@
   <data name="Virtualization (KVM)" xml:space="preserve">
     <value>虛擬化（KVM）</value>
   </data>
+  <data name="Virtualization (KVM) detail" xml:space="preserve">
+    <value>虛擬化（KVM）詳細資料</value>
+  </data>
   <data name="Wi-Fi in Live" xml:space="preserve">
     <value>Live 環境中的 Wi-Fi</value>
+  </data>
+  <data name="Wi-Fi in Live detail" xml:space="preserve">
+    <value>即時模式下的 Wi-Fi 詳情</value>
   </data>
 
 </root>
