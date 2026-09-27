@@ -1,0 +1,30 @@
+@using Aiursoft.AnduinOSHome.Services
+@inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
+@inject HardwareLabels Labels
+@model List<Aiursoft.AnduinOSHome.Entities.Hardware>
+<div class="row g-4 mb-4">
+@foreach (var device in Model)
+{
+    var text = HardwareCatalog.TextFor(device);
+    <div class="col-12 col-md-6 col-xl-4">
+        <article class="card h-100 shadow-sm">
+            @if (!string.IsNullOrEmpty(device.ProductImagePath))
+            {
+                <img src="@Storage.RelativePathToInternetUrl(device.ProductImagePath)?w=600" class="card-img-top p-3" style="height:220px;object-fit:contain" loading="lazy" alt="@device.Brand @device.Model" />
+            }
+            <div class="card-body">
+                <span class="badge bg-primary">@device.Architecture</span>
+                @if (device.TeamDevice) { <span class="badge bg-success">@Localizer["Used by the AnduinOS development team"]</span> }
+                <h3 class="h4 mt-3"><a asp-controller="Hardware" asp-action="Details" asp-route-slug="@device.Slug">@device.Brand @device.Model</a></h3>
+                <p style="display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden">@text.Description</p>
+                <dl class="small">
+                    <dt>@Localizer["Installation"]</dt><dd>@Labels.Label(device.Installation)</dd>
+                    <dt>@Localizer["Desktop performance"]</dt><dd>@Labels.Label(device.Performance)</dd>
+                </dl>
+                @if (device.PriceUsd.HasValue) { <p>@Localizer["Reference price: US$ {0}", device.PriceUsd.Value]</p> }
+                <a asp-controller="Hardware" asp-action="Details" asp-route-slug="@device.Slug">@Localizer["View compatibility and installation details"]</a>
+            </div>
+        </article>
+    </div>
+}
+</div>

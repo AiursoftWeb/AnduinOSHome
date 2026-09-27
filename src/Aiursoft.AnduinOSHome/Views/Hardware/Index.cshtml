@@ -1,0 +1,11 @@
+@model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareIndexModel
+<div class="container py-5">
+    <h1>@Localizer["AnduinOS recommended hardware"]</h1>
+    <p>@Localizer["Compatibility applies to the listed configuration and tested software versions. Reference prices are not quotations."]</p>
+    <partial name="_HardwareCards" model="Model.Items" />
+    <nav aria-label="@Localizer["Hardware pages"]">
+        @if (Model.Page > 1) { <a asp-action="Index" asp-route-page="@(Model.Page - 1)" class="btn btn-outline-primary">@Localizer["Previous"]</a> }
+        @if (Model.HasNextPage) { <a asp-action="Index" asp-route-page="@(Model.Page + 1)" class="btn btn-outline-primary">@Localizer["Next"]</a> }
+    </nav>
+    @if (Model.Items.Count == 0) { <p>@Localizer["Hardware reports will appear here once published."]</p> }
+</div>

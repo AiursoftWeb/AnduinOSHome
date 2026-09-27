@@ -10,8 +10,6 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Aiursoft.AnduinOSHome.MySql.Migrations
 {
-    // THIS FILE IS AUTO GENERATED AND MAINTAINED BY ENTITY FRAMEWORK!
-    // NEVER EDIT THIS FILE MANUALLY!!!
     [DbContext(typeof(MySqlContext))]
     partial class MySqlContextModelSnapshot : ModelSnapshot
     {
@@ -19,7 +17,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.2")
+                .HasAnnotation("ProductVersion", "10.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -35,6 +33,179 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("GlobalSettings");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.Hardware", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Architecture")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Category")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Configuration")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Display")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DriverVersion")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("ExperienceImagePath")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<bool>("Featured")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Graphics")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImageCredit")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("ImageSourceUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<int>("Installation")
+                        .HasColumnType("int");
+
+                    b.Property<string>("KernelVersion")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<int>("Performance")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("PriceCheckedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("PriceMarket")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("PriceUsd")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductImagePath")
+                        .HasMaxLength(250)
+                        .HasColumnType("varchar(250)");
+
+                    b.Property<string>("ProductUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<int>("Publication")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReportUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<int>("SecureBoot")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int>("SortOrder")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("TeamDevice")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("TestedVersion")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime?>("VerifiedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Virtualization")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Wifi")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Hardware");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.HardwareTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Culture")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(3000)
+                        .HasColumnType("varchar(3000)");
+
+                    b.Property<string>("FirmwareNotes")
+                        .HasMaxLength(3000)
+                        .HasColumnType("varchar(3000)");
+
+                    b.Property<int>("HardwareId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("InstallationNotes")
+                        .HasMaxLength(3000)
+                        .HasColumnType("varchar(3000)");
+
+                    b.Property<string>("KnownIssues")
+                        .HasMaxLength(3000)
+                        .HasColumnType("varchar(3000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HardwareId", "Culture")
+                        .IsUnique();
+
+                    b.ToTable("HardwareTranslations");
                 });
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.User", b =>
@@ -246,6 +417,15 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.HardwareTranslation", b =>
+                {
+                    b.HasOne("Aiursoft.AnduinOSHome.Entities.Hardware", null)
+                        .WithMany("Translations")
+                        .HasForeignKey("HardwareId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -295,6 +475,11 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.Hardware", b =>
+                {
+                    b.Navigation("Translations");
                 });
 #pragma warning restore 612, 618
         }

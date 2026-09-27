@@ -1,0 +1,64 @@
+@using Aiursoft.AnduinOSHome.Entities
+@model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareEditModel
+@inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
+<h1>@Localizer["Manage hardware"]</h1>
+<p>@Localizer["Images are public immediately after upload. Use only images you have permission to publish. Archive a record to remove it from public pages."]</p>
+<form asp-action="Edit" method="get" class="mb-3">
+<input type="hidden" name="id" value="@Model.Device.Id" />
+<label for="culture-switch">@Localizer["Edit language (for example en, de-DE, zh-CN)"]</label>
+<input id="culture-switch" name="culture" value="@Model.Text.Culture" class="form-control" required maxlength="20" />
+<button class="btn btn-outline-primary mt-2">@Localizer["Load language"]</button>
+</form>
+<form asp-action="Edit" asp-route-id="@Model.Device.Id" method="post">
+<div asp-validation-summary="All" class="text-danger"></div>
+<input asp-for="Device.Id" type="hidden" />
+<input asp-for="Text.Culture" type="hidden" />
+<div class="row">
+<div class="col-md-6 mb-3"><label asp-for="Device.Slug">@Localizer["URL name"]</label><input asp-for="Device.Slug"   class="form-control" /><span asp-validation-for="Device.Slug" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Brand">@Localizer["Brand"]</label><input asp-for="Device.Brand"   class="form-control" /><span asp-validation-for="Device.Brand" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Model">@Localizer["Model"]</label><input asp-for="Device.Model"   class="form-control" /><span asp-validation-for="Device.Model" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Architecture">@Localizer["Architecture"]</label><input asp-for="Device.Architecture"   class="form-control" /><span asp-validation-for="Device.Architecture" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Category">@Localizer["Category"]</label><input asp-for="Device.Category"   class="form-control" /><span asp-validation-for="Device.Category" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Configuration">@Localizer["Tested hardware configuration"]</label><input asp-for="Device.Configuration"   class="form-control" /><span asp-validation-for="Device.Configuration" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.PriceUsd">@Localizer["Reference price (USD)"]</label><input asp-for="Device.PriceUsd" type="number"  class="form-control" /><span asp-validation-for="Device.PriceUsd" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.PriceMarket">@Localizer["Price market and configuration"]</label><input asp-for="Device.PriceMarket"   class="form-control" /><span asp-validation-for="Device.PriceMarket" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.PriceCheckedAt">@Localizer["Price checked on"]</label><input asp-for="Device.PriceCheckedAt" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" /><span asp-validation-for="Device.PriceCheckedAt" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ProductUrl">@Localizer["Product and price source URL"]</label><input asp-for="Device.ProductUrl" type="url"  class="form-control" /><span asp-validation-for="Device.ProductUrl" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ReportUrl">@Localizer["Installation guide or test report URL"]</label><input asp-for="Device.ReportUrl" type="url"  class="form-control" /><span asp-validation-for="Device.ReportUrl" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ImageSourceUrl">@Localizer["Product image source URL"]</label><input asp-for="Device.ImageSourceUrl" type="url"  class="form-control" /><span asp-validation-for="Device.ImageSourceUrl" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ImageCredit">@Localizer["Image credit and permission"]</label><input asp-for="Device.ImageCredit"   class="form-control" /><span asp-validation-for="Device.ImageCredit" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.TestedVersion">@Localizer["Tested AnduinOS version"]</label><input asp-for="Device.TestedVersion"   class="form-control" /><span asp-validation-for="Device.TestedVersion" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.KernelVersion">@Localizer["Tested kernel"]</label><input asp-for="Device.KernelVersion"   class="form-control" /><span asp-validation-for="Device.KernelVersion" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.DriverVersion">@Localizer["Tested drivers"]</label><input asp-for="Device.DriverVersion"   class="form-control" /><span asp-validation-for="Device.DriverVersion" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.VerifiedAt">@Localizer["Last verified on"]</label><input asp-for="Device.VerifiedAt" type="date" asp-format="{0:yyyy-MM-dd}" class="form-control" /><span asp-validation-for="Device.VerifiedAt" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.SortOrder">@Localizer["Sort order"]</label><input asp-for="Device.SortOrder" type="number"  class="form-control" /><span asp-validation-for="Device.SortOrder" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Publication">@Localizer["Publication"]</label><select asp-for="Device.Publication" class="form-select">@foreach (var value in Enum.GetValues<HardwarePublication>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Installation">@Localizer["Installation"]</label><select asp-for="Device.Installation" class="form-select">@foreach (var value in Enum.GetValues<HardwareEase>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Virtualization">@Localizer["Virtualization (KVM)"]</label><select asp-for="Device.Virtualization" class="form-select">@foreach (var value in Enum.GetValues<HardwareEase>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Performance">@Localizer["Desktop performance"]</label><select asp-for="Device.Performance" class="form-select">@foreach (var value in Enum.GetValues<HardwarePerformance>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Wifi">@Localizer["Wi-Fi in Live"]</label><select asp-for="Device.Wifi" class="form-select">@foreach (var value in Enum.GetValues<HardwareSupport>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Graphics">@Localizer["Graphics acceleration"]</label><select asp-for="Device.Graphics" class="form-select">@foreach (var value in Enum.GetValues<HardwareGraphics>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.Display">@Localizer["Display scaling"]</label><select asp-for="Device.Display" class="form-select">@foreach (var value in Enum.GetValues<HardwareSupport>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.SecureBoot">@Localizer["Secure Boot"]</label><select asp-for="Device.SecureBoot" class="form-select">@foreach (var value in Enum.GetValues<HardwareSupport>()) { <option value="@((int)value)">@Labels.Label(value)</option> }</select></div>
+<div class="col-md-6 mb-3"><input asp-for="Device.TeamDevice" class="form-check-input" /><label asp-for="Device.TeamDevice">@Localizer["Used by the AnduinOS development team"]</label></div>
+<div class="col-md-6 mb-3"><input asp-for="Device.Featured" class="form-check-input" /><label asp-for="Device.Featured">@Localizer["Featured on the home page"]</label></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ProductImagePath">@Localizer["Product image (transparent PNG or WebP recommended)"]</label><vc:file-upload asp-for="Device.ProductImagePath" subfolder="hardware" allowed-extensions="png jpg jpeg webp" max-size-in-mb="10"></vc:file-upload><span asp-validation-for="Device.ProductImagePath" class="text-danger"></span></div>
+<div class="col-md-6 mb-3"><label asp-for="Device.ExperienceImagePath">@Localizer["Photo of AnduinOS running on this device"]</label><vc:file-upload asp-for="Device.ExperienceImagePath" subfolder="hardware" allowed-extensions="png jpg jpeg webp" max-size-in-mb="10"></vc:file-upload><span asp-validation-for="Device.ExperienceImagePath" class="text-danger"></span></div>
+<div class="col-12 mb-3"><label asp-for="Text.Description">@Localizer["Description"] (@Model.Text.Culture)</label><textarea asp-for="Text.Description" class="form-control" rows="4"></textarea></div>
+<div class="col-12 mb-3"><label asp-for="Text.InstallationNotes">@Localizer["Installation instructions"] (@Model.Text.Culture)</label><textarea asp-for="Text.InstallationNotes" class="form-control" rows="4"></textarea></div>
+<div class="col-12 mb-3"><label asp-for="Text.FirmwareNotes">@Localizer["Firmware and peripheral support"] (@Model.Text.Culture)</label><textarea asp-for="Text.FirmwareNotes" class="form-control" rows="4"></textarea></div>
+<div class="col-12 mb-3"><label asp-for="Text.KnownIssues">@Localizer["Known limitations"] (@Model.Text.Culture)</label><textarea asp-for="Text.KnownIssues" class="form-control" rows="4"></textarea></div>
+<div class="col-12 mb-3"><input asp-for="ClearProductImage" /><label asp-for="ClearProductImage">@Localizer["Remove product image reference"]</label></div>
+<div class="col-12 mb-3"><input asp-for="ClearExperienceImage" /><label asp-for="ClearExperienceImage">@Localizer["Remove experience photo reference"]</label></div>
+</div><button class="btn btn-primary">@Localizer["Save"]</button> <a asp-action="Index">@Localizer["Back to hardware"]</a>
+</form>
+@* Sections are provided by the UiStack Razor class library layout. *@
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+<link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
+<link rel="stylesheet" href="~/styles/uploader.css" />
+}
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+<script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+}

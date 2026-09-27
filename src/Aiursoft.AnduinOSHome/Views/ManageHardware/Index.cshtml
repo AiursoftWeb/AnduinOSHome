@@ -1,0 +1,16 @@
+@model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareIndexModel
+@inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
+<h1>@Localizer["Recommended hardware"]</h1>
+<a asp-action="Edit" class="btn btn-primary mb-3">@Localizer["Add hardware"]</a>
+<div class="table-responsive">
+<table class="table">
+    <thead><tr><th>@Localizer["Device"]</th><th>@Localizer["Publication"]</th><th>@Localizer["Actions"]</th></tr></thead>
+    <tbody>
+    @foreach (var device in Model.Items)
+    {
+        <tr><td>@device.Brand @device.Model</td><td>@Labels.Label(device.Publication)</td>
+            <td><a asp-action="Edit" asp-route-id="@device.Id">@Localizer["Edit"]</a></td></tr>
+    }
+    </tbody>
+</table>
+</div>

@@ -25,6 +25,9 @@ public class AppPermissions
         var localizer = new FakeLocalizer();
         List<PermissionDescriptor> allPermission =
         [
+            new(AppPermissionNames.CanManageHardware,
+                localizer["Manage recommended hardware"],
+                localizer["Allows editing and publishing hardware compatibility reports."]),
             new(AppPermissionNames.CanReadUsers,
                 localizer["Read Users"],
                 localizer["Allows viewing the list of all users."]),
