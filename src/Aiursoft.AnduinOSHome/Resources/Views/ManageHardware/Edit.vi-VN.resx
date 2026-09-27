@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Thêm thiết bị</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Sau khi tạo thiết bị, bạn có thể thêm các ngôn ngữ khác trong trình biên tập bản dịch.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Kiến trúc</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Thương hiệu</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Xem trước thẻ</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Danh mục</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Chọn ngôn ngữ cho bài đánh giá gốc. Không thể thay đổi ngôn ngữ này sau khi tạo.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Chi tiết về khả năng tương thích có thể nhấp</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Khả năng tương thích</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Mô tả</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Chi tiết về hiệu năng máy tính để bàn</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Thiết bị và màn hình</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Thông tin về thiết bị được dùng chung cho tất cả ngôn ngữ. Hãy chỉnh sửa phần mô tả và ghi chú về khả năng tương thích trong trình biên tập bản dịch.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Loại thiết bị</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Chi tiết về điều chỉnh tỷ lệ hiển thị</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Mỗi đánh giá quyết định biểu tượng; phần giải thích sẽ hiển thị khi khách truy cập nhấp vào thẻ. Đánh giá được dùng chung, phần giải thích theo ngôn ngữ gốc.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Chỉnh sửa thiết bị</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Chỉnh sửa ngôn ngữ (ví dụ: en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Chỉnh sửa bản dịch</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Mô tả bằng tiếng Anh</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Nổi bật trên trang chủ</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Ghi chú thực tế</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Hỗ trợ phần sụn và thiết bị ngoại vi</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Chi tiết về tăng tốc đồ họa</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Không gian làm việc phần cứng</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Nguồn ảnh và quyền sử dụng</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Hướng dẫn cài đặt</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Các hạn chế đã biết</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Thông tin ghi nhận nguồn ảnh bản địa hóa</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Văn bản bản địa hóa bổ sung cho các thông số kỹ thuật dùng chung.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Quản lý phần cứng</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Không bắt buộc. Thẻ trạng thái chỉ mở phần giải thích khi có nội dung bằng ngôn ngữ này hoặc bằng tiếng Anh dự phòng.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Ảnh AnduinOS đang chạy trên thiết bị này</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Xem trước</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Ngày kiểm tra giá</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Trạng thái công bố</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Xuất bản</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Giá tham khảo (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Chi tiết về Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Hiển thị bên dưới các thẻ tương thích.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Được hiển thị trong các thẻ tương thích trên trang chi tiết thiết bị.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Hiển thị ở phần đầu trang chi tiết. Hãy viết bằng ngôn ngữ gốc; không bắt buộc phải dịch.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Hiển thị trên thẻ trang chủ, danh mục và phần đầu trang chi tiết. Dùng chung cho tất cả ngôn ngữ.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (cấu hình bán hàng chính xác, nếu biết)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Thứ tự sắp xếp</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Ngôn ngữ nguồn</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Hồ sơ kỹ thuật</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Phiên bản AnduinOS đã kiểm thử</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Phiên bản nhân Linux đã thử nghiệm</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Bản dịch</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Bản xem trước chưa lưu</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Tên URL</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Chi tiết Wi-Fi trong chế độ Live</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Hãy viết bài đánh giá đầy đủ bằng ngôn ngữ nguồn. Các thông tin chung được áp dụng cho mọi ngôn ngữ.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Hãy viết bài đánh giá gốc tại đây. Hãy dịch bài đánh giá đó trong thẻ Ngôn ngữ. Khi văn bản gốc thay đổi, các bản dịch sẽ được đánh dấu để xem xét.</value>
   </data>
 
 </root>

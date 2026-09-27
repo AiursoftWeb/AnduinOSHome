@@ -21,6 +21,9 @@
       <data name="Could not save this record. Check whether its address is already in use." xml:space="preserve">
     <value>無法儲存這筆資料。請確認此網址是否已被使用。</value>
   </data>
+  <data name="Enter a valid language and description." xml:space="preserve">
+    <value>請輸入有效的語言和描述。</value>
+  </data>
   <data name="Enter a valid language code." xml:space="preserve">
     <value>請輸入有效的語言代碼。</value>
   </data>
@@ -30,11 +33,17 @@
   <data name="Select a valid public hardware image uploaded through this form." xml:space="preserve">
     <value>請選取透過此表單上傳的有效公開硬體映像。</value>
   </data>
+  <data name="The source language cannot be changed after creation." xml:space="preserve">
+    <value>建立後無法變更來源語言。</value>
+  </data>
   <data name="This address is already in use." xml:space="preserve">
     <value>此位址已被使用。</value>
   </data>
   <data name="Use an absolute HTTPS URL without credentials." xml:space="preserve">
     <value>請使用不含認證資訊的絕對 HTTPS URL。</value>
+  </data>
+  <data name="Write a source description before publishing." xml:space="preserve">
+    <value>請先撰寫來源語言的描述，再發布。</value>
   </data>
 
 </root>

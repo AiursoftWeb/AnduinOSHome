@@ -1,5 +1,6 @@
 using Aiursoft.AnduinOSHome.MySql;
 using Aiursoft.AnduinOSHome.Sqlite;
+using Aiursoft.AnduinOSHome.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
@@ -31,5 +32,30 @@ public class MigrationTests
         using var context = new MySqlContext(options);
         var hasPendingChanges = context.Database.HasPendingModelChanges();
         Assert.IsFalse(hasPendingChanges, "There are pending model changes for MySql. Please run 'dotnet ef migrations add' for MySql.");
+    }
+
+    [TestMethod]
+    public void TestMySqlHardwareDetailsUseOffRowTextColumns()
+    {
+        var options = new DbContextOptionsBuilder<MySqlContext>()
+            .UseMySql("Server=localhost;Database=test;Uid=root;Pwd=password;", new MySqlServerVersion(new Version(9, 5, 0)))
+            .Options;
+        using var context = new MySqlContext(options);
+        var translation = context.Model.FindEntityType(typeof(HardwareTranslation));
+        Assert.IsNotNull(translation);
+
+        foreach (var propertyName in new[]
+                 {
+                     nameof(HardwareTranslation.DisplayDetail),
+                     nameof(HardwareTranslation.GraphicsDetail),
+                     nameof(HardwareTranslation.InstallationDetail),
+                     nameof(HardwareTranslation.PerformanceDetail),
+                     nameof(HardwareTranslation.SecureBootDetail),
+                     nameof(HardwareTranslation.VirtualizationDetail),
+                     nameof(HardwareTranslation.WifiDetail)
+                 })
+        {
+            Assert.AreEqual("text", translation.FindProperty(propertyName)?.GetColumnType(), propertyName);
+        }
     }
 }

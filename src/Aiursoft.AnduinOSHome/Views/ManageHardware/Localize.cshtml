@@ -1,0 +1,102 @@
+@model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareLocalizeModel
+
+<div class="d-flex justify-content-between align-items-start gap-3 mb-4">
+    <div>
+        <p class="text-muted mb-1">@Localizer["Hardware workspace"]</p>
+        <h1 class="mb-1">@Model.DeviceName</h1>
+        <p class="text-muted mb-0">@Localizer["Translate the original review. Shared facts and verdicts stay on the device tab."]</p>
+    </div>
+    <div class="d-flex gap-2"><a id="hardware-preview-link" asp-action="Preview" asp-route-id="@Model.DeviceId" target="_blank" class="btn btn-outline-secondary">@Localizer["Preview"]</a><a asp-action="Edit" asp-route-id="@Model.DeviceId" class="btn btn-outline-secondary">@Localizer["Back to device details"]</a></div>
+</div>
+<nav class="nav nav-tabs mb-4" aria-label="@Localizer["Hardware workspace"]"><a asp-action="Edit" asp-route-id="@Model.DeviceId" class="nav-link">@Localizer["Edit device"]</a><a asp-action="Localize" asp-route-id="@Model.DeviceId" class="nav-link active">@Localizer["Translations"]</a></nav>
+<p class="text-muted">@Localizer["Source language"]: <strong>@Model.SourceCulture</strong>. @if (Model.IsPublished) { <span>@Localizer["Saving a translation updates the published page immediately."]</span> } else { <span>@Localizer["This device is not published yet."]</span> }</p>
+
+<div id="hardware-localize" class="row g-4" data-device-id="@Model.DeviceId"
+     data-load-url="@Url.Action("TranslationData", "ManageHardware")"
+     data-save-url="@Url.Action("SaveTranslation", "ManageHardware")"
+     data-edit-url="@Url.Action("Edit", "ManageHardware", new { id = Model.DeviceId })">
+    <div class="col-lg-3">
+        <div class="card hardware-language-sidebar">
+            <div class="card-header"><h2 class="h5 mb-0">@Localizer["Languages"]</h2></div>
+            <div class="list-group list-group-flush hardware-language-list" role="group" aria-label="@Localizer["Languages"]">
+                @foreach (var language in Model.Languages)
+                {
+                    <button type="button" class="list-group-item list-group-item-action hardware-language"
+                            data-culture="@language.Culture" aria-pressed="false">
+                        <span class="d-flex justify-content-between gap-2 align-items-center">
+                            <span><strong>@language.NativeName</strong><small class="d-block text-muted">@language.Culture</small></span>
+                            <span class="hardware-language-check small @(language.IsStale ? "text-warning" : language.HasTranslation ? "text-success" : "text-muted")"
+                                  aria-label="@(language.IsStale ? Localizer["Source updated"] : language.HasTranslation ? Localizer["Translation saved"] : Localizer["Not translated yet"])"
+                                  title="@(language.IsStale ? Localizer["Source updated"] : language.HasTranslation ? Localizer["Translation saved"] : Localizer["Not translated yet"])">@(language.IsStale ? Localizer["Source updated"] : language.HasTranslation ? Localizer["Translation saved"] : Localizer["Not translated yet"])</span>
+                        </span>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-9">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center gap-2">
+                <h2 id="hardware-editor-language" class="h5 mb-0">@Localizer["Select a language"]</h2>
+                <span id="hardware-editor-status" class="small" role="status" aria-live="polite"></span>
+            </div>
+            <div class="card-body">
+                <form id="hardware-translation-form">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="Culture" id="hardware-translation-culture" />
+                    <fieldset id="hardware-translation-fields" disabled>
+                        <div class="mb-4">
+                            <label class="form-label" for="hardware-description">@Localizer["Description"]</label>
+                            <textarea id="hardware-description" name="Description" class="form-control" rows="5" maxlength="3000" required></textarea>
+                        </div>
+                        <h3 class="h6 mb-3">@Localizer["Field notes"]</h3>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6"><label class="form-label" for="hardware-installation-notes">@Localizer["Installation instructions"]</label><textarea id="hardware-installation-notes" name="InstallationNotes" class="form-control" rows="4" maxlength="3000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-firmware-notes">@Localizer["Firmware and peripheral support"]</label><textarea id="hardware-firmware-notes" name="FirmwareNotes" class="form-control" rows="4" maxlength="3000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-known-issues">@Localizer["Known limitations"]</label><textarea id="hardware-known-issues" name="KnownIssues" class="form-control" rows="4" maxlength="3000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-configuration-text">@Localizer["Localized hardware configuration"]</label><textarea id="hardware-configuration-text" name="ConfigurationText" class="form-control" rows="4" maxlength="1000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-image-credit-text">@Localizer["Localized image credit"]</label><textarea id="hardware-image-credit-text" name="ImageCreditText" class="form-control" rows="3" maxlength="500"></textarea></div>
+                        </div>
+                        <h3 class="h6 mb-2">@Localizer["Clickable compatibility details"]</h3>
+                        <p class="text-muted small">@Localizer["Optional explanations shown when a visitor opens a status card."]</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6"><label class="form-label" for="hardware-installation-detail">@Localizer["Installation detail"]</label><textarea id="hardware-installation-detail" name="InstallationDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-performance-detail">@Localizer["Desktop performance detail"]</label><textarea id="hardware-performance-detail" name="PerformanceDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-secure-boot-detail">@Localizer["Secure Boot detail"]</label><textarea id="hardware-secure-boot-detail" name="SecureBootDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-wifi-detail">@Localizer["Wi-Fi in Live detail"]</label><textarea id="hardware-wifi-detail" name="WifiDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-graphics-detail">@Localizer["Graphics acceleration detail"]</label><textarea id="hardware-graphics-detail" name="GraphicsDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-virtualization-detail">@Localizer["Virtualization (KVM) detail"]</label><textarea id="hardware-virtualization-detail" name="VirtualizationDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="hardware-display-detail">@Localizer["Display scaling detail"]</label><textarea id="hardware-display-detail" name="DisplayDetail" class="form-control" rows="3" maxlength="2000"></textarea></div>
+                        </div>
+                        <button id="hardware-save-translation" type="submit" class="btn btn-primary">@Localizer["Save translation"]</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="hardware-localize-text" hidden>
+    <span data-key="loading">@Localizer["Loading translation..."]</span>
+    <span data-key="saving">@Localizer["Saving translation..."]</span>
+    <span data-key="saved">@Localizer["Translation saved"]</span>
+    <span data-key="load-error">@Localizer["Could not load this translation."]</span>
+    <span data-key="save-error">@Localizer["Could not save this translation."]</span>
+    <span data-key="unsaved">@Localizer["You have unsaved changes. Discard them and switch languages?"]</span>
+    <span data-key="not-translated">@Localizer["Not translated yet"]</span>
+    <span data-key="source-updated">@Localizer["Source updated"]</span>
+    <span data-key="source-reference">@Localizer["Source reference"]</span>
+    <span data-key="no-source-text">@Localizer["No source text for this field."]</span>
+    <span data-key="translation-updated">@Localizer["Translation saved. The published page updates immediately."]</span>
+    <span data-key="edit-source">@Localizer["Edit device"]</span>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/hardware-localize.css" asp-append-version="true" />
+}
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/hardware-localize.js" asp-append-version="true" defer></script>
+}

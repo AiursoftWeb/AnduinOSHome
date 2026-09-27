@@ -22,6 +22,8 @@ public class Hardware
     [Required, MaxLength(150)] public string Model { get; set; } = string.Empty;
     [MaxLength(100)] public string? Sku { get; set; }
     [Required, MaxLength(30)] public string Architecture { get; set; } = string.Empty;
+    [Required, MaxLength(20)] public string SourceCulture { get; set; } = "en";
+    public int SourceRevision { get; set; }
     [MaxLength(100)] public string? Category { get; set; }
     [EnumDataType(typeof(HardwareDeviceType))] public HardwareDeviceType DeviceType { get; set; }
     [MaxLength(1000)] public string? Configuration { get; set; }
@@ -59,6 +61,7 @@ public class HardwareTranslation
     public int Id { get; set; }
     public int HardwareId { get; set; }
     [Required, MaxLength(20)] public string Culture { get; set; } = "en";
+    public int BasedOnSourceRevision { get; set; }
     [Required, MaxLength(3000)] public string Description { get; set; } = string.Empty;
     [MaxLength(3000)] public string? FirmwareNotes { get; set; }
     [MaxLength(3000)] public string? InstallationNotes { get; set; }

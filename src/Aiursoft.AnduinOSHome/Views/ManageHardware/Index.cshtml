@@ -1,15 +1,25 @@
 @model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareIndexModel
 @inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
+@inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
 <h1>@Localizer["Recommended hardware"]</h1>
 <a asp-action="Edit" class="btn btn-primary mb-3">@Localizer["Add hardware"]</a>
+<form method="get" asp-action="Index" class="row g-2 mb-3">
+    <div class="col-md-5"><label for="hardware-search" class="visually-hidden">@Localizer["Search devices"]</label><input id="hardware-search" name="search" value="@Model.Search" maxlength="100" class="form-control" placeholder="@Localizer["Search devices"]" /></div>
+    <div class="col-md-3"><label for="hardware-publication" class="visually-hidden">@Localizer["Publication"]</label><select id="hardware-publication" name="publication" class="form-select"><option value="">@Localizer["All publication states"]</option>@foreach (var value in Enum.GetValues<Aiursoft.AnduinOSHome.Entities.HardwarePublication>()) { <option value="@value" selected="@(Model.PublicationFilter == value)">@Labels.Label(value)</option> }</select></div>
+    <div class="col-md-2"><button class="btn btn-outline-primary">@Localizer["Search"]</button></div>
+</form>
 <div class="table-responsive">
 <table class="table">
-    <thead><tr><th>@Localizer["Device"]</th><th>@Localizer["Publication"]</th><th>@Localizer["Actions"]</th></tr></thead>
+    <thead><tr><th>@Localizer["Device"]</th><th>@Localizer["Publication"]</th><th>@Localizer["Source language"]</th><th>@Localizer["Translations"]</th><th>@Localizer["Actions"]</th></tr></thead>
     <tbody>
     @foreach (var device in Model.Items)
     {
-        <tr><td>@device.Brand @device.Model</td><td>@Labels.Label(device.Publication)</td>
-            <td><a asp-action="Edit" asp-route-id="@device.Id">@Localizer["Edit"]</a></td></tr>
+        var translated = device.Translations.Where(x => !x.Culture.Equals(device.SourceCulture, StringComparison.OrdinalIgnoreCase)).ToList();
+        var stale = translated.Count(x => x.BasedOnSourceRevision < device.SourceRevision);
+        <tr><td>@if (!string.IsNullOrWhiteSpace(device.ProductImagePath)) { <img src="@Storage.RelativePathToInternetUrl(device.ProductImagePath)?w=80" width="48" height="48" style="object-fit:contain" alt="" /> } @device.Brand @device.Model @if (!string.IsNullOrWhiteSpace(device.Sku)) { <small class="text-muted">· @device.Sku</small> } @if (device.Featured) { <span class="badge text-bg-info">@Localizer["Featured"]</span> }</td><td>@Labels.Label(device.Publication)</td><td>@device.SourceCulture</td><td>@translated.Count @Localizer["saved"] @if (stale > 0) { <span class="text-warning">· @stale @Localizer["need review"]</span> }</td>
+            <td><a asp-action="Edit" asp-route-id="@device.Id">@Localizer["Edit device"]</a> ·
+                <a asp-action="Localize" asp-route-id="@device.Id">@Localizer["Translations"]</a> ·
+                <a asp-action="Preview" asp-route-id="@device.Id">@Localizer["Preview"]</a></td></tr>
     }
     </tbody>
 </table>

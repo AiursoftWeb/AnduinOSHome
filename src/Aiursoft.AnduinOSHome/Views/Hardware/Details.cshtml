@@ -18,6 +18,7 @@
 }
 
 <vc:marketing-navbar></vc:marketing-navbar>
+@if (Model.IsPreview) { <div class="alert alert-warning text-center mb-0" role="status">@Localizer["Editorial preview — unpublished changes appear only after saving."]</div> }
 
 <main class="hardware-detail">
     @* The insight labels are constructed in the Razor code block above. Keep direct calls for dotlang extraction. *@
@@ -72,14 +73,14 @@
         <section class="hardware-section" aria-labelledby="hardware-highlights-title">
             <div class="hardware-section-heading"><span>01 / @Localizer["Overview"]</span><h2 id="hardware-highlights-title">@Localizer["The essentials, at a glance."]</h2></div>
             <div class="hardware-highlights">
-                @foreach (var insight in highlights) { <partial name="_HardwareInsight" model="insight" /> }
+                @foreach (var insight in highlights) { <partial name="~/Views/Hardware/_HardwareInsight.cshtml" model="insight" /> }
             </div>
         </section>
 
         <section class="hardware-section" aria-labelledby="hardware-capabilities-title">
             <div class="hardware-section-heading"><span>02 / @Localizer["Compatibility"]</span><h2 id="hardware-capabilities-title">@Localizer["What works on this device."]</h2><p>@Localizer["Each status reflects the listed configuration and tested software version."]</p></div>
             <div class="hardware-capabilities">
-                @foreach (var insight in capabilities) { <partial name="_HardwareInsight" model="insight" /> }
+                @foreach (var insight in capabilities) { <partial name="~/Views/Hardware/_HardwareInsight.cshtml" model="insight" /> }
             </div>
         </section>
         </div>

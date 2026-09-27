@@ -13,7 +13,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "DisplayDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -21,7 +21,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "GraphicsDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -29,7 +29,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "InstallationDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -37,7 +37,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "PerformanceDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -45,7 +45,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "SecureBootDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -53,7 +53,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "VirtualizationDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -61,7 +61,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "WifiDetail",
                 table: "HardwareTranslations",
-                type: "varchar(2000)",
+                type: "text",
                 maxLength: 2000,
                 nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");

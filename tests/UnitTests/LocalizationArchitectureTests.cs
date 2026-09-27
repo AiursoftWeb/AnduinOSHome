@@ -41,7 +41,7 @@ public class LocalizationArchitectureTests
         var views = new[]
         {
             "Hardware/Index", "Hardware/Details", "Hardware/_HardwareInsight",
-            "ManageHardware/Index", "ManageHardware/Edit",
+            "ManageHardware/Index", "ManageHardware/Edit", "ManageHardware/Localize",
             "Shared/_HardwareCards", "Shared/Components/RecommendedHardware/Default"
         };
         foreach (var view in views)
@@ -69,6 +69,19 @@ public class LocalizationArchitectureTests
             var translated = XDocument.Load(path).Descendants("data")
                 .Select(element => (string?)element.Attribute("name")).ToHashSet();
             var missing = labelKeys.Where(key => !translated.Contains(key)).ToArray();
+            Assert.AreEqual(0, missing.Length, $"{path}: missing {string.Join(", ", missing)}");
+        }
+
+        var controller = File.ReadAllText(Path.Combine(root, "Controllers", "ManageHardwareController.cs"));
+        var controllerKeys = Regex.Matches(controller, "localizer\\[\"([^\"]+)\"\\]")
+            .Select(match => match.Groups[1].Value).Distinct().ToArray();
+        foreach (var locale in locales)
+        {
+            var path = Path.Combine(root, "Resources", "Controllers", $"ManageHardwareController.{locale}.resx");
+            Assert.IsTrue(File.Exists(path), path);
+            var translated = XDocument.Load(path).Descendants("data")
+                .Select(element => (string?)element.Attribute("name")).ToHashSet();
+            var missing = controllerKeys.Where(key => !translated.Contains(key)).ToArray();
             Assert.AreEqual(0, missing.Length, $"{path}: missing {string.Join(", ", missing)}");
         }
     }

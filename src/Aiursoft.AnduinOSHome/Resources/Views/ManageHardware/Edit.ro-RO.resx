@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Adăugați hardware</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>După crearea dispozitivului, puteți adăuga alte limbi în editorul de traduceri.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Arhitectură</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Marcă</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Previzualizare card</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Categorie</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Alegeți limba recenziei originale. Aceasta nu poate fi schimbată după creare.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Detalii despre compatibilitate, cu explicații accesibile prin clic</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Compatibilitate</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Descriere</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Detalii despre performanța pe desktop</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Dispozitiv și ecran</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Informațiile despre dispozitiv sunt comune tuturor limbilor. Editați descrierile și notele de compatibilitate în editorul de traduceri.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Tipul dispozitivului</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Detalii despre scalarea afișajului</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Fiecare verdict controlează pictograma; explicația sa apare când vizitatorii dau clic pe card. Verdict comun, explicație în limba sursă.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Editați dispozitivul</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Editați limba (de exemplu, en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Editează traducerile</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Descriere în limba engleză</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Evidențiat pe pagina principală</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Note de teren</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Compatibilitate cu firmware-ul și dispozitivele periferice</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Detalii despre accelerarea grafică</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Spațiu de lucru pentru hardware</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Creditarea imaginii și permisiunea de utilizare</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Instrucțiuni de instalare</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introducere</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Limitări cunoscute</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Mențiunea privind sursa imaginii, tradusă</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Textul localizat completează valorile tehnice comune.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Gestionați componentele hardware</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Opțional. Un card de stare își deschide explicația numai dacă există text în această limbă sau în versiunea de rezervă în engleză.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Prezentare generală</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Fotografie cu AnduinOS rulând pe acest dispozitiv</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Previzualizare</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Data verificării prețului</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Publicare</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publică</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Preț de referință (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Detalii despre Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Afișat sub cardurile de compatibilitate.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Afișată în cardurile de compatibilitate de pe pagina cu detaliile dispozitivului.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Afișat în secțiunea principală a paginii de detalii. Scrieți în limba sursă; traducerile sunt opționale.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Afișat pe cardul de pe pagina principală, în catalog și în secțiunea principală a paginii de detalii. Comun tuturor limbilor.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (configurația exactă de vânzare, dacă este cunoscută)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Ordinea de sortare</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Limba sursă</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Fișă tehnică</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Versiunea AnduinOS testată</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Nucleu testat</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Traduceri</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Previzualizare nesalvată</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Numele URL-ului</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Detalii despre Wi-Fi în modul Live</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Scrie recenzia completă în limba sursă. Informațiile comune se aplică tuturor limbilor.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Scrieți aici recenzia originală. Traduceți-o în fila „Limbi”. Modificările aduse textului original marchează traducerile pentru revizuire.</value>
   </data>
 
 </root>

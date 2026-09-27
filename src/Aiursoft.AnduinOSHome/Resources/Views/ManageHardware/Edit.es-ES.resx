@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Añadir hardware</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Después de crear el dispositivo, puedes añadir otros idiomas en el editor de traducciones.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Arquitectura</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Marca</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Vista previa de la tarjeta</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Categoría</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Elige el idioma de la reseña original. No se podrá cambiar una vez creada.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Detalles de compatibilidad interactivos</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Compatibilidad</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Descripción</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Detalles del rendimiento del escritorio</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Dispositivo y pantalla</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Los datos del dispositivo son comunes a todos los idiomas. Edita las descripciones y las notas de compatibilidad en el editor de traducciones.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Tipo de dispositivo</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Detalles del escalado de pantalla</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Cada valoración determina el icono; su explicación aparece cuando los visitantes hacen clic en la tarjeta. La valoración es común a todos los idiomas; la explicación está en el idioma original.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Editar dispositivo</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Editar idioma (por ejemplo, en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Editar traducciones</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Descripción en inglés</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Destacado en la página de inicio</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Notas de campo</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Compatibilidad con el firmware y los periféricos</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Detalles de la aceleración gráfica</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Espacio de trabajo de hardware</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Crédito de la imagen y permiso</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Instrucciones de instalación</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introducción</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Limitaciones conocidas</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Crédito de la imagen traducido</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>El texto traducido complementa los datos técnicos compartidos.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Gestionar el hardware</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Opcional. La tarjeta de estado solo muestra su explicación cuando hay texto en este idioma o en la versión alternativa en inglés.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Resumen</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Foto de AnduinOS funcionando en este dispositivo</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vista previa</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Fecha de consulta del precio</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Publicación</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publicar</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Precio de referencia (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Detalles de Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Se muestra debajo de las tarjetas de compatibilidad.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Se muestra en las tarjetas de compatibilidad de la página de detalles del dispositivo.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Se muestra en la cabecera de la página de detalles. Escribe en el idioma de origen; las traducciones son opcionales.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Se muestra en la tarjeta de inicio, el catálogo y la cabecera de la página de detalles. Es común a todos los idiomas.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (configuración exacta de venta, si se conoce)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Orden de clasificación</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Idioma de origen</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Ficha técnica</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Versión de AnduinOS probada</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Núcleo probado</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Traducciones</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Vista previa sin guardar</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Nombre de la URL</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Detalles del wifi en modo Live</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Escribe la reseña completa en el idioma original. Los datos compartidos se aplican a todos los idiomas.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Escribe aquí la reseña original. Tradúcela en la pestaña «Idiomas». Los cambios en el texto original marcarán las traducciones para su revisión.</value>
   </data>
 
 </root>

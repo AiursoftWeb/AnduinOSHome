@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Lisää laite</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Kun olet luonut laitteen, voit lisätä muita kieliä käännöseditorissa.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Arkkitehtuuri</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Merkki</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Kortin esikatselu</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Luokka</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Valitse alkuperäisen arvostelun kieli. Sitä ei voi muuttaa luomisen jälkeen.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Avattavat yhteensopivuustiedot</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Yhteensopivuus</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Kuvaus</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Työpöydän suorituskyvyn lisätiedot</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Laite ja näyttö</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Laitetiedot ovat samat kaikilla kielillä. Muokkaa kuvauksia ja yhteensopivuushuomautuksia käännösten muokkausnäkymässä.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Laitetyyppi</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Näytön skaalauksen lisätiedot</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Jokainen arvio määrittää kuvakkeen; sen selitys näytetään, kun kävijä napsauttaa korttia. Arvio on yhteinen, selitys lähdekielellä.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Muokkaa laitetta</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Muokkaa kieltä (esimerkiksi en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Muokkaa käännöksiä</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Englanninkielinen kuvaus</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Esillä etusivulla</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Muistiinpanot</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Laiteohjelmiston ja oheislaitteiden tuki</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Tietoja grafiikkakiihdytyksestä</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Laitteiston työtila</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Kuvan tekijänoikeustiedot ja käyttöoikeus</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Asennusohjeet</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Johdanto</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Tunnetut rajoitukset</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Kuvatekstin lähdetiedot</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Käännetty teksti täydentää yhteisiä teknisiä tietoja.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Hallinnoi laitteistoa</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Valinnainen. Tilakortti avaa selitetekstin vain, jos tälle kielelle tai englanninkieliseen varatekstiin on lisätty tekstiä.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Yleiskatsaus</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Valokuva, jossa AnduinOS on käynnissä tällä laitteella</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Esikatselu</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Hinta tarkistettu</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Julkaisu</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Julkaise</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Viitehinta (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Suojatun käynnistyksen lisätiedot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Näytetään yhteensopivuuskorttien alapuolella.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Näytetään laitteen tietosivun yhteensopivuuskorteissa.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Näkyy laitteen tietosivun pääosiossa. Kirjoita lähdekielellä; käännökset ovat valinnaisia.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Näytetään etusivun kortissa, luettelossa ja tuotesivun pääosiossa. Yhteinen kaikille kielille.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (tarkka myyntikokoonpano, jos tiedossa)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Lajittelujärjestys</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Lähdekieli</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Tekniset tiedot</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Testattu AnduinOS-versio</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Testattu ydin</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Käännökset</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Tallentamaton esikatselu</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL-osoite</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Wi-Fi käytössä live-tilassa: lisätietoja</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Kirjoita koko arvostelu lähdekielellä. Yhteiset tiedot koskevat kaikkia kieliä.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Kirjoita alkuperäinen arvostelu tähän. Käännä se Kielet-välilehdellä. Alkuperäisen tekstin muutokset merkitsevät käännökset tarkistettaviksi.</value>
   </data>
 
 </root>

@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Lägg till maskinvara</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>När du har skapat enheten kan du lägga till andra språk i översättningsverktyget.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Arkitektur</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Märke</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Förhandsvisning av kort</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Kategori</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Välj språket för originalrecensionen. Det går inte att ändra efter att den har skapats.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Klickbara kompatibilitetsdetaljer</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Kompatibilitet</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Beskrivning</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Detaljer om skrivbordsprestanda</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Enhet och skärm</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Enhetsinformation delas mellan alla språk. Redigera beskrivningar och kompatibilitetsanteckningar i översättningsredigeraren.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Enhetstyp</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Information om bildskärmsskalning</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Varje omdöme styr ikonen; förklaringen visas när besökare klickar på kortet. Omdömet delas mellan språken, men förklaringen är på källspråket.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Redigera enhet</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Redigera språk (till exempel en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Redigera översättningar</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Engelsk beskrivning</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Utvald på startsidan</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Anteckningar från praktisk användning</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Stöd för fast programvara och kringutrustning</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Information om grafikacceleration</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Arbetsyta för maskinvara</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Bildkälla och tillstånd</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Installationsanvisningar</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introduktion</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Kända begränsningar</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Bildkälla på det aktuella språket</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Lokaliserad text kompletterar gemensamma tekniska värden.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Hantera maskinvara</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Valfritt. Ett statuskort öppnar sin förklaring endast om det finns text på det här språket eller på engelska som reserv.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Översikt</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Foto av AnduinOS som körs på den här enheten</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Förhandsgranska</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Pris kontrollerat den</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Publicering</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publicera</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Referenspris (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Detaljer om Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Visas under kompatibilitetskorten.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Visas på kompatibilitetskorten på enhetens detaljsida.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Visas i detaljvyns huvudsektion. Skriv på källspråket; översättningar är valfria.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Visas på kortet på startsidan, i katalogen och i detaljvyn. Delas mellan alla språk.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (exakt försäljningskonfiguration, om känd)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Sorteringsordning</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Källspråk</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Teknisk dokumentation</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Testad AnduinOS-version</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Testad kärna</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Översättningar</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Osparad förhandsvisning</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL-namn</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Detaljer om Wi-Fi i liveläge</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Skriv hela recensionen på källspråket. Gemensamma fakta gäller för alla språk.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Skriv den ursprungliga recensionen här. Översätt den under fliken Språk. Ändringar i originaltexten markerar översättningarna för granskning.</value>
   </data>
 
 </root>

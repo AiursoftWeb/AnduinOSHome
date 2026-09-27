@@ -21,6 +21,9 @@
       <data name="Could not save this record. Check whether its address is already in use." xml:space="preserve">
     <value>このレコードを保存できませんでした。アドレスがすでに使用されていないか確認してください。</value>
   </data>
+  <data name="Enter a valid language and description." xml:space="preserve">
+    <value>有効な言語と説明を入力してください。</value>
+  </data>
   <data name="Enter a valid language code." xml:space="preserve">
     <value>有効な言語コードを入力してください。</value>
   </data>
@@ -30,11 +33,17 @@
   <data name="Select a valid public hardware image uploaded through this form." xml:space="preserve">
     <value>このフォームからアップロードした有効な公開用ハードウェア画像を選択してください。</value>
   </data>
+  <data name="The source language cannot be changed after creation." xml:space="preserve">
+    <value>作成後にソース言語を変更することはできません。</value>
+  </data>
   <data name="This address is already in use." xml:space="preserve">
     <value>このアドレスはすでに使用されています。</value>
   </data>
   <data name="Use an absolute HTTPS URL without credentials." xml:space="preserve">
     <value>認証情報を含まない絶対HTTPS URLを使用してください。</value>
+  </data>
+  <data name="Write a source description before publishing." xml:space="preserve">
+    <value>公開する前に、原文の説明を入力してください。</value>
   </data>
 
 </root>

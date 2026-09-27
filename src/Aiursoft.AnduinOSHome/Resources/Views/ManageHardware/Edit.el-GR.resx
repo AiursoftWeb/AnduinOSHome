@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Προσθήκη υλικού</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Αφού δημιουργήσετε τη συσκευή, μπορείτε να προσθέσετε άλλες γλώσσες στο πρόγραμμα επεξεργασίας μεταφράσεων.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Αρχιτεκτονική</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Μάρκα</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Προεπισκόπηση κάρτας</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Κατηγορία</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Επιλέξτε τη γλώσσα της αρχικής αξιολόγησης. Δεν μπορεί να αλλάξει μετά τη δημιουργία.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Λεπτομέρειες συμβατότητας με δυνατότητα κλικ</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Συμβατότητα</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Περιγραφή</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Λεπτομέρειες απόδοσης επιτραπέζιου υπολογιστή</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Συσκευή και οθόνη</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Τα στοιχεία της συσκευής είναι κοινά για όλες τις γλώσσες. Επεξεργαστείτε τις περιγραφές και τις σημειώσεις συμβατότητας στο πρόγραμμα επεξεργασίας μεταφράσεων.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Τύπος συσκευής</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Λεπτομέρειες κλιμάκωσης οθόνης</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Κάθε ετυμηγορία καθορίζει το εικονίδιο· η επεξήγησή της εμφανίζεται όταν οι επισκέπτες κάνουν κλικ στην κάρτα. Η ετυμηγορία είναι κοινή, ενώ η επεξήγηση είναι στη γλώσσα προέλευσης.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Επεξεργασία συσκευής</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Επεξεργασία γλώσσας (για παράδειγμα en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Επεξεργασία μεταφράσεων</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Περιγραφή στα αγγλικά</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Προβεβλημένο στην αρχική σελίδα</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Σημειώσεις πεδίου</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Υποστήριξη υλικολογισμικού και περιφερειακών</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Λεπτομέρειες επιτάχυνσης γραφικών</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Χώρος εργασίας υλικού</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Αναφορά δημιουργού και άδεια χρήσης εικόνας</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Οδηγίες εγκατάστασης</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Εισαγωγή</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Γνωστοί περιορισμοί</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Μεταφρασμένη αναφορά δημιουργού εικόνας</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Το μεταφρασμένο κείμενο συμπληρώνει τις κοινές τεχνικές τιμές.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Διαχείριση υλικού</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Προαιρετικό. Μια κάρτα κατάστασης ανοίγει την επεξήγησή της μόνο όταν υπάρχει κείμενο σε αυτήν τη γλώσσα ή στην αγγλική εναλλακτική.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Επισκόπηση</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Φωτογραφία του AnduinOS σε λειτουργία σε αυτήν τη συσκευή</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Προεπισκόπηση</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Ημερομηνία ελέγχου τιμής</value>
@@ -127,6 +178,9 @@
     <value>URL προέλευσης εικόνας προϊόντος</value>
   </data>
   <data name="Publication" xml:space="preserve">
+    <value>Δημοσίευση</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
     <value>Δημοσίευση</value>
   </data>
   <data name="Reference price (USD)" xml:space="preserve">
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Λεπτομέρειες ασφαλούς εκκίνησης</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Εμφανίζεται κάτω από τις κάρτες συμβατότητας.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Εμφανίζεται στις κάρτες συμβατότητας στη σελίδα λεπτομερειών της συσκευής.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Εμφανίζεται στην κεντρική ενότητα της σελίδας λεπτομερειών. Γράψτε στην αρχική γλώσσα· οι μεταφράσεις είναι προαιρετικές.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Εμφανίζεται στην κάρτα της αρχικής σελίδας, στον κατάλογο και στην κύρια ενότητα της σελίδας λεπτομερειών. Κοινό για όλες τις γλώσσες.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (ακριβής εμπορική διαμόρφωση, αν είναι γνωστή)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Σειρά ταξινόμησης</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Γλώσσα πηγής</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Τεχνικά στοιχεία</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Έκδοση AnduinOS που δοκιμάστηκε</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Ελεγμένος πυρήνας</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Μεταφράσεις</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Μη αποθηκευμένη προεπισκόπηση</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Όνομα URL</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Λεπτομέρειες για το Wi‑Fi σε ζωντανή λειτουργία</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Συντάξτε την πλήρη κριτική στη γλώσσα προέλευσης. Τα κοινά στοιχεία ισχύουν για όλες τις γλώσσες.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Γράψτε εδώ την αρχική αξιολόγηση. Μεταφράστε την στην καρτέλα «Γλώσσες». Οι αλλαγές στο αρχικό κείμενο επισημαίνουν τις μεταφράσεις για έλεγχο.</value>
   </data>
 
 </root>

@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>ハードウェアを追加</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>デバイスを作成した後、翻訳エディターで他の言語を追加できます。</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>アーキテクチャ</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>ブランド</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>カードのプレビュー</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>カテゴリ</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>元のレビューの言語を選択してください。作成後は変更できません。</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>クリック可能な互換性の詳細</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>互換性</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>説明</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>デスクトップのパフォーマンスの詳細</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>デバイスとディスプレイ</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>デバイスの基本情報はすべての言語で共通です。説明と互換性に関する注記は、翻訳エディターで編集してください。</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>デバイスの種類</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>ディスプレイの拡大縮小の詳細</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>各判定はアイコンに反映されます。カードをクリックすると、その説明が表示されます。判定は全言語共通で、説明は原文の言語で記入してください。</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>デバイスを編集</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>編集する言語（例：en、de-DE、zh-CN）</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>翻訳を編集</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>英語の説明</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>ホームページに掲載する</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>特記事項</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>ファームウェアおよび周辺機器のサポート</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>グラフィックスアクセラレーションの詳細</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>ハードウェア管理画面</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>画像のクレジットと使用許可</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>インストール手順</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>はじめに</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>既知の制限事項</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>画像クレジット（翻訳）</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>ローカライズされたテキストは、共通の技術情報を補足します。</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>ハードウェアの管理</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>任意項目です。この言語または英語のフォールバックに説明文がある場合にのみ、ステータスカードを開くと説明が表示されます。</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>概要</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>このデバイスでAnduinOSを実行している様子の写真</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>プレビュー</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>価格確認日</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>公開設定</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>公開</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>参考価格（米ドル）</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>セキュアブートの詳細</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>互換性カードの下に表示されます。</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>デバイス詳細ページの互換性カードに表示されます。</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>詳細ページのヒーローエリアに表示されます。原文の言語で記入してください。翻訳は任意です。</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>ホームカード、カタログ、詳細ページのヒーローに表示されます。すべての言語で共通です。</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU（正確な販売構成が分かる場合）</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>並び順</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>原文の言語</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>技術情報</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>テスト済みのAnduinOSバージョン</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>テスト済みカーネル</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>翻訳</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>未保存のプレビュー</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL名</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>ライブ環境でのWi-Fiに関する詳細</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>レビュー全文を原文の言語で記入してください。共通の情報はすべての言語に適用されます。</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>元のレビューはここに記入してください。翻訳は「言語」タブで行ってください。元のテキストを変更すると、翻訳に要確認のマークが付きます。</value>
   </data>
 
 </root>

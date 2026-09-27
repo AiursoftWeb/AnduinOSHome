@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>हार्डवेयर जोड़ें</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>डिवाइस बनाने के बाद, आप अनुवाद संपादक में अन्य भाषाएँ जोड़ सकते हैं।</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>आर्किटेक्चर</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>ब्रांड</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>कार्ड का पूर्वावलोकन</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>श्रेणी</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>मूल समीक्षा की भाषा चुनें। इसे बनाने के बाद बदला नहीं जा सकता।</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>क्लिक करने योग्य संगतता विवरण</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>अनुकूलता</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>विवरण</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>डेस्कटॉप प्रदर्शन का विवरण</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>डिवाइस और डिस्प्ले</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>डिवाइस से जुड़ी जानकारी सभी भाषाओं में साझा होती है। विवरण और संगतता संबंधी टिप्पणियाँ अनुवाद संपादक में संपादित करें।</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>डिवाइस का प्रकार</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>डिस्प्ले स्केलिंग का विवरण</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>हर निर्णय आइकन को नियंत्रित करता है; आगंतुक कार्ड पर क्लिक करने पर उसका स्पष्टीकरण दिखाई देता है। निर्णय सभी भाषाओं में समान रहता है, जबकि स्पष्टीकरण स्रोत भाषा में होता है।</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>डिवाइस संपादित करें</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>भाषा संपादित करें (उदाहरण के लिए en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>अनुवाद संपादित करें</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>अंग्रेज़ी में विवरण</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>होम पेज पर प्रदर्शित करें</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>क्षेत्रीय टिप्पणियाँ</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>फ़र्मवेयर और बाहरी उपकरणों का समर्थन</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>ग्राफ़िक्स त्वरण का विवरण</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>हार्डवेयर कार्यक्षेत्र</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>छवि श्रेय और अनुमति</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>इंस्टॉलेशन निर्देश</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>परिचय</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>ज्ञात सीमाएँ</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>स्थानीयकृत छवि श्रेय</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>स्थानीयकृत पाठ साझा तकनीकी मानों का पूरक है।</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>हार्डवेयर प्रबंधित करें</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>वैकल्पिक। स्थिति कार्ड में उसका स्पष्टीकरण तभी खुलता है, जब इस भाषा या अंग्रेज़ी के वैकल्पिक पाठ में कुछ लिखा हो।</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>अवलोकन</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>इस डिवाइस पर चल रहे AnduinOS की तस्वीर</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>पूर्वावलोकन</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>कीमत की जाँच की तारीख</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>प्रकाशन</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>प्रकाशित करें</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>संदर्भ मूल्य (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>सिक्योर बूट का विवरण</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>संगतता कार्डों के नीचे दिखाया जाएगा।</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>डिवाइस के विवरण पृष्ठ पर संगतता कार्ड में दिखाया जाता है।</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>विवरण पृष्ठ के मुख्य भाग में दिखाया जाता है। स्रोत भाषा में लिखें; अनुवाद वैकल्पिक हैं।</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>होम कार्ड, कैटलॉग और विवरण के मुख्य भाग में दिखाया जाता है। सभी भाषाओं में साझा है।</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (सटीक बिक्री कॉन्फ़िगरेशन, यदि ज्ञात हो)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>क्रम निर्धारण</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>स्रोत भाषा</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>तकनीकी रिकॉर्ड</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>परीक्षित AnduinOS संस्करण</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>परीक्षित कर्नेल</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>अनुवाद</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>सहेजा नहीं गया पूर्वावलोकन</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL का नाम</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>लाइव सत्र में वाई-फ़ाई का विवरण</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>पूरी समीक्षा मूल भाषा में लिखें। साझा तथ्य सभी भाषाओं पर लागू होते हैं।</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>मूल समीक्षा यहाँ लिखें। इसका अनुवाद Languages टैब में करें। मूल पाठ में बदलाव होने पर अनुवादों की समीक्षा आवश्यक होगी।</value>
   </data>
 
 </root>

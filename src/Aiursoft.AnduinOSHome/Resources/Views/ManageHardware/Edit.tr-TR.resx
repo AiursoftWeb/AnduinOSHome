@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Donanım ekle</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Cihazı oluşturduktan sonra çeviri düzenleyicisinden başka diller ekleyebilirsiniz.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Mimari</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Marka</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Kart önizlemesi</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Kategori</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Orijinal incelemenin dilini seçin. Oluşturulduktan sonra değiştirilemez.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Tıklanabilir uyumluluk ayrıntıları</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Uyumluluk</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Açıklama</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Masaüstü performansı ayrıntısı</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Cihaz ve ekran</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Cihaz bilgileri tüm dillerde ortaktır. Açıklamaları ve uyumluluk notlarını çeviri düzenleyicisinde düzenleyin.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Cihaz türü</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Ekran ölçeklendirme ayrıntısı</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Her karar simgeyi belirler; açıklaması, ziyaretçiler karta tıkladığında görünür. Karar tüm dillerde ortaktır, açıklama kaynak dilindedir.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Cihazı düzenle</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Düzenlenecek dil (ör. en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Çevirileri düzenle</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>İngilizce açıklama</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Ana sayfada öne çıkarılsın</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Saha notları</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Donanım yazılımı ve çevre birimi desteği</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Grafik hızlandırma ayrıntısı</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Donanım çalışma alanı</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Görselin kaynağı ve kullanım izni</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Kurulum talimatları</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Bilinen kısıtlamalar</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Yerelleştirilmiş görsel kaynak bilgisi</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Yerelleştirilmiş metin, ortak teknik değerleri tamamlar.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Donanımı yönet</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>İsteğe bağlıdır. Bir durum kartı, açıklamasını yalnızca bu dilde veya İngilizce yedek metinde içerik varsa açar.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Genel Bakış</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Bu cihazda AnduinOS çalışırken çekilmiş fotoğraf</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Önizleme</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Fiyatın kontrol edildiği tarih</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Yayın durumu</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Yayımla</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Referans fiyat (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Güvenli Önyükleme ayrıntısı</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Uyumluluk kartlarının altında gösterilir.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Cihaz ayrıntı sayfasındaki uyumluluk kartlarında gösterilir.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Ayrıntı sayfasının üst bölümünde gösterilir. Kaynak dilde yazın; çeviriler isteğe bağlıdır.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Ana sayfa kartında, katalogda ve detay sayfasının üst bölümünde gösterilir. Tüm dillerde ortaktır.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (tam satış konfigürasyonu, biliniyorsa)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Sıralama düzeni</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Kaynak dil</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Teknik kayıt</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Test edilen AnduinOS sürümü</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Test edilen çekirdek</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Çeviriler</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Kaydedilmemiş önizleme</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL adı</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Canlı oturumda Wi-Fi ayrıntıları</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>İncelemenin tamamını kaynak dilde yazın. Ortak bilgiler tüm diller için geçerlidir.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Orijinal incelemeyi buraya yazın. Diller sekmesinde çevirin. Orijinal metinde yapılan değişiklikler, çevirilerin gözden geçirilmesi gerektiğini belirtir.</value>
   </data>
 
 </root>

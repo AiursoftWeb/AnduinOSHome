@@ -37,7 +37,8 @@ public class HardwareCatalog(AnduinOSHomeDbContext db) : IScopedDependency
         var parent = name.Split('-')[0];
         return device.Translations.FirstOrDefault(x => x.Culture.Equals(name, StringComparison.OrdinalIgnoreCase))
             ?? device.Translations.FirstOrDefault(x => x.Culture.Equals(parent, StringComparison.OrdinalIgnoreCase))
-            ?? device.Translations.FirstOrDefault(x => x.Culture == "en")
+            ?? device.Translations.FirstOrDefault(x => x.Culture.StartsWith(parent + "-", StringComparison.OrdinalIgnoreCase))
+            ?? device.Translations.FirstOrDefault(x => x.Culture.Equals(device.SourceCulture, StringComparison.OrdinalIgnoreCase))
             ?? new HardwareTranslation();
     }
 }

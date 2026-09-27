@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Tambahkan perangkat keras</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Setelah membuat perangkat, Anda dapat menambahkan bahasa lain melalui editor terjemahan.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Arsitektur</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Merek</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Pratinjau kartu</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Kategori</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Pilih bahasa ulasan asli. Bahasa ini tidak dapat diubah setelah dibuat.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Detail kompatibilitas yang dapat diklik</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Kompatibilitas</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Deskripsi</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Rincian performa desktop</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Perangkat dan layar</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Informasi perangkat digunakan bersama oleh semua bahasa. Edit deskripsi dan catatan kompatibilitas di editor terjemahan.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Jenis perangkat</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Detail penskalaan layar</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Setiap penilaian menentukan ikon; penjelasannya akan muncul saat pengunjung mengeklik kartu. Penilaian berlaku untuk semua bahasa, sedangkan penjelasan menggunakan bahasa sumber.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Edit perangkat</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Ubah bahasa (misalnya en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Edit terjemahan</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Deskripsi dalam bahasa Inggris</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Ditampilkan di halaman beranda</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Catatan lapangan</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Dukungan firmware dan periferal</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Detail akselerasi grafis</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Ruang kerja perangkat keras</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Kredit dan izin penggunaan gambar</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Petunjuk instalasi</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Pendahuluan</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Batasan yang diketahui</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Kredit gambar yang dilokalkan</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Teks terjemahan melengkapi nilai teknis yang digunakan bersama.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Kelola perangkat keras</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Opsional. Kartu status akan membuka penjelasannya hanya jika tersedia teks dalam bahasa ini atau dalam bahasa Inggris sebagai alternatif.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Ikhtisar</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Foto AnduinOS yang berjalan di perangkat ini</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Pratinjau</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Harga diperiksa pada</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Publikasi</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Terbitkan</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Harga acuan (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Detail Boot Aman</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Ditampilkan di bawah kartu kompatibilitas.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Ditampilkan pada kartu kompatibilitas di halaman detail perangkat.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Ditampilkan di bagian utama halaman detail. Tulis dalam bahasa sumber; terjemahan bersifat opsional.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Ditampilkan pada kartu beranda, katalog, dan bagian utama halaman detail. Berlaku untuk semua bahasa.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (konfigurasi penjualan yang tepat, jika diketahui)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Urutan pengurutan</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Bahasa sumber</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Catatan Teknis</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Versi AnduinOS yang diuji</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Kernel yang diuji</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Terjemahan</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Pratinjau belum disimpan</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Nama URL</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Detail Wi-Fi dalam mode Live</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Tulis ulasan lengkap dalam bahasa sumber. Fakta yang sama berlaku untuk semua bahasa.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Tulis ulasan asli di sini. Terjemahkan di tab Bahasa. Perubahan pada teks asli akan menandai terjemahan untuk ditinjau.</value>
   </data>
 
 </root>

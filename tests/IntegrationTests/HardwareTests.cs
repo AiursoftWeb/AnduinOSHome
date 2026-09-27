@@ -180,13 +180,14 @@ public class HardwareTests : TestBase
         using var scope = Server!.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>();
         var id = await db.Hardware.Where(x => x.Slug == slug).Select(x => x.Id).SingleAsync();
-        var translated = Form(id, slug, "zh-CN");
-        translated["Text.Description"] = "中文介绍";
-        translated["Text.VirtualizationDetail"] = "KVM 已验证";
-        translated["Text.ConfigurationText"] = "20 核 Arm CPU，128 GB 统一内存";
-        translated["Text.ImageCreditText"] = "图片由厂商提供";
-        response = await PostForm("/ManageHardware/Edit/" + id, translated, "/ManageHardware/Edit/" + id);
-        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
+        response = await PostForm($"/ManageHardware/SaveTranslation/{id}", new Dictionary<string, string>
+        {
+            ["Culture"] = "zh-CN", ["Description"] = "中文介绍",
+            ["VirtualizationDetail"] = "KVM 已验证",
+            ["ConfigurationText"] = "20 核 Arm CPU，128 GB 统一内存",
+            ["ImageCreditText"] = "图片由厂商提供"
+        }, $"/ManageHardware/Localize/{id}");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         var item = await Read(id);
         Assert.AreEqual(2, item.Translations.Count);
         Assert.AreEqual("中文介绍", HardwareCatalog.TextFor(item, "zh-CN").Description);
@@ -195,22 +196,217 @@ public class HardwareTests : TestBase
         Assert.AreEqual("20 核 Arm CPU，128 GB 统一内存", localizedModel.Configuration);
         Assert.AreEqual("图片由厂商提供", localizedModel.ImageCredit);
         Assert.AreEqual("Saved description", HardwareCatalog.TextFor(item, "fr-FR").Description);
-        translated["Device.Publication"] = "2";
-        await PostForm("/ManageHardware/Edit/" + id, translated, "/ManageHardware/Edit/" + id);
+        var archive = Form(id, slug);
+        archive["Device.Publication"] = "2";
+        await PostForm("/ManageHardware/Edit/" + id, archive, "/ManageHardware/Edit/" + id);
         Assert.AreEqual(HttpStatusCode.NotFound, (await Http.GetAsync("/hardware/" + slug)).StatusCode);
+    }
+
+    [TestMethod]
+    public async Task TranslationEditorLoadsAndSavesOneLanguageWithoutChangingDeviceFacts()
+    {
+        await LoginAsAdmin();
+        var id = await AddDevice(HardwarePublication.Published);
+        var before = await Read(id);
+        var page = await Http.GetStringAsync($"/ManageHardware/Localize/{id}");
+        Assert.DoesNotContain("data-culture=\"en\"", page);
+        Assert.Contains("data-culture=\"zh-CN\"", page);
+        Assert.Contains("/js/hardware-localize.js", page);
+        Assert.Contains("hardware-translation-form", page);
+
+        Assert.AreEqual(HttpStatusCode.BadRequest,
+            (await Http.GetAsync($"/ManageHardware/TranslationData/{id}?culture=en")).StatusCode);
+        var emptyChinese = await Http.GetFromJsonAsync<System.Text.Json.JsonElement>(
+            $"/ManageHardware/TranslationData/{id}?culture=zh-CN");
+        Assert.AreEqual(string.Empty, emptyChinese.GetProperty("description").GetString());
+        Assert.AreEqual("English device description", emptyChinese.GetProperty("source").GetProperty("description").GetString());
+
+        var response = await PostForm($"/ManageHardware/SaveTranslation/{id}", new Dictionary<string, string>
+        {
+            ["Culture"] = "zh-CN", ["Description"] = "中文介绍",
+            ["VirtualizationDetail"] = "KVM 已验证",
+            ["ConfigurationText"] = "20 核 Arm CPU"
+        }, $"/ManageHardware/Localize/{id}");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode, await response.Content.ReadAsStringAsync());
+        var after = await Read(id);
+        Assert.AreEqual(before.Slug, after.Slug);
+        Assert.AreEqual(before.Architecture, after.Architecture);
+        Assert.AreEqual(3, after.Translations.Count);
+        Assert.AreEqual("中文介绍", HardwareCatalog.TextFor(after, "zh-CN").Description);
+        Assert.AreEqual("KVM 已验证", HardwareCatalog.TextFor(after, "zh-CN").VirtualizationDetail);
+        Assert.AreEqual("English device description", HardwareCatalog.TextFor(after, "en").Description);
+        Assert.Contains("中文介绍", WebUtility.HtmlDecode(await Http.GetStringAsync(
+            $"/ManageHardware/Preview/{id}?culture=zh-CN")));
+
+        response = await PostForm($"/ManageHardware/SaveTranslation/{id}", new Dictionary<string, string>
+        {
+            ["Culture"] = "zh-CN", ["Description"] = "修改后的中文介绍"
+        }, $"/ManageHardware/Localize/{id}");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        Assert.AreEqual(3, (await Read(id)).Translations.Count);
+        Assert.AreEqual("修改后的中文介绍", HardwareCatalog.TextFor(await Read(id), "zh-CN").Description);
+    }
+
+    [TestMethod]
+    public async Task TranslationEditorRequiresAdminCsrfAndValidText()
+    {
+        var id = await AddDevice(HardwarePublication.Published);
+        Assert.AreEqual(HttpStatusCode.Found,
+            (await Http.GetAsync($"/ManageHardware/Localize/{id}")).StatusCode);
+        await RegisterAndLoginAsync();
+        Assert.IsTrue((await Http.GetAsync($"/ManageHardware/Localize/{id}")).StatusCode
+            is HttpStatusCode.Found or HttpStatusCode.Forbidden);
+
+        await LoginAsAdmin();
+        var url = $"/ManageHardware/SaveTranslation/{id}";
+        var data = new Dictionary<string, string> { ["Culture"] = "fr-FR", ["Description"] = "Texte" };
+        Assert.AreEqual(HttpStatusCode.BadRequest,
+            (await PostForm(url, data, includeToken: false)).StatusCode);
+        foreach (var invalid in new[]
+        {
+            new Dictionary<string, string> { ["Culture"] = " ", ["Description"] = "Texte" },
+            new Dictionary<string, string> { ["Culture"] = "fr-FR", ["Description"] = " " },
+            new Dictionary<string, string> { ["Culture"] = "fr-FR", ["Description"] = new string('x', 3001) }
+        })
+        {
+            Assert.AreEqual(HttpStatusCode.BadRequest,
+                (await PostForm(url, invalid, $"/ManageHardware/Localize/{id}")).StatusCode);
+        }
+        Assert.AreEqual(2, (await Read(id)).Translations.Count);
+    }
+
+    [TestMethod]
+    public async Task SourceWorkflowPublishesWithoutEnglishAndTracksOnlyCopyChanges()
+    {
+        await LoginAsAdmin();
+        var slug = Guid.NewGuid().ToString("N");
+        var source = Form(0, slug, "zh-CN");
+        source["Device.SourceCulture"] = "zh-CN";
+        source["Text.Description"] = "原文评测";
+        var saved = await PostForm("/ManageHardware/Edit/0", source, "/ManageHardware/Edit");
+        Assert.AreEqual(HttpStatusCode.Found, saved.StatusCode);
+        var device = await Read((await DbId(slug)));
+        Assert.AreEqual("zh-CN", device.SourceCulture);
+        Assert.AreEqual("原文评测", HardwareCatalog.TextFor(device, "fr-FR").Description);
+        Assert.Contains("原文评测", WebUtility.HtmlDecode(await Http.GetStringAsync("/hardware/" + slug)));
+
+        var draft = await Read(await AddDevice(HardwarePublication.Draft));
+        Assert.AreEqual(HttpStatusCode.NotFound, (await Http.GetAsync("/hardware/" + draft.Slug)).StatusCode);
+        Assert.AreEqual(HttpStatusCode.OK, (await Http.GetAsync($"/ManageHardware/Preview/{draft.Id}")).StatusCode);
+
+        var id = device.Id;
+        var translated = await PostForm($"/ManageHardware/SaveTranslation/{id}", new Dictionary<string, string>
+        {
+            ["Culture"] = "en", ["Description"] = "Translated review"
+        }, $"/ManageHardware/Localize/{id}");
+        Assert.AreEqual(HttpStatusCode.OK, translated.StatusCode);
+        var revision = (await Read(id)).SourceRevision;
+        source["Device.Id"] = id.ToString();
+        source["Device.PriceUsd"] = "2999";
+        saved = await PostForm($"/ManageHardware/Edit/{id}", source, $"/ManageHardware/Edit/{id}");
+        Assert.AreEqual(HttpStatusCode.Found, saved.StatusCode);
+        Assert.AreEqual(revision, (await Read(id)).SourceRevision);
+
+        source["Text.Description"] = "更新后的原文";
+        saved = await PostForm($"/ManageHardware/Edit/{id}", source, $"/ManageHardware/Edit/{id}");
+        Assert.AreEqual(HttpStatusCode.Found, saved.StatusCode);
+        device = await Read(id);
+        Assert.AreEqual(revision + 1, device.SourceRevision);
+        Assert.IsTrue(device.Translations.Single(x => x.Culture == "en").BasedOnSourceRevision < device.SourceRevision);
+        Assert.Contains("Source updated", await Http.GetStringAsync($"/ManageHardware/Localize/{id}"));
+    }
+
+    [TestMethod]
+    public async Task IncompleteSourceCanSaveDraftButCannotPublish()
+    {
+        await LoginAsAdmin();
+        var slug = Guid.NewGuid().ToString("N");
+        var form = Form(0, slug, "zh-CN");
+        form["Device.SourceCulture"] = "zh-CN";
+        form["Device.Publication"] = "0";
+        form["Text.Description"] = "";
+        var response = await PostForm("/ManageHardware/Edit/0", form, "/ManageHardware/Edit");
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode,
+            System.Text.RegularExpressions.Regex.Match(await response.Content.ReadAsStringAsync(),
+                "<div class=\"validation-summary-errors[^>]*>(.*?)</div>",
+                System.Text.RegularExpressions.RegexOptions.Singleline).Value);
+        var id = await DbId(slug);
+        Assert.AreEqual(HardwarePublication.Draft, (await Read(id)).Publication);
+        Assert.AreEqual(HttpStatusCode.OK, (await Http.GetAsync($"/ManageHardware/Preview/{id}")).StatusCode);
+        form["Device.Id"] = id.ToString();
+        form["Device.Publication"] = "1";
+        response = await PostForm($"/ManageHardware/Edit/{id}", form, $"/ManageHardware/Edit/{id}");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        Assert.AreEqual(HardwarePublication.Draft, (await Read(id)).Publication);
+    }
+
+    [TestMethod]
+    public async Task WorkspaceIndexSearchAndPublicationFilterShowEditorialState()
+    {
+        await LoginAsAdmin();
+        var draft = await Read(await AddDevice(HardwarePublication.Draft));
+        var published = await Read(await AddDevice(HardwarePublication.Published));
+        var needle = "Search-" + Guid.NewGuid().ToString("N");
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>();
+            (await db.Hardware.SingleAsync(x => x.Id == draft.Id)).Sku = needle;
+            await db.SaveChangesAsync();
+        }
+        var html = await Http.GetStringAsync($"/ManageHardware?search={needle}&publication=Draft");
+        Assert.Contains(needle, WebUtility.HtmlDecode(html));
+        Assert.Contains($"/ManageHardware/Preview/{draft.Id}", html);
+        Assert.DoesNotContain(published.Slug, html);
+        Assert.AreEqual(HttpStatusCode.BadRequest,
+            (await Http.GetAsync("/ManageHardware?publication=999")).StatusCode);
+    }
+
+    private async Task<int> DbId(string slug)
+    {
+        using var scope = Server!.Services.CreateScope();
+        return await scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>().Hardware
+            .Where(x => x.Slug == slug).Select(x => x.Id).SingleAsync();
+    }
+
+    [TestMethod]
+    public async Task DeviceFactsEditorDoesNotRequireOrOverwriteTranslationText()
+    {
+        await LoginAsAdmin();
+        var id = await AddDevice(HardwarePublication.Published);
+        var original = await Read(id);
+        var html = await Http.GetStringAsync($"/ManageHardware/Edit/{id}");
+        Assert.Contains($"/ManageHardware/Localize/{id}", html);
+        Assert.Contains("name=\"Text.Description\"", html);
+        Assert.DoesNotContain("culture-switch", html);
+
+        var form = Form(id, original.Slug);
+        form.Remove("Text.Culture");
+        form.Remove("Text.Description");
+        form["Device.Model"] = "Updated workstation";
+        var response = await PostForm($"/ManageHardware/Edit/{id}", form, $"/ManageHardware/Edit/{id}");
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode, await response.Content.ReadAsStringAsync());
+        var after = await Read(id);
+        Assert.AreEqual("Updated workstation", after.Model);
+        Assert.AreEqual("English device description", HardwareCatalog.TextFor(after, "en").Description);
+        Assert.AreEqual("Deutsche Beschreibung", HardwareCatalog.TextFor(after, "de").Description);
     }
 
     [TestMethod]
     public async Task AnonymousAndOrdinaryUsersCannotManageHardware()
     {
         Assert.AreEqual(HttpStatusCode.Found, (await Http.GetAsync("/ManageHardware/Edit")).StatusCode);
+        var draftId = await AddDevice(HardwarePublication.Draft);
+        Assert.AreEqual(HttpStatusCode.Found,
+            (await Http.GetAsync($"/ManageHardware/Preview/{draftId}")).StatusCode);
         await RegisterAndLoginAsync();
         var response = await Http.GetAsync("/ManageHardware/Edit");
+        Assert.IsTrue(response.StatusCode is HttpStatusCode.Found or HttpStatusCode.Forbidden);
+        response = await Http.GetAsync($"/ManageHardware/Preview/{draftId}");
         Assert.IsTrue(response.StatusCode is HttpStatusCode.Found or HttpStatusCode.Forbidden);
     }
 
     [TestMethod]
-    public async Task RejectsUnsafePathsUrlsEnumsAndMissingEnglish()
+    public async Task RejectsUnsafePathsUrlsEnumsAndMissingSourceDescription()
     {
         await LoginAsAdmin();
         foreach (var (key, value) in new[]
@@ -227,7 +423,7 @@ public class HardwareTests : TestBase
             ("Text.ImageCreditText", new string('x', 501)),
             ("Device.Installation", "99"),
             ("Device.PriceUsd", "-1"),
-            ("Text.Culture", " ")
+            ("Device.SourceCulture", " ")
         })
         {
             var slug = Guid.NewGuid().ToString("N");
@@ -237,9 +433,16 @@ public class HardwareTests : TestBase
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             Assert.AreEqual(HttpStatusCode.NotFound, (await Http.GetAsync("/hardware/" + slug)).StatusCode);
         }
-        var missingEnglish = await PostForm("/ManageHardware/Edit/0", Form(0, "non-english", "de"), "/ManageHardware/Edit");
-        Assert.AreEqual(HttpStatusCode.OK, missingEnglish.StatusCode);
-        Assert.Contains("Save an English description", await missingEnglish.Content.ReadAsStringAsync());
+        var nonEnglish = Form(0, Guid.NewGuid().ToString("N"), "de");
+        nonEnglish["Device.SourceCulture"] = "de";
+        var saved = await PostForm("/ManageHardware/Edit/0", nonEnglish, "/ManageHardware/Edit");
+        Assert.AreEqual(HttpStatusCode.Found, saved.StatusCode);
+        var missingSource = Form(0, Guid.NewGuid().ToString("N"), "de");
+        missingSource["Device.SourceCulture"] = "de";
+        missingSource["Text.Description"] = "";
+        var missingResponse = await PostForm("/ManageHardware/Edit/0", missingSource, "/ManageHardware/Edit");
+        Assert.AreEqual(HttpStatusCode.OK, missingResponse.StatusCode);
+        Assert.Contains("Write a source description before publishing.", await missingResponse.Content.ReadAsStringAsync());
     }
 
     [TestMethod]
@@ -345,5 +548,11 @@ public class HardwareTests : TestBase
             new HardwareTranslation { Culture = "de", Description = "Deutsch" }] };
         Assert.AreEqual("Deutsch", HardwareCatalog.TextFor(device, "de-DE").Description);
         Assert.AreEqual("English", HardwareCatalog.TextFor(device, "ja-JP").Description);
+        device.SourceCulture = "zh-CN";
+        device.Translations.Add(new HardwareTranslation { Culture = "zh-CN", Description = "中文原文" });
+        device.Translations.RemoveAll(x => x.Culture == "en");
+        device.Translations.Add(new HardwareTranslation { Culture = "en-US", Description = "US English" });
+        Assert.AreEqual("US English", HardwareCatalog.TextFor(device, "en-GB").Description);
+        Assert.AreEqual("中文原文", HardwareCatalog.TextFor(device, "ja-JP").Description);
     }
 }

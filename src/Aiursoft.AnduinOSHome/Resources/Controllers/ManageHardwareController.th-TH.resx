@@ -21,6 +21,9 @@
       <data name="Could not save this record. Check whether its address is already in use." xml:space="preserve">
     <value>ไม่สามารถบันทึกข้อมูลนี้ได้ โปรดตรวจสอบว่ามีการใช้ที่อยู่นี้แล้วหรือไม่</value>
   </data>
+  <data name="Enter a valid language and description." xml:space="preserve">
+    <value>โปรดระบุภาษาและคำอธิบายที่ถูกต้อง</value>
+  </data>
   <data name="Enter a valid language code." xml:space="preserve">
     <value>กรุณาป้อนรหัสภาษาที่ถูกต้อง</value>
   </data>
@@ -30,11 +33,17 @@
   <data name="Select a valid public hardware image uploaded through this form." xml:space="preserve">
     <value>เลือกรูปภาพฮาร์ดแวร์สาธารณะที่ถูกต้องซึ่งอัปโหลดผ่านแบบฟอร์มนี้</value>
   </data>
+  <data name="The source language cannot be changed after creation." xml:space="preserve">
+    <value>ไม่สามารถเปลี่ยนภาษาต้นฉบับได้หลังจากสร้างแล้ว</value>
+  </data>
   <data name="This address is already in use." xml:space="preserve">
     <value>ที่อยู่นี้ถูกใช้งานแล้ว</value>
   </data>
   <data name="Use an absolute HTTPS URL without credentials." xml:space="preserve">
     <value>ใช้ URL แบบ HTTPS ที่ระบุที่อยู่แบบสมบูรณ์และไม่มีข้อมูลรับรอง</value>
+  </data>
+  <data name="Write a source description before publishing." xml:space="preserve">
+    <value>เขียนคำอธิบายต้นฉบับก่อนเผยแพร่</value>
   </data>
 
 </root>

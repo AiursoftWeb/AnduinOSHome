@@ -21,6 +21,9 @@
       <data name="Could not save this record. Check whether its address is already in use." xml:space="preserve">
     <value>Не удалось сохранить эту запись. Проверьте, не используется ли уже этот адрес.</value>
   </data>
+  <data name="Enter a valid language and description." xml:space="preserve">
+    <value>Укажите корректный язык и описание.</value>
+  </data>
   <data name="Enter a valid language code." xml:space="preserve">
     <value>Введите допустимый код языка.</value>
   </data>
@@ -30,11 +33,17 @@
   <data name="Select a valid public hardware image uploaded through this form." xml:space="preserve">
     <value>Выберите корректное общедоступное изображение оборудования, загруженное через эту форму.</value>
   </data>
+  <data name="The source language cannot be changed after creation." xml:space="preserve">
+    <value>Исходный язык нельзя изменить после создания.</value>
+  </data>
   <data name="This address is already in use." xml:space="preserve">
     <value>Этот адрес уже используется.</value>
   </data>
   <data name="Use an absolute HTTPS URL without credentials." xml:space="preserve">
     <value>Укажите абсолютный URL-адрес HTTPS без учетных данных.</value>
+  </data>
+  <data name="Write a source description before publishing." xml:space="preserve">
+    <value>Перед публикацией добавьте описание на исходном языке.</value>
   </data>
 
 </root>

@@ -140,6 +140,14 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                     b.Property<int>("SortOrder")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("SourceCulture")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("SourceRevision")
+                        .HasColumnType("INTEGER");
+
                     b.Property<bool>("TeamDevice")
                         .HasColumnType("INTEGER");
 
@@ -171,6 +179,9 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BasedOnSourceRevision")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ConfigurationText")

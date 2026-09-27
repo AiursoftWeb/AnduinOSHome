@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Додати обладнання</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Після створення пристрою ви зможете додати інші мови в редакторі перекладів.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Архітектура</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Бренд</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Попередній перегляд картки</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Категорія</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Виберіть мову оригінального відгуку. Після створення її не можна буде змінити.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Клікабельні відомості про сумісність</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Сумісність</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Опис</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Докладніше про продуктивність у настільному середовищі</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Пристрій і дисплей</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Дані про пристрій спільні для всіх мов. Редагуйте описи та примітки щодо сумісності в редакторі перекладів.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Тип пристрою</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Докладніше про масштабування екрана</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Кожен вердикт визначає піктограму; пояснення до нього з’являється, коли відвідувачі натискають картку. Вердикт спільний для всіх мов, пояснення — мовою оригіналу.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Редагувати пристрій</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Мова редагування (наприклад, en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Редагувати переклади</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Опис англійською</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Відображати на головній сторінці</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Польові нотатки</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Підтримка мікропрограми та периферійних пристроїв</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Докладніше про графічне прискорення</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Робочий простір обладнання</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Авторство зображення та дозвіл</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Інструкції зі встановлення</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Вступ</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Відомі обмеження</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Перекладені відомості про авторство зображення</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Локалізований текст доповнює спільні технічні дані.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Керування обладнанням</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Необов’язково. Картка статусу відкриває пояснення лише тоді, коли текст є цією мовою або англійською мовою для підстановки.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Огляд</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Фото AnduinOS, що працює на цьому пристрої</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Попередній перегляд</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Дату перевірки ціни</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Публікація</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Опублікувати</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Довідкова ціна (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Докладніше про Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Відображається під картками сумісності.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Відображається в картках сумісності на сторінці пристрою.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Відображається в головному блоці сторінки пристрою. Пишіть мовою оригіналу; переклади необов’язкові.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Відображається на картці головної сторінки, у каталозі та в заголовку сторінки пристрою. Спільне для всіх мов.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (точна конфігурація для продажу, якщо відома)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Порядок сортування</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Мова оригіналу</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Технічні дані</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Перевірена версія AnduinOS</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Протестоване ядро</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Переклади</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Попередній перегляд не збережено</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>Назва URL-адреси</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Докладніше про Wi-Fi у Live-режимі</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Напишіть повний відгук мовою оригіналу. Спільні факти стосуються всіх мов.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Напишіть тут оригінальний відгук. Перекладіть його на вкладці «Мови». Зміни в оригінальному тексті позначають переклади для перевірки.</value>
   </data>
 
 </root>

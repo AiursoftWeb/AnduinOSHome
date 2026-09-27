@@ -147,6 +147,14 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                     b.Property<int>("SortOrder")
                         .HasColumnType("int");
 
+                    b.Property<string>("SourceCulture")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<int>("SourceRevision")
+                        .HasColumnType("int");
+
                     b.Property<bool>("TeamDevice")
                         .HasColumnType("tinyint(1)");
 
@@ -182,6 +190,9 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BasedOnSourceRevision")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConfigurationText")
                         .HasMaxLength(1000)
                         .HasColumnType("varchar(1000)");
@@ -198,7 +209,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
 
                     b.Property<string>("DisplayDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("FirmwareNotes")
                         .HasMaxLength(3000)
@@ -206,7 +217,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
 
                     b.Property<string>("GraphicsDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<int>("HardwareId")
                         .HasColumnType("int");
@@ -217,7 +228,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
 
                     b.Property<string>("InstallationDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("InstallationNotes")
                         .HasMaxLength(3000)
@@ -229,19 +240,19 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
 
                     b.Property<string>("PerformanceDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("SecureBootDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("VirtualizationDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("WifiDetail")
                         .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

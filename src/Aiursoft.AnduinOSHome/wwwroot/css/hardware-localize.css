@@ -1,0 +1,42 @@
+.hardware-language-sidebar {
+    position: sticky;
+    top: 1rem;
+}
+
+.hardware-language-list {
+    max-height: min(70vh, 42rem);
+    overflow-y: auto;
+}
+
+.hardware-language {
+    text-align: start;
+}
+
+.hardware-language-check {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+#hardware-translation-form textarea {
+    resize: vertical;
+}
+
+@media (max-width: 991.98px) {
+    .hardware-language-sidebar {
+        position: static;
+    }
+
+    .hardware-language-list {
+        max-height: 16rem;
+    }
+}
+.hardware-source-reference {
+    border-left: 3px solid var(--bs-info);
+    background: var(--bs-tertiary-bg);
+    color: var(--bs-secondary-color);
+    padding: .55rem .8rem;
+    margin: .4rem 0 .7rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: .88rem;
+}

@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>新增硬體</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>建立裝置後，您可以在翻譯編輯器中新增其他語言。</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>架構</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>品牌</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>卡片預覽</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>類別</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>請選擇原始評測的語言。建立後便無法變更。</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>可點擊的相容性詳細資訊</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>相容性</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>說明</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>桌面效能詳細資訊</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>裝置與顯示器</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>所有語言共用裝置資訊。請在翻譯編輯器中編輯描述和相容性備註。</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>裝置類型</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>顯示縮放詳細資訊</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>每項判定會決定圖示；訪客點選卡片時，便會顯示其說明。判定結果共用，說明請使用來源語言。</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>編輯裝置</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>編輯語言（例如 en、de-DE、zh-CN）</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>編輯翻譯</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>英文說明</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>於首頁精選展示</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>實地筆記</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>韌體與周邊設備支援</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>圖形加速詳細資訊</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>硬體管理工作區</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>圖片來源與使用授權</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>安裝說明</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>簡介</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>已知限制</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>本地化圖片來源標示</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>在地化文字補充共用的技術資訊。</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>管理硬體</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>選填。只有在此語言或英文備用內容有文字時，狀態卡片才會開啟其說明。</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>總覽</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>此裝置上執行 AnduinOS 的照片</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>預覽</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>價格查詢日期</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>發布狀態</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>發布</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>參考價格（美元）</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>安全開機詳細資訊</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>顯示於相容性卡片下方。</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>顯示於裝置詳細資料頁面的相容性卡片中。</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>顯示於裝置詳細頁的主視覺區。請使用來源語言撰寫；翻譯為選填。</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>顯示於首頁卡片、目錄及詳細資料頁的主視覺區。所有語言共用。</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU（若知道，請填寫確切的銷售配置）</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>排序順序</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>原文語言</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>技術資料</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>測試的 AnduinOS 版本</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>已測試的核心版本</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>翻譯</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>尚未儲存的預覽</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>網址名稱</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Live 環境中的 Wi-Fi 詳細資訊</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>請以來源語言撰寫完整評測內容。共用事實適用於所有語言。</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>請在此處撰寫原始評測。請前往「語言」分頁進行翻譯。修改原文後，翻譯內容會標示為待審核。</value>
   </data>
 
 </root>

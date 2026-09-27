@@ -21,6 +21,9 @@
       <data name="Could not save this record. Check whether its address is already in use." xml:space="preserve">
     <value>इस रिकॉर्ड को सहेजा नहीं जा सका। जाँचें कि क्या इसका पता पहले से उपयोग में है।</value>
   </data>
+  <data name="Enter a valid language and description." xml:space="preserve">
+    <value>कृपया मान्य भाषा और विवरण दर्ज करें।</value>
+  </data>
   <data name="Enter a valid language code." xml:space="preserve">
     <value>एक मान्य भाषा कोड दर्ज करें।</value>
   </data>
@@ -30,11 +33,17 @@
   <data name="Select a valid public hardware image uploaded through this form." xml:space="preserve">
     <value>इस फ़ॉर्म के ज़रिए अपलोड की गई मान्य सार्वजनिक हार्डवेयर छवि चुनें।</value>
   </data>
+  <data name="The source language cannot be changed after creation." xml:space="preserve">
+    <value>निर्माण के बाद स्रोत भाषा बदली नहीं जा सकती।</value>
+  </data>
   <data name="This address is already in use." xml:space="preserve">
     <value>यह पता पहले से उपयोग में है।</value>
   </data>
   <data name="Use an absolute HTTPS URL without credentials." xml:space="preserve">
     <value>बिना क्रेडेंशियल के एक पूर्ण HTTPS URL का उपयोग करें।</value>
+  </data>
+  <data name="Write a source description before publishing." xml:space="preserve">
+    <value>प्रकाशित करने से पहले स्रोत का विवरण लिखें।</value>
   </data>
 
 </root>

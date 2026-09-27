@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Architecture" xml:space="preserve">
+      <data name="Add hardware" xml:space="preserve">
+    <value>Hardware toevoegen</value>
+  </data>
+  <data name="After creating the device, you can add other languages in the translation editor." xml:space="preserve">
+    <value>Nadat u het apparaat hebt aangemaakt, kunt u in de vertaaleditor andere talen toevoegen.</value>
+  </data>
+  <data name="Architecture" xml:space="preserve">
     <value>Architectuur</value>
   </data>
   <data name="Back to hardware" xml:space="preserve">
@@ -27,11 +33,20 @@
   <data name="Brand" xml:space="preserve">
     <value>Merk</value>
   </data>
+  <data name="Card preview" xml:space="preserve">
+    <value>Voorbeeld van de kaart</value>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>Categorie</value>
   </data>
+  <data name="Choose the language of the original review. It cannot be changed after creation." xml:space="preserve">
+    <value>Kies de taal van de oorspronkelijke beoordeling. Deze kan na het aanmaken niet meer worden gewijzigd.</value>
+  </data>
   <data name="Clickable compatibility details" xml:space="preserve">
     <value>Aanklikbare compatibiliteitsdetails</value>
+  </data>
+  <data name="Compatibility" xml:space="preserve">
+    <value>Compatibiliteit</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Beschrijving</value>
@@ -42,6 +57,12 @@
   <data name="Desktop performance detail" xml:space="preserve">
     <value>Details over de desktopprestaties</value>
   </data>
+  <data name="Device and display" xml:space="preserve">
+    <value>Apparaat en beeldscherm</value>
+  </data>
+  <data name="Device facts are shared by all languages. Edit descriptions and compatibility notes in the translation editor." xml:space="preserve">
+    <value>Apparaatgegevens zijn voor alle talen hetzelfde. Bewerk beschrijvingen en compatibiliteitsnotities in de vertaaleditor.</value>
+  </data>
   <data name="Device type" xml:space="preserve">
     <value>Apparaattype</value>
   </data>
@@ -51,11 +72,26 @@
   <data name="Display scaling detail" xml:space="preserve">
     <value>Details over schermschaling</value>
   </data>
+  <data name="Each verdict controls the icon; its explanation appears when visitors click the card. Shared verdict, source-language explanation." xml:space="preserve">
+    <value>Elke beoordeling bepaalt het pictogram; de toelichting verschijnt wanneer bezoekers op de kaart klikken. De beoordeling is voor alle talen hetzelfde, de toelichting is in de brontaal.</value>
+  </data>
+  <data name="Edit device" xml:space="preserve">
+    <value>Apparaat bewerken</value>
+  </data>
   <data name="Edit language (for example en, de-DE, zh-CN)" xml:space="preserve">
     <value>Taal bewerken (bijvoorbeeld en, de-DE, zh-CN)</value>
   </data>
+  <data name="Edit translations" xml:space="preserve">
+    <value>Vertalingen bewerken</value>
+  </data>
+  <data name="English description" xml:space="preserve">
+    <value>Engelse beschrijving</value>
+  </data>
   <data name="Featured on the home page" xml:space="preserve">
     <value>Uitgelicht op de startpagina</value>
+  </data>
+  <data name="Field notes" xml:space="preserve">
+    <value>Aantekeningen uit de praktijk</value>
   </data>
   <data name="Firmware and peripheral support" xml:space="preserve">
     <value>Ondersteuning voor firmware en randapparatuur</value>
@@ -65,6 +101,9 @@
   </data>
   <data name="Graphics acceleration detail" xml:space="preserve">
     <value>Details over grafische versnelling</value>
+  </data>
+  <data name="Hardware workspace" xml:space="preserve">
+    <value>Hardwarewerkruimte</value>
   </data>
   <data name="Image credit and permission" xml:space="preserve">
     <value>Naamsvermelding en toestemming voor de afbeelding</value>
@@ -84,6 +123,9 @@
   <data name="Installation instructions" xml:space="preserve">
     <value>Installatie-instructies</value>
   </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Inleiding</value>
+  </data>
   <data name="Known limitations" xml:space="preserve">
     <value>Bekende beperkingen</value>
   </data>
@@ -99,6 +141,9 @@
   <data name="Localized image credit" xml:space="preserve">
     <value>Vertaalde afbeeldingsvermelding</value>
   </data>
+  <data name="Localized text supplements shared technical values." xml:space="preserve">
+    <value>Gelokaliseerde tekst vormt een aanvulling op gedeelde technische gegevens.</value>
+  </data>
   <data name="Manage hardware" xml:space="preserve">
     <value>Hardware beheren</value>
   </data>
@@ -108,8 +153,14 @@
   <data name="Optional. A status card opens its explanation only when this language or the English fallback has text." xml:space="preserve">
     <value>Optioneel. Een statuskaart opent de toelichting alleen als er tekst beschikbaar is in deze taal of in de Engelse terugvalversie.</value>
   </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overzicht</value>
+  </data>
   <data name="Photo of AnduinOS running on this device" xml:space="preserve">
     <value>Foto van AnduinOS dat op dit apparaat draait</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Voorbeeld bekijken</value>
   </data>
   <data name="Price checked on" xml:space="preserve">
     <value>Prijs gecontroleerd op</value>
@@ -129,6 +180,9 @@
   <data name="Publication" xml:space="preserve">
     <value>Publicatiestatus</value>
   </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publiceren</value>
+  </data>
   <data name="Reference price (USD)" xml:space="preserve">
     <value>Referentieprijs (USD)</value>
   </data>
@@ -147,11 +201,29 @@
   <data name="Secure Boot detail" xml:space="preserve">
     <value>Details over Secure Boot</value>
   </data>
+  <data name="Shown below the compatibility cards." xml:space="preserve">
+    <value>Wordt onder de compatibiliteitskaarten weergegeven.</value>
+  </data>
+  <data name="Shown in the compatibility cards on the device detail page." xml:space="preserve">
+    <value>Weergegeven op de compatibiliteitskaarten op de apparaatdetailpagina.</value>
+  </data>
+  <data name="Shown in the detail hero. Write in the source language; translations are optional." xml:space="preserve">
+    <value>Weergegeven in de detailheader. Schrijf in de brontaal; vertalingen zijn optioneel.</value>
+  </data>
+  <data name="Shown on the home card, catalog, and detail hero. Shared across all languages." xml:space="preserve">
+    <value>Weergegeven op de kaart op de startpagina, in de catalogus en in de detailbanner. Geldt voor alle talen.</value>
+  </data>
   <data name="SKU (exact sales configuration, if known)" xml:space="preserve">
     <value>SKU (exacte verkoopconfiguratie, indien bekend)</value>
   </data>
   <data name="Sort order" xml:space="preserve">
     <value>Sorteervolgorde</value>
+  </data>
+  <data name="Source language" xml:space="preserve">
+    <value>Brontaal</value>
+  </data>
+  <data name="Technical record" xml:space="preserve">
+    <value>Technische gegevens</value>
   </data>
   <data name="Tested AnduinOS version" xml:space="preserve">
     <value>Geteste AnduinOS-versie</value>
@@ -164,6 +236,12 @@
   </data>
   <data name="Tested kernel" xml:space="preserve">
     <value>Geteste kernel</value>
+  </data>
+  <data name="Translations" xml:space="preserve">
+    <value>Vertalingen</value>
+  </data>
+  <data name="Unsaved preview" xml:space="preserve">
+    <value>Niet-opgeslagen voorbeeld</value>
   </data>
   <data name="URL name" xml:space="preserve">
     <value>URL-naam</value>
@@ -182,6 +260,12 @@
   </data>
   <data name="Wi-Fi in Live detail" xml:space="preserve">
     <value>Wi-Fi in de liveomgeving: details</value>
+  </data>
+  <data name="Write the full review in the source language. Shared facts apply to every language." xml:space="preserve">
+    <value>Schrijf de volledige recensie in de brontaal. Gedeelde feiten gelden voor alle talen.</value>
+  </data>
+  <data name="Write the original review here. Translate it on the Languages tab. Changes to original text mark translations for review." xml:space="preserve">
+    <value>Schrijf hier de oorspronkelijke beoordeling. Vertaal deze op het tabblad Talen. Als je de oorspronkelijke tekst wijzigt, moeten de vertalingen opnieuw worden nagekeken.</value>
   </data>
 
 </root>
