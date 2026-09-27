@@ -95,6 +95,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Delete Account"];
     
         _ = localizer["Compare AnduinOS"];
+    
+        _ = localizer["Hardware"];
+        _ = localizer["Recommended hardware"];
     }
 
     public void InjectSimple(
