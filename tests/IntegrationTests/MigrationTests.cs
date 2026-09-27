@@ -1,7 +1,9 @@
-using Aiursoft.AnduinOSHome.MySql;
-using Aiursoft.AnduinOSHome.Sqlite;
 using Aiursoft.AnduinOSHome.Entities;
+using Aiursoft.AnduinOSHome.MySql;
+using Aiursoft.AnduinOSHome.MySql.Migrations;
+using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 
@@ -56,6 +58,21 @@ public class MigrationTests
                  })
         {
             Assert.AreEqual("text", translation.FindProperty(propertyName)?.GetColumnType(), propertyName);
+        }
+    }
+
+    [TestMethod]
+    public void TestMySqlHardwareDetailMigrationUsesOffRowTextColumns()
+    {
+        var addedColumns = new AddHardwareCapabilityDetails().UpOperations
+            .OfType<AddColumnOperation>()
+            .ToList();
+
+        Assert.AreEqual(7, addedColumns.Count);
+        foreach (var column in addedColumns)
+        {
+            Assert.AreEqual("HardwareTranslations", column.Table);
+            Assert.AreEqual("text", column.ColumnType, column.Name);
         }
     }
 }
