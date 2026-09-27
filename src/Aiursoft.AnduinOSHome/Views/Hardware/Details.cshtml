@@ -1,41 +1,124 @@
 @model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareDetailsModel
 @inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
 @inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
-<div class="container py-5">
-<a asp-action="Index">@Localizer["All recommended hardware"]</a>
-<h1 class="mt-3">@Model.Device.Brand @Model.Device.Model</h1>
-<p class="lead">@Model.Text.Description</p>
-@if (Model.Device.TeamDevice) {
-<div class="alert alert-success"><strong>@Localizer["Used by the AnduinOS development team"]</strong>
-<p class="mb-0">@Localizer["This is a device used by our team for development and testing. See the individual verification results below."]</p></div>
+
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<main class="hardware-detail">
+    <div class="hardware-orb hardware-orb--blue" aria-hidden="true"></div>
+    <div class="hardware-orb hardware-orb--violet" aria-hidden="true"></div>
+    <div class="container hardware-content">
+        <nav class="hardware-breadcrumb" aria-label="@Localizer["Breadcrumb"]">
+            <a asp-action="Index"><i data-lucide="arrow-left" aria-hidden="true"></i> @Localizer["All recommended hardware"]</a>
+            <span aria-hidden="true">/</span><span aria-current="page">@Model.Device.Brand @Model.Device.Model</span>
+        </nav>
+        <header class="hardware-hero">
+            <div class="hardware-hero-copy">
+                <div class="hardware-kicker"><span class="hardware-kicker-dot" aria-hidden="true"></span>@Localizer["Tested on real hardware"]</div>
+                <div class="hardware-tags"><span>@Model.Device.Architecture</span>@if (!string.IsNullOrWhiteSpace(Model.Device.Category)) { <span>@Model.Device.Category</span> }</div>
+                <h1>@Model.Device.Brand <span>@Model.Device.Model</span></h1>
+                <p class="hardware-intro">@Model.Text.Description</p>
+                @if (Model.Device.PriceUsd.HasValue || Model.Device.VerifiedAt.HasValue)
+                {
+                    <div class="hardware-meta">
+                        @if (Model.Device.PriceUsd.HasValue) { <div><small>@Localizer["Reference price"]</small><strong>US$ @Model.Device.PriceUsd.Value.ToString("N0")</strong></div> }
+                        @if (Model.Device.VerifiedAt.HasValue) { <div><small>@Localizer["Last verified on"]</small><strong>@Model.Device.VerifiedAt.Value.ToString("yyyy-MM-dd")</strong></div> }
+                    </div>
+                }
+                @if (Model.Device.TeamDevice)
+                {
+                    <div class="hardware-team"><i data-lucide="badge-check" aria-hidden="true"></i><span><strong>@Localizer["Used by the AnduinOS development team"]</strong><small>@Localizer["Tested firsthand by the development team."]</small></span></div>
+                }
+            </div>
+            <div class="hardware-hero-visual">
+                @if (!string.IsNullOrWhiteSpace(Model.Device.ProductImagePath))
+                {
+                    <img src="@Storage.RelativePathToInternetUrl(Model.Device.ProductImagePath)?w=1000" alt="@Model.Device.Brand @Model.Device.Model" />
+                }
+                else
+                {
+                    <i class="hardware-image-placeholder" data-lucide="monitor" aria-hidden="true"></i>
+                }
+                <span class="hardware-image-caption">@Localizer["Hardware profile"] <span>·</span> @Model.Device.Architecture</span>
+            </div>
+        </header>
+
+        <div class="hardware-light-band">
+        <section class="hardware-section" aria-labelledby="hardware-highlights-title">
+            <div class="hardware-section-heading"><span>01 / @Localizer["Overview"]</span><h2 id="hardware-highlights-title">@Localizer["The essentials, at a glance."]</h2></div>
+            <div class="hardware-highlights">
+                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="hard-drive-download" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.Installation" /></div><small>@Localizer["Installation"]</small><strong>@Labels.Label(Model.Device.Installation)</strong></article>
+                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="zap" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.Performance" /></div><small>@Localizer["Desktop performance"]</small><strong>@Labels.Label(Model.Device.Performance)</strong></article>
+                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="shield-check" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.SecureBoot" /></div><small>@Localizer["Secure Boot"]</small><strong>@Labels.Label(Model.Device.SecureBoot)</strong></article>
+            </div>
+        </section>
+
+        <section class="hardware-section" aria-labelledby="hardware-capabilities-title">
+            <div class="hardware-section-heading"><span>02 / @Localizer["Compatibility"]</span><h2 id="hardware-capabilities-title">@Localizer["What works on this device."]</h2><p>@Localizer["Each status reflects the listed configuration and tested software version."]</p></div>
+            <div class="hardware-capabilities">
+                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Wifi" />@Localizer["Wi-Fi in Live"]</span><strong>@Labels.Label(Model.Device.Wifi)</strong></div>
+                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Graphics" />@Localizer["Graphics acceleration"]</span><strong>@Labels.Label(Model.Device.Graphics)</strong></div>
+                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Virtualization" />@Localizer["Virtualization (KVM)"]</span><strong>@Labels.Label(Model.Device.Virtualization)</strong></div>
+                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Display" />@Localizer["Display scaling"]</span><strong>@Labels.Label(Model.Device.Display)</strong></div>
+            </div>
+        </section>
+        </div>
+
+        @if (!string.IsNullOrWhiteSpace(Model.Text.InstallationNotes) || !string.IsNullOrWhiteSpace(Model.Text.FirmwareNotes) || !string.IsNullOrWhiteSpace(Model.Text.KnownIssues))
+        {
+            <section class="hardware-section" aria-labelledby="hardware-notes-title">
+                <div class="hardware-section-heading"><span>03 / @Localizer["Field notes"]</span><h2 id="hardware-notes-title">@Localizer["From the test bench."]</h2></div>
+                <div class="hardware-notes">
+                    @if (!string.IsNullOrWhiteSpace(Model.Text.InstallationNotes))
+                    {
+                        <article class="hardware-note hardware-note--primary"><span class="hardware-note-icon"><i data-lucide="disc-3" aria-hidden="true"></i></span><h3>@Localizer["Installation instructions"]</h3><p>@Model.Text.InstallationNotes</p></article>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.Text.FirmwareNotes))
+                    {
+                        <article class="hardware-note"><span class="hardware-note-icon"><i data-lucide="scan-line" aria-hidden="true"></i></span><h3>@Localizer["Firmware and peripheral support"]</h3><p>@Model.Text.FirmwareNotes</p></article>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(Model.Text.KnownIssues))
+                    {
+                        <article class="hardware-note"><span class="hardware-note-icon"><i data-lucide="info" aria-hidden="true"></i></span><h3>@Localizer["Known limitations"]</h3><p>@Model.Text.KnownIssues</p></article>
+                    }
+                </div>
+            </section>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(Model.Device.ExperienceImagePath))
+        {
+            <section class="hardware-section" aria-labelledby="hardware-experience-title">
+                <div class="hardware-section-heading"><span>04 / @Localizer["In use"]</span><h2 id="hardware-experience-title">@Localizer["AnduinOS on this device."]</h2></div>
+                <a class="hardware-experience" href="@Storage.RelativePathToInternetUrl(Model.Device.ExperienceImagePath)"><img src="@Storage.RelativePathToInternetUrl(Model.Device.ExperienceImagePath)?w=1400" loading="lazy" alt="@Localizer["AnduinOS running on this device"]" /></a>
+            </section>
+        }
+
+        <section class="hardware-section hardware-section--technical" aria-labelledby="hardware-technical-title">
+            <div class="hardware-section-heading"><span>@Localizer["Technical record"]</span><h2 id="hardware-technical-title">@Localizer["The configuration we tested."]</h2></div>
+            <div class="hardware-specs">
+                <div><span>@Localizer["Architecture"]</span><strong>@Model.Device.Architecture</strong></div>
+                @if (!string.IsNullOrWhiteSpace(Model.Device.Configuration)) { <div><span>@Localizer["Tested hardware configuration"]</span><strong>@Model.Device.Configuration</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.TestedVersion)) { <div><span>@Localizer["Tested AnduinOS version"]</span><strong>@Model.Device.TestedVersion</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.KernelVersion)) { <div><span>@Localizer["Tested kernel"]</span><strong>@Model.Device.KernelVersion</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.DriverVersion)) { <div><span>@Localizer["Tested drivers"]</span><strong>@Model.Device.DriverVersion</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.PriceMarket)) { <div><span>@Localizer["Price market and configuration"]</span><strong>@Model.Device.PriceMarket</strong></div> }
+                @if (Model.Device.PriceCheckedAt.HasValue) { <div><span>@Localizer["Price checked on"]</span><strong>@Model.Device.PriceCheckedAt.Value.ToString("yyyy-MM-dd")</strong></div> }
+            </div>
+            <div class="hardware-sources">
+                @if (!string.IsNullOrWhiteSpace(Model.Device.ProductUrl)) { <a href="@Model.Device.ProductUrl" rel="noopener noreferrer" target="_blank">@Localizer["Manufacturer and price source"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.ReportUrl)) { <a href="@Model.Device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.ImageSourceUrl)) { <a href="@Model.Device.ImageSourceUrl" rel="noopener noreferrer" target="_blank">@Localizer["Image source"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
+            </div>
+            @if (!string.IsNullOrWhiteSpace(Model.Device.ImageCredit)) { <p class="hardware-credit">@Model.Device.ImageCredit</p> }
+            <p class="hardware-scope">@Localizer["Results apply to the listed configuration and software versions. An untested feature is not necessarily unsupported."]</p>
+        </section>
+    </div>
+</main>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hardware.css" asp-append-version="true" />
 }
-<div class="row">
-@if (!string.IsNullOrWhiteSpace(Model.Device.ProductImagePath)) { <div class="col-md-6 mb-3"><a href="@Storage.RelativePathToInternetUrl(Model.Device.ProductImagePath)"><img src="@Storage.RelativePathToInternetUrl(Model.Device.ProductImagePath)?w=1000" class="img-fluid rounded" loading="lazy" alt="@Localizer["Product image"]" /></a></div> }
-@if (!string.IsNullOrWhiteSpace(Model.Device.ExperienceImagePath)) { <div class="col-md-6 mb-3"><a href="@Storage.RelativePathToInternetUrl(Model.Device.ExperienceImagePath)"><img src="@Storage.RelativePathToInternetUrl(Model.Device.ExperienceImagePath)?w=1000" class="img-fluid rounded" loading="lazy" alt="@Localizer["AnduinOS running on this device"]" /></a></div> }
-</div><dl class="row">
-<dt class="col-sm-4">@Localizer["Architecture"]</dt><dd class="col-sm-8">@Model.Device.Architecture</dd>
-<dt class="col-sm-4">@Localizer["Category"]</dt><dd class="col-sm-8">@Model.Device.Category</dd>
-<dt class="col-sm-4">@Localizer["Tested hardware configuration"]</dt><dd class="col-sm-8">@Model.Device.Configuration</dd>
-<dt class="col-sm-4">@Localizer["Price market and configuration"]</dt><dd class="col-sm-8">@Model.Device.PriceMarket</dd>
-<dt class="col-sm-4">@Localizer["Price checked on"]</dt><dd class="col-sm-8">@(Model.Device.PriceCheckedAt?.ToString("yyyy-MM-dd"))</dd>
-<dt class="col-sm-4">@Localizer["Image credit and permission"]</dt><dd class="col-sm-8">@Model.Device.ImageCredit</dd>
-<dt class="col-sm-4">@Localizer["Tested AnduinOS version"]</dt><dd class="col-sm-8">@Model.Device.TestedVersion</dd>
-<dt class="col-sm-4">@Localizer["Tested kernel"]</dt><dd class="col-sm-8">@Model.Device.KernelVersion</dd>
-<dt class="col-sm-4">@Localizer["Tested drivers"]</dt><dd class="col-sm-8">@Model.Device.DriverVersion</dd>
-<dt class="col-sm-4">@Localizer["Last verified on"]</dt><dd class="col-sm-8">@(Model.Device.VerifiedAt?.ToString("yyyy-MM-dd"))</dd>
-@if (Model.Device.PriceUsd.HasValue) { <dt class="col-sm-4">@Localizer["Reference price"]</dt><dd class="col-sm-8">US$ @Model.Device.PriceUsd <small>@Localizer["Not a quotation; prices and availability may change."]</small></dd> }
-<dt class="col-sm-4">@Localizer["Installation"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Installation)</dd>
-<dt class="col-sm-4">@Localizer["Virtualization (KVM)"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Virtualization)</dd>
-<dt class="col-sm-4">@Localizer["Desktop performance"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Performance)</dd>
-<dt class="col-sm-4">@Localizer["Wi-Fi in Live"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Wifi)</dd>
-<dt class="col-sm-4">@Localizer["Graphics acceleration"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Graphics)</dd>
-<dt class="col-sm-4">@Localizer["Display scaling"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.Display)</dd>
-<dt class="col-sm-4">@Localizer["Secure Boot"]</dt><dd class="col-sm-8">@Labels.Label(Model.Device.SecureBoot)</dd>
-</dl>
-@if (!string.IsNullOrWhiteSpace(Model.Text.InstallationNotes)) { <h2 class="h4">@Localizer["Installation instructions"]</h2><p style="white-space:pre-wrap">@Model.Text.InstallationNotes</p> }
-@if (!string.IsNullOrWhiteSpace(Model.Text.FirmwareNotes)) { <h2 class="h4">@Localizer["Firmware and peripheral support"]</h2><p style="white-space:pre-wrap">@Model.Text.FirmwareNotes</p> }
-@if (!string.IsNullOrWhiteSpace(Model.Text.KnownIssues)) { <h2 class="h4">@Localizer["Known limitations"]</h2><p style="white-space:pre-wrap">@Model.Text.KnownIssues</p> }
-@if (!string.IsNullOrWhiteSpace(Model.Device.ProductUrl)) { <p><a href="@Model.Device.ProductUrl" rel="noopener noreferrer" target="_blank">@Localizer["Manufacturer and price source"]</a></p> }
-@if (!string.IsNullOrWhiteSpace(Model.Device.ReportUrl)) { <p><a href="@Model.Device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"]</a></p> }
-@if (!string.IsNullOrWhiteSpace(Model.Device.ImageSourceUrl)) { <p><a href="@Model.Device.ImageSourceUrl" rel="noopener noreferrer" target="_blank">@Localizer["Image source"]</a></p> }
-<p class="text-muted">@Localizer["Results apply to the listed configuration and software versions. An untested feature is not necessarily unsupported."]</p></div>

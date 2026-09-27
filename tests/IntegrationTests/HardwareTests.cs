@@ -12,6 +12,44 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 public class HardwareTests : TestBase
 {
     private static readonly HttpClient Anonymous = new();
+
+    [TestMethod]
+    public void CompatibilityVerdictsDistinguishVerifiedPartialBrokenAndUnknown()
+    {
+        Assert.AreEqual("positive", HardwareLabels.StatusTone(HardwarePerformance.Ideal));
+        Assert.AreEqual("positive", HardwareLabels.StatusTone(HardwareGraphics.AutomaticInstallation));
+        Assert.AreEqual("caution", HardwareLabels.StatusTone(HardwarePerformance.Adequate));
+        Assert.AreEqual("caution", HardwareLabels.StatusTone(HardwareGraphics.ManualSetup));
+        Assert.AreEqual("negative", HardwareLabels.StatusTone(HardwareSupport.Unsupported));
+        Assert.AreEqual("unknown", HardwareLabels.StatusTone(HardwareSupport.Untested));
+        Assert.AreEqual("unknown", HardwareLabels.StatusTone(HardwareSupport.NotApplicable));
+        Assert.AreEqual("check", HardwareLabels.StatusIcon(HardwareEase.Straightforward));
+        Assert.AreEqual("alert-triangle", HardwareLabels.StatusIcon(HardwareEase.Difficult));
+        Assert.AreEqual("alert-triangle", HardwareLabels.StatusIcon(HardwareEase.Unsupported));
+        Assert.AreEqual("minus", HardwareLabels.StatusIcon(HardwareEase.Untested));
+    }
+
+    [TestMethod]
+    public async Task DetailRendersEveryVerdictTone()
+    {
+        var item = await Read(await AddDevice(HardwarePublication.Published));
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>();
+            var device = await db.Hardware.SingleAsync(x => x.Id == item.Id);
+            device.Installation = HardwareEase.Difficult;
+            device.Performance = HardwarePerformance.Insufficient;
+            device.SecureBoot = HardwareSupport.Supported;
+            await db.SaveChangesAsync();
+        }
+
+        var html = await Http.GetStringAsync("/hardware/" + item.Slug);
+        Assert.Contains("hardware-verdict--positive", html);
+        Assert.Contains("hardware-verdict--caution", html);
+        Assert.Contains("hardware-verdict--negative", html);
+        Assert.Contains("hardware-verdict--unknown", html);
+    }
+
     private async Task<int> AddDevice(HardwarePublication publication, bool featured = true)
     {
         using var scope = Server!.Services.CreateScope();
@@ -51,10 +89,17 @@ public class HardwareTests : TestBase
         var html = await Http.GetStringAsync("/");
         Assert.Contains("recommended-hardware", html);
         Assert.Contains(published.Slug, html);
+        Assert.Contains("Price not listed", html);
+        Assert.DoesNotContain("English device description", html);
         Assert.DoesNotContain(draft.Slug, html);
         Assert.IsTrue(html.IndexOf("Windows Central", StringComparison.Ordinal) < html.IndexOf("id=\"recommended-hardware\"", StringComparison.Ordinal));
         Assert.IsTrue(html.IndexOf("id=\"recommended-hardware\"", StringComparison.Ordinal) < html.IndexOf("accordionFaq", StringComparison.Ordinal));
-        Assert.AreEqual(HttpStatusCode.OK, (await Http.GetAsync("/hardware/" + published.Slug)).StatusCode);
+        var details = await Http.GetAsync("/hardware/" + published.Slug);
+        Assert.AreEqual(HttpStatusCode.OK, details.StatusCode);
+        var detailsHtml = await details.Content.ReadAsStringAsync();
+        Assert.Contains("English device description", detailsHtml);
+        Assert.Contains("class=\"hardware-detail\"", detailsHtml);
+        Assert.Contains("/css/hardware.css", detailsHtml);
         Assert.AreEqual(HttpStatusCode.NotFound, (await Http.GetAsync("/hardware/" + draft.Slug)).StatusCode);
         Assert.AreEqual(HttpStatusCode.NotFound, (await Http.GetAsync("/hardware/" + archived.Slug)).StatusCode);
     }

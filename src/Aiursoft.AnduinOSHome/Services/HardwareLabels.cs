@@ -6,6 +6,23 @@ namespace Aiursoft.AnduinOSHome.Services;
 
 public class HardwareLabels(IStringLocalizer<HardwareLabels> localizer) : ITransientDependency
 {
+    public static string StatusTone(Enum value) => value switch
+    {
+        HardwareEase.Straightforward or HardwarePerformance.Ideal or HardwareSupport.Supported
+            or HardwareGraphics.LiveReady or HardwareGraphics.AutomaticInstallation => "positive",
+        HardwareEase.Difficult or HardwarePerformance.Adequate or HardwareGraphics.ManualSetup => "caution",
+        HardwareEase.Unsupported or HardwarePerformance.Insufficient or HardwareSupport.Unsupported
+            or HardwareGraphics.Unsupported => "negative",
+        _ => "unknown"
+    };
+
+    public static string StatusIcon(Enum value) => StatusTone(value) switch
+    {
+        "positive" => "check",
+        "caution" or "negative" => "alert-triangle",
+        _ => "minus"
+    };
+
     public string Label(Enum value) => value switch
     {
         HardwarePublication.Draft => localizer["Draft"],

@@ -1,12 +1,44 @@
 @model List<Aiursoft.AnduinOSHome.Entities.Hardware>
+@inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
 @if (Model.Count > 0)
 {
     <section id="recommended-hardware" class="py-5 bg-light">
         <div class="container">
-            <h2>@Localizer["AnduinOS recommended hardware"]</h2>
-            <p class="text-muted">@Localizer["Real devices, tested configurations, and practical installation guidance."]</p>
-            <partial name="_HardwareCards" model="Model" />
-            <a asp-controller="Hardware" asp-action="Index" class="btn btn-outline-primary">@Localizer["Browse all hardware"]</a>
+            <div class="text-center mb-4">
+                <h2>@Localizer["AnduinOS recommended hardware"]</h2>
+                <p class="text-muted">@Localizer["Real devices, tested configurations, and practical installation guidance."]</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                @foreach (var device in Model)
+                {
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a asp-controller="Hardware" asp-action="Details" asp-route-slug="@device.Slug"
+                           class="card h-100 shadow-sm text-decoration-none text-body"
+                           aria-label="@device.Brand @device.Model">
+                            @if (!string.IsNullOrEmpty(device.ProductImagePath))
+                            {
+                                <img src="@Storage.RelativePathToInternetUrl(device.ProductImagePath)?w=600"
+                                     class="card-img-top p-3" style="height:220px;object-fit:contain"
+                                     loading="lazy" alt="@device.Brand @device.Model" />
+                            }
+                            <div class="card-body text-center">
+                                <h3 class="h5 mb-2">@device.Brand @device.Model</h3>
+                                @if (device.PriceUsd.HasValue)
+                                {
+                                    <p class="mb-0 text-muted">@Localizer["Reference price: US$ {0}", device.PriceUsd.Value]</p>
+                                }
+                                else
+                                {
+                                    <p class="mb-0 text-muted">@Localizer["Price not listed"]</p>
+                                }
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+            <div class="text-center mt-4">
+                <a asp-controller="Hardware" asp-action="Index" class="btn btn-outline-primary">@Localizer["Browse all hardware"]</a>
+            </div>
         </div>
     </section>
 }
