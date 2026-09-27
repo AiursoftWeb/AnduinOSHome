@@ -99,6 +99,15 @@ public class ManageHardwareController(
         translation.FirmwareNotes = model.Text.FirmwareNotes ?? string.Empty;
         translation.InstallationNotes = model.Text.InstallationNotes ?? string.Empty;
         translation.KnownIssues = model.Text.KnownIssues ?? string.Empty;
+        translation.InstallationDetail = model.Text.InstallationDetail;
+        translation.PerformanceDetail = model.Text.PerformanceDetail;
+        translation.SecureBootDetail = model.Text.SecureBootDetail;
+        translation.WifiDetail = model.Text.WifiDetail;
+        translation.GraphicsDetail = model.Text.GraphicsDetail;
+        translation.VirtualizationDetail = model.Text.VirtualizationDetail;
+        translation.DisplayDetail = model.Text.DisplayDetail;
+        translation.ConfigurationText = model.Text.ConfigurationText;
+        translation.ImageCreditText = model.Text.ImageCreditText;
         if (existing == null) db.Hardware.Add(device);
         try { await db.SaveChangesAsync(); }
         catch (DbUpdateException)

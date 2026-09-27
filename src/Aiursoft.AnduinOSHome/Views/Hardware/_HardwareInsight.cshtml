@@ -1,0 +1,21 @@
+@model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel
+@if (Model.Highlight)
+{
+    <button type="button" class="hardware-highlight hardware-insight" data-hardware-insight
+            data-hardware-title="@Model.Title" data-hardware-status="@Model.Status"
+            data-hardware-detail="@Model.Detail" disabled="@string.IsNullOrWhiteSpace(Model.Detail)">
+        <span class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="@Model.Icon" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Verdict" /></span>
+        <small>@Model.Title</small><strong>@Model.Status</strong>
+        @if (!string.IsNullOrWhiteSpace(Model.Detail)) { <span class="hardware-insight-hint">@Localizer["Read details"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></span> }
+    </button>
+}
+else
+{
+    <button type="button" class="hardware-capability hardware-insight" data-hardware-insight
+            data-hardware-title="@Model.Title" data-hardware-status="@Model.Status"
+            data-hardware-detail="@Model.Detail" disabled="@string.IsNullOrWhiteSpace(Model.Detail)">
+        <span><partial name="_HardwareVerdict" model="Model.Verdict" />@Model.Title</span>
+        <strong>@Model.Status</strong>
+        @if (!string.IsNullOrWhiteSpace(Model.Detail)) { <i class="hardware-insight-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i> }
+    </button>
+}

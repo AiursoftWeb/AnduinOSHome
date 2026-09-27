@@ -7,6 +7,11 @@ public enum HardwareEase { Untested, Unsupported, Difficult, Straightforward }
 public enum HardwarePerformance { Untested, Insufficient, Adequate, Ideal }
 public enum HardwareSupport { Untested, Unsupported, Supported, NotApplicable }
 public enum HardwareGraphics { Untested, Unsupported, LiveReady, AutomaticInstallation, ManualSetup }
+public enum HardwareDeviceType
+{
+    Unspecified, HomeSupercomputer, Laptop, Desktop, Server, DevelopmentBoard,
+    Tablet, Phone, Television, MiniPc, Workstation, Other
+}
 
 public class Hardware
 {
@@ -15,8 +20,10 @@ public class Hardware
     public string Slug { get; set; } = string.Empty;
     [Required, MaxLength(100)] public string Brand { get; set; } = string.Empty;
     [Required, MaxLength(150)] public string Model { get; set; } = string.Empty;
+    [MaxLength(100)] public string? Sku { get; set; }
     [Required, MaxLength(30)] public string Architecture { get; set; } = string.Empty;
     [MaxLength(100)] public string? Category { get; set; }
+    [EnumDataType(typeof(HardwareDeviceType))] public HardwareDeviceType DeviceType { get; set; }
     [MaxLength(1000)] public string? Configuration { get; set; }
     [Range(0, int.MaxValue)] public int? PriceUsd { get; set; }
     [MaxLength(100)] public string? PriceMarket { get; set; }
@@ -56,4 +63,13 @@ public class HardwareTranslation
     [MaxLength(3000)] public string? FirmwareNotes { get; set; }
     [MaxLength(3000)] public string? InstallationNotes { get; set; }
     [MaxLength(3000)] public string? KnownIssues { get; set; }
+    [MaxLength(2000)] public string? InstallationDetail { get; set; }
+    [MaxLength(2000)] public string? PerformanceDetail { get; set; }
+    [MaxLength(2000)] public string? SecureBootDetail { get; set; }
+    [MaxLength(2000)] public string? WifiDetail { get; set; }
+    [MaxLength(2000)] public string? GraphicsDetail { get; set; }
+    [MaxLength(2000)] public string? VirtualizationDetail { get; set; }
+    [MaxLength(2000)] public string? DisplayDetail { get; set; }
+    [MaxLength(1000)] public string? ConfigurationText { get; set; }
+    [MaxLength(500)] public string? ImageCreditText { get; set; }
 }

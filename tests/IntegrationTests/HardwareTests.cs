@@ -2,6 +2,7 @@ using System.Net;
 using Aiursoft.AnduinOSHome.Entities;
 using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.FileStorage;
+using Aiursoft.AnduinOSHome.Models.HardwareViewModels;
 using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using SkiaSharp;
@@ -48,6 +49,35 @@ public class HardwareTests : TestBase
         Assert.Contains("hardware-verdict--caution", html);
         Assert.Contains("hardware-verdict--negative", html);
         Assert.Contains("hardware-verdict--unknown", html);
+    }
+
+    [TestMethod]
+    public async Task CapabilityDetailsAreOptionalEncodedAndFallBackToEnglish()
+    {
+        var item = await Read(await AddDevice(HardwarePublication.Published));
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>();
+            var english = await db.HardwareTranslations.SingleAsync(x => x.HardwareId == item.Id && x.Culture == "en");
+            english.VirtualizationDetail = "KVM <verified>";
+            english.DisplayDetail = "External monitor scaling depends on the monitor.";
+            await db.SaveChangesAsync();
+        }
+
+        var html = await Http.GetStringAsync("/hardware/" + item.Slug);
+        Assert.Contains("data-hardware-detail=\"KVM &lt;verified&gt;\"", html);
+        Assert.Contains("data-hardware-detail=\"External monitor scaling depends on the monitor.\"", html);
+        Assert.DoesNotContain("data-hardware-detail=\"KVM <verified>\"", html);
+        Assert.Contains("data-hardware-dialog", html);
+        Assert.Contains("/js/hardware-details.js", html);
+        Assert.AreEqual(7, System.Text.RegularExpressions.Regex.Matches(html, "data-hardware-insight(?:\\s|>)").Count);
+        Assert.Contains("disabled=\"disabled\"", html);
+
+        var translated = await Read(item.Id);
+        var model = new HardwareDetailsModel { Device = translated, Text = HardwareCatalog.TextFor(translated, "de") };
+        Assert.AreEqual("KVM <verified>", model.Detail(x => x.VirtualizationDetail));
+        Assert.IsNull(model.Detail(x => x.WifiDetail));
+        Assert.IsNull(model.Configuration);
     }
 
     private async Task<int> AddDevice(HardwarePublication publication, bool featured = true)
@@ -105,6 +135,42 @@ public class HardwareTests : TestBase
     }
 
     [TestMethod]
+    public async Task CatalogSearchAndFiltersUsePublishedDeviceMetadata()
+    {
+        var matching = await Read(await AddDevice(HardwarePublication.Published));
+        var other = await Read(await AddDevice(HardwarePublication.Published));
+        var searchTerm = "GX10-" + Guid.NewGuid().ToString("N");
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AnduinOSHomeDbContext>();
+            var device = await db.Hardware.SingleAsync(x => x.Id == matching.Id);
+            device.Sku = searchTerm;
+            device.DeviceType = HardwareDeviceType.HomeSupercomputer;
+            device.TeamDevice = true;
+            device.Architecture = "ARM64";
+            await db.SaveChangesAsync();
+        }
+
+        var url = "/Hardware?search=" + searchTerm + "&deviceType=HomeSupercomputer&architecture=ARM64&teamOnly=true";
+        var html = await Http.GetStringAsync(url);
+        Assert.Contains(matching.Slug, html);
+        Assert.Contains(searchTerm, html);
+        Assert.Contains("hardware-catalog", html);
+        Assert.Contains("Home supercomputer", html);
+        Assert.DoesNotContain(other.Slug, html);
+        Assert.Contains("name=\"search\"", html);
+        Assert.Contains("name=\"deviceType\"", html);
+        Assert.Contains("name=\"architecture\"", html);
+        Assert.Contains("name=\"teamOnly\"", html);
+
+        html = await Http.GetStringAsync("/Hardware?search=" + searchTerm + "&deviceType=Laptop");
+        Assert.DoesNotContain(matching.Slug, html);
+        Assert.Contains("No matching hardware yet", html);
+        Assert.AreEqual(HttpStatusCode.BadRequest, (await Http.GetAsync("/Hardware?deviceType=999")).StatusCode);
+        Assert.AreEqual(HttpStatusCode.BadRequest, (await Http.GetAsync("/Hardware?search=" + new string('x', 101))).StatusCode);
+    }
+
+    [TestMethod]
     public async Task AdminCanCreateTranslateAndArchive()
     {
         await LoginAsAdmin();
@@ -116,11 +182,18 @@ public class HardwareTests : TestBase
         var id = await db.Hardware.Where(x => x.Slug == slug).Select(x => x.Id).SingleAsync();
         var translated = Form(id, slug, "zh-CN");
         translated["Text.Description"] = "中文介绍";
+        translated["Text.VirtualizationDetail"] = "KVM 已验证";
+        translated["Text.ConfigurationText"] = "20 核 Arm CPU，128 GB 统一内存";
+        translated["Text.ImageCreditText"] = "图片由厂商提供";
         response = await PostForm("/ManageHardware/Edit/" + id, translated, "/ManageHardware/Edit/" + id);
         Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
         var item = await Read(id);
         Assert.AreEqual(2, item.Translations.Count);
         Assert.AreEqual("中文介绍", HardwareCatalog.TextFor(item, "zh-CN").Description);
+        Assert.AreEqual("KVM 已验证", HardwareCatalog.TextFor(item, "zh-CN").VirtualizationDetail);
+        var localizedModel = new HardwareDetailsModel { Device = item, Text = HardwareCatalog.TextFor(item, "zh-CN") };
+        Assert.AreEqual("20 核 Arm CPU，128 GB 统一内存", localizedModel.Configuration);
+        Assert.AreEqual("图片由厂商提供", localizedModel.ImageCredit);
         Assert.AreEqual("Saved description", HardwareCatalog.TextFor(item, "fr-FR").Description);
         translated["Device.Publication"] = "2";
         await PostForm("/ManageHardware/Edit/" + id, translated, "/ManageHardware/Edit/" + id);
@@ -147,6 +220,11 @@ public class HardwareTests : TestBase
             ("Device.ProductImagePath", "hardware/missing.png"),
             ("Device.ProductUrl", "javascript:alert(1)"),
             ("Device.Publication", "99"),
+            ("Device.DeviceType", "99"),
+            ("Device.Sku", new string('x', 101)),
+            ("Text.VirtualizationDetail", new string('x', 2001)),
+            ("Text.ConfigurationText", new string('x', 1001)),
+            ("Text.ImageCreditText", new string('x', 501)),
             ("Device.Installation", "99"),
             ("Device.PriceUsd", "-1"),
             ("Text.Culture", " ")
@@ -245,9 +323,16 @@ public class HardwareTests : TestBase
         await db.Database.OpenConnectionAsync();
         await db.Database.MigrateAsync();
         var item = new Hardware { Slug = "example", Brand = "Example", Model = "Desktop", Architecture = "AMD64",
-            Translations = [new HardwareTranslation { Culture = "en", Description = "Test" }] };
+            Sku = "EXAMPLE-001", DeviceType = HardwareDeviceType.Desktop,
+            Translations = [new HardwareTranslation { Culture = "en", Description = "Test", VirtualizationDetail = "KVM works",
+                ConfigurationText = "20-core ARM CPU", ImageCreditText = "Vendor photo" }] };
         db.Hardware.Add(item);
         await db.SaveChangesAsync();
+        var persisted = await db.Hardware.AsNoTracking().SingleAsync(x => x.Id == item.Id);
+        Assert.AreEqual("EXAMPLE-001", persisted.Sku);
+        Assert.AreEqual(HardwareDeviceType.Desktop, persisted.DeviceType);
+        Assert.AreEqual("KVM works", (await db.HardwareTranslations.AsNoTracking().SingleAsync(x => x.HardwareId == item.Id)).VirtualizationDetail);
+        Assert.AreEqual("20-core ARM CPU", (await db.HardwareTranslations.AsNoTracking().SingleAsync(x => x.HardwareId == item.Id)).ConfigurationText);
         db.HardwareTranslations.Add(new HardwareTranslation { HardwareId = item.Id, Culture = "en", Description = "Duplicate" });
         await Assert.ThrowsExactlyAsync<DbUpdateException>(() => db.SaveChangesAsync());
     }

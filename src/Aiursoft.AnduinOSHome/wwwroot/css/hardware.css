@@ -91,6 +91,35 @@
 .hardware-capability > span { display: inline-flex; align-items: center; gap: .75rem; color: #14233e; font-size: .88rem; font-weight: 650; }
 .hardware-capability > strong { max-width: 54%; text-align: right; color: #52647d; font-size: .8rem; font-weight: 600; line-height: 1.45; }
 
+.hardware-insight { width: 100%; font: inherit; text-align: left; }
+.hardware-insight:not(:disabled) { cursor: pointer; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.hardware-insight:not(:disabled):hover { transform: translateY(-3px); border-color: #82afea; box-shadow: 0 20px 42px rgba(37, 99, 235, .13); }
+.hardware-insight:not(:disabled):focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+.hardware-insight:disabled { cursor: default; opacity: 1; }
+.hardware-insight-hint { display: inline-flex; align-items: center; gap: .3rem; margin-top: 1rem; color: #2563eb; font-size: .72rem; font-weight: 700; }
+.hardware-insight-hint svg, .hardware-insight-arrow { width: .9rem; height: .9rem; }
+.hardware-insight-arrow { flex: none; color: #2563eb; }
+
+.hardware-insight-dialog { position: fixed; inset: 0 0 0 auto; width: min(33rem, 94vw); max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 0; overflow: hidden; border: 0; color: #eaf2ff; background: #0b1424; }
+.hardware-insight-dialog[open] { animation: hardwareInsightIn .24s ease-out both; }
+.hardware-insight-dialog::backdrop { background: rgba(3, 10, 25, .72); backdrop-filter: blur(5px); }
+.hardware-insight-dialog-panel { display: grid; grid-template-rows: auto 1fr auto; height: 100%; background: radial-gradient(circle at 100% 0, rgba(37, 99, 235, .22), transparent 40%), #0b1424; box-shadow: -22px 0 70px rgba(0, 0, 0, .3); }
+.hardware-insight-dialog header, .hardware-insight-dialog footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem; border-bottom: 1px solid rgba(148, 163, 184, .16); }
+.hardware-insight-dialog header span { color: #60a5fa; font-size: .73rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.hardware-insight-dialog h2 { margin: .45rem 0 0; color: #fff; font-size: 1.45rem; }
+.hardware-insight-dialog button { display: inline-grid; place-items: center; min-width: 2.5rem; min-height: 2.5rem; border: 1px solid rgba(148, 163, 184, .3); border-radius: .6rem; color: #eaf2ff; background: rgba(148, 163, 184, .08); cursor: pointer; }
+.hardware-insight-dialog button:hover { border-color: #60a5fa; background: rgba(96, 165, 250, .16); }
+.hardware-insight-dialog button:focus-visible { outline: 3px solid #60a5fa; outline-offset: 2px; }
+.hardware-insight-dialog button svg { width: 1.1rem; height: 1.1rem; }
+.hardware-insight-dialog-body { overflow-y: auto; padding: 1.65rem; }
+.hardware-insight-dialog-status { display: inline-block; padding: .5rem .7rem; border: 1px solid rgba(96, 165, 250, .3); border-radius: .5rem; color: #bfdbfe; background: rgba(37, 99, 235, .14); font-size: .82rem; font-weight: 700; }
+.hardware-insight-dialog-body p { margin: 1.5rem 0 0; color: #cbd7e8; font-size: .96rem; line-height: 1.8; white-space: pre-line; }
+.hardware-insight-dialog footer { border-top: 1px solid rgba(148, 163, 184, .16); border-bottom: 0; }
+.hardware-insight-dialog footer span { color: #8fa3bf; font-size: .79rem; }
+.hardware-insight-dialog footer button { padding: .5rem 1rem; }
+@keyframes hardwareInsightIn { from { opacity: 0; transform: translateX(1.5rem); } to { opacity: 1; transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .hardware-insight-dialog[open] { animation: none; } .hardware-insight:not(:disabled) { transition: none; } }
+
 .hardware-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1rem; }
 .hardware-note { padding: 1.65rem; border: 1px solid rgba(148, 163, 184, .16); border-radius: 1rem; background: rgba(18, 29, 49, .88); }
 .hardware-note--primary { background: linear-gradient(145deg, rgba(30, 56, 92, .82), rgba(17, 29, 50, .9)); }
@@ -137,4 +166,79 @@
     .hardware-section--technical { padding: 1.25rem; }
     .hardware-specs > div { display: grid; gap: .2rem; }
     .hardware-specs strong { text-align: left; }
+}
+
+.hardware-catalog { color: #15243e; background: #f3f7fd; }
+.hardware-catalog-hero { position: relative; overflow: hidden; padding: 2.2rem 0 6rem; color: #f8fafc; background: radial-gradient(ellipse at 79% 26%, rgba(36, 99, 235, .35), transparent 42%), radial-gradient(ellipse at 10% 85%, rgba(99, 102, 241, .18), transparent 40%), #080d18; }
+.hardware-catalog-hero::before { position: absolute; inset: 0; content: ""; pointer-events: none; background-image: linear-gradient(rgba(148, 163, 184, .045) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, .045) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(#000, transparent); }
+.hardware-catalog-hero .container { position: relative; }
+.hardware-catalog-back { display: inline-flex; align-items: center; gap: .6rem; margin-bottom: 2.5rem; padding: .55rem .85rem; border: 1px solid rgba(148, 163, 184, .18); border-radius: 2rem; color: #aebbd0; font-size: .8rem; text-decoration: none; }
+.hardware-catalog-back:hover { color: #fff; border-color: rgba(147, 197, 253, .5); }
+.hardware-catalog-back svg { width: 1rem; height: 1rem; }
+.hardware-catalog-kicker { display: block; margin-bottom: 1rem; color: #61b5ff; font-size: .74rem; font-weight: 750; letter-spacing: .17em; }
+.hardware-catalog-hero h1 { max-width: 17ch; margin: 0; color: #fff; font-size: clamp(2.7rem, 5vw, 5rem); font-weight: 800; letter-spacing: -.055em; line-height: 1.08; }
+.hardware-catalog-hero p { max-width: 46rem; margin: 1.2rem 0 0; color: #acbbd0; font-size: 1.08rem; line-height: 1.7; }
+.hardware-catalog-body { position: relative; min-height: 36rem; padding: 0 0 5rem; background: linear-gradient(155deg, #f8fbff, #edf4fc 55%, #f6f9ff); }
+.hardware-search { position: relative; top: -4rem; display: grid; grid-template-columns: minmax(14rem, 2fr) minmax(10rem, 1fr) minmax(9rem, .8fr) auto; align-items: end; gap: 1rem; padding: 1.5rem; border: 1px solid #dce8f6; border-radius: 1.2rem; background: #fff; box-shadow: 0 22px 55px rgba(16, 39, 76, .16); }
+.hardware-search-field label { display: block; margin-bottom: .55rem; color: #40536d; font-size: .77rem; font-weight: 700; }
+.hardware-search-field input, .hardware-search-field select { width: 100%; min-height: 2.9rem; padding: .7rem .85rem; border: 1px solid #d6e2f0; border-radius: .55rem; outline: none; background: #f9fbfe; color: #1b2b45; font-size: .86rem; }
+.hardware-search-field input:focus, .hardware-search-field select:focus { border-color: #4f91f5; box-shadow: 0 0 0 3px rgba(59, 130, 246, .14); }
+.hardware-search-input { position: relative; }
+.hardware-search-input svg { position: absolute; top: 50%; left: .8rem; width: 1.05rem; height: 1.05rem; transform: translateY(-50%); color: #7a8da7; }
+.hardware-search-input input { padding-left: 2.3rem; }
+.hardware-search-team { grid-column: 1 / -2; display: inline-flex; align-items: center; gap: .55rem; margin-top: .15rem; color: #455a75; font-size: .82rem; cursor: pointer; }
+.hardware-search-team input { width: 1rem; height: 1rem; accent-color: #2563eb; }
+.hardware-search-submit { grid-column: -2 / -1; grid-row: 2; display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 2.8rem; padding: .6rem 1.2rem; border: 0; border-radius: .55rem; background: #2563eb; color: #fff; font-size: .85rem; font-weight: 700; cursor: pointer; }
+.hardware-search-submit:hover { background: #1d4fc4; }
+.hardware-search-submit svg { width: 1rem; height: 1rem; }
+.hardware-catalog-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin: -.45rem 0 1.5rem; }
+.hardware-catalog-heading span { color: #2563eb; font-size: .72rem; font-weight: 750; letter-spacing: .15em; }
+.hardware-catalog-heading h2 { margin: .35rem 0 0; color: #14233e; font-size: clamp(1.7rem, 2.8vw, 2.5rem); font-weight: 750; letter-spacing: -.035em; }
+.hardware-clear-filters { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem .65rem; color: #275dba; font-size: .8rem; text-decoration: none; white-space: nowrap; }
+.hardware-clear-filters svg { width: .9rem; height: .9rem; }
+.hardware-catalog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.hardware-catalog-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #dce8f5; border-radius: 1rem; background: #fff; color: #15243e; text-decoration: none; box-shadow: 0 14px 35px rgba(25, 65, 117, .06); transition: transform .2s ease, box-shadow .2s ease; }
+.hardware-catalog-card:hover { transform: translateY(-4px); box-shadow: 0 23px 50px rgba(25, 65, 117, .14); color: #15243e; }
+.hardware-catalog-card-image { display: grid; place-items: center; height: 15rem; padding: 1.2rem; background: radial-gradient(ellipse at 50% 35%, #fff, #eaf1fb); }
+.hardware-catalog-card-image img { display: block; max-width: 100%; max-height: 12rem; object-fit: contain; }
+.hardware-catalog-card-image > svg { width: 4rem; height: 4rem; color: #9bb6dd; }
+.hardware-catalog-card-copy { display: grid; align-content: start; flex: 1; padding: 1.25rem; }
+.hardware-catalog-card-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .7rem; }
+.hardware-catalog-card-tags span { padding: .25rem .5rem; border-radius: .35rem; background: #eaf2ff; color: #2663bf; font-size: .68rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; }
+.hardware-catalog-card-copy > strong { color: #15243e; font-size: 1.15rem; font-weight: 750; line-height: 1.3; }
+.hardware-catalog-card-copy > small { margin-top: .45rem; color: #6b7e95; font-size: .75rem; }
+.hardware-catalog-card-bottom { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: 1.35rem; padding-top: .9rem; border-top: 1px solid #e8eef6; color: #546882; font-size: .8rem; }
+.hardware-catalog-card-bottom svg { width: 1.15rem; height: 1.15rem; color: #2563eb; }
+.hardware-catalog-pages { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; }
+.hardware-catalog-pages a, .hardware-catalog-empty a { display: inline-flex; padding: .65rem 1rem; border: 1px solid #bad2f5; border-radius: .5rem; color: #235cb7; background: #fff; font-size: .84rem; text-decoration: none; }
+.hardware-catalog-pages a:hover, .hardware-catalog-empty a:hover { border-color: #2563eb; color: #17478f; }
+.hardware-catalog-empty { display: grid; justify-items: center; padding: 4.5rem 1rem; border: 1px dashed #bdd1e9; border-radius: 1rem; background: #fff; text-align: center; }
+.hardware-catalog-empty > svg { width: 2.4rem; height: 2.4rem; color: #4f91f5; }
+.hardware-catalog-empty h2 { margin: 1rem 0 .3rem; color: #172943; font-size: 1.45rem; }
+.hardware-catalog-empty p { color: #64748b; }
+.hardware-catalog-disclaimer { margin: 2.5rem 0 0; color: #65758c; font-size: .8rem; }
+
+@media (max-width: 1000px) {
+    .hardware-search { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hardware-search-field--query { grid-column: 1 / -1; }
+    .hardware-search-team { grid-column: 1; }
+    .hardware-search-submit { grid-column: 2; grid-row: auto; }
+}
+
+@media (max-width: 700px) {
+    .hardware-catalog-hero { padding: 1.5rem 0 6rem; }
+    .hardware-catalog-back { margin-bottom: 2rem; }
+    .hardware-search { top: -3rem; grid-template-columns: 1fr; padding: 1rem; }
+    .hardware-search-field--query, .hardware-search-team, .hardware-search-submit { grid-column: 1; }
+    .hardware-search-submit { grid-row: auto; }
+    .hardware-catalog-heading { align-items: start; }
+    .hardware-catalog-grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .hardware-catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hardware-catalog-card { transition: none; }
 }

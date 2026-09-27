@@ -25,6 +25,18 @@ public class HardwareLabels(IStringLocalizer<HardwareLabels> localizer) : ITrans
 
     public string Label(Enum value) => value switch
     {
+        HardwareDeviceType.Unspecified => localizer["Unclassified"],
+        HardwareDeviceType.HomeSupercomputer => localizer["Home supercomputer"],
+        HardwareDeviceType.Laptop => localizer["Laptop"],
+        HardwareDeviceType.Desktop => localizer["Desktop"],
+        HardwareDeviceType.Server => localizer["Server"],
+        HardwareDeviceType.DevelopmentBoard => localizer["Development board"],
+        HardwareDeviceType.Tablet => localizer["Tablet"],
+        HardwareDeviceType.Phone => localizer["Phone"],
+        HardwareDeviceType.Television => localizer["Television"],
+        HardwareDeviceType.MiniPc => localizer["Mini PC"],
+        HardwareDeviceType.Workstation => localizer["Workstation"],
+        HardwareDeviceType.Other => localizer["Other"],
         HardwarePublication.Draft => localizer["Draft"],
         HardwarePublication.Published => localizer["Published"],
         HardwarePublication.Archived => localizer["Archived"],

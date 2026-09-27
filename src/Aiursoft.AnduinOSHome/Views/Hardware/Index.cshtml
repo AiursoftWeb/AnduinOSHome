@@ -1,11 +1,102 @@
+@using Aiursoft.AnduinOSHome.Entities
 @model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareIndexModel
-<div class="container py-5">
-    <h1>@Localizer["AnduinOS recommended hardware"]</h1>
-    <p>@Localizer["Compatibility applies to the listed configuration and tested software versions. Reference prices are not quotations."]</p>
-    <partial name="_HardwareCards" model="Model.Items" />
-    <nav aria-label="@Localizer["Hardware pages"]">
-        @if (Model.Page > 1) { <a asp-action="Index" asp-route-page="@(Model.Page - 1)" class="btn btn-outline-primary">@Localizer["Previous"]</a> }
-        @if (Model.HasNextPage) { <a asp-action="Index" asp-route-page="@(Model.Page + 1)" class="btn btn-outline-primary">@Localizer["Next"]</a> }
-    </nav>
-    @if (Model.Items.Count == 0) { <p>@Localizer["Hardware reports will appear here once published."]</p> }
-</div>
+@inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
+@inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
+
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<main class="hardware-catalog">
+    <header class="hardware-catalog-hero">
+        <div class="container">
+            <a asp-controller="Home" asp-action="Index" class="hardware-catalog-back"><i data-lucide="arrow-left" aria-hidden="true"></i>@Localizer["Back to AnduinOS overview"]</a>
+            <span class="hardware-catalog-kicker">@Localizer["TESTED IN THE REAL WORLD"]</span>
+            <h1>@Localizer["Recommended hardware"]</h1>
+            <p>@Localizer["Find an AnduinOS-ready device with real installation notes and clearly scoped compatibility results."]</p>
+        </div>
+    </header>
+
+    <div class="hardware-catalog-body">
+        <div class="container">
+            <form asp-action="Index" method="get" class="hardware-search" role="search">
+                <div class="hardware-search-field hardware-search-field--query">
+                    <label for="hardware-query">@Localizer["Search hardware"]</label>
+                    <div class="hardware-search-input"><i data-lucide="search" aria-hidden="true"></i><input id="hardware-query" name="search" type="search" value="@Model.Search" maxlength="100" placeholder="@Localizer["Brand, model, SKU, or configuration"]" /></div>
+                </div>
+                <div class="hardware-search-field">
+                    <label for="hardware-type">@Localizer["Device type"]</label>
+                    <select id="hardware-type" name="deviceType">
+                        <option value="">@Localizer["All device types"]</option>
+                        @foreach (var type in Enum.GetValues<HardwareDeviceType>())
+                        {
+                            <option value="@type" selected="@(Model.DeviceType == type)">@Labels.Label(type)</option>
+                        }
+                    </select>
+                </div>
+                <div class="hardware-search-field">
+                    <label for="hardware-architecture">@Localizer["Architecture"]</label>
+                    <select id="hardware-architecture" name="architecture">
+                        <option value="">@Localizer["All architectures"]</option>
+                        @foreach (var architecture in Model.Architectures)
+                        {
+                            <option value="@architecture" selected="@(Model.Architecture == architecture)">@architecture</option>
+                        }
+                    </select>
+                </div>
+                <label class="hardware-search-team"><input type="checkbox" name="teamOnly" value="true" checked="@Model.TeamOnly" /><span>@Localizer["Development team devices only"]</span></label>
+                <button type="submit" class="hardware-search-submit"><i data-lucide="search" aria-hidden="true"></i>@Localizer["Search"]</button>
+            </form>
+
+            <div class="hardware-catalog-heading">
+                <div><span>@Localizer["HARDWARE CATALOG"]</span><h2>@Localizer["Explore tested devices"]</h2></div>
+                @if (!string.IsNullOrWhiteSpace(Model.Search) || Model.DeviceType.HasValue || !string.IsNullOrWhiteSpace(Model.Architecture) || Model.TeamOnly)
+                {
+                    <a asp-action="Index" class="hardware-clear-filters">@Localizer["Clear filters"] <i data-lucide="x" aria-hidden="true"></i></a>
+                }
+            </div>
+
+            @if (Model.Items.Count > 0)
+            {
+                <div class="hardware-catalog-grid">
+                    @foreach (var device in Model.Items)
+                    {
+                        <a asp-action="Details" asp-route-slug="@device.Slug" class="hardware-catalog-card">
+                            <span class="hardware-catalog-card-image">
+                                @if (!string.IsNullOrWhiteSpace(device.ProductImagePath))
+                                {
+                                    <img src="@Storage.RelativePathToInternetUrl(device.ProductImagePath)?w=600" loading="lazy" alt="@device.Brand @device.Model" />
+                                }
+                                else
+                                {
+                                    <i data-lucide="monitor" aria-hidden="true"></i>
+                                }
+                            </span>
+                            <span class="hardware-catalog-card-copy">
+                                <span class="hardware-catalog-card-tags"><span>@device.Architecture</span>@if (device.DeviceType != HardwareDeviceType.Unspecified) { <span>@Labels.Label(device.DeviceType)</span> }</span>
+                                <strong>@device.Brand @device.Model</strong>
+                                @if (!string.IsNullOrWhiteSpace(device.Sku)) { <small>@Localizer["SKU"] @device.Sku</small> }
+                                <span class="hardware-catalog-card-bottom"><span>@(device.PriceUsd.HasValue ? Localizer["Reference price: US$ {0}", device.PriceUsd.Value] : Localizer["Price not listed"])</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                            </span>
+                        </a>
+                    }
+                </div>
+                <nav class="hardware-catalog-pages" aria-label="@Localizer["Hardware pages"]">
+                    @if (Model.Page > 1) { <a asp-action="Index" asp-route-page="@(Model.Page - 1)" asp-route-search="@Model.Search" asp-route-deviceType="@Model.DeviceType" asp-route-architecture="@Model.Architecture" asp-route-teamOnly="@Model.TeamOnly">@Localizer["Previous"]</a> }
+                    @if (Model.HasNextPage) { <a asp-action="Index" asp-route-page="@(Model.Page + 1)" asp-route-search="@Model.Search" asp-route-deviceType="@Model.DeviceType" asp-route-architecture="@Model.Architecture" asp-route-teamOnly="@Model.TeamOnly">@Localizer["Next"]</a> }
+                </nav>
+            }
+            else
+            {
+                <div class="hardware-catalog-empty"><i data-lucide="scan-search" aria-hidden="true"></i><h2>@Localizer["No matching hardware yet"]</h2><p>@Localizer["Try a different search or clear the filters to browse every published device."]</p><a asp-action="Index">@Localizer["Browse all hardware"]</a></div>
+            }
+            <p class="hardware-catalog-disclaimer">@Localizer["Compatibility applies to the listed configuration and tested software versions. Reference prices are not quotations."]</p>
+        </div>
+    </div>
+</main>
+
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hardware.css" asp-append-version="true" />
+}

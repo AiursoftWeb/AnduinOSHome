@@ -1,6 +1,21 @@
 @model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareDetailsModel
 @inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
 @inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
+@{
+    var highlights = new[]
+    {
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Installation"].Value, Labels.Label(Model.Device.Installation), "hard-drive-download", Model.Device.Installation, Model.Detail(x => x.InstallationDetail), true),
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Desktop performance"].Value, Labels.Label(Model.Device.Performance), "zap", Model.Device.Performance, Model.Detail(x => x.PerformanceDetail), true),
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Secure Boot"].Value, Labels.Label(Model.Device.SecureBoot), "shield-check", Model.Device.SecureBoot, Model.Detail(x => x.SecureBootDetail), true)
+    };
+    var capabilities = new[]
+    {
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Wi-Fi in Live"].Value, Labels.Label(Model.Device.Wifi), "wifi", Model.Device.Wifi, Model.Detail(x => x.WifiDetail), false),
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Graphics acceleration"].Value, Labels.Label(Model.Device.Graphics), "monitor", Model.Device.Graphics, Model.Detail(x => x.GraphicsDetail), false),
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Virtualization (KVM)"].Value, Labels.Label(Model.Device.Virtualization), "boxes", Model.Device.Virtualization, Model.Detail(x => x.VirtualizationDetail), false),
+        new Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareInsightModel(Localizer["Display scaling"].Value, Labels.Label(Model.Device.Display), "scan", Model.Device.Display, Model.Detail(x => x.DisplayDetail), false)
+    };
+}
 
 <vc:marketing-navbar></vc:marketing-navbar>
 
@@ -15,7 +30,7 @@
         <header class="hardware-hero">
             <div class="hardware-hero-copy">
                 <div class="hardware-kicker"><span class="hardware-kicker-dot" aria-hidden="true"></span>@Localizer["Tested on real hardware"]</div>
-                <div class="hardware-tags"><span>@Model.Device.Architecture</span>@if (!string.IsNullOrWhiteSpace(Model.Device.Category)) { <span>@Model.Device.Category</span> }</div>
+                <div class="hardware-tags"><span>@Model.Device.Architecture</span>@if (Model.Device.DeviceType != Aiursoft.AnduinOSHome.Entities.HardwareDeviceType.Unspecified) { <span>@Labels.Label(Model.Device.DeviceType)</span> } else if (!string.IsNullOrWhiteSpace(Model.Device.Category)) { <span>@Model.Device.Category</span> }</div>
                 <h1>@Model.Device.Brand <span>@Model.Device.Model</span></h1>
                 <p class="hardware-intro">@Model.Text.Description</p>
                 @if (Model.Device.PriceUsd.HasValue || Model.Device.VerifiedAt.HasValue)
@@ -47,22 +62,25 @@
         <section class="hardware-section" aria-labelledby="hardware-highlights-title">
             <div class="hardware-section-heading"><span>01 / @Localizer["Overview"]</span><h2 id="hardware-highlights-title">@Localizer["The essentials, at a glance."]</h2></div>
             <div class="hardware-highlights">
-                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="hard-drive-download" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.Installation" /></div><small>@Localizer["Installation"]</small><strong>@Labels.Label(Model.Device.Installation)</strong></article>
-                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="zap" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.Performance" /></div><small>@Localizer["Desktop performance"]</small><strong>@Labels.Label(Model.Device.Performance)</strong></article>
-                <article class="hardware-highlight"><div class="hardware-highlight-top"><span class="hardware-highlight-icon"><i data-lucide="shield-check" aria-hidden="true"></i></span><partial name="_HardwareVerdict" model="Model.Device.SecureBoot" /></div><small>@Localizer["Secure Boot"]</small><strong>@Labels.Label(Model.Device.SecureBoot)</strong></article>
+                @foreach (var insight in highlights) { <partial name="_HardwareInsight" model="insight" /> }
             </div>
         </section>
 
         <section class="hardware-section" aria-labelledby="hardware-capabilities-title">
             <div class="hardware-section-heading"><span>02 / @Localizer["Compatibility"]</span><h2 id="hardware-capabilities-title">@Localizer["What works on this device."]</h2><p>@Localizer["Each status reflects the listed configuration and tested software version."]</p></div>
             <div class="hardware-capabilities">
-                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Wifi" />@Localizer["Wi-Fi in Live"]</span><strong>@Labels.Label(Model.Device.Wifi)</strong></div>
-                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Graphics" />@Localizer["Graphics acceleration"]</span><strong>@Labels.Label(Model.Device.Graphics)</strong></div>
-                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Virtualization" />@Localizer["Virtualization (KVM)"]</span><strong>@Labels.Label(Model.Device.Virtualization)</strong></div>
-                <div class="hardware-capability"><span><partial name="_HardwareVerdict" model="Model.Device.Display" />@Localizer["Display scaling"]</span><strong>@Labels.Label(Model.Device.Display)</strong></div>
+                @foreach (var insight in capabilities) { <partial name="_HardwareInsight" model="insight" /> }
             </div>
         </section>
         </div>
+
+        <dialog class="hardware-insight-dialog" data-hardware-dialog aria-labelledby="hardware-insight-title">
+            <div class="hardware-insight-dialog-panel">
+                <header><div><span>@Localizer["Compatibility detail"]</span><h2 id="hardware-insight-title" data-hardware-dialog-title></h2></div><button type="button" data-hardware-dialog-close aria-label="@Localizer["Close details"]"><i data-lucide="x" aria-hidden="true"></i></button></header>
+                <div class="hardware-insight-dialog-body"><div class="hardware-insight-dialog-status" data-hardware-dialog-status></div><p data-hardware-dialog-detail></p></div>
+                <footer><span>@Model.Device.Brand @Model.Device.Model</span><button type="button" data-hardware-dialog-close>@Localizer["Done"]</button></footer>
+            </div>
+        </dialog>
 
         @if (!string.IsNullOrWhiteSpace(Model.Text.InstallationNotes) || !string.IsNullOrWhiteSpace(Model.Text.FirmwareNotes) || !string.IsNullOrWhiteSpace(Model.Text.KnownIssues))
         {
@@ -97,7 +115,9 @@
             <div class="hardware-section-heading"><span>@Localizer["Technical record"]</span><h2 id="hardware-technical-title">@Localizer["The configuration we tested."]</h2></div>
             <div class="hardware-specs">
                 <div><span>@Localizer["Architecture"]</span><strong>@Model.Device.Architecture</strong></div>
-                @if (!string.IsNullOrWhiteSpace(Model.Device.Configuration)) { <div><span>@Localizer["Tested hardware configuration"]</span><strong>@Model.Device.Configuration</strong></div> }
+                @if (Model.Device.DeviceType != Aiursoft.AnduinOSHome.Entities.HardwareDeviceType.Unspecified) { <div><span>@Localizer["Device type"]</span><strong>@Labels.Label(Model.Device.DeviceType)</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Device.Sku)) { <div><span>@Localizer["SKU"]</span><strong>@Model.Device.Sku</strong></div> }
+                @if (!string.IsNullOrWhiteSpace(Model.Configuration)) { <div><span>@Localizer["Tested hardware configuration"]</span><strong>@Model.Configuration</strong></div> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.TestedVersion)) { <div><span>@Localizer["Tested AnduinOS version"]</span><strong>@Model.Device.TestedVersion</strong></div> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.KernelVersion)) { <div><span>@Localizer["Tested kernel"]</span><strong>@Model.Device.KernelVersion</strong></div> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.DriverVersion)) { <div><span>@Localizer["Tested drivers"]</span><strong>@Model.Device.DriverVersion</strong></div> }
@@ -109,7 +129,7 @@
                 @if (!string.IsNullOrWhiteSpace(Model.Device.ReportUrl)) { <a href="@Model.Device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.ImageSourceUrl)) { <a href="@Model.Device.ImageSourceUrl" rel="noopener noreferrer" target="_blank">@Localizer["Image source"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
             </div>
-            @if (!string.IsNullOrWhiteSpace(Model.Device.ImageCredit)) { <p class="hardware-credit">@Model.Device.ImageCredit</p> }
+            @if (!string.IsNullOrWhiteSpace(Model.ImageCredit)) { <p class="hardware-credit">@Model.ImageCredit</p> }
             <p class="hardware-scope">@Localizer["Results apply to the listed configuration and software versions. An untested feature is not necessarily unsupported."]</p>
         </section>
     </div>
@@ -121,4 +141,8 @@
 @section styles {
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/hardware.css" asp-append-version="true" />
+}
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/hardware-details.js" asp-append-version="true" defer></script>
 }

@@ -57,6 +57,9 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("DeviceType")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("Display")
                         .HasColumnType("INTEGER");
 
@@ -125,6 +128,10 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                     b.Property<int>("SecureBoot")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Sku")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Slug")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -166,6 +173,10 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("ConfigurationText")
+                        .HasMaxLength(1000)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Culture")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -176,12 +187,28 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                         .HasMaxLength(3000)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("DisplayDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("FirmwareNotes")
                         .HasMaxLength(3000)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("GraphicsDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("HardwareId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("ImageCreditText")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("InstallationDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("InstallationNotes")
                         .HasMaxLength(3000)
@@ -189,6 +216,22 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
 
                     b.Property<string>("KnownIssues")
                         .HasMaxLength(3000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PerformanceDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SecureBootDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("VirtualizationDetail")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WifiDetail")
+                        .HasMaxLength(2000)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
