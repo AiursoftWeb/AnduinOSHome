@@ -26,7 +26,16 @@
 }
 else
 {
-    <div class="col-md-6 mb-3"><label asp-for="Device.SourceCulture">@Localizer["Source language"]</label><select asp-for="Device.SourceCulture" class="form-select">@foreach (var code in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures.Keys) { <option value="@code">@System.Globalization.CultureInfo.GetCultureInfo(code).NativeName</option> }</select><div class="form-text">@Localizer["Choose the language of the original review. It cannot be changed after creation."]</div></div>
+    <div class="col-md-6 mb-3">
+        <label asp-for="Device.SourceCulture">@Localizer["Source language"]</label>
+        <select asp-for="Device.SourceCulture" class="form-select">
+            @foreach (var code in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures.Keys)
+            {
+                <option value="@code">@System.Globalization.CultureInfo.GetCultureInfo(code).NativeName</option>
+            }
+        </select>
+        <div class="form-text">@Localizer["Choose the language of the original review. It cannot be changed after creation."]</div>
+    </div>
 }
 <div class="col-md-6 mb-3"><label asp-for="Device.Slug">@Localizer["URL name"]</label><input asp-for="Device.Slug"   class="form-control" /><span asp-validation-for="Device.Slug" class="text-danger"></span></div>
 <div class="col-md-6 mb-3"><label asp-for="Device.Brand">@Localizer["Brand"]</label><input asp-for="Device.Brand"   class="form-control" /><span asp-validation-for="Device.Brand" class="text-danger"></span></div>
