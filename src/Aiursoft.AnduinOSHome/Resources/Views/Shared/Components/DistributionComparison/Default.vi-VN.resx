@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<root>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
-  <resheader name="version"><value>2.0</value></resheader>
-  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
-  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.&#10;&#10;Dracut's dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
-    <value>USB Live cho phép bạn dùng thử giao diện máy tính mà không cần cài đặt lên ổ đĩa. USB cần một môi trường khởi động để tải ảnh hệ thống đã nén. AnduinOS hiện tạo môi trường này bằng Dracut, cùng công cụ được dùng cho hệ thống đã cài đặt.
 
-dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản lý một lớp có thể ghi để lưu các thay đổi của bạn, tạm thời hoặc lưu trên USB để dùng sau. Công cụ này cũng giữ lại các tệp cài đặt và hỗ trợ sửa chữa bố cục USB đã mở rộng. Dùng chung một công cụ khởi động giúp bảo trì và khắc phục sự cố cho cả hai môi trường; điều này không có nghĩa là mọi USB đều khởi động nhanh hơn.</value>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A consistent look for everyday settings" xml:space="preserve">
+    <value>Giao diện nhất quán cho các công cụ cài đặt hằng ngày</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.&#10;&#10;This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
+
+This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>Môi trường Live là giao diện máy tính mà bạn khởi động từ USB cài đặt trước khi cài đặt. Ubuntu 26.04 vẫn tạo môi trường khởi động này bằng initramfs-tools và Casper, các công cụ định vị và tải ảnh hệ thống.
 
 Điều này khác với hệ thống Ubuntu đã cài đặt, vốn mặc định dùng Dracut. AnduinOS cũng đã chuyển môi trường Live sang Dracut, vì vậy USB và hệ thống đã cài đặt của bản phân phối này dùng cùng một công cụ khởi động. Điểm khác biệt ở đây là phạm vi chuyển đổi, chứ không phải Ubuntu có thể chạy từ USB hay không.</value>
   </data>
-  <data name="A consistent look for everyday settings" xml:space="preserve">
-    <value>Giao diện nhất quán cho các công cụ cài đặt hằng ngày</value>
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.\n\nThis differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+    <value>Môi trường Live là giao diện máy tính mà bạn khởi động từ USB cài đặt để dùng thử trước khi cài đặt. Ubuntu 26.04 vẫn tạo môi trường khởi động này bằng initramfs-tools và Casper, các công cụ định vị và tải ảnh hệ thống.
+
+Điều này khác với hệ thống Ubuntu đã cài đặt, vốn mặc định sử dụng Dracut. AnduinOS cũng đã chuyển môi trường Live sang Dracut, nên USB và hệ thống đã cài đặt dùng chung một công cụ khởi động. Điểm khác biệt ở đây là phạm vi chuyển đổi, chứ không phải việc Ubuntu có thể chạy từ USB hay không.</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
+
+Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>USB Live cho phép bạn dùng thử giao diện máy tính mà không cần cài đặt lên ổ đĩa. USB cần một môi trường khởi động để tải ảnh hệ thống đã nén. AnduinOS hiện tạo môi trường này bằng Dracut, cùng công cụ được dùng cho hệ thống đã cài đặt.
+
+dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản lý một lớp có thể ghi để lưu các thay đổi của bạn, tạm thời hoặc lưu trên USB để dùng sau. Công cụ này cũng giữ lại các tệp cài đặt và hỗ trợ sửa chữa bố cục USB đã mở rộng. Dùng chung một công cụ khởi động giúp bảo trì và khắc phục sự cố cho cả hai môi trường; điều này không có nghĩa là mọi USB đều khởi động nhanh hơn.</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.\n\nDracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>USB Live cho phép bạn dùng thử môi trường desktop mà không cần cài đặt lên ổ đĩa. USB cần một môi trường khởi động để tải ảnh hệ thống đã nén. AnduinOS hiện sử dụng Dracut để tạo môi trường này, cùng công cụ với hệ thống đã cài đặt.
+
+dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản lý một lớp có thể ghi để lưu các thay đổi của bạn, tạm thời hoặc lưu trên USB để dùng sau. Công cụ này cũng giữ sẵn các tệp cài đặt và hỗ trợ sửa chữa bố cục USB đã mở rộng. Dùng chung một công cụ khởi động giúp bảo trì và khắc phục sự cố cho cả hai môi trường; điều đó không có nghĩa là mọi USB đều khởi động nhanh hơn.</value>
+  </data>
+  <data name="About this comparison" xml:space="preserve">
+    <value>Giới thiệu về phép so sánh này</value>
+  </data>
+  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
+    <value>Sau khi hoàn tất cấu hình bản cài đặt Btrfs, AnduinOS lưu một ảnh chụp hệ thống mới được bảo vệ và một ảnh chụp thư mục cá nhân ban đầu. Mở Khôi phục cài đặt gốc trong Control Panel: công cụ sẽ kiểm tra các ảnh chụp dùng để khôi phục, lưu một ảnh chụp dự phòng an toàn rồi khôi phục hệ thống ban đầu khi khởi động lại, không cần USB cài đặt. Theo mặc định, các tệp cá nhân được giữ nguyên; khôi phục trạng thái ban đầu của thư mục cá nhân là một tùy chọn riêng. Tính năng này cần các ảnh chụp ban đầu và không hoạt động trên ext4. Đây là tính năng khôi phục, không phải xóa dữ liệu an toàn để bán thiết bị.</value>
   </data>
   <data name="AMD64 + ARM64" xml:space="preserve">
     <value>AMD64 + ARM64</value>
+  </data>
+  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
+    <value>initramfs là môi trường nhỏ tải trình điều khiển và tìm hệ thống trước khi quá trình khởi động thông thường bắt đầu. Zorin sử dụng initramfs-tools từ Ubuntu 24.04 để tạo môi trường này, cùng với Casper cho môi trường Live USB. Đây là lựa chọn công cụ khởi động khác với Dracut, chứ không phải là thiếu hỗ trợ khởi động.</value>
+  </data>
+  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Có thể dùng USB cài đặt Ubuntu để cài mới hệ thống. Hãy sao lưu các tệp của bạn và kiểm tra kỹ ổ đĩa cùng các phân vùng đã chọn trước tiên. Ubuntu Core có tính năng khôi phục cài đặt gốc riêng, nhưng đây là một sản phẩm khác với phiên bản Ubuntu Desktop được so sánh ở đây.</value>
+  </data>
+  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2 dựa trên Ubuntu 26.04 LTS và nhân Linux 7.0. Nhân kết nối phần mềm với phần cứng của bạn. AnduinOS duy trì nền tảng này trong quá trình cài đặt và cập nhật thông thường, thay vì chỉ thay đổi nền tảng trong ảnh cài đặt.</value>
+  </data>
+  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50&apos;s frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
+    <value>AnduinOS kết hợp các trình điều khiển của Ubuntu 26.04 với những cải tiến về định thời khung hình của GNOME 50. Trung tâm Trình điều khiển giúp quản lý trình điều khiển, đồng thời kiểm tra Secure Boot và chữ ký DKMS. Trình điều khiển và GPU được cài đặt vẫn cần hỗ trợ các tính năng bạn muốn sử dụng.</value>
+  </data>
+  <data name="AnduinOS images and tests" xml:space="preserve">
+    <value>Ảnh ISO và các bài kiểm thử của AnduinOS</value>
+  </data>
+  <data name="AnduinOS packages and source code" xml:space="preserve">
+    <value>Các gói phần mềm và mã nguồn của AnduinOS</value>
+  </data>
+  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
+    <value>AnduinOS cung cấp các ảnh cài đặt AMD64 và ARM64. AMD64 dành cho máy tính Intel và AMD 64 bit; ARM64 thuộc một họ bộ xử lý khác. Cả hai đều được hỗ trợ trong trình cài đặt, các tệp khởi động UEFI có chữ ký và các bài kiểm thử tự động. Việc hỗ trợ ARM64 không có nghĩa là mọi thiết bị ARM đều có thể khởi động từ ảnh cài đặt.</value>
+  </data>
+  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical&apos;s online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
+    <value>AnduinOS gỡ bỏ hoặc chặn các thành phần báo cáo của Ubuntu như whoopsie, đồng thời vô hiệu hóa tin tức trực tuyến trong terminal của Canonical. Các lựa chọn này được áp dụng thông qua các gói hệ thống. Chúng liên quan đến các thành phần của hệ điều hành; các ứng dụng được cài riêng và trang web có thể có cài đặt thu thập dữ liệu riêng.</value>
+  </data>
+  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
+    <value>Trình quản lý ảnh chụp nhanh AnduinOS</value>
+  </data>
+  <data name="AnduinOS storage and recovery design" xml:space="preserve">
+    <value>Thiết kế lưu trữ và khôi phục của AnduinOS</value>
   </data>
   <data name="APKG builds AnduinOS packages from .aosproj project files. Each project records supported releases and processors, dependencies, conflicts, files, services, AppStream app information and build checks. Metapackages group these packages into the system you install. This is mainly useful to contributors maintaining or rebuilding AnduinOS." xml:space="preserve">
     <value>APKG tạo các gói AnduinOS từ các tệp dự án .aosproj. Mỗi dự án ghi lại các bản phát hành và bộ xử lý được hỗ trợ, các gói phụ thuộc, xung đột, tệp, dịch vụ, thông tin ứng dụng AppStream và các bước kiểm tra bản dựng. Các siêu gói nhóm những gói này thành hệ thống mà bạn cài đặt. Nội dung này chủ yếu hữu ích cho những người đóng góp duy trì hoặc xây dựng lại AnduinOS.</value>
@@ -41,47 +105,8 @@ dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản
   <data name="APT, Flatpak and Snap defaults" xml:space="preserve">
     <value>Mặc định về APT, Flatpak và Snap</value>
   </data>
-  <data name="About this comparison" xml:space="preserve">
-    <value>Giới thiệu về phép so sánh này</value>
-  </data>
-  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
-    <value>Sau khi hoàn tất cấu hình bản cài đặt Btrfs, AnduinOS lưu một ảnh chụp hệ thống mới được bảo vệ và một ảnh chụp thư mục cá nhân ban đầu. Mở Khôi phục cài đặt gốc trong Control Panel: công cụ sẽ kiểm tra các ảnh chụp dùng để khôi phục, lưu một ảnh chụp dự phòng an toàn rồi khôi phục hệ thống ban đầu khi khởi động lại, không cần USB cài đặt. Theo mặc định, các tệp cá nhân được giữ nguyên; khôi phục trạng thái ban đầu của thư mục cá nhân là một tùy chọn riêng. Tính năng này cần các ảnh chụp ban đầu và không hoạt động trên ext4. Đây là tính năng khôi phục, không phải xóa dữ liệu an toàn để bán thiết bị.</value>
-  </data>
-  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
-    <value>Có thể dùng USB cài đặt Ubuntu để cài mới hệ thống. Hãy sao lưu các tệp của bạn và kiểm tra kỹ ổ đĩa cùng các phân vùng đã chọn trước tiên. Ubuntu Core có tính năng khôi phục cài đặt gốc riêng, nhưng đây là một sản phẩm khác với phiên bản Ubuntu Desktop được so sánh ở đây.</value>
-  </data>
-  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
-    <value>initramfs là môi trường nhỏ tải trình điều khiển và tìm hệ thống trước khi quá trình khởi động thông thường bắt đầu. Zorin sử dụng initramfs-tools từ Ubuntu 24.04 để tạo môi trường này, cùng với Casper cho môi trường Live USB. Đây là lựa chọn công cụ khởi động khác với Dracut, chứ không phải là thiếu hỗ trợ khởi động.</value>
-  </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 dựa trên Ubuntu 26.04 LTS và nhân Linux 7.0. Nhân kết nối phần mềm với phần cứng của bạn. AnduinOS duy trì nền tảng này trong quá trình cài đặt và cập nhật thông thường, thay vì chỉ thay đổi nền tảng trong ảnh cài đặt.</value>
-  </data>
-  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
-    <value>Trình quản lý ảnh chụp nhanh AnduinOS</value>
-  </data>
-  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50's frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
-    <value>AnduinOS kết hợp các trình điều khiển của Ubuntu 26.04 với những cải tiến về định thời khung hình của GNOME 50. Trung tâm Trình điều khiển giúp quản lý trình điều khiển, đồng thời kiểm tra Secure Boot và chữ ký DKMS. Trình điều khiển và GPU được cài đặt vẫn cần hỗ trợ các tính năng bạn muốn sử dụng.</value>
-  </data>
-  <data name="AnduinOS images and tests" xml:space="preserve">
-    <value>Ảnh ISO và các bài kiểm thử của AnduinOS</value>
-  </data>
-  <data name="AnduinOS packages and source code" xml:space="preserve">
-    <value>Các gói phần mềm và mã nguồn của AnduinOS</value>
-  </data>
-  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
-    <value>AnduinOS cung cấp các ảnh cài đặt AMD64 và ARM64. AMD64 dành cho máy tính Intel và AMD 64 bit; ARM64 thuộc một họ bộ xử lý khác. Cả hai đều được hỗ trợ trong trình cài đặt, các tệp khởi động UEFI có chữ ký và các bài kiểm thử tự động. Việc hỗ trợ ARM64 không có nghĩa là mọi thiết bị ARM đều có thể khởi động từ ảnh cài đặt.</value>
-  </data>
-  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical's online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
-    <value>AnduinOS gỡ bỏ hoặc chặn các thành phần báo cáo của Ubuntu như whoopsie, đồng thời vô hiệu hóa tin tức trực tuyến trong terminal của Canonical. Các lựa chọn này được áp dụng thông qua các gói hệ thống. Chúng liên quan đến các thành phần của hệ điều hành; các ứng dụng được cài riêng và trang web có thể có cài đặt thu thập dữ liệu riêng.</value>
-  </data>
-  <data name="AnduinOS storage and recovery design" xml:space="preserve">
-    <value>Thiết kế lưu trữ và khôi phục của AnduinOS</value>
-  </data>
   <data name="Automated tests boot real installation images in QEMU virtual machines, run the installer, restart the installed system and check the desktop. QMP controls the virtual machine; AT-SPI exposes interface controls so tests can interact with them. Published results include screenshots and logs. Virtual-machine tests do not cover every physical device." xml:space="preserve">
     <value>Các bài kiểm thử tự động khởi động các ảnh cài đặt thực trong máy ảo QEMU, chạy trình cài đặt, khởi động lại hệ thống đã cài đặt và kiểm tra màn hình nền. QMP điều khiển máy ảo; AT-SPI cung cấp các điều khiển giao diện để bài kiểm thử có thể tương tác với chúng. Kết quả được công bố bao gồm ảnh chụp màn hình và nhật ký. Kiểm thử trong máy ảo không bao quát mọi thiết bị vật lý.</value>
-  </data>
-  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>Tự động xác định dung lượng Swap và kiểm tra chế độ ngủ đông</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>Tự động tạo ảnh chụp nhanh trước và sau khi thay đổi</value>
@@ -92,6 +117,9 @@ dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản
   <data name="Automatic software snapshots not confirmed" xml:space="preserve">
     <value>Chưa xác nhận có chức năng tự động tạo ảnh chụp nhanh phần mềm</value>
   </data>
+  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
+    <value>Tự động xác định dung lượng Swap và kiểm tra chế độ ngủ đông</value>
+  </data>
   <data name="Available desktop installation images" xml:space="preserve">
     <value>Các ảnh cài đặt máy tính để bàn hiện có</value>
   </data>
@@ -101,10 +129,17 @@ dmsquash-live của Dracut tải ảnh hệ thống. AnduinOS Live Layers quản
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>Dựa trên tài liệu chính thức và mã nguồn hiện có tính đến ngày 20 tháng 9 năm 2026, chủ yếu so sánh các tính năng mặc định. Chúng tôi không cài đặt từng hệ thống cạnh tranh để thực hiện so sánh này. Mở bất kỳ mục nào để xem giải thích và liên kết. “Chưa xác nhận” nghĩa là thông tin hiện có chưa đủ; các tính năng có thể khác nhau tùy phiên bản và cách thiết lập.</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.&#10;&#10;AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
+
+AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
     <value>Trước khi Linux khởi chạy giao diện màn hình, một môi trường khởi động nhỏ có tên initramfs sẽ tải trình điều khiển và tìm ổ đĩa hệ thống. Dracut tạo môi trường này.
 
 AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live USB. Gói cốt lõi của nó ngăn các gói không tương thích như initramfs-tools, Casper và finalrd được cài đặt cùng lúc. Các ảnh khởi động được tạo ra sẽ được kiểm tra, đồng thời các biện pháp bảo vệ ở cấp gói ngăn những công cụ tạo ảnh khác âm thầm thay thế chúng. Cách làm này thống nhất việc bảo trì, nhưng tự nó không đảm bảo thời gian khởi động nhanh hơn.</value>
+  </data>
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.\n\nAnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+    <value>Trước khi Linux khởi động màn hình làm việc của bạn, một môi trường khởi động nhỏ có tên initramfs sẽ tải trình điều khiển và xác định vị trí đĩa hệ thống. Dracut tạo môi trường đó.
+
+AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live USB. Gói cốt lõi của Dracut ngăn các gói initramfs-tools, Casper và finalrd không tương thích được cài đặt cùng với nó. Các ảnh khởi động được tạo ra sẽ được kiểm tra, đồng thời các biện pháp bảo vệ ở cấp gói ngăn những công cụ tạo ảnh khác âm thầm thay thế chúng. Cách làm này thống nhất việc bảo trì; bản thân nó không đảm bảo khởi động nhanh hơn.</value>
   </data>
   <data name="Browse and restore earlier file versions" xml:space="preserve">
     <value>Duyệt và khôi phục các phiên bản tệp cũ hơn</value>
@@ -130,7 +165,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Built-in system tools" xml:space="preserve">
     <value>Các công cụ hệ thống tích hợp sẵn</value>
   </data>
-  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS's QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
+  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS&apos;s QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
     <value>Canonical kiểm thử kho phần mềm, ảnh cài đặt, phần cứng và các bản phát hành trên quy mô lớn. Các hệ thống kiểm thử và báo cáo của Canonical khác với các bài kiểm thử trình cài đặt và máy tính để bàn dựa trên QEMU của AnduinOS. Phép so sánh này nói về các báo cáo hiện có, không khẳng định rằng một khung kiểm thử duy nhất bao quát mọi khía cạnh chất lượng.</value>
   </data>
   <data name="Checking space and resume settings" xml:space="preserve">
@@ -139,7 +174,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Chọn một bản phân phối để so sánh</value>
   </data>
-  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME's HDR or scaling features apply to Cinnamon." xml:space="preserve">
+  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME&apos;s HDR or scaling features apply to Cinnamon." xml:space="preserve">
     <value>Cinnamon 6.6 trên Mint 22.3 chủ yếu sử dụng môi trường máy tính để bàn X11 đã ổn định. Hỗ trợ Wayland vẫn đang trong giai đoạn thử nghiệm, và dự kiến sẽ tiếp tục được cải thiện trong bản phát hành tiếp theo. Không nên cho rằng các tính năng HDR hoặc điều chỉnh tỷ lệ của GNOME cũng áp dụng cho Cinnamon.</value>
   </data>
   <data name="Cinnamon and XApp tools" xml:space="preserve">
@@ -193,6 +228,15 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Explore {0} more features" xml:space="preserve">
     <value>Khám phá thêm {0} tính năng</value>
   </data>
+  <data name="ext4 by default" xml:space="preserve">
+    <value>ext4 theo mặc định</value>
+  </data>
+  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
+    <value>Mặc định dùng ext4; có thể chọn Btrfs</value>
+  </data>
+  <data name="ext4 by default; other setups possible" xml:space="preserve">
+    <value>ext4 theo mặc định; có thể thiết lập theo cách khác</value>
+  </data>
   <data name="Extensive image and release testing" xml:space="preserve">
     <value>Kiểm thử toàn diện các bản cài đặt và phiên bản phát hành</value>
   </data>
@@ -211,7 +255,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Finding and restoring earlier file versions" xml:space="preserve">
     <value>Tìm và khôi phục các phiên bản tệp trước đây</value>
   </data>
-  <data name="Follows Ubuntu 24.04's GNOME" xml:space="preserve">
+  <data name="Follows Ubuntu 24.04&apos;s GNOME" xml:space="preserve">
     <value>Theo GNOME của Ubuntu 24.04</value>
   </data>
   <data name="Follows Ubuntu memory management" xml:space="preserve">
@@ -219,6 +263,12 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   </data>
   <data name="From everyday apps to system recovery, compare the features that help you feel at home and stay in control." xml:space="preserve">
     <value>Từ các ứng dụng hằng ngày đến khôi phục hệ thống, hãy so sánh những tính năng giúp bạn cảm thấy thân thuộc và luôn chủ động.</value>
+  </data>
+  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
+    <value>Thiết lập bộ nhớ và Swap mặc định cho mục đích chung</value>
+  </data>
+  <data name="Getting back to a working system" xml:space="preserve">
+    <value>Khôi phục hệ thống hoạt động bình thường</value>
   </data>
   <data name="GNOME 50 brings HDR screen sharing, updated color management, improved variable refresh rate and fractional scaling. HDR supports a wider brightness range; VRR adjusts refresh timing; fractional scaling makes content fit high-resolution screens. Availability depends on the display, graphics driver and application." xml:space="preserve">
     <value>GNOME 50 mang đến khả năng chia sẻ màn hình HDR, quản lý màu được cập nhật, tốc độ làm mới biến thiên được cải thiện và tỷ lệ thu phóng phân số. HDR hỗ trợ dải độ sáng rộng hơn; VRR điều chỉnh thời điểm làm mới; tỷ lệ thu phóng phân số giúp nội dung phù hợp với màn hình độ phân giải cao. Tính khả dụng phụ thuộc vào màn hình, trình điều khiển đồ họa và ứng dụng.</value>
@@ -238,23 +288,17 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="GTK4 across our graphical system tools" xml:space="preserve">
     <value>GTK4 trên các công cụ hệ thống có giao diện đồ họa của chúng tôi</value>
   </data>
-  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Thiết lập bộ nhớ và Swap mặc định cho mục đích chung</value>
-  </data>
-  <data name="Getting back to a working system" xml:space="preserve">
-    <value>Khôi phục hệ thống hoạt động bình thường</value>
-  </data>
   <data name="HDR, variable refresh rate and scaling" xml:space="preserve">
     <value>HDR, tốc độ làm tươi biến đổi và tỷ lệ hiển thị</value>
   </data>
   <data name="Hibernation check app not confirmed" xml:space="preserve">
     <value>Chưa xác nhận có ứng dụng kiểm tra chế độ ngủ đông</value>
   </data>
-  <data name="How Swap Control works" xml:space="preserve">
-    <value>Cách Swap Control hoạt động</value>
-  </data>
   <data name="How apps display windows on your screen" xml:space="preserve">
     <value>Cách các ứng dụng hiển thị cửa sổ trên màn hình của bạn</value>
+  </data>
+  <data name="How Swap Control works" xml:space="preserve">
+    <value>Cách Swap Control hoạt động</value>
   </data>
   <data name="How system packages are built and organized" xml:space="preserve">
     <value>Cách xây dựng và tổ chức các gói hệ thống</value>
@@ -267,6 +311,9 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   </data>
   <data name="Information as of 20 September 2026" xml:space="preserve">
     <value>Thông tin tính đến ngày 20 tháng 9 năm 2026</value>
+  </data>
+  <data name="initramfs-tools and Casper" xml:space="preserve">
+    <value>initramfs-tools và Casper</value>
   </data>
   <data name="Installation, startup and desktop checks" xml:space="preserve">
     <value>Kiểm tra quá trình cài đặt, khởi động và giao diện máy tính</value>
@@ -313,12 +360,6 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Mint 22.3 uses the Ubuntu 24.04 generation of initramfs and Live tools. These prepare the drivers and files needed before the desktop starts. The reviewed sources do not describe a default migration to Dracut across both installed and Live systems." xml:space="preserve">
     <value>Mint 22.3 sử dụng thế hệ công cụ initramfs và Live của Ubuntu 24.04. Các công cụ này chuẩn bị trình điều khiển và những tệp cần thiết trước khi màn hình nền khởi chạy. Các nguồn đã xem xét không đề cập đến việc mặc định chuyển sang Dracut trên cả hệ thống đã cài đặt lẫn hệ thống Live.</value>
   </data>
-  <data name="Mint Live USB environment" xml:space="preserve">
-    <value>Môi trường Live USB của Mint</value>
-  </data>
-  <data name="Mint Wayland development updates" xml:space="preserve">
-    <value>Các bản cập nhật phát triển Wayland của Mint</value>
-  </data>
   <data name="Mint defaults to ext4 but allows Btrfs. Timeshift can use Btrfs snapshots with a suitable layout. Choosing Btrfs alone does not set up the same separation of system files and recovery data used by AnduinOS." xml:space="preserve">
     <value>Mint mặc định sử dụng ext4 nhưng cũng cho phép dùng Btrfs. Timeshift có thể sử dụng ảnh chụp nhanh Btrfs nếu bố cục phù hợp. Chỉ chọn Btrfs thôi sẽ không thiết lập cách phân tách tệp hệ thống và dữ liệu khôi phục như AnduinOS.</value>
   </data>
@@ -337,26 +378,29 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Mint images for newer hardware" xml:space="preserve">
     <value>Các bản ISO Mint dành cho phần cứng mới hơn</value>
   </data>
-  <data name="Mint inherits Ubuntu's signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
+  <data name="Mint inherits Ubuntu&apos;s signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
     <value>Mint kế thừa các thành phần bộ nạp khởi động và nhân được Ubuntu ký. Nhờ đó, các máy được hỗ trợ có thể khởi động khi bật Secure Boot. Mint cũng hướng dẫn cách khắc phục các lỗi vi phạm Secure Boot; khả năng tương thích của trình điều khiển và chương trình cơ sở vẫn rất quan trọng.</value>
   </data>
-  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint's software policy rather than an inability to run Snap at all." xml:space="preserve">
+  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint&apos;s software policy rather than an inability to run Snap at all." xml:space="preserve">
     <value>Mint tích hợp APT và Flatpak, đồng thời mặc định chặn Snap. Người dùng có thể chủ động thay đổi cài đặt đó để bật Snap. Thiết lập mặc định này phản ánh chính sách phần mềm của Mint, chứ không phải do Mint hoàn toàn không thể chạy Snap.</value>
+  </data>
+  <data name="Mint Live USB environment" xml:space="preserve">
+    <value>Môi trường Live USB của Mint</value>
   </data>
   <data name="Mint maintains Cinnamon and XApp tools with their own interface design. Major administration tools mainly use GTK3 and XApp. GTK4 applications can still run; the toolkit used by a settings app does not determine which apps users can install." xml:space="preserve">
     <value>Mint duy trì các công cụ Cinnamon và XApp với thiết kế giao diện riêng. Các công cụ quản trị chính chủ yếu sử dụng GTK3 và XApp. Các ứng dụng GTK4 vẫn có thể chạy; bộ công cụ giao diện mà ứng dụng cài đặt sử dụng không quyết định những ứng dụng người dùng có thể cài đặt.</value>
   </data>
-  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS's Dracut Live Layers." xml:space="preserve">
+  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS&apos;s Dracut Live Layers." xml:space="preserve">
     <value>Mint cung cấp một môi trường máy tính để bàn mà bạn có thể dùng thử từ USB mà không cần cài đặt vào ổ đĩa. Các công cụ Live của Mint dựa trên nền tảng Ubuntu 24.04. Để lưu các thay đổi qua những lần khởi động lại, cần thiết lập lưu trữ liên tục phù hợp; các nguồn đã xem xét không đề cập đến việc chuyển sang Dracut Live Layers của AnduinOS.</value>
   </data>
-  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS's declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
+  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS&apos;s declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
     <value>Mint cung cấp công cụ cài đặt đồ họa quen thuộc của mình. Người dùng chọn các tùy chọn thông qua giao diện để cài đặt hệ thống. Thiết kế này khác với kế hoạch khai báo và bộ thực thi riêng của AnduinOS; chỉ riêng việc kiến trúc khác biệt không có nghĩa là trình cài đặt không an toàn.</value>
-  </data>
-  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint cung cấp các chức năng Swap và ngủ đông tiêu chuẩn của Linux. Tài liệu được xem xét không xác nhận có ứng dụng tích hợp để kiểm tra đồng thời dung lượng và khả năng tiếp tục hoạt động sau khi khôi phục. Khả năng sử dụng vẫn phụ thuộc vào máy tính và cấu hình của máy.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
     <value>Mint cung cấp khả năng quản lý bộ nhớ Linux tiêu chuẩn và hỗ trợ Swap. Tài liệu phát hành được xem xét không xác nhận có ứng dụng tích hợp nào kết hợp bộ nhớ nén, kiểm tra tải và kiểm tra chế độ ngủ đông trong một giao diện duy nhất.</value>
+  </data>
+  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
+    <value>Mint cung cấp các chức năng Swap và ngủ đông tiêu chuẩn của Linux. Tài liệu được xem xét không xác nhận có ứng dụng tích hợp để kiểm tra đồng thời dung lượng và khả năng tiếp tục hoạt động sau khi khôi phục. Khả năng sử dụng vẫn phụ thuộc vào máy tính và cấu hình của máy.</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint khuyến nghị tạo một ảnh chụp nhanh bằng Timeshift trước khi nâng cấp phiên bản, để bạn có thể khôi phục hệ thống về trạng thái trước đó nếu cần. Biện pháp bảo vệ thủ công này khác với việc tự động tạo ảnh chụp nhanh trước và sau mỗi thao tác với gói APT.</value>
@@ -367,8 +411,14 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Mint uses Debian packages, metapackages that group dependencies, and its own project tools to build the desktop. This is an established way to organize a distribution; using a different project format does not imply missing user features." xml:space="preserve">
     <value>Mint sử dụng các gói Debian, các siêu gói để nhóm các gói phụ thuộc và các công cụ dự án riêng để xây dựng môi trường máy tính để bàn. Đây là cách tổ chức một bản phân phối đã được áp dụng rộng rãi; việc sử dụng định dạng dự án khác không có nghĩa là thiếu các tính năng dành cho người dùng.</value>
   </data>
+  <data name="Mint Wayland development updates" xml:space="preserve">
+    <value>Các bản cập nhật phát triển Wayland của Mint</value>
+  </data>
   <data name="More than a familiar desktop" xml:space="preserve">
     <value>Không chỉ là một giao diện máy tính quen thuộc</value>
+  </data>
+  <data name="Not confirmed" xml:space="preserve">
+    <value>Chưa được xác nhận</value>
   </data>
   <data name="NVIDIA drivers; Xorg available" xml:space="preserve">
     <value>Trình điều khiển NVIDIA; có Xorg</value>
@@ -379,20 +429,17 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="NVIDIA supported on Wayland" xml:space="preserve">
     <value>NVIDIA được hỗ trợ trên Wayland</value>
   </data>
-  <data name="Not confirmed" xml:space="preserve">
-    <value>Chưa được xác nhận</value>
-  </data>
   <data name="Official x86-64 images" xml:space="preserve">
     <value>Ảnh x86-64 chính thức</value>
   </data>
   <data name="On Btrfs, AnduinOS creates system snapshots around APT software changes and makes recovery available through the boot menu. Dracut, GRUB and the snapshot manager work together to restore the selected state and confirm a successful boot before cleanup. Snapshots on the same disk do not replace an external backup against disk failure." xml:space="preserve">
     <value>Trên Btrfs, AnduinOS tạo các ảnh chụp nhanh hệ thống trước và sau những thay đổi phần mềm qua APT, đồng thời cho phép khôi phục thông qua trình đơn khởi động. Dracut, GRUB và trình quản lý ảnh chụp nhanh phối hợp để khôi phục trạng thái đã chọn và xác nhận khởi động thành công trước khi dọn dẹp. Ảnh chụp nhanh trên cùng một ổ đĩa không thể thay thế bản sao lưu bên ngoài để phòng trường hợp ổ đĩa bị hỏng.</value>
   </data>
+  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system&apos;s retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
+    <value>Trên Btrfs, các hook trong APT tạo ảnh chụp nhanh trước và sau khi cài đặt, cập nhật hoặc gỡ bỏ các gói hệ thống. Mỗi ảnh chụp nhanh ghi lại trạng thái gói và tuân theo các thiết lập lưu giữ và khôi phục của hệ thống. Cách này bảo vệ các thay đổi qua APT; điều đó không có nghĩa là mọi thay đổi đối với Flatpak hoặc tệp cá nhân đều tạo ra ảnh chụp nhanh hệ thống.</value>
+  </data>
   <data name="On Btrfs, Personal Files snapshots keep home-folder history separately from system snapshots. Snapshot Manager and the Files integration let you browse older versions and restore selected files without rolling back the operating system. Files changed after the latest snapshot may not have a saved version; keep external backups for disk failure." xml:space="preserve">
     <value>Trên Btrfs, các ảnh chụp nhanh Personal Files lưu lịch sử thư mục nhà riêng biệt với ảnh chụp nhanh hệ thống. Snapshot Manager và tính năng tích hợp với Files cho phép bạn duyệt các phiên bản cũ hơn và khôi phục những tệp đã chọn mà không cần quay lui hệ điều hành. Các tệp được thay đổi sau lần chụp nhanh gần nhất có thể chưa có phiên bản được lưu; hãy duy trì bản sao lưu bên ngoài để phòng trường hợp ổ đĩa bị hỏng.</value>
-  </data>
-  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system's retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
-    <value>Trên Btrfs, các hook trong APT tạo ảnh chụp nhanh trước và sau khi cài đặt, cập nhật hoặc gỡ bỏ các gói hệ thống. Mỗi ảnh chụp nhanh ghi lại trạng thái gói và tuân theo các thiết lập lưu giữ và khôi phục của hệ thống. Cách này bảo vệ các thay đổi qua APT; điều đó không có nghĩa là mọi thay đổi đối với Flatpak hoặc tệp cá nhân đều tạo ra ảnh chụp nhanh hệ thống.</value>
   </data>
   <data name="Our system" xml:space="preserve">
     <value>Hệ thống của chúng tôi</value>
@@ -499,22 +546,22 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="System telemetry components disabled" xml:space="preserve">
     <value>Các thành phần đo từ xa của hệ thống đã bị vô hiệu hóa</value>
   </data>
-  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
+  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS&apos;s own graphical system tools, not every third-party application." xml:space="preserve">
     <value>Trình cài đặt, Bảng điều khiển, ứng dụng Giao diện, phần thiết lập lần đầu, Trung tâm trình điều khiển, Bộ công cụ Secure Boot, Công cụ quản lý Swap và Trình quản lý ảnh chụp nhanh đều sử dụng GTK4 và libadwaita. Các thư viện giao diện này giúp các nút điều khiển và cách thay đổi kích thước nhất quán hơn. Điều này chỉ áp dụng cho các công cụ hệ thống có giao diện đồ họa của AnduinOS, không áp dụng cho mọi ứng dụng bên thứ ba.</value>
   </data>
-  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
-    <value>Tài liệu Zorin đã được xem xét không xác nhận rằng hệ thống mặc định tạo ảnh chụp nhanh trước và sau mỗi thay đổi phần mềm bằng APT. Người dùng có thể tự cấu hình các công cụ sao lưu riêng. Nội dung này mô tả tính năng tự động được tích hợp mà chúng tôi có thể xác minh, chứ không phải việc sao lưu có khả thi hay không.</value>
-  </data>
-  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin's filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
+  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin&apos;s filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
     <value>Các nguồn đã xem xét không xác nhận rằng Zorin có sẵn tính năng lưu lịch sử phiên bản tệp được tích hợp với hệ thống tệp và trình quản lý tệp. Các ứng dụng sao lưu riêng có thể cung cấp những cách khác để bảo vệ các tệp cá nhân.</value>
   </data>
   <data name="The reviewed sources do not establish an equivalent package-level block on Ubuntu reporting components and online terminal news. That is not enough to conclude whether Zorin collects personal data. Check its privacy information and the settings of the applications you use." xml:space="preserve">
     <value>Các nguồn đã xem xét không xác nhận có biện pháp chặn tương đương ở cấp gói đối với các thành phần báo cáo của Ubuntu và tin tức trực tuyến trong thiết bị đầu cuối. Điều đó chưa đủ để kết luận liệu Zorin có thu thập dữ liệu cá nhân hay không. Hãy xem thông tin về quyền riêng tư của Zorin và cài đặt của các ứng dụng bạn sử dụng.</value>
   </data>
+  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
+    <value>Tài liệu Zorin đã được xem xét không xác nhận rằng hệ thống mặc định tạo ảnh chụp nhanh trước và sau mỗi thay đổi phần mềm bằng APT. Người dùng có thể tự cấu hình các công cụ sao lưu riêng. Nội dung này mô tả tính năng tự động được tích hợp mà chúng tôi có thể xác minh, chứ không phải việc sao lưu có khả thi hay không.</value>
+  </data>
   <data name="Timeshift can restore a system snapshot you previously created. Returning to a freshly installed state requires a suitable saved snapshot or a reinstall. A routine system snapshot is not necessarily a protected copy of the original installation, and personal files require separate care." xml:space="preserve">
     <value>Timeshift có thể khôi phục ảnh chụp nhanh hệ thống mà bạn đã tạo trước đó. Để trở về trạng thái mới cài đặt, cần có ảnh chụp nhanh đã lưu phù hợp hoặc phải cài đặt lại. Ảnh chụp nhanh hệ thống thông thường không nhất thiết là bản sao được bảo vệ của hệ thống lúc mới cài đặt, và cần có biện pháp riêng để bảo vệ các tệp cá nhân.</value>
   </data>
-  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS's integration with software changes and startup confirmation." xml:space="preserve">
+  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS&apos;s integration with software changes and startup confirmation." xml:space="preserve">
     <value>Timeshift tạo các ảnh chụp hệ thống, hỗ trợ lập lịch và quản lý số lượng ảnh chụp được lưu giữ. Bạn có thể dùng Timeshift để khôi phục hệ thống về trạng thái trước đó. Quy trình khôi phục của Timeshift khác với cách AnduinOS tích hợp việc khôi phục với các thay đổi phần mềm và xác nhận khởi động thành công.</value>
   </data>
   <data name="Timeshift is designed to restore system state, not serve as a personal-file backup tool. Use a separate backup method for documents and other personal data. The presence of system snapshots should not be mistaken for saved versions of your files." xml:space="preserve">
@@ -526,23 +573,23 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Trying the desktop without installing it" xml:space="preserve">
     <value>Dùng thử giao diện máy tính mà không cần cài đặt</value>
   </data>
-  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
-    <value>Các công cụ khởi động của Ubuntu 24.04</value>
-  </data>
   <data name="Ubuntu 24.04 · Linux 6.14 or 7.0 HWE" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.14 hoặc 7.0 HWE</value>
   </data>
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS cung cấp nhân Linux 7.0 và năm năm bảo trì LTS tiêu chuẩn. LTS có nghĩa là hỗ trợ dài hạn. Đây là bản phát hành Ubuntu làm nền tảng cho AnduinOS 2.</value>
+  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
+    <value>Các công cụ khởi động của Ubuntu 24.04</value>
+  </data>
+  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
+    <value>Ubuntu 26.04 liệt kê card đồ họa NVIDIA là được hỗ trợ trong phiên máy tính để bàn Wayland. Hãy sử dụng trình điều khiển phù hợp với GPU của bạn; việc hỗ trợ môi trường máy tính để bàn không đảm bảo mọi tính năng đều hoạt động trên mọi card đồ họa.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>
   </data>
-  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
-    <value>Ubuntu 26.04 liệt kê card đồ họa NVIDIA là được hỗ trợ trong phiên máy tính để bàn Wayland. Hãy sử dụng trình điều khiển phù hợp với GPU của bạn; việc hỗ trợ môi trường máy tính để bàn không đảm bảo mọi tính năng đều hoạt động trên mọi card đồ họa.</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS cung cấp nhân Linux 7.0 và năm năm bảo trì LTS tiêu chuẩn. LTS có nghĩa là hỗ trợ dài hạn. Đây là bản phát hành Ubuntu làm nền tảng cho AnduinOS 2.</value>
   </data>
   <data name="Ubuntu 26.04 offers official desktop downloads for AMD64 and ARM64. Select the image for your processor and check device compatibility: support for an architecture does not guarantee support for every machine using it." xml:space="preserve">
     <value>Ubuntu 26.04 cung cấp bản tải xuống chính thức dành cho máy tính để bàn với AMD64 và ARM64. Hãy chọn tệp ảnh phù hợp với bộ xử lý của bạn và kiểm tra khả năng tương thích của thiết bị: hỗ trợ một kiến trúc không đảm bảo mọi máy sử dụng kiến trúc đó đều được hỗ trợ.</value>
@@ -556,7 +603,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Ubuntu 26.04 ships GNOME 50 with its Wayland display improvements, including optimized fractional scaling. HDR, variable refresh rate and color-management features depend on compatible graphics hardware, drivers, displays and applications." xml:space="preserve">
     <value>Ubuntu 26.04 đi kèm GNOME 50 với những cải tiến hiển thị trên Wayland, bao gồm khả năng điều chỉnh tỷ lệ phân số được tối ưu hóa. Các tính năng HDR, tốc độ làm mới biến thiên và quản lý màu phụ thuộc vào phần cứng đồ họa, trình điều khiển, màn hình và ứng dụng tương thích.</value>
   </data>
-  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system's initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
+  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system&apos;s initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
     <value>Ubuntu 26.04 mặc định sử dụng Dracut để tạo initramfs cho hệ thống đã cài đặt, môi trường nhỏ được dùng trong giai đoạn khởi động ban đầu. initramfs-tools vẫn được hỗ trợ. USB cài đặt là trường hợp riêng: môi trường Live trên đó vẫn sử dụng initramfs-tools và Casper.</value>
   </data>
   <data name="Ubuntu Core recovery options" xml:space="preserve">
@@ -568,17 +615,14 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Ubuntu Desktop installation guide" xml:space="preserve">
     <value>Hướng dẫn cài đặt Ubuntu Desktop</value>
   </data>
-  <data name="Ubuntu Live image build notes" xml:space="preserve">
-    <value>Ghi chú về quá trình xây dựng ảnh Ubuntu Live</value>
-  </data>
-  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
-    <value>Tài liệu về Khởi động an toàn của Ubuntu</value>
-  </data>
   <data name="Ubuntu includes diagnostic and online-service components whose controls depend on the release. Review the privacy options offered during setup and in system settings. These defaults differ from removing or blocking the components in AnduinOS." xml:space="preserve">
     <value>Ubuntu bao gồm các thành phần chẩn đoán và dịch vụ trực tuyến, với các tùy chọn kiểm soát tùy thuộc vào từng phiên bản phát hành. Hãy xem các tùy chọn quyền riêng tư được cung cấp trong quá trình thiết lập và trong phần cài đặt hệ thống. Các thiết lập mặc định này khác với việc gỡ bỏ hoặc chặn các thành phần đó trong AnduinOS.</value>
   </data>
   <data name="Ubuntu includes modern GNOME applications using GTK4 and libadwaita. Its installer and other Ubuntu-specific tools also use different technologies, so not every system interface is built with the same toolkit." xml:space="preserve">
     <value>Ubuntu bao gồm các ứng dụng GNOME hiện đại sử dụng GTK4 và libadwaita. Trình cài đặt cùng các công cụ dành riêng cho Ubuntu cũng sử dụng những công nghệ khác, vì vậy không phải mọi giao diện hệ thống đều được xây dựng bằng cùng một bộ công cụ.</value>
+  </data>
+  <data name="Ubuntu Live image build notes" xml:space="preserve">
+    <value>Ghi chú về quá trình xây dựng ảnh Ubuntu Live</value>
   </data>
   <data name="Ubuntu offers backup applications and filesystem tools. The reviewed default desktop setup does not confirm the same integrated file-history feature in the file manager. Personal backups can still be configured separately." xml:space="preserve">
     <value>Ubuntu cung cấp các ứng dụng sao lưu và công cụ hệ thống tệp. Các nguồn đã xem xét không xác nhận rằng cấu hình máy tính để bàn mặc định có tích hợp tính năng lưu lịch sử phiên bản tệp tương tự trong trình quản lý tệp. Bạn vẫn có thể thiết lập riêng việc sao lưu dữ liệu cá nhân.</value>
@@ -589,35 +633,38 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Ubuntu provides the underlying kernel and installation tools for Swap. The reviewed desktop setup does not confirm a built-in app combining Swap sizing and hibernation diagnostics. Check hardware support and resume configuration before relying on hibernation." xml:space="preserve">
     <value>Ubuntu cung cấp nhân hệ điều hành và các công cụ cài đặt nền tảng cho Swap. Cấu hình Ubuntu Desktop được xem xét không xác nhận có ứng dụng tích hợp nào kết hợp việc tính toán dung lượng Swap với chẩn đoán chế độ ngủ đông. Hãy kiểm tra khả năng hỗ trợ của phần cứng và cấu hình khôi phục trước khi dựa vào chế độ ngủ đông.</value>
   </data>
-  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
+  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
+    <value>Tài liệu về Khởi động an toàn của Ubuntu</value>
+  </data>
+  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS&apos;s combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
     <value>Ubuntu cung cấp các tính năng quản lý bộ nhớ Linux và Swap với cấu hình mặc định dành cho máy tính để bàn thông thường. Cấu hình mặc định này khác với sự kết hợp giữa Zram được thiết lập sẵn, phân vùng Swap riêng và công cụ quản lý giao diện đồ họa của AnduinOS.</value>
   </data>
   <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
     <value>Ubuntu hỗ trợ các công cụ sao lưu và tạo ảnh chụp hệ thống tùy chọn. Tài liệu đã xem xét về cấu hình máy tính để bàn mặc định của Ubuntu không xác nhận việc tự động tạo ảnh chụp hệ thống trước và sau mỗi thao tác APT. Bạn có thể tự thiết lập quy trình sao lưu trước khi thay đổi phần mềm hệ thống.</value>
   </data>
-  <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
-    <value>Ubuntu sử dụng APT cho các gói hệ thống và Snap cho một phần ứng dụng được cung cấp mặc định. Có thể cài đặt Flatpak riêng, nhưng Flatpak không được tích hợp làm phương thức cài đặt ứng dụng mặc định trên máy tính để bàn.</value>
-  </data>
   <data name="Ubuntu uses a Microsoft-signed shim to start Canonical-signed GRUB and kernels on AMD64 and ARM64. MOK enrollment lets users trust additional certificates, and DKMS signing supports locally built drivers. These components form the chain checked during Secure Boot." xml:space="preserve">
     <value>Ubuntu sử dụng shim được Microsoft ký để khởi chạy GRUB và nhân Linux được Canonical ký trên AMD64 và ARM64. Việc đăng ký MOK cho phép người dùng tin cậy các chứng chỉ bổ sung, còn việc ký DKMS hỗ trợ các trình điều khiển được biên dịch cục bộ. Các thành phần này tạo thành chuỗi được kiểm tra trong quá trình Khởi động an toàn.</value>
   </data>
-  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS's package projects." xml:space="preserve">
+  <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
+    <value>Ubuntu sử dụng APT cho các gói hệ thống và Snap cho một phần ứng dụng được cung cấp mặc định. Có thể cài đặt Flatpak riêng, nhưng Flatpak không được tích hợp làm phương thức cài đặt ứng dụng mặc định trên máy tính để bàn.</value>
+  </data>
+  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS&apos;s package projects." xml:space="preserve">
     <value>Ubuntu sử dụng các seed để lựa chọn gói, các siêu gói để nhóm các phụ thuộc và hạ tầng kho lưu trữ với các bài kiểm thử tự động. Những thành phần này giúp tổ chức và xác thực phần mềm trên nhiều ảnh hệ thống và thiết bị. Bộ công cụ này hoạt động ở quy mô lớn hơn rất nhiều so với các dự án gói phần mềm của AnduinOS.</value>
   </data>
   <data name="Ubuntu version and Linux kernel" xml:space="preserve">
     <value>Phiên bản Ubuntu và nhân Linux</value>
   </data>
-  <data name="Ubuntu's desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS's GTK4 interface and typed installation plan." xml:space="preserve">
-    <value>Trình cài đặt trên máy tính để bàn của Ubuntu sử dụng giao diện Flutter cùng một phần phụ trợ riêng để thực hiện quá trình cài đặt. Công cụ này mang đến trải nghiệm thiết lập đồ họa hiện đại. Cách triển khai này khác với giao diện GTK4 và kế hoạch cài đặt có kiểu dữ liệu của AnduinOS.</value>
-  </data>
-  <data name="Ubuntu's guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS's Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
-    <value>Trình cài đặt máy tính để bàn có hướng dẫn của Ubuntu mặc định sử dụng ext4. Có thể cấu hình các bố cục hệ thống tệp khác. Cấu hình máy tính để bàn mặc định của Ubuntu không cung cấp bố cục phân vùng con Btrfs và khả năng tích hợp khôi phục như AnduinOS.</value>
+  <data name="Ubuntu-based graphical installer" xml:space="preserve">
+    <value>Trình cài đặt đồ họa dựa trên Ubuntu</value>
   </data>
   <data name="Ubuntu-based Live USB tools" xml:space="preserve">
     <value>Các công cụ Live USB dựa trên Ubuntu</value>
   </data>
-  <data name="Ubuntu-based graphical installer" xml:space="preserve">
-    <value>Trình cài đặt đồ họa dựa trên Ubuntu</value>
+  <data name="Ubuntu&apos;s desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS&apos;s GTK4 interface and typed installation plan." xml:space="preserve">
+    <value>Trình cài đặt trên máy tính để bàn của Ubuntu sử dụng giao diện Flutter cùng một phần phụ trợ riêng để thực hiện quá trình cài đặt. Công cụ này mang đến trải nghiệm thiết lập đồ họa hiện đại. Cách triển khai này khác với giao diện GTK4 và kế hoạch cài đặt có kiểu dữ liệu của AnduinOS.</value>
+  </data>
+  <data name="Ubuntu&apos;s guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS&apos;s Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
+    <value>Trình cài đặt máy tính để bàn có hướng dẫn của Ubuntu mặc định sử dụng ext4. Có thể cấu hình các bố cục hệ thống tệp khác. Cấu hình máy tính để bàn mặc định của Ubuntu không cung cấp bố cục phân vùng con Btrfs và khả năng tích hợp khôi phục như AnduinOS.</value>
   </data>
   <data name="Uses Ubuntu Secure Boot" xml:space="preserve">
     <value>Sử dụng Secure Boot của Ubuntu</value>
@@ -652,7 +699,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="What happens when RAM fills up" xml:space="preserve">
     <value>Điều gì xảy ra khi RAM đầy</value>
   </data>
-  <data name="What's new in GNOME 50" xml:space="preserve">
+  <data name="What&apos;s new in GNOME 50" xml:space="preserve">
     <value>Có gì mới trong GNOME 50</value>
   </data>
   <data name="X11 by default; Wayland experimental" xml:space="preserve">
@@ -660,21 +707,6 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   </data>
   <data name="You can return to a fresh Zorin installation using an installation USB. Back up personal files first and review the disk choices carefully. This is a reinstall, rather than restoring an installation-time snapshot through the AnduinOS reset tool." xml:space="preserve">
     <value>Bạn có thể cài đặt mới Zorin bằng USB cài đặt. Trước tiên, hãy sao lưu các tệp cá nhân và kiểm tra kỹ các lựa chọn về ổ đĩa. Đây là cài đặt lại, không phải khôi phục ảnh chụp nhanh được tạo trong quá trình cài đặt bằng công cụ đặt lại của AnduinOS.</value>
-  </data>
-  <data name="Zorin NVIDIA driver help" xml:space="preserve">
-    <value>Trợ giúp về trình điều khiển NVIDIA trên Zorin</value>
-  </data>
-  <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
-    <value>Zorin OS 18.1 cung cấp các ảnh cài đặt máy tính để bàn dành cho bộ xử lý Intel và AMD 64-bit, còn được gọi là x86-64 hoặc AMD64. Các bản tải xuống chính thức không có ảnh máy tính để bàn ARM64.</value>
-  </data>
-  <data name="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50." xml:space="preserve">
-    <value>Zorin OS 18.1 sử dụng Ubuntu 24.04 LTS và Linux 6.17. Môi trường máy tính để bàn và phần mềm hệ thống của phiên bản này dựa trên nền tảng Ubuntu 24.04; kernel mới hơn không đồng nghĩa với việc có các tính năng máy tính để bàn của Ubuntu 26.04 hoặc GNOME 50.</value>
-  </data>
-  <data name="Zorin OS specifications" xml:space="preserve">
-    <value>Thông số kỹ thuật của Zorin OS</value>
-  </data>
-  <data name="Zorin Windows App Support" xml:space="preserve">
-    <value>Hỗ trợ ứng dụng Windows của Zorin</value>
   </data>
   <data name="Zorin combines GNOME applications and extensions with its own tools on the Ubuntu 24.04 base. These use a mix of interface technologies rather than one GTK4/libadwaita toolkit across all system tools." xml:space="preserve">
     <value>Zorin kết hợp các ứng dụng và tiện ích mở rộng của GNOME với những công cụ riêng, trên nền tảng Ubuntu 24.04. Các thành phần này sử dụng nhiều công nghệ giao diện khác nhau, thay vì dùng chung một bộ công cụ GTK4/libadwaita cho tất cả công cụ hệ thống.</value>
@@ -685,13 +717,25 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Zorin lets you try its desktop from a USB before installing. Its Live environment uses the Ubuntu-derived Casper and initramfs-tools approach. Persistent storage saves changes across boots when configured; it is separate from simply being able to start a Live session." xml:space="preserve">
     <value>Zorin cho phép bạn dùng thử môi trường desktop từ USB trước khi cài đặt. Môi trường Live sử dụng giải pháp Casper và initramfs-tools bắt nguồn từ Ubuntu. Khi được cấu hình, bộ nhớ lưu trữ liên tục sẽ lưu các thay đổi qua nhiều lần khởi động; tính năng này riêng biệt với khả năng khởi chạy một phiên Live.</value>
   </data>
+  <data name="Zorin NVIDIA driver help" xml:space="preserve">
+    <value>Trợ giúp về trình điều khiển NVIDIA trên Zorin</value>
+  </data>
   <data name="Zorin offers a Live boot option for modern NVIDIA hardware and tools to install proprietary drivers. Its troubleshooting guidance also covers switching to Xorg or changing Secure Boot settings when a driver does not work." xml:space="preserve">
     <value>Zorin cung cấp tùy chọn khởi động Live cho phần cứng NVIDIA đời mới và các công cụ để cài đặt trình điều khiển độc quyền. Hướng dẫn khắc phục sự cố cũng đề cập đến việc chuyển sang Xorg hoặc thay đổi cài đặt Secure Boot khi trình điều khiển không hoạt động.</value>
+  </data>
+  <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
+    <value>Zorin OS 18.1 cung cấp các ảnh cài đặt máy tính để bàn dành cho bộ xử lý Intel và AMD 64-bit, còn được gọi là x86-64 hoặc AMD64. Các bản tải xuống chính thức không có ảnh máy tính để bàn ARM64.</value>
+  </data>
+  <data name="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50." xml:space="preserve">
+    <value>Zorin OS 18.1 sử dụng Ubuntu 24.04 LTS và Linux 6.17. Môi trường máy tính để bàn và phần mềm hệ thống của phiên bản này dựa trên nền tảng Ubuntu 24.04; kernel mới hơn không đồng nghĩa với việc có các tính năng máy tính để bàn của Ubuntu 26.04 hoặc GNOME 50.</value>
+  </data>
+  <data name="Zorin OS specifications" xml:space="preserve">
+    <value>Thông số kỹ thuật của Zorin OS</value>
   </data>
   <data name="Zorin performs release testing. In the official sources reviewed for this comparison, we did not find a comparable public set of automated installer and desktop reports. This concerns what users can inspect publicly, not whether Zorin tests its releases internally." xml:space="preserve">
     <value>Zorin thực hiện kiểm thử các bản phát hành. Trong các nguồn chính thức được xem xét cho phép so sánh này, chúng tôi không tìm thấy bộ báo cáo công khai tương đương về các bài kiểm thử tự động trình cài đặt và môi trường máy tính. Điều này nói về những gì người dùng có thể xem công khai, chứ không phải việc Zorin có kiểm thử các bản phát hành nội bộ hay không.</value>
   </data>
-  <data name="Zorin provides a graphical installer based on Ubuntu's installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
+  <data name="Zorin provides a graphical installer based on Ubuntu&apos;s installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
     <value>Zorin cung cấp trình cài đặt đồ họa dựa trên các công cụ cài đặt của Ubuntu. Trình cài đặt hướng dẫn người dùng cài đặt hệ thống. Các nguồn đã xem xét không xác nhận rằng Zorin có sự tách biệt tương tự giữa kế hoạch cài đặt có kiểu dữ liệu rõ ràng và thành phần thực thi với đặc quyền cố định như AnduinOS.</value>
   </data>
   <data name="Zorin provides recovery options, but the reviewed sources do not confirm automatic software-change snapshots linked to boot-menu recovery and boot confirmation. Other backup tools may be installed or configured separately." xml:space="preserve">
@@ -709,31 +753,23 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>Zorin hỗ trợ Secure Boot thông qua nền tảng Ubuntu. Hướng dẫn khắc phục sự cố của Zorin cũng nêu các trường hợp người dùng có thể cần tắt Secure Boot hoặc chuyển sang Xorg khi trình điều khiển NVIDIA không hoạt động. Khả năng hỗ trợ có thể phụ thuộc vào phần cứng và trình điều khiển đã cài đặt.</value>
   </data>
-  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS's APKG project format." xml:space="preserve">
+  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS&apos;s APKG project format." xml:space="preserve">
     <value>Zorin sử dụng hệ thống đóng gói của Debian và Ubuntu, cùng với kho phần mềm và lựa chọn gói riêng. Những thành phần này tạo nên môi trường máy tính hoàn chỉnh. Zorin sử dụng quy trình đóng gói riêng thay vì định dạng dự án APKG của AnduinOS.</value>
   </data>
   <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
     <value>Zorin sử dụng các tính năng bộ nhớ và Swap của nền tảng Ubuntu 24.04. Các nguồn đã xem xét không xác nhận có ứng dụng tích hợp kết hợp Zram, Zswap, kiểm tra tải nặng và kiểm tra chế độ ngủ đông. Bạn vẫn có thể quản lý từng thiết lập bằng các công cụ Linux.</value>
   </data>
-  <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
-    <value>Nền tảng GNOME của Zorin dựa trên Ubuntu 24.04. Nền tảng này hỗ trợ các tính năng hiển thị của Wayland nhưng chưa có những cải tiến của GNOME 50 về HDR, tần số quét biến thiên và quản lý màu sắc. Tính năng cụ thể có thể sử dụng còn phụ thuộc vào màn hình và trình điều khiển của bạn.</value>
+  <data name="Zorin Windows App Support" xml:space="preserve">
+    <value>Hỗ trợ ứng dụng Windows của Zorin</value>
   </data>
-  <data name="Zorin's default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
+  <data name="Zorin&apos;s default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
     <value>Bản cài đặt mặc định của Zorin sử dụng ext4, một hệ thống tệp Linux phổ biến. Tài liệu đã xem xét không xác nhận bố cục Btrfs tích hợp sẵn với các tính năng khôi phục tích hợp tương tự. Điều này không có nghĩa là bạn không thể tự cấu hình các công cụ lưu trữ khác.</value>
+  </data>
+  <data name="Zorin&apos;s GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
+    <value>Nền tảng GNOME của Zorin dựa trên Ubuntu 24.04. Nền tảng này hỗ trợ các tính năng hiển thị của Wayland nhưng chưa có những cải tiến của GNOME 50 về HDR, tần số quét biến thiên và quản lý màu sắc. Tính năng cụ thể có thể sử dụng còn phụ thuộc vào màn hình và trình điều khiển của bạn.</value>
   </data>
   <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
     <value>Zram nén dữ liệu trong RAM trước khi sử dụng Swap trên đĩa có mức ưu tiên thấp hơn. AnduinOS cấu hình Zram dùng LZ4 với dung lượng bằng 50% RAM và thiết lập kích thước phân vùng Swap trên đĩa trong quá trình cài đặt. Swap Control quản lý Zram và Zswap tùy chọn, chạy các bài kiểm tra tải nặng và kiểm tra cài đặt ngủ đông. Nén không thể thay thế RAM vật lý.</value>
   </data>
-  <data name="ext4 by default" xml:space="preserve">
-    <value>ext4 theo mặc định</value>
-  </data>
-  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
-    <value>Mặc định dùng ext4; có thể chọn Btrfs</value>
-  </data>
-  <data name="ext4 by default; other setups possible" xml:space="preserve">
-    <value>ext4 theo mặc định; có thể thiết lập theo cách khác</value>
-  </data>
-  <data name="initramfs-tools and Casper" xml:space="preserve">
-    <value>initramfs-tools và Casper</value>
-  </data>
+
 </root>
