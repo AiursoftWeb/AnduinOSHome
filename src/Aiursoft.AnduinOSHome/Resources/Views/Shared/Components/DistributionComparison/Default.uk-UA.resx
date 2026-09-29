@@ -81,7 +81,7 @@
     <value>Автоматизовані тести завантажують справжні образи для встановлення у віртуальних машинах QEMU, запускають інсталятор, перезавантажують установлену систему та перевіряють робочий стіл. QMP керує віртуальною машиною; AT-SPI надає доступ до елементів керування інтерфейсом, щоб тести могли з ними взаємодіяти. Опубліковані результати містять знімки екрана та журнали. Тести у віртуальних машинах не охоплюють усі фізичні пристрої.</value>
   </data>
   <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>Автоматичне визначення розміру розділу підкачки та перевірка режиму гібернації</value>
+    <value>Автоматичне визначення розміру розділу Swap та перевірка режиму гібернації</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>Автоматичні знімки до та після змін</value>
@@ -134,7 +134,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Canonical тестує програмні архіви, інсталяційні образи, обладнання та випуски у широкому масштабі. Її системи тестування та звітності відрізняються від тестів інсталятора й робочого столу AnduinOS на базі QEMU. Порівнюються доступні звіти, а не стверджується, що одна система тестування охоплює всі аспекти якості.</value>
   </data>
   <data name="Checking space and resume settings" xml:space="preserve">
-    <value>Перевірка обсягу розділу підкачки та налаштувань відновлення роботи</value>
+    <value>Перевірка обсягу розділу Swap та налаштувань відновлення роботи</value>
   </data>
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Оберіть дистрибутив для порівняння</value>
@@ -185,7 +185,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Dracut за замовчуванням після встановлення</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Dracut у всіх компонентах</value>
+    <value>Dracut у встановленій системі та Live USB</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>Налаштування драйверів і підтримка Wayland</value>
@@ -239,7 +239,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>GTK4 для всіх наших графічних системних інструментів</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Типові налаштування пам’яті та розділу підкачки</value>
+    <value>Типові налаштування пам’яті та розділу Swap</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>Повернення до працездатної системи</value>
@@ -305,7 +305,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Перед оновленням рекомендується створити знімок системи вручну</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>Стиснення пам’яті, файл підкачки та програма для налаштування</value>
+    <value>Стиснення пам’яті, Swap та програма для налаштування</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>Керування пам’яттю</value>
@@ -353,7 +353,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Mint надає свій перевірений часом графічний інструмент для встановлення. Користувачі обирають параметри в інтерфейсі, який встановлює систему. Його архітектура відрізняється від декларативного плану AnduinOS і окремого виконавця; сама лише відмінність в архітектурі не означає, що інсталятор небезпечний.</value>
   </data>
   <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint підтримує стандартні можливості Linux для використання розділу підкачки та переходу в режим гібернації. У перевіреній документації не підтверджено наявність вбудованої програми для комплексної перевірки обсягу розділу підкачки та параметрів відновлення роботи. Доступність цих функцій залежить від комп’ютера та його конфігурації.</value>
+    <value>Mint підтримує стандартні можливості Linux для використання розділу Swap та переходу в режим гібернації. У перевіреній документації не підтверджено наявність вбудованої програми для комплексної перевірки обсягу розділу Swap та параметрів відновлення роботи. Доступність цих функцій залежить від комп’ютера та його конфігурації.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
     <value>Mint забезпечує стандартні засоби керування пам’яттю Linux і підтримку Swap. У документації до розглянутого випуску не підтверджено наявність вбудованої програми, яка поєднує стиснення пам’яті, стрес-тести та перевірки режиму гібернації в одному місці.</value>
@@ -461,7 +461,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Знімки системи під час встановлення та оновлень</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>Стандартні інструменти Linux для керування пам’яттю та підкачкою</value>
+    <value>Стандартні інструменти Linux для пам’яті та Swap</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>І досі використовує initramfs-tools і Casper</value>
@@ -470,7 +470,7 @@ AnduinOS використовує Dracut і для встановленої си
     <value>Підтримувані процесори</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>Файл підкачки та гібернація</value>
+    <value>Swap та гібернація</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>Swap — це місце на диску, яке використовується, коли оперативної пам’яті бракує; для гібернації також потрібне місце, щоб зберегти вміст пам’яті перед вимкненням. З огляду на це інсталятор визначає розмір окремого розділу Swap. Swap Control перевіряє обсяг, ціль відновлення та зміщення у файлах Swap. Самої лише достатньої кількості Swap недостатньо для гібернації: обладнання та налаштування відновлення також мають працювати.</value>

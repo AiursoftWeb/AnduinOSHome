@@ -185,7 +185,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
     <value>Dracut theo mặc định sau khi cài đặt</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Dracut xuyên suốt</value>
+    <value>Dracut cho hệ thống đã cài và Live USB</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>Thiết lập trình điều khiển và hỗ trợ Wayland</value>
@@ -470,7 +470,7 @@ AnduinOS sử dụng Dracut cho cả hệ thống đã cài đặt lẫn Live US
     <value>Các bộ xử lý được hỗ trợ</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>Hoán đổi bộ nhớ và chế độ ngủ đông</value>
+    <value>Swap và chế độ ngủ đông</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>Swap là không gian trên đĩa được sử dụng khi RAM chịu áp lực; chế độ ngủ đông cũng cần không gian để lưu bộ nhớ trước khi tắt nguồn. Trình cài đặt tính toán kích thước phân vùng Swap riêng cho mục đích này. Swap Control kiểm tra dung lượng, đích khôi phục và các độ lệch trong tệp Swap. Chỉ có đủ Swap thì chưa thể bật chế độ ngủ đông: phần cứng và cài đặt khôi phục cũng phải hoạt động bình thường.</value>

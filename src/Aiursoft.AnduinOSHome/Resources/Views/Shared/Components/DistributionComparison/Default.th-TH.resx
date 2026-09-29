@@ -185,7 +185,7 @@ AnduinOS ใช้ Dracut ทั้งกับระบบที่ติดต
     <value>ใช้ Dracut เป็นค่าเริ่มต้นหลังติดตั้ง</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>ใช้ Dracut ตลอดทั้งระบบ</value>
+    <value>ใช้ Dracut ทั้งในระบบที่ติดตั้งและ Live USB</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>การตั้งค่าไดรเวอร์และการรองรับ Wayland</value>
@@ -470,7 +470,7 @@ AnduinOS ใช้ Dracut ทั้งกับระบบที่ติดต
     <value>โปรเซสเซอร์ที่รองรับ</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>สวอปและการจำศีล</value>
+    <value>Swap และการจำศีล</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>Swap คือพื้นที่บนดิสก์ที่ใช้เมื่อหน่วยความจำ RAM ทำงานไม่เพียงพอ ส่วนการจำศีลก็ต้องใช้พื้นที่สำหรับบันทึกข้อมูลในหน่วยความจำก่อนปิดเครื่อง โปรแกรมติดตั้งจะกำหนดขนาดพาร์ทิชัน Swap โดยเฉพาะให้เหมาะสมกับการใช้งานนี้ Swap Control จะตรวจสอบความจุ ตำแหน่งที่จะใช้กลับมาทำงานต่อ และออฟเซ็ตของไฟล์ Swap การมีพื้นที่ Swap เพียงพอไม่ได้ทำให้ใช้การจำศีลได้โดยอัตโนมัติ ฮาร์ดแวร์และการตั้งค่าการกลับมาทำงานต่อต้องรองรับด้วย</value>

@@ -81,7 +81,7 @@
     <value>تُقلِع الاختبارات الآلية صور التثبيت الفعلية في أجهزة افتراضية عبر QEMU، وتشغّل المُثبّت، ثم تعيد تشغيل النظام المُثبّت وتتحقق من سطح المكتب. يتحكم QMP بالجهاز الافتراضي، بينما تتيح AT-SPI عناصر التحكم في الواجهة لتتمكن الاختبارات من التفاعل معها. تتضمن النتائج المنشورة لقطات شاشة وسجلات. ولا تغطي الاختبارات على الأجهزة الافتراضية جميع الأجهزة الفعلية.</value>
   </data>
   <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>التحقق التلقائي من حجم مساحة المبادلة والإسبات</value>
+    <value>التحقق التلقائي من حجم مساحة Swap والإسبات</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>لقطات تلقائية قبل التغييرات وبعدها</value>
@@ -185,7 +185,7 @@
     <value>يستخدم Dracut افتراضيًا بعد التثبيت</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Dracut في جميع المراحل</value>
+    <value>Dracut للنظام ووسيط USB الحي</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>إعداد برامج التشغيل ودعم Wayland</value>
@@ -239,7 +239,7 @@
     <value>GTK4 في جميع أدوات النظام ذات الواجهة الرسومية لدينا</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>الإعدادات الافتراضية العامة للذاكرة ومساحة المبادلة</value>
+    <value>الإعدادات الافتراضية العامة للذاكرة ومساحة Swap</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>العودة إلى نظام يعمل مجددًا</value>
@@ -305,7 +305,7 @@
     <value>يُنصح بإنشاء لقطة يدوية قبل الترقية</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>ضغط الذاكرة ومساحة المبادلة وتطبيق للإعدادات</value>
+    <value>ضغط الذاكرة ومساحة Swap وتطبيق للإعدادات</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>إدارة الذاكرة</value>
@@ -461,7 +461,7 @@
     <value>لقطات النظام قبل التثبيت والتحديثات وبعدهما</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>أدوات لينكس القياسية لإدارة الذاكرة وذاكرة التبديل (Swap)</value>
+    <value>أدوات لينكس المعتادة للذاكرة وSwap</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>لا يزال يستخدم initramfs-tools وCasper</value>
@@ -470,7 +470,7 @@
     <value>المعالجات المدعومة</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>المبادلة والإسبات</value>
+    <value>Swap والإسبات</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>مساحة Swap هي مساحة على القرص تُستخدم عندما تكون ذاكرة RAM تحت ضغط؛ كما يحتاج الإسبات إلى مساحة لحفظ محتويات الذاكرة قبل إيقاف التشغيل. يحدّد برنامج التثبيت حجم قسم Swap مخصص مع مراعاة ذلك. تتحقق أداة Swap Control من السعة ووجهة الاستئناف وإزاحات ملف Swap. وجود مساحة Swap كافية وحده لا يفعّل الإسبات؛ إذ يجب أيضًا أن تكون الأجهزة وإعدادات الاستئناف متوافقة.</value>
@@ -704,7 +704,7 @@
     <value>يدعم Zorin تقنيات APT وFlatpak وSnap، إلى جانب AppImage وتطبيقات الويب. ويمكن لميزة دعم تطبيقات Windows الاختيارية تشغيل بعض برامج Windows، لكن التوافق يعتمد على التطبيق. والهدف هو توفير عدة طرق لتثبيت البرامج.</value>
   </data>
   <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
-    <value>يدعم Zorin آليات المبادلة والإسبات في Linux. ولا تؤكد المصادر التي تمت مراجعتها وجود أداة مضمّنة تتحقق معًا من حجم مساحة المبادلة وموقع الاستئناف وإعداداته. وقد يتطلب الإسبات إعدادًا يدويًا وأجهزة متوافقة.</value>
+    <value>يدعم Zorin آليات Swap والإسبات في Linux. ولا تؤكد المصادر التي تمت مراجعتها وجود أداة مضمّنة تتحقق معًا من حجم مساحة Swap وموقع الاستئناف وإعداداته. وقد يتطلب الإسبات إعدادًا يدويًا وأجهزة متوافقة.</value>
   </data>
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>يدعم Zorin ميزة الإقلاع الآمن بفضل اعتماده على Ubuntu. ويوضح دليل استكشاف الأخطاء وإصلاحها أيضًا حالات قد يحتاج فيها المستخدمون إلى تعطيل الإقلاع الآمن أو التبديل إلى Xorg عندما لا تعمل برامج تشغيل NVIDIA. وقد يختلف الدعم بحسب الأجهزة وبرنامج التشغيل المُثبّت.</value>
@@ -713,7 +713,7 @@
     <value>يستخدم Zorin نظامَي الحزم في Debian وUbuntu، إلى جانب مستودعاته البرمجية الخاصة واختياره للحزم. وتوفّر هذه المكوّنات اللازمة لسطح المكتب المكتمل. كما يستخدم عملية بناء حزم خاصة به بدلًا من تنسيق مشاريع APKG الخاص بـAnduinOS.</value>
   </data>
   <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
-    <value>يستخدم Zorin ميزات الذاكرة والمبادلة (Swap) في نظام Ubuntu 24.04 الذي يستند إليه. ولا تؤكد المصادر التي تمت مراجعتها وجود تطبيق مضمّن يجمع بين Zram وZswap واختبارات الضغط وفحوصات الإسبات. ومع ذلك، يمكن إدارة الإعدادات الفردية باستخدام أدوات Linux.</value>
+    <value>يستخدم Zorin ميزات الذاكرة وSwap في نظام Ubuntu 24.04 الذي يستند إليه. ولا تؤكد المصادر التي تمت مراجعتها وجود تطبيق مضمّن يجمع بين Zram وZswap واختبارات الضغط وفحوصات الإسبات. ومع ذلك، يمكن إدارة الإعدادات الفردية باستخدام أدوات Linux.</value>
   </data>
   <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
     <value>تعتمد قاعدة GNOME في Zorin على Ubuntu 24.04. وتوفر ميزات العرض عبر Wayland، لكنها تسبق تحسينات GNOME 50 لتقنية HDR ومعدل التحديث المتغير وإدارة الألوان. وتعتمد الميزة المتاحة تحديدًا أيضًا على شاشتك وبرنامج التشغيل.</value>

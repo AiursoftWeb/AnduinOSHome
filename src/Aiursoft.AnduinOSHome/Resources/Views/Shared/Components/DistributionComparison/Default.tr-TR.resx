@@ -185,7 +185,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Kurulumdan sonra varsayılan olarak Dracut</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Her yerde Dracut</value>
+    <value>Kurulu sistemde ve Live USB’de Dracut</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>Sürücü kurulumu ve Wayland desteği</value>
@@ -239,7 +239,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Grafik sistem araçlarımızın tamamında GTK4</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Genel amaçlı bellek ve takas alanı varsayılanları</value>
+    <value>Genel amaçlı bellek ve Swap alanı varsayılanları</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>Çalışır durumdaki bir sisteme geri dönüş</value>
@@ -305,7 +305,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Yükseltmelerden önce manuel anlık görüntü alınması önerilir</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>Bellek sıkıştırma, takas alanı ve bir ayar uygulaması</value>
+    <value>Bellek sıkıştırma, Swap alanı ve bir ayar uygulaması</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>Bellek yönetimi</value>
@@ -353,10 +353,10 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Mint, yerleşik grafiksel kurulum aracını sunar. Kullanıcılar, sistemi kuran arayüz üzerinden ayarları seçer. Tasarımı, AnduinOS'un bildirimsel planından ve ayrı yürütücüsünden farklıdır; mimarinin farklı olması tek başına kurulum aracının güvensiz olduğu anlamına gelmez.</value>
   </data>
   <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint, standart Linux takas alanı ve hazırda bekletme özelliklerini sunar. İncelenen belgeler, kapasiteyi ve devam konumunu birlikte denetleyen bir uygulamanın pakete dâhil olduğunu doğrulamamaktadır. Kullanılabilirlik yine de makineye ve yapılandırmasına bağlıdır.</value>
+    <value>Mint, standart Linux Swap alanı ve hazırda bekletme özelliklerini sunar. İncelenen belgeler, kapasiteyi ve devam konumunu birlikte denetleyen bir uygulamanın pakete dâhil olduğunu doğrulamamaktadır. Kullanılabilirlik yine de makineye ve yapılandırmasına bağlıdır.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
-    <value>Mint, standart Linux bellek yönetimi ve takas alanı desteği sunar. İncelenen sürüm belgelerinde, sıkıştırılmış belleği, stres testlerini ve hazırda bekletme denetimlerini tek bir yerde bir araya getiren bir uygulamanın pakete dâhil olduğu doğrulanmıyor.</value>
+    <value>Mint, standart Linux bellek yönetimi ve Swap alanı desteği sunar. İncelenen sürüm belgelerinde, sıkıştırılmış belleği, stres testlerini ve hazırda bekletme denetimlerini tek bir yerde bir araya getiren bir uygulamanın pakete dâhil olduğu doğrulanmıyor.</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint, sürüm yükseltmesinden önce gerekirse önceki sisteme geri dönebilmeniz için bir Timeshift anlık görüntüsü oluşturmanızı önerir. Bu elle alınan önlem, her APT paket işlemi öncesinde ve sonrasında otomatik olarak anlık görüntü alınmasından farklıdır.</value>
@@ -461,7 +461,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Kurulumlar ve güncellemeler öncesi ve sonrası anlık görüntüler</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>Standart Linux bellek ve takas araçları</value>
+    <value>Standart Linux bellek ve Swap araçları</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>Hâlâ initramfs-tools ve Casper kullanıyor</value>
@@ -470,7 +470,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Desteklenen işlemciler</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>Takas alanı ve hazırda bekletme</value>
+    <value>Swap alanı ve hazırda bekletme</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>Swap, RAM baskı altındayken kullanılan disk alanıdır; hazırda bekletme sırasında bilgisayar kapatılmadan önce belleği kaydetmek için de alan gerekir. Yükleyici, bunu göz önünde bulundurarak özel bir Swap bölümü boyutlandırır. Swap Control; kapasiteyi, devam etme hedefini ve Swap dosyası ofsetlerini denetler. Yalnızca yeterli Swap alanı hazırda bekletmeyi etkinleştirmez: donanımın ve devam etme ayarlarının da çalışması gerekir.</value>
@@ -500,7 +500,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Sistem telemetri bileşenleri devre dışı</value>
   </data>
   <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
-    <value>Yükleyici, Denetim Merkezi, Görünüm uygulaması, ilk açılış kurulumu, Sürücü Merkezi, Secure Boot Toolkit, Takas Denetimi ve Anlık Görüntü Yöneticisi, GTK4 ve libadwaita kullanır. Bu arayüz kütüphaneleri, denetimlerin ve pencere boyutlandırma davranışının tutarlı olmasını sağlar. Bu, AnduinOS'un kendi grafik sistem araçları için geçerlidir; tüm üçüncü taraf uygulamalar için değil.</value>
+    <value>Yükleyici, Denetim Merkezi, Görünüm uygulaması, ilk açılış kurulumu, Sürücü Merkezi, Secure Boot Toolkit, Swap Control ve Anlık Görüntü Yöneticisi, GTK4 ve libadwaita kullanır. Bu arayüz kütüphaneleri, denetimlerin ve pencere boyutlandırma davranışının tutarlı olmasını sağlar. Bu, AnduinOS'un kendi grafik sistem araçları için geçerlidir; tüm üçüncü taraf uygulamalar için değil.</value>
   </data>
   <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
     <value>İncelenen Zorin belgeleri, her APT yazılım değişikliğinden önce ve sonra varsayılan olarak anlık görüntü alındığını doğrulamıyor. Kullanıcılar yedekleme araçlarını ayrıca yapılandırabilir. Bu ifade, yedekleme yapmanın mümkün olup olmadığını değil, doğrulayabildiğimiz yerleşik otomasyonu açıklar.</value>
@@ -590,7 +590,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Ubuntu, Swap için gerekli çekirdek altyapısını ve kurulum araçlarını sağlar. İncelenen masaüstü kurulumunda, Swap boyutlandırma ve hazırda bekletme tanılamasını bir arada sunan yerleşik bir uygulama olduğu doğrulanmamıştır. Hazırda bekletmeye güvenmeden önce donanım desteğini ve devam etme yapılandırmasını kontrol edin.</value>
   </data>
   <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
-    <value>Ubuntu, genel masaüstü varsayılanlarıyla Linux bellek yönetimi ve takas (Swap) özellikleri sunar. Varsayılan yapılandırması, AnduinOS'un önceden yapılandırılmış Zram, özel bir takas bölümü ve grafik arayüzlü bir yönetim aracını bir araya getiren çözümünden farklıdır.</value>
+    <value>Ubuntu, genel masaüstü varsayılanlarıyla Linux bellek yönetimi ve Swap özellikleri sunar. Varsayılan yapılandırması, AnduinOS'un önceden yapılandırılmış Zram, özel bir Swap bölümü ve grafik arayüzlü bir yönetim aracını bir araya getiren çözümünden farklıdır.</value>
   </data>
   <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
     <value>Ubuntu, isteğe bağlı yedekleme ve anlık görüntü araçlarını destekler. İncelenen varsayılan masaüstü kurulumunda, her APT işlemi öncesinde ve sonrasında otomatik anlık görüntü alındığı doğrulanmamıştır. Sistem yazılımını değiştirmeden önce kendi yedekleme sürecinizi oluşturabilirsiniz.</value>
@@ -722,7 +722,7 @@ AnduinOS, hem kurulu sistemde hem de Live USB'de Dracut kullanır. Temel paketi,
     <value>Zorin'ın varsayılan kurulumu, yaygın olarak kullanılan bir Linux dosya sistemi olan ext4'ü kullanır. İncelenen belgeler, aynı entegre kurtarma özelliklerine sahip yerleşik bir Btrfs düzeninin bulunduğunu doğrulamıyor. Bu, diğer depolama araçlarını kendiniz yapılandıramayacağınız anlamına gelmez.</value>
   </data>
   <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
-    <value>Zram, daha düşük önceliğe sahip disk takası kullanılmadan önce RAM’deki verileri sıkıştırır. AnduinOS, LZ4 Zram’ı RAM’in %50’si olacak şekilde yapılandırır ve kurulum sırasında disk takas bölümünün boyutunu belirler. Swap Control, Zram’ı ve isteğe bağlı Zswap’ı yönetir, stres testleri çalıştırır ve hazırda bekletme ayarlarını denetler. Sıkıştırma, fiziksel RAM’in yerini tutmaz.</value>
+    <value>Zram, daha düşük önceliğe sahip diskteki Swap kullanılmadan önce RAM’deki verileri sıkıştırır. AnduinOS, LZ4 Zram’ı RAM’in %50’si olacak şekilde yapılandırır ve kurulum sırasında disk Swap bölümünün boyutunu belirler. Swap Control, Zram’ı ve isteğe bağlı Zswap’ı yönetir, stres testleri çalıştırır ve hazırda bekletme ayarlarını denetler. Sıkıştırma, fiziksel RAM’in yerini tutmaz.</value>
   </data>
   <data name="ext4 by default" xml:space="preserve">
     <value>Varsayılan olarak ext4</value>

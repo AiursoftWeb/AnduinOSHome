@@ -185,7 +185,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Dracut oletuksena asennuksen jälkeen</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Dracut kaikkialla</value>
+    <value>Dracut asennetussa järjestelmässä ja Live USB:llä</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>Ajuriasetukset ja Wayland-tuki</value>
@@ -239,7 +239,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>GTK4 kaikissa graafisissa järjestelmätyökaluissamme</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Yleiset muistin ja swapin oletusasetukset</value>
+    <value>Yleiset muistin ja Swap-tilan oletusasetukset</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>Paluu toimivaan järjestelmään</value>
@@ -305,7 +305,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Manuaalisen tilannevedoksen luomista suositellaan ennen päivityksiä</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>Muistin pakkaus, sivutus ja asetussovellus</value>
+    <value>Muistin pakkaus, Swap ja asetussovellus</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>Muistinhallinta</value>
@@ -353,10 +353,10 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Mint tarjoaa vakiintuneen graafisen asennustyökalunsa. Käyttäjät valitsevat asetukset käyttöliittymässä, joka asentaa järjestelmän. Sen rakenne poikkeaa AnduinOSin deklaratiivisesta suunnitelmasta ja erillisestä suorittajasta; erilainen arkkitehtuuri ei yksin tarkoita, että asennusohjelma olisi turvaton.</value>
   </data>
   <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint tarjoaa tavalliset Linuxin swap- ja horrostilatoiminnot. Tarkistetuissa ohjeissa ei vahvisteta, että mukana olisi sovellus, joka tarkistaisi sekä swap-tilan kapasiteetin että horroksesta palautumisen asetukset. Käytettävyys riippuu edelleen laitteesta ja sen kokoonpanosta.</value>
+    <value>Mint tarjoaa tavalliset Linuxin Swap- ja horrostilatoiminnot. Tarkistetuissa ohjeissa ei vahvisteta, että mukana olisi sovellus, joka tarkistaisi sekä Swap-tilan kapasiteetin että horroksesta palautumisen asetukset. Käytettävyys riippuu edelleen laitteesta ja sen kokoonpanosta.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
-    <value>Mint tarjoaa Linuxin tavanomaiset muistinhallinta- ja swap-toiminnot. Tarkistetuissa julkaisutiedoissa ei vahvisteta, että mukana olisi sovellus, joka yhdistäisi pakatun muistin, rasitustestit ja horrostilan tarkistukset samaan paikkaan.</value>
+    <value>Mint tarjoaa Linuxin tavanomaiset muistinhallinta- ja Swap-toiminnot. Tarkistetuissa julkaisutiedoissa ei vahvisteta, että mukana olisi sovellus, joka yhdistäisi pakatun muistin, rasitustestit ja horrostilan tarkistukset samaan paikkaan.</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint suosittelee luomaan Timeshift-tilannevedoksen ennen jakelupäivitystä, jotta voit tarvittaessa palauttaa järjestelmän aiempaan tilaan. Tämä manuaalinen varotoimi eroaa siitä, että tilannevedoksia luodaan automaattisesti jokaisen APT-pakettitoiminnon yhteydessä.</value>
@@ -461,7 +461,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Tilannevedokset asennusten ja päivitysten yhteydessä</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>Linuxin vakiomuistin ja sivutustilan työkalut</value>
+    <value>Linuxin tavalliset muisti- ja Swap-työkalut</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>Käyttää edelleen initramfs-toolsia ja Casperia</value>
@@ -470,7 +470,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Tuetut suorittimet</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>Sivutus ja horrostila</value>
+    <value>Swap ja horrostila</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>Swap on RAM-muistin ollessa vähissä käytettävää levytilaa; myös horrostila tarvitsee tilaa muistin tallentamiseen ennen virran katkaisemista. Asennusohjelma mitoittaa tätä varten erillisen Swap-osion. Swap Control tarkistaa kapasiteetin, jatkamiskohteen ja Swap-tiedoston siirtymät. Pelkkä riittävä Swap-tila ei ota horrostilaa käyttöön: myös laitteiston ja jatkamisasetusten on toimittava.</value>
@@ -704,7 +704,7 @@ AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB 
     <value>Zorin tukee APT:tä, Flatpakia ja Snapiä sekä AppImage-sovelluksia ja verkkosovelluksia. Valinnainen Windows App Support voi suorittaa joitakin Windows-ohjelmia, mutta yhteensopivuus riippuu sovelluksesta. Tavoitteena on tarjota useita tapoja asentaa ohjelmistoja.</value>
   </data>
   <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
-    <value>Zorin tukee Linuxin swap- ja horrostustoimintoja. Tarkastellut lähteet eivät vahvista, että järjestelmän mukana toimitettaisiin työkalu, joka tarkistaisi yhdessä swap-tilan koon, jatkamissijainnin ja määritykset. Horrostus saattaa vaatia manuaalisia määrityksiä ja yhteensopivan laitteiston.</value>
+    <value>Zorin tukee Linuxin Swap- ja horrostustoimintoja. Tarkastellut lähteet eivät vahvista, että järjestelmän mukana toimitettaisiin työkalu, joka tarkistaisi yhdessä Swap-tilan koon, jatkamissijainnin ja määritykset. Horrostus saattaa vaatia manuaalisia määrityksiä ja yhteensopivan laitteiston.</value>
   </data>
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>Zorin tukee Secure Bootia Ubuntu-pohjansa ansiosta. Sen vianmääritysohjeessa kuvataan myös tilanteita, joissa Secure Boot on ehkä poistettava käytöstä tai vaihdettava Xorgiin, jos NVIDIA-ajurit eivät toimi. Tuki voi riippua laitteistosta ja asennetusta ajurista.</value>

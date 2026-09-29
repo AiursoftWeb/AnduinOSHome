@@ -81,7 +81,7 @@ Dracut का dmsquash-live इमेज लोड करता है। Anduin
     <value>स्वचालित परीक्षण QEMU वर्चुअल मशीनों में वास्तविक इंस्टॉलेशन इमेज बूट करते हैं, इंस्टॉलर चलाते हैं, इंस्टॉल किए गए सिस्टम को रीस्टार्ट करते हैं और डेस्कटॉप की जाँच करते हैं। QMP वर्चुअल मशीन को नियंत्रित करता है; AT-SPI इंटरफ़ेस नियंत्रण उपलब्ध कराता है, ताकि परीक्षण उनसे इंटरैक्ट कर सकें। प्रकाशित नतीजों में स्क्रीनशॉट और लॉग शामिल हैं। वर्चुअल मशीनों पर किए गए परीक्षण हर भौतिक डिवाइस को कवर नहीं करते।</value>
   </data>
   <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>स्वचालित स्वैप आकार निर्धारण और हाइबरनेशन जाँच</value>
+    <value>स्वचालित Swap आकार निर्धारण और हाइबरनेशन जाँच</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>बदलावों से पहले और बाद में स्वचालित स्नैपशॉट</value>
@@ -185,7 +185,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>इंस्टॉलेशन के बाद डिफ़ॉल्ट रूप से Dracut</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>हर जगह Dracut</value>
+    <value>इंस्टॉल किए गए सिस्टम और Live USB में Dracut</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>ड्राइवर सेटअप और Wayland समर्थन</value>
@@ -239,7 +239,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>हमारे ग्राफ़िकल सिस्टम टूल्स में GTK4</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>सामान्य डेस्कटॉप उपयोग के लिए मेमोरी और स्वैप की डिफ़ॉल्ट सेटिंग</value>
+    <value>सामान्य डेस्कटॉप उपयोग के लिए मेमोरी और Swap की डिफ़ॉल्ट सेटिंग</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>कार्यशील सिस्टम पर वापस लौटना</value>
@@ -251,7 +251,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>हाइबरनेशन जाँचने वाला ऐप उपलब्ध होने की पुष्टि नहीं</value>
   </data>
   <data name="How Swap Control works" xml:space="preserve">
-    <value>स्वैप कंट्रोल कैसे काम करता है</value>
+    <value>Swap Control कैसे काम करता है</value>
   </data>
   <data name="How apps display windows on your screen" xml:space="preserve">
     <value>ऐप्स आपकी स्क्रीन पर विंडो कैसे दिखाते हैं</value>
@@ -305,7 +305,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>अपग्रेड से पहले मैन्युअल स्नैपशॉट लेने की सलाह दी जाती है</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>मेमोरी संपीड़न, स्वैप और एक सेटिंग्स ऐप</value>
+    <value>मेमोरी संपीड़न, Swap और एक सेटिंग्स ऐप</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>मेमोरी प्रबंधन</value>
@@ -461,7 +461,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>इंस्टॉलेशन और अपडेट के दौरान स्नैपशॉट</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>मानक Linux मेमोरी और स्वैप टूल</value>
+    <value>मानक Linux मेमोरी और Swap टूल</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>अब भी initramfs-tools और Casper का उपयोग करता है</value>
@@ -470,7 +470,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>समर्थित प्रोसेसर</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>स्वैप और हाइबरनेशन</value>
+    <value>Swap और हाइबरनेशन</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
     <value>जब RAM पर दबाव होता है, तो Swap डिस्क की वह जगह होती है जिसका उपयोग किया जाता है; हाइबरनेशन में भी बंद होने से पहले मेमोरी सहेजने के लिए जगह चाहिए। इंस्टॉलर इसी को ध्यान में रखकर एक अलग Swap पार्टीशन का आकार तय करता है। Swap Control क्षमता, रिज़्यूम लक्ष्य और Swap फ़ाइल ऑफ़सेट की जाँच करता है। केवल पर्याप्त Swap होने से हाइबरनेशन सक्षम नहीं होता: हार्डवेयर और रिज़्यूम सेटिंग भी सही ढंग से काम करनी चाहिए।</value>
@@ -500,7 +500,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>सिस्टम टेलीमेट्री घटक अक्षम</value>
   </data>
   <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
-    <value>इंस्टॉलर, कंट्रोल पैनल, अपीयरेंस ऐप, पहली बार का सेटअप, ड्राइवर सेंटर, सिक्योर बूट टूलकिट, स्वैप कंट्रोल और स्नैपशॉट मैनेजर GTK4 और libadwaita का उपयोग करते हैं। ये इंटरफ़ेस लाइब्रेरीज़ नियंत्रणों और विंडो का आकार बदलने के व्यवहार को एकसमान बनाए रखने में मदद करती हैं। यह बात AnduinOS के अपने ग्राफ़िकल सिस्टम टूल्स पर लागू होती है, हर तृतीय-पक्ष ऐप्लिकेशन पर नहीं।</value>
+    <value>इंस्टॉलर, कंट्रोल पैनल, अपीयरेंस ऐप, पहली बार का सेटअप, ड्राइवर सेंटर, सिक्योर बूट टूलकिट, Swap Control और स्नैपशॉट मैनेजर GTK4 और libadwaita का उपयोग करते हैं। ये इंटरफ़ेस लाइब्रेरीज़ नियंत्रणों और विंडो का आकार बदलने के व्यवहार को एकसमान बनाए रखने में मदद करती हैं। यह बात AnduinOS के अपने ग्राफ़िकल सिस्टम टूल्स पर लागू होती है, हर तृतीय-पक्ष ऐप्लिकेशन पर नहीं।</value>
   </data>
   <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
     <value>Zorin के समीक्षा किए गए दस्तावेज़ों में हर APT सॉफ़्टवेयर बदलाव से पहले और बाद में डिफ़ॉल्ट रूप से स्नैपशॉट लिए जाने की पुष्टि नहीं होती। उपयोगकर्ता अलग से बैकअप टूल कॉन्फ़िगर कर सकते हैं। यह उन अंतर्निहित स्वचालित सुविधाओं का वर्णन है जिनकी हम पुष्टि कर सके, न कि इस बात का कि बैकअप लेना संभव है या नहीं।</value>
@@ -704,7 +704,7 @@ AnduinOS, इंस्टॉल किए गए सिस्टम और Live 
     <value>Zorin APT, Flatpak और Snap के साथ-साथ AppImage और वेब ऐप्स का समर्थन करता है। वैकल्पिक Windows App Support से कुछ Windows सॉफ़्टवेयर चलाए जा सकते हैं, लेकिन संगतता ऐप्लिकेशन पर निर्भर करती है। इसका उद्देश्य सॉफ़्टवेयर इंस्टॉल करने के कई तरीके देना है।</value>
   </data>
   <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
-    <value>Zorin, Linux स्वैप और हाइबरनेशन तंत्रों का समर्थन करता है। समीक्षा किए गए स्रोतों से ऐसे किसी अंतर्निहित टूल की पुष्टि नहीं होती जो स्वैप का आकार, रिज़्यूम स्थान और कॉन्फ़िगरेशन—तीनों की एक साथ जाँच करता हो। हाइबरनेशन के लिए मैन्युअल सेटअप और संगत हार्डवेयर की आवश्यकता हो सकती है।</value>
+    <value>Zorin, Linux Swap और हाइबरनेशन तंत्रों का समर्थन करता है। समीक्षा किए गए स्रोतों से ऐसे किसी अंतर्निहित टूल की पुष्टि नहीं होती जो Swap का आकार, रिज़्यूम स्थान और कॉन्फ़िगरेशन—तीनों की एक साथ जाँच करता हो। हाइबरनेशन के लिए मैन्युअल सेटअप और संगत हार्डवेयर की आवश्यकता हो सकती है।</value>
   </data>
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>Zorin अपने Ubuntu आधार के माध्यम से Secure Boot का समर्थन करता है। इसकी समस्या-निवारण मार्गदर्शिका उन स्थितियों का भी वर्णन करती है जिनमें NVIDIA ड्राइवर काम न करने पर उपयोगकर्ताओं को Secure Boot बंद करना या Xorg पर स्विच करना पड़ सकता है। समर्थन हार्डवेयर और इंस्टॉल किए गए ड्राइवर पर निर्भर कर सकता है।</value>

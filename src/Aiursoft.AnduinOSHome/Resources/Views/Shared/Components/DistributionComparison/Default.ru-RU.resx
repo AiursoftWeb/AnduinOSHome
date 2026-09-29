@@ -81,7 +81,7 @@
     <value>Автоматизированные тесты загружают настоящие установочные образы в виртуальных машинах QEMU, запускают установщик, перезагружают установленную систему и проверяют рабочий стол. QMP управляет виртуальной машиной; AT-SPI предоставляет доступ к элементам интерфейса, чтобы тесты могли с ними взаимодействовать. Опубликованные результаты включают снимки экрана и журналы. Тесты в виртуальных машинах не охватывают все физические устройства.</value>
   </data>
   <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>Автоматическая проверка размера раздела подкачки и возможности гибернации</value>
+    <value>Автоматическая проверка размера раздела Swap и возможности гибернации</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>Автоматические снимки до и после изменений</value>
@@ -134,7 +134,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Canonical тестирует программные архивы, установочные образы, оборудование и выпуски в широком масштабе. Её системы тестирования и отчётности отличаются от тестов установщика и рабочего стола AnduinOS на базе QEMU. Сравнение касается доступных отчётов, а не утверждения, что одна система тестирования охватывает все аспекты качества.</value>
   </data>
   <data name="Checking space and resume settings" xml:space="preserve">
-    <value>Проверка объёма раздела подкачки и параметров возобновления работы</value>
+    <value>Проверка объёма раздела Swap и параметров возобновления работы</value>
   </data>
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Выберите дистрибутив для сравнения</value>
@@ -185,7 +185,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Dracut по умолчанию после установки</value>
   </data>
   <data name="Dracut throughout" xml:space="preserve">
-    <value>Dracut повсюду</value>
+    <value>Dracut в установленной системе и Live USB</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
     <value>Настройка драйверов и поддержка Wayland</value>
@@ -239,7 +239,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>GTK4 во всех наших графических системных инструментах</value>
   </data>
   <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Настройки памяти и подкачки по умолчанию для обычного использования</value>
+    <value>Настройки памяти и Swap по умолчанию для обычного использования</value>
   </data>
   <data name="Getting back to a working system" xml:space="preserve">
     <value>Возврат к работоспособной системе</value>
@@ -251,7 +251,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Наличие приложения для проверки спящего режима не подтверждено</value>
   </data>
   <data name="How Swap Control works" xml:space="preserve">
-    <value>Как работает управление подкачкой</value>
+    <value>Как работает Swap Control</value>
   </data>
   <data name="How apps display windows on your screen" xml:space="preserve">
     <value>Как приложения отображают окна на экране</value>
@@ -305,7 +305,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Перед обновлением рекомендуется вручную создать снимок системы</value>
   </data>
   <data name="Memory compression, Swap and a settings app" xml:space="preserve">
-    <value>Сжатие памяти, раздел подкачки и приложение для настроек</value>
+    <value>Сжатие памяти, раздел Swap и приложение для настроек</value>
   </data>
   <data name="Memory management" xml:space="preserve">
     <value>Управление памятью</value>
@@ -353,10 +353,10 @@ AnduinOS использует Dracut и для установленной сис
     <value>Mint предоставляет свой проверенный графический установщик. Пользователи выбирают настройки в интерфейсе, который устанавливает систему. Его архитектура отличается от декларативного плана AnduinOS и отдельного исполнителя; сама по себе иная архитектура не означает, что установщик небезопасен.</value>
   </data>
   <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint предоставляет стандартные возможности Linux для подкачки и гибернации. В изученной документации не подтверждается наличие встроенного приложения для совместной проверки объёма подкачки и параметров возобновления работы. Доступность этих функций по-прежнему зависит от компьютера и его конфигурации.</value>
+    <value>Mint предоставляет стандартные возможности Linux для Swap и гибернации. В изученной документации не подтверждается наличие встроенного приложения для совместной проверки объёма Swap и параметров возобновления работы. Доступность этих функций по-прежнему зависит от компьютера и его конфигурации.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
-    <value>Mint обеспечивает стандартное управление памятью Linux и поддержку подкачки (Swap). В рассмотренной документации к выпуску не подтверждается наличие встроенного приложения, которое объединяет сжатие памяти, стресс-тесты и проверку настроек гибернации.</value>
+    <value>Mint обеспечивает стандартное управление памятью Linux и поддержку Swap. В рассмотренной документации к выпуску не подтверждается наличие встроенного приложения, которое объединяет сжатие памяти, стресс-тесты и проверку настроек гибернации.</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint рекомендует создать снимок Timeshift перед обновлением до нового выпуска, чтобы при необходимости можно было восстановить прежнее состояние системы. Эта мера предосторожности, выполняемая вручную, отличается от автоматического создания снимков при каждой операции APT с пакетами.</value>
@@ -461,7 +461,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Снимки состояния до и после установки и обновлений</value>
   </data>
   <data name="Standard Linux memory and Swap tools" xml:space="preserve">
-    <value>Стандартные средства Linux для управления памятью и подкачкой</value>
+    <value>Стандартные инструменты Linux для памяти и Swap</value>
   </data>
   <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
     <value>По-прежнему используются initramfs-tools и Casper</value>
@@ -470,10 +470,10 @@ AnduinOS использует Dracut и для установленной сис
     <value>Поддерживаемые процессоры</value>
   </data>
   <data name="Swap and hibernation" xml:space="preserve">
-    <value>Подкачка и гибернация</value>
+    <value>Swap и гибернация</value>
   </data>
   <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
-    <value>Файл подкачки — это дисковое пространство, используемое при нехватке оперативной памяти; для гибернации также требуется место, чтобы сохранить содержимое памяти перед выключением. Установщик рассчитывает размер отдельного раздела подкачки с учётом этого. Swap Control проверяет объём раздела, целевой раздел для возобновления работы и смещения файла подкачки. Одного достаточного объёма подкачки для гибернации недостаточно: оборудование и настройки возобновления работы тоже должны быть совместимы.</value>
+    <value>Swap — это дисковое пространство, используемое при нехватке оперативной памяти; для гибернации также требуется место, чтобы сохранить содержимое памяти перед выключением. Установщик рассчитывает размер отдельного раздела Swap с учётом этого. Swap Control проверяет объём раздела, целевой раздел для возобновления работы и смещения файла Swap. Одного достаточного объёма Swap для гибернации недостаточно: оборудование и настройки возобновления работы тоже должны быть совместимы.</value>
   </data>
   <data name="System backup and recovery" xml:space="preserve">
     <value>Резервное копирование и восстановление системы</value>
@@ -590,7 +590,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Ubuntu предоставляет базовые компоненты ядра и инструменты установки для Swap. В рассмотренной конфигурации рабочего стола не подтверждено наличие встроенного приложения, которое одновременно проверяет размер Swap и диагностирует проблемы с гибернацией. Прежде чем полагаться на гибернацию, проверьте поддержку оборудования и настройки возобновления работы.</value>
   </data>
   <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
-    <value>Ubuntu предоставляет средства управления памятью Linux и подкачки с обычными настройками для настольных систем. Его настройки по умолчанию отличаются от сочетания предварительно настроенного Zram, отдельного раздела подкачки и графического инструмента управления в AnduinOS.</value>
+    <value>Ubuntu предоставляет средства управления памятью Linux и Swap с обычными настройками для настольных систем. Его настройки по умолчанию отличаются от сочетания предварительно настроенного Zram, отдельного раздела Swap и графического инструмента управления в AnduinOS.</value>
   </data>
   <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
     <value>Ubuntu поддерживает дополнительные средства резервного копирования и создания снимков. В изученной конфигурации рабочего стола по умолчанию не подтверждено автоматическое создание снимков до и после каждой операции APT. Перед изменением системного программного обеспечения вы можете самостоятельно настроить резервное копирование.</value>
@@ -704,7 +704,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Zorin поддерживает APT, Flatpak и Snap, а также AppImage и веб-приложения. Дополнительная поддержка приложений Windows позволяет запускать некоторые программы для Windows, но совместимость зависит от конкретного приложения. Цель — предложить несколько способов установки программ.</value>
   </data>
   <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
-    <value>Zorin поддерживает механизмы подкачки Linux и гибернации. В рассмотренных источниках не подтверждается наличие встроенного инструмента, который проверяет размер раздела подкачки, место возобновления работы и соответствующие настройки в совокупности. Для гибернации может потребоваться ручная настройка и совместимое оборудование.</value>
+    <value>Zorin поддерживает механизмы Swap Linux и гибернации. В рассмотренных источниках не подтверждается наличие встроенного инструмента, который проверяет размер раздела Swap, место возобновления работы и соответствующие настройки в совокупности. Для гибернации может потребоваться ручная настройка и совместимое оборудование.</value>
   </data>
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>Zorin поддерживает Secure Boot благодаря своей основе Ubuntu. В руководстве по устранению неполадок также описаны случаи, когда при проблемах с драйверами NVIDIA пользователям может потребоваться отключить Secure Boot или переключиться на Xorg. Совместимость может зависеть от оборудования и установленного драйвера.</value>
@@ -713,7 +713,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>Zorin использует систему пакетов Debian и Ubuntu, а также собственные репозитории программного обеспечения и набор пакетов. Они обеспечивают компоненты готового рабочего стола. Вместо формата проектов APKG от AnduinOS здесь используется собственный процесс создания пакетов.</value>
   </data>
   <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
-    <value>Zorin использует возможности управления памятью и подкачкой (Swap), предоставляемые базовой системой Ubuntu 24.04. В изученных источниках не подтверждается наличие встроенного приложения, объединяющего Zram, Zswap, стресс-тестирование и проверку настроек гибернации. Отдельными параметрами по-прежнему можно управлять с помощью инструментов Linux.</value>
+    <value>Zorin использует возможности управления памятью и Swap, предоставляемые базовой системой Ubuntu 24.04. В изученных источниках не подтверждается наличие встроенного приложения, объединяющего Zram, Zswap, стресс-тестирование и проверку настроек гибернации. Отдельными параметрами по-прежнему можно управлять с помощью инструментов Linux.</value>
   </data>
   <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
     <value>Базовая среда GNOME в Zorin соответствует Ubuntu 24.04. В ней доступны возможности Wayland для работы с дисплеем, но в ней ещё нет улучшений GNOME 50 для HDR, переменной частоты обновления и управления цветом. Доступность конкретной функции также зависит от монитора и драйвера.</value>
@@ -722,7 +722,7 @@ AnduinOS использует Dracut и для установленной сис
     <value>В Zorin по умолчанию устанавливается ext4 — широко распространённая файловая система Linux. В рассмотренной документации не подтверждается наличие встроенной разметки Btrfs с такими же интегрированными функциями восстановления. Это не исключает возможности самостоятельно настроить другие инструменты для работы с хранилищем.</value>
   </data>
   <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
-    <value>Zram сжимает данные в оперативной памяти, прежде чем будет задействован дисковый раздел подкачки Swap с более низким приоритетом. AnduinOS настраивает Zram с алгоритмом LZ4, выделяя под него 50 % оперативной памяти, и при установке определяет размер дискового раздела подкачки Swap. Приложение Swap Control управляет Zram и необязательным Zswap, проводит стресс-тесты и проверяет настройки гибернации. Сжатие не заменяет физическую оперативную память.</value>
+    <value>Zram сжимает данные в оперативной памяти, прежде чем будет задействован дисковый раздел Swap с более низким приоритетом. AnduinOS настраивает Zram с алгоритмом LZ4, выделяя под него 50 % оперативной памяти, и при установке определяет размер дискового раздела Swap. Приложение Swap Control управляет Zram и необязательным Zswap, проводит стресс-тесты и проверяет настройки гибернации. Сжатие не заменяет физическую оперативную память.</value>
   </data>
   <data name="ext4 by default" xml:space="preserve">
     <value>ext4 по умолчанию</value>
