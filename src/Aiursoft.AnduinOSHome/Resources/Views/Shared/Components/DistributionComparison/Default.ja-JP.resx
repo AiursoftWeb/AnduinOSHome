@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<root>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
-  <resheader name="version"><value>2.0</value></resheader>
-  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
-  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.&#10;&#10;Dracut's dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
-    <value>Live USB を使うと、ディスクにインストールせずデスクトップを試せます。圧縮されたシステムイメージを読み込む起動環境が必要で、AnduinOS はインストール後と同じ Dracut でこれを生成します。
 
-Dracut の dmsquash-live がイメージを読み込みます。AnduinOS Live Layers は変更を書き込む層を管理し、一時的に使うことも USB に保存して次回に引き継ぐこともできます。インストール用ファイルを利用可能な状態に保ち、拡張した USB 構成の修復にも対応します。同じツールで保守や問題調査をしやすくしますが、すべての USB が速く起動するという主張ではありません。</value>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A consistent look for everyday settings" xml:space="preserve">
+    <value>日々の設定を統一感のある画面で</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.&#10;&#10;This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
+
+This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>Live 環境は、インストール前に USB から起動して使うデスクトップです。Ubuntu 26.04 は今も initramfs-tools と Casper で起動環境を作り、システムイメージを見つけて読み込みます。
 
 標準で Dracut を使うインストール後の Ubuntu とは異なります。AnduinOS は Live 環境も Dracut に移行し、USB とインストール後で起動ツールを統一しています。ここでの違いは移行の範囲であり、Ubuntu が USB から動くかどうかではありません。</value>
   </data>
-  <data name="A consistent look for everyday settings" xml:space="preserve">
-    <value>日々の設定を統一感のある画面で</value>
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.\n\nThis differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+    <value>Live環境とは、インストール前にインストール用USBから起動して試せるデスクトップ環境です。Ubuntu 26.04では、システムイメージを検出して読み込む initramfs-tools と Casper を使って、引き続きこの起動環境を構築します。
+
+これは、標準で Dracut を使用するインストール済みの Ubuntu システムとは異なります。AnduinOS では Live環境も Dracut に移行しているため、USBとインストール済みシステムで同じ起動ツールを使用します。ここでの違いは移行の適用範囲であり、UbuntuをUSBから起動できるかどうかではありません。</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
+
+Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>Live USB を使うと、ディスクにインストールせずデスクトップを試せます。圧縮されたシステムイメージを読み込む起動環境が必要で、AnduinOS はインストール後と同じ Dracut でこれを生成します。
+
+Dracut の dmsquash-live がイメージを読み込みます。AnduinOS Live Layers は変更を書き込む層を管理し、一時的に使うことも USB に保存して次回に引き継ぐこともできます。インストール用ファイルを利用可能な状態に保ち、拡張した USB 構成の修復にも対応します。同じツールで保守や問題調査をしやすくしますが、すべての USB が速く起動するという主張ではありません。</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.\n\nDracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>Live USBを使うと、ディスクにインストールせずにデスクトップを試すことができます。圧縮されたシステムイメージを読み込むには、起動環境が必要です。AnduinOSでは現在、インストール済みシステムと同じツールであるDracutを使ってこれを構築しています。
+
+イメージの読み込みにはDracutのdmsquash-liveを使用します。AnduinOS Live Layersは、変更内容を保持するための書き込み可能なレイヤーを管理します。変更内容は一時的に保存することも、後で使えるようUSBに保存することもできます。また、インストールファイルを利用可能な状態に保ち、容量を拡張したUSB構成の修復にも対応しています。両方の環境で同じ起動ツールを使うことで、保守やトラブルシューティングがしやすくなります。すべてのUSBの起動が速くなるという意味ではありません。</value>
+  </data>
+  <data name="About this comparison" xml:space="preserve">
+    <value>この比較について</value>
+  </data>
+  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
+    <value>Btrfs のインストール設定が完了すると、AnduinOS は保護された New OS スナップショットと初期ホームフォルダーのスナップショットを保存します。コントロールパネルの初期化機能は復元用スナップショットを確認し、安全のため現在の状態も保存して、再起動時に初期システムへ戻します。インストール USB は不要です。個人ファイルは標準で保持され、ホームも初期化するかは別に選びます。元のスナップショットが必要で、ext4 では使えません。売却前の安全なデータ消去を行う機能ではありません。</value>
   </data>
   <data name="AMD64 + ARM64" xml:space="preserve">
     <value>AMD64 + ARM64</value>
+  </data>
+  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
+    <value>initramfs は通常の起動より前にドライバーを読み込み、システムを見つける小さな環境です。Zorin は Ubuntu 24.04 の initramfs-tools でこれを生成し、Live USB には Casper を使います。Dracut とはツールの選択が異なり、起動機能がないという意味ではありません。</value>
+  </data>
+  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Ubuntu のインストール USB で新しいシステムを入れ直せます。ファイルをバックアップし、ディスクとパーティションを確認してください。Ubuntu Core には別の初期化機能がありますが、ここで比較している Ubuntu Desktop とは異なる製品です。</value>
+  </data>
+  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2 は Ubuntu 26.04 LTS と Linux 7.0 カーネルをベースにしています。カーネルはソフトウェアとハードウェアをつなぐ部分です。この構成はインストール用イメージだけでなく、インストール後や通常の更新でも維持されます。</value>
+  </data>
+  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50&apos;s frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
+    <value>AnduinOS は Ubuntu 26.04 のドライバーと GNOME 50 の描画タイミング改善を組み合わせます。ドライバーセンターはドライバー管理とセキュアブート・DKMS 署名の確認を支援します。使いたい機能には、対応する GPU とドライバーが必要です。</value>
+  </data>
+  <data name="AnduinOS images and tests" xml:space="preserve">
+    <value>AnduinOS のイメージとテスト</value>
+  </data>
+  <data name="AnduinOS packages and source code" xml:space="preserve">
+    <value>AnduinOS のパッケージとソースコード</value>
+  </data>
+  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
+    <value>AnduinOS は AMD64 と ARM64 のインストールイメージを提供します。AMD64 は64ビットの Intel・AMD PC 向け、ARM64 は別系統のプロセッサー向けです。両方をインストーラー、署名済み UEFI 起動ファイル、自動テストの対象にしています。ただし、すべての ARM 機器で起動できるという意味ではありません。</value>
+  </data>
+  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical&apos;s online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
+    <value>AnduinOS は whoopsie など Ubuntu の報告用部品を削除・ブロックし、端末に表示される Canonical のオンラインニュースを無効にします。これらはシステムパッケージで適用します。対象は OS の部品であり、追加アプリや Web サイトには独自のデータ収集設定がある場合があります。</value>
+  </data>
+  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
+    <value>AnduinOS スナップショットマネージャー</value>
+  </data>
+  <data name="AnduinOS storage and recovery design" xml:space="preserve">
+    <value>AnduinOS のストレージと復元の設計</value>
   </data>
   <data name="APKG builds AnduinOS packages from .aosproj project files. Each project records supported releases and processors, dependencies, conflicts, files, services, AppStream app information and build checks. Metapackages group these packages into the system you install. This is mainly useful to contributors maintaining or rebuilding AnduinOS." xml:space="preserve">
     <value>APKG は .aosproj プロジェクトから AnduinOS のパッケージを作成します。対応リリース・プロセッサー、依存関係、競合、ファイル、サービス、AppStream のアプリ情報、ビルド検査を記録します。メタパッケージがそれらをインストール可能なシステムにまとめます。主に AnduinOS の保守や再ビルドに参加する人に役立つ仕組みです。</value>
@@ -41,47 +105,8 @@ Dracut の dmsquash-live がイメージを読み込みます。AnduinOS Live La
   <data name="APT, Flatpak and Snap defaults" xml:space="preserve">
     <value>APT、Flatpak、Snap の標準構成</value>
   </data>
-  <data name="About this comparison" xml:space="preserve">
-    <value>この比較について</value>
-  </data>
-  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
-    <value>Btrfs のインストール設定が完了すると、AnduinOS は保護された New OS スナップショットと初期ホームフォルダーのスナップショットを保存します。コントロールパネルの初期化機能は復元用スナップショットを確認し、安全のため現在の状態も保存して、再起動時に初期システムへ戻します。インストール USB は不要です。個人ファイルは標準で保持され、ホームも初期化するかは別に選びます。元のスナップショットが必要で、ext4 では使えません。売却前の安全なデータ消去を行う機能ではありません。</value>
-  </data>
-  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
-    <value>Ubuntu のインストール USB で新しいシステムを入れ直せます。ファイルをバックアップし、ディスクとパーティションを確認してください。Ubuntu Core には別の初期化機能がありますが、ここで比較している Ubuntu Desktop とは異なる製品です。</value>
-  </data>
-  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
-    <value>initramfs は通常の起動より前にドライバーを読み込み、システムを見つける小さな環境です。Zorin は Ubuntu 24.04 の initramfs-tools でこれを生成し、Live USB には Casper を使います。Dracut とはツールの選択が異なり、起動機能がないという意味ではありません。</value>
-  </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 は Ubuntu 26.04 LTS と Linux 7.0 カーネルをベースにしています。カーネルはソフトウェアとハードウェアをつなぐ部分です。この構成はインストール用イメージだけでなく、インストール後や通常の更新でも維持されます。</value>
-  </data>
-  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
-    <value>AnduinOS スナップショットマネージャー</value>
-  </data>
-  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50's frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
-    <value>AnduinOS は Ubuntu 26.04 のドライバーと GNOME 50 の描画タイミング改善を組み合わせます。ドライバーセンターはドライバー管理とセキュアブート・DKMS 署名の確認を支援します。使いたい機能には、対応する GPU とドライバーが必要です。</value>
-  </data>
-  <data name="AnduinOS images and tests" xml:space="preserve">
-    <value>AnduinOS のイメージとテスト</value>
-  </data>
-  <data name="AnduinOS packages and source code" xml:space="preserve">
-    <value>AnduinOS のパッケージとソースコード</value>
-  </data>
-  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
-    <value>AnduinOS は AMD64 と ARM64 のインストールイメージを提供します。AMD64 は64ビットの Intel・AMD PC 向け、ARM64 は別系統のプロセッサー向けです。両方をインストーラー、署名済み UEFI 起動ファイル、自動テストの対象にしています。ただし、すべての ARM 機器で起動できるという意味ではありません。</value>
-  </data>
-  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical's online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
-    <value>AnduinOS は whoopsie など Ubuntu の報告用部品を削除・ブロックし、端末に表示される Canonical のオンラインニュースを無効にします。これらはシステムパッケージで適用します。対象は OS の部品であり、追加アプリや Web サイトには独自のデータ収集設定がある場合があります。</value>
-  </data>
-  <data name="AnduinOS storage and recovery design" xml:space="preserve">
-    <value>AnduinOS のストレージと復元の設計</value>
-  </data>
   <data name="Automated tests boot real installation images in QEMU virtual machines, run the installer, restart the installed system and check the desktop. QMP controls the virtual machine; AT-SPI exposes interface controls so tests can interact with them. Published results include screenshots and logs. Virtual-machine tests do not cover every physical device." xml:space="preserve">
     <value>自動テストは実際のインストールイメージを QEMU 仮想マシンで起動し、インストール後に再起動してデスクトップを確認します。QMP で仮想マシンを制御し、AT-SPI で画面の操作部品を扱います。結果にはスクリーンショットとログを含みます。仮想マシンのテストですべての実機を網羅するわけではありません。</value>
-  </data>
-  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>Swap 容量を自動調整、休止設定も確認</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>変更前後に自動スナップショット</value>
@@ -92,6 +117,9 @@ Dracut の dmsquash-live がイメージを読み込みます。AnduinOS Live La
   <data name="Automatic software snapshots not confirmed" xml:space="preserve">
     <value>ソフトウェア変更時の自動保存は未確認</value>
   </data>
+  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
+    <value>Swap 容量を自動調整、休止設定も確認</value>
+  </data>
   <data name="Available desktop installation images" xml:space="preserve">
     <value>用意されているデスクトップ用インストールイメージ</value>
   </data>
@@ -101,10 +129,17 @@ Dracut の dmsquash-live がイメージを読み込みます。AnduinOS Live La
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>2026年9月20日までに公開された公式文書とソースコードをもとに、主に標準機能を比較しています。比較のために各システムを実際にインストールしたわけではありません。項目を開くと説明と参照先を確認できます。「未確認」は判断に十分な情報がないことを示します。機能はバージョンや設定によって異なります。</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.&#10;&#10;AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
+
+AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
     <value>Linux がデスクトップを開く前に、initramfs という小さな起動環境がドライバーを読み込み、システムのディスクを探します。Dracut はその環境を作るツールです。
 
 AnduinOS はインストール後のシステムと Live USB の両方で Dracut を使います。中核パッケージは互換性のない initramfs-tools、Casper、finalrd との同時インストールを防ぎます。生成した起動イメージを検査し、別の生成ツールが知らないうちに置き換えないよう保護します。保守を統一するための仕組みで、起動が必ず速くなるという意味ではありません。</value>
+  </data>
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.\n\nAnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+    <value>Linuxがデスクトップを起動する前に、initramfsと呼ばれる小さな起動環境がドライバーを読み込み、システムディスクを特定します。この環境はDracutによって構築されます。
+
+AnduinOSは、インストール済みシステムとLive USBの両方でDracutを使用します。そのコアパッケージは、互換性のないinitramfs-tools、Casper、finalrdパッケージが同時にインストールされるのを防ぎます。生成された起動イメージは検証され、パッケージの保護機能によって、ほかの生成ツールが気付かれないうちにイメージを置き換えることも防がれます。これにより保守方法が統一されますが、それだけで起動が速くなるとは限りません。</value>
   </data>
   <data name="Browse and restore earlier file versions" xml:space="preserve">
     <value>ファイルの過去の状態を参照・復元</value>
@@ -130,7 +165,7 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Built-in system tools" xml:space="preserve">
     <value>標準搭載のシステムツール</value>
   </data>
-  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS's QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
+  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS&apos;s QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
     <value>Canonical はソフトウェアアーカイブ、インストールイメージ、ハードウェア、リリースを広範囲にテストします。AnduinOS の QEMU ベースのインストーラー・デスクトップテストとは仕組みや報告方法が異なります。一つの方式が品質上のすべての課題を扱えるという比較ではありません。</value>
   </data>
   <data name="Checking space and resume settings" xml:space="preserve">
@@ -139,7 +174,7 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>比較するディストリビューションを選択</value>
   </data>
-  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME's HDR or scaling features apply to Cinnamon." xml:space="preserve">
+  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME&apos;s HDR or scaling features apply to Cinnamon." xml:space="preserve">
     <value>Mint 22.3 の Cinnamon 6.6 は主に従来の X11 デスクトップを使います。Wayland は実験段階で、次のリリースでの改善が予定されています。GNOME の HDR や拡大表示の機能が、そのまま Cinnamon にもあるわけではありません。</value>
   </data>
   <data name="Cinnamon and XApp tools" xml:space="preserve">
@@ -193,6 +228,15 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Explore {0} more features" xml:space="preserve">
     <value>さらに {0} 個の機能を見る</value>
   </data>
+  <data name="ext4 by default" xml:space="preserve">
+    <value>標準は ext4</value>
+  </data>
+  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
+    <value>標準は ext4、Btrfs も選択可能</value>
+  </data>
+  <data name="ext4 by default; other setups possible" xml:space="preserve">
+    <value>標準は ext4、ほかの構成も可能</value>
+  </data>
   <data name="Extensive image and release testing" xml:space="preserve">
     <value>幅広いイメージ・リリーステスト</value>
   </data>
@@ -211,7 +255,7 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Finding and restoring earlier file versions" xml:space="preserve">
     <value>以前のバージョンを探して復元</value>
   </data>
-  <data name="Follows Ubuntu 24.04's GNOME" xml:space="preserve">
+  <data name="Follows Ubuntu 24.04&apos;s GNOME" xml:space="preserve">
     <value>Ubuntu 24.04 の GNOME に準拠</value>
   </data>
   <data name="Follows Ubuntu memory management" xml:space="preserve">
@@ -219,6 +263,12 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   </data>
   <data name="From everyday apps to system recovery, compare the features that help you feel at home and stay in control." xml:space="preserve">
     <value>日々使うアプリからシステムの復元まで。使いやすさと、自分で管理できる安心につながる機能を比較します。</value>
+  </data>
+  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
+    <value>汎用的なメモリ・Swap 設定</value>
+  </data>
+  <data name="Getting back to a working system" xml:space="preserve">
+    <value>正常に動いていた状態へ戻す</value>
   </data>
   <data name="GNOME 50 brings HDR screen sharing, updated color management, improved variable refresh rate and fractional scaling. HDR supports a wider brightness range; VRR adjusts refresh timing; fractional scaling makes content fit high-resolution screens. Availability depends on the display, graphics driver and application." xml:space="preserve">
     <value>GNOME 50 は HDR 画面共有、更新された色管理、可変リフレッシュレートや小数倍率表示の改善を提供します。HDR は明暗の表現範囲を広げ、VRR は画面の更新タイミングを調整し、小数倍率は高解像度画面で見やすい大きさに調整します。利用可否は画面、ドライバー、アプリによって異なります。</value>
@@ -238,23 +288,17 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="GTK4 across our graphical system tools" xml:space="preserve">
     <value>独自のシステムツールを GTK4 で統一</value>
   </data>
-  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>汎用的なメモリ・Swap 設定</value>
-  </data>
-  <data name="Getting back to a working system" xml:space="preserve">
-    <value>正常に動いていた状態へ戻す</value>
-  </data>
   <data name="HDR, variable refresh rate and scaling" xml:space="preserve">
     <value>HDR、可変リフレッシュレート、拡大率</value>
   </data>
   <data name="Hibernation check app not confirmed" xml:space="preserve">
     <value>休止状態の確認アプリは未確認</value>
   </data>
-  <data name="How Swap Control works" xml:space="preserve">
-    <value>Swap Control の仕組み</value>
-  </data>
   <data name="How apps display windows on your screen" xml:space="preserve">
     <value>ウィンドウの表示と入力を支える仕組み</value>
+  </data>
+  <data name="How Swap Control works" xml:space="preserve">
+    <value>Swap Control の仕組み</value>
   </data>
   <data name="How system packages are built and organized" xml:space="preserve">
     <value>パッケージの作成と整理の方法</value>
@@ -267,6 +311,9 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   </data>
   <data name="Information as of 20 September 2026" xml:space="preserve">
     <value>2026年9月20日時点の情報</value>
+  </data>
+  <data name="initramfs-tools and Casper" xml:space="preserve">
+    <value>initramfs-tools と Casper</value>
   </data>
   <data name="Installation, startup and desktop checks" xml:space="preserve">
     <value>インストール、起動、デスクトップの確認</value>
@@ -313,12 +360,6 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Mint 22.3 uses the Ubuntu 24.04 generation of initramfs and Live tools. These prepare the drivers and files needed before the desktop starts. The reviewed sources do not describe a default migration to Dracut across both installed and Live systems." xml:space="preserve">
     <value>Mint 22.3 は Ubuntu 24.04 系の initramfs・Live ツールを使い、デスクトップの起動前に必要なドライバーやファイルを準備します。インストール後と Live 環境の両方を標準で Dracut に移行したという記述は、参照資料にはありません。</value>
   </data>
-  <data name="Mint Live USB environment" xml:space="preserve">
-    <value>Mint の Live USB 環境</value>
-  </data>
-  <data name="Mint Wayland development updates" xml:space="preserve">
-    <value>Mint の Wayland 開発状況</value>
-  </data>
   <data name="Mint defaults to ext4 but allows Btrfs. Timeshift can use Btrfs snapshots with a suitable layout. Choosing Btrfs alone does not set up the same separation of system files and recovery data used by AnduinOS." xml:space="preserve">
     <value>Mint は標準で ext4 を使いますが、Btrfs も選べます。適切な構成なら Timeshift で Btrfs スナップショットを使えます。ただし、Btrfs を選ぶだけで AnduinOS と同じシステム・復元データの分離構成になるわけではありません。</value>
   </data>
@@ -337,26 +378,29 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Mint images for newer hardware" xml:space="preserve">
     <value>新しいハードウェア向けの Mint イメージ</value>
   </data>
-  <data name="Mint inherits Ubuntu's signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
+  <data name="Mint inherits Ubuntu&apos;s signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
     <value>Mint は Ubuntu の署名済みブートローダーとカーネルを利用し、対応機器でセキュアブートを有効にして起動できます。署名エラーの回避方法も案内しており、ドライバーやファームウェアの互換性は引き続き重要です。</value>
   </data>
-  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint's software policy rather than an inability to run Snap at all." xml:space="preserve">
+  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint&apos;s software policy rather than an inability to run Snap at all." xml:space="preserve">
     <value>Mint は APT と Flatpak を統合し、Snap を標準でブロックします。利用者が意図的に設定を変えて有効にすることはできます。これは Mint のソフトウェア方針であり、Snap が実行不可能という意味ではありません。</value>
+  </data>
+  <data name="Mint Live USB environment" xml:space="preserve">
+    <value>Mint の Live USB 環境</value>
   </data>
   <data name="Mint maintains Cinnamon and XApp tools with their own interface design. Major administration tools mainly use GTK3 and XApp. GTK4 applications can still run; the toolkit used by a settings app does not determine which apps users can install." xml:space="preserve">
     <value>Mint は独自の画面設計を持つ Cinnamon と XApp を開発しています。主な管理ツールは GTK3 と XApp を使います。GTK4 アプリも実行でき、設定ツールの開発技術によってインストールできるアプリが決まるわけではありません。</value>
   </data>
-  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS's Dracut Live Layers." xml:space="preserve">
+  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS&apos;s Dracut Live Layers." xml:space="preserve">
     <value>Mint はディスクにインストールせず USB から試せるデスクトップを提供します。Live ツールは Ubuntu 24.04 をベースにしています。変更を再起動後も残すには適切な永続化設定が必要です。AnduinOS の Dracut Live Layers への移行は参照資料に記載されていません。</value>
   </data>
-  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS's declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
+  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS&apos;s declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
     <value>Mint は従来から使われているグラフィカルインストーラーを提供します。画面で設定を選び、システムをインストールします。AnduinOS の宣言型計画と別の実行部という設計とは異なりますが、構成の違いだけで安全性が低いとは言えません。</value>
-  </data>
-  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint は Linux の標準的な Swap・休止機能を提供します。容量と復帰設定を一緒に確認する付属アプリは参照文書で確認できませんでした。使えるかどうかは機器と設定にも依存します。</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
     <value>Mint は Linux の標準的なメモリ管理と Swap に対応します。メモリ圧縮、負荷テスト、休止状態の確認を一つにまとめた付属アプリは、参照したリリース文書では確認できませんでした。</value>
+  </data>
+  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
+    <value>Mint は Linux の標準的な Swap・休止機能を提供します。容量と復帰設定を一緒に確認する付属アプリは参照文書で確認できませんでした。使えるかどうかは機器と設定にも依存します。</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint はリリースのアップグレード前に Timeshift スナップショットを作ることを推奨しています。問題があれば以前のシステムに戻せます。この手動の備えは、すべての APT 操作の前後に自動作成する方式とは異なります。</value>
@@ -367,8 +411,14 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Mint uses Debian packages, metapackages that group dependencies, and its own project tools to build the desktop. This is an established way to organize a distribution; using a different project format does not imply missing user features." xml:space="preserve">
     <value>Mint は Debian パッケージ、依存関係をまとめるメタパッケージ、独自の開発ツールでデスクトップを作ります。広く使われる構成方法であり、プロジェクト形式が違うからといって利用者向け機能が不足するわけではありません。</value>
   </data>
+  <data name="Mint Wayland development updates" xml:space="preserve">
+    <value>Mint の Wayland 開発状況</value>
+  </data>
   <data name="More than a familiar desktop" xml:space="preserve">
     <value>使い慣れたデスクトップ、その先へ</value>
+  </data>
+  <data name="Not confirmed" xml:space="preserve">
+    <value>未確認</value>
   </data>
   <data name="NVIDIA drivers; Xorg available" xml:space="preserve">
     <value>NVIDIA ドライバー、Xorg も選択可能</value>
@@ -379,20 +429,17 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="NVIDIA supported on Wayland" xml:space="preserve">
     <value>Wayland で NVIDIA に対応</value>
   </data>
-  <data name="Not confirmed" xml:space="preserve">
-    <value>未確認</value>
-  </data>
   <data name="Official x86-64 images" xml:space="preserve">
     <value>公式イメージは x86-64 向け</value>
   </data>
   <data name="On Btrfs, AnduinOS creates system snapshots around APT software changes and makes recovery available through the boot menu. Dracut, GRUB and the snapshot manager work together to restore the selected state and confirm a successful boot before cleanup. Snapshots on the same disk do not replace an external backup against disk failure." xml:space="preserve">
     <value>Btrfs では APT によるソフトウェア変更の前後にスナップショットを作成し、起動メニューから復元できます。Dracut、GRUB、スナップショットマネージャーが連携し、選んだ状態に戻して正常な起動を確認してから後処理を行います。同じディスク上のスナップショットは、ディスク故障に備える外部バックアップの代わりにはなりません。</value>
   </data>
+  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system&apos;s retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
+    <value>Btrfs では APT のフックがシステムパッケージのインストール、更新、削除の前後にスナップショットを作成します。パッケージの状態を記録し、システムの保存・復元設定に従って管理します。対象は APT の変更であり、すべての Flatpak や個人ファイルの変更で作成されるわけではありません。</value>
+  </data>
   <data name="On Btrfs, Personal Files snapshots keep home-folder history separately from system snapshots. Snapshot Manager and the Files integration let you browse older versions and restore selected files without rolling back the operating system. Files changed after the latest snapshot may not have a saved version; keep external backups for disk failure." xml:space="preserve">
     <value>Btrfs の個人ファイル用スナップショットは、ホームフォルダーの履歴をシステムとは別に保存します。スナップショットマネージャーとファイルアプリの連携により、OS 全体を戻さず古いバージョンを閲覧・復元できます。最後の保存後に変更したファイルには復元版がない場合があります。ディスク故障には外部バックアップも必要です。</value>
-  </data>
-  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system's retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
-    <value>Btrfs では APT のフックがシステムパッケージのインストール、更新、削除の前後にスナップショットを作成します。パッケージの状態を記録し、システムの保存・復元設定に従って管理します。対象は APT の変更であり、すべての Flatpak や個人ファイルの変更で作成されるわけではありません。</value>
   </data>
   <data name="Our system" xml:space="preserve">
     <value>私たちのシステム</value>
@@ -499,22 +546,22 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="System telemetry components disabled" xml:space="preserve">
     <value>システムの情報送信部品を無効化</value>
   </data>
-  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
+  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS&apos;s own graphical system tools, not every third-party application." xml:space="preserve">
     <value>インストーラー、コントロールパネル、外観、初回設定、ドライバーセンター、Secure Boot Toolkit、Swap Control、スナップショットマネージャーは GTK4 と libadwaita を使います。操作部品やウィンドウのサイズ変更を統一しやすくするためです。対象は AnduinOS 独自のグラフィカルシステムツールであり、すべての外部アプリではありません。</value>
   </data>
-  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
-    <value>参照した Zorin の文書では、各 APT 操作の前後に標準でスナップショットを作る機能は確認できませんでした。バックアップツールは別途設定できます。ここで比較しているのは確認できた標準の自動化機能です。</value>
-  </data>
-  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin's filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
+  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin&apos;s filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
     <value>Zorin のファイルシステムとファイルマネージャーに統合された履歴機能は、参照資料では確認できませんでした。別のバックアップアプリで個人ファイルを保護することはできます。</value>
   </data>
   <data name="The reviewed sources do not establish an equivalent package-level block on Ubuntu reporting components and online terminal news. That is not enough to conclude whether Zorin collects personal data. Check its privacy information and the settings of the applications you use." xml:space="preserve">
     <value>Ubuntu の報告用部品や端末のオンラインニュースをパッケージ単位で同様にブロックする仕組みは確認できませんでした。この情報だけで Zorin が個人情報を収集すると判断はできません。プライバシー情報や利用アプリの設定を確認してください。</value>
   </data>
+  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
+    <value>参照した Zorin の文書では、各 APT 操作の前後に標準でスナップショットを作る機能は確認できませんでした。バックアップツールは別途設定できます。ここで比較しているのは確認できた標準の自動化機能です。</value>
+  </data>
   <data name="Timeshift can restore a system snapshot you previously created. Returning to a freshly installed state requires a suitable saved snapshot or a reinstall. A routine system snapshot is not necessarily a protected copy of the original installation, and personal files require separate care." xml:space="preserve">
     <value>Timeshift は事前に作ったシステムスナップショットを復元できます。インストール直後に戻すには、その状態を保存したスナップショットか再インストールが必要です。普段のスナップショットが保護された初期コピーとは限らず、個人ファイルにも別途配慮が必要です。</value>
   </data>
-  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS's integration with software changes and startup confirmation." xml:space="preserve">
+  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS&apos;s integration with software changes and startup confirmation." xml:space="preserve">
     <value>Timeshift はシステムのスナップショットを作成し、スケジュールや保存数を管理します。以前の状態への復元に使えます。ソフトウェア変更や起動確認と連携する AnduinOS とは復元の手順が異なります。</value>
   </data>
   <data name="Timeshift is designed to restore system state, not serve as a personal-file backup tool. Use a separate backup method for documents and other personal data. The presence of system snapshots should not be mistaken for saved versions of your files." xml:space="preserve">
@@ -526,23 +573,23 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Trying the desktop without installing it" xml:space="preserve">
     <value>インストールせずにデスクトップを試す</value>
   </data>
-  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
-    <value>Ubuntu 24.04 の起動ツール</value>
-  </data>
   <data name="Ubuntu 24.04 · Linux 6.14 or 7.0 HWE" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.14 または 7.0 HWE</value>
   </data>
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS は Linux 7.0 と5年間の標準 LTS メンテナンスを提供します。LTS は長期サポートの意味です。AnduinOS 2 はこの Ubuntu リリースをベースにしています。</value>
+  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
+    <value>Ubuntu 24.04 の起動ツール</value>
+  </data>
+  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
+    <value>Ubuntu 26.04 は Wayland デスクトップでの NVIDIA 対応を案内しています。GPU に合ったドライバーを使ってください。デスクトップに対応していても、すべてのカードですべての機能が動く保証ではありません。</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>
   </data>
-  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
-    <value>Ubuntu 26.04 は Wayland デスクトップでの NVIDIA 対応を案内しています。GPU に合ったドライバーを使ってください。デスクトップに対応していても、すべてのカードですべての機能が動く保証ではありません。</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS は Linux 7.0 と5年間の標準 LTS メンテナンスを提供します。LTS は長期サポートの意味です。AnduinOS 2 はこの Ubuntu リリースをベースにしています。</value>
   </data>
   <data name="Ubuntu 26.04 offers official desktop downloads for AMD64 and ARM64. Select the image for your processor and check device compatibility: support for an architecture does not guarantee support for every machine using it." xml:space="preserve">
     <value>Ubuntu 26.04 は AMD64 と ARM64 の公式デスクトップイメージを提供します。プロセッサーに合うイメージを選び、機器の互換性も確認してください。同じアーキテクチャの機器すべてへの対応を保証するものではありません。</value>
@@ -556,7 +603,7 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Ubuntu 26.04 ships GNOME 50 with its Wayland display improvements, including optimized fractional scaling. HDR, variable refresh rate and color-management features depend on compatible graphics hardware, drivers, displays and applications." xml:space="preserve">
     <value>Ubuntu 26.04 は GNOME 50 を搭載し、小数倍率表示の最適化など Wayland の改善を取り込みます。HDR、可変リフレッシュレート、色管理には、対応する GPU、ドライバー、画面、アプリが必要です。</value>
   </data>
-  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system's initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
+  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system&apos;s initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
     <value>Ubuntu 26.04 はインストール後の initramfs を標準で Dracut により生成します。initramfs は起動初期に使う小さな環境です。initramfs-tools も引き続きサポートされます。一方、インストール USB の Live 環境には今も initramfs-tools と Casper が使われています。</value>
   </data>
   <data name="Ubuntu Core recovery options" xml:space="preserve">
@@ -568,17 +615,14 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Ubuntu Desktop installation guide" xml:space="preserve">
     <value>Ubuntu Desktop のインストールガイド</value>
   </data>
-  <data name="Ubuntu Live image build notes" xml:space="preserve">
-    <value>Ubuntu Live イメージのビルド情報</value>
-  </data>
-  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
-    <value>Ubuntu のセキュアブート文書</value>
-  </data>
   <data name="Ubuntu includes diagnostic and online-service components whose controls depend on the release. Review the privacy options offered during setup and in system settings. These defaults differ from removing or blocking the components in AnduinOS." xml:space="preserve">
     <value>Ubuntu は診断やオンラインサービスの部品を含み、設定方法はリリースによって異なります。初回設定やシステム設定のプライバシー項目を確認してください。部品自体を削除・ブロックする AnduinOS とは標準構成が異なります。</value>
   </data>
   <data name="Ubuntu includes modern GNOME applications using GTK4 and libadwaita. Its installer and other Ubuntu-specific tools also use different technologies, so not every system interface is built with the same toolkit." xml:space="preserve">
     <value>Ubuntu は GTK4 と libadwaita を使う新しい GNOME アプリを搭載します。インストーラーなどの独自ツールには別の技術も使われ、すべてのシステム画面が同じ技術で作られているわけではありません。</value>
+  </data>
+  <data name="Ubuntu Live image build notes" xml:space="preserve">
+    <value>Ubuntu Live イメージのビルド情報</value>
   </data>
   <data name="Ubuntu offers backup applications and filesystem tools. The reviewed default desktop setup does not confirm the same integrated file-history feature in the file manager. Personal backups can still be configured separately." xml:space="preserve">
     <value>Ubuntu にはバックアップアプリやファイルシステムツールがあります。参照した標準デスクトップ構成では、同様のファイルマネージャー統合履歴機能は確認できませんでした。個人ファイルのバックアップは別途設定できます。</value>
@@ -589,35 +633,38 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Ubuntu provides the underlying kernel and installation tools for Swap. The reviewed desktop setup does not confirm a built-in app combining Swap sizing and hibernation diagnostics. Check hardware support and resume configuration before relying on hibernation." xml:space="preserve">
     <value>Ubuntu は Swap に必要なカーネル機能とインストールツールを提供します。容量調整と休止状態の診断をまとめた標準アプリは確認できませんでした。休止状態を使う前にハードウェアと復帰設定を確認してください。</value>
   </data>
-  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
+  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
+    <value>Ubuntu のセキュアブート文書</value>
+  </data>
+  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS&apos;s combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
     <value>Ubuntu は一般的なデスクトップ向け設定で Linux のメモリ・Swap 機能を提供します。設定済みの Zram、専用 Swap パーティション、グラフィカル管理ツールを組み合わせる AnduinOS とは標準構成が異なります。</value>
   </data>
   <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
     <value>Ubuntu では追加のバックアップ・スナップショットツールを使えます。参照した標準デスクトップ構成では、各 APT 操作の前後に自動で作成する機能は確認できませんでした。変更前のバックアップ手順は自分で用意できます。</value>
   </data>
-  <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
-    <value>Ubuntu はシステムパッケージに APT、標準アプリの一部に Snap を使います。Flatpak は別途インストールできますが、標準のデスクトップアプリ導入方法には含まれません。</value>
-  </data>
   <data name="Ubuntu uses a Microsoft-signed shim to start Canonical-signed GRUB and kernels on AMD64 and ARM64. MOK enrollment lets users trust additional certificates, and DKMS signing supports locally built drivers. These components form the chain checked during Secure Boot." xml:space="preserve">
     <value>Ubuntu は AMD64 と ARM64 で、Microsoft 署名済みの shim から Canonical 署名済みの GRUB とカーネルを起動します。MOK 登録で追加の証明書を信頼でき、DKMS の署名でローカル生成のドライバーにも対応します。これらがセキュアブートで確認する信頼のつながりを構成します。</value>
   </data>
-  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS's package projects." xml:space="preserve">
+  <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
+    <value>Ubuntu はシステムパッケージに APT、標準アプリの一部に Snap を使います。Flatpak は別途インストールできますが、標準のデスクトップアプリ導入方法には含まれません。</value>
+  </data>
+  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS&apos;s package projects." xml:space="preserve">
     <value>Ubuntu は seed でパッケージを選び、メタパッケージで依存関係をまとめ、自動テスト付きのアーカイブ基盤で管理します。多くのイメージや機器向けソフトウェアを整理・検証する仕組みで、AnduinOS のパッケージプロジェクトよりはるかに大きな規模で運用されています。</value>
   </data>
   <data name="Ubuntu version and Linux kernel" xml:space="preserve">
     <value>Ubuntu のバージョンと Linux カーネル</value>
   </data>
-  <data name="Ubuntu's desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS's GTK4 interface and typed installation plan." xml:space="preserve">
-    <value>Ubuntu のデスクトップインストーラーは Flutter の画面と、インストールを実行する別のバックエンドを使います。操作しやすいグラフィカルな設定体験を提供します。AnduinOS の GTK4 画面と型を定めた計画とは実装が異なります。</value>
-  </data>
-  <data name="Ubuntu's guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS's Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
-    <value>Ubuntu のガイド付きデスクトップインストールは標準で ext4 を使います。ほかのファイルシステム構成も設定できますが、AnduinOS の Btrfs サブボリューム構成や復元機能の統合は標準搭載ではありません。</value>
+  <data name="Ubuntu-based graphical installer" xml:space="preserve">
+    <value>Ubuntu ベースのグラフィカルインストーラー</value>
   </data>
   <data name="Ubuntu-based Live USB tools" xml:space="preserve">
     <value>Ubuntu ベースの Live USB ツール</value>
   </data>
-  <data name="Ubuntu-based graphical installer" xml:space="preserve">
-    <value>Ubuntu ベースのグラフィカルインストーラー</value>
+  <data name="Ubuntu&apos;s desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS&apos;s GTK4 interface and typed installation plan." xml:space="preserve">
+    <value>Ubuntu のデスクトップインストーラーは Flutter の画面と、インストールを実行する別のバックエンドを使います。操作しやすいグラフィカルな設定体験を提供します。AnduinOS の GTK4 画面と型を定めた計画とは実装が異なります。</value>
+  </data>
+  <data name="Ubuntu&apos;s guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS&apos;s Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
+    <value>Ubuntu のガイド付きデスクトップインストールは標準で ext4 を使います。ほかのファイルシステム構成も設定できますが、AnduinOS の Btrfs サブボリューム構成や復元機能の統合は標準搭載ではありません。</value>
   </data>
   <data name="Uses Ubuntu Secure Boot" xml:space="preserve">
     <value>Ubuntu のセキュアブートを利用</value>
@@ -652,7 +699,7 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="What happens when RAM fills up" xml:space="preserve">
     <value>RAM がいっぱいになったときの備え</value>
   </data>
-  <data name="What's new in GNOME 50" xml:space="preserve">
+  <data name="What&apos;s new in GNOME 50" xml:space="preserve">
     <value>GNOME 50 の新機能</value>
   </data>
   <data name="X11 by default; Wayland experimental" xml:space="preserve">
@@ -660,21 +707,6 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   </data>
   <data name="You can return to a fresh Zorin installation using an installation USB. Back up personal files first and review the disk choices carefully. This is a reinstall, rather than restoring an installation-time snapshot through the AnduinOS reset tool." xml:space="preserve">
     <value>インストール USB から Zorin を新しく入れ直せます。先に個人ファイルをバックアップし、対象ディスクをよく確認してください。AnduinOS の初期化ツールで初回スナップショットを戻す方法とは異なり、再インストールです。</value>
-  </data>
-  <data name="Zorin NVIDIA driver help" xml:space="preserve">
-    <value>Zorin の NVIDIA ドライバーガイド</value>
-  </data>
-  <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
-    <value>Zorin OS 18.1 のデスクトップイメージは64ビットの Intel・AMD プロセッサー向けです。この形式は x86-64 または AMD64 とも呼ばれます。公式ダウンロードには ARM64 デスクトップ版が掲載されていません。</value>
-  </data>
-  <data name="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50." xml:space="preserve">
-    <value>Zorin OS 18.1 は Ubuntu 24.04 LTS と Linux 6.17 を使用します。デスクトップやシステムソフトウェアのベースは Ubuntu 24.04 です。カーネルが新しくても、それだけで Ubuntu 26.04 や GNOME 50 のデスクトップ機能が使えるようになるわけではありません。</value>
-  </data>
-  <data name="Zorin OS specifications" xml:space="preserve">
-    <value>Zorin OS の仕様</value>
-  </data>
-  <data name="Zorin Windows App Support" xml:space="preserve">
-    <value>Zorin の Windows App Support</value>
   </data>
   <data name="Zorin combines GNOME applications and extensions with its own tools on the Ubuntu 24.04 base. These use a mix of interface technologies rather than one GTK4/libadwaita toolkit across all system tools." xml:space="preserve">
     <value>Zorin は Ubuntu 24.04 をベースに、GNOME アプリや拡張機能と独自ツールを組み合わせます。画面には複数の技術が使われ、すべてのシステムツールが GTK4・libadwaita に統一されているわけではありません。</value>
@@ -685,13 +717,25 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Zorin lets you try its desktop from a USB before installing. Its Live environment uses the Ubuntu-derived Casper and initramfs-tools approach. Persistent storage saves changes across boots when configured; it is separate from simply being able to start a Live session." xml:space="preserve">
     <value>Zorin はインストール前に USB からデスクトップを試せます。Live 環境は Ubuntu 由来の Casper と initramfs-tools を使います。再起動後も変更を残すには永続ストレージの設定が必要で、Live 起動できることとは別の機能です。</value>
   </data>
+  <data name="Zorin NVIDIA driver help" xml:space="preserve">
+    <value>Zorin の NVIDIA ドライバーガイド</value>
+  </data>
   <data name="Zorin offers a Live boot option for modern NVIDIA hardware and tools to install proprietary drivers. Its troubleshooting guidance also covers switching to Xorg or changing Secure Boot settings when a driver does not work." xml:space="preserve">
     <value>Zorin は新しい NVIDIA 機器向けの Live 起動オプションと、専用ドライバーのインストールツールを提供します。問題がある場合の Xorg への切り替えや、セキュアブート設定の変更も案内しています。</value>
+  </data>
+  <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
+    <value>Zorin OS 18.1 のデスクトップイメージは64ビットの Intel・AMD プロセッサー向けです。この形式は x86-64 または AMD64 とも呼ばれます。公式ダウンロードには ARM64 デスクトップ版が掲載されていません。</value>
+  </data>
+  <data name="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50." xml:space="preserve">
+    <value>Zorin OS 18.1 は Ubuntu 24.04 LTS と Linux 6.17 を使用します。デスクトップやシステムソフトウェアのベースは Ubuntu 24.04 です。カーネルが新しくても、それだけで Ubuntu 26.04 や GNOME 50 のデスクトップ機能が使えるようになるわけではありません。</value>
+  </data>
+  <data name="Zorin OS specifications" xml:space="preserve">
+    <value>Zorin OS の仕様</value>
   </data>
   <data name="Zorin performs release testing. In the official sources reviewed for this comparison, we did not find a comparable public set of automated installer and desktop reports. This concerns what users can inspect publicly, not whether Zorin tests its releases internally." xml:space="preserve">
     <value>Zorin はリリースをテストしています。今回参照した公式資料では、同様のインストーラー・デスクトップ自動テスト結果の公開一式は見つかりませんでした。これは公開情報の比較であり、内部テストの有無を判断するものではありません。</value>
   </data>
-  <data name="Zorin provides a graphical installer based on Ubuntu's installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
+  <data name="Zorin provides a graphical installer based on Ubuntu&apos;s installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
     <value>Zorin は Ubuntu のインストールツールをベースに、画面の案内に沿って操作できるインストーラーを提供します。AnduinOS と同じ、型を定めた計画と固定の特権実行部を分ける設計は参照資料で確認できませんでした。</value>
   </data>
   <data name="Zorin provides recovery options, but the reviewed sources do not confirm automatic software-change snapshots linked to boot-menu recovery and boot confirmation. Other backup tools may be installed or configured separately." xml:space="preserve">
@@ -709,31 +753,23 @@ AnduinOS はインストール後のシステムと Live USB の両方で Dracut
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
     <value>Zorin は Ubuntu の仕組みでセキュアブートに対応します。NVIDIA ドライバーが動かない場合に、セキュアブートの無効化や Xorg への切り替えが必要になるケースも案内しています。実際の対応はハードウェアやドライバーによって異なります。</value>
   </data>
-  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS's APKG project format." xml:space="preserve">
+  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS&apos;s APKG project format." xml:space="preserve">
     <value>Zorin は Debian・Ubuntu のパッケージ方式に、独自のリポジトリとパッケージ選択を組み合わせてデスクトップを構成します。AnduinOS の APKG プロジェクト形式ではなく、独自の作成手順を使います。</value>
   </data>
   <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
     <value>Zorin は Ubuntu 24.04 のメモリ・Swap 機能を利用します。Zram、Zswap、負荷テスト、休止状態の確認をまとめた付属アプリは確認できませんでした。個別の設定は Linux ツールで管理できます。</value>
   </data>
-  <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
-    <value>Zorin の GNOME は Ubuntu 24.04 をベースにしています。Wayland の表示機能はありますが、GNOME 50 の HDR、可変リフレッシュレート、色管理の改善より前の構成です。各機能はモニターやドライバーにも依存します。</value>
+  <data name="Zorin Windows App Support" xml:space="preserve">
+    <value>Zorin の Windows App Support</value>
   </data>
-  <data name="Zorin's default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
+  <data name="Zorin&apos;s default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
     <value>Zorin は標準で、Linux で広く使われる ext4 を使用します。参照した文書では、同様の復元機能を統合した Btrfs 構成は確認できませんでした。別のストレージツールを自分で設定することは可能です。</value>
+  </data>
+  <data name="Zorin&apos;s GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
+    <value>Zorin の GNOME は Ubuntu 24.04 をベースにしています。Wayland の表示機能はありますが、GNOME 50 の HDR、可変リフレッシュレート、色管理の改善より前の構成です。各機能はモニターやドライバーにも依存します。</value>
   </data>
   <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
     <value>Zram は RAM 内のデータを圧縮し、優先度の低いディスク上の Swap より先に使われます。AnduinOS は RAM の50%の LZ4 Zram を設定し、インストール時に Swap パーティションの容量を決めます。Swap Control で Zram、任意の Zswap、負荷テスト、休止状態の設定確認を管理できます。圧縮は物理 RAM の代わりにはなりません。</value>
   </data>
-  <data name="ext4 by default" xml:space="preserve">
-    <value>標準は ext4</value>
-  </data>
-  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
-    <value>標準は ext4、Btrfs も選択可能</value>
-  </data>
-  <data name="ext4 by default; other setups possible" xml:space="preserve">
-    <value>標準は ext4、ほかの構成も可能</value>
-  </data>
-  <data name="initramfs-tools and Casper" xml:space="preserve">
-    <value>initramfs-tools と Casper</value>
-  </data>
+
 </root>

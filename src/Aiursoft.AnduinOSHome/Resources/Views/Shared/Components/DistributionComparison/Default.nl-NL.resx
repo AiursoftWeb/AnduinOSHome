@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<root>
-  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
-  <resheader name="version"><value>2.0</value></resheader>
-  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
-  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.&#10;&#10;Dracut's dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
-    <value>Met een Live-USB probeer je het bureaublad zonder installatie op de schijf. Er is een opstartomgeving nodig om de gecomprimeerde systeemimage te laden. AnduinOS bouwt die nu met Dracut, net als voor het geïnstalleerde systeem.
 
-Dracuts dmsquash-live laadt de image. AnduinOS Live Layers beheert een schrijfbare laag voor wijzigingen, tijdelijk of op de USB bewaard voor later. Ook blijven installatiebestanden beschikbaar en kunnen uitgebreide USB-indelingen worden hersteld. Eén opstartgereedschap helpt onderhoud en foutonderzoek van beide omgevingen, zonder te beloven dat elke USB sneller start.</value>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A consistent look for everyday settings" xml:space="preserve">
+    <value>Eenduidige bediening voor dagelijkse instellingen</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.&#10;&#10;This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
+
+This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>De Live-omgeving is het bureaublad dat je vóór installatie vanaf USB start. Ubuntu 26.04 bouwt die opstartomgeving nog met initramfs-tools en Casper, die de systeemimage vinden en laden.
 
 Het geïnstalleerde Ubuntu-systeem gebruikt wel standaard Dracut. AnduinOS heeft ook de Live-omgeving overgezet, zodat USB en geïnstalleerd systeem hetzelfde opstartgereedschap gebruiken. Het verschil is hoe ver de migratie is doorgevoerd, niet of Ubuntu vanaf USB kan draaien.</value>
   </data>
-  <data name="A consistent look for everyday settings" xml:space="preserve">
-    <value>Eenduidige bediening voor dagelijkse instellingen</value>
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.\n\nThis differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+    <value>Een Live-omgeving is het bureaublad dat je vanaf een installatie-USB start voordat je het installeert. Ubuntu 26.04 bouwt die opstartomgeving nog steeds met initramfs-tools en Casper, die de systeemimage vinden en laden.
+
+Dit verschilt van het geïnstalleerde Ubuntu-systeem, dat standaard Dracut gebruikt. AnduinOS is ook overgestapt op Dracut voor de Live-omgeving, zodat de USB en het geïnstalleerde systeem dezelfde opstarttool gebruiken. Het verschil zit hier in hoe ver de migratie is doorgevoerd, niet in de vraag of Ubuntu vanaf een USB kan draaien.</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
+
+Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>Met een Live-USB probeer je het bureaublad zonder installatie op de schijf. Er is een opstartomgeving nodig om de gecomprimeerde systeemimage te laden. AnduinOS bouwt die nu met Dracut, net als voor het geïnstalleerde systeem.
+
+Dracuts dmsquash-live laadt de image. AnduinOS Live Layers beheert een schrijfbare laag voor wijzigingen, tijdelijk of op de USB bewaard voor later. Ook blijven installatiebestanden beschikbaar en kunnen uitgebreide USB-indelingen worden hersteld. Eén opstartgereedschap helpt onderhoud en foutonderzoek van beide omgevingen, zonder te beloven dat elke USB sneller start.</value>
+  </data>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.\n\nDracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>Met een Live USB kun je de desktop uitproberen zonder deze op je schijf te installeren. Er is een opstartomgeving nodig om de gecomprimeerde systeemimage te laden. AnduinOS bouwt deze nu met Dracut, hetzelfde hulpprogramma dat het geïnstalleerde systeem gebruikt.
+
+Dracuts dmsquash-live laadt de image. AnduinOS Live Layers beheert een beschrijfbare laag voor je wijzigingen, die tijdelijk kan zijn of op de USB kan worden opgeslagen voor later gebruik. Ook blijven de installatiebestanden beschikbaar en kun je uitgebreide USB-indelingen ermee herstellen. Het gebruik van één opstartprogramma maakt het onderhoud en de probleemoplossing voor beide omgevingen eenvoudiger; dit betekent niet dat elke USB sneller opstart.</value>
+  </data>
+  <data name="About this comparison" xml:space="preserve">
+    <value>Over deze vergelijking</value>
+  </data>
+  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
+    <value>Na de inrichting van een Btrfs-installatie bewaart AnduinOS een beschermde New OS-snapshot en een beginsnapshot van de thuismap. Herstellen vanuit het configuratiescherm controleert ze, maakt een veiligheidssnapshot en zet het systeem bij herstarten terug, zonder installatie-USB. Persoonlijke bestanden blijven standaard bewaard; de oorspronkelijke thuismap herstellen is een aparte keuze. De oorspronkelijke snapshots zijn nodig en ext4 wordt niet ondersteund. Dit is geen veilige gegevenswissing vóór verkoop.</value>
   </data>
   <data name="AMD64 + ARM64" xml:space="preserve">
     <value>AMD64 + ARM64</value>
+  </data>
+  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
+    <value>Een initramfs is de kleine omgeving die stuurprogramma&apos;s laadt en het systeem vindt vóór de normale start. Zorin maakt die met initramfs-tools uit Ubuntu 24.04 en gebruikt Casper voor de Live-USB. Dat is een andere gereedschapskeuze dan Dracut, geen ontbrekende opstartfunctie.</value>
+  </data>
+  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Met een Ubuntu-installatie-USB kun je een nieuw systeem installeren. Maak een back-up en controleer de gekozen schijf en partities. Ubuntu Core heeft een aparte resetfunctie, maar is een ander product dan het hier vergeleken Ubuntu Desktop.</value>
+  </data>
+  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2 is gebaseerd op Ubuntu 26.04 LTS en de Linux 7.0-kernel. De kernel verbindt software met hardware. Deze basis blijft behouden tijdens installatie en normale updates, in plaats van alleen in het installatiebestand te worden aangepast.</value>
+  </data>
+  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50&apos;s frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
+    <value>AnduinOS combineert Ubuntu 26.04-stuurprogramma&apos;s met verbeterde frametiming in GNOME 50. Het stuurprogrammacentrum helpt ze te beheren, samen met Secure Boot- en DKMS-handtekeningcontroles. Het geïnstalleerde stuurprogramma en de GPU moeten de gewenste functies ondersteunen.</value>
+  </data>
+  <data name="AnduinOS images and tests" xml:space="preserve">
+    <value>AnduinOS-images en tests</value>
+  </data>
+  <data name="AnduinOS packages and source code" xml:space="preserve">
+    <value>AnduinOS-pakketten en broncode</value>
+  </data>
+  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
+    <value>AnduinOS biedt AMD64- en ARM64-images. AMD64 omvat 64-bits Intel- en AMD-pc&apos;s; ARM64 is een andere processorfamilie. Beide worden meegenomen in het installatieprogramma, ondertekende UEFI-opstartbestanden en automatische tests. ARM64-ondersteuning betekent niet dat de image op elk ARM-apparaat start.</value>
+  </data>
+  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical&apos;s online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
+    <value>AnduinOS verwijdert of blokkeert Ubuntu-rapportageonderdelen zoals whoopsie en schakelt Canonicals online terminalnieuws uit. Dat gebeurt via systeempakketten. Deze keuzes gelden voor het besturingssysteem; apart geïnstalleerde apps en websites kunnen eigen instellingen voor gegevensverzameling hebben.</value>
+  </data>
+  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
+    <value>AnduinOS-snapshotbeheer</value>
+  </data>
+  <data name="AnduinOS storage and recovery design" xml:space="preserve">
+    <value>Opslag- en herstelontwerp van AnduinOS</value>
   </data>
   <data name="APKG builds AnduinOS packages from .aosproj project files. Each project records supported releases and processors, dependencies, conflicts, files, services, AppStream app information and build checks. Metapackages group these packages into the system you install. This is mainly useful to contributors maintaining or rebuilding AnduinOS." xml:space="preserve">
     <value>APKG bouwt AnduinOS-pakketten uit .aosproj-projecten. Elk project beschrijft ondersteunde versies en processors, afhankelijkheden, conflicten, bestanden, diensten, AppStream-informatie en bouwcontroles. Metapakketten combineren ze tot het installeerbare systeem. Dit helpt vooral bijdragers die AnduinOS onderhouden of zelf bouwen.</value>
@@ -41,47 +105,8 @@ Het geïnstalleerde Ubuntu-systeem gebruikt wel standaard Dracut. AnduinOS heeft
   <data name="APT, Flatpak and Snap defaults" xml:space="preserve">
     <value>Standaardkeuzes voor APT, Flatpak en Snap</value>
   </data>
-  <data name="About this comparison" xml:space="preserve">
-    <value>Over deze vergelijking</value>
-  </data>
-  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
-    <value>Na de inrichting van een Btrfs-installatie bewaart AnduinOS een beschermde New OS-snapshot en een beginsnapshot van de thuismap. Herstellen vanuit het configuratiescherm controleert ze, maakt een veiligheidssnapshot en zet het systeem bij herstarten terug, zonder installatie-USB. Persoonlijke bestanden blijven standaard bewaard; de oorspronkelijke thuismap herstellen is een aparte keuze. De oorspronkelijke snapshots zijn nodig en ext4 wordt niet ondersteund. Dit is geen veilige gegevenswissing vóór verkoop.</value>
-  </data>
-  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
-    <value>Met een Ubuntu-installatie-USB kun je een nieuw systeem installeren. Maak een back-up en controleer de gekozen schijf en partities. Ubuntu Core heeft een aparte resetfunctie, maar is een ander product dan het hier vergeleken Ubuntu Desktop.</value>
-  </data>
-  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
-    <value>Een initramfs is de kleine omgeving die stuurprogramma's laadt en het systeem vindt vóór de normale start. Zorin maakt die met initramfs-tools uit Ubuntu 24.04 en gebruikt Casper voor de Live-USB. Dat is een andere gereedschapskeuze dan Dracut, geen ontbrekende opstartfunctie.</value>
-  </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 is gebaseerd op Ubuntu 26.04 LTS en de Linux 7.0-kernel. De kernel verbindt software met hardware. Deze basis blijft behouden tijdens installatie en normale updates, in plaats van alleen in het installatiebestand te worden aangepast.</value>
-  </data>
-  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
-    <value>AnduinOS-snapshotbeheer</value>
-  </data>
-  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50's frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
-    <value>AnduinOS combineert Ubuntu 26.04-stuurprogramma's met verbeterde frametiming in GNOME 50. Het stuurprogrammacentrum helpt ze te beheren, samen met Secure Boot- en DKMS-handtekeningcontroles. Het geïnstalleerde stuurprogramma en de GPU moeten de gewenste functies ondersteunen.</value>
-  </data>
-  <data name="AnduinOS images and tests" xml:space="preserve">
-    <value>AnduinOS-images en tests</value>
-  </data>
-  <data name="AnduinOS packages and source code" xml:space="preserve">
-    <value>AnduinOS-pakketten en broncode</value>
-  </data>
-  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
-    <value>AnduinOS biedt AMD64- en ARM64-images. AMD64 omvat 64-bits Intel- en AMD-pc's; ARM64 is een andere processorfamilie. Beide worden meegenomen in het installatieprogramma, ondertekende UEFI-opstartbestanden en automatische tests. ARM64-ondersteuning betekent niet dat de image op elk ARM-apparaat start.</value>
-  </data>
-  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical's online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
-    <value>AnduinOS verwijdert of blokkeert Ubuntu-rapportageonderdelen zoals whoopsie en schakelt Canonicals online terminalnieuws uit. Dat gebeurt via systeempakketten. Deze keuzes gelden voor het besturingssysteem; apart geïnstalleerde apps en websites kunnen eigen instellingen voor gegevensverzameling hebben.</value>
-  </data>
-  <data name="AnduinOS storage and recovery design" xml:space="preserve">
-    <value>Opslag- en herstelontwerp van AnduinOS</value>
-  </data>
   <data name="Automated tests boot real installation images in QEMU virtual machines, run the installer, restart the installed system and check the desktop. QMP controls the virtual machine; AT-SPI exposes interface controls so tests can interact with them. Published results include screenshots and logs. Virtual-machine tests do not cover every physical device." xml:space="preserve">
     <value>Automatische tests starten echte installatie-images in QEMU, voeren de installatie uit, herstarten het geïnstalleerde systeem en controleren het bureaublad. QMP bestuurt de virtuele machine; AT-SPI maakt interfaceonderdelen toegankelijk voor de tests. De gepubliceerde resultaten bevatten schermafbeeldingen en logboeken. Virtuele tests dekken niet ieder fysiek apparaat.</value>
-  </data>
-  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
-    <value>Automatische Swap-grootte en slaapstandcontroles</value>
   </data>
   <data name="Automatic snapshots before and after changes" xml:space="preserve">
     <value>Automatische snapshots vóór en na wijzigingen</value>
@@ -92,6 +117,9 @@ Het geïnstalleerde Ubuntu-systeem gebruikt wel standaard Dracut. AnduinOS heeft
   <data name="Automatic software snapshots not confirmed" xml:space="preserve">
     <value>Automatische softwaresnapshots niet bevestigd</value>
   </data>
+  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
+    <value>Automatische Swap-grootte en slaapstandcontroles</value>
+  </data>
   <data name="Available desktop installation images" xml:space="preserve">
     <value>Beschikbare installatie-images voor het bureaublad</value>
   </data>
@@ -101,10 +129,17 @@ Het geïnstalleerde Ubuntu-systeem gebruikt wel standaard Dracut. AnduinOS heeft
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>Gebaseerd op officiële documentatie en broncode die op 20 september 2026 beschikbaar waren, vooral voor standaardfuncties. We hebben niet elk ander systeem voor deze vergelijking geïnstalleerd. Open een onderdeel voor uitleg en links. Niet bevestigd betekent dat er onvoldoende informatie is; functies kunnen per versie en inrichting verschillen.</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.&#10;&#10;AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
-    <value>Voordat Linux het bureaublad opent, laadt een kleine opstartomgeving, initramfs, de stuurprogramma's en zoekt de systeemschijf. Dracut maakt die omgeving.
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
+
+AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+    <value>Voordat Linux het bureaublad opent, laadt een kleine opstartomgeving, initramfs, de stuurprogramma&apos;s en zoekt de systeemschijf. Dracut maakt die omgeving.
 
 AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het kernpakket blokkeert gelijktijdige installatie van incompatibele initramfs-tools-, Casper- en finalrd-pakketten. Opstartimages worden gecontroleerd en pakketregels voorkomen ongemerkte vervanging door andere generators. Dat verenigt het onderhoud, maar garandeert op zichzelf geen snellere start.</value>
+  </data>
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.\n\nAnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+    <value>Voordat Linux je bureaublad start, laadt een kleine opstartomgeving, genaamd initramfs, stuurprogramma’s en zoekt deze de systeemschijf. Dracut bouwt die omgeving.
+
+AnduinOS gebruikt Dracut voor zowel het geïnstalleerde systeem als de Live USB. Het kernpakket voorkomt dat incompatibele pakketten zoals initramfs-tools, Casper en finalrd ernaast worden geïnstalleerd. Gegenereerde opstartimages worden gecontroleerd en pakketbeveiligingen voorkomen dat andere generators ze ongemerkt vervangen. Dit zorgt voor een uniformer onderhoud; op zichzelf garandeert het geen snellere opstart.</value>
   </data>
   <data name="Browse and restore earlier file versions" xml:space="preserve">
     <value>Oudere bestandsversies bekijken en herstellen</value>
@@ -130,8 +165,8 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Built-in system tools" xml:space="preserve">
     <value>Meegeleverde systeemgereedschappen</value>
   </data>
-  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS's QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
-    <value>Canonical test softwarearchieven, installatie-images, hardware en versies op grote schaal. De test- en rapportagesystemen verschillen van AnduinOS' QEMU-tests voor installatie en bureaublad. De vergelijking gaat over beschikbare rapporten, niet over één testkader dat alle kwaliteitsvragen zou beantwoorden.</value>
+  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS&apos;s QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
+    <value>Canonical test softwarearchieven, installatie-images, hardware en versies op grote schaal. De test- en rapportagesystemen verschillen van AnduinOS&apos; QEMU-tests voor installatie en bureaublad. De vergelijking gaat over beschikbare rapporten, niet over één testkader dat alle kwaliteitsvragen zou beantwoorden.</value>
   </data>
   <data name="Checking space and resume settings" xml:space="preserve">
     <value>Ruimte en hervattingsinstellingen controleren</value>
@@ -139,7 +174,7 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Kies een distributie om te vergelijken</value>
   </data>
-  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME's HDR or scaling features apply to Cinnamon." xml:space="preserve">
+  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME&apos;s HDR or scaling features apply to Cinnamon." xml:space="preserve">
     <value>Cinnamon 6.6 in Mint 22.3 richt zich vooral op het gevestigde X11-bureaublad. Wayland blijft experimenteel, met verdere verbeteringen gepland voor de volgende versie. HDR- of schaalfuncties van GNOME gelden niet automatisch voor Cinnamon.</value>
   </data>
   <data name="Cinnamon and XApp tools" xml:space="preserve">
@@ -188,10 +223,19 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
     <value>Overal Dracut</value>
   </data>
   <data name="Driver setup and Wayland support" xml:space="preserve">
-    <value>Stuurprogramma's instellen en Wayland gebruiken</value>
+    <value>Stuurprogramma&apos;s instellen en Wayland gebruiken</value>
   </data>
   <data name="Explore {0} more features" xml:space="preserve">
     <value>Ontdek nog {0} functies</value>
+  </data>
+  <data name="ext4 by default" xml:space="preserve">
+    <value>Standaard ext4</value>
+  </data>
+  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
+    <value>Standaard ext4; Btrfs te kiezen</value>
+  </data>
+  <data name="ext4 by default; other setups possible" xml:space="preserve">
+    <value>Standaard ext4; andere indelingen mogelijk</value>
   </data>
   <data name="Extensive image and release testing" xml:space="preserve">
     <value>Uitgebreide tests van images en versies</value>
@@ -211,7 +255,7 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Finding and restoring earlier file versions" xml:space="preserve">
     <value>Eerdere bestandsversies vinden en terugzetten</value>
   </data>
-  <data name="Follows Ubuntu 24.04's GNOME" xml:space="preserve">
+  <data name="Follows Ubuntu 24.04&apos;s GNOME" xml:space="preserve">
     <value>Volgt GNOME van Ubuntu 24.04</value>
   </data>
   <data name="Follows Ubuntu memory management" xml:space="preserve">
@@ -219,6 +263,12 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   </data>
   <data name="From everyday apps to system recovery, compare the features that help you feel at home and stay in control." xml:space="preserve">
     <value>Van dagelijkse apps tot systeemherstel: vergelijk de functies waarmee je snel je weg vindt en zelf de controle houdt.</value>
+  </data>
+  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
+    <value>Algemene instellingen voor geheugen en Swap</value>
+  </data>
+  <data name="Getting back to a working system" xml:space="preserve">
+    <value>Terug naar een werkend systeem</value>
   </data>
   <data name="GNOME 50 brings HDR screen sharing, updated color management, improved variable refresh rate and fractional scaling. HDR supports a wider brightness range; VRR adjusts refresh timing; fractional scaling makes content fit high-resolution screens. Availability depends on the display, graphics driver and application." xml:space="preserve">
     <value>GNOME 50 brengt HDR-schermdeling, bijgewerkt kleurbeheer, verbeterde variabele verversing en fractionele schaling. HDR vergroot het helderheidsbereik, VRR past de verversing aan en schaling geeft inhoud een passende grootte op scherpe schermen. Beschikbaarheid hangt af van scherm, stuurprogramma en app.</value>
@@ -238,23 +288,17 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="GTK4 across our graphical system tools" xml:space="preserve">
     <value>GTK4 in onze grafische systeemgereedschappen</value>
   </data>
-  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
-    <value>Algemene instellingen voor geheugen en Swap</value>
-  </data>
-  <data name="Getting back to a working system" xml:space="preserve">
-    <value>Terug naar een werkend systeem</value>
-  </data>
   <data name="HDR, variable refresh rate and scaling" xml:space="preserve">
     <value>HDR, variabele verversing en schaling</value>
   </data>
   <data name="Hibernation check app not confirmed" xml:space="preserve">
     <value>App voor slaapstandcontrole niet bevestigd</value>
   </data>
-  <data name="How Swap Control works" xml:space="preserve">
-    <value>Hoe Swap Control werkt</value>
-  </data>
   <data name="How apps display windows on your screen" xml:space="preserve">
     <value>Hoe apps vensters tonen en invoer ontvangen</value>
+  </data>
+  <data name="How Swap Control works" xml:space="preserve">
+    <value>Hoe Swap Control werkt</value>
   </data>
   <data name="How system packages are built and organized" xml:space="preserve">
     <value>Hoe pakketten worden gebouwd en georganiseerd</value>
@@ -267,6 +311,9 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   </data>
   <data name="Information as of 20 September 2026" xml:space="preserve">
     <value>Informatie per 20 september 2026</value>
+  </data>
+  <data name="initramfs-tools and Casper" xml:space="preserve">
+    <value>initramfs-tools en Casper</value>
   </data>
   <data name="Installation, startup and desktop checks" xml:space="preserve">
     <value>Installatie, opstarten en bureaublad controleren</value>
@@ -311,13 +358,7 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
     <value>Geheugenbeheer</value>
   </data>
   <data name="Mint 22.3 uses the Ubuntu 24.04 generation of initramfs and Live tools. These prepare the drivers and files needed before the desktop starts. The reviewed sources do not describe a default migration to Dracut across both installed and Live systems." xml:space="preserve">
-    <value>Mint 22.3 gebruikt initramfs- en Live-gereedschappen uit de Ubuntu 24.04-generatie. Die bereiden stuurprogramma's en bestanden voor op de bureaubladstart. De geraadpleegde bronnen beschrijven geen standaardmigratie naar Dracut voor zowel geïnstalleerd als Live-systeem.</value>
-  </data>
-  <data name="Mint Live USB environment" xml:space="preserve">
-    <value>Mints Live-USB-omgeving</value>
-  </data>
-  <data name="Mint Wayland development updates" xml:space="preserve">
-    <value>Nieuws over Wayland-ontwikkeling in Mint</value>
+    <value>Mint 22.3 gebruikt initramfs- en Live-gereedschappen uit de Ubuntu 24.04-generatie. Die bereiden stuurprogramma&apos;s en bestanden voor op de bureaubladstart. De geraadpleegde bronnen beschrijven geen standaardmigratie naar Dracut voor zowel geïnstalleerd als Live-systeem.</value>
   </data>
   <data name="Mint defaults to ext4 but allows Btrfs. Timeshift can use Btrfs snapshots with a suitable layout. Choosing Btrfs alone does not set up the same separation of system files and recovery data used by AnduinOS." xml:space="preserve">
     <value>Mint gebruikt standaard ext4, maar staat Btrfs toe. Timeshift kan bij een geschikte indeling Btrfs-snapshots gebruiken. Alleen Btrfs kiezen geeft niet automatisch dezelfde scheiding van systeem- en herstelgegevens als AnduinOS.</value>
@@ -337,26 +378,29 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Mint images for newer hardware" xml:space="preserve">
     <value>Mint-images voor nieuwere hardware</value>
   </data>
-  <data name="Mint inherits Ubuntu's signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
-    <value>Mint neemt de ondertekende bootloader- en kernelonderdelen van Ubuntu over. Daarmee starten ondersteunde machines met Secure Boot ingeschakeld. Mint beschrijft ook oplossingen voor verificatiefouten; compatibiliteit van firmware en stuurprogramma's blijft belangrijk.</value>
+  <data name="Mint inherits Ubuntu&apos;s signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
+    <value>Mint neemt de ondertekende bootloader- en kernelonderdelen van Ubuntu over. Daarmee starten ondersteunde machines met Secure Boot ingeschakeld. Mint beschrijft ook oplossingen voor verificatiefouten; compatibiliteit van firmware en stuurprogramma&apos;s blijft belangrijk.</value>
   </data>
-  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint's software policy rather than an inability to run Snap at all." xml:space="preserve">
+  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint&apos;s software policy rather than an inability to run Snap at all." xml:space="preserve">
     <value>Mint integreert APT en Flatpak en blokkeert Snap standaard. Gebruikers kunnen bewust deze instelling aanpassen en Snap inschakelen. Dat is Mints softwarekeuze, niet een onvermogen om Snap uit te voeren.</value>
+  </data>
+  <data name="Mint Live USB environment" xml:space="preserve">
+    <value>Mints Live-USB-omgeving</value>
   </data>
   <data name="Mint maintains Cinnamon and XApp tools with their own interface design. Major administration tools mainly use GTK3 and XApp. GTK4 applications can still run; the toolkit used by a settings app does not determine which apps users can install." xml:space="preserve">
     <value>Mint onderhoudt Cinnamon en XApp met een eigen vormgeving. Belangrijke beheergereedschappen gebruiken vooral GTK3 en XApp. GTK4-apps kunnen wel werken; de bibliotheek van een instellingenapp bepaalt niet welke apps je kunt installeren.</value>
   </data>
-  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS's Dracut Live Layers." xml:space="preserve">
-    <value>Mint biedt een bureaublad om vanaf USB te proberen zonder installatie op schijf. De Live-gereedschappen volgen Ubuntu 24.04. Wijzigingen bewaren na herstarten vereist passende permanente opslag. De geraadpleegde bronnen beschrijven geen overstap op AnduinOS' Dracut Live Layers.</value>
+  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS&apos;s Dracut Live Layers." xml:space="preserve">
+    <value>Mint biedt een bureaublad om vanaf USB te proberen zonder installatie op schijf. De Live-gereedschappen volgen Ubuntu 24.04. Wijzigingen bewaren na herstarten vereist passende permanente opslag. De geraadpleegde bronnen beschrijven geen overstap op AnduinOS&apos; Dracut Live Layers.</value>
   </data>
-  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS's declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
-    <value>Mint biedt zijn gevestigde grafische installatieprogramma. Gebruikers kiezen instellingen via de interface die het systeem installeert. Het ontwerp verschilt van AnduinOS' declaratieve plan en aparte uitvoerder. Een andere architectuur betekent op zichzelf niet dat een installatieprogramma onveilig is.</value>
-  </data>
-  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
-    <value>Mint biedt standaard Linux-Swap- en slaapstandfuncties. De geraadpleegde documentatie bevestigt geen meegeleverde app voor gezamenlijke capaciteits- en hervattingscontroles. Beschikbaarheid hangt af van machine en configuratie.</value>
+  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS&apos;s declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
+    <value>Mint biedt zijn gevestigde grafische installatieprogramma. Gebruikers kiezen instellingen via de interface die het systeem installeert. Het ontwerp verschilt van AnduinOS&apos; declaratieve plan en aparte uitvoerder. Een andere architectuur betekent op zichzelf niet dat een installatieprogramma onveilig is.</value>
   </data>
   <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
     <value>Mint biedt standaard Linux-geheugenbeheer en Swap-ondersteuning. De geraadpleegde documentatie bevestigt geen meegeleverde app die gecomprimeerd geheugen, belastingtests en slaapstandcontroles samenbrengt.</value>
+  </data>
+  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
+    <value>Mint biedt standaard Linux-Swap- en slaapstandfuncties. De geraadpleegde documentatie bevestigt geen meegeleverde app voor gezamenlijke capaciteits- en hervattingscontroles. Beschikbaarheid hangt af van machine en configuratie.</value>
   </data>
   <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
     <value>Mint raadt een Timeshift-snapshot aan vóór een versie-upgrade om zo nodig het eerdere systeem te herstellen. Die handmatige voorzorg verschilt van automatische snapshots rond elke APT-pakketbewerking.</value>
@@ -367,11 +411,17 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Mint uses Debian packages, metapackages that group dependencies, and its own project tools to build the desktop. This is an established way to organize a distribution; using a different project format does not imply missing user features." xml:space="preserve">
     <value>Mint gebruikt Debian-pakketten, metapakketten voor het groeperen van afhankelijkheden en eigen gereedschappen om het bureaublad te bouwen. Dat is een gevestigde manier om een distributie te organiseren. Een ander projectformaat betekent geen ontbrekende gebruikersfuncties.</value>
   </data>
+  <data name="Mint Wayland development updates" xml:space="preserve">
+    <value>Nieuws over Wayland-ontwikkeling in Mint</value>
+  </data>
   <data name="More than a familiar desktop" xml:space="preserve">
     <value>Meer dan een vertrouwd bureaublad</value>
   </data>
+  <data name="Not confirmed" xml:space="preserve">
+    <value>Niet bevestigd</value>
+  </data>
   <data name="NVIDIA drivers; Xorg available" xml:space="preserve">
-    <value>NVIDIA-stuurprogramma's; Xorg beschikbaar</value>
+    <value>NVIDIA-stuurprogramma&apos;s; Xorg beschikbaar</value>
   </data>
   <data name="NVIDIA graphics" xml:space="preserve">
     <value>NVIDIA-grafische kaarten</value>
@@ -379,20 +429,17 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="NVIDIA supported on Wayland" xml:space="preserve">
     <value>NVIDIA ondersteund op Wayland</value>
   </data>
-  <data name="Not confirmed" xml:space="preserve">
-    <value>Niet bevestigd</value>
-  </data>
   <data name="Official x86-64 images" xml:space="preserve">
     <value>Officiële x86-64-images</value>
   </data>
   <data name="On Btrfs, AnduinOS creates system snapshots around APT software changes and makes recovery available through the boot menu. Dracut, GRUB and the snapshot manager work together to restore the selected state and confirm a successful boot before cleanup. Snapshots on the same disk do not replace an external backup against disk failure." xml:space="preserve">
     <value>Op Btrfs maakt AnduinOS snapshots vóór en na APT-softwarewijzigingen en biedt herstel via het opstartmenu. Dracut, GRUB en de snapshotbeheerder zetten de gekozen toestand terug en bevestigen een geslaagde start voordat wordt opgeruimd. Snapshots op dezelfde schijf vervangen geen externe back-up tegen schijfdefecten.</value>
   </data>
+  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system&apos;s retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
+    <value>Op Btrfs maken APT-hooks snapshots vóór en na het installeren, bijwerken of verwijderen van systeempakketten. Elke snapshot bewaart de pakkettoestand en volgt de bewaar- en herstelinstellingen. Dit beschermt APT-wijzigingen; niet elke Flatpak- of persoonlijke bestandswijziging maakt daarmee een systeemsnapshot.</value>
+  </data>
   <data name="On Btrfs, Personal Files snapshots keep home-folder history separately from system snapshots. Snapshot Manager and the Files integration let you browse older versions and restore selected files without rolling back the operating system. Files changed after the latest snapshot may not have a saved version; keep external backups for disk failure." xml:space="preserve">
     <value>Op Btrfs bewaren persoonlijke snapshots de geschiedenis van de thuismap los van het systeem. Snapshotbeheer en de integratie met Bestanden laten je oudere versies bekijken en geselecteerde bestanden terugzetten zonder het besturingssysteem te herstellen. Wijzigingen na de laatste snapshot kunnen ontbreken. Bewaar externe back-ups tegen schijfdefecten.</value>
-  </data>
-  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system's retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
-    <value>Op Btrfs maken APT-hooks snapshots vóór en na het installeren, bijwerken of verwijderen van systeempakketten. Elke snapshot bewaart de pakkettoestand en volgt de bewaar- en herstelinstellingen. Dit beschermt APT-wijzigingen; niet elke Flatpak- of persoonlijke bestandswijziging maakt daarmee een systeemsnapshot.</value>
   </data>
   <data name="Our system" xml:space="preserve">
     <value>Ons systeem</value>
@@ -437,7 +484,7 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
     <value>Secure Boot</value>
   </data>
   <data name="Secure Boot checks signatures on startup software. AnduinOS includes configuration and status tools in the installer, first-run setup and Driver Center on AMD64 and ARM64. You can manage MOK keys, which authorize additional signing certificates, and check signatures on drivers built through DKMS." xml:space="preserve">
-    <value>Secure Boot controleert handtekeningen van opstartsoftware. AnduinOS biedt instellings- en statusgereedschap in het installatieprogramma, de eerste configuratie en het stuurprogrammacentrum op AMD64 en ARM64. Je kunt MOK-sleutels voor extra vertrouwde certificaten beheren en handtekeningen van met DKMS gebouwde stuurprogramma's controleren.</value>
+    <value>Secure Boot controleert handtekeningen van opstartsoftware. AnduinOS biedt instellings- en statusgereedschap in het installatieprogramma, de eerste configuratie en het stuurprogrammacentrum op AMD64 en ARM64. Je kunt MOK-sleutels voor extra vertrouwde certificaten beheren en handtekeningen van met DKMS gebouwde stuurprogramma&apos;s controleren.</value>
   </data>
   <data name="See more features" xml:space="preserve">
     <value>Meer functies bekijken</value>
@@ -499,35 +546,32 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="System telemetry components disabled" xml:space="preserve">
     <value>Systeemtelemetrieonderdelen uitgeschakeld</value>
   </data>
-  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
-    <value>Het installatieprogramma, configuratiescherm, uiterlijk, eerste configuratie, stuurprogrammacentrum, Secure Boot-gereedschap, Swap Control en snapshotbeheer gebruiken GTK4 en libadwaita. Deze bibliotheken houden bediening en vensterschaling consistent. Dat geldt voor AnduinOS' eigen grafische systeemgereedschappen, niet voor alle apps van derden.</value>
+  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS&apos;s own graphical system tools, not every third-party application." xml:space="preserve">
+    <value>Het installatieprogramma, configuratiescherm, uiterlijk, eerste configuratie, stuurprogrammacentrum, Secure Boot-gereedschap, Swap Control en snapshotbeheer gebruiken GTK4 en libadwaita. Deze bibliotheken houden bediening en vensterschaling consistent. Dat geldt voor AnduinOS&apos; eigen grafische systeemgereedschappen, niet voor alle apps van derden.</value>
   </data>
-  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
-    <value>De geraadpleegde Zorin-documentatie bevestigt geen standaard snapshots vóór en na iedere APT-wijziging. Gebruikers kunnen back-upgereedschappen zelf instellen. Het gaat om bevestigde ingebouwde automatisering, niet om de mogelijkheid back-ups te maken.</value>
-  </data>
-  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin's filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
+  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin&apos;s filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
     <value>De geraadpleegde bronnen bevestigen geen bestandsgeschiedenis die is geïntegreerd met Zorins bestandssysteem en bestandsbeheerder. Aparte back-upapps kunnen persoonlijke bestanden op andere manieren beschermen.</value>
   </data>
   <data name="The reviewed sources do not establish an equivalent package-level block on Ubuntu reporting components and online terminal news. That is not enough to conclude whether Zorin collects personal data. Check its privacy information and the settings of the applications you use." xml:space="preserve">
     <value>De geraadpleegde bronnen bevestigen geen vergelijkbare pakketblokkade voor Ubuntu-rapportageonderdelen en online terminalnieuws. Dat is onvoldoende om te concluderen of Zorin persoonlijke gegevens verzamelt. Bekijk de privacyinformatie en de instellingen van je apps.</value>
   </data>
+  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
+    <value>De geraadpleegde Zorin-documentatie bevestigt geen standaard snapshots vóór en na iedere APT-wijziging. Gebruikers kunnen back-upgereedschappen zelf instellen. Het gaat om bevestigde ingebouwde automatisering, niet om de mogelijkheid back-ups te maken.</value>
+  </data>
   <data name="Timeshift can restore a system snapshot you previously created. Returning to a freshly installed state requires a suitable saved snapshot or a reinstall. A routine system snapshot is not necessarily a protected copy of the original installation, and personal files require separate care." xml:space="preserve">
     <value>Timeshift kan een eerder gemaakte systeemsnapshot herstellen. Terugkeren naar een pas geïnstalleerd systeem vereist een passende snapshot of herinstallatie. Een gewone snapshot is niet noodzakelijk een beschermde kopie van de eerste installatie; persoonlijke bestanden vragen aparte aandacht.</value>
   </data>
-  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS's integration with software changes and startup confirmation." xml:space="preserve">
-    <value>Timeshift maakt systeemsnapshots, ondersteunt schema's en beheert hoeveel snapshots worden bewaard. Je kunt daarmee een eerdere systeemtoestand herstellen. Het proces verschilt van AnduinOS' koppeling met softwarewijzigingen en opstartbevestiging.</value>
+  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS&apos;s integration with software changes and startup confirmation." xml:space="preserve">
+    <value>Timeshift maakt systeemsnapshots, ondersteunt schema&apos;s en beheert hoeveel snapshots worden bewaard. Je kunt daarmee een eerdere systeemtoestand herstellen. Het proces verschilt van AnduinOS&apos; koppeling met softwarewijzigingen en opstartbevestiging.</value>
   </data>
   <data name="Timeshift is designed to restore system state, not serve as a personal-file backup tool. Use a separate backup method for documents and other personal data. The presence of system snapshots should not be mistaken for saved versions of your files." xml:space="preserve">
     <value>Timeshift is bedoeld om de systeemtoestand te herstellen, niet als back-up voor persoonlijke bestanden. Gebruik een andere methode voor documenten en persoonlijke gegevens. Systeemsnapshots betekenen niet dat oude versies van je bestanden zijn opgeslagen.</value>
   </data>
   <data name="Trusted startup and driver signatures" xml:space="preserve">
-    <value>Vertrouwd opstarten en ondertekende stuurprogramma's</value>
+    <value>Vertrouwd opstarten en ondertekende stuurprogramma&apos;s</value>
   </data>
   <data name="Trying the desktop without installing it" xml:space="preserve">
     <value>Het bureaublad proberen zonder installatie</value>
-  </data>
-  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
-    <value>Opstartgereedschappen van Ubuntu 24.04</value>
   </data>
   <data name="Ubuntu 24.04 · Linux 6.14 or 7.0 HWE" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.14 of 7.0 HWE</value>
@@ -535,14 +579,17 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS biedt de Linux 7.0-kernel en vijf jaar standaard LTS-onderhoud. LTS betekent langdurige ondersteuning. Dit is de Ubuntu-versie waarop AnduinOS 2 is gebaseerd.</value>
+  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
+    <value>Opstartgereedschappen van Ubuntu 24.04</value>
+  </data>
+  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
+    <value>Ubuntu 26.04 noemt NVIDIA-grafische kaarten ondersteund in zijn Wayland-sessie. Gebruik een geschikt stuurprogramma voor je GPU. Bureaubladondersteuning garandeert niet elke functie op elke kaart.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>
   </data>
-  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
-    <value>Ubuntu 26.04 noemt NVIDIA-grafische kaarten ondersteund in zijn Wayland-sessie. Gebruik een geschikt stuurprogramma voor je GPU. Bureaubladondersteuning garandeert niet elke functie op elke kaart.</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS biedt de Linux 7.0-kernel en vijf jaar standaard LTS-onderhoud. LTS betekent langdurige ondersteuning. Dit is de Ubuntu-versie waarop AnduinOS 2 is gebaseerd.</value>
   </data>
   <data name="Ubuntu 26.04 offers official desktop downloads for AMD64 and ARM64. Select the image for your processor and check device compatibility: support for an architecture does not guarantee support for every machine using it." xml:space="preserve">
     <value>Ubuntu 26.04 biedt officiële bureaubladdownloads voor AMD64 en ARM64. Kies de image voor je processor en controleer de apparaatcompatibiliteit. Ondersteuning van een architectuur garandeert niet dat elke machine daarmee werkt.</value>
@@ -551,12 +598,12 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
     <value>Uitgavenotities van Ubuntu 26.04</value>
   </data>
   <data name="Ubuntu 26.04 runs the GNOME desktop on Wayland and no longer offers an Xorg desktop session. XWayland remains available to run older applications written for X11, so a Wayland-only desktop does not exclude all older Linux apps." xml:space="preserve">
-    <value>Ubuntu 26.04 draait GNOME op Wayland en biedt geen Xorg-bureaubladsessie meer. XWayland blijft beschikbaar voor oudere X11-apps. Een bureaublad dat alleen Wayland gebruikt, sluit dus niet alle oudere Linux-programma's uit.</value>
+    <value>Ubuntu 26.04 draait GNOME op Wayland en biedt geen Xorg-bureaubladsessie meer. XWayland blijft beschikbaar voor oudere X11-apps. Een bureaublad dat alleen Wayland gebruikt, sluit dus niet alle oudere Linux-programma&apos;s uit.</value>
   </data>
   <data name="Ubuntu 26.04 ships GNOME 50 with its Wayland display improvements, including optimized fractional scaling. HDR, variable refresh rate and color-management features depend on compatible graphics hardware, drivers, displays and applications." xml:space="preserve">
-    <value>Ubuntu 26.04 levert GNOME 50 met Wayland-verbeteringen, waaronder geoptimaliseerde fractionele schaling. HDR, variabele verversing en kleurbeheer vereisen geschikte grafische hardware, stuurprogramma's, schermen en apps.</value>
+    <value>Ubuntu 26.04 levert GNOME 50 met Wayland-verbeteringen, waaronder geoptimaliseerde fractionele schaling. HDR, variabele verversing en kleurbeheer vereisen geschikte grafische hardware, stuurprogramma&apos;s, schermen en apps.</value>
   </data>
-  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system's initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
+  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system&apos;s initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
     <value>Ubuntu 26.04 gebruikt standaard Dracut voor de initramfs van het geïnstalleerde systeem, de kleine omgeving tijdens de vroege start. initramfs-tools blijft ondersteund. De installatie-USB is anders: de Live-omgeving gebruikt nog initramfs-tools en Casper.</value>
   </data>
   <data name="Ubuntu Core recovery options" xml:space="preserve">
@@ -568,17 +615,14 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Ubuntu Desktop installation guide" xml:space="preserve">
     <value>Installatiehandleiding voor Ubuntu Desktop</value>
   </data>
-  <data name="Ubuntu Live image build notes" xml:space="preserve">
-    <value>Bouwnotities voor Ubuntu Live-images</value>
-  </data>
-  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
-    <value>Ubuntu-documentatie over Secure Boot</value>
-  </data>
   <data name="Ubuntu includes diagnostic and online-service components whose controls depend on the release. Review the privacy options offered during setup and in system settings. These defaults differ from removing or blocking the components in AnduinOS." xml:space="preserve">
     <value>Ubuntu bevat diagnose- en onlinedienstonderdelen met versieafhankelijke instellingen. Bekijk de privacyopties tijdens de eerste inrichting en in de systeeminstellingen. Die verschillen van het verwijderen of blokkeren van onderdelen in AnduinOS.</value>
   </data>
   <data name="Ubuntu includes modern GNOME applications using GTK4 and libadwaita. Its installer and other Ubuntu-specific tools also use different technologies, so not every system interface is built with the same toolkit." xml:space="preserve">
     <value>Ubuntu bevat moderne GNOME-apps met GTK4 en libadwaita. Het installatieprogramma en andere Ubuntu-specifieke onderdelen gebruiken ook andere technieken. Niet iedere systeeminterface is dus met dezelfde bibliotheek gemaakt.</value>
+  </data>
+  <data name="Ubuntu Live image build notes" xml:space="preserve">
+    <value>Bouwnotities voor Ubuntu Live-images</value>
   </data>
   <data name="Ubuntu offers backup applications and filesystem tools. The reviewed default desktop setup does not confirm the same integrated file-history feature in the file manager. Personal backups can still be configured separately." xml:space="preserve">
     <value>Ubuntu biedt back-upapps en bestandssysteemgereedschappen. De geraadpleegde desktopinrichting bevestigt niet dezelfde ingebouwde geschiedenis in de bestandsbeheerder. Persoonlijke back-ups kunnen apart worden ingesteld.</value>
@@ -589,35 +633,38 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Ubuntu provides the underlying kernel and installation tools for Swap. The reviewed desktop setup does not confirm a built-in app combining Swap sizing and hibernation diagnostics. Check hardware support and resume configuration before relying on hibernation." xml:space="preserve">
     <value>Ubuntu biedt de kernel- en installatiegereedschappen voor Swap. De geraadpleegde desktopinrichting bevestigt geen ingebouwde app die Swap-grootte en slaapstanddiagnose combineert. Controleer hardwareondersteuning en hervattingsinstellingen voordat je op de slaapstand vertrouwt.</value>
   </data>
-  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
-    <value>Ubuntu biedt Linux-geheugen- en Swap-functies met algemene desktopinstellingen. Die verschillen van AnduinOS' combinatie van vooraf ingestelde Zram, een aparte Swap-partitie en grafisch beheergereedschap.</value>
+  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
+    <value>Ubuntu-documentatie over Secure Boot</value>
+  </data>
+  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS&apos;s combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
+    <value>Ubuntu biedt Linux-geheugen- en Swap-functies met algemene desktopinstellingen. Die verschillen van AnduinOS&apos; combinatie van vooraf ingestelde Zram, een aparte Swap-partitie en grafisch beheergereedschap.</value>
   </data>
   <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
     <value>Ubuntu ondersteunt optionele back-up- en snapshotgereedschappen. De geraadpleegde standaardinrichting bevestigt geen automatische snapshots vóór en na elke APT-bewerking. Je kunt zelf back-ups regelen voordat je systeemsoftware wijzigt.</value>
   </data>
+  <data name="Ubuntu uses a Microsoft-signed shim to start Canonical-signed GRUB and kernels on AMD64 and ARM64. MOK enrollment lets users trust additional certificates, and DKMS signing supports locally built drivers. These components form the chain checked during Secure Boot." xml:space="preserve">
+    <value>Ubuntu gebruikt een door Microsoft ondertekende shim om door Canonical ondertekende GRUB en kernels te starten op AMD64 en ARM64. Met MOK-registratie vertrouw je extra certificaten; DKMS-ondertekening ondersteunt lokaal gebouwde stuurprogramma&apos;s. Samen vormen deze onderdelen de keten die Secure Boot controleert.</value>
+  </data>
   <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
     <value>Ubuntu gebruikt APT voor systeempakketten en Snap voor een deel van het standaard app-aanbod. Flatpak kan apart worden geïnstalleerd, maar wordt niet als standaardroute voor bureaubladapps meegeleverd.</value>
   </data>
-  <data name="Ubuntu uses a Microsoft-signed shim to start Canonical-signed GRUB and kernels on AMD64 and ARM64. MOK enrollment lets users trust additional certificates, and DKMS signing supports locally built drivers. These components form the chain checked during Secure Boot." xml:space="preserve">
-    <value>Ubuntu gebruikt een door Microsoft ondertekende shim om door Canonical ondertekende GRUB en kernels te starten op AMD64 en ARM64. Met MOK-registratie vertrouw je extra certificaten; DKMS-ondertekening ondersteunt lokaal gebouwde stuurprogramma's. Samen vormen deze onderdelen de keten die Secure Boot controleert.</value>
-  </data>
-  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS's package projects." xml:space="preserve">
-    <value>Ubuntu gebruikt seeds om pakketten te selecteren, metapakketten om afhankelijkheden te groeperen en archiefinfrastructuur met automatische tests. Daarmee wordt software voor veel images en apparaten georganiseerd en gecontroleerd, op veel grotere schaal dan AnduinOS' pakketprojecten.</value>
+  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS&apos;s package projects." xml:space="preserve">
+    <value>Ubuntu gebruikt seeds om pakketten te selecteren, metapakketten om afhankelijkheden te groeperen en archiefinfrastructuur met automatische tests. Daarmee wordt software voor veel images en apparaten georganiseerd en gecontroleerd, op veel grotere schaal dan AnduinOS&apos; pakketprojecten.</value>
   </data>
   <data name="Ubuntu version and Linux kernel" xml:space="preserve">
     <value>Ubuntu-versie en Linux-kernel</value>
   </data>
-  <data name="Ubuntu's desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS's GTK4 interface and typed installation plan." xml:space="preserve">
-    <value>Het Ubuntu Desktop-installatieprogramma gebruikt een Flutter-interface en een afzonderlijke backend voor de installatie. Het biedt een moderne grafische inrichting. De uitvoering verschilt van AnduinOS' GTK4-interface en getypeerde installatieplan.</value>
-  </data>
-  <data name="Ubuntu's guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS's Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
-    <value>De begeleide Ubuntu Desktop-installatie kiest standaard ext4. Andere bestandssysteemindelingen zijn configureerbaar. De Btrfs-subvolumes en geïntegreerde herstelvoorzieningen van AnduinOS behoren niet tot de standaardinrichting van Ubuntu Desktop.</value>
+  <data name="Ubuntu-based graphical installer" xml:space="preserve">
+    <value>Grafisch installatieprogramma op Ubuntu-basis</value>
   </data>
   <data name="Ubuntu-based Live USB tools" xml:space="preserve">
     <value>Live-USB-gereedschap op Ubuntu-basis</value>
   </data>
-  <data name="Ubuntu-based graphical installer" xml:space="preserve">
-    <value>Grafisch installatieprogramma op Ubuntu-basis</value>
+  <data name="Ubuntu&apos;s desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS&apos;s GTK4 interface and typed installation plan." xml:space="preserve">
+    <value>Het Ubuntu Desktop-installatieprogramma gebruikt een Flutter-interface en een afzonderlijke backend voor de installatie. Het biedt een moderne grafische inrichting. De uitvoering verschilt van AnduinOS&apos; GTK4-interface en getypeerde installatieplan.</value>
+  </data>
+  <data name="Ubuntu&apos;s guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS&apos;s Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
+    <value>De begeleide Ubuntu Desktop-installatie kiest standaard ext4. Andere bestandssysteemindelingen zijn configureerbaar. De Btrfs-subvolumes en geïntegreerde herstelvoorzieningen van AnduinOS behoren niet tot de standaardinrichting van Ubuntu Desktop.</value>
   </data>
   <data name="Uses Ubuntu Secure Boot" xml:space="preserve">
     <value>Gebruikt Secure Boot van Ubuntu</value>
@@ -652,7 +699,7 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="What happens when RAM fills up" xml:space="preserve">
     <value>Wat er gebeurt als het RAM vol raakt</value>
   </data>
-  <data name="What's new in GNOME 50" xml:space="preserve">
+  <data name="What&apos;s new in GNOME 50" xml:space="preserve">
     <value>Nieuw in GNOME 50</value>
   </data>
   <data name="X11 by default; Wayland experimental" xml:space="preserve">
@@ -661,8 +708,20 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="You can return to a fresh Zorin installation using an installation USB. Back up personal files first and review the disk choices carefully. This is a reinstall, rather than restoring an installation-time snapshot through the AnduinOS reset tool." xml:space="preserve">
     <value>Met een installatie-USB kun je een nieuwe Zorin-installatie maken. Maak eerst een back-up van persoonlijke bestanden en controleer de schijfkeuzes zorgvuldig. Dit is herinstallatie, niet het terugzetten van een beginsnapshot met het AnduinOS-herstelgereedschap.</value>
   </data>
+  <data name="Zorin combines GNOME applications and extensions with its own tools on the Ubuntu 24.04 base. These use a mix of interface technologies rather than one GTK4/libadwaita toolkit across all system tools." xml:space="preserve">
+    <value>Zorin combineert GNOME-apps en uitbreidingen met eigen gereedschappen op Ubuntu 24.04. Die gebruiken verschillende interfacetechnieken, in plaats van GTK4/libadwaita voor alle systeemgereedschappen.</value>
+  </data>
+  <data name="Zorin defaults to Wayland but also offers an Xorg session at login. Switching to Xorg can help with applications or graphics drivers that have trouble under Wayland, while allowing users to keep the newer session as their usual choice." xml:space="preserve">
+    <value>Zorin gebruikt standaard Wayland, maar biedt bij het aanmelden ook Xorg aan. Overschakelen kan helpen bij apps of grafische stuurprogramma&apos;s die onder Wayland problemen geven, terwijl Wayland de gebruikelijke keuze blijft.</value>
+  </data>
+  <data name="Zorin lets you try its desktop from a USB before installing. Its Live environment uses the Ubuntu-derived Casper and initramfs-tools approach. Persistent storage saves changes across boots when configured; it is separate from simply being able to start a Live session." xml:space="preserve">
+    <value>Met Zorin kun je het bureaublad vanaf USB proberen voordat je installeert. De Live-omgeving gebruikt Casper en initramfs-tools uit Ubuntu. Ingestelde permanente opslag bewaart wijzigingen tussen starts; dat is een andere functie dan alleen een Live-sessie starten.</value>
+  </data>
   <data name="Zorin NVIDIA driver help" xml:space="preserve">
-    <value>Zorin-hulp voor NVIDIA-stuurprogramma's</value>
+    <value>Zorin-hulp voor NVIDIA-stuurprogramma&apos;s</value>
+  </data>
+  <data name="Zorin offers a Live boot option for modern NVIDIA hardware and tools to install proprietary drivers. Its troubleshooting guidance also covers switching to Xorg or changing Secure Boot settings when a driver does not work." xml:space="preserve">
+    <value>Zorin biedt een Live-opstartoptie voor moderne NVIDIA-hardware en gereedschappen voor propriëtaire stuurprogramma&apos;s. De probleemhulp behandelt ook overschakelen naar Xorg of Secure Boot aanpassen wanneer een stuurprogramma niet werkt.</value>
   </data>
   <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
     <value>Zorin OS 18.1 biedt bureaubladimages voor 64-bits Intel- en AMD-processors, ook x86-64 of AMD64 genoemd. De officiële downloads vermelden geen ARM64-bureaubladimage.</value>
@@ -673,25 +732,10 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
   <data name="Zorin OS specifications" xml:space="preserve">
     <value>Zorin OS-specificaties</value>
   </data>
-  <data name="Zorin Windows App Support" xml:space="preserve">
-    <value>Windows-app-ondersteuning in Zorin</value>
-  </data>
-  <data name="Zorin combines GNOME applications and extensions with its own tools on the Ubuntu 24.04 base. These use a mix of interface technologies rather than one GTK4/libadwaita toolkit across all system tools." xml:space="preserve">
-    <value>Zorin combineert GNOME-apps en uitbreidingen met eigen gereedschappen op Ubuntu 24.04. Die gebruiken verschillende interfacetechnieken, in plaats van GTK4/libadwaita voor alle systeemgereedschappen.</value>
-  </data>
-  <data name="Zorin defaults to Wayland but also offers an Xorg session at login. Switching to Xorg can help with applications or graphics drivers that have trouble under Wayland, while allowing users to keep the newer session as their usual choice." xml:space="preserve">
-    <value>Zorin gebruikt standaard Wayland, maar biedt bij het aanmelden ook Xorg aan. Overschakelen kan helpen bij apps of grafische stuurprogramma's die onder Wayland problemen geven, terwijl Wayland de gebruikelijke keuze blijft.</value>
-  </data>
-  <data name="Zorin lets you try its desktop from a USB before installing. Its Live environment uses the Ubuntu-derived Casper and initramfs-tools approach. Persistent storage saves changes across boots when configured; it is separate from simply being able to start a Live session." xml:space="preserve">
-    <value>Met Zorin kun je het bureaublad vanaf USB proberen voordat je installeert. De Live-omgeving gebruikt Casper en initramfs-tools uit Ubuntu. Ingestelde permanente opslag bewaart wijzigingen tussen starts; dat is een andere functie dan alleen een Live-sessie starten.</value>
-  </data>
-  <data name="Zorin offers a Live boot option for modern NVIDIA hardware and tools to install proprietary drivers. Its troubleshooting guidance also covers switching to Xorg or changing Secure Boot settings when a driver does not work." xml:space="preserve">
-    <value>Zorin biedt een Live-opstartoptie voor moderne NVIDIA-hardware en gereedschappen voor propriëtaire stuurprogramma's. De probleemhulp behandelt ook overschakelen naar Xorg of Secure Boot aanpassen wanneer een stuurprogramma niet werkt.</value>
-  </data>
   <data name="Zorin performs release testing. In the official sources reviewed for this comparison, we did not find a comparable public set of automated installer and desktop reports. This concerns what users can inspect publicly, not whether Zorin tests its releases internally." xml:space="preserve">
     <value>Zorin test zijn versies. In de geraadpleegde officiële bronnen vonden we geen vergelijkbare openbare verzameling automatische installatie- en bureaubladrapporten. Dit gaat over publiek inzichtelijke resultaten, niet over de vraag of Zorin intern test.</value>
   </data>
-  <data name="Zorin provides a graphical installer based on Ubuntu's installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
+  <data name="Zorin provides a graphical installer based on Ubuntu&apos;s installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
     <value>Zorin biedt een grafisch installatieprogramma gebaseerd op Ubuntu-gereedschappen dat je door de installatie leidt. De geraadpleegde bronnen bevestigen niet dezelfde scheiding als AnduinOS tussen een getypeerd plan en een uitvoerder met vastgelegde bewerkingen en hogere rechten.</value>
   </data>
   <data name="Zorin provides recovery options, but the reviewed sources do not confirm automatic software-change snapshots linked to boot-menu recovery and boot confirmation. Other backup tools may be installed or configured separately." xml:space="preserve">
@@ -701,39 +745,31 @@ AnduinOS gebruikt Dracut voor het geïnstalleerde systeem en de Live-USB. Het ke
     <value>Zorins herinstallatiehandleiding</value>
   </data>
   <data name="Zorin supports APT, Flatpak and Snap, alongside AppImage and web apps. Optional Windows App Support can run some Windows software, but compatibility depends on the application. The aim is to offer several ways to install software." xml:space="preserve">
-    <value>Zorin ondersteunt APT, Flatpak en Snap, naast AppImage en webapps. Optionele Windows App Support kan bepaalde Windows-programma's uitvoeren, afhankelijk van de app. Zo zijn er meerdere manieren om software te installeren.</value>
+    <value>Zorin ondersteunt APT, Flatpak en Snap, naast AppImage en webapps. Optionele Windows App Support kan bepaalde Windows-programma&apos;s uitvoeren, afhankelijk van de app. Zo zijn er meerdere manieren om software te installeren.</value>
   </data>
   <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
     <value>Zorin ondersteunt Linux-Swap en slaapstandmechanismen. De geraadpleegde bronnen bevestigen geen meegeleverd gereedschap dat grootte, hervattingslocatie en instellingen samen controleert. Slaapstand kan handmatige inrichting en geschikte hardware vereisen.</value>
   </data>
   <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
-    <value>Zorin ondersteunt Secure Boot via zijn Ubuntu-basis. De probleemhulp beschrijft ook situaties waarin uitschakelen of overstappen op Xorg nodig kan zijn als NVIDIA-stuurprogramma's niet werken. Ondersteuning hangt af van hardware en geïnstalleerd stuurprogramma.</value>
+    <value>Zorin ondersteunt Secure Boot via zijn Ubuntu-basis. De probleemhulp beschrijft ook situaties waarin uitschakelen of overstappen op Xorg nodig kan zijn als NVIDIA-stuurprogramma&apos;s niet werken. Ondersteuning hangt af van hardware en geïnstalleerd stuurprogramma.</value>
   </data>
-  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS's APKG project format." xml:space="preserve">
-    <value>Zorin gebruikt Debian- en Ubuntu-pakketten met eigen pakketbronnen en pakketkeuzes voor het complete bureaublad. Het heeft een eigen verpakkingsproces in plaats van AnduinOS' APKG-projectformaat.</value>
+  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS&apos;s APKG project format." xml:space="preserve">
+    <value>Zorin gebruikt Debian- en Ubuntu-pakketten met eigen pakketbronnen en pakketkeuzes voor het complete bureaublad. Het heeft een eigen verpakkingsproces in plaats van AnduinOS&apos; APKG-projectformaat.</value>
   </data>
   <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
     <value>Zorin gebruikt de geheugen- en Swap-functies van Ubuntu 24.04. De geraadpleegde bronnen bevestigen geen meegeleverde app voor Zram, Zswap, belastingtests en slaapstandcontroles samen. Afzonderlijke instellingen blijven met Linux-gereedschap te beheren.</value>
   </data>
-  <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
-    <value>Zorins GNOME-basis volgt Ubuntu 24.04. Die biedt Wayland-functies, maar gaat vooraf aan de GNOME 50-verbeteringen voor HDR, variabele verversing en kleurbeheer. De beschikbare functies hangen ook af van je monitor en stuurprogramma.</value>
+  <data name="Zorin Windows App Support" xml:space="preserve">
+    <value>Windows-app-ondersteuning in Zorin</value>
   </data>
-  <data name="Zorin's default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
+  <data name="Zorin&apos;s default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
     <value>Zorin gebruikt bij de standaardinstallatie ext4, een veelgebruikt Linux-bestandssysteem. De geraadpleegde documentatie bevestigt geen ingebouwde Btrfs-indeling met dezelfde herstelfuncties. Andere opslaggereedschappen kun je zelf instellen.</value>
+  </data>
+  <data name="Zorin&apos;s GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
+    <value>Zorins GNOME-basis volgt Ubuntu 24.04. Die biedt Wayland-functies, maar gaat vooraf aan de GNOME 50-verbeteringen voor HDR, variabele verversing en kleurbeheer. De beschikbare functies hangen ook af van je monitor en stuurprogramma.</value>
   </data>
   <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
     <value>Zram comprimeert gegevens in RAM voordat Swap op schijf met lagere prioriteit wordt gebruikt. AnduinOS stelt LZ4-Zram in op 50% van het RAM en bepaalt bij installatie de grootte van een Swap-partitie. Swap Control beheert Zram en optioneel Zswap, doet belastingtests en controleert de slaapstand. Compressie vervangt geen fysiek RAM.</value>
   </data>
-  <data name="ext4 by default" xml:space="preserve">
-    <value>Standaard ext4</value>
-  </data>
-  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
-    <value>Standaard ext4; Btrfs te kiezen</value>
-  </data>
-  <data name="ext4 by default; other setups possible" xml:space="preserve">
-    <value>Standaard ext4; andere indelingen mogelijk</value>
-  </data>
-  <data name="initramfs-tools and Casper" xml:space="preserve">
-    <value>initramfs-tools en Casper</value>
-  </data>
+
 </root>
