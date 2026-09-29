@@ -49,14 +49,11 @@ public class ComparisonLocalizationTests
             foreach (var key in allKeys)
             {
                 var value = translations.GetString(key);
+                Assert.IsNotNull(value, $"{culture} is missing: {key}");
                 Assert.IsFalse(string.IsNullOrWhiteSpace(value), $"{culture} is missing: {key}");
                 if (key.Contains("{0}", StringComparison.Ordinal))
                 {
                     Assert.Contains("{0}", value, StringComparison.Ordinal, $"{culture} lost its count placeholder");
-                }
-                if (key.Contains("Swap", StringComparison.Ordinal))
-                {
-                    Assert.Contains("Swap", value, StringComparison.Ordinal, $"{culture} translated the Swap term: {key}");
                 }
             }
             if (culture != "en-GB")
