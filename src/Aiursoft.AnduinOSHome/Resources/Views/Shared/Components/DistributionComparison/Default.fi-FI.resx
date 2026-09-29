@@ -1,208 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.&#10;&#10;Dracut's dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+    <value>Live-USB:n avulla voit kokeilla työpöytäympäristöä asentamatta sitä levylle. Se tarvitsee käynnistysympäristön, joka lataa pakatun järjestelmäkuvan. AnduinOS luo tämän nyt Dracutilla, samalla työkalulla, jota asennettu järjestelmä käyttää.
 
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>1.3</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="A familiar interface is only the surface. Explore which capabilities are defaults, which are optional, and how deeply each operating system integrates them." xml:space="preserve">
-    <value>Tuttava käyttöliittymä on vain pintaa. Tutustu siihen, mitkä ominaisuudet ovat oletusarvoisia, mitkä valinnaisia ja kuinka syvälle jokainen käyttöjärjestelmä integroii ne.</value>
+Dracutin dmsquash-live lataa kuvan. AnduinOS Live Layers hallitsee kirjoitettavaa kerrosta muutoksillesi: se voi olla väliaikainen tai tallentua USB-tikulle myöhempää käyttöä varten. Se myös pitää asennustiedostot saatavilla ja tukee laajennettujen USB-asettelujen korjaamista. Yhden käynnistystyökalun käyttö helpottaa molempien ympäristöjen ylläpitoa ja vianetsintää; tämä ei tarkoita, että jokainen USB-tikku käynnistyisi nopeammin.</value>
   </data>
-  <data name="All first-party graphical system tools use GTK4/libadwaita" xml:space="preserve">
-    <value>Kaikki ensimmäisen osapuolen graafiset järjestelmätyökalut käyttävät GTK4:ää/libadwaitaa</value>
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.&#10;&#10;This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+    <value>Live-ympäristö on työpöytä, jonka käynnistät asennus-USB-muistitikulta ennen asentamista. Ubuntu 26.04 rakentaa käynnistysympäristön yhä initramfs-tools- ja Casper-työkaluilla, jotka etsivät järjestelmäkuvan ja lataavat sen.
+
+Tämä eroaa asennetusta Ubuntu-järjestelmästä, jossa Dracut on oletuksena käytössä. Myös AnduinOS on siirtänyt Live-ympäristön Dracutille, joten sen USB-muistitikku ja asennettu järjestelmä käyttävät samaa käynnistystyökalua. Ero koskee tässä siirtymän kattavuutta, ei sitä, voiko Ubuntua käyttää USB-muistitikulta.</value>
+  </data>
+  <data name="A consistent look for everyday settings" xml:space="preserve">
+    <value>Yhtenäinen ilme päivittäisissä asetuksissa</value>
   </data>
   <data name="AMD64 + ARM64" xml:space="preserve">
     <value>AMD64 + ARM64</value>
   </data>
-  <data name="An unprivileged GTK4 planner produces a canonical typed plan. A fixed privileged executor revalidates it and constructs commands itself; the UI cannot inject arbitrary shell commands or paths." xml:space="preserve">
-    <value>Etuoikeudeton GTK4-suunnittelija tuottaa kanonisen, tyypitetyn suunnitelman. Kiinteä, etuoikeutettu suorittaja validoi sen uudelleen ja muodostaa komennot itse; käyttöliittymä ei voi syöttää mielivaltaisia komentotulkkikomentoja tai polkuja.</value>
-  </data>
-  <data name="AnduinOS 2 targets Ubuntu 26.04 Resolute and ships its Linux 7.0 GA kernel. The core package retains that kernel contract through normal installs and upgrades instead of treating it as an ISO-only customization." xml:space="preserve">
-    <value>AnduinOS 2 perustuu Ubuntu 26.04 Resoluteen ja sisältää Linux 7.0 GA -ytimen. Ydinpaketti säilyttää tämän ydinsopimuksen tavallisissa asennuksissa ja päivityksissä sen sijaan, että sitä käsiteltäisiin vain ISO-levykuvan mukautuksena.</value>
-  </data>
-  <data name="AnduinOS component catalog" xml:space="preserve">
-    <value>AnduinOS-komponenttiluettelo</value>
-  </data>
-  <data name="AnduinOS core depends on Dracut and conflicts with initramfs-tools, Casper and finalrd. Generated images are verified and guarded so competing generators cannot silently coexist." xml:space="preserve">
-    <value>AnduinOSin ydin riippuu Dracutista ja on ristiriidassa initramfs-toolsin, Casperin ja finalrd:n kanssa. Luodut levykuvat tarkistetaan ja suojataan, jotta kilpailevat generaattorit eivät voi toimia huomaamatta rinnakkain.</value>
-  </data>
-  <data name="AnduinOS desktop packages" xml:space="preserve">
-    <value>AnduinOS-työpöytäpaketit</value>
-  </data>
-  <data name="AnduinOS first-party graphical system tools—including Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager—share GTK4, libadwaita and adaptive conventions. This claim does not extend to third-party applications or non-graphical components." xml:space="preserve">
-    <value>AnduinOSin ensimmäisen osapuolen graafiset järjestelmätyökalut — mukaan lukien Installer, Control Panel, Appearance, OOBE, Driver Center, Secure Boot Toolkit, Swap Control ja Snapshot Manager — käyttävät yhteisiä GTK4- ja libadwaita-käytäntöjä sekä mukautuvaa suunnittelua. Tämä väite ei koske kolmannen osapuolen sovelluksia eikä graafittomia komponentteja.</value>
-  </data>
-  <data name="AnduinOS inherits GNOME 50&apos;s HDR screen sharing, Wayland color-management v2, improved VRR, optimized fractional scaling and low-latency cursor path." xml:space="preserve">
-    <value>AnduinOS perii GNOME 50:ltä HDR-näytönjaon, Waylandin värinhallinnan version 2, parannetun VRR:n, optimoidun murto-osaskaalauksen ja pienen viiveen kohdistinpolun.</value>
-  </data>
-  <data name="AnduinOS ISO acceptance framework" xml:space="preserve">
-    <value>AnduinOS ISO -tiedostojen hyväksymiskriteerit</value>
-  </data>
-  <data name="AnduinOS ISO architecture" xml:space="preserve">
-    <value>AnduinOS ISO-arkkitehtuuri</value>
-  </data>
-  <data name="AnduinOS ISO source" xml:space="preserve">
-    <value>AnduinOS ISO-lähdekoodi</value>
-  </data>
-  <data name="AnduinOS layers 50%-of-RAM LZ4 Zram above a dynamically sized disk Swap partition. The native GTK4 tool manages Zram, optional Zswap, stress tests and hibernation health." xml:space="preserve">
-    <value>AnduinOS käyttää RAM-muistin määrästä 50 %:n kokoista LZ4-Zramia dynaamisesti mitoitetun levyn Swap-osion lisäksi. Natiivi GTK4-työkalu hallitsee Zramia, valinnaista Zswapia, rasitustestejä ja horrostilan toimivuutta.</value>
-  </data>
-  <data name="AnduinOS maintains and tests one desktop display stack end to end. Xorg session: Not included. XWayland remains available for legacy applications, but there is no Xorg desktop fallback if a Wayland-specific problem occurs." xml:space="preserve">
-    <value>AnduinOS ylläpitää ja testaa yhden työpöydän näyttöjärjestelmän kokonaisuudessaan. Xorg-istunto: Ei sisälly. XWayland on edelleen käytettävissä vanhoille sovelluksille, mutta Wayland-kohtaisen ongelman ilmetessä Xorg-työpöytäympäristöön ei voi siirtyä.</value>
-  </data>
-  <data name="AnduinOS package architecture" xml:space="preserve">
-    <value>AnduinOS-pakettiarkkitehtuuri</value>
-  </data>
-  <data name="AnduinOS package projects declare suites, architectures, dependencies, conflicts, assets, services, AppStream metadata, lifecycle scripts and build gates together. Layered metapackages compose the final product." xml:space="preserve">
-    <value>AnduinOS-pakettiprojektit määrittelevät yhdessä jakelusarjat, arkkitehtuurit, riippuvuudet, ristiriidat, resurssit, palvelut, AppStream-metatiedot, elinkaariskriptit ja koontivaiheen tarkistukset. Kerrokselliset metapaketit muodostavat lopullisen tuotteen.</value>
-  </data>
-  <data name="AnduinOS packages" xml:space="preserve">
-    <value>AnduinOS-paketit</value>
-  </data>
-  <data name="AnduinOS removes or conflicts with Ubuntu reporting components such as whoopsie and disables Canonical remote MOTD news. The policy is expressed in packages rather than only in a privacy statement." xml:space="preserve">
-    <value>AnduinOS poistaa Ubuntun raportointikomponentteja, kuten whoopsien, tai estää niiden käytön sekä poistaa Canonicalin etä-MOTD-uutiset käytöstä. Käytäntö toteutetaan pakettien kautta eikä pelkästään tietosuojalausunnossa.</value>
-  </data>
-  <data name="AnduinOS separates system recovery from Personal Files history. The Snapshot Manager and Files integration can browse and restore earlier versions without conflating them with OS rollback." xml:space="preserve">
-    <value>AnduinOS erottaa järjestelmän palautuksen henkilökohtaisten tiedostojen historiasta. Tilannekuvien hallinta ja Tiedostot-sovelluksen integrointi mahdollistavat aiempien versioiden selaamisen ja palauttamisen sekoittamatta niitä käyttöjärjestelmän palautukseen.</value>
-  </data>
-  <data name="AnduinOS uses native APT packages for the system and Flatpak for sandboxed applications. snapd is conflicted, pinned out, unmounted and purged by product policy." xml:space="preserve">
-    <value>AnduinOS käyttää järjestelmässä natiiveja APT-paketteja ja eristetyissä sovelluksissa Flatpakia. Tuotekäytännön mukaisesti snapd on ristiriidassa muiden pakettien kanssa, poistettu käytöstä pakettilähteissä, irrotettu ja poistettu kokonaan.</value>
-  </data>
-  <data name="APKG + .aosproj projects" xml:space="preserve">
-    <value>APKG- ja .aosproj-projektit</value>
-  </data>
-  <data name="Application model" xml:space="preserve">
-    <value>Sovellusmalli</value>
-  </data>
-  <data name="APT + Flatpak · Snap blocked" xml:space="preserve">
-    <value>APT + Flatpak · Snap estetty</value>
+  <data name="APKG builds AnduinOS packages from .aosproj project files. Each project records supported releases and processors, dependencies, conflicts, files, services, AppStream app information and build checks. Metapackages group these packages into the system you install. This is mainly useful to contributors maintaining or rebuilding AnduinOS." xml:space="preserve">
+    <value>APKG rakentaa AnduinOS-paketteja .aosproj-projektitiedostoista. Kukin projekti sisältää tiedot tuetuista julkaisuversioista ja prosessoreista, riippuvuuksista, ristiriidoista, tiedostoista, palveluista, AppStream-sovellustiedoista ja koontitarkistuksista. Metapaketit kokoavat nämä paketit asennettavaksi järjestelmäksi. Tästä on eniten hyötyä AnduinOSia ylläpitäville tai uudelleenrakentaville kehittäjille.</value>
   </data>
   <data name="APT + Flatpak + Snap" xml:space="preserve">
     <value>APT + Flatpak + Snap</value>
   </data>
+  <data name="APT + Flatpak; Snap blocked by default" xml:space="preserve">
+    <value>APT + Flatpak; Snap estetty oletusarvoisesti</value>
+  </data>
   <data name="APT + Snap by default" xml:space="preserve">
     <value>APT + Snap oletuksena</value>
   </data>
-  <data name="APT hooks create structured recovery points before and after package changes. Snapshot metadata records package state and feeds the same retention and rollback protocol." xml:space="preserve">
-    <value>APT-koukut luovat jäsennellyt palautuspisteet ennen pakettimuutoksia ja niiden jälkeen. Tilannevedoksen metatiedot tallentavat pakettien tilan ja syöttävät tiedot samaan säilytys- ja palautusprotokollaan.</value>
+  <data name="APT for the system; Flatpak for apps" xml:space="preserve">
+    <value>APT järjestelmälle; Flatpak sovelluksille</value>
   </data>
-  <data name="APT snapshots + bootable rollback" xml:space="preserve">
-    <value>APT-tilannevedokset + käynnistettävä palautus</value>
+  <data name="APT manages native system packages, while Flatpak supplies sandboxed applications. AnduinOS removes snapd and blocks its installation through package conflicts and APT preferences. This is a deliberate default software choice, not a claim that every application is available as a Flatpak." xml:space="preserve">
+    <value>APT hallinnoi järjestelmän natiivipaketteja, kun taas Flatpak tarjoaa hiekkalaatikossa suoritettavia sovelluksia. AnduinOS poistaa snapd:n ja estää sen asennuksen pakettiristiriitojen ja APT:n asetusten avulla. Tämä on tietoinen oletusvalinta ohjelmistojen suhteen, eikä väite siitä, että kaikki sovellukset olisivat saatavilla Flatpak-paketteina.</value>
   </data>
-  <data name="APT system · Flatpak apps · no Snap" xml:space="preserve">
-    <value>APT-järjestelmä · Flatpak-sovellukset · ei Snapia</value>
+  <data name="APT, Flatpak and Snap defaults" xml:space="preserve">
+    <value>APT-, Flatpak- ja Snap-oletukset</value>
   </data>
-  <data name="APT, Flatpak and Snap policy" xml:space="preserve">
-    <value>APT-, Flatpak- ja Snap-käytäntö</value>
+  <data name="About this comparison" xml:space="preserve">
+    <value>Tietoja tästä vertailusta</value>
   </data>
-  <data name="Architecture, not aesthetics" xml:space="preserve">
-    <value>Arkkitehtuuri, ei esteettiikka</value>
+  <data name="After a Btrfs installation is configured, AnduinOS saves a protected New OS snapshot and an initial home-folder snapshot. Open Factory Reset in Control Panel: it checks the recovery snapshots, saves a safety snapshot and restores the initial system on reboot, without an installation USB. Personal files are kept by default; restoring the initial home state is a separate choice. This requires the original snapshots and does not work on ext4. It is recovery, not secure erasure for selling a device." xml:space="preserve">
+    <value>Kun Btrfs-asennus on määritetty, AnduinOS tallentaa suojatun New OS -tilannevedoksen ja alkuperäisen kotikansion tilannevedoksen. Avaa Ohjauspaneelista Tehdasasetusten palautus: se tarkistaa palautukseen käytettävät tilannevedokset, tallentaa varmuustilannevedoksen ja palauttaa alkuperäisen järjestelmän uudelleenkäynnistyksen yhteydessä ilman asennus-USB-muistia. Omat tiedostot säilytetään oletusarvoisesti; alkuperäisen kotikansion tilan palauttaminen on erillinen valinta. Tämä edellyttää alkuperäisiä tilannevedoksia eikä toimi ext4-tiedostojärjestelmällä. Kyse on palautuksesta, ei tietojen turvallisesta tyhjentämisestä laitteen myyntiä varten.</value>
   </data>
-  <data name="Automatic pre/post snapshots" xml:space="preserve">
-    <value>Automaattiset ennen/jälkeen-tilannevedokset</value>
+  <data name="An Ubuntu installation USB can be used to install a fresh system. Back up your files and check the selected disk and partitions first. Ubuntu Core has a separate factory-reset feature, but it is a different product from the Ubuntu Desktop edition compared here." xml:space="preserve">
+    <value>Ubuntun asennus-USB-tikulla voi asentaa puhtaan järjestelmän. Varmuuskopioi tiedostosi ja tarkista valittu levy ja osiot ennen asennusta. Ubuntu Coressa on erillinen tehdasasetusten palautustoiminto, mutta se on eri tuote kuin tässä vertailtu Ubuntu Desktop -versio.</value>
   </data>
-  <data name="Boot trust, MOK and third-party modules" xml:space="preserve">
-    <value>Käynnistyksen luottamus, MOK ja kolmannen osapuolen moduulit</value>
+  <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
+    <value>initramfs on pieni käynnistysympäristö, joka lataa ajurit ja etsii järjestelmän ennen normaalia käynnistystä. Zorin käyttää sen luomiseen Ubuntu 24.04:n initramfs-tools-työkaluja ja Live USB -ympäristössä Casperia. Kyseessä on Dracutista poikkeava käynnistystyökalun valinta, ei käynnistystuen puuttuminen.</value>
   </data>
-  <data name="Both architectures are product targets. The ISO builder, native installer, UEFI layout, signed boot payloads and acceptance matrix model AMD64 and ARM64 explicitly." xml:space="preserve">
-    <value>Molemmat arkkitehtuurit ovat tuotekohteita. ISO-rakennustyökalu, natiivi asennusohjelma, UEFI-asettelu, allekirjoitetut käynnistystiedostot ja hyväksymistestimatriisi huomioivat erikseen AMD64- ja ARM64-arkkitehtuurit.</value>
+  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2 perustuu Ubuntu 26.04 LTS -versioon ja sen Linux 7.0 -ytimeen. Ydin yhdistää ohjelmistot laitteistoosi. AnduinOS säilyttää tämän perustan asennuksen ja tavallisten päivitysten yhteydessä sen sijaan, että se vaihtuisi vain asennuskuvassa.</value>
   </data>
-  <data name="Btrfs default · ext4 optional" xml:space="preserve">
-    <value>Btrfs oletuksena · ext4 valinnainen</value>
+  <data name="AnduinOS Snapshot Manager" xml:space="preserve">
+    <value>AnduinOS-tilannevedosten hallintaohjelma</value>
   </data>
-  <data name="Btrfs system design" xml:space="preserve">
-    <value>Btrfs-järjestelmän suunnittelu</value>
+  <data name="AnduinOS combines Ubuntu 26.04 drivers with GNOME 50's frame-timing improvements. Driver Center helps manage drivers alongside Secure Boot and DKMS signature checks. The installed driver and GPU still need to support the features you want to use." xml:space="preserve">
+    <value>AnduinOS yhdistää Ubuntu 26.04:n ajurit GNOME 50:n kuvataajuuden ajoituksen parannuksiin. Driver Center helpottaa ajurien hallintaa Secure Bootin ja DKMS-allekirjoitusten tarkistusten yhteydessä. Asennetun ajurin ja näytönohjaimen on silti tuettava ominaisuuksia, joita haluat käyttää.</value>
   </data>
-  <data name="Btrfs: protected New OS baseline" xml:space="preserve">
-    <value>Btrfs: suojattu uuden käyttöjärjestelmän lähtötila</value>
+  <data name="AnduinOS images and tests" xml:space="preserve">
+    <value>AnduinOS-asennuslevyt ja testit</value>
   </data>
-  <data name="Built-in recovery without reinstall media" xml:space="preserve">
-    <value>Sisäänrakennettu palautus ilman uudelleenasennusmediaa</value>
+  <data name="AnduinOS packages and source code" xml:space="preserve">
+    <value>AnduinOS-paketit ja lähdekoodi</value>
   </data>
-  <data name="Canonical operates extensive archive, image, hardware and release validation at upstream scale. Its implementation and evidence model differ from the AnduinOS acceptance framework." xml:space="preserve">
-    <value>Canonical toteuttaa laajamittaista arkisto-, levykuva-, laitteisto- ja julkaisuvalidointia upstream-tasolla. Sen toteutustapa ja näyttömalli poikkeavat AnduinOSin hyväksyntäkehyksestä.</value>
+  <data name="AnduinOS provides AMD64 and ARM64 installation images. AMD64 covers 64-bit Intel and AMD PCs; ARM64 is a different processor family. Both are included in the installer, signed UEFI boot files and automated tests. ARM64 support does not mean every ARM device can boot the image." xml:space="preserve">
+    <value>AnduinOS tarjoaa AMD64- ja ARM64-asennuslevykuvat. AMD64 kattaa 64-bittiset Intel- ja AMD-tietokoneet; ARM64 on eri prosessoriperhe. Molemmat ovat mukana asennusohjelmassa, allekirjoitetuissa UEFI-käynnistystiedostoissa ja automaattisissa testeissä. ARM64-tuki ei tarkoita, että jokainen ARM-laite voi käynnistää levykuvan.</value>
   </data>
-  <data name="Canonical publishes official Ubuntu 26.04 desktop downloads for both Intel or AMD 64-bit systems and ARM 64-bit systems." xml:space="preserve">
-    <value>Canonical tarjoaa viralliset Ubuntu 26.04 -työpöytäversioiden lataukset sekä 64-bittisille Intel- tai AMD-järjestelmille että 64-bittisille ARM-järjestelmille.</value>
+  <data name="AnduinOS removes or blocks Ubuntu reporting components such as whoopsie and disables Canonical's online terminal news. These choices are applied through system packages. They concern operating-system components; separately installed apps and websites can have their own data-collection settings." xml:space="preserve">
+    <value>AnduinOS poistaa tai estää Ubuntun raportointikomponentit, kuten whoopsien, ja poistaa käytöstä Canonicalin verkkopäätteen uutiset. Nämä valinnat toteutetaan järjestelmäpakettien avulla. Ne koskevat käyttöjärjestelmän komponentteja; erikseen asennetuilla sovelluksilla ja verkkosivustoilla voi olla omat tiedonkeruuasetuksensa.</value>
   </data>
-  <data name="Canonical-signed chain" xml:space="preserve">
-    <value>Canonicalin allekirjoittama käynnistysketju</value>
+  <data name="AnduinOS storage and recovery design" xml:space="preserve">
+    <value>AnduinOSin tallennus- ja palautussuunnittelu</value>
   </data>
-  <data name="Capability" xml:space="preserve">
-    <value>Toiminto</value>
+  <data name="Automated tests boot real installation images in QEMU virtual machines, run the installer, restart the installed system and check the desktop. QMP controls the virtual machine; AT-SPI exposes interface controls so tests can interact with them. Published results include screenshots and logs. Virtual-machine tests do not cover every physical device." xml:space="preserve">
+    <value>Automaattiset testit käynnistävät oikeat asennuslevykuvat QEMU-virtuaalikoneissa, suorittavat asennusohjelman, käynnistävät asennetun järjestelmän uudelleen ja tarkistavat työpöydän. QMP ohjaa virtuaalikonetta; AT-SPI tuo käyttöliittymän ohjaustoiminnot testien käytettäviksi. Julkaistut tulokset sisältävät kuvakaappauksia ja lokitietoja. Virtuaalikonetestit eivät kata kaikkia fyysisiä laitteita.</value>
   </data>
-  <data name="Capacity-aware policy + health UI" xml:space="preserve">
-    <value>Kapasite huomioiva käytäntö + kunnonvalvontakäyttöliittymä</value>
+  <data name="Automatic Swap sizing and hibernation checks" xml:space="preserve">
+    <value>Swap-tilan automaattinen mitoitus ja horrostilan tarkistukset</value>
+  </data>
+  <data name="Automatic snapshots before and after changes" xml:space="preserve">
+    <value>Automaattiset tilannevedokset ennen muutoksia ja niiden jälkeen</value>
+  </data>
+  <data name="Automatic snapshots; recovery at startup" xml:space="preserve">
+    <value>Automaattiset tilannevedokset; palautus käynnistyksen yhteydessä</value>
+  </data>
+  <data name="Automatic software snapshots not confirmed" xml:space="preserve">
+    <value>Automaattisia ohjelmistopäivitysten tilannevedoksia ei ole vahvistettu</value>
+  </data>
+  <data name="Available desktop installation images" xml:space="preserve">
+    <value>Saatavilla olevat työpöytäasennuskuvat</value>
+  </data>
+  <data name="Back to the essentials" xml:space="preserve">
+    <value>Takaisin olennaiseen</value>
+  </data>
+  <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
+    <value>Perustuu 20. syyskuuta 2026 saatavilla olleeseen viralliseen dokumentaatioon ja lähdekoodiin; vertailussa keskitytään pääasiassa oletusominaisuuksiin. Emme asentaneet jokaista kilpailevaa järjestelmää tätä vertailua varten. Avaa kohta, niin näet selityksen ja linkit. ”Ei vahvistettu” tarkoittaa, että saatavilla olevat tiedot eivät riitä; ominaisuudet voivat vaihdella version ja kokoonpanon mukaan.</value>
+  </data>
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.&#10;&#10;AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+    <value>Ennen kuin Linux avaa työpöytäsi, pieni initramfs-niminen käynnistysympäristö lataa ajurit ja etsii järjestelmälevyn. Dracut luo tämän ympäristön.
+
+AnduinOS käyttää Dracutia sekä asennetussa järjestelmässä että Live USB -tikulla. Sen ydinpaketti estää yhteensopimattomien initramfs-tools-, Casper- ja finalrd-pakettien asentamisen sen rinnalle. Luodut käynnistyskuvat tarkistetaan, ja pakettien suojaukset estävät muita generaattoreita korvaamasta niitä huomaamatta. Tämä yhtenäistää ylläpitoa, mutta ei itsessään takaa nopeampaa käynnistystä.</value>
+  </data>
+  <data name="Browse and restore earlier file versions" xml:space="preserve">
+    <value>Selaa aiempia tiedostoversioita ja palauta niitä</value>
+  </data>
+  <data name="Btrfs by default; ext4 optional" xml:space="preserve">
+    <value>Btrfs oletuksena; ext4 valinnainen</value>
+  </data>
+  <data name="Btrfs supports snapshots: saved views of files that can be used for recovery. AnduinOS selects it by default and separates system files, home folders, logs, containers and virtual machines into subvolumes so recovery can treat them differently. You can choose ext4 instead, without the integrated Btrfs snapshot features." xml:space="preserve">
+    <value>Btrfs tukee tilannevedoksia eli tiedostojen tallennettuja tiloja, joita voidaan käyttää palauttamiseen. AnduinOS valitsee sen oletuksena ja erottaa järjestelmätiedostot, kotikansiot, lokit, kontit ja virtuaalikoneet omiin alitaltioihinsa, jotta ne voidaan palauttaa eri tavoin. Voit valita myös ext4:n, mutta siinä ei ole Btrfs:n sisäänrakennettuja tilannevedosominaisuuksia.</value>
+  </data>
+  <data name="Built in and ready to use" xml:space="preserve">
+    <value>Sisäänrakennettu ja käyttövalmis</value>
+  </data>
+  <data name="Built in with Btrfs snapshots" xml:space="preserve">
+    <value>Sisäänrakennettu Btrfs-tilannevedosten avulla</value>
+  </data>
+  <data name="Built-in file history not confirmed" xml:space="preserve">
+    <value>Sisäänrakennettua tiedostohistoriaa ei ole vahvistettu</value>
+  </data>
+  <data name="Built-in snapshot recovery not confirmed" xml:space="preserve">
+    <value>Sisäänrakennetun tilannevedoksista palautuksen toimivuutta ei ole vahvistettu</value>
+  </data>
+  <data name="Built-in system tools" xml:space="preserve">
+    <value>Sisäänrakennetut järjestelmätyökalut</value>
+  </data>
+  <data name="Canonical tests software archives, installation images, hardware and releases at a broad scale. Its testing and reporting systems differ from AnduinOS's QEMU-based installer and desktop tests. The comparison is about available reports, not a claim that one test framework covers all quality concerns." xml:space="preserve">
+    <value>Canonical testaa ohjelmistoarkistoja, asennuskuvia, laitteistoja ja julkaisuja laajassa mittakaavassa. Sen testaus- ja raportointijärjestelmät eroavat AnduinOSin QEMU-pohjaisista asennusohjelman ja työpöytäympäristön testeistä. Vertailu koskee saatavilla olevia raportteja, eikä sen tarkoituksena ole väittää, että yksi testauskehys kattaisi kaikki laatuun liittyvät näkökohdat.</value>
+  </data>
+  <data name="Checking space and resume settings" xml:space="preserve">
+    <value>Tilan ja lepotilaan palautumisen asetusten tarkistaminen</value>
   </data>
   <data name="Choose a distribution to compare" xml:space="preserve">
     <value>Valitse vertailtava jakelu</value>
   </data>
-  <data name="Cinnamon 6.6 remains centered on its mature X11 path in Mint 22.3. The next release is where Mint plans to graduate Wayland support from experimental status." xml:space="preserve">
-    <value>Cinnamon 6.6 keskittyy Linux Mint 22.3:ssa edelleen kypsään X11-toteutukseen. Mint aikoo nostaa Wayland-tuen kokeellisesta tilasta seuraavassa julkaisussa.</value>
+  <data name="Cinnamon 6.6 in Mint 22.3 mainly uses its established X11 desktop. Wayland support is still experimental, with further improvements planned for the next release. Do not assume GNOME's HDR or scaling features apply to Cinnamon." xml:space="preserve">
+    <value>Mint 22.3:n Cinnamon 6.6 käyttää pääasiassa vakiintunutta X11-työpöytäympäristöään. Wayland-tuki on edelleen kokeellinen, ja siihen on suunnitteilla lisäparannuksia seuraavaan julkaisuun. Älä oleta, että GNOMEn HDR- tai skaalausominaisuudet koskevat Cinnamonia.</value>
   </data>
   <data name="Cinnamon and XApp tools" xml:space="preserve">
     <value>Cinnamon- ja XApp-työkalut</value>
   </data>
-  <data name="Cinnamon&apos;s Wayland session remains experimental in Linux Mint 22.3. Mint has announced that both X11 and Wayland will become fully supported in the next Cinnamon release." xml:space="preserve">
-    <value>Cinnamoniin Wayland-istunto on edelleen kokeellinen Linux Mint 22.3:ssa. Mint on ilmoittanut, että sekä X11 että Wayland saavat täyden tuen seuraavassa Cinnamon-julkaisussa.</value>
-  </data>
   <data name="Close details" xml:space="preserve">
     <value>Sulje tiedot</value>
-  </data>
-  <data name="Compare the system beneath the desktop." xml:space="preserve">
-    <value>Vertaa järjestelmää, joka on työpöydän alla.</value>
   </data>
   <data name="Compare with" xml:space="preserve">
     <value>Vertaa</value>
   </data>
-  <data name="Comparison snapshot: 20 September 2026" xml:space="preserve">
-    <value>Vertailun otanta: 20. syyskuuta 2026</value>
+  <data name="Debian packages and Mint build tools" xml:space="preserve">
+    <value>Debian-paketit ja Mintin koontityökalut</value>
   </data>
-  <data name="Compressed RAM, disk Swap and health" xml:space="preserve">
-    <value>Pakattu RAM, levysivutus ja kunto</value>
+  <data name="Debian packages and Zorin repositories" xml:space="preserve">
+    <value>Debian-paketit ja Zorinin ohjelmistovarastot</value>
   </data>
-  <data name="Current product implementation" xml:space="preserve">
-    <value>Nykyinen tuoteimplementaatio</value>
+  <data name="Declarative installer" xml:space="preserve">
+    <value>Deklaratiivinen asennusohjelma</value>
   </data>
-  <data name="Debian packages + Mint tooling" xml:space="preserve">
-    <value>Debian-paketit + Mint-työkalut</value>
+  <data name="Declarative means the installer first describes the intended result: disks, partitions and system settings. A GTK4 interface creates a typed installation plan without administrator privileges. A separate privileged component checks that plan again and builds the commands itself. The interface cannot pass arbitrary shell commands or paths for privileged execution." xml:space="preserve">
+    <value>Deklaratiivisessa asennuksessa asentaja kuvaa ensin tavoitellun lopputuloksen: levyt, osiot ja järjestelmäasetukset. GTK4-käyttöliittymä luo tyypitetyn asennussuunnitelman ilman järjestelmänvalvojan oikeuksia. Erillinen, korotettuja käyttöoikeuksia käyttävä komponentti tarkistaa suunnitelman uudelleen ja muodostaa komennot itse. Käyttöliittymä ei voi välittää mielivaltaisia komentotulkkikomentoja tai polkuja suoritettavaksi korotetuilla käyttöoikeuksilla.</value>
   </data>
-  <data name="Debian packages + Zorin composition" xml:space="preserve">
-    <value>Debian-paketit + Zorin-kokoonpano</value>
+  <data name="Default filesystem" xml:space="preserve">
+    <value>Oletustiedostojärjestelmä</value>
   </data>
-  <data name="Default storage model" xml:space="preserve">
-    <value>Tallennusmalli oletuksena</value>
+  <data name="Diagnostic features with configurable settings" xml:space="preserve">
+    <value>Diagnostiikkatoiminnot mukautettavilla asetuksilla</value>
   </data>
-  <data name="Desktop architectures" xml:space="preserve">
-    <value>Työpöytäympäristöjen arkkitehtuurit</value>
+  <data name="Diagnostic reporting and privacy settings" xml:space="preserve">
+    <value>Diagnostiikkaraportointi ja tietosuoja-asetukset</value>
   </data>
-  <data name="Desktop reinstall from installation media" xml:space="preserve">
-    <value>Työpöydän uudelleenasennus asennusmedialta</value>
-  </data>
-  <data name="Diagnostics and remote news" xml:space="preserve">
-    <value>Vianmääritystiedot ja etäuutiset</value>
-  </data>
-  <data name="Diagnostics with release controls" xml:space="preserve">
-    <value>Diagnostiikka julkaisukohtaisin hallintakeinoin</value>
-  </data>
-  <data name="Disk Snapshots Manager" xml:space="preserve">
-    <value>Levytilannevedosten hallinta</value>
-  </data>
-  <data name="Display pipeline" xml:space="preserve">
-    <value>Näyttöputki</value>
+  <data name="Display features" xml:space="preserve">
+    <value>Näyttöominaisuudet</value>
   </data>
   <data name="Distribution comparison table" xml:space="preserve">
     <value>Jakeluiden vertailutaulukko</value>
@@ -210,593 +181,559 @@
   <data name="Done" xml:space="preserve">
     <value>Valmis</value>
   </data>
-  <data name="Dracut default · compatibility retained" xml:space="preserve">
-    <value>Dracut oletuksena · yhteensopivuus säilytetty</value>
+  <data name="Dracut by default after installation" xml:space="preserve">
+    <value>Dracut oletuksena asennuksen jälkeen</value>
   </data>
-  <data name="Dracut Live Layers" xml:space="preserve">
-    <value>Dracut Live-kerrokset</value>
+  <data name="Dracut throughout" xml:space="preserve">
+    <value>Dracut kaikkialla</value>
   </data>
-  <data name="Drivers, frame timing and recovery paths" xml:space="preserve">
-    <value>Ajurit, ruutujen ajoitus ja palautumiskeinot</value>
+  <data name="Driver setup and Wayland support" xml:space="preserve">
+    <value>Ajuriasetukset ja Wayland-tuki</value>
   </data>
-  <data name="Early-boot architecture" xml:space="preserve">
-    <value>Varhaiskäynnistyksen arkkitehtuuri</value>
+  <data name="Explore {0} more features" xml:space="preserve">
+    <value>Tutustu vielä {0} ominaisuuteen</value>
   </data>
-  <data name="Established installer path" xml:space="preserve">
-    <value>Vakiintunut asennuspolku</value>
+  <data name="Extensive image and release testing" xml:space="preserve">
+    <value>Kattava levykuvien ja julkaisujen testaus</value>
   </data>
-  <data name="Evidence and verification" xml:space="preserve">
-    <value>Näyttöaineet ja todennus</value>
+  <data name="Factory reset" xml:space="preserve">
+    <value>Tehdasasetusten palautus</value>
   </data>
-  <data name="Explicit zero-system-telemetry" xml:space="preserve">
-    <value>Nimenomainen nollatason järjestelmätelemetria</value>
+  <data name="Feature" xml:space="preserve">
+    <value>Ominaisuus</value>
   </data>
-  <data name="ext4 default · Btrfs selectable" xml:space="preserve">
-    <value>ext4 oletuksena · Btrfs valittavissa</value>
+  <data name="Features at a glance" xml:space="preserve">
+    <value>Ominaisuudet yhdellä silmäyksellä</value>
   </data>
-  <data name="ext4 default · other options" xml:space="preserve">
-    <value>ext4 oletuksena · muita vaihtoehtoja</value>
+  <data name="File history" xml:space="preserve">
+    <value>Tiedostohistoria</value>
   </data>
-  <data name="ext4-centered default" xml:space="preserve">
-    <value>ext4-pohjainen oletus</value>
+  <data name="Finding and restoring earlier file versions" xml:space="preserve">
+    <value>Aiemman tiedostoversion etsiminen ja palauttaminen</value>
   </data>
-  <data name="Extensive image and release QA" xml:space="preserve">
-    <value>Kattava levykuvien ja julkaisujen laadunvarmistus</value>
+  <data name="Follows Ubuntu 24.04's GNOME" xml:space="preserve">
+    <value>Noudattaa Ubuntu 24.04:n GNOME-versiota</value>
   </data>
-  <data name="Factory reset to initial installation" xml:space="preserve">
-    <value>Tehdasasetusten palautus alkuperäiseen asennukseen</value>
+  <data name="Follows Ubuntu memory management" xml:space="preserve">
+    <value>Noudattaa Ubuntun muistinhallintaa</value>
   </data>
-  <data name="Filesystem defaults and system topology" xml:space="preserve">
-    <value>Tiedostojärjestelmän oletukset ja järjestelmän rakenne</value>
+  <data name="From everyday apps to system recovery, compare the features that help you feel at home and stay in control." xml:space="preserve">
+    <value>Vertaile jokapäiväisistä sovelluksista järjestelmän palautukseen ulottuvia ominaisuuksia, joiden avulla tunnet olosi kotoisaksi ja pysyt tilanteen tasalla.</value>
   </data>
-  <data name="First-party system tools" xml:space="preserve">
-    <value>Ensimmäisen osapuolen järjestelmätyökalut</value>
+  <data name="GNOME 50 brings HDR screen sharing, updated color management, improved variable refresh rate and fractional scaling. HDR supports a wider brightness range; VRR adjusts refresh timing; fractional scaling makes content fit high-resolution screens. Availability depends on the display, graphics driver and application." xml:space="preserve">
+    <value>GNOME 50 tuo HDR-näytön jakamisen, päivitetyn värinhallinnan, parannetun muuttuvan virkistystaajuuden ja murto-osaskaalauksen. HDR tukee laajempaa kirkkausaluetta; VRR säätää virkistystaajuuden ajoitusta; murto-osaskaalaus sovittaa sisällön korkean resoluution näytöille. Ominaisuuksien saatavuus riippuu näytöstä, näytönohjaimen ajurista ja sovelluksesta.</value>
   </data>
-  <data name="Fully supported on Wayland" xml:space="preserve">
-    <value>Täysin tuettu Waylandissa</value>
+  <data name="GNOME 50 display features" xml:space="preserve">
+    <value>GNOME 50:n näyttöominaisuudet</value>
   </data>
-  <data name="General-purpose policy" xml:space="preserve">
-    <value>Yleiskäyttöinen käytäntö</value>
+  <data name="GNOME apps and Ubuntu tools" xml:space="preserve">
+    <value>GNOME-sovellukset ja Ubuntun työkalut</value>
   </data>
-  <data name="GNOME 50 display improvements" xml:space="preserve">
-    <value>GNOME 50:n näytön parannukset</value>
+  <data name="GNOME apps and Zorin tools" xml:space="preserve">
+    <value>GNOME-sovellukset ja Zorinin työkalut</value>
   </data>
-  <data name="GNOME 50 frame-timing improvements, Ubuntu 26.04 drivers and the AnduinOS Driver Center are connected to Secure Boot and DKMS trust health." xml:space="preserve">
-    <value>GNOME 50:n kuvataajuuden ajoituksen parannukset, Ubuntu 26.04:n ajurit ja AnduinOS Driver Center on yhdistetty Secure Bootin ja DKMS:n luottamuksen tilaan.</value>
+  <data name="GNOME on Wayland only" xml:space="preserve">
+    <value>GNOME vain Waylandilla</value>
   </data>
-  <data name="GNOME 50 graphics pipeline" xml:space="preserve">
-    <value>GNOME 50:n grafiikkaputki</value>
+  <data name="GTK4 across our graphical system tools" xml:space="preserve">
+    <value>GTK4 kaikissa graafisissa järjestelmätyökaluissamme</value>
   </data>
-  <data name="GNOME 50 release notes" xml:space="preserve">
-    <value>GNOME 50:n julkaisutiedot</value>
+  <data name="General-purpose memory and Swap defaults" xml:space="preserve">
+    <value>Yleiset muistin ja swapin oletusasetukset</value>
   </data>
-  <data name="HDR, VRR and fractional scaling" xml:space="preserve">
-    <value>HDR, VRR ja murto-osainen skaalaus</value>
+  <data name="Getting back to a working system" xml:space="preserve">
+    <value>Paluu toimivaan järjestelmään</value>
   </data>
-  <data name="Inherited initramfs-tools + Casper" xml:space="preserve">
-    <value>Peritty initramfs-tools + Casper</value>
+  <data name="HDR, variable refresh rate and scaling" xml:space="preserve">
+    <value>HDR, muuttuva virkistystaajuus ja skaalaus</value>
   </data>
-  <data name="Inherited Ubuntu 24.04 stack" xml:space="preserve">
-    <value>Ubuntu 24.04:stä peritty kokonaisuus</value>
+  <data name="Hibernation check app not confirmed" xml:space="preserve">
+    <value>Lepotilan tarkistussovellusta ei ole vahvistettu</value>
   </data>
-  <data name="Initramfs implementation and migration policy" xml:space="preserve">
-    <value>Initramfs-toteutus ja siirtymäkäytäntö</value>
+  <data name="How Swap Control works" xml:space="preserve">
+    <value>Swap Controlin toiminta</value>
   </data>
-  <data name="Installable AMD64 and ARM64 products" xml:space="preserve">
-    <value>Asennettavissa olevat AMD64- ja ARM64-tuotteet</value>
+  <data name="How apps display windows on your screen" xml:space="preserve">
+    <value>Miten sovellukset näyttävät ikkunat näytölläsi</value>
   </data>
-  <data name="Installer + MOK + DKMS health" xml:space="preserve">
-    <value>Asennusohjelman + MOK:n + DKMS:n tila</value>
+  <data name="How system packages are built and organized" xml:space="preserve">
+    <value>Järjestelmäpakettien rakentaminen ja järjestäminen</value>
   </data>
-  <data name="Installer architecture" xml:space="preserve">
-    <value>Asentimen arkkitehtuuri</value>
+  <data name="How the AnduinOS installer works" xml:space="preserve">
+    <value>Näin AnduinOSin asennusohjelma toimii</value>
   </data>
-  <data name="Installer design" xml:space="preserve">
-    <value>Asennusohjelman suunnittelu</value>
+  <data name="How the installed system stores files" xml:space="preserve">
+    <value>Miten asennettu järjestelmä tallentaa tiedostoja</value>
   </data>
-  <data name="Installer Secure Boot design" xml:space="preserve">
-    <value>Asennusohjelman Secure Boot -suunnittelu</value>
+  <data name="Information as of 20 September 2026" xml:space="preserve">
+    <value>Tiedot 20. syyskuuta 2026</value>
   </data>
-  <data name="Integrated by design" xml:space="preserve">
-    <value>Integroitu suunnittelultaan</value>
+  <data name="Installation, startup and desktop checks" xml:space="preserve">
+    <value>Asennuksen, käynnistyksen ja työpöydän testaus</value>
   </data>
-  <data name="Linux 7.0 HWE images" xml:space="preserve">
-    <value>Linux 7.0 HWE -levykuvat</value>
+  <data name="Installer" xml:space="preserve">
+    <value>Asennusohjelma</value>
   </data>
-  <data name="Linux Mint 22.3 publishes its Cinnamon, MATE and Xfce desktop editions as 64-bit x86 images. No equivalent official ARM64 Mint desktop image is offered." xml:space="preserve">
-    <value>Linux Mint 22.3 julkaisee Cinnamon-, MATE- ja Xfce-työpöytäversiot 64-bittisinä x86-kuvina. Vastaavaa virallista ARM64 Mint -työpöytäkuvaa ei ole saatavilla.</value>
+  <data name="Installer with a Flutter interface" xml:space="preserve">
+    <value>Flutter-käyttöliittymällä varustettu asennusohjelma</value>
   </data>
-  <data name="Linux Mint 22.3 release" xml:space="preserve">
-    <value>Linux Mint 22.3 -julkaisu</value>
+  <data name="Installing applications" xml:space="preserve">
+    <value>Sovellusten asentaminen</value>
   </data>
-  <data name="Linux Mint 22.3 release announcement" xml:space="preserve">
-    <value>Linux Mint 22.3:n julkaisutiedote</value>
+  <data name="Learn more" xml:space="preserve">
+    <value>Lue lisää</value>
   </data>
-  <data name="Linux Mint 22.3 uses the Ubuntu 24.04-era early-boot and Live generation. The reviewed scope identified no Mint-specific single-generator Dracut contract enabled by default." xml:space="preserve">
-    <value>Linux Mint 22.3 käyttää Ubuntu 24.04 -aikakauden varhaiskäynnistys- ja Live-ympäristöä. Tarkastellussa laajuudessa ei havaittu oletusarvoisesti käytössä olevaa Mint-kohtaista, yhteen Dracut-generaattoriin perustuvaa sopimusta.</value>
+  <data name="Linux Mint 22.3 launched with Linux 6.14. It also offers tested HWE images with Linux 7.0 for newer hardware. HWE means hardware enablement: check which installation image you download, because the included kernel differs." xml:space="preserve">
+    <value>Linux Mint 22.3 julkaistiin Linux 6.14 -ytimellä. Se tarjoaa myös testattuja HWE-asennuskuvia, joissa on Linux 7.0 uudempaa laitteistoa varten. HWE tarkoittaa laitteistotukea: tarkista lataamasi asennuskuva, sillä niiden mukana tulevat ytimet eroavat toisistaan.</value>
   </data>
-  <data name="Linux Mint 22.3 was released with Linux 6.14. Mint now also publishes fully QA-tested HWE images with Linux 7.0 for newer hardware, so the selected image matters." xml:space="preserve">
-    <value>Linux Mint 22.3 julkaistiin Linux 6.14:n kanssa. Mint julkaisee nyt myös täysin laadunvarmistetut HWE-asennuslevykuvat Linux 7.0:lla uudemmille laitteille, joten valitulla levykuvalla on merkitystä.</value>
+  <data name="Linux Mint 22.3 offers Cinnamon, MATE and Xfce images for 64-bit Intel and AMD processors. Its official desktop downloads do not offer an ARM64 edition." xml:space="preserve">
+    <value>Linux Mint 22.3 tarjoaa Cinnamon-, MATE- ja Xfce-asennuskuvat 64-bittisille Intel- ja AMD-suorittimille. Sen virallisista työpöytäversioiden latauksista ei ole saatavilla ARM64-versiota.</value>
   </data>
-  <data name="Linux Mint HWE QA" xml:space="preserve">
-    <value>Linux Mint HWE -laadunvarmistus</value>
+  <data name="Linux Mint 22.3 release notes" xml:space="preserve">
+    <value>Linux Mint 22.3:n julkaisutiedot</value>
   </data>
-  <data name="Linux Mint inherits Ubuntu&apos;s signed shim, GRUB and kernel foundation. Mint documents workarounds for systems that report Secure Boot violations." xml:space="preserve">
-    <value>Linux Mint perii Ubuntun allekirjoitetun shim-, GRUB- ja kernelipohjan. Mint dokumentoi kiertotavat järjestelmille, jotka ilmoittavat Secure Boot -rikkomuksista.</value>
+  <data name="Linux Mint 22.3 uses Cinnamon on X11 by default. Its Wayland session remains experimental in this version. Mint has announced full support for both X11 and Wayland in the next Cinnamon release; that is not the same as support already shipping in 22.3." xml:space="preserve">
+    <value>Linux Mint 22.3 käyttää oletuksena Cinnamonia X11:llä. Sen Wayland-istunto on tässä versiossa edelleen kokeellinen. Mint on ilmoittanut täyden tuen sekä X11:lle että Waylandille seuraavassa Cinnamon-julkaisussa; tämä ei kuitenkaan tarkoita, että tuki sisältyisi jo versioon 22.3.</value>
   </data>
-  <data name="Linux Mint provides standard Linux memory and Swap capabilities. The reviewed release scope identified no default integrated Zram, Zswap, stress-test and hibernation-health interface." xml:space="preserve">
-    <value>Linux Mint tarjoaa Linuxin tavanomaiset muistin- ja swap-toiminnot. Tarkastellun julkaisun ominaisuuksiin ei kuulunut oletusarvoisesti integroitua Zram- tai Zswap-toimintoa eikä stressitestien ja horrostilan kunnon hallintaliittymää.</value>
+  <data name="Live USB migrated to Dracut" xml:space="preserve">
+    <value>Live-USB on siirretty käyttämään Dracutia</value>
   </data>
-  <data name="Linux Mint provides Timeshift system rollback if a suitable snapshot was configured and created. Its guide asks users to set up snapshots before using the OS; it does not describe an automatically pinned factory baseline. Timeshift excludes personal files by default, so this is not an equivalent one-step reset of system and Home to installation state." xml:space="preserve">
-    <value>Linux Mint tarjoaa Timeshiftillä järjestelmän palautuksen, jos sopiva tilannevedos on määritetty ja luotu. Sen ohjeessa käyttäjiä kehotetaan määrittämään tilannevedokset ennen käyttöjärjestelmän käyttöönottoa; siinä ei kuvata automaattisesti tallennettavaa tehdasasetusten lähtötilaa. Timeshift jättää henkilökohtaiset tiedostot oletusarvoisesti tilannevedosten ulkopuolelle, joten kyseessä ei ole vastaava yhden vaiheen palautus, joka palauttaisi sekä järjestelmän että Home-kansion asennuksen aikaiseen tilaan.</value>
+  <data name="Live USB startup" xml:space="preserve">
+    <value>Live USB:n käynnistys</value>
   </data>
-  <data name="Linux Mint publishes privacy-oriented defaults. The reviewed scope identified no equivalent package-level conflict and replacement contract for every Ubuntu reporting component." xml:space="preserve">
-    <value>Linux Mint julkaisee yksityisyyttä painottavat oletusasetukset. Tarkastellussa laajuudessa ei havaittu vastaavaa pakettitason käytäntöä, joka estäisi ja korvaisi kaikki Ubuntun raportointikomponentit.</value>
+  <data name="Manual snapshot advised before upgrades" xml:space="preserve">
+    <value>Manuaalisen tilannevedoksen luomista suositellaan ennen päivityksiä</value>
   </data>
-  <data name="Linux Mint system snapshots" xml:space="preserve">
-    <value>Linux Mintin järjestelmän tilannevedokset</value>
+  <data name="Memory compression, Swap and a settings app" xml:space="preserve">
+    <value>Muistin pakkaus, sivutus ja asetussovellus</value>
   </data>
-  <data name="Linux Mint Wayland status" xml:space="preserve">
-    <value>Linux Mintin Wayland-tila</value>
+  <data name="Memory management" xml:space="preserve">
+    <value>Muistinhallinta</value>
   </data>
-  <data name="Live system layers" xml:space="preserve">
-    <value>Live-järjestelmän kerrokset</value>
+  <data name="Mint 22.3 uses the Ubuntu 24.04 generation of initramfs and Live tools. These prepare the drivers and files needed before the desktop starts. The reviewed sources do not describe a default migration to Dracut across both installed and Live systems." xml:space="preserve">
+    <value>Mint 22.3 käyttää Ubuntu 24.04 -sukupolven initramfs- ja Live-työkaluja. Ne valmistelevat ajurit ja tiedostot, joita tarvitaan ennen työpöydän käynnistymistä. Tarkastelluissa lähteissä ei kuvata oletusarvoista siirtymistä Dracutiin sekä asennetussa järjestelmässä että Live-järjestelmässä.</value>
   </data>
-  <data name="Memory pressure strategy" xml:space="preserve">
-    <value>Muistinhallintastrategia</value>
+  <data name="Mint Live USB environment" xml:space="preserve">
+    <value>Mintin Live USB -ympäristö</value>
   </data>
-  <data name="Method and evidence scope" xml:space="preserve">
-    <value>Menetelmä ja todisteiden laajuus</value>
+  <data name="Mint Wayland development updates" xml:space="preserve">
+    <value>Mintin Wayland-kehityksen päivitykset</value>
   </data>
-  <data name="Method: comparison of first-party defaults, published source repositories and official product documentation available on 20 September 2026." xml:space="preserve">
-    <value>Menetelmä: ensisijaisen osapuolen oletusten, julkaistujen lähdekoodivarastojen ja 20. syyskuuta 2026 saatavilla olleen virallisen tuotedokumentaation vertailu.</value>
+  <data name="Mint defaults to ext4 but allows Btrfs. Timeshift can use Btrfs snapshots with a suitable layout. Choosing Btrfs alone does not set up the same separation of system files and recovery data used by AnduinOS." xml:space="preserve">
+    <value>Mint käyttää oletuksena ext4:ää, mutta Btrfs on myös valittavissa. Timeshift voi käyttää Btrfs-tilannevedoksia, jos osiointi on sopiva. Pelkkä Btrfsin valitseminen ei kuitenkaan määritä järjestelmätiedostoille ja palautustiedoille samanlaista erottelua kuin AnduinOSissa.</value>
   </data>
-  <data name="Mint announced accelerated NVIDIA Wayland improvements for the next Cinnamon release. In 22.3, the Wayland session itself remains experimental." xml:space="preserve">
-    <value>Mint ilmoitti nopeuttavansa NVIDIA Wayland -parannusten kehitystä seuraavaa Cinnamon-julkaisua varten. Versiossa 22.3 Wayland-istunto on edelleen kokeellinen.</value>
-  </data>
-  <data name="Mint deliberately maintains its Cinnamon and XApp design system. Major administration tools remain primarily GTK3/XApp while GTK4 applications are supported." xml:space="preserve">
-    <value>Mint ylläpitää tietoisesti Cinnamon- ja XApp-suunnittelujärjestelmäänsä. Tärkeimmät hallintatyökalut perustuvat pääasiassa GTK3:een ja XAppiin, mutta myös GTK4-sovelluksia tuetaan.</value>
-  </data>
-  <data name="Mint explicitly recommends creating a Timeshift snapshot before a release upgrade. This is a manual upgrade safeguard rather than an automatic symmetric APT transaction contract." xml:space="preserve">
-    <value>Mint suosittelee nimenomaisesti luomaan Timeshift-tilannevedoksen ennen jakeluversion päivitystä. Kyse on manuaalisesta päivityksen suojatoimesta, ei automaattisesta, symmetrisestä APT-tapahtumasopimuksesta.</value>
-  </data>
-  <data name="Mint exposes standard Linux Swap and hibernation capabilities. The reviewed product scope identified no integrated first-party sizing and health-verification control plane enabled by default." xml:space="preserve">
-    <value>Mint tukee Linuxin tavanomaista swap-tilaa ja horrostilaa. Tarkastellusta tuotteesta ei löytynyt oletusarvoisesti käytössä olevaa integroitua valmistajan omaa hallintatasoa, joka mitoittaisi swap-tilan ja tarkistaisi sen kunnon.</value>
+  <data name="Mint describes privacy-oriented defaults. The reviewed sources do not establish the same package-by-package blocking rules used by AnduinOS. This comparison of implementation does not imply that Mint collects personal information." xml:space="preserve">
+    <value>Mint kuvailee yksityisyyttä painottavia oletusasetuksia. Tarkastellut lähteet eivät osoita, että Mintissä käytettäisiin samoja pakettikohtaisia estokäytäntöjä kuin AnduinOSissa. Tämä toteutustapojen vertailu ei tarkoita, että Mint keräisi henkilötietoja.</value>
   </data>
   <data name="Mint graphical installer" xml:space="preserve">
     <value>Mintin graafinen asennusohjelma</value>
   </data>
-  <data name="Mint installs to ext4 by default. Btrfs can be selected and Timeshift can use Btrfs snapshots, but Mint does not define the same default subvolume ABI as AnduinOS." xml:space="preserve">
-    <value>Mint asennetaan oletusarvoisesti ext4-tiedostojärjestelmälle. Btrfs voidaan valita, ja Timeshift voi käyttää Btrfs-tilannevedoksia, mutta Mint ei määrittele samaa oletusalitaltioiden ABI-rajapintaa kuin AnduinOS.</value>
+  <data name="Mint guide to system snapshots" xml:space="preserve">
+    <value>Mintin opas järjestelmän tilannevedoksiin</value>
   </data>
-  <data name="Mint Live session" xml:space="preserve">
-    <value>Mintin Live-istunto</value>
+  <data name="Mint has announced more NVIDIA Wayland improvements for the next Cinnamon release. In Mint 22.3, the Wayland session remains experimental. This concerns Wayland support, not whether NVIDIA hardware can be used at all." xml:space="preserve">
+    <value>Mint on ilmoittanut uusista NVIDIA Wayland -parannuksista seuraavaan Cinnamon-julkaisuun. Mint 22.3:ssa Wayland-istunto on edelleen kokeellinen. Tämä koskee Wayland-tukea, ei sitä, voiko NVIDIA-laitteistoa ylipäätään käyttää.</value>
   </data>
-  <data name="Mint offers a Live desktop and persistence workflows. The reviewed product scope identified no equivalent first-party Dracut overlay protocol enabled by default." xml:space="preserve">
-    <value>Mint tarjoaa Live-työpöydän ja pysyvyyttä tukevia työnkulkuja. Tarkastellussa tuotekokonaisuudessa ei havaittu oletusarvoisesti käytössä olevaa vastaavaa ensimmäisen osapuolen Dracut-peittoprotokollaa.</value>
+  <data name="Mint images for newer hardware" xml:space="preserve">
+    <value>Mintin levykuvat uudemmalle laitteistolle</value>
   </data>
-  <data name="Mint performs release and ISO quality assurance, including fully QA-tested HWE images. The reviewed public scope identified no acceptance contract directly comparable to the published AnduinOS QEMU/QMP/AT-SPI framework." xml:space="preserve">
-    <value>Mint toteuttaa julkaisujen ja ISO-levykuvien laadunvarmistusta, mukaan lukien täysin laadunvarmistetut HWE-levykuvat. Tarkastellussa julkisessa aineistossa ei löytynyt julkaistua AnduinOSin QEMU/QMP/AT-SPI-kehystä suoraan vastaavaa hyväksymiskriteeristöä.</value>
+  <data name="Mint inherits Ubuntu's signed bootloader and kernel components. These let supported machines start with Secure Boot enabled. Mint also documents workarounds for Secure Boot violations; driver and firmware compatibility still matter." xml:space="preserve">
+    <value>Mint perii Ubuntun allekirjoitetut käynnistyslataimen ja ytimen osat. Niiden ansiosta tuetut tietokoneet voivat käynnistyä Secure Boot käytössä. Mint dokumentoi myös kiertotapoja Secure Boot -rikkomustilanteisiin; ajurien ja laiteohjelmistojen yhteensopivuus on silti tärkeää.</value>
   </data>
-  <data name="Mint provides first-class APT and Flatpak integration and blocks Snap by default, while still allowing users to deliberately re-enable it." xml:space="preserve">
-    <value>Mint tarjoaa ensiluokkaisen APT- ja Flatpak-integraation ja estää Snapin oletusarvoisesti, mutta antaa käyttäjien halutessaan ottaa sen uudelleen käyttöön.</value>
+  <data name="Mint integrates APT and Flatpak and blocks Snap by default. Users can deliberately change that setting and enable Snap. The default reflects Mint's software policy rather than an inability to run Snap at all." xml:space="preserve">
+    <value>Mint integroi APT:n ja Flatpakin ja estää Snapin oletusarvoisesti. Käyttäjät voivat halutessaan muuttaa asetusta ja ottaa Snapin käyttöön. Oletusasetus kuvastaa Mintin ohjelmistokäytäntöä, ei sitä, ettei Snapia voisi käyttää lainkaan.</value>
   </data>
-  <data name="Mint provides its established graphical installer. Its default first-party workflow uses a different design from the native GTK4 planner and fixed semantic executor contract used by AnduinOS." xml:space="preserve">
-    <value>Mint tarjoaa vakiintuneen graafisen asennusohjelmansa. Sen oletusarvoinen oma työnkulku on toteutukseltaan erilainen kuin AnduinOSin natiivi GTK4-suunnittelutyökalu ja kiinteästi määritelty semanttisen suorittajan sopimus.</value>
+  <data name="Mint maintains Cinnamon and XApp tools with their own interface design. Major administration tools mainly use GTK3 and XApp. GTK4 applications can still run; the toolkit used by a settings app does not determine which apps users can install." xml:space="preserve">
+    <value>Mint ylläpitää Cinnamon- ja XApp-työkaluja, joilla on oma käyttöliittymäsuunnittelunsa. Tärkeimmissä hallintatyökaluissa käytetään pääasiassa GTK3:a ja XAppia. GTK4-sovellukset toimivat silti; asetussovelluksen käyttämä työkalupakki ei ratkaise, mitä sovelluksia käyttäjät voivat asentaa.</value>
   </data>
-  <data name="Mint uses established Debian packaging, metapackages and Mint project tooling. It does not use the unified AnduinOS .aosproj format." xml:space="preserve">
-    <value>Mint käyttää vakiintunutta Debian-paketointia, metapaketteja ja Mint-projektin työkaluja. Se ei käytä yhtenäistä AnduinOS .aosproj -muotoa.</value>
+  <data name="Mint provides a desktop you can try from a USB without installing to disk. Its Live tools follow the Ubuntu 24.04 base. Saving changes across restarts requires a suitable persistence setup; the reviewed sources do not describe migration to AnduinOS's Dracut Live Layers." xml:space="preserve">
+    <value>Mint tarjoaa työpöydän, jota voit kokeilla USB-tikulta asentamatta sitä levylle. Sen Live-työkalut perustuvat Ubuntu 24.04:ään. Muutosten tallentaminen uudelleenkäynnistysten välillä edellyttää sopivaa pysyvän tallennuksen määritystä; tarkastelluissa lähteissä ei kuvata siirtymistä AnduinOSin Dracut Live Layers -ratkaisuun.</value>
   </data>
-  <data name="Mixed first-party estate" xml:space="preserve">
-    <value>Sekalainen jakelun omien työkalujen kokonaisuus</value>
+  <data name="Mint provides its established graphical installation tool. Users choose settings through an interface that installs the system. Its design differs from AnduinOS's declarative plan and separate executor; a different architecture alone does not imply an unsafe installer." xml:space="preserve">
+    <value>Mint tarjoaa vakiintuneen graafisen asennustyökalunsa. Käyttäjät valitsevat asetukset käyttöliittymässä, joka asentaa järjestelmän. Sen rakenne poikkeaa AnduinOSin deklaratiivisesta suunnitelmasta ja erillisestä suorittajasta; erilainen arkkitehtuuri ei yksin tarkoita, että asennusohjelma olisi turvaton.</value>
   </data>
-  <data name="Modern drivers · Xorg fallback" xml:space="preserve">
-    <value>Nykyaikaiset ajurit · Xorg-varavaihtoehto</value>
+  <data name="Mint provides standard Linux Swap and hibernation capabilities. The reviewed documentation does not confirm a bundled app for combined capacity and resume checks. Availability still depends on the machine and its configuration." xml:space="preserve">
+    <value>Mint tarjoaa tavalliset Linuxin swap- ja horrostilatoiminnot. Tarkistetuissa ohjeissa ei vahvisteta, että mukana olisi sovellus, joka tarkistaisi sekä swap-tilan kapasiteetin että horroksesta palautumisen asetukset. Käytettävyys riippuu edelleen laitteesta ja sen kokoonpanosta.</value>
   </data>
-  <data name="Modern Flutter frontend" xml:space="preserve">
-    <value>Moderni Flutter-käyttöliittymä</value>
+  <data name="Mint provides standard Linux memory management and Swap support. The reviewed release documentation does not confirm a bundled app that combines compressed memory, stress tests and hibernation checks in one place." xml:space="preserve">
+    <value>Mint tarjoaa Linuxin tavanomaiset muistinhallinta- ja swap-toiminnot. Tarkistetuissa julkaisutiedoissa ei vahvisteta, että mukana olisi sovellus, joka yhdistäisi pakatun muistin, rasitustestit ja horrostilan tarkistukset samaan paikkaan.</value>
   </data>
-  <data name="Modern GNOME applications" xml:space="preserve">
-    <value>Nykyaikaiset GNOME-sovellukset</value>
+  <data name="Mint recommends creating a Timeshift snapshot before a release upgrade so you can restore the earlier system if needed. That manual safeguard differs from automatically taking snapshots around every APT package operation." xml:space="preserve">
+    <value>Mint suosittelee luomaan Timeshift-tilannevedoksen ennen jakelupäivitystä, jotta voit tarvittaessa palauttaa järjestelmän aiempaan tilaan. Tämä manuaalinen varotoimi eroaa siitä, että tilannevedoksia luodaan automaattisesti jokaisen APT-pakettitoiminnon yhteydessä.</value>
   </data>
-  <data name="Native GTK4 · typed install plan" xml:space="preserve">
-    <value>Natiivi GTK4 · tyypitetty asennussuunnitelma</value>
+  <data name="Mint tests releases and installation images, including its HWE images for newer hardware. The reviewed public sources did not identify the same kind of published automated installation and desktop reports as AnduinOS. Different reporting does not mean no quality testing." xml:space="preserve">
+    <value>Mint testaa julkaisujaan ja asennuskuviaan, mukaan lukien uudemmille laitteille tarkoitetut HWE-kuvansa. Tarkastelluista julkisista lähteistä ei löytynyt samanlaisia julkaistuja automatisoituja asennus- ja työpöytäraportteja kuin AnduinOSista. Ero raportoinnissa ei tarkoita, ettei laadun testausta tehtäisi.</value>
   </data>
-  <data name="Native installer design" xml:space="preserve">
-    <value>Järjestelmän oman asennusohjelman suunnittelu</value>
+  <data name="Mint uses Debian packages, metapackages that group dependencies, and its own project tools to build the desktop. This is an established way to organize a distribution; using a different project format does not imply missing user features." xml:space="preserve">
+    <value>Mint käyttää Debian-paketteja, riippuvuuksia kokoavia metapaketteja ja omia projektityökalujaan työpöytäympäristön rakentamiseen. Tämä on vakiintunut tapa järjestää jakelu; erilaisen projektimuodon käyttäminen ei tarkoita, että käyttäjiltä puuttuisi ominaisuuksia.</value>
   </data>
-  <data name="No comparable public suite identified as of 2026-08-28" xml:space="preserve">
-    <value>Vastaavaa julkista testikokonaisuutta ei löytynyt 28.8.2026 mennessä</value>
+  <data name="More than a familiar desktop" xml:space="preserve">
+    <value>Enemmän kuin tuttu työpöytä</value>
   </data>
-  <data name="No competitor ISO was installed specifically for this snapshot. Therefore no competitor test ISO, SHA256, installation date, screenshots or logs are presented as direct test evidence. Statements that no equivalent workflow was identified refer only to the official research scope above; they do not claim that a project performs no internal QA or that users cannot assemble similar functionality." xml:space="preserve">
-    <value>Mitään kilpailijoiden ISO-kuvastetta ei asennettu nimenomaan tätä kuvakaappausta varten. Siksi kilpailijoiden testikuvastetta, SHA256-tunnistetta, asennuspäivämäärää, ruutukaappauksia tai lokitiedostoja ei esitetä suorana testinäytteenä. Väitteet, joissa todetaan, ettei vastaavaa työvirtaa ole tunnistettu, viittaavat ainoastaan yllä mainittuun viralliseen tutkimusalueeseen; ne eivät väitä, ettei jokin projekti suorittaisi sisäistä laadunvalvontaa tai ettei käyttäjät voisi kokoonpanna vastaavaa toiminnallisuutta.</value>
+  <data name="NVIDIA drivers; Xorg available" xml:space="preserve">
+    <value>NVIDIA-ajurit; Xorg käytettävissä</value>
   </data>
-  <data name="No equivalent first-party workflow enabled by default" xml:space="preserve">
-    <value>Vastaavaa valmistajan omaa työnkulkua ei ole oletusarvoisesti käytössä</value>
+  <data name="NVIDIA graphics" xml:space="preserve">
+    <value>NVIDIA-grafiikka</value>
   </data>
-  <data name="No equivalent package-level policy enabled by default" xml:space="preserve">
-    <value>Vastaavaa pakettitason käytäntöä ei ole oletusarvoisesti käytössä</value>
+  <data name="NVIDIA supported on Wayland" xml:space="preserve">
+    <value>NVIDIA tuettu Waylandissa</value>
   </data>
-  <data name="NVIDIA on Wayland" xml:space="preserve">
-    <value>NVIDIA Waylandissa</value>
-  </data>
-  <data name="Official research scope: AnduinOS package and ISO repositories; Zorin OS technical details, published package lists and Help documentation; Linux Mint release posts and documentation; Ubuntu and GNOME release documentation." xml:space="preserve">
-    <value>Virallinen tutkimusalue: AnduinOS-paketti- ja ISO-repositoriot; Zorin OS:n tekniset tiedot, julkaistut pakettilistat ja Ohje-dokumentaatio; Linux Mint -julkaisut ja -dokumentaatio; Ubuntu- ja GNOME-julkaisudokumentaatio.</value>
-  </data>
-  <data name="Official x86-64 desktop" xml:space="preserve">
-    <value>Virallinen x86-64-työpöytä</value>
+  <data name="Not confirmed" xml:space="preserve">
+    <value>Ei vahvistettu</value>
   </data>
   <data name="Official x86-64 images" xml:space="preserve">
     <value>Viralliset x86-64-asennuskuvat</value>
   </data>
-  <data name="On Btrfs installs, the installer creates protected initial System and Home snapshots. Control Panel opens Disk Snapshots Manager&apos;s guarded Factory Reset workflow: it restores the system to New OS, keeps Home by default, or optionally rolls back user data too. The manager checks prerequisites, saves a safety snapshot and completes the switch on reboot. Ext4 installs do not support this; restoring Home is not secure data erasure." xml:space="preserve">
-    <value>Btrfs-asennuksissa asennusohjelma luo suojatut alkuperäiset System- ja Home-tilannevedokset. Ohjauspaneelista avautuu Disk Snapshots Managerin suojattu Factory Reset -toiminto: se palauttaa järjestelmän New OS -tilaan, säilyttää Home-osion oletusarvoisesti tai haluttaessa palauttaa myös käyttäjätiedot aiempaan tilaan. Hallintaohjelma tarkistaa edellytykset, tallentaa turvaksi tilannevedoksen ja viimeistelee vaihdon uudelleenkäynnistyksen yhteydessä. Ext4-asennukset eivät tue tätä; Home-osion palauttaminen ei ole tietojen turvallista poistamista.</value>
+  <data name="On Btrfs, AnduinOS creates system snapshots around APT software changes and makes recovery available through the boot menu. Dracut, GRUB and the snapshot manager work together to restore the selected state and confirm a successful boot before cleanup. Snapshots on the same disk do not replace an external backup against disk failure." xml:space="preserve">
+    <value>Btrfs-tiedostojärjestelmää käytettäessä AnduinOS luo järjestelmän tilannevedoksia APT-ohjelmistomuutosten yhteydessä ja tarjoaa palautusmahdollisuuden käynnistysvalikosta. Dracut, GRUB ja tilannevedosten hallintaohjelma toimivat yhdessä palauttaakseen valitun tilan ja varmistaakseen käynnistyksen onnistumisen ennen siivousta. Samalla levyllä olevat tilannevedokset eivät korvaa ulkoista varmuuskopiota levyvaurion varalta.</value>
   </data>
-  <data name="Package source and product composition" xml:space="preserve">
-    <value>Pakettien lähteet ja tuotteen koostumus</value>
+  <data name="On Btrfs, Personal Files snapshots keep home-folder history separately from system snapshots. Snapshot Manager and the Files integration let you browse older versions and restore selected files without rolling back the operating system. Files changed after the latest snapshot may not have a saved version; keep external backups for disk failure." xml:space="preserve">
+    <value>Btrfs-tiedostojärjestelmässä Personal Files -tilannevedokset tallentavat kotikansion historian erillään järjestelmän tilannevedoksista. Snapshot Manager ja Tiedostot-integraatio mahdollistavat aiempien versioiden selaamisen ja valittujen tiedostojen palauttamisen palauttamatta käyttöjärjestelmää aiempaan tilaan. Viimeisimmän tilannevedoksen jälkeen muutetuista tiedostoista ei välttämättä ole tallennettua versiota, joten pidä levyrikon varalta ulkoisia varmuuskopioita.</value>
   </data>
-  <data name="Package transaction safety" xml:space="preserve">
-    <value>Pakettitapahtumien turvallisuus</value>
+  <data name="On Btrfs, hooks in APT create snapshots before and after installing, updating or removing system packages. Each snapshot records package state and follows the system's retention and recovery settings. This protects APT changes; it does not mean every Flatpak or personal-file change creates a system snapshot." xml:space="preserve">
+    <value>Btrfs-tiedostojärjestelmässä APT:n koukut luovat tilannevedokset ennen järjestelmäpakettien asentamista, päivittämistä tai poistamista ja niiden jälkeen. Kukin tilannevedos tallentaa pakettien tilan, ja sen säilyttämisessä sekä palautuksessa noudatetaan järjestelmän asetuksia. Tämä suojaa APT:n kautta tehtyjä muutoksia; se ei tarkoita, että jokainen Flatpak- tai henkilökohtaisiin tiedostoihin tehty muutos loisi järjestelmän tilannevedoksen.</value>
   </data>
-  <data name="Personal file history" xml:space="preserve">
-    <value>Henkilökohtaisten tiedostojen historia</value>
+  <data name="Our system" xml:space="preserve">
+    <value>Järjestelmämme</value>
   </data>
-  <data name="Personal Files snapshots" xml:space="preserve">
-    <value>Henkilökohtaisten tiedostojen tilannevedokset</value>
+  <data name="Package build and archive testing tools" xml:space="preserve">
+    <value>Pakettien rakentamisen ja arkistojen testauksen työkalut</value>
   </data>
-  <data name="Platform generation" xml:space="preserve">
-    <value>Alustan sukupolvi</value>
+  <data name="Personal files need a separate backup" xml:space="preserve">
+    <value>Henkilökohtaiset tiedostot tarvitsevat erillisen varmuuskopion</value>
   </data>
-  <data name="Primary display architecture" xml:space="preserve">
-    <value>Ensisijaisen näyttöjärjestelmän arkkitehtuuri</value>
+  <data name="Planning and installing your system" xml:space="preserve">
+    <value>Järjestelmän suunnittelu ja asennus</value>
+  </data>
+  <data name="Preparing the files needed to boot" xml:space="preserve">
+    <value>Käynnistymiseen tarvittavien tiedostojen valmistelu</value>
   </data>
   <data name="Privacy-oriented defaults" xml:space="preserve">
     <value>Yksityisyyttä suosivat oletusasetukset</value>
   </data>
-  <data name="Public automated release evidence" xml:space="preserve">
-    <value>Julkinen automatisoitu julkaisutestausnäyttö</value>
+  <data name="Protection during software changes" xml:space="preserve">
+    <value>Suoja ohjelmistomuutosten aikana</value>
   </data>
-  <data name="Published boot, install, reboot and desktop reports" xml:space="preserve">
-    <value>Julkaistut käynnistys-, asennus-, uudelleenkäynnistys- ja työpöytäraportit</value>
+  <data name="Public automated tests" xml:space="preserve">
+    <value>Julkiset automaattiset testit</value>
   </data>
-  <data name="QEMU / QMP / AT-SPI reports published" xml:space="preserve">
-    <value>QEMU / QMP / AT-SPI-raportit julkaistu</value>
+  <data name="Published install, boot and desktop reports" xml:space="preserve">
+    <value>Julkaistut asennus-, käynnistys- ja työpöytäraportit</value>
   </data>
-  <data name="Recovery points around APT changes" xml:space="preserve">
-    <value>Palautuspisteet APT-muutosten yhteydessä</value>
+  <data name="Reinstall using a USB" xml:space="preserve">
+    <value>Asenna uudelleen USB-muistitikulta</value>
   </data>
-  <data name="Recovery scope and safeguards" xml:space="preserve">
-    <value>Palautuksen laajuus ja suojatoimet</value>
+  <data name="Release testing" xml:space="preserve">
+    <value>Julkaisujen testaus</value>
   </data>
-  <data name="Reference" xml:space="preserve">
-    <value>Vertailu</value>
+  <data name="Restore a snapshot or reinstall" xml:space="preserve">
+    <value>Palauta tilannevedos tai asenna uudelleen</value>
   </data>
-  <data name="Reinstall from USB for a clean state" xml:space="preserve">
-    <value>Asenna uudelleen USB-muistitikulta palauttaaksesi puhtaan tilan</value>
+  <data name="Returning to the freshly installed system" xml:space="preserve">
+    <value>Paluu juuri asennettuun järjestelmään</value>
   </data>
-  <data name="Release QA" xml:space="preserve">
-    <value>Julkaisun laadunvarmistus</value>
+  <data name="Secure Boot" xml:space="preserve">
+    <value>Secure Boot</value>
   </data>
-  <data name="Return to the eight essential comparisons" xml:space="preserve">
-    <value>Palaa kahdeksaan välttämättömään vertailuun</value>
+  <data name="Secure Boot checks signatures on startup software. AnduinOS includes configuration and status tools in the installer, first-run setup and Driver Center on AMD64 and ARM64. You can manage MOK keys, which authorize additional signing certificates, and check signatures on drivers built through DKMS." xml:space="preserve">
+    <value>Secure Boot tarkistaa käynnistysohjelmistojen allekirjoitukset. AnduinOS sisältää määritys- ja tilatyökalut asennusohjelmassa, ensikäynnistyksen määrityksissä ja Driver Centerissä AMD64- ja ARM64-arkkitehtuureilla. Voit hallita MOK-avaimia, joilla hyväksytään muita allekirjoitusvarmenteita, ja tarkistaa DKMS:n avulla rakennettujen ajurien allekirjoitukset.</value>
   </data>
-  <data name="Secure Boot is modeled during installation on AMD64 and ARM64. A shared GTK4 toolkit exposes MOK enrollment and DKMS signing health to the installer, OOBE and Driver Center." xml:space="preserve">
-    <value>Secure Boot -toiminto on huomioitu asennuksessa sekä AMD64- että ARM64-arkkitehtuureilla. Yhteinen GTK4-työkalupaketti näyttää asennusohjelmassa, OOBE-käyttöönotossa ja Driver Centerissä MOK-rekisteröinnin ja DKMS-allekirjoitusten tilan.</value>
+  <data name="See more features" xml:space="preserve">
+    <value>Katso lisää ominaisuuksia</value>
   </data>
-  <data name="Secure Boot lifecycle" xml:space="preserve">
-    <value>Secure Bootin elinkaari</value>
+  <data name="See what makes AnduinOS different." xml:space="preserve">
+    <value>Katso, mikä tekee AnduinOSista erilaisen.</value>
   </data>
-  <data name="Seeds, metapackages and archive QA" xml:space="preserve">
-    <value>Seed-määritykset, metapaketit ja arkiston laadunvarmistus</value>
+  <data name="Setup and driver-signature checks" xml:space="preserve">
+    <value>Asennuksen ja ajurien allekirjoitusten tarkistukset</value>
   </data>
-  <data name="Separate recovery for user data" xml:space="preserve">
-    <value>Käyttäjätietojen erillinen palautus</value>
+  <data name="Show fewer features" xml:space="preserve">
+    <value>Näytä vähemmän ominaisuuksia</value>
   </data>
-  <data name="Show only the essentials" xml:space="preserve">
-    <value>Näytä vain olennaiset</value>
+  <data name="Signed boot components and driver tools" xml:space="preserve">
+    <value>Allekirjoitetut käynnistyskomponentit ja ajurityökalut</value>
   </data>
-  <data name="Show technical details" xml:space="preserve">
-    <value>Näytä tekniset tiedot</value>
+  <data name="Similar public test reports not found" xml:space="preserve">
+    <value>Samankaltaisia julkisia testiraportteja ei löytynyt</value>
   </data>
-  <data name="Single verified Dracut stack" xml:space="preserve">
-    <value>Yksi varmennettu Dracut-kokonaisuus</value>
+  <data name="Snapshots around installations and updates" xml:space="preserve">
+    <value>Tilannevedokset asennusten ja päivitysten yhteydessä</value>
   </data>
-  <data name="Sizing, resume identity and diagnostics" xml:space="preserve">
-    <value>Koon mitoitus, palautuksen tunnistetiedot ja diagnostiikka</value>
+  <data name="Standard Linux memory and Swap tools" xml:space="preserve">
+    <value>Linuxin vakiomuistin ja sivutustilan työkalut</value>
   </data>
-  <data name="Snapshots, update protection and rollback" xml:space="preserve">
-    <value>Tilannevedokset, päivityksiltä suojautuminen ja palautus</value>
+  <data name="Still uses initramfs-tools and Casper" xml:space="preserve">
+    <value>Käyttää edelleen initramfs-toolsia ja Casperia</value>
   </data>
-  <data name="Standard memory and Swap controls" xml:space="preserve">
-    <value>Vakiomuistin ja swapin hallinta</value>
+  <data name="Supported processors" xml:space="preserve">
+    <value>Tuetut suorittimet</value>
   </data>
-  <data name="Swap and hibernation health" xml:space="preserve">
-    <value>Sivutus ja horrostilan toimivuus</value>
+  <data name="Swap and hibernation" xml:space="preserve">
+    <value>Sivutus ja horrostila</value>
   </data>
-  <data name="Swap Control architecture" xml:space="preserve">
-    <value>Swap Control -arkkitehtuuri</value>
+  <data name="Swap is disk space used when RAM is under pressure; hibernation also needs space to save memory before powering off. The installer sizes a dedicated Swap partition with this in mind. Swap Control checks capacity, the resume target and Swap file offsets. Enough Swap alone does not enable hibernation: hardware and resume settings must also work." xml:space="preserve">
+    <value>Swap on RAM-muistin ollessa vähissä käytettävää levytilaa; myös horrostila tarvitsee tilaa muistin tallentamiseen ennen virran katkaisemista. Asennusohjelma mitoittaa tätä varten erillisen Swap-osion. Swap Control tarkistaa kapasiteetin, jatkamiskohteen ja Swap-tiedoston siirtymät. Pelkkä riittävä Swap-tila ei ota horrostilaa käyttöön: myös laitteiston ja jatkamisasetusten on toimittava.</value>
   </data>
-  <data name="System composition" xml:space="preserve">
-    <value>Järjestelmän koostumus</value>
+  <data name="System backup and recovery" xml:space="preserve">
+    <value>Järjestelmän varmuuskopiointi ja palautus</value>
   </data>
-  <data name="System recovery model" xml:space="preserve">
-    <value>Järjestelmän palautusmalli</value>
+  <data name="System data collection" xml:space="preserve">
+    <value>Järjestelmätietojen keruu</value>
   </data>
-  <data name="System snapshots are connected to APT transactions, retention policy, Dracut, GRUB, deployment metadata and boot confirmation. Recovery is an operating-system protocol rather than a standalone backup utility." xml:space="preserve">
-    <value>Järjestelmän tilannevedokset on kytketty APT-tapahtumiin, säilytyskäytäntöön, Dracutiin, GRUBiin, käyttöönoton metatietoihin ja käynnistyksen vahvistukseen. Palautus on käyttöjärjestelmätason protokolla, ei erillinen varmuuskopiointityökalu.</value>
+  <data name="System foundation" xml:space="preserve">
+    <value>Järjestelmän perusta</value>
   </data>
-  <data name="System telemetry policy" xml:space="preserve">
-    <value>Järjestelmän telemetriakäytäntö</value>
+  <data name="System packages built with APKG" xml:space="preserve">
+    <value>APKG:llä rakennetut järjestelmäpaketit</value>
   </data>
-  <data name="Temporary and persistent USB overlays" xml:space="preserve">
-    <value>Väliaikaiset ja pysyvät USB-peittokerrokset</value>
+  <data name="System packaging" xml:space="preserve">
+    <value>Järjestelmän paketointi</value>
   </data>
-  <data name="The installer sizes dedicated disk Swap with hibernation capacity in mind. Swap Control verifies the resume target, active capacity, UUID or path resolution and unsafe swapfile offsets." xml:space="preserve">
-    <value>Asennusohjelma mitoittaa erillisen levyn swap-tilan horrostilan vaatima kapasiteetti huomioiden. Swap Control tarkistaa paluukohteen, käytettävissä olevan kapasiteetin, UUID-tunnuksen tai polun ratkaisun sekä swap-tiedoston turvattomat siirtymät.</value>
+  <data name="System snapshots with Timeshift" xml:space="preserve">
+    <value>Järjestelmän tilannevedokset Timeshiftillä</value>
   </data>
-  <data name="The ISO uses dmsquash-live plus AnduinOS Live Layers for temporary Try mode, persistent USB overlays, media preservation, installer-source exposure and expanded-USB repair." xml:space="preserve">
-    <value>ISO käyttää dmsquash-liveä ja AnduinOS Live Layersia tilapäiseen kokeilutilaan, pysyviin USB-päällyskerroksiin, median säilyttämiseen, asennuslähteen tarjoamiseen ja laajennetun USB-median korjaamiseen.</value>
+  <data name="System startup" xml:space="preserve">
+    <value>Järjestelmän käynnistys</value>
   </data>
-  <data name="The native installer selects Btrfs by default and creates named subvolumes that define snapshot, home, log, container, virtual-machine and recovery boundaries. ext4 remains available as a classic alternative." xml:space="preserve">
-    <value>Natiivi asennusohjelma valitsee oletuksena Btrfs-tiedostojärjestelmän ja luo nimettyjä alitaltioita, jotka määrittävät rajat tilannevedoksille, kotihakemistolle, lokitiedoille, säiliöille, virtuaalikoneille ja palautukselle. ext4 on edelleen käytettävissä perinteisenä vaihtoehtona.</value>
+  <data name="System telemetry components disabled" xml:space="preserve">
+    <value>Järjestelmän telemetriakomponentit poistettu käytöstä</value>
   </data>
-  <data name="The published black-box framework boots real ISOs, drives the GTK installer through semantic accessibility data and QEMU input, reboots the installed system and records screenshots, serial logs and contract evidence." xml:space="preserve">
-    <value>Julkaistu black box -testauskehys käynnistää oikeat ISO-levykuvat, ohjaa GTK-asennusohjelmaa semanttisen esteettömyystiedon ja QEMU-syötteen avulla, käynnistää asennetun järjestelmän uudelleen ja tallentaa kuvakaappaukset, sarjalokit ja sopimuksenmukaisuutta osoittavan aineiston.</value>
+  <data name="The Installer, Control Panel, Appearance app, first-run setup, Driver Center, Secure Boot Toolkit, Swap Control and Snapshot Manager share GTK4 and libadwaita. These interface libraries help keep controls and resizing behavior consistent. This applies to AnduinOS's own graphical system tools, not every third-party application." xml:space="preserve">
+    <value>Asennusohjelma, Ohjauspaneeli, Ulkoasu-sovellus, ensikäynnistyksen määritystoiminto, Driver Center, Secure Boot Toolkit, Swap Control ja Snapshot Manager käyttävät GTK4:ää ja libadwaitaa. Nämä käyttöliittymäkirjastot auttavat pitämään säätimet ja ikkunan koon muuttamisen johdonmukaisina. Tämä koskee AnduinOSin omia graafisia järjestelmätyökaluja, ei kaikkia kolmannen osapuolen sovelluksia.</value>
   </data>
-  <data name="The reviewed product scope identified no default first-party personal-file snapshot history integrated with Zorin&apos;s filesystem and file manager." xml:space="preserve">
-    <value>Tarkastellussa tuotevalikoimassa ei havaittu oletusarvoisesti käytössä olevaa ensimmäisen osapuolen ratkaisua, joka tallentaisi henkilökohtaisten tiedostojen tilannevedoshistorian integroituna Zorinin tiedostojärjestelmään ja tiedostonhallintaan.</value>
+  <data name="The reviewed Zorin documentation does not confirm default snapshots before and after each APT software change. Users may configure backup tools separately. This describes the built-in automation we could verify, not whether backups are possible." xml:space="preserve">
+    <value>Tarkastetuissa Zorin-dokumenteissa ei vahvisteta, että ennen jokaista APT-ohjelmistomuutosta ja sen jälkeen luotaisiin oletusarvoisesti tilannevedoksia. Käyttäjät voivat määrittää varmuuskopiointityökalut erikseen. Tämä kuvaa sisäänrakennettua automaatiota, jonka pystyimme varmistamaan, ei sitä, ovatko varmuuskopiot mahdollisia.</value>
   </data>
-  <data name="The reviewed product scope identified no default first-party policy creating symmetric recovery points around each APT transaction." xml:space="preserve">
-    <value>Tuotteen tarkastellussa rajauksessa ei havaittu oletusarvoisesti käytössä olevaa ensimmäisen osapuolen käytäntöä, joka loisi palautuspisteet symmetrisesti jokaisen APT-tapahtuman ympärille.</value>
+  <data name="The reviewed sources do not confirm built-in file-version history integrated with Zorin's filesystem and file manager. Separate backup applications can provide other ways to protect personal files." xml:space="preserve">
+    <value>Tarkastellut lähteet eivät vahvista, että Zorinin tiedostojärjestelmään ja tiedostonhallintaan olisi integroitu sisäänrakennettu tiedostoversiohistoria. Erilliset varmuuskopiointisovellukset voivat tarjota muita tapoja suojata henkilökohtaisia tiedostoja.</value>
   </data>
-  <data name="The reviewed product scope identified no equivalent first-party distribution-wide package-conflict and remote-news contract. This is not a claim that Zorin profiles individual users." xml:space="preserve">
-    <value>Tarkastellussa tuotevalikoimassa ei havaittu vastaavaa ensimmäisen osapuolen jakelutason pakettiristiriitoja ja etäuutisia koskevaa käytäntöä. Tämä ei tarkoita, että Zorin profiloisi yksittäisiä käyttäjiä.</value>
+  <data name="The reviewed sources do not establish an equivalent package-level block on Ubuntu reporting components and online terminal news. That is not enough to conclude whether Zorin collects personal data. Check its privacy information and the settings of the applications you use." xml:space="preserve">
+    <value>Tarkastelluista lähteistä ei käy ilmi, että Ubuntun raportointikomponentit ja verkossa näytettävät päätteen uutiset olisi estetty vastaavalla tavalla pakettitasolla. Tämä ei riitä siihen, että voitaisiin päätellä, kerääkö Zorin henkilötietoja. Tarkista sen tietosuojatiedot sekä käyttämiesi sovellusten asetukset.</value>
   </data>
-  <data name="Timeshift advised before upgrades" xml:space="preserve">
-    <value>Timeshift-suositus ennen päivityksiä</value>
+  <data name="Timeshift can restore a system snapshot you previously created. Returning to a freshly installed state requires a suitable saved snapshot or a reinstall. A routine system snapshot is not necessarily a protected copy of the original installation, and personal files require separate care." xml:space="preserve">
+    <value>Timeshiftillä voi palauttaa aiemmin luodun järjestelmän tilannevedoksen. Tehdasasennuksen kaltaiseen alkutilaan palaaminen edellyttää sopivaa tallennettua tilannevedosta tai uudelleenasennusta. Tavallinen järjestelmän tilannevedos ei välttämättä ole suojattu kopio alkuperäisestä asennuksesta, ja henkilökohtaiset tiedostot on varmuuskopioitava erikseen.</value>
   </data>
-  <data name="Timeshift covers system state" xml:space="preserve">
-    <value>Timeshift suojaa järjestelmän tilan</value>
+  <data name="Timeshift creates system snapshots, supports schedules and manages how many snapshots are kept. You can use it to restore an earlier system state. Its recovery process differs from AnduinOS's integration with software changes and startup confirmation." xml:space="preserve">
+    <value>Timeshift luo järjestelmän tilannevedoksia, tukee ajastuksia ja hallitsee säilytettävien tilannevedosten määrää. Sen avulla voit palauttaa järjestelmän aiempaan tilaan. Sen palautusprosessi eroaa AnduinOSin tavasta integroida palautus ohjelmistomuutoksiin ja käynnistyksen vahvistukseen.</value>
   </data>
-  <data name="Timeshift design and restore behavior" xml:space="preserve">
-    <value>Timeshiftin suunnitteluperiaatteet ja palautustoiminta</value>
+  <data name="Timeshift is designed to restore system state, not serve as a personal-file backup tool. Use a separate backup method for documents and other personal data. The presence of system snapshots should not be mistaken for saved versions of your files." xml:space="preserve">
+    <value>Timeshift on suunniteltu järjestelmän tilan palauttamiseen, ei henkilökohtaisten tiedostojen varmuuskopiointiin. Käytä asiakirjojen ja muiden henkilökohtaisten tietojen varmuuskopiointiin erillistä menetelmää. Järjestelmän tilannevedoksia ei pidä sekoittaa tiedostojesi tallennettuihin versioihin.</value>
   </data>
-  <data name="Timeshift intentionally protects system state and is not a personal backup tool. Personal files require a separate backup approach." xml:space="preserve">
-    <value>Timeshift suojaa tarkoituksella järjestelmän tilaa eikä ole henkilökohtaisten tiedostojen varmuuskopiointityökalu. Henkilökohtaiset tiedostot on varmuuskopioitava erikseen.</value>
+  <data name="Trusted startup and driver signatures" xml:space="preserve">
+    <value>Luotettu käynnistys ja ajurien allekirjoitukset</value>
   </data>
-  <data name="Timeshift provides Mint system snapshots with scheduling and retention. Its restoration model is separate from the bootable-deployment and package-transaction protocol used by AnduinOS." xml:space="preserve">
-    <value>Timeshift tarjoaa Mintille ajastetut järjestelmän tilannevedokset ja niiden säilytyksen. Sen palautusmalli on erillinen AnduinOSin käyttämästä käynnistettävien käyttöönottojen ja pakettitapahtumien protokollasta.</value>
+  <data name="Trying the desktop without installing it" xml:space="preserve">
+    <value>Kokeile työpöytää asentamatta sitä</value>
   </data>
-  <data name="Timeshift restore, not factory reset" xml:space="preserve">
-    <value>Timeshift-palautus, ei tehdasasetusten palautus</value>
+  <data name="Ubuntu 24.04 startup tools" xml:space="preserve">
+    <value>Ubuntu 24.04:n käynnistystyökalut</value>
   </data>
-  <data name="Timeshift system snapshots" xml:space="preserve">
-    <value>Timeshiftin järjestelmän tilannevedokset</value>
-  </data>
-  <data name="Toolkit and graphical control surfaces" xml:space="preserve">
-    <value>Työkalupakki ja graafiset hallintapaneelit</value>
-  </data>
-  <data name="Ubuntu 24.04 · 6.14 / 7.0 HWE" xml:space="preserve">
-    <value>Ubuntu 24.04 · 6.14 / 7.0 HWE</value>
+  <data name="Ubuntu 24.04 · Linux 6.14 or 7.0 HWE" xml:space="preserve">
+    <value>Ubuntu 24.04 · Linux 6.14 tai 7.0 HWE</value>
   </data>
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 24.04 GNOME generation" xml:space="preserve">
-    <value>Ubuntu 24.04:n GNOME-sukupolvi</value>
-  </data>
-  <data name="Ubuntu 26.04 · Linux 7.0" xml:space="preserve">
-    <value>Ubuntu 26.04 · Linux 7.0</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS sisältää Linux 7.0 -ytimen ja viiden vuoden vakio-LTS-ylläpidon. LTS tarkoittaa pitkäaikaista tukea. AnduinOS 2 perustuu tähän Ubuntu-julkaisuun.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>
   </data>
-  <data name="Ubuntu 26.04 LTS is the upstream reference for this generation and ships the Linux 7.0 kernel series with five years of standard LTS maintenance." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS on tämän sukupolven ylätason viiteversio, ja sen mukana toimitetaan Linux 7.0 -ydinsarja sekä viiden vuoden vakioylläpito LTS-julkaisulle.</value>
+  <data name="Ubuntu 26.04 lists NVIDIA graphics as supported in its Wayland desktop session. Use an appropriate driver for your GPU; support for the desktop does not guarantee every feature on every card." xml:space="preserve">
+    <value>Ubuntu 26.04 ilmoittaa NVIDIA-näytönohjainten olevan tuettuja Wayland-työpöytäistunnossaan. Käytä näytönohjaimellesi sopivaa ajuria; työpöytäympäristön tuki ei takaa kaikkien ominaisuuksien toimivuutta kaikilla korteilla.</value>
+  </data>
+  <data name="Ubuntu 26.04 offers official desktop downloads for AMD64 and ARM64. Select the image for your processor and check device compatibility: support for an architecture does not guarantee support for every machine using it." xml:space="preserve">
+    <value>Ubuntu 26.04 tarjoaa viralliset työpöytäversiot AMD64- ja ARM64-arkkitehtuureille. Valitse prosessorillesi sopiva levykuva ja tarkista laitteen yhteensopivuus: arkkitehtuurin tuki ei takaa, että kaikki sitä käyttävät laitteet ovat tuettuja.</value>
   </data>
   <data name="Ubuntu 26.04 release notes" xml:space="preserve">
     <value>Ubuntu 26.04:n julkaisutiedot</value>
   </data>
-  <data name="Ubuntu 26.04 runs the GNOME desktop session only on Wayland. XWayland is retained for applications written for X.org." xml:space="preserve">
-    <value>Ubuntu 26.04 käyttää GNOME-työpöytäistuntoa vain Waylandilla. XWayland on edelleen käytettävissä X.orgille kirjoitetuille sovelluksille.</value>
+  <data name="Ubuntu 26.04 runs the GNOME desktop on Wayland and no longer offers an Xorg desktop session. XWayland remains available to run older applications written for X11, so a Wayland-only desktop does not exclude all older Linux apps." xml:space="preserve">
+    <value>Ubuntu 26.04 käyttää GNOME-työpöytää Waylandissa eikä enää tarjoa Xorg-työpöytäistuntoa. XWayland on edelleen käytettävissä vanhempien X11:lle kirjoitettujen sovellusten suorittamiseen, joten pelkkä Wayland-työpöytä ei sulje pois kaikkia vanhempia Linux-sovelluksia.</value>
   </data>
-  <data name="Ubuntu 26.04 ships GNOME 50 and its current Wayland display improvements, including optimized fractional scaling." xml:space="preserve">
-    <value>Ubuntu 26.04 sisältää GNOME 50:n ja sen uusimmat Wayland-näytön parannukset, kuten optimoidun murto-osaskaalausmenetelmän.</value>
+  <data name="Ubuntu 26.04 ships GNOME 50 with its Wayland display improvements, including optimized fractional scaling. HDR, variable refresh rate and color-management features depend on compatible graphics hardware, drivers, displays and applications." xml:space="preserve">
+    <value>Ubuntu 26.04 sisältää GNOME 50:n ja sen Wayland-näyttöparannukset, mukaan lukien optimoidun murto-osaskaalaamisen. HDR-, muuttuvan virkistystaajuuden ja värinhallinnan ominaisuudet edellyttävät yhteensopivaa grafiikkalaitteistoa, ajureita, näyttöjä ja sovelluksia.</value>
   </data>
-  <data name="Ubuntu 26.04 states that machines using NVIDIA graphics are fully supported on its Wayland desktop session." xml:space="preserve">
-    <value>Ubuntu 26.04:n mukaan NVIDIA-näytönohjainta käyttävät tietokoneet ovat täysin tuettuja sen Wayland-työpöytäistunnossa.</value>
+  <data name="Ubuntu 26.04 uses Dracut by default to generate the installed system's initramfs, the small environment used during early startup. initramfs-tools remains supported. The installation USB is a separate case: its Live environment still uses initramfs-tools and Casper." xml:space="preserve">
+    <value>Ubuntu 26.04 käyttää oletusarvoisesti Dracutia asennetun järjestelmän initramfs-alkulatausympäristön luomiseen. initramfs-tools on edelleen tuettu. Asennus-USB on erillistapaus: sen Live-ympäristössä käytetään yhä initramfs-toolsia ja Casperia.</value>
   </data>
-  <data name="Ubuntu benefits from modern GTK4 and libadwaita GNOME applications, while its installer and distribution-specific surfaces use a broader mix of technologies." xml:space="preserve">
-    <value>Ubuntu hyötyy moderneista GTK4- ja libadwaita-pohjaisista GNOME-sovelluksista, kun taas sen asennin ja jakelukohtaiset käyttöliittymät hyödyntävät laajempaa teknologiavalikoimaa.</value>
-  </data>
-  <data name="Ubuntu Core recovery modes" xml:space="preserve">
-    <value>Ubuntu Coren palautumistilat</value>
-  </data>
-  <data name="Ubuntu Desktop" xml:space="preserve">
-    <value>Ubuntu Desktop</value>
-  </data>
-  <data name="Ubuntu Desktop documents a bootable USB and installer-based clean installation, not a default in-place reset to an automatically saved initial state. Ubuntu Core has a separate factory-reset mode, but Ubuntu Core is a different product and is not the Ubuntu Desktop edition compared here." xml:space="preserve">
-    <value>Ubuntu Desktopissa kuvataan käynnistettävältä USB-muistitikulta tehtävä puhdas asennus, ei oletusarvoista paikallista palautusta automaattisesti tallennettuun alkutilaan. Ubuntu Coressa on erillinen tehdasasetusten palautustila, mutta Ubuntu Core on eri tuote eikä tässä verrattava Ubuntu Desktop -versio.</value>
+  <data name="Ubuntu Core recovery options" xml:space="preserve">
+    <value>Ubuntu Coren palautusvaihtoehdot</value>
   </data>
   <data name="Ubuntu Desktop downloads" xml:space="preserve">
     <value>Ubuntu Desktopin lataukset</value>
   </data>
-  <data name="Ubuntu Desktop installation" xml:space="preserve">
-    <value>Ubuntun työpöytäasennus</value>
+  <data name="Ubuntu Desktop installation guide" xml:space="preserve">
+    <value>Ubuntu Desktopin asennusopas</value>
   </data>
-  <data name="Ubuntu Desktop Live media" xml:space="preserve">
-    <value>Ubuntun työpöydän Live-media</value>
+  <data name="Ubuntu Live image build notes" xml:space="preserve">
+    <value>Ubuntun Live-kuvan koontihuomautukset</value>
   </data>
-  <data name="Ubuntu Dracut transition" xml:space="preserve">
-    <value>Ubuntu Dracut -siirtymä</value>
+  <data name="Ubuntu Secure Boot documentation" xml:space="preserve">
+    <value>Ubuntu Secure Boot -dokumentaatio</value>
   </data>
-  <data name="Ubuntu foundation and kernel" xml:space="preserve">
-    <value>Ubuntun perustajärjestelmä ja ydin</value>
+  <data name="Ubuntu includes diagnostic and online-service components whose controls depend on the release. Review the privacy options offered during setup and in system settings. These defaults differ from removing or blocking the components in AnduinOS." xml:space="preserve">
+    <value>Ubuntu sisältää diagnostiikkaan ja verkkopalveluihin liittyviä komponentteja, joiden hallinta riippuu julkaisusta. Tarkista asennuksen aikana ja järjestelmäasetuksissa tarjotut tietosuoja-asetukset. Nämä oletusasetukset eroavat AnduinOSin tavasta poistaa komponentit tai estää niiden käyttö.</value>
   </data>
-  <data name="Ubuntu has seed, metapackage, archive and automated-testing infrastructure at much larger scale. Its implementation model differs from APKG and .aosproj projects." xml:space="preserve">
-    <value>Ubuntulla on huomattavasti laajamittaisempi seed-, metapaketti-, arkisto- ja automaattisen testauksen infrastruktuuri. Sen toteutusmalli eroaa APKG- ja .aosproj-projekteista.</value>
+  <data name="Ubuntu includes modern GNOME applications using GTK4 and libadwaita. Its installer and other Ubuntu-specific tools also use different technologies, so not every system interface is built with the same toolkit." xml:space="preserve">
+    <value>Ubuntu sisältää moderneja GNOME-sovelluksia, jotka käyttävät GTK4:ää ja libadwaitaa. Myös sen asennusohjelma ja muut Ubuntu-kohtaiset työkalut käyttävät eri teknologioita, joten kaikkia järjestelmän käyttöliittymiä ei ole toteutettu samalla käyttöliittymäkirjastolla.</value>
   </data>
-  <data name="Ubuntu includes diagnostics and online-service components with release-specific controls. This is a broader product policy rather than AnduinOS&apos;s explicit zero-component contract." xml:space="preserve">
-    <value>Ubuntu sisältää diagnostiikka- ja verkkopalvelukomponentteja, joiden käyttöä säädellään julkaisukohtaisesti. Kyseessä on laajempi tuotekäytäntö, ei AnduinOSin nimenomainen sopimus, jonka mukaan komponentteja ei ole lainkaan.</value>
+  <data name="Ubuntu offers backup applications and filesystem tools. The reviewed default desktop setup does not confirm the same integrated file-history feature in the file manager. Personal backups can still be configured separately." xml:space="preserve">
+    <value>Ubuntu tarjoaa varmuuskopiointisovelluksia ja tiedostojärjestelmätyökaluja. Tarkastellun oletusarvoisen työpöytäkokoonpanon ei ole vahvistettu sisältävän tiedostonhallintaan integroitua vastaavaa tiedostohistoriaominaisuutta. Henkilökohtaisten tiedostojen varmuuskopiointi voidaan silti määrittää erikseen.</value>
   </data>
-  <data name="Ubuntu now uses Dracut by default, but initramfs-tools remains supported. Ubuntu 26.04 is therefore a transition-compatible implementation rather than an exclusive single-generator policy." xml:space="preserve">
-    <value>Ubuntu käyttää nyt oletusarvoisesti Dracutia, mutta initramfs-tools on edelleen tuettu. Ubuntu 26.04 on siis siirtymävaiheen kanssa yhteensopiva toteutus, ei yksinomaan yhtä generaattoria käyttävä ratkaisu.</value>
+  <data name="Ubuntu offers recovery mechanisms and optional backup tools. The reviewed desktop documentation does not confirm a default feature combining Btrfs snapshots, APT changes and startup confirmation. Users can build their own backup and recovery setup." xml:space="preserve">
+    <value>Ubuntu tarjoaa palautusmekanismeja ja valinnaisia varmuuskopiointityökaluja. Tarkastelluissa työpöytäversion dokumentaatiossa ei vahvisteta oletustoimintoa, joka yhdistäisi Btrfs-tilannevedokset, APT-muutokset ja käynnistyksen onnistumisen vahvistamisen. Käyttäjät voivat rakentaa oman varmuuskopiointi- ja palautusratkaisunsa.</value>
   </data>
-  <data name="Ubuntu offers backup applications and filesystem capabilities, but its reviewed default desktop scope identified no personal-history layer tied to its recovery model." xml:space="preserve">
-    <value>Ubuntu tarjoaa varmuuskopiointisovelluksia ja tiedostojärjestelmän ominaisuuksia, mutta tarkastellussa oletusarvoisessa työpöytäkokoonpanossa ei havaittu palautusmalliin liittyvää henkilökohtaisten tiedostojen versiohistoriaa.</value>
+  <data name="Ubuntu provides the underlying kernel and installation tools for Swap. The reviewed desktop setup does not confirm a built-in app combining Swap sizing and hibernation diagnostics. Check hardware support and resume configuration before relying on hibernation." xml:space="preserve">
+    <value>Ubuntu tarjoaa Swapin perustana olevan ytimen ja asennustyökalut. Tarkastellusta työpöytäkokoonpanosta ei käy ilmi, että siihen sisältyisi sovellus, joka yhdistää Swap-tilan koon määrittämisen ja horrostilan diagnostiikan. Tarkista laitteiston tuki ja palautusmääritykset ennen horrostilaan luottamista.</value>
   </data>
-  <data name="Ubuntu provides Microsoft-signed shim, Canonical-signed GRUB, kernels and modules on AMD64 and ARM64, together with mature MOK and DKMS signing workflows." xml:space="preserve">
-    <value>Ubuntu tarjoaa Microsoftin allekirjoittaman shim-käynnistyslataimen, Canonicalin allekirjoittaman GRUBin sekä ytimet ja moduulit AMD64- ja ARM64-arkkitehtuureille. Lisäksi käytössä ovat vakiintuneet MOK- ja DKMS-allekirjoituskäytännöt.</value>
+  <data name="Ubuntu supplies Linux memory management and Swap features with general desktop defaults. Its default setup differs from AnduinOS's combination of preconfigured Zram, a dedicated Swap partition and a graphical management tool." xml:space="preserve">
+    <value>Ubuntu tarjoaa Linuxin muistinhallinta- ja Swap-toiminnot tavanomaisilla työpöydän oletusasetuksilla. Sen oletusasetukset eroavat AnduinOSin yhdistelmästä, johon kuuluvat valmiiksi määritetty Zram, erillinen Swap-osio ja graafinen hallintatyökalu.</value>
   </data>
-  <data name="Ubuntu provides recovery mechanisms and third-party options, but the reviewed default desktop scope identified no integrated protocol connecting Btrfs deployments, APT and boot confirmation." xml:space="preserve">
-    <value>Ubuntu tarjoaa palautusmekanismeja ja kolmansien osapuolten vaihtoehtoja, mutta tarkastellussa oletusarvoisessa työpöytäkokoonpanossa ei havaittu integroitua protokollaa, joka yhdistäisi Btrfs-käyttöönotot, APT:n ja käynnistyksen vahvistuksen.</value>
+  <data name="Ubuntu supports optional backup and snapshot tools. Its reviewed default desktop setup does not confirm automatic snapshots before and after every APT operation. You can arrange your own backup process before changing system software." xml:space="preserve">
+    <value>Ubuntu tukee valinnaisia varmuuskopiointi- ja tilannevedostyökaluja. Tarkastelluissa oletustyöpöytäasetuksissa ei vahvisteta, että automaattisia tilannevedoksia otetaan ennen jokaista APT-toimintoa ja sen jälkeen. Voit järjestää oman varmuuskopiointiprosessin ennen järjestelmäohjelmiston muuttamista.</value>
   </data>
-  <data name="Ubuntu provides robust official Live desktop media, using its own installer and media lifecycle rather than the AnduinOS Live Layers contract." xml:space="preserve">
-    <value>Ubuntu tarjoaa kattavan virallisen Live-työpöytämedian, jossa käytetään sen omaa asennusohjelmaa ja median elinkaarta AnduinOS Live Layers -sopimuksen sijaan.</value>
+  <data name="Ubuntu uses APT for system packages and Snap for part of its default application offering. Flatpak can be installed separately, but is not included as the default desktop application route." xml:space="preserve">
+    <value>Ubuntu käyttää APT:tä järjestelmäpaketteihin ja Snapiä osaan oletussovellustarjonnastaan. Flatpakin voi asentaa erikseen, mutta se ei kuulu oletusarvoiseen työpöytäsovellusten asennustapaan.</value>
   </data>
-  <data name="Ubuntu Secure Boot architecture" xml:space="preserve">
-    <value>Ubuntun Secure Boot -arkkitehtuuri</value>
+  <data name="Ubuntu uses a Microsoft-signed shim to start Canonical-signed GRUB and kernels on AMD64 and ARM64. MOK enrollment lets users trust additional certificates, and DKMS signing supports locally built drivers. These components form the chain checked during Secure Boot." xml:space="preserve">
+    <value>Ubuntu käyttää Microsoftin allekirjoittamaa shim-ohjelmaa Canonicalin allekirjoittaman GRUBin ja ytimien käynnistämiseen AMD64- ja ARM64-arkkitehtuureilla. MOK-avainten rekisteröinti antaa käyttäjille mahdollisuuden luottaa muihin varmenteisiin, ja DKMS-allekirjoitus tukee paikallisesti rakennettuja ajureita. Nämä osat muodostavat ketjun, jonka Secure Boot tarkistaa.</value>
   </data>
-  <data name="Ubuntu signed foundation" xml:space="preserve">
-    <value>Ubuntun allekirjoitettu pohja</value>
+  <data name="Ubuntu uses seeds to select packages, metapackages to group dependencies, and archive infrastructure with automated tests. These organize and validate software across many images and devices. The tooling operates at a much larger scale than AnduinOS's package projects." xml:space="preserve">
+    <value>Ubuntu käyttää seed-luetteloita pakettien valintaan, metapaketteja riippuvuuksien ryhmittelyyn sekä arkistoinfrastruktuuria automatisoituine testauksineen. Näiden avulla ohjelmistoja järjestetään ja tarkistetaan useissa levykuvissa ja laitteissa. Työkalut toimivat huomattavasti laajemmassa mittakaavassa kuin AnduinOSin pakettiprojektit.</value>
   </data>
-  <data name="Ubuntu supplies the underlying kernel and installer mechanisms. The reviewed default desktop scope identified no first-party sizing and health UI with the same scope enabled by default." xml:space="preserve">
-    <value>Ubuntu tarjoaa taustalla olevat ydin- ja asennusohjelmamekanismit. Tarkastellussa oletusarvoisessa työpöytäkokoonpanossa ei havaittu ensimmäisen osapuolen koonmääritys- ja kunnonseurantanäkymää, jossa olisi oletusarvoisesti käytössä vastaava toiminnallisuus.</value>
+  <data name="Ubuntu version and Linux kernel" xml:space="preserve">
+    <value>Ubuntu-versio ja Linux-ydin</value>
   </data>
-  <data name="Ubuntu supplies the underlying kernel memory features and a general-purpose desktop policy, without the same default AnduinOS Zram, partition and health-dashboard contract." xml:space="preserve">
-    <value>Ubuntu tarjoaa ytimen muistinhallinnan perustoiminnot ja yleiskäyttöisen työpöytäkäytännön, mutta ei samaa AnduinOSin oletusarvoista Zram-, osiointi- ja kunnonvalvontanäkymän kokonaisuutta.</value>
+  <data name="Ubuntu's desktop installer uses a Flutter interface with a separate backend to perform installation. It provides a modern graphical setup experience. Its implementation differs from AnduinOS's GTK4 interface and typed installation plan." xml:space="preserve">
+    <value>Ubuntun työpöytäasennin käyttää Flutter-käyttöliittymää ja erillistä taustajärjestelmää asennuksen suorittamiseen. Se tarjoaa modernin graafisen asennuskokemuksen. Sen toteutus eroaa AnduinOSin GTK4-käyttöliittymästä ja tyypitetystä asennussuunnitelmasta.</value>
   </data>
-  <data name="Ubuntu supports many backup and snapshot technologies, but its reviewed default desktop scope identified no automatic recovery points around every APT transaction." xml:space="preserve">
-    <value>Ubuntu tukee monia varmuuskopiointi- ja tilannevedostekniikoita, mutta tarkastellussa oletusarvoisessa työpöytäympäristössä ei havaittu automaattisia palautuspisteitä jokaisen APT-tapahtuman yhteydessä.</value>
+  <data name="Ubuntu's guided desktop installation defaults to ext4. Other filesystem layouts can be configured. It does not provide AnduinOS's Btrfs subvolume layout and recovery integration as its default desktop setup." xml:space="preserve">
+    <value>Ubuntun ohjatussa työpöytäasennuksessa oletustiedostojärjestelmä on ext4. Muita tiedostojärjestelmäasetteluja voi määrittää. Ubuntun työpöytäasennuksen oletusasetuksiin eivät kuulu AnduinOSin Btrfs-alitaltiot ja niihin integroitu palautustoiminto.</value>
   </data>
-  <data name="Ubuntu trust chain" xml:space="preserve">
-    <value>Ubuntun luottamusketju</value>
+  <data name="Ubuntu-based Live USB tools" xml:space="preserve">
+    <value>Ubuntu-pohjaiset Live USB -työkalut</value>
   </data>
-  <data name="Ubuntu uses APT for the base system and Snap as a default application-delivery route. Flatpak remains available but is not the default Ubuntu path." xml:space="preserve">
-    <value>Ubuntu käyttää perusjärjestelmässä APT:tä ja sovellusten oletustoimitustapana Snapia. Flatpak on edelleen saatavilla, mutta se ei ole Ubuntun oletusvaihtoehto.</value>
+  <data name="Ubuntu-based graphical installer" xml:space="preserve">
+    <value>Ubuntun graafinen asennusohjelma</value>
   </data>
-  <data name="Ubuntu Wayland session" xml:space="preserve">
-    <value>Ubuntun Wayland-istunto</value>
+  <data name="Uses Ubuntu Secure Boot" xml:space="preserve">
+    <value>Käyttää Ubuntun Secure Bootia</value>
   </data>
-  <data name="Ubuntu-derived Live persistence" xml:space="preserve">
-    <value>Ubuntusta johdettu Live-istunnon pysyvyys</value>
+  <data name="Uses Ubuntu-signed boot components" xml:space="preserve">
+    <value>Käyttää Ubuntun allekirjoittamia käynnistyskomponentteja</value>
   </data>
-  <data name="Ubuntu-derived policy" xml:space="preserve">
-    <value>Ubuntusta johdettu käytäntö</value>
+  <data name="View details" xml:space="preserve">
+    <value>Näytä lisätiedot</value>
   </data>
-  <data name="Ubuntu&apos;s current desktop installer has a modern frontend/backend architecture and broad platform engineering, but it is a different design from the native GTK4 AnduinOS plan contract." xml:space="preserve">
-    <value>Ubuntun nykyisessä työpöytäasentimessa on moderni käyttöliittymän ja taustajärjestelmän arkkitehtuuri sekä laaja-alainen alustasuunnittelu, mutta sen rakenne eroaa AnduinOSin natiivista GTK4-asennussuunnitelmasopimuksesta.</value>
-  </data>
-  <data name="Ubuntu&apos;s guided desktop installation remains ext4-centered. Other layouts can be configured, but Ubuntu does not ship the AnduinOS Btrfs desktop ABI as its default." xml:space="preserve">
-    <value>Ubuntun ohjattu työpöytäasennus perustuu edelleen ext4:ään. Muita levyasetteluja voi määrittää, mutta Ubuntu ei toimita AnduinOSin Btrfs-työpöytä-ABI:a oletuksena.</value>
-  </data>
-  <data name="UI, privilege boundary and execution model" xml:space="preserve">
-    <value>Käyttöliittymä, käyttöoikeusraja ja suoritusmalli</value>
-  </data>
-  <data name="Verified for the 20 September 2026 snapshot" xml:space="preserve">
-    <value>Vahvistettu 20. syyskuuta 2026 otokselle</value>
-  </data>
-  <data name="Wayland + Driver Center" xml:space="preserve">
-    <value>Wayland + Ajurikeskus</value>
+  <data name="Wayland by default; Xorg available" xml:space="preserve">
+    <value>Wayland oletuksena; Xorg saatavilla</value>
   </data>
   <data name="Wayland desktop" xml:space="preserve">
     <value>Wayland-työpöytä</value>
   </data>
-  <data name="Wayland graphics still maturing" xml:space="preserve">
-    <value>Wayland-grafiikka kehittyy yhä</value>
+  <data name="Wayland desktop only" xml:space="preserve">
+    <value>Vain Wayland-työpöytä</value>
   </data>
-  <data name="Wayland improvements in progress" xml:space="preserve">
-    <value>Wayland-parannuksia työn alla</value>
+  <data name="Wayland handles how applications display windows and receive input. AnduinOS tests its desktop on Wayland and uses XWayland to run older X11 applications. It does not include an Xorg desktop session, so you cannot switch to Xorg to work around a Wayland-specific issue." xml:space="preserve">
+    <value>Wayland hallinnoi sitä, miten sovellukset näyttävät ikkunat ja vastaanottavat syötteitä. AnduinOS testaa työpöytäympäristöään Waylandilla ja käyttää XWaylandia vanhempien X11-sovellusten suorittamiseen. Se ei sisällä Xorg-työpöytäistuntoa, joten et voi siirtyä Xorgiin kiertääksesi Wayland-kohtaista ongelmaa.</value>
   </data>
-  <data name="Wayland with Xorg fallback" xml:space="preserve">
-    <value>Wayland ja Xorg-varavaihtoehto</value>
+  <data name="Wayland still experimental" xml:space="preserve">
+    <value>Wayland on edelleen kokeellinen</value>
   </data>
-  <data name="Wayland-only · end-to-end tested" xml:space="preserve">
-    <value>Vain Wayland · testattu päästä päähän</value>
+  <data name="Wayland support and Driver Center" xml:space="preserve">
+    <value>Wayland-tuki ja Driver Center</value>
   </data>
-  <data name="Wayland-only GNOME" xml:space="preserve">
-    <value>Vain Waylandissa toimiva GNOME</value>
+  <data name="Wayland support still being improved" xml:space="preserve">
+    <value>Wayland-tukea kehitetään edelleen</value>
   </data>
-  <data name="X11 default · Wayland experimental" xml:space="preserve">
-    <value>X11 oletuksena · Wayland kokeellinen</value>
+  <data name="What happens when RAM fills up" xml:space="preserve">
+    <value>Mitä tapahtuu, kun RAM-muisti täyttyy</value>
   </data>
-  <data name="Zorin combines GNOME applications, extensions and Zorin-specific tools from the Ubuntu 24.04 generation, resulting in a mixed first-party graphical stack rather than an all-GTK4/libadwaita control plane." xml:space="preserve">
-    <value>Zorin yhdistää Ubuntu 24.04 -sukupolven GNOME-sovelluksia ja -laajennuksia sekä Zorinille ominaisia työkaluja, joten sen ensimmäisen osapuolen graafinen kokonaisuus on sekamuotoinen eikä GTK4/libadwaita-pohjainen kauttaaltaan.</value>
+  <data name="What's new in GNOME 50" xml:space="preserve">
+    <value>Mitä uutta GNOME 50:ssä</value>
   </data>
-  <data name="Zorin deliberately supports a broad application estate: APT, Flatpak, Snap, AppImage, web apps and optional Windows application support." xml:space="preserve">
-    <value>Zorin tukee tarkoituksella laajaa sovellusvalikoimaa: APT:tä, Flatpakia, Snapiä, AppImagea, verkkosovelluksia sekä mahdollisuutta käyttää Windows-sovelluksia.</value>
+  <data name="X11 by default; Wayland experimental" xml:space="preserve">
+    <value>X11 oletuksena; Wayland kokeellinen</value>
   </data>
-  <data name="Zorin follows an ext4-centered Ubuntu 24.04 installation path. No equivalent first-party Btrfs topology and recovery ABI is enabled by default in the reviewed product scope." xml:space="preserve">
-    <value>Zorin noudattaa ext4-keskeistä Ubuntu 24.04 -asennuspolkua. Tarkastellussa tuotevalikoimassa ei ole oletusarvoisesti käytössä vastaavaa ensimmäisen osapuolen Btrfs-topologiaa ja palautuksen ABI-rajapintaa.</value>
+  <data name="You can return to a fresh Zorin installation using an installation USB. Back up personal files first and review the disk choices carefully. This is a reinstall, rather than restoring an installation-time snapshot through the AnduinOS reset tool." xml:space="preserve">
+    <value>Voit palata puhtaaseen Zorin-asennukseen asennus-USB-tikulla. Varmuuskopioi henkilökohtaiset tiedostosi ensin ja tarkista levyvaihtoehdot huolellisesti. Kyseessä on uudelleenasennus, ei asennuksen yhteydessä otetun tilannevedoksen palauttaminen AnduinOSin palautustyökalulla.</value>
   </data>
-  <data name="Zorin inherits the Ubuntu 24.04 memory and Swap foundation. The reviewed product scope identified no equivalent first-party virtual-memory control plane enabled by default." xml:space="preserve">
-    <value>Zorin perii Ubuntu 24.04:n muisti- ja swap-perustan. Tarkastellussa tuotekokonaisuudessa ei havaittu oletusarvoisesti käyttöön otettua vastaavaa valmistajan omaa virtuaalimuistin hallintatasoa.</value>
+  <data name="Zorin NVIDIA driver help" xml:space="preserve">
+    <value>Zorinin NVIDIA-ajurin ohjeet</value>
   </data>
-  <data name="Zorin NVIDIA and session guidance" xml:space="preserve">
-    <value>Zorinin NVIDIA- ja istunto-ohjeet</value>
+  <data name="Zorin OS 18.1 offers desktop images for 64-bit Intel and AMD processors, also called x86-64 or AMD64. Its official downloads do not list an ARM64 desktop image." xml:space="preserve">
+    <value>Zorin OS 18.1 tarjoaa työpöytäkuvia 64-bittisille Intelin ja AMD:n suorittimille, joita kutsutaan myös nimillä x86-64 tai AMD64. Sen virallisissa latauksissa ei ole ARM64-työpöytäkuvaa.</value>
   </data>
-  <data name="Zorin NVIDIA guidance" xml:space="preserve">
-    <value>Zorin NVIDIA -ohjeet</value>
+  <data name="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50." xml:space="preserve">
+    <value>Zorin OS 18.1 käyttää Ubuntu 24.04 LTS:ää ja Linux 6.17:ää. Sen työpöytä- ja järjestelmäohjelmistot perustuvat Ubuntu 24.04:ään; uudempi ydin ei itsessään tuo mukanaan Ubuntu 26.04:n tai GNOME 50:n työpöytäominaisuuksia.</value>
   </data>
-  <data name="Zorin offers a modern-NVIDIA Live boot option and proprietary-driver workflow. Its own troubleshooting guide retains Xorg and Secure Boot fallbacks." xml:space="preserve">
-    <value>Zorin tarjoaa modernin NVIDIA Live -käynnistysvaihtoehdon ja omisteisiin ajureihin perustuvan käyttötavan. Sen omassa vianmääritysoppaassa vaihtoehtoina säilyvät Xorg ja Secure Boot.</value>
-  </data>
-  <data name="Zorin offers an Ubuntu-derived graphical installation experience. The reviewed product scope identified no equivalent typed-plan and fixed semantic executor contract in its default first-party workflow." xml:space="preserve">
-    <value>Zorin tarjoaa Ubuntusta johdetun graafisen asennuskokemuksen. Tuotteen tarkastellussa laajuudessa ei havaittu oletusarvoisessa ensisijaisessa työnkulussa vastaavaa tyypitetyn asennussuunnitelman ja kiinteän semanttisen suorittajan sopimusta.</value>
-  </data>
-  <data name="Zorin OS 18 defaults to Wayland while retaining selectable Xorg sessions. The fallback is useful for compatibility, particularly when troubleshooting graphics drivers." xml:space="preserve">
-    <value>Zorin OS 18 käyttää oletuksena Waylandia, mutta istunnoksi voi valita myös Xorgin. Vaihtoehtoinen Xorg-istunto on hyödyllinen yhteensopivuuden kannalta, etenkin näytönohjainten vianmäärityksessä.</value>
-  </data>
-  <data name="Zorin OS 18.1 details" xml:space="preserve">
-    <value>Zorin OS 18.1:n tiedot</value>
-  </data>
-  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 initramfs-tools and Casper generation. This is its default inherited early-boot design rather than a single pure-Dracut product contract." xml:space="preserve">
-    <value>Zorin OS 18.1 käyttää Ubuntu 24.04:n initramfs-tools- ja Casper-sukupolvea. Tämä on sen oletusarvoinen, peritty varhaisen käynnistyksen toteutus, ei yksinomaan Dracutiin perustuva tuotesopimus.</value>
-  </data>
-  <data name="Zorin OS 18.1 uses the Ubuntu 24.04 LTS foundation and Linux 6.17. Its desktop and userspace therefore remain on the Ubuntu 24.04 generation rather than the Ubuntu 26.04 and GNOME 50 generation used by AnduinOS 2." xml:space="preserve">
-    <value>Zorin OS 18.1 käyttää Ubuntu 24.04 LTS -pohjaa ja Linux 6.17:ää. Sen työpöytä ja käyttäjätila perustuvat siksi edelleen Ubuntu 24.04 -sukupolveen eivätkä AnduinOS 2:n käyttämään Ubuntu 26.04- ja GNOME 50 -sukupolveen.</value>
-  </data>
-  <data name="Zorin OS clean reinstall guide" xml:space="preserve">
-    <value>Zorin OS:n puhtaan uudelleenasennuksen opas</value>
-  </data>
-  <data name="Zorin OS technical details" xml:space="preserve">
+  <data name="Zorin OS specifications" xml:space="preserve">
     <value>Zorin OS:n tekniset tiedot</value>
-  </data>
-  <data name="Zorin performs release engineering and quality assurance. No comparable distribution-level public suite publishing installer and desktop acceptance evidence was identified in the stated official research scope as of 28 August 2026. This compares public evidence; it does not imply that Zorin does no QA." xml:space="preserve">
-    <value>Zorin vastaa julkaisutekniikasta ja laadunvarmistuksesta. Ilmoitetussa virallisessa tutkimusrajauksessa ei 28. elokuuta 2026 mennessä löytynyt vertailukelpoista jakelutason julkista testikokonaisuutta, joka julkaisisi näyttöä asennusohjelman ja työpöydän hyväksymistestauksesta. Tässä verrataan julkisesti saatavilla olevaa näyttöä; tämä ei tarkoita, ettei Zorin tekisi laadunvarmistusta.</value>
-  </data>
-  <data name="Zorin provides an Ubuntu-derived Live environment. The reviewed product scope identified no equivalent first-party Dracut Live Layers and installer-source contract enabled by default." xml:space="preserve">
-    <value>Zorin tarjoaa Ubuntu-pohjaisen Live-ympäristön. Tuotteen tarkastellusta laajuudesta ei löytynyt oletusarvoisesti käytössä olevaa vastaavaa ensimmäisen osapuolen Dracut Live Layers -ratkaisua eikä asennuslähdesopimusta.</value>
-  </data>
-  <data name="Zorin provides recovery mechanisms, but the reviewed product scope identified no default first-party workflow connecting filesystem deployments, package transactions, boot entries and confirmation services." xml:space="preserve">
-    <value>Zorin tarjoaa palautumismekanismeja, mutta tarkastellussa tuotekokonaisuudessa ei havaittu oletusarvoisesti käytössä olevaa valmistajan omaa työnkulkua, joka yhdistäisi tiedostojärjestelmäkäyttöönotot, pakettitapahtumat, käynnistysvalinnat ja käynnistyksen vahvistuspalvelut.</value>
-  </data>
-  <data name="Zorin Secure Boot guidance" xml:space="preserve">
-    <value>Zorinin Secure Boot -ohjeistus</value>
-  </data>
-  <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed product scope identified no default first-party sizing and health-verification dashboard of this scope." xml:space="preserve">
-    <value>Zorin tukee Linuxin swap- ja horrostusmekanismeja. Arvioidussa tuotekokonaisuudessa ei havaittu oletusarvoisesti käytössä olevaa tämän laajuista valmistajan omaa koonmääritys- ja kunnonvarmistusnäkymää.</value>
-  </data>
-  <data name="Zorin supports Secure Boot through its Ubuntu foundation and documents firmware fallbacks for problem hardware. NVIDIA guidance may still recommend disabling Secure Boot or using Xorg when drivers fail." xml:space="preserve">
-    <value>Zorin tukee Secure Bootia Ubuntu-pohjansa ansiosta ja dokumentoi laiteohjelmiston vararatkaisuja ongelmallisille laitteille. NVIDIA:n ohjeissa saatetaan silti suositella Secure Bootin poistamista käytöstä tai Xorgin käyttöä, jos ajurit eivät toimi.</value>
-  </data>
-  <data name="Zorin uses mature Debian and Ubuntu packaging together with its own repositories and product package selection. It follows a different source and composition model." xml:space="preserve">
-    <value>Zorin käyttää Debianin ja Ubuntun vakiintuneita paketointikäytäntöjä sekä omia ohjelmistovarastojaan ja tuotevalikoimaansa. Sen lähde- ja koostamismalli on erilainen.</value>
   </data>
   <data name="Zorin Windows App Support" xml:space="preserve">
     <value>Zorinin Windows-sovellusten tuki</value>
   </data>
-  <data name="Zorin&apos;s official clean-install procedure requires downloading an ISO, creating installation media, backing up data and installing again. Its Backups app can restore saved personal files afterward; the reviewed first-party desktop workflow does not provide a protected installation-time baseline for in-place factory reset." xml:space="preserve">
-    <value>Zorinin virallinen puhtaan asennuksen menettely edellyttää ISO-tiedoston lataamista, asennusmedian luomista, tietojen varmuuskopiointia ja järjestelmän asentamista uudelleen. Sen Varmuuskopiot-sovelluksella voi palauttaa tallennetut henkilökohtaiset tiedostot myöhemmin; tarkastellussa ensimmäisen osapuolen työpöytätyönkulussa ei ole suojattua asennushetken perustilaa, johon järjestelmä voitaisiin palauttaa tehdasasetusten palautuksena ilman uudelleenasennusta.</value>
+  <data name="Zorin combines GNOME applications and extensions with its own tools on the Ubuntu 24.04 base. These use a mix of interface technologies rather than one GTK4/libadwaita toolkit across all system tools." xml:space="preserve">
+    <value>Zorin yhdistää GNOME-sovellukset ja -laajennukset omiin työkaluihinsa Ubuntu 24.04 -pohjalla. Niissä käytetään useita eri käyttöliittymäteknologioita sen sijaan, että kaikissa järjestelmätyökaluissa olisi sama GTK4/libadwaita-työkalupakki.</value>
   </data>
-  <data name="Zorin&apos;s official desktop images target 64-bit Intel and AMD processors. No official ARM64 desktop product is listed for Zorin OS 18.1." xml:space="preserve">
-    <value>Zorinin viralliset työpöytäkuvat on tarkoitettu 64-bittisille Intel- ja AMD-suorittimille. Zorin OS 18.1:lle ei ole listattu virallista ARM64-työpöytätuotetta.</value>
+  <data name="Zorin defaults to Wayland but also offers an Xorg session at login. Switching to Xorg can help with applications or graphics drivers that have trouble under Wayland, while allowing users to keep the newer session as their usual choice." xml:space="preserve">
+    <value>Zorin käyttää oletuksena Waylandia, mutta tarjoaa myös Xorg-istunnon kirjautumisnäytössä. Xorgiin vaihtaminen voi auttaa, jos sovelluksilla tai näytönohjaimen ajureilla on ongelmia Waylandissa. Näin käyttäjät voivat silti pitää uudempaa istuntoa tavallisena valintanaan.</value>
   </data>
-  <data name="Zorin&apos;s Ubuntu 24.04-era GNOME foundation supports useful Wayland display features, but predates the GNOME 50 HDR, VRR and color-management generation." xml:space="preserve">
-    <value>Zorinin Ubuntu 24.04 -aikakauden GNOME-perusta tukee hyödyllisiä Wayland-näyttöominaisuuksia, mutta edeltää GNOME 50:n HDR-, VRR- ja värinhallintaominaisuuksien sukupolvea.</value>
+  <data name="Zorin lets you try its desktop from a USB before installing. Its Live environment uses the Ubuntu-derived Casper and initramfs-tools approach. Persistent storage saves changes across boots when configured; it is separate from simply being able to start a Live session." xml:space="preserve">
+    <value>Zorin antaa sinun kokeilla työpöytää USB-tikulta ennen asennusta. Sen Live-ympäristö käyttää Ubuntusta periytyvää Casper- ja initramfs-tools-ratkaisua. Pysyvä tallennustila säilyttää muutokset käynnistyskertojen välillä, kun se on määritetty käyttöön. Se on eri asia kuin pelkkä mahdollisuus käynnistää Live-istunto.</value>
   </data>
-  <data name="Zram + disk Swap + health UI" xml:space="preserve">
-    <value>Zram + levyosiointi + terveyden tilan käyttöliittymä</value>
+  <data name="Zorin offers a Live boot option for modern NVIDIA hardware and tools to install proprietary drivers. Its troubleshooting guidance also covers switching to Xorg or changing Secure Boot settings when a driver does not work." xml:space="preserve">
+    <value>Zorin tarjoaa nykyaikaisille NVIDIA-laitteille Live-käynnistysvaihtoehdon ja työkaluja suljettujen ajurien asentamiseen. Vianmääritysohjeissa neuvotaan myös vaihtamaan Xorgiin tai muuttamaan Secure Boot -asetuksia, jos ajuri ei toimi.</value>
   </data>
-
+  <data name="Zorin performs release testing. In the official sources reviewed for this comparison, we did not find a comparable public set of automated installer and desktop reports. This concerns what users can inspect publicly, not whether Zorin tests its releases internally." xml:space="preserve">
+    <value>Zorin testaa julkaisujaan. Tätä vertailua varten tarkistetuista virallisista lähteistä emme löytäneet vastaavaa julkista kokoelmaa automatisoituja asennusohjelman ja työpöydän testiraportteja. Tämä koskee sitä, mitä käyttäjät voivat tarkastella julkisesti, ei sitä, testaako Zorin julkaisujaan sisäisesti.</value>
+  </data>
+  <data name="Zorin provides a graphical installer based on Ubuntu's installation tools. It guides users through installing the system. The reviewed sources do not establish the same separation between a typed plan and a fixed privileged executor used by AnduinOS." xml:space="preserve">
+    <value>Zorin tarjoaa Ubuntun asennustyökaluihin perustuvan graafisen asennusohjelman. Se opastaa käyttäjiä järjestelmän asennuksessa. Tarkastellut lähteet eivät osoita, että siinä olisi käytössä sama erottelu tyypitetyn suunnitelman ja kiinteän, pääkäyttäjän oikeuksin toimivan suorittajan välillä kuin AnduinOSissa.</value>
+  </data>
+  <data name="Zorin provides recovery options, but the reviewed sources do not confirm automatic software-change snapshots linked to boot-menu recovery and boot confirmation. Other backup tools may be installed or configured separately." xml:space="preserve">
+    <value>Zorin tarjoaa palautusvaihtoehtoja, mutta tarkastelluissa lähteissä ei vahvisteta automaattisia ohjelmistomuutosten yhteydessä luotavia tilannevedoksia, jotka liittyvät käynnistysvalikon kautta tehtävään palautukseen ja käynnistyksen vahvistukseen. Muita varmuuskopiointityökaluja voi asentaa tai määrittää erikseen.</value>
+  </data>
+  <data name="Zorin reinstallation guide" xml:space="preserve">
+    <value>Zorinin uudelleenasennusopas</value>
+  </data>
+  <data name="Zorin supports APT, Flatpak and Snap, alongside AppImage and web apps. Optional Windows App Support can run some Windows software, but compatibility depends on the application. The aim is to offer several ways to install software." xml:space="preserve">
+    <value>Zorin tukee APT:tä, Flatpakia ja Snapiä sekä AppImage-sovelluksia ja verkkosovelluksia. Valinnainen Windows App Support voi suorittaa joitakin Windows-ohjelmia, mutta yhteensopivuus riippuu sovelluksesta. Tavoitteena on tarjota useita tapoja asentaa ohjelmistoja.</value>
+  </data>
+  <data name="Zorin supports Linux Swap and hibernation mechanisms. The reviewed sources do not confirm a bundled tool that checks sizing, the resume location and configuration together. Hibernation may require manual setup and compatible hardware." xml:space="preserve">
+    <value>Zorin tukee Linuxin swap- ja horrostustoimintoja. Tarkastellut lähteet eivät vahvista, että järjestelmän mukana toimitettaisiin työkalu, joka tarkistaisi yhdessä swap-tilan koon, jatkamissijainnin ja määritykset. Horrostus saattaa vaatia manuaalisia määrityksiä ja yhteensopivan laitteiston.</value>
+  </data>
+  <data name="Zorin supports Secure Boot through its Ubuntu base. Its troubleshooting guide also describes cases where users may need to disable Secure Boot or switch to Xorg when NVIDIA drivers do not work. Support can depend on the hardware and installed driver." xml:space="preserve">
+    <value>Zorin tukee Secure Bootia Ubuntu-pohjansa ansiosta. Sen vianmääritysohjeessa kuvataan myös tilanteita, joissa Secure Boot on ehkä poistettava käytöstä tai vaihdettava Xorgiin, jos NVIDIA-ajurit eivät toimi. Tuki voi riippua laitteistosta ja asennetusta ajurista.</value>
+  </data>
+  <data name="Zorin uses Debian and Ubuntu packaging with its own software repositories and package selection. These provide the components of the finished desktop. It uses its own packaging process rather than AnduinOS's APKG project format." xml:space="preserve">
+    <value>Zorin käyttää Debianin ja Ubuntun paketointia sekä omia ohjelmistovarastojaan ja pakettivalikoimaansa. Näistä muodostuvat valmiin työpöytäympäristön osat. Se käyttää omaa paketointiprosessiaan AnduinOSin APKG-projektimuodon sijaan.</value>
+  </data>
+  <data name="Zorin uses the memory and Swap features of its Ubuntu 24.04 base. The reviewed sources do not confirm a bundled app combining Zram, Zswap, stress testing and hibernation checks. Individual settings can still be managed with Linux tools." xml:space="preserve">
+    <value>Zorin käyttää Ubuntu 24.04 -pohjansa muistin- ja Swap-ominaisuuksia. Tarkastellut lähteet eivät vahvista, että mukana olisi sovellus, joka yhdistää Zram- ja Zswap-toiminnot, kuormitustestit sekä horrostilan tarkistukset. Yksittäisiä asetuksia voi silti hallita Linux-työkaluilla.</value>
+  </data>
+  <data name="Zorin's GNOME base follows Ubuntu 24.04. It offers Wayland display features but predates the GNOME 50 improvements to HDR, variable refresh rate and color management. The specific feature available also depends on your monitor and driver." xml:space="preserve">
+    <value>Zorinin GNOME-pohja seuraa Ubuntu 24.04:ää. Se tarjoaa Wayland-näyttöominaisuuksia, mutta edeltää GNOME 50:n HDR:ään, muuttuvaan virkistystaajuuteen ja värinhallintaan tuomia parannuksia. Käytettävissä olevat ominaisuudet riippuvat myös näytöstäsi ja ajuristasi.</value>
+  </data>
+  <data name="Zorin's default installation uses ext4, a widely used Linux filesystem. The reviewed documentation does not establish a built-in Btrfs layout with the same integrated recovery features. This does not rule out configuring other storage tools yourself." xml:space="preserve">
+    <value>Zorinin oletusasennuksessa käytetään ext4-tiedostojärjestelmää, joka on laajalti käytössä Linuxissa. Tarkastellussa dokumentaatiossa ei mainita valmiiksi määritettyä Btrfs-asettelua, jossa olisi vastaavat integroidut palautusominaisuudet. Tämä ei kuitenkaan estä määrittämästä muita tallennustyökaluja itse.</value>
+  </data>
+  <data name="Zram compresses data in RAM before lower-priority disk Swap is used. AnduinOS configures LZ4 Zram at 50% of RAM and sizes a disk Swap partition during installation. Swap Control manages Zram and optional Zswap, runs stress tests and checks hibernation settings. Compression does not replace physical RAM." xml:space="preserve">
+    <value>Zram pakkaa RAM-muistissa olevia tietoja ennen kuin vähemmän tärkeä levyllä oleva Swap otetaan käyttöön. AnduinOS määrittää LZ4 Zramin kooksi 50 % RAM-muistista ja mitoittaa levyn Swap-osion asennuksen aikana. Swap Control hallinnoi Zramia ja valinnaista Zswapia, suorittaa rasitustestejä ja tarkistaa horrostilan asetukset. Pakkaus ei korvaa fyysistä RAM-muistia.</value>
+  </data>
+  <data name="ext4 by default" xml:space="preserve">
+    <value>ext4 oletuksena</value>
+  </data>
+  <data name="ext4 by default; Btrfs selectable" xml:space="preserve">
+    <value>ext4 oletuksena; Btrfs valittavissa</value>
+  </data>
+  <data name="ext4 by default; other setups possible" xml:space="preserve">
+    <value>ext4 oletuksena; myös muut kokoonpanot ovat mahdollisia</value>
+  </data>
+  <data name="initramfs-tools and Casper" xml:space="preserve">
+    <value>initramfs-tools ja Casper</value>
+  </data>
 </root>
