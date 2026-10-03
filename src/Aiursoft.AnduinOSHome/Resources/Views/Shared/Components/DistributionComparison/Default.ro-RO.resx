@@ -21,9 +21,7 @@
       <data name="A consistent look for everyday settings" xml:space="preserve">
     <value>Un aspect consecvent pentru setările zilnice</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
-
-This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.  This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>Mediul Live este desktopul pornit de pe USB înainte de instalare. Ubuntu 26.04 construiește încă acest mediu cu initramfs-tools și Casper, care găsesc și încarcă imaginea sistemului.
 
 Acesta diferă de sistemul Ubuntu instalat, care folosește implicit Dracut. AnduinOS a mutat și mediul Live la Dracut, astfel încât USB-ul și sistemul instalat folosesc același instrument. Diferența este întinderea migrării, nu posibilitatea Ubuntu de a rula de pe USB.</value>
@@ -33,9 +31,7 @@ Acesta diferă de sistemul Ubuntu instalat, care folosește implicit Dracut. And
 
 Acesta diferă de sistemul Ubuntu instalat, care folosește implicit Dracut. AnduinOS a trecut și mediul Live la Dracut, astfel încât stickul USB și sistemul instalat folosesc același instrument de pornire. Diferența constă în amploarea migrării, nu în posibilitatea de a rula Ubuntu de pe un stick USB.</value>
   </data>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
-
-Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.  Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
     <value>Un USB Live îți permite să încerci desktopul fără instalare pe disc. Are nevoie de un mediu de pornire care încarcă imaginea comprimată. AnduinOS îl construiește acum cu Dracut, același instrument folosit de sistemul instalat.
 
 Modulul dmsquash-live din Dracut încarcă imaginea. AnduinOS Live Layers gestionează un strat în care se pot scrie modificările, temporar sau păstrat pe USB. Menține accesibile fișierele de instalare și acceptă repararea configurațiilor USB extinse. Același instrument de pornire simplifică mentenanța și depanarea ambelor medii; nu înseamnă că orice USB pornește mai repede.</value>
@@ -129,9 +125,7 @@ dmsquash-live din Dracut încarcă imaginea. AnduinOS Live Layers gestionează u
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>Comparația se bazează pe documentația oficială și codul sursă disponibile la 20 septembrie 2026 și privește în principal funcțiile implicite. Nu am instalat fiecare sistem concurent pentru această comparație. Deschide un element pentru explicații și surse. „Neconfirmat” înseamnă că informațiile disponibile nu sunt suficiente; funcțiile pot varia în funcție de versiune și configurare.</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
-
-AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.  AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
     <value>Înainte de deschiderea desktopului, un mediu mic numit initramfs încarcă driverele și găsește discul sistemului. Dracut construiește acest mediu.
 
 AnduinOS folosește Dracut atât pentru sistemul instalat, cât și pentru USB-ul Live. Pachetul de bază împiedică instalarea alături de el a pachetelor incompatibile initramfs-tools, Casper și finalrd. Imaginile generate sunt verificate, iar protecțiile din pachete împiedică înlocuirea lor neobservată de alte generatoare. Aceasta unifică mentenanța, fără a garanta în sine o pornire mai rapidă.</value>

@@ -21,9 +21,7 @@
       <data name="A consistent look for everyday settings" xml:space="preserve">
     <value>일상적인 설정을 일관된 화면에서</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
-
-This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.  This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>Live 환경은 설치하기 전에 설치 USB에서 시작하는 데스크톱입니다. Ubuntu 26.04는 여전히 initramfs-tools와 Casper로 이 시작 환경을 만들고 시스템 이미지를 찾아 읽습니다.
 
 이는 기본으로 Dracut을 사용하는 설치 후 Ubuntu와 다릅니다. AnduinOS는 Live 환경도 Dracut으로 전환해 USB와 설치된 시스템의 부팅 도구를 통일했습니다. 여기서 비교하는 것은 전환 범위이며 Ubuntu가 USB에서 실행되는지 여부가 아닙니다.</value>
@@ -33,9 +31,7 @@ This differs from the installed Ubuntu system, which defaults to Dracut. AnduinO
 
 설치된 Ubuntu 시스템은 기본적으로 Dracut을 사용하는데, 이 점이 다릅니다. AnduinOS도 라이브 환경을 Dracut으로 전환해 USB와 설치된 시스템에서 같은 부팅 도구를 사용합니다. 여기서 차이는 Ubuntu를 USB에서 실행할 수 있는지 여부가 아니라, 마이그레이션이 얼마나 적용되었는지입니다.</value>
   </data>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
-
-Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.  Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
     <value>Live USB로 디스크에 설치하지 않고 데스크톱을 체험할 수 있습니다. 압축된 시스템 이미지를 읽을 시작 환경이 필요하며, AnduinOS는 설치 후와 같은 Dracut으로 이를 만듭니다.
 
 Dracut의 dmsquash-live가 이미지를 읽습니다. AnduinOS Live Layers는 변경 내용을 기록할 영역을 관리하며, 임시로 쓰거나 USB에 저장해 다음에도 사용할 수 있습니다. 설치 파일을 계속 사용할 수 있게 하고 확장된 USB 구성의 복구도 지원합니다. 같은 부팅 도구로 두 환경을 관리하고 문제를 찾기 쉽게 하지만, 모든 USB가 더 빨리 시작한다는 주장은 아닙니다.</value>
@@ -129,9 +125,7 @@ Dracut의 dmsquash-live가 이미지를 불러옵니다. AnduinOS Live Layers는
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>2026년 9월 20일까지 공개된 공식 문서와 소스 코드를 바탕으로 주로 기본 기능을 비교했습니다. 비교 대상 시스템을 모두 직접 설치한 것은 아닙니다. 항목을 열면 설명과 출처를 볼 수 있습니다. &apos;미확인&apos;은 판단할 정보가 충분하지 않다는 뜻이며, 기능은 버전과 설정에 따라 달라질 수 있습니다.</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
-
-AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.  AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
     <value>Linux가 데스크톱을 열기 전에 initramfs라는 작은 시작 환경이 드라이버를 읽고 시스템 디스크를 찾습니다. Dracut은 이 환경을 만드는 도구입니다.
 
 AnduinOS는 설치된 시스템과 Live USB 모두에 Dracut을 사용합니다. 핵심 패키지는 호환되지 않는 initramfs-tools, Casper, finalrd가 함께 설치되지 않도록 합니다. 생성한 부팅 이미지를 확인하고 다른 생성 도구가 모르는 사이에 바꾸지 못하도록 패키지에서 보호합니다. 유지보수 방식을 통일하는 것이며 이것만으로 부팅 속도가 빨라진다는 보장은 아닙니다.</value>
