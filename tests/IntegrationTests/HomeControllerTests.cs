@@ -7,14 +7,14 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 [TestClass]
 public class HomeControllerTests : TestBase
 {
-    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.sha256";
-    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.sha256";
+    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.sha256";
+    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.sha256";
     private const string SocialPreviewImageUrl = "https://www.anduinos.com/sc.webp";
     private const string SocialPreviewTitle = "Open Source &amp; Linux";
     private const string SocialPreviewDescription = "AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux.";
-    private const string ReadyToUseText = "The ISO is just 2.35 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations.";
+    private const string ReadyToUseText = "The ISO is just 2.38 GB in size. Like Ubuntu, AnduinOS is simple to install and meets your daily needs without additional configuration or complicated operations.";
     private const string FriendlyInterfaceText = "The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve.";
-    private const string OldReadyToUseText = "The ISO is just 2.35 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
+    private const string OldReadyToUseText = "The ISO is just 2.38 GB in size. Similar to Ubuntu, it is simple to install and can meet your daily needs without additional configuration or complicated operations.";
     private const string OldFriendlyInterfaceText = "The GNOME-based desktop environment have beautiful interfaces and human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without too much learning cost.";
     private const string VultrReferralUrl = "https://www.vultr.com/?ref=9692114-9J";
 
@@ -33,10 +33,10 @@ public class HomeControllerTests : TestBase
         Assert.Contains("System Requirements", html, StringComparison.Ordinal);
         Assert.Contains("Btrfs", html, StringComparison.Ordinal);
         Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
-        Assert.Contains("v2.0.3", html, StringComparison.Ordinal);
-        Assert.Contains("data-latest=\"2.0.3\"", html, StringComparison.Ordinal);
-        Assert.Contains("data-size=\"2.35 GB\"", html, StringComparison.Ordinal);
-        Assert.Contains("2026-09-20", html, StringComparison.Ordinal);
+        Assert.Contains("v2.0.4", html, StringComparison.Ordinal);
+        Assert.Contains("data-latest=\"2.0.4\"", html, StringComparison.Ordinal);
+        Assert.Contains("data-size=\"2.38 GB\"", html, StringComparison.Ordinal);
+        Assert.Contains("2026-10-03", html, StringComparison.Ordinal);
         Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
         Assert.DoesNotContain(OldReadyToUseText, html, StringComparison.Ordinal);
         Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
@@ -162,19 +162,19 @@ public class HomeControllerTests : TestBase
         Assert.Contains("data-key=\"checksum\"", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("2.0"));
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
-        Assert.AreEqual("2.0.3", VersionData.All[0].LatestPatch);
+        Assert.AreEqual("2.0.4", VersionData.All[0].LatestPatch);
         Assert.IsTrue(html.Contains("1.0"));
     }
 
     [TestMethod]
-    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.iso", Amd64ChecksumUrl,
-        "AnduinOS-2.0.3-amd64.iso", false)]
-    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.3-amd64.torrent", Amd64ChecksumUrl,
-        "AnduinOS-2.0.3-amd64.iso", true)]
-    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.iso", Arm64ChecksumUrl,
-        "AnduinOS-2.0.3-arm64.iso", false)]
-    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.3-arm64.torrent", Arm64ChecksumUrl,
-        "AnduinOS-2.0.3-arm64.iso", true)]
+    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.iso", Amd64ChecksumUrl,
+        "AnduinOS-2.0.4-amd64.iso", false)]
+    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.torrent", Amd64ChecksumUrl,
+        "AnduinOS-2.0.4-amd64.iso", true)]
+    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.iso", Arm64ChecksumUrl,
+        "AnduinOS-2.0.4-arm64.iso", false)]
+    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.torrent", Arm64ChecksumUrl,
+        "AnduinOS-2.0.4-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
