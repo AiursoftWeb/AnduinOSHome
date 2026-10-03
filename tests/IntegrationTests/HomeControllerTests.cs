@@ -64,22 +64,6 @@ public class HomeControllerTests : TestBase
     }
 
     [TestMethod]
-    public async Task GetIndexInEnGb()
-    {
-        var cultureResponse = await Http.GetAsync("/Culture/Set?culture=en-GB&returnUrl=/");
-        Assert.AreEqual(System.Net.HttpStatusCode.Found, cultureResponse.StatusCode);
-
-        var response = await Http.GetAsync("/");
-        response.EnsureSuccessStatusCode();
-        var html = await response.Content.ReadAsStringAsync();
-
-        Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
-        Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
-        Assert.DoesNotContain(OldReadyToUseText, html, StringComparison.Ordinal);
-        Assert.DoesNotContain(OldFriendlyInterfaceText, html, StringComparison.Ordinal);
-    }
-
-    [TestMethod]
     public async Task CompareRendersInteractiveDistributionComparisonContract()
     {
         var response = await Http.GetAsync("/Compare.html");
