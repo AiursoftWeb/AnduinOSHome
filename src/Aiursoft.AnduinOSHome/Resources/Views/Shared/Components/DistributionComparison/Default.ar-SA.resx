@@ -21,9 +21,7 @@
       <data name="A consistent look for everyday settings" xml:space="preserve">
     <value>مظهر متناسق لإعدادات الاستخدام اليومي</value>
   </data>
-  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.
-
-This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
+  <data name="A Live environment is the desktop you start from an installation USB before installing. Ubuntu 26.04 still builds that startup environment with initramfs-tools and Casper, which locate and load the system image.  This differs from the installed Ubuntu system, which defaults to Dracut. AnduinOS has also moved the Live environment to Dracut, so its USB and installed system use the same boot tool. The difference here is migration coverage, not whether Ubuntu can run from a USB." xml:space="preserve">
     <value>بيئة Live هي سطح المكتب الذي يمكنك تشغيله من وسيط USB للتثبيت قبل تثبيت النظام. لا يزال Ubuntu 26.04 ينشئ بيئة بدء التشغيل هذه باستخدام initramfs-tools وCasper، اللذين يعثران على صورة النظام ويحمّلانها.
 
 يختلف هذا عن نظام Ubuntu المثبّت، الذي يستخدم Dracut افتراضيًا. وقد نقل AnduinOS أيضًا بيئة Live إلى Dracut، بحيث يستخدم وسيط USB والنظام المثبّت أداة الإقلاع نفسها. يكمن الاختلاف هنا في مدى شمولية الانتقال، وليس في إمكانية تشغيل Ubuntu من وسيط USB.</value>
@@ -33,9 +31,7 @@ This differs from the installed Ubuntu system, which defaults to Dracut. AnduinO
 
 يختلف هذا عن نظام Ubuntu المثبّت، الذي يستخدم Dracut افتراضيًا. وقد نقل AnduinOS أيضًا بيئة Live إلى Dracut، بحيث يستخدم USB التثبيت والنظام المثبّت أداة الإقلاع نفسها. الفرق هنا هو نطاق الترحيل، وليس قدرة Ubuntu على العمل من USB.</value>
   </data>
-  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.
-
-Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
+  <data name="A Live USB lets you try the desktop without installing it on your disk. It needs a startup environment to load the compressed system image. AnduinOS now builds this with Dracut, the same tool used by the installed system.  Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writable layer for your changes, either temporary or saved on the USB for later use. It also keeps the installation files available and supports repair of expanded USB layouts. Using one boot tool helps maintain and troubleshoot both environments; it is not a claim that every USB starts faster." xml:space="preserve">
     <value>يتيح لك النظام الحي على USB تجربة سطح المكتب دون تثبيته على القرص. وهو يحتاج إلى بيئة بدء تشغيل لتحميل صورة النظام المضغوطة. ويستخدم AnduinOS الآن Dracut لإنشاء هذه البيئة، وهي الأداة نفسها التي يستخدمها النظام المثبّت.
 
 تُحمّل dmsquash-live في Dracut صورة النظام. وتتولى AnduinOS Live Layers إدارة طبقة قابلة للكتابة لحفظ تغييراتك، سواء مؤقتًا أو على USB لاستخدامها لاحقًا. كما تُبقي ملفات التثبيت متاحة وتدعم إصلاح تخطيطات USB الموسّعة. يساعد استخدام أداة إقلاع واحدة على صيانة البيئتين واستكشاف مشكلاتهما وإصلاحها؛ ولا يعني ذلك أن كل USB سيبدأ التشغيل بسرعة أكبر.</value>
@@ -129,9 +125,7 @@ Dracut&apos;s dmsquash-live loads the image. AnduinOS Live Layers manages a writ
   <data name="Based on official documentation and source code available on 20 September 2026, mainly comparing default features. We did not install each competing system for this comparison. Open any item for an explanation and links. Not confirmed means the available information is insufficient; features can vary by version and setup." xml:space="preserve">
     <value>استنادًا إلى الوثائق الرسمية والشفرة المصدرية المتاحة حتى 20 سبتمبر 2026، مع التركيز أساسًا على مقارنة الميزات الافتراضية. لم نثبّت كل نظام منافس لإجراء هذه المقارنة. افتح أي عنصر للاطّلاع على شرح وروابط. تعني عبارة «غير مؤكّد» أن المعلومات المتاحة غير كافية؛ وقد تختلف الميزات باختلاف الإصدار والإعداد.</value>
   </data>
-  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.
-
-AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
+  <data name="Before Linux opens your desktop, a small startup environment called initramfs loads drivers and locates the system disk. Dracut builds that environment.  AnduinOS uses Dracut for both the installed system and the Live USB. Its core package prevents incompatible initramfs-tools, Casper and finalrd packages from being installed alongside it. Generated boot images are checked, and package safeguards prevent other generators from silently replacing them. This unifies maintenance; it does not by itself guarantee faster startup." xml:space="preserve">
     <value>قبل أن يعرض Linux سطح المكتب، تقوم بيئة إقلاع صغيرة تُسمى initramfs بتحميل برامج التشغيل وتحديد موقع قرص النظام. وتتولى Dracut إنشاء هذه البيئة.
 
 يستخدم AnduinOS أداة Dracut لكل من النظام المثبّت وذاكرة USB الحية. وتمنع حزمتها الأساسية تثبيت حزم initramfs-tools وCasper وfinalrd غير المتوافقة معها. كما تُفحَص صور الإقلاع المُنشأة، وتمنع ضمانات الحزم أدوات الإنشاء الأخرى من استبدالها دون تنبيه. يوحّد ذلك أعمال الصيانة، لكنه لا يضمن بحد ذاته إقلاعًا أسرع.</value>
