@@ -71,6 +71,44 @@ The docker image has the following context:
 | Data path   | /data                  |
 | Config path | /data/appsettings.json |
 
+## Automatic hardware content translation
+
+Hardware reviews use the existing `HardwareTranslations` table. New reviews default to English;
+write the original review once and Dotlang generates the other site languages in the background.
+Device facts (brand, model, SKU, verdicts, URLs, prices) are shared rather than translated.
+All 13 review text fields are translated, including capability details, configuration and image credit.
+
+Translation is disabled by default to avoid unexpected AI calls. Configure your own
+OpenAI-compatible **chat completions URL** and model through the global settings page,
+using the same keys and database-backed settings mechanism as DocsViewer, or via configuration:
+
+```json
+{
+  "GlobalSettings": {
+    "OpenAiInstance": "https://your-ai-service.example/v1/chat/completions",
+    "OpenAiLocalizationModel": "your-translation-model",
+    "OpenAiApiToken": ""
+  }
+}
+```
+
+The dependency is `Aiursoft.Dotlang.AspNetTranslate` 10.0.70, matching DocsViewer.
+The wrapper maps these global settings to Dotlang's internal `Ollama*` options.
+Supply credentials through `GlobalSettings__OpenAiApiToken` rather than committing them.
+The other settings also support the `GlobalSettings__` environment-variable prefix.
+An empty `OpenAiInstance` disables translation; no separate Enabled flag is needed.
+Database settings can be changed in the admin UI without restarting the application.
+Review content is sent to the configured AI service when translation is enabled.
+
+Saving a device queues translation without delaying the editor. Matching DocsViewer, a scheduled job starts 30 minutes
+after application startup and runs every 30 minutes to backfill existing records and retry failed translations.
+Administrators can also trigger **Translate hardware content** from `/Jobs` and inspect failures there.
+Archived devices and incomplete reviews are skipped. Unchanged, up-to-date translations (including
+manual corrections) are preserved. Editing source text increments its revision and automatically
+refreshes all outdated languages; the public site shows the source while replacement translations
+are pending. A language is saved only after all fields succeed, and results are discarded if the
+source changes during translation. Manual edits saved during a translation are not overwritten.
+
 ## How to contribute
 
 There are many ways to contribute to the project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.

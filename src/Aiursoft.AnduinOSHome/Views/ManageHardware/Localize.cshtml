@@ -4,7 +4,7 @@
     <div>
         <p class="text-muted mb-1">@Localizer["Hardware workspace"]</p>
         <h1 class="mb-1">@Model.DeviceName</h1>
-        <p class="text-muted mb-0">@Localizer["Translate the original review. Shared facts and verdicts stay on the device tab."]</p>
+        <p class="text-muted mb-0">@Localizer["Review automatic translations or edit them manually. Current translations are preserved until the original review changes. Shared facts and verdicts stay on the device tab."]</p>
     </div>
     <div class="d-flex gap-2"><a id="hardware-preview-link" asp-action="Preview" asp-route-id="@Model.DeviceId" target="_blank" class="btn btn-outline-secondary">@Localizer["Preview"]</a><a asp-action="Edit" asp-route-id="@Model.DeviceId" class="btn btn-outline-secondary">@Localizer["Back to device details"]</a></div>
 </div>

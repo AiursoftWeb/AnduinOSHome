@@ -8,6 +8,22 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 public class GlobalSettingsTests : TestBase
 {
     [TestMethod]
+    public async Task TranslationSettingsUseDocsViewerKeysAndApplyWithoutRestart()
+    {
+        using var scope = Server!.Services.CreateScope();
+        var settings = scope.ServiceProvider.GetRequiredService<GlobalSettingsService>();
+        Assert.IsFalse(await settings.IsAiLocalizationEnabledAsync());
+        await settings.UpdateSettingAsync(SettingsMap.OpenAiLocalizationModel, "test-model");
+        await settings.UpdateSettingAsync(SettingsMap.OpenAiApiToken, "test-token");
+        await settings.UpdateSettingAsync(SettingsMap.OpenAiInstance, "https://example.test/v1/chat/completions");
+        Assert.IsTrue(await settings.IsAiLocalizationEnabledAsync());
+        Assert.AreEqual("test-model", await settings.GetSettingValueAsync(SettingsMap.OpenAiLocalizationModel));
+        Assert.AreEqual("test-token", await settings.GetSettingValueAsync(SettingsMap.OpenAiApiToken));
+        await settings.UpdateSettingAsync(SettingsMap.OpenAiInstance, "");
+        Assert.IsFalse(await settings.IsAiLocalizationEnabledAsync());
+    }
+
+    [TestMethod]
     public async Task TestAllowUserAdjustNicknameSetting()
     {
         // 1. Login as admin

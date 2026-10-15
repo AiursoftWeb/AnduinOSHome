@@ -35,9 +35,10 @@ public class HardwareCatalog(AnduinOSHomeDbContext db) : IScopedDependency
     {
         var name = culture ?? CultureInfo.CurrentUICulture.Name;
         var parent = name.Split('-')[0];
-        return device.Translations.FirstOrDefault(x => x.Culture.Equals(name, StringComparison.OrdinalIgnoreCase))
-            ?? device.Translations.FirstOrDefault(x => x.Culture.Equals(parent, StringComparison.OrdinalIgnoreCase))
-            ?? device.Translations.FirstOrDefault(x => x.Culture.StartsWith(parent + "-", StringComparison.OrdinalIgnoreCase))
+        var current = device.Translations.Where(x => x.BasedOnSourceRevision == device.SourceRevision).ToList();
+        return current.FirstOrDefault(x => x.Culture.Equals(name, StringComparison.OrdinalIgnoreCase))
+            ?? current.FirstOrDefault(x => x.Culture.Equals(parent, StringComparison.OrdinalIgnoreCase))
+            ?? current.FirstOrDefault(x => x.Culture.StartsWith(parent + "-", StringComparison.OrdinalIgnoreCase))
             ?? device.Translations.FirstOrDefault(x => x.Culture.Equals(device.SourceCulture, StringComparison.OrdinalIgnoreCase))
             ?? new HardwareTranslation();
     }

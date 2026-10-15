@@ -171,6 +171,16 @@ public class HardwareTests : TestBase
     }
 
     [TestMethod]
+    public async Task NewHardwareDefaultsToEnglishOnLocalizedAdminPage()
+    {
+        await LoginAsAdmin();
+        var html = await Http.GetStringAsync("/ManageHardware/Edit?culture=zh-CN&ui-culture=zh-CN");
+        Assert.IsTrue(System.Text.RegularExpressions.Regex.IsMatch(html,
+            "<option[^>]*(?:selected=\"selected\"[^>]*value=\"en-US\"|value=\"en-US\"[^>]*selected=\"selected\")[^>]*>"));
+        Assert.DoesNotContain("value=\"en\"", html);
+    }
+
+    [TestMethod]
     public async Task AdminCanCreateTranslateAndArchive()
     {
         await LoginAsAdmin();
