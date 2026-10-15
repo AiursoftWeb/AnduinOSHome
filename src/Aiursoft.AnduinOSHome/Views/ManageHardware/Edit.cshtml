@@ -31,7 +31,7 @@ else
         <select asp-for="Device.SourceCulture" class="form-select">
             @foreach (var code in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures.Keys)
             {
-                <option value="@code">@System.Globalization.CultureInfo.GetCultureInfo(code).NativeName</option>
+                <option value="@(code)">@(System.Globalization.CultureInfo.GetCultureInfo(code).NativeName)</option>
             }
         </select>
         <div class="form-text">@Localizer["Choose the language of the original review. It cannot be changed after creation."]</div>

@@ -1,11 +1,10 @@
-using Aiursoft.AnduinOSHome.Configuration;
 using Aiursoft.AnduinOSHome.Entities;
 using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.BackgroundJobs;
 using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Aiursoft.AnduinOSHome.Tests.UnitTests;
 
@@ -52,7 +51,8 @@ public class HardwareTranslationTests
         var targets = HardwareTranslationService.TargetCultures("en").ToArray();
         Assert.AreEqual(targets.Length * 13, translator.Calls);
         Assert.AreEqual(targets.Length + 1, result.Translations.Count);
-        var fields = typeof(HardwareTranslation).GetProperties().Where(x => x.PropertyType == typeof(string) && x.Name != "Culture");
+        var fields = typeof(HardwareTranslation).GetProperties()
+            .Where(x => x.PropertyType == typeof(string) && x.Name != "Culture").ToArray();
         var source = result.Translations.Single(x => x.Culture == "en");
         foreach (var translation in result.Translations.Where(x => x.Culture != "en"))
         {
@@ -142,8 +142,8 @@ public class HardwareTranslationTests
     public async Task DisabledJobDoesNotTranslate()
     {
         var settings = new GlobalSettingsService(db,
-            new Microsoft.Extensions.Configuration.ConfigurationBuilder().Build(), null!,
-            new Microsoft.Extensions.Caching.Memory.MemoryCache(new Microsoft.Extensions.Caching.Memory.MemoryCacheOptions()));
+            new ConfigurationBuilder().Build(), null!,
+            new MemoryCache(new MemoryCacheOptions()));
         var job = new HardwareTranslationJob(db, service, settings);
         await job.ExecuteAsync();
         Assert.AreEqual(0, translator.Calls);

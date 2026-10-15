@@ -19,8 +19,9 @@ public class HardwareTranslationJob(
         var lastId = 0;
         while (await settingsService.IsAiLocalizationEnabledAsync())
         {
+            var pageStartId = lastId;
             var devices = await db.Hardware.AsNoTracking().Include(x => x.Translations)
-                .Where(x => x.Id > lastId && x.Publication != HardwarePublication.Archived)
+                .Where(x => x.Id > pageStartId && x.Publication != HardwarePublication.Archived)
                 .OrderBy(x => x.Id).Take(20).ToListAsync();
             if (devices.Count == 0) break;
             lastId = devices[^1].Id;

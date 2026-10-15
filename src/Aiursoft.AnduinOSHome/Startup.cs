@@ -16,6 +16,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Aiursoft.Canon;
 using Aiursoft.GptClient;
+using Aiursoft.Dotlang.Shared;
 using Aiursoft.Canon.TaskQueue;
 using Aiursoft.Canon.BackgroundJobs;
 using Aiursoft.Canon.ScheduledTasks;
@@ -63,7 +64,7 @@ public class Startup : IWebStartup
 
         services.AddTaskCanon();
         services.AddGptClient();
-        services.AddScoped<Aiursoft.Dotlang.Shared.MarkdownShredder>();
+        services.AddScoped<MarkdownShredder>();
         services.AddScoped<Services.IHardwareTextTranslator, Services.HardwareTextTranslator>();
 
         // Background job queue
