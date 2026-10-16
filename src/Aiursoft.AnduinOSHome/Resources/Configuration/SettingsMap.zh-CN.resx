@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP 备案号</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>本地化模型</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>项目标识</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>项目名称</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>翻译接口的 Bearer 令牌。如果接口无需身份验证，请留空。</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>页脚中显示的品牌名称。</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>项目在导航栏和页脚中显示的图标。支持 jpg、png、svg 格式。</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>用于翻译硬件内容的模型名称。必须在翻译接口中可用。</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>项目在前端显示的名称。</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>用于硬件翻译的 OpenAI 兼容聊天补全接口。必须填写完整 URL，包括 /v1/chat/completions。留空则禁用自动翻译。</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>翻译 API 令牌</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>翻译端点</value>
   </data>
 
 </root>

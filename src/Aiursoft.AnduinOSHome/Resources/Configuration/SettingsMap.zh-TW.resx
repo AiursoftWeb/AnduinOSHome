@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP編號</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>在地化模型</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>專案圖示</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>專案名稱</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>翻譯端點的 Bearer Token。若端點不需要驗證，請留空。</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>頁尾顯示的品牌名稱</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>專案的圖示顯示於導覽列與頁尾。支援 jpg、png、svg 格式。</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>用於翻譯硬體內容的模型名稱。必須可在翻譯端點使用。</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>專案在前端顯示的名稱。</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>用於硬體翻譯的 OpenAI 相容聊天完成端點。必須是完整網址，包含 /v1/chat/completions。留空即可停用自動翻譯。</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>翻譯 API 權杖</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>翻譯端點</value>
   </data>
 
 </root>

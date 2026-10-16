@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Número ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Modelo de localização</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logó do Projeto</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nome do Projeto</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>O token bearer para o ponto final de tradução. Deixe em branco se o ponto final não exigir autenticação.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>O nome da marca apresentado no rodapé.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>O logótipo do projeto apresentado na barra de navegação e no rodapé. Suporta jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>O nome do modelo utilizado para traduzir conteúdo de hardware. Tem de estar disponível no ponto de extremidade de tradução.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>O nome do projeto apresentado na interface principal.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>O ponto de extremidade de conclusão de conversas compatível com a OpenAI, utilizado para a tradução de hardware. Tem de ser o URL completo, incluindo /v1/chat/completions. Deixe vazio para desativar a tradução automática.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Token da API de tradução</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Ponto de acesso para tradução</value>
   </data>
 
 </root>

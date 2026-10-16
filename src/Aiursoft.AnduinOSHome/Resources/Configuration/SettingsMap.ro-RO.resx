@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Număr ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Model de localizare</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo Proiect</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Numele proiectului</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Tokenul de tip bearer pentru punctul final de traducere. Lăsați necompletat dacă punctul final nu necesită autentificare.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Numele mărcii afișat în subsol.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Logoul proiectului afișat în bara de navigare și în subsol. Suportă jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Numele modelului utilizat pentru traducerea conținutului hardware. Acesta trebuie să fie disponibil la endpointul de traducere.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Numele proiectului afișat în interfața utilizatorului</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Endpointul de completare a conversațiilor compatibil cu OpenAI, utilizat pentru traducerea componentelor hardware. Trebuie să fie URL-ul complet, inclusiv /v1/chat/completions. Lăsați câmpul gol pentru a dezactiva traducerea automată.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Token API pentru traducere</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Punct final de traducere</value>
   </data>
 
 </root>

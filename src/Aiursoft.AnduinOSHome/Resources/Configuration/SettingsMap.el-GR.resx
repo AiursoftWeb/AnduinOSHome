@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Αριθμός ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Μοντέλο τοπικοποίησης</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Λογότυπο Έργου</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Όνομα Έργου</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Το διακριτικό Bearer για το τελικό σημείο μετάφρασης. Αφήστε το κενό αν το τελικό σημείο δεν απαιτεί έλεγχο ταυτότητας.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Το όνομα της εταιρείας που εμφανίζεται στον ποδόσκαλο.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Το λογότυπο του έργου που εμφανίζεται στην ναβιγατόρια και τον ποδόσκαλο. Υποστηρίζει jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Το όνομα του μοντέλου που χρησιμοποιείται για τη μετάφραση περιεχομένου υλικού. Πρέπει να είναι διαθέσιμο στο τελικό σημείο μετάφρασης.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Το όνομα του έργου που εμφανίζεται στην εμφάνιση της εφαρμογής.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Το συμβατό με το OpenAI endpoint συνομιλιών για τη μετάφραση υλικού. Πρέπει να είναι το πλήρες URL, συμπεριλαμβανομένου του /v1/chat/completions. Αφήστε το κενό για να απενεργοποιήσετε την αυτόματη μετάφραση.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Διακριτικό API μετάφρασης</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Τελικό σημείο μετάφρασης</value>
   </data>
 
 </root>
