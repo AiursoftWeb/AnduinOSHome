@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-nummer</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Lokaliseringsmodel</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Projektlogo</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Projektnavn</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Bærertokenet til oversættelsesendepunktet. Lad feltet være tomt, hvis endepunktet ikke kræver godkendelse.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Det brandsnavn, der vises i foden.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Det projektlogo der vises i navigationen og foden. Understøtter jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Modelnavnet, der bruges til at oversætte hardwareindhold. Skal være tilgængeligt på oversættelsesendpointet.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Navnet på projektet, der vises i brugergrænsefladen</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Det OpenAI-kompatible chat completions-endpoint, der bruges til hardwareoversættelse. Skal være den fulde URL inklusive /v1/chat/completions. Lad feltet være tomt for at deaktivere automatisk oversættelse.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>API-token til oversættelse</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Oversættelsesendepunkt</value>
   </data>
 
 </root>

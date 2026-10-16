@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Số đăng ký ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Mô hình bản địa hóa</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo Dự án</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Tên dự án</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Mã thông báo Bearer dùng cho Điểm cuối dịch thuật. Để trống nếu điểm cuối không yêu cầu xác thực.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Tên thương hiệu được hiển thị ở chân trang.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Logo của dự án được hiển thị trong thanh điều hướng và chân trang. Hỗ trợ định dạng jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Tên mô hình dùng để dịch nội dung phần cứng. Mô hình này phải có sẵn tại Điểm cuối dịch thuật.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Tên dự án được hiển thị trên giao diện người dùng</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Điểm cuối hoàn tất trò chuyện tương thích với OpenAI được sử dụng để dịch nội dung phần cứng. Phải là URL đầy đủ, bao gồm /v1/chat/completions. Để trống để tắt tính năng dịch tự động.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Mã thông báo API dịch thuật</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Điểm cuối dịch thuật</value>
   </data>
 
 </root>

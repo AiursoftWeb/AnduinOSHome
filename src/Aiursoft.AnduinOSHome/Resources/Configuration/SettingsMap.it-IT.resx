@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Numero ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Modello di localizzazione</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo del progetto</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nome del progetto</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Il token bearer per l’endpoint di traduzione. Lasciare vuoto se l’endpoint non richiede autenticazione.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Il nome del marchio visualizzato nel piè di pagina.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Il logo del progetto visualizzato nella barra di navigazione e nel piè di pagina. Supporta jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Il nome del modello utilizzato per tradurre i contenuti hardware. Deve essere disponibile sull&apos;endpoint di traduzione.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Il nome del progetto visualizzato nell&apos;interfaccia utente</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>L&apos;endpoint di completamento delle chat compatibile con OpenAI utilizzato per la traduzione dei contenuti hardware. Deve essere un URL completo, incluso /v1/chat/completions. Lasciare vuoto per disabilitare la traduzione automatica.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Token API per la traduzione</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Endpoint di traduzione</value>
   </data>
 
 </root>

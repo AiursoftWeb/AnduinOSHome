@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-numero</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Lokalisointimalli</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Projektin logo</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Projektin nimi</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Käännöspäätepisteen bearer-token. Jätä tyhjäksi, jos päätepiste ei vaadi todennusta.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Brändin nimi, joka näytetään alatunnisteessa.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Projektin logo näytetään navigointipalkissa ja alatunnisteessa. Tuetut muodot: jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Laitteistosisällön kääntämiseen käytettävän mallin nimi. Sen on oltava käytettävissä käännösrajapinnassa.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Projektin nimi, joka näytetään etusivulla.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Laitteiston käännöksissä käytettävä OpenAI-yhteensopiva chat completions -päätepiste. URL-osoitteen on oltava täydellinen ja sisällettävä /v1/chat/completions. Jätä tyhjäksi, jos haluat poistaa automaattisen kääntämisen käytöstä.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Käännöksen API-tunnus</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Käännöspäätepiste</value>
   </data>
 
 </root>

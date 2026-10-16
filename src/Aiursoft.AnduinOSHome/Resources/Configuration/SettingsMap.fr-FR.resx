@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Numéro ICP</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>Modèle de localisation</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo du projet</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nom du projet</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Le jeton Bearer pour le point de terminaison de traduction. Laissez ce champ vide si le point de terminaison ne nécessite pas d’authentification.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Le nom de la marque affiché dans le pied de page.</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Le logo du projet affiché dans la barre de navigation et le pied de page. Supporte jpg, png, svg.</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>Le nom du modèle utilisé pour traduire le contenu matériel. Il doit être disponible sur le point de terminaison de traduction.</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Le nom du projet affiché dans l&apos;interface utilisateur.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Le point de terminaison de complétion de chat compatible avec OpenAI utilisé pour la traduction de matériel. Il doit s’agir de l’URL complète, y compris /v1/chat/completions. Laissez ce champ vide pour désactiver la traduction automatique.</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>Jeton API de traduction</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>Point de terminaison de traduction</value>
   </data>
 
 </root>

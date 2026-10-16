@@ -36,11 +36,17 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP番号</value>
   </data>
+  <data name="Localization Model" xml:space="preserve">
+    <value>ローカライズモデル</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>プロジェクトロゴ</value>
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>プロジェクト名</value>
+  </data>
+  <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
+    <value>Translation Endpoint のベアラートークンです。エンドポイントで認証が不要な場合は、空のままにしてください。</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>フッターに表示されるブランド名。</value>
@@ -51,8 +57,20 @@
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>ナビゲーションバーおよびフッターに表示されるプロジェクトのロゴ。jpg、png、svg形式をサポートしています。</value>
   </data>
+  <data name="The model name used for translating hardware content. Must be available at the Translation Endpoint." xml:space="preserve">
+    <value>ハードウェアコンテンツの翻訳に使用するモデル名です。翻訳エンドポイントで利用可能である必要があります。</value>
+  </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>フロントエンドに表示されるプロジェクト名</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>ハードウェアの翻訳に使用する、OpenAI互換のチャット補完エンドポイントです。/v1/chat/completions を含む完全なURLを指定してください。空欄にすると、自動翻訳は無効になります。</value>
+  </data>
+  <data name="Translation API Token" xml:space="preserve">
+    <value>翻訳 API トークン</value>
+  </data>
+  <data name="Translation Endpoint" xml:space="preserve">
+    <value>翻訳エンドポイント</value>
   </data>
 
 </root>
