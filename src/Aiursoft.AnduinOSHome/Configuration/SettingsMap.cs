@@ -10,6 +10,9 @@ public class SettingsMap
     public const string ProjectLogo = "ProjectLogo";
     public const string AllowUserAdjustNickname = "Allow_User_Adjust_Nickname";
     public const string Icp = "Icp";
+    public const string OpenAiInstance = "OpenAiInstance";
+    public const string OpenAiLocalizationModel = "OpenAiLocalizationModel";
+    public const string OpenAiApiToken = "OpenAiApiToken";
 
     public class FakeLocalizer
     {
@@ -62,6 +65,30 @@ public class SettingsMap
             Description = Localizer["Allow users to adjust their nickname in the profile management page."],
             Type = SettingType.Bool,
             DefaultValue = "True"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = OpenAiInstance,
+            Name = Localizer["Translation Endpoint"],
+            Description = Localizer["The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation."],
+            Type = SettingType.Text,
+            DefaultValue = ""
+        },
+        new GlobalSettingDefinition
+        {
+            Key = OpenAiLocalizationModel,
+            Name = Localizer["Localization Model"],
+            Description = Localizer["The model name used for translating hardware content. Must be available at the Translation Endpoint."],
+            Type = SettingType.Text,
+            DefaultValue = ""
+        },
+        new GlobalSettingDefinition
+        {
+            Key = OpenAiApiToken,
+            Name = Localizer["Translation API Token"],
+            Description = Localizer["The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication."],
+            Type = SettingType.Text,
+            DefaultValue = ""
         },
         new GlobalSettingDefinition
         {

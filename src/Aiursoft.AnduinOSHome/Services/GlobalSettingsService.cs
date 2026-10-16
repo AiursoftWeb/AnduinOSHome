@@ -49,6 +49,9 @@ public class GlobalSettingsService(
         return result;
     }
 
+    public async Task<bool> IsAiLocalizationEnabledAsync() =>
+        !string.IsNullOrWhiteSpace(await GetSettingValueAsync(SettingsMap.OpenAiInstance));
+
     public async Task<bool> GetBoolSettingAsync(string key)
     {
         var value = await GetSettingValueAsync(key);

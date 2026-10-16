@@ -1,5 +1,7 @@
 using System.Globalization;
 using Aiursoft.AnduinOSHome.Authorization;
+using Aiursoft.AnduinOSHome.Services.BackgroundJobs;
+using Aiursoft.Canon.TaskQueue;
 using Aiursoft.AnduinOSHome.Entities;
 using Aiursoft.AnduinOSHome.Models.HardwareViewModels;
 using Aiursoft.AnduinOSHome.Services;
@@ -18,7 +20,9 @@ namespace Aiursoft.AnduinOSHome.Controllers;
 [LimitPerMin]
 public class ManageHardwareController(
     AnduinOSHomeDbContext db, StorageService storage, ImageProcessingService images,
-    IStringLocalizer<ManageHardwareController> localizer) : Controller
+    IStringLocalizer<ManageHardwareController> localizer,
+    ServiceTaskQueue taskQueue,
+    GlobalSettingsService settingsService) : Controller
 {
     // Only holders of CanManageHardware can issue upload grants or attach public
     // catalog assets. These are shared editorial assets, not user-private files.
@@ -171,7 +175,7 @@ public class ManageHardwareController(
         var device = id == 0 ? new Hardware() : await db.Hardware.AsNoTracking()
             .Include(x => x.Translations).SingleOrDefaultAsync(x => x.Id == id);
         if (device == null) return NotFound();
-        if (id == 0) device.SourceCulture = NormalizeCulture(CultureInfo.CurrentUICulture.Name) ?? "en";
+        if (id == 0) device.SourceCulture = "en-US";
         return this.StackView(new HardwareEditModel
         {
             Device = device,
@@ -267,6 +271,14 @@ public class ManageHardwareController(
         {
             ModelState.AddModelError(string.Empty, localizer["Could not save this record. Check whether its address is already in use."]);
             return this.StackView(model);
+        }
+        if (await settingsService.IsAiLocalizationEnabledAsync())
+        {
+            var hardwareId = device.Id;
+            taskQueue.QueueWithDependency<HardwareTranslationService>(
+                queueName: nameof(HardwareTranslationJob),
+                taskName: $"Translate hardware {hardwareId}",
+                task: service => service.TranslateAsync(hardwareId));
         }
         return RedirectToAction(nameof(Edit), new { id = device.Id });
     }

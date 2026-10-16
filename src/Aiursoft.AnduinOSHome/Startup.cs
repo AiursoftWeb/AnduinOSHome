@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Aiursoft.ClickhouseLoggerProvider;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Aiursoft.Canon;
+using Aiursoft.GptClient;
+using Aiursoft.Dotlang.Shared;
 using Aiursoft.Canon.TaskQueue;
 using Aiursoft.Canon.BackgroundJobs;
 using Aiursoft.Canon.ScheduledTasks;
@@ -59,10 +62,17 @@ public class Startup : IWebStartup
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 
+        services.AddTaskCanon();
+        services.AddGptClient();
+        services.AddScoped<MarkdownShredder>();
+        services.AddScoped<Services.IHardwareTextTranslator, Services.HardwareTextTranslator>();
+
         // Background job queue
         services.AddTaskQueueEngine();
         services.AddScheduledTaskEngine();
         services.RegisterBackgroundJob<Services.BackgroundJobs.DummyJob>();
+        var hardwareTranslationJob = services.RegisterBackgroundJob<Services.BackgroundJobs.HardwareTranslationJob>();
+        services.RegisterScheduledTask(registration: hardwareTranslationJob, period: TimeSpan.FromMinutes(30), startDelay: TimeSpan.FromMinutes(30));
         var orphanAvatarCleanupJob = services.RegisterBackgroundJob<Services.BackgroundJobs.OrphanAvatarCleanupJob>();
         services.RegisterScheduledTask(registration: orphanAvatarCleanupJob, period: TimeSpan.FromHours(6), startDelay: TimeSpan.FromMinutes(5));
 
