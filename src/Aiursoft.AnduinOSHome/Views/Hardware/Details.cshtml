@@ -18,7 +18,7 @@
 }
 
 <vc:marketing-navbar></vc:marketing-navbar>
-@if (Model.IsPreview) { <div class="alert alert-warning text-center mb-0" role="status">@Localizer["Editorial preview — unpublished changes appear only after saving."]</div> }
+@if (Model.IsPreview) { <div class="alert alert-warning text-center mb-0" role="status"><div class="alert-message">@Localizer["Editorial preview — unpublished changes appear only after saving."]</div></div> }
 
 <main class="hardware-detail">
     @* The insight labels are constructed in the Razor code block above. Keep direct calls for dotlang extraction. *@

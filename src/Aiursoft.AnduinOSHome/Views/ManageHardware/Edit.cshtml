@@ -7,9 +7,11 @@
 <p>@Localizer["Write the full review in the source language. Shared facts apply to every language."]</p>
 @if (Model.Device.Id != 0)
 {
-    <div class="alert alert-info d-flex justify-content-between align-items-center gap-3">
-        <span>@Localizer["Write the original review here. When automatic translation is enabled, translations are generated in the background and refreshed after source changes. You can still review translations on the Languages tab."]</span>
-        <a asp-action="Localize" asp-route-id="@Model.Device.Id" class="btn btn-primary">@Localizer["Edit translations"]</a>
+    <div class="alert alert-info" role="alert">
+        <div class="alert-message d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <span>@Localizer["Write the original review here. When automatic translation is enabled, translations are generated in the background and refreshed after source changes. You can still review translations on the Languages tab."]</span>
+            <a asp-action="Localize" asp-route-id="@Model.Device.Id" class="btn btn-primary">@Localizer["Edit translations"]</a>
+        </div>
     </div>
 }
 <div class="row g-4"><div class="col-xl-8">
@@ -18,7 +20,7 @@
 <input asp-for="Device.Id" type="hidden" />
 @if (Model.SourceCultureLocked) { <input asp-for="Device.SourceCulture" type="hidden" /> }
 <h2 class="h4 mt-4">@Localizer["Device and display"]</h2><p class="text-muted small">@Localizer["Shown on the home card, catalog, and detail hero. Shared across all languages."]</p>
-<p class="alert alert-warning">@Localizer["Images are public immediately after upload. Use only images you have permission to publish. Archive a record to remove it from public pages."]</p>
+<div class="alert alert-warning" role="alert"><div class="alert-message">@Localizer["Images are public immediately after upload. Use only images you have permission to publish. Archive a record to remove it from public pages."]</div></div>
 <div class="row">
 @if (Model.SourceCultureLocked)
 {
