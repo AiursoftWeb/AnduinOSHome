@@ -143,7 +143,7 @@ public class HardwareTranslationTests
     {
         var settings = new GlobalSettingsService(db,
             new ConfigurationBuilder().Build(), null!,
-            new MemoryCache(new MemoryCacheOptions()));
+            new MemoryCache(new MemoryCacheOptions()), new Microsoft.AspNetCore.DataProtection.EphemeralDataProtectionProvider(), Microsoft.Extensions.Logging.Abstractions.NullLogger<GlobalSettingsService>.Instance);
         var job = new HardwareTranslationJob(db, service, settings);
         await job.ExecuteAsync();
         Assert.AreEqual(0, translator.Calls);
