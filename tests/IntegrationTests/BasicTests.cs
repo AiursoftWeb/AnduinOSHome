@@ -18,6 +18,13 @@ public class BasicTests : TestBase
     }
 
     [TestMethod]
+    public async Task UnsupportedUpgradeReturnsNotFound()
+    {
+        var response = await Http.GetAsync("/upgrade/2.0");
+        Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+    }
+
+    [TestMethod]
     public async Task RegisterAndLoginAndLogOffTest()
     {
         var expectedUserName = $"test-{Guid.NewGuid()}";

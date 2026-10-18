@@ -13,7 +13,7 @@ public class UpgradeController(
     RetryEngine retryEngine,
     ILogger<UpgradeController> logger) : ControllerBase
 {
-    private static readonly List<string> AvailableBranches = ["1.0", "1.1", "1.2", "1.3", "1.4", "2.0"];
+    private static readonly List<string> AvailableBranches = ["1.0", "1.1", "1.2", "1.3", "1.4"];
 
     [HttpGet("upgrade/{branch}")]
     public async Task<IActionResult> Get(string branch)
