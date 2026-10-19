@@ -1,3 +1,4 @@
+@using Aiursoft.WebTools
 @model Aiursoft.AnduinOSHome.Models.HardwareViewModels.HardwareDetailsModel
 @inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
 @inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
@@ -48,7 +49,7 @@
                 {
                     <div class="hardware-meta">
                         @if (Model.Device.PriceUsd.HasValue) { <div><small>@Localizer["Reference price"]</small><strong>US$ @Model.Device.PriceUsd.Value.ToString("N0")</strong></div> }
-                        @if (Model.Device.VerifiedAt.HasValue) { <div><small>@Localizer["Last verified on"]</small><strong>@Model.Device.VerifiedAt.Value.ToString("yyyy-MM-dd")</strong></div> }
+                        @if (Model.Device.VerifiedAt.HasValue) { <div><small>@Localizer["Last verified on"]</small><strong><span data-utc-time="@Model.Device.VerifiedAt.Value.ToHtmlDateTime()"></span></strong></div> }
                     </div>
                 }
                 @if (Model.Device.TeamDevice)
@@ -133,7 +134,7 @@
                 @if (!string.IsNullOrWhiteSpace(Model.Device.KernelVersion)) { <div><span>@Localizer["Tested kernel"]</span><strong>@Model.Device.KernelVersion</strong></div> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.DriverVersion)) { <div><span>@Localizer["Tested drivers"]</span><strong>@Model.Device.DriverVersion</strong></div> }
                 @if (!string.IsNullOrWhiteSpace(Model.Device.PriceMarket)) { <div><span>@Localizer["Price market and configuration"]</span><strong>@Model.Device.PriceMarket</strong></div> }
-                @if (Model.Device.PriceCheckedAt.HasValue) { <div><span>@Localizer["Price checked on"]</span><strong>@Model.Device.PriceCheckedAt.Value.ToString("yyyy-MM-dd")</strong></div> }
+                @if (Model.Device.PriceCheckedAt.HasValue) { <div><span>@Localizer["Price checked on"]</span><strong><span data-utc-time="@Model.Device.PriceCheckedAt.Value.ToHtmlDateTime()"></span></strong></div> }
             </div>
             <div class="hardware-sources">
                 @if (!string.IsNullOrWhiteSpace(Model.Device.ProductUrl)) { <a href="@Model.Device.ProductUrl" rel="noopener noreferrer" target="_blank">@Localizer["Manufacturer and price source"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a> }
