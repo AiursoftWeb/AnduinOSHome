@@ -101,7 +101,13 @@
                 <div class="hardware-notes">
                     @if (!string.IsNullOrWhiteSpace(Model.Text.InstallationNotes))
                     {
-                        <article class="hardware-note hardware-note--primary"><span class="hardware-note-icon"><i data-lucide="disc-3" aria-hidden="true"></i></span><h3>@Localizer["Installation instructions"]</h3><p>@Model.Text.InstallationNotes</p></article>
+                        <article class="hardware-note hardware-note--primary">
+                            <span class="hardware-note-icon"><i data-lucide="disc-3" aria-hidden="true"></i></span><h3>@Localizer["Installation instructions"]</h3><p>@Model.Text.InstallationNotes</p>
+                            @if (!string.IsNullOrWhiteSpace(Model.Device.ReportUrl))
+                            {
+                                <a href="@Model.Device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                            }
+                        </article>
                     }
                     @if (!string.IsNullOrWhiteSpace(Model.Text.FirmwareNotes))
                     {
