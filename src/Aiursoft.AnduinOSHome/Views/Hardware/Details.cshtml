@@ -89,7 +89,13 @@
         <dialog class="hardware-insight-dialog" data-hardware-dialog aria-labelledby="hardware-insight-title">
             <div class="hardware-insight-dialog-panel">
                 <header><div><span>@Localizer["Compatibility detail"]</span><h2 id="hardware-insight-title" data-hardware-dialog-title></h2></div><button type="button" data-hardware-dialog-close aria-label="@Localizer["Close details"]"><i data-lucide="x" aria-hidden="true"></i></button></header>
-                <div class="hardware-insight-dialog-body"><div class="hardware-insight-dialog-status" data-hardware-dialog-status></div><p data-hardware-dialog-detail></p></div>
+                <div class="hardware-insight-dialog-body">
+                    <div class="hardware-insight-dialog-status" data-hardware-dialog-status></div><p data-hardware-dialog-detail></p>
+                    @if (!string.IsNullOrWhiteSpace(Model.Device.ReportUrl))
+                    {
+                        <a class="btn btn-primary mt-3" href="@Model.Device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    }
+                </div>
                 <footer><span>@Model.Device.Brand @Model.Device.Model</span><button type="button" data-hardware-dialog-close>@Localizer["Done"]</button></footer>
             </div>
         </dialog>
