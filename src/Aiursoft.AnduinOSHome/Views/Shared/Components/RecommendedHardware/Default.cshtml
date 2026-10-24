@@ -1,5 +1,6 @@
 @model List<Aiursoft.AnduinOSHome.Entities.Hardware>
 @inject Aiursoft.AnduinOSHome.Services.FileStorage.StorageService Storage
+@inject Aiursoft.AnduinOSHome.Services.HardwareLabels Labels
 @if (Model.Count > 0)
 {
     <section id="recommended-hardware" class="py-5 bg-light">
@@ -11,9 +12,9 @@
             <div class="row g-4 justify-content-center">
                 @foreach (var device in Model)
                 {
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column">
                         <a asp-controller="Hardware" asp-action="Details" asp-route-slug="@device.Slug"
-                           class="card h-100 shadow-sm text-decoration-none text-body"
+                           class="card flex-grow-1 shadow-sm text-decoration-none text-body"
                            aria-label="@device.Brand @device.Model">
                             @if (!string.IsNullOrEmpty(device.ProductImagePath))
                             {
@@ -23,6 +24,10 @@
                             }
                             <div class="card-body text-center">
                                 <h3 class="h5 mb-2">@device.Brand @device.Model</h3>
+                                @if (device.Installation == Aiursoft.AnduinOSHome.Entities.HardwareEase.Difficult)
+                                {
+                                    <p class="small fw-semibold mb-2">@Labels.Label(device.Installation)</p>
+                                }
                                 @if (device.PriceUsd.HasValue)
                                 {
                                     <p class="mb-0 text-muted">@Localizer["Reference price: US$ {0}", device.PriceUsd.Value]</p>
@@ -33,6 +38,10 @@
                                 }
                             </div>
                         </a>
+                        @if (!string.IsNullOrWhiteSpace(device.ReportUrl))
+                        {
+                            <p class="small text-center mt-2 mb-0"><a href="@device.ReportUrl" rel="noopener noreferrer" target="_blank">@Localizer["Installation guide or test report"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></p>
+                        }
                     </div>
                 }
             </div>
