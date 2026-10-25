@@ -1,154 +1,121 @@
 <vc:marketing-navbar></vc:marketing-navbar>
 <div class="container mt-5">
     <main role="main" class="pb-3">
-       <div class="row">
-          <div class="col-md-12">
-             <h1 class="text-center">@Localizer["Privacy Statement"]</h1>
-             <p class="text-center">
-                <em>@Localizer["Last updated: October 25, 2026"]</em>
-             </p>
-          </div>
-          <div class="col-md-12">
-             <h2 id="introduction">@Localizer["Introduction"]</h2>
-             <p>@Localizer["AnduinOS is a free and open-source Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED."]<br>@Localizer["We are fundamentally committed to protecting your privacy."]<br>@Localizer["This document explains how AnduinOS handles user data, clarifies its technical design regarding privacy, and outlines considerations related to upstream components."]</p>
-             <hr>
-             <h2 id="1-data-collection-by-anduinos">@Localizer["1. Data Collection by AnduinOS"]</h2>
-             <p>
-                <strong>@Localizer["AnduinOS itself does not collect, transmit, or store any user data."]</strong>
-             </p>
-             <ul>
-                <li>@Localizer["All system operations, configurations, and user activities take place locally on your own device (\"local execution\")."]</li>
-                <li>@Localizer["AnduinOS does not include any telemetry, analytics, advertising, tracking, or behavior profiling mechanisms."]</li>
-                <li>@Localizer["There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information."]</li>
-             </ul>
-             <p>@Localizer["Thus, AnduinOS is fundamentally privacy-preserving by design."]</p>
-             <hr>
-             <h2 id="2-why-local-execution-matters">@Localizer["2. Why Local Execution Matters"]</h2>
-             <p>@Localizer["Local execution means that features and services of AnduinOS are performed entirely on your computer."]<br>@Localizer["This ensures:"]</p>
-             <ul>
-                <li>
-                   <strong>@Localizer["Control:"]</strong> @Localizer["You retain complete control over your personal data."]</li>
-                <li>
-                   <strong>@Localizer["Transparency:"]</strong> @Localizer["No data leaves your machine without your explicit action or for essential functionality."]</li>
-                <li>
-                   <strong>@Localizer["Security:"]</strong> @Localizer["Reducing external communications limits exposure to interception or exploitation risks."]</li>
-             </ul>
-             <p>@Localizer["In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users."]</p>
-
-             <hr>
-             <h2 id="3-essential-network-connections">@Localizer["3. Essential Network Connections & Third-Party Services"]</h2>
-             <p>@Localizer["While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are"] <strong>@Localizer["not used for telemetry"]</strong> @Localizer["."]</p>
-
-             <h4>@Localizer["Visiting Our Website"]</h4>
-             <p>@Localizer["When you visit our official website at"] <code>www.anduinos.com</code>@Localizer[", we keep access logs to help us keep the website reliable and secure. These logs help us monitor availability, detect attacks, trigger alerts, and investigate errors or slow responses."]</p>
-             <p>@Localizer["Website access logs include your IP address, the time and URL of the request, browser information, and technical details about the response, such as its status, size, and processing time."]</p>
-             <p>@Localizer["These are records of visits to our website. They do not give us access to your files or report what you do on your computer. AnduinOS itself does not collect or send us telemetry during normal use."]</p>
-
-             <h4>@Localizer["Installing Software and Updates"]</h4>
-             <p>@Localizer["Running"] <code>apt update</code> @Localizer["or"] <code>apt upgrade</code> @Localizer["does not send us telemetry or reports about how you use your computer. Our package distribution servers at"] <code>packages.anduinos.com</code> @Localizer["serve software and updates without keeping request access logs. The website access logging described above does not apply to these package servers."]</p>
-
-             <h4>@Localizer["Network Connections and Service Providers"]</h4>
-             <p>@Localizer["Visiting a website or downloading an update still requires a network connection. Cloudflare helps deliver and protect our website and package downloads, and processes IP addresses and request metadata as part of providing that service. Other software repositories and mirrors you use also receive connection information and have their own privacy practices, as described in Section 5."]</p>
-
-             <h4>@Localizer["SimpleWeather Extension (Disabled by Default)"]</h4>
-             <p>@Localizer["AnduinOS includes the 'SimpleWeather' GNOME extension. Out of respect for your privacy, this extension is"] <strong>@Localizer["disabled by default"]</strong> @Localizer["."]<br>@Localizer["If you choose to manually enable it to see weather conditions:"]</p>
-             <ul>
-                <li>@Localizer["The extension must connect to"] <code>https://ipinfo.io/json</code> @Localizer["to determine your location based on your IP address, and to third-party weather providers for forecasting data."]</li>
-                <li>@Localizer["While we have audited the extension's source code"] (<a href="https://github.com/romanlefler/SimpleWeather">@Localizer["source"]</a>) @Localizer["to ensure it contains no hidden telemetry, we cannot control the privacy practices of"] <code>ipinfo.io</code> @Localizer["or the weather providers. Enabling this feature will expose your IP address to them."]</li>
-             </ul>
-
-
-             <hr>
-             <h2 id="4-open-source-guarantees-your-freedom">@Localizer["4. Open Source Guarantees Your Freedom"]</h2>
-             <p>@Localizer["AnduinOS is distributed under the"] <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3.0 (GPL-v3)</a> @Localizer["."]<br>@Localizer["This license guarantees:"]</p>
-             <ul>
-                <li>
-                   <strong>@Localizer["Freedom to inspect:"]</strong> @Localizer["You can review the source code to verify there are no hidden tracking mechanisms."]</li>
-                <li>
-                   <strong>@Localizer["Freedom to modify:"]</strong> @Localizer["You can adjust the code to suit your needs, including removing any components you distrust."]</li>
-                <li>
-                   <strong>@Localizer["Freedom to redistribute:"]</strong> @Localizer["You can share AnduinOS, either modified or unmodified, under the same license terms."]</li>
-             </ul>
-             <p>
-                <strong>@Localizer["The open nature of AnduinOS empowers users to independently verify that the system respects their privacy."]</strong>
-                <br>@Localizer["There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu."]</p>
-
-             <hr>
-             <h2 id="5-upstream-software-and-privacy-considerations">@Localizer["5. Upstream Software and Privacy Considerations"]</h2>
-             <p>@Localizer["While AnduinOS itself does not collect any data,"] <strong> @Localizer["it integrates a wide range of upstream open-source software"] </strong> @Localizer["originating from Ubuntu, Debian, GNOME, Flathub, and other sources."]<br>@Localizer["(Some examples and references can be found"] <a href="https://github.com/aiursoftweb/anduinos-2/blob/master/OSS.md"> @Localizer["here"]</a>).</p>
-
-             <p>@Localizer["This includes the use of Ubuntu's official software repositories and mirrors, which are operated by third-party organizations (such as universities and corporations)."]<br>@Localizer["When your system checks for software updates (e.g., using"] <code>apt</code> @Localizer["), it connects to these external servers. This process is essential for system security but will expose your IP address to the operators of the repository mirror you are connected to."]</p>
-
-             <p>@Localizer["Additionally, some upstream components may have independent data collection mechanisms."]<br>@Localizer["Notably:"]</p>
-             <ul>
-                <li>
-                   <strong>Canonical Ltd.</strong> @Localizer["(Ubuntu's developer) may collect certain system information for statistics and diagnostics purposes via tools like:"]<ul>
-                      <li>
-                         <code>ubuntu-report</code>
-                      </li>
-                      <li>
-                         <code>popularity-contest</code>
-                      </li>
-                      <li>@Localizer["Snap store background services (if Snap is manually installed by users)"]</li>
-                   </ul>
-                </li>
-             </ul>
-             <p>@Localizer["We strongly recommend users review Canonical's"] <a href="https://ubuntu.com/legal/data-privacy">@Localizer["Privacy Policy"]</a> @Localizer["for details."]</p>
-             <p>@Localizer["AnduinOS does"] <strong>@Localizer["not"]</strong> @Localizer["modify, enhance, or introduce additional telemetry into these upstream components."]<br>@Localizer["It merely redistributes them in their original, unmodified state."]</p>
-
-             <hr>
-             <h2 id="6-strict-zero-telemetry-build-pipeline">@Localizer["6. A Strict Zero-Telemetry Build Pipeline"]</h2>
-             <p>@Localizer["AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default."]<br>@Localizer["Our automated ISO build pipeline enforces a"] <strong>@Localizer["\"hard-fail\" strict policy"]</strong> @Localizer["—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:"]</p>
-             <ul>
-                <li>
-                   <code>popularity-contest</code>
-                </li>
-                <li>
-                   <code>ubuntu-report</code>
-                </li>
-                <li>
-                   <code>apport</code>
-                </li>
-                <li>
-                   <code>snapd</code> @Localizer["(Snap daemon)"]
-                </li>
-                <li>
-                   <code>ubuntu-advantage-tools</code> @Localizer["(Canonical Livepatch / Pro services)"]
-                </li>
-             </ul>
-             <p>@Localizer["Because these packages are physically eradicated from the installation media, AnduinOS"] <strong>@Localizer["does not participate"]</strong> @Localizer["in any system reporting, usage statistics submission, or automated crash reporting."]</p>
-             <blockquote>
-                <p>
-                   <strong>@Localizer["Note:"]</strong> @Localizer["If you manually choose to"] <code>apt install</code> @Localizer["these packages later, their respective telemetry mechanisms will be activated according to Canonical's policies."]
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">@Localizer["Privacy Statement"]</h1>
+                <p class="text-center">
+                    <em>@Localizer["Last updated: October 25, 2026"]</em>
                 </p>
-             </blockquote>
+            </div>
+            <div class="col-md-12">
+                <p>@Localizer["AnduinOS is designed to operate without first-party operating-system telemetry. We do not collect usage statistics, diagnostic reports, or behavioral data from AnduinOS installations through an AnduinOS telemetry service."]</p>
+                <p>@Localizer["Some system features and third-party applications require network access. We keep website access logs for security and reliability, and our infrastructure providers process connection metadata when delivering our services. This statement explains these activities and their scope."]</p>
 
-             <hr>
-             <h2 id="7-responsibility-clarification">@Localizer["7. Responsibility Clarification"]</h2>
-             <ul>
-                <li>
-                   <strong>@Localizer["AnduinOS is developed and maintained by AIURSOFT LIMITED."]</strong></li>
-                <li>
-                   <strong>@Localizer["AnduinOS does not include operating-system telemetry."]</strong> @Localizer["Website access logs, package downloads, and the role of service providers are explained separately in Section 3."]</li>
-                <li>
-                   <strong>@Localizer["For privacy concerns related to third-party applications,"]</strong> @Localizer["please refer to their respective upstream privacy policies."]</li>
-             </ul>
+                <hr>
+                <h2 id="1-scope-and-data-controller">@Localizer["1. Scope and Data Controller"]</h2>
+                <p>@Localizer["AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, 'we', 'us', and 'our' refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below."]</p>
+                <p>@Localizer["This statement covers AnduinOS, our official website and its redirects, our documentation and news websites, and our package and image download services. Section 4 distinguishes website visits from software downloads. Third-party applications, repositories, mirrors, and community platforms have their own privacy practices."]</p>
+                <p>@Localizer["For privacy questions or requests concerning your personal data, contact us at:"] <a href="mailto:leadership@aiursoft.com">leadership@aiursoft.com</a>.</p>
 
-             <hr>
-             <h2 id="8-contact-information">@Localizer["8. Contact Information"]</h2>
-             <p>@Localizer["If you have any questions regarding this Privacy Statement or AnduinOS's privacy practices, please contact:"]</p>
-             <ul>
-                <li>
-                   <strong>@Localizer["Email:"]</strong>
-                   <a href="mailto:leadership@aiursoft.com">leadership@aiursoft.com</a>
-                </li>
-                <li>
-                   <strong>@Localizer["Community:"]</strong>
-                   <a href="https://github.com/Anduin2017/AnduinOS/discussions">@Localizer["AnduinOS GitHub Discussions"]</a>
-                </li>
-             </ul>
-          </div>
-       </div>
+                <hr>
+                <h2 id="2-operating-system-telemetry">@Localizer["2. Operating System Telemetry"]</h2>
+                <p><strong>@Localizer["AnduinOS does not include first-party operating-system telemetry that reports user activity, diagnostics, or usage statistics to AIURSOFT LIMITED."]</strong></p>
+                <p>@Localizer["Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit."]</p>
+                <p>@Localizer["AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use."]</p>
+
+                <hr>
+                <h2 id="3-network-communications-and-third-party-software">@Localizer["3. Network Communications and Third-Party Software"]</h2>
+                <h3>@Localizer["Updates and Other Network Features"]</h3>
+                <p>@Localizer["Software repositories and mirrors receive your IP address and request metadata when your device connects to them. Features such as software updates, time synchronization, connectivity checks, firmware updates, web browsing, and online accounts may require network access, depending on the software and configuration. Some connections can occur automatically in the background."]</p>
+                <p>@Localizer["AnduinOS builds upon software from Ubuntu, Debian, GNOME, and other projects. Upstream components may be configured, patched, or packaged differently for AnduinOS. Third-party applications and services may have their own reporting or diagnostic features, settings, and consent requirements."]</p>
+                <p>@Localizer["Installing a package does not necessarily enable reporting. Whether a reporting feature operates depends on its configuration and any applicable consent requirements. Consult the relevant provider's privacy information, including:"]</p>
+                <ul>
+                    <li><a href="https://ubuntu.com/legal/data-privacy">@Localizer["Canonical's privacy information"]</a></li>
+                </ul>
+
+                <h3>@Localizer["SimpleWeather"]</h3>
+                <p>@Localizer["The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates."]</p>
+                <p>@Localizer["The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the information shown when enabling the feature and the providers' privacy policies. The upstream source and our packaging are available for inspection:"]</p>
+                <ul>
+                    <li><a href="https://github.com/romanlefler/SimpleWeather">@Localizer["SimpleWeather source code"]</a></li>
+                    <li><a href="https://github.com/AiursoftWeb/AnduinOS-Packages/tree/master/gnome-shell-extension-simple-weather">@Localizer["AnduinOS SimpleWeather packaging"]</a></li>
+                </ul>
+
+                <hr>
+                <h2 id="4-website-and-download-services">@Localizer["4. Website and Download Services"]</h2>
+                <h3>@Localizer["Website Access Logs"]</h3>
+                <p>@Localizer["When you browse our website, we keep access logs to maintain its security and reliability. This includes our main website, its redirect, documentation, and news:"]</p>
+                <ul>
+                    <li><code>www.anduinos.com</code></li>
+                    <li><code>anduinos.com</code></li>
+                    <li><code>docs.anduinos.com</code></li>
+                    <li><code>news.anduinos.com</code></li>
+                </ul>
+                <p>@Localizer["These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis."]</p>
+                <p>@Localizer["These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry."]</p>
+
+                <h3>@Localizer["Package Updates and Image Downloads"]</h3>
+                <p>@Localizer["Running apt update or apt upgrade does not send us telemetry or reports about how you use your computer. We do not retain HTTP access logs on the package origin servers behind packages.anduinos.com. This describes our origin servers; it does not mean that no connection information is processed along the delivery path."]</p>
+                <p>@Localizer["Operating-system images are delivered through cf.anduinos.com using Cloudflare's storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above."]</p>
+
+                <h3>@Localizer["Service Providers and International Processing"]</h3>
+                <p>@Localizer["Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above."]</p>
+                <p>@Localizer["Our company is based in Hong Kong and our providers operate internationally. Connection data may therefore be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data."]</p>
+                <ul>
+                    <li><a href="https://www.cloudflare.com/privacypolicy/">@Localizer["Cloudflare Privacy Policy"]</a></li>
+                    <li><a href="https://www.cloudflare.com/cloudflare-customer-dpa/">@Localizer["Cloudflare Data Processing Addendum"]</a></li>
+                    <li><a href="https://www.vultr.com/legal/privacy/">@Localizer["Vultr Privacy Policy"]</a></li>
+                </ul>
+
+                <hr>
+                <h2 id="5-data-retention-and-your-rights">@Localizer["5. Data Retention and Your Rights"]</h2>
+                <h3>@Localizer["Retention and Legal Basis"]</h3>
+                <p><strong>@Localizer["We retain the website access logs described in Section 4 for up to 120 days."]</strong> @Localizer["This period supports investigation of security incidents, recurring attacks, service errors, and performance problems. It describes the website logs we retain; it is not a statement of every independent provider's retention practices."]</p>
+                <p>@Localizer["Where the EU or UK GDPR applies, the legal basis for this logging is our legitimate interest in keeping our services secure and reliable, preventing abuse, and investigating incidents, under Article 6(1)(f). This basis requires consideration of your interests, rights, and freedoms."]</p>
+                <p>@Localizer["If you contact us, we use the information you provide to address your enquiry or request. We retain that correspondence for as long as needed to handle the matter and meet applicable legal obligations; the website log retention period does not describe that correspondence."]</p>
+
+                <h3>@Localizer["Your Rights"]</h3>
+                <p>@Localizer["Depending on the law applicable to you and the processing concerned, you may have the right to:"]</p>
+                <ul>
+                    <li>@Localizer["Request information about and access to your personal data, including a copy."]</li>
+                    <li>@Localizer["Request correction of inaccurate data, deletion, or restriction of processing."]</li>
+                    <li>@Localizer["Object to processing based on legitimate interests on grounds relating to your situation."]</li>
+                    <li>@Localizer["Receive portable data where the legal conditions for portability are met."]</li>
+                    <li>@Localizer["Complain to the relevant data protection authority, including, where the GDPR applies, the authority in your place of habitual residence, work, or the alleged infringement."]</li>
+                </ul>
+                <p>@Localizer["These rights are subject to the conditions and exceptions in applicable law. To exercise them, email leadership@aiursoft.com. Please identify the service and, for a website log request, the approximate time of your visit. We may need further information to locate the relevant records and verify the request while protecting other people's data. We will respond within the time limits required by applicable law."]</p>
+
+                <hr>
+                <h2 id="6-open-source-and-verifiable-build-policies">@Localizer["6. Open Source and Verifiable Build Policies"]</h2>
+                <h3>@Localizer["Licensing and Source Code"]</h3>
+                <p>@Localizer["The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms."]</p>
+                <p>@Localizer["Public source code allows independent review of our implementation and privacy-related claims. Its availability does not by itself establish that every component or released binary has undergone a complete privacy audit."]</p>
+                <ul>
+                    <li><a href="https://github.com/AiursoftWeb/AnduinOS-2/blob/master/LICENSE">@Localizer["AnduinOS build repository license"]</a></li>
+                    <li><a href="https://github.com/AiursoftWeb/AnduinOS-Packages/blob/master/LICENSE">@Localizer["AnduinOS package-maintenance repository license"]</a></li>
+                    <li><a href="https://github.com/AiursoftWeb/AnduinOS-2/blob/master/OSS.md">@Localizer["Third-party software and license references"]</a></li>
+                </ul>
+
+                <h3>@Localizer["Build Checks and Their Scope"]</h3>
+                <p>@Localizer["Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components."]</p>
+                <p>@Localizer["These checks provide evidence about the packages present in the tested image and installation. They are not a comprehensive audit of all network behavior or all possible reporting capabilities. Later updates, additional software, and configuration changes can alter the system's behavior."]</p>
+                <p><a href="https://github.com/AiursoftWeb/AnduinOS-2/blob/master/tests/assertions/install.py">@Localizer["Inspect the current package policy and image assertions"]</a></p>
+
+                <hr>
+                <h2 id="7-changes-to-this-statement">@Localizer["7. Changes to This Statement"]</h2>
+                <p>@Localizer["We publish revisions on this page and update the date above. Changes may reflect our services, technical practices, or legal requirements. Please review the current statement when using our services."]</p>
+
+                <hr>
+                <h2 id="8-contact-information">@Localizer["8. Contact Us"]</h2>
+                <p>@Localizer["For privacy questions and personal-data requests, contact AIURSOFT LIMITED:"]</p>
+                <ul>
+                    <li><a href="mailto:leadership@aiursoft.com">leadership@aiursoft.com</a></li>
+                </ul>
+                <p>@Localizer["For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information."]</p>
+                <p><a href="https://github.com/Anduin2017/AnduinOS/discussions">@Localizer["AnduinOS GitHub Discussions"]</a></p>
+            </div>
+        </div>
     </main>
 </div>
 <vc:marketing-footer></vc:marketing-footer>
