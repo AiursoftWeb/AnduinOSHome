@@ -7,8 +7,8 @@ namespace Aiursoft.AnduinOSHome.Tests.IntegrationTests;
 [TestClass]
 public class HomeControllerTests : TestBase
 {
-    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.sha256";
-    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.sha256";
+    private const string Amd64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.sha256";
+    private const string Arm64ChecksumUrl = "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.sha256";
     private const string SocialPreviewImageUrl = "https://www.anduinos.com/sc.webp";
     private const string SocialPreviewTitle = "Open Source &amp; Linux";
     private const string SocialPreviewDescription = "AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux.";
@@ -33,8 +33,8 @@ public class HomeControllerTests : TestBase
         Assert.Contains("System Requirements", html, StringComparison.Ordinal);
         Assert.Contains("Btrfs", html, StringComparison.Ordinal);
         Assert.Contains(ReadyToUseText, html, StringComparison.Ordinal);
-        Assert.Contains("v2.0.4", html, StringComparison.Ordinal);
-        Assert.Contains("data-latest=\"2.0.4\"", html, StringComparison.Ordinal);
+        Assert.Contains("v2.0.5", html, StringComparison.Ordinal);
+        Assert.Contains("data-latest=\"2.0.5\"", html, StringComparison.Ordinal);
         Assert.Contains("data-size=\"2.38 GB\"", html, StringComparison.Ordinal);
         Assert.Contains("2026-10-03", html, StringComparison.Ordinal);
         Assert.Contains(FriendlyInterfaceText, html, StringComparison.Ordinal);
@@ -146,19 +146,19 @@ public class HomeControllerTests : TestBase
         Assert.Contains("data-key=\"checksum\"", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("2.0"));
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
-        Assert.AreEqual("2.0.4", VersionData.All[0].LatestPatch);
+        Assert.AreEqual("2.0.5", VersionData.All[0].LatestPatch);
         Assert.IsTrue(html.Contains("1.0"));
     }
 
     [TestMethod]
-    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.iso", Amd64ChecksumUrl,
-        "AnduinOS-2.0.4-amd64.iso", false)]
-    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.4-amd64.torrent", Amd64ChecksumUrl,
-        "AnduinOS-2.0.4-amd64.iso", true)]
-    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.iso", Arm64ChecksumUrl,
-        "AnduinOS-2.0.4-arm64.iso", false)]
-    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.4-arm64.torrent", Arm64ChecksumUrl,
-        "AnduinOS-2.0.4-arm64.iso", true)]
+    [DataRow("amd64", "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.iso", Amd64ChecksumUrl,
+        "AnduinOS-2.0.5-amd64.iso", false)]
+    [DataRow("amd64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.torrent", Amd64ChecksumUrl,
+        "AnduinOS-2.0.5-amd64.iso", true)]
+    [DataRow("arm64", "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.iso", Arm64ChecksumUrl,
+        "AnduinOS-2.0.5-arm64.iso", false)]
+    [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.torrent", Arm64ChecksumUrl,
+        "AnduinOS-2.0.5-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
