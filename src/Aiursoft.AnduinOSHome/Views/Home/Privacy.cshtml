@@ -5,7 +5,7 @@
           <div class="col-md-12">
              <h1 class="text-center">@Localizer["Privacy Statement"]</h1>
              <p class="text-center">
-                <em>@Localizer["Last updated: June 13, 2026"]</em>
+                <em>@Localizer["Last updated: October 25, 2026"]</em>
              </p>
           </div>
           <div class="col-md-12">
@@ -39,16 +39,16 @@
              <h2 id="3-essential-network-connections">@Localizer["3. Essential Network Connections & Third-Party Services"]</h2>
              <p>@Localizer["While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are"] <strong>@Localizer["not used for telemetry"]</strong> @Localizer["."]</p>
 
-             <h4>@Localizer["AnduinOS Website & APT Repository"]</h4>
-             <p>@Localizer["To provide our official website ("]<code>www.anduinos.com</code>@Localizer["), system updates, and software packages ("]<code>packages.anduinos.com</code>@Localizer["), your system connects to our official servers."]</p>
-             <ul>
-                <li>
-                   <strong>@Localizer["Privacy Guarantee:"]</strong> @Localizer["These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities."]
-                </li>
-                <li>
-                   <strong>@Localizer["Data Exposure:"]</strong> @Localizer["To deliver these files globally with low latency, the traffic is routed through Cloudflare's Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests."]
-                </li>
-             </ul>
+             <h4>@Localizer["Visiting Our Website"]</h4>
+             <p>@Localizer["When you visit our official website at"] <code>www.anduinos.com</code>@Localizer[", we keep access logs to help us keep the website reliable and secure. These logs help us monitor availability, detect attacks, trigger alerts, and investigate errors or slow responses."]</p>
+             <p>@Localizer["Website access logs include your IP address, the time and URL of the request, browser information, and technical details about the response, such as its status, size, and processing time."]</p>
+             <p>@Localizer["These are records of visits to our website. They do not give us access to your files or report what you do on your computer. AnduinOS itself does not collect or send us telemetry during normal use."]</p>
+
+             <h4>@Localizer["Installing Software and Updates"]</h4>
+             <p>@Localizer["Running"] <code>apt update</code> @Localizer["or"] <code>apt upgrade</code> @Localizer["does not send us telemetry or reports about how you use your computer. Our package distribution servers at"] <code>packages.anduinos.com</code> @Localizer["serve software and updates without keeping request access logs. The website access logging described above does not apply to these package servers."]</p>
+
+             <h4>@Localizer["Network Connections and Service Providers"]</h4>
+             <p>@Localizer["Visiting a website or downloading an update still requires a network connection. Cloudflare helps deliver and protect our website and package downloads, and processes IP addresses and request metadata as part of providing that service. Other software repositories and mirrors you use also receive connection information and have their own privacy practices, as described in Section 5."]</p>
 
              <h4>@Localizer["SimpleWeather Extension (Disabled by Default)"]</h4>
              <p>@Localizer["AnduinOS includes the 'SimpleWeather' GNOME extension. Out of respect for your privacy, this extension is"] <strong>@Localizer["disabled by default"]</strong> @Localizer["."]<br>@Localizer["If you choose to manually enable it to see weather conditions:"]</p>
@@ -129,7 +129,7 @@
                 <li>
                    <strong>@Localizer["AnduinOS is developed and maintained by AIURSOFT LIMITED."]</strong></li>
                 <li>
-                   <strong>@Localizer["AnduinOS does not have a data collection infrastructure"]</strong> @Localizer["and does not share any information with governments, corporations, or any third parties."]</li>
+                   <strong>@Localizer["AnduinOS does not include operating-system telemetry."]</strong> @Localizer["Website access logs, package downloads, and the role of service providers are explained separately in Section 3."]</li>
                 <li>
                    <strong>@Localizer["For privacy concerns related to third-party applications,"]</strong> @Localizer["please refer to their respective upstream privacy policies."]</li>
              </ul>
