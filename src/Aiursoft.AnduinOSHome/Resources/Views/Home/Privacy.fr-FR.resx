@@ -66,11 +66,20 @@
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. Collecte de données par AnduinOS</value>
   </data>
+  <data name="1. Scope and Data Controller" xml:space="preserve">
+    <value>1. Champ d’application et responsable du traitement</value>
+  </data>
+  <data name="2. Operating System Telemetry" xml:space="preserve">
+    <value>2. Télémétrie du système d’exploitation</value>
+  </data>
   <data name="2. Why Local Execution Matters" xml:space="preserve">
     <value>2. Pourquoi l&apos;exécution locale est importante</value>
   </data>
   <data name="3. Essential Network Connections &amp; Third-Party Services" xml:space="preserve">
     <value>3. Connexions réseau essentielles et services tiers</value>
+  </data>
+  <data name="3. Network Communications and Third-Party Software" xml:space="preserve">
+    <value>3. Communications réseau et logiciels tiers</value>
   </data>
   <data name="3. Open Source Guarantees Your Freedom" xml:space="preserve">
     <value>3. L&apos;Open Source Garantit Votre Liberté</value>
@@ -80,6 +89,12 @@
   </data>
   <data name="4. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>4. Logiciels en amont et considérations relatives à la confidentialité</value>
+  </data>
+  <data name="4. Website and Download Services" xml:space="preserve">
+    <value>4. Services du site web et de téléchargement</value>
+  </data>
+  <data name="5. Data Retention and Your Rights" xml:space="preserve">
+    <value>5. Conservation des données et vos droits</value>
   </data>
   <data name="5. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>5. Comment gérer la télémétrie potentielle d&apos;Ubuntu</value>
@@ -93,8 +108,14 @@
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Gestion des Télémétries Ubuntu Potentielles</value>
   </data>
+  <data name="6. Open Source and Verifiable Build Policies" xml:space="preserve">
+    <value>6. Politiques relatives aux logiciels libres et aux compilations vérifiables</value>
+  </data>
   <data name="6. Responsibility Clarification" xml:space="preserve">
     <value>6. Clarification des responsabilités</value>
+  </data>
+  <data name="7. Changes to This Statement" xml:space="preserve">
+    <value>7. Modifications de la présente déclaration</value>
   </data>
   <data name="7. Contact Information" xml:space="preserve">
     <value>7. Informations de contact</value>
@@ -104,6 +125,12 @@
   </data>
   <data name="8. Contact Information" xml:space="preserve">
     <value>8. Informations de contact</value>
+  </data>
+  <data name="8. Contact Us" xml:space="preserve">
+    <value>8. Nous contacter</value>
+  </data>
+  <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
+    <value>Les informations relatives aux comptes sont conservées aussi longtemps que nécessaire pour fournir les services associés aux comptes et respecter les obligations légales applicables, sous réserve des exigences applicables en matière de suppression. Les sessions d’authentification et les cookies de préférences ont leurs propres durées d’expiration. Ces enregistrements sont distincts des journaux d’accès au site web et ne sont pas soumis à la durée de conservation de 120 jours applicable à ces journaux.</value>
   </data>
   <data name="Additionally, some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>De plus, certains composants en amont peuvent avoir des mécanismes de collecte de données indépendants.</value>
@@ -117,6 +144,12 @@
   <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
     <value>et ne partage aucune information avec les gouvernements, les entreprises ou tout autre tiers.</value>
   </data>
+  <data name="AnduinOS build repository license" xml:space="preserve">
+    <value>Licence du dépôt de compilation d’AnduinOS</value>
+  </data>
+  <data name="AnduinOS builds upon software from Ubuntu, Debian, GNOME, and other projects. Upstream components may be configured, patched, or packaged differently for AnduinOS. Third-party applications and services may have their own reporting or diagnostic features, settings, and consent requirements." xml:space="preserve">
+    <value>AnduinOS s’appuie sur des logiciels issus d’Ubuntu, de Debian, de GNOME et d’autres projets. Les composants en amont peuvent être configurés, modifiés ou empaquetés différemment pour AnduinOS. Les applications et services tiers peuvent avoir leurs propres fonctionnalités de signalement ou de diagnostic, leurs propres paramètres et leurs propres exigences en matière de consentement.</value>
+  </data>
   <data name="AnduinOS does" xml:space="preserve">
     <value>AnduinOS le fait</value>
   </data>
@@ -126,11 +159,17 @@
   <data name="AnduinOS does not include any telemetry, analytics, advertising, tracking, or behavior profiling mechanisms." xml:space="preserve">
     <value>AnduinOS ne comprend aucun mécanisme de télémétrie, d&apos;analyse, de publicité, de suivi ou de profilage comportemental.</value>
   </data>
+  <data name="AnduinOS does not include first-party operating-system telemetry that reports user activity, diagnostics, or usage statistics to AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS n’intègre pas de télémétrie système propriétaire transmettant à AIURSOFT LIMITED des informations sur l’activité des utilisateurs, des diagnostics ou des statistiques d’utilisation.</value>
+  </data>
   <data name="AnduinOS does not participate in any system reporting, usage statistics submission, or automated crash reporting" xml:space="preserve">
     <value>AnduinOS ne participe à aucun rapport système, envoi de statistiques d&apos;utilisation ou signalement automatique de plantages.</value>
   </data>
   <data name="AnduinOS does not preinstall any telemetry-related packages" xml:space="preserve">
     <value>AnduinOS ne préinstalle aucun paquet lié à la télémétrie</value>
+  </data>
+  <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
+    <value>AnduinOS privilégie un fonctionnement local, mais n’est pas conçu pour fonctionner uniquement hors ligne. Les mises à jour, les services réseau et les applications peuvent communiquer avec des serveurs externes. Leur comportement dépend des logiciels installés, de leurs paramètres et des fonctionnalités que vous utilisez.</value>
   </data>
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>Discussions GitHub d&apos;AnduinOS</value>
@@ -153,8 +192,14 @@
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS est une distribution Linux® gratuite et open-source basée sur Ubuntu.</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>AnduinOS est une distribution Linux basée sur Ubuntu, maintenue par AIURSOFT LIMITED, une entreprise établie à Hong Kong. Dans la présente déclaration, « nous », « notre » et « nos » désignent AIURSOFT LIMITED, le responsable du traitement des données personnelles que nous traitons dans le cadre des services décrits ci-dessous.</value>
+  </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS s&apos;engage à maintenir votre installation propre et exempte de télémétrie par défaut.</value>
+  </data>
+  <data name="AnduinOS is designed to operate without first-party operating-system telemetry. We do not collect usage statistics, diagnostic reports, or behavioral data from AnduinOS installations through an AnduinOS telemetry service." xml:space="preserve">
+    <value>AnduinOS est conçu pour fonctionner sans télémétrie du système d’exploitation mise en place par son éditeur. Nous ne collectons pas de statistiques d’utilisation, de rapports de diagnostic ni de données comportementales provenant des installations d’AnduinOS au moyen d’un service de télémétrie AnduinOS.</value>
   </data>
   <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
     <value>AnduinOS est développé et maintenu par AIURSOFT LIMITED.</value>
@@ -165,6 +210,12 @@
   <data name="AnduinOS itself does not collect, transmit, or store any user data." xml:space="preserve">
     <value>AnduinOS lui-même ne collecte, ne transmet ni ne stocke aucune donnée utilisateur.</value>
   </data>
+  <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
+    <value>Licence du dépôt de maintenance des paquets AnduinOS</value>
+  </data>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>Packaging de SimpleWeather pour AnduinOS</value>
+  </data>
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>Service de mise à jour d&apos;AnduinOS</value>
   </data>
@@ -174,17 +225,41 @@
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>Puisque ces paquets sont physiquement supprimés des supports d&apos;installation, AnduinOS</value>
   </data>
+  <data name="Build Checks and Their Scope" xml:space="preserve">
+    <value>Vérifications de compilation et leur portée</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Service Canonical Livepatch</value>
+  </data>
+  <data name="Canonical&apos;s privacy information" xml:space="preserve">
+    <value>Les informations de Canonical sur la confidentialité</value>
+  </data>
+  <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
+    <value>Annexe sur le traitement des données de Cloudflare</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Cloudflare contribue à la diffusion et à la protection de nos sites web, ainsi qu’au téléchargement de nos paquets et de nos images. Pour fournir ces services, Cloudflare traite les adresses IP et les métadonnées des requêtes. Nous utilisons également Vultr pour l’hébergement. Le personnel chargé de l’exploitation et de la sécurisation de ces services utilise les journaux du site web aux fins décrites ci-dessus.</value>
+  </data>
+  <data name="Cloudflare Privacy Policy" xml:space="preserve">
+    <value>Politique de confidentialité de Cloudflare</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>Communauté :</value>
   </data>
+  <data name="Complain to the relevant data protection authority, including, where the GDPR applies, the authority in your place of habitual residence, work, or the alleged infringement." xml:space="preserve">
+    <value>Introduire une réclamation auprès de l’autorité de protection des données compétente, notamment, lorsque le RGPD s’applique, auprès de l’autorité du lieu de votre résidence habituelle, de votre lieu de travail ou du lieu de l’infraction présumée.</value>
+  </data>
   <data name="Control:" xml:space="preserve">
     <value>Contrôle :</value>
   </data>
+  <data name="Cookies and Account Information" xml:space="preserve">
+    <value>Cookies et informations relatives aux comptes</value>
+  </data>
   <data name="Data Exposure:" xml:space="preserve">
     <value>Exposition des données :</value>
+  </data>
+  <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
+    <value>Selon la législation qui vous est applicable et le traitement concerné, vous pouvez avoir le droit de :</value>
   </data>
   <data name="disabled by default" xml:space="preserve">
     <value>désactivé par défaut</value>
@@ -204,8 +279,17 @@
   <data name="for details." xml:space="preserve">
     <value>pour plus de détails.</value>
   </data>
+  <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
+    <value>Pour les discussions générales de la communauté, vous pouvez utiliser notre forum de discussion public. Pour toute demande concernant des informations personnelles, veuillez nous contacter par e-mail.</value>
+  </data>
   <data name="For privacy concerns related to third-party applications," xml:space="preserve">
     <value>Pour les préoccupations relatives à la confidentialité concernant les applications tierces,</value>
+  </data>
+  <data name="For privacy questions and personal-data requests, contact AIURSOFT LIMITED:" xml:space="preserve">
+    <value>Pour toute question relative à la confidentialité ou toute demande concernant des données personnelles, contactez AIURSOFT LIMITED :</value>
+  </data>
+  <data name="For privacy questions or requests concerning your personal data, contact us at:" xml:space="preserve">
+    <value>Pour toute question relative à la protection de la vie privée ou toute demande concernant vos données personnelles, contactez-nous à l’adresse suivante :</value>
   </data>
   <data name="Freedom to inspect:" xml:space="preserve">
     <value>Liberté d&apos;inspection :</value>
@@ -231,6 +315,9 @@
   <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
     <value>Si vous choisissez de l’activer manuellement pour afficher les conditions météorologiques :</value>
   </data>
+  <data name="If you contact us, we use the information you provide to address your enquiry or request. We retain that correspondence for as long as needed to handle the matter and meet applicable legal obligations; the website log retention period does not describe that correspondence." xml:space="preserve">
+    <value>Si vous nous contactez, nous utilisons les informations que vous nous fournissez pour répondre à votre demande ou à votre question. Nous conservons cette correspondance aussi longtemps que nécessaire pour traiter la question et respecter les obligations légales applicables ; la durée de conservation des journaux du site web ne s’applique pas à cette correspondance.</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Si vous avez des questions concernant cette Déclaration de confidentialité ou les pratiques de confidentialité d&apos;AnduinOS, veuillez contacter :</value>
   </data>
@@ -242,6 +329,12 @@
   </data>
   <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
     <value>dans aucun rapport de système, soumission de statistiques d&apos;utilisation ou rapport de plantage automatique.</value>
+  </data>
+  <data name="Inspect the current package policy and image assertions" xml:space="preserve">
+    <value>Consultez la politique actuelle relative aux paquets et les vérifications de l’image</value>
+  </data>
+  <data name="Installing a package does not necessarily enable reporting. Whether a reporting feature operates depends on its configuration and any applicable consent requirements. Consult the relevant provider&apos;s privacy information, including:" xml:space="preserve">
+    <value>L’installation d’un paquet n’active pas nécessairement la transmission de données. Le fonctionnement d’une fonctionnalité de transmission dépend de sa configuration et des éventuelles exigences en matière de consentement. Consultez les informations relatives à la confidentialité du fournisseur concerné, notamment :</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Introduction</value>
@@ -257,6 +350,12 @@
   </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Dernière mise à jour : 10 mai 2025</value>
+  </data>
+  <data name="Last updated: October 25, 2026" xml:space="preserve">
+    <value>Dernière mise à jour : 25 octobre 2026</value>
+  </data>
+  <data name="Licensing and Source Code" xml:space="preserve">
+    <value>Licences et code source</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>L&apos;exécution locale signifie que toutes les fonctionnalités et services d&apos;AnduinOS sont exécutés</value>
@@ -291,6 +390,12 @@
   <data name="Note:" xml:space="preserve">
     <value>Remarque :</value>
   </data>
+  <data name="Object to processing based on legitimate interests on grounds relating to your situation." xml:space="preserve">
+    <value>Vous opposer au traitement fondé sur des intérêts légitimes pour des raisons tenant à votre situation.</value>
+  </data>
+  <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
+    <value>Les images du système d’exploitation sont distribuées via cf.anduinos.com au moyen des services de stockage et de diffusion de Cloudflare. Le téléchargement d’une image ou d’un paquet nécessite une connexion réseau, et les fournisseurs qui traitent cette requête reçoivent des métadonnées de connexion. La consultation d’une page de téléchargement sur notre site web est soumise à la journalisation du site décrite ci-dessus.</value>
+  </data>
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>ou de tout fournisseur de données météorologiques qu&apos;il utilise. Se connecter à ces services exposera nécessairement votre adresse IP à ceux-ci.</value>
   </data>
@@ -300,11 +405,26 @@
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>provenant d&apos;Ubuntu, Debian, GNOME, Flathub et d&apos;autres sources.</value>
   </data>
+  <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
+    <value>Nos sites web et services en ligne proposant un compte utilisent un fournisseur d’identité commun pour permettre l’authentification unique. Lorsque vous vous connectez à ces services, le fournisseur d’identité et le service auquel vous accédez peuvent échanger les identifiants de compte et les informations d’authentification nécessaires pour établir et maintenir votre session. Ces informations sont utilisées pour l’authentification et la gestion des comptes, et non pour la télémétrie du système d’exploitation.</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>Nos tests automatisés des images vérifient la base de données des paquets installés dans l’environnement live ainsi que le système installé, en les comparant à une liste tenue à jour de paquets interdits et de motifs de noms de paquets. Le test échoue si un paquet interdit est présent. La liste comprend certains paquets de rapports et de services d’arrière-plan, tels que ubuntu-report, popularity-contest, apport, whoopsie, snapd et des composants Ubuntu Pro.</value>
+  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>Notre chaîne de compilation automatisée ISO applique une</value>
   </data>
+  <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
+    <value>Notre entreprise est établie à Hong Kong et nos prestataires exercent leurs activités à l’international. Les données à caractère personnel traitées dans le cadre de ces services, notamment les métadonnées de connexion, les informations de compte et les échanges de correspondance, peuvent être traitées en dehors de votre pays, y compris en dehors de l’Espace économique européen ou du Royaume-Uni. Cloudflare décrit les garanties encadrant ses traitements et transferts internationaux, notamment les clauses contractuelles types lorsqu’elles s’appliquent, dans sa politique de confidentialité et son avenant relatif au traitement des données (Data Processing Addendum). Vous pouvez nous contacter pour obtenir des informations sur les transferts concernant vos données.</value>
+  </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Notre équipe a examiné le code source de cette extension</value>
+  </data>
+  <data name="Our websites and online services, including our main website, documentation, and news services, use cookies to support authentication, security, and user preferences. Language and theme preferences may be stored in cookies for up to one year. Authentication cookies are used to maintain login sessions and protect user accounts." xml:space="preserve">
+    <value>Nos sites web et services en ligne, notamment notre site web principal, notre documentation et nos services d’actualités, utilisent des cookies pour assurer l’authentification, la sécurité et la mémorisation des préférences utilisateur. Les préférences de langue et de thème peuvent être stockées dans des cookies pendant une durée maximale d’un an. Les cookies d’authentification permettent de maintenir les sessions ouvertes et de protéger les comptes utilisateur.</value>
+  </data>
+  <data name="Package Updates and Image Downloads" xml:space="preserve">
+    <value>Mises à jour des paquets et téléchargements d’images</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>veuillez consulter leurs politiques de confidentialité respectives en amont.</value>
@@ -321,11 +441,35 @@
   <data name="Privacy Statement" xml:space="preserve">
     <value>Déclaration de confidentialité</value>
   </data>
+  <data name="Public source code allows independent review of our implementation and privacy-related claims. Its availability does not by itself establish that every component or released binary has undergone a complete privacy audit." xml:space="preserve">
+    <value>Le code source public permet un examen indépendant de notre mise en œuvre et de nos déclarations relatives à la confidentialité. Sa disponibilité ne signifie pas, à elle seule, que chaque composant ou binaire publié a fait l’objet d’un audit complet de confidentialité.</value>
+  </data>
+  <data name="Receive portable data where the legal conditions for portability are met." xml:space="preserve">
+    <value>Recevoir les données dans un format portable lorsque les conditions légales de portabilité sont réunies.</value>
+  </data>
   <data name="Reducing external communications limits exposure to interception or exploitation risks." xml:space="preserve">
     <value>Réduire les communications externes limite l&apos;exposition aux risques d&apos;interception ou d&apos;exploitation.</value>
   </data>
+  <data name="Request correction of inaccurate data, deletion, or restriction of processing." xml:space="preserve">
+    <value>Demander la rectification des données inexactes, leur effacement ou la limitation du traitement.</value>
+  </data>
+  <data name="Request information about and access to your personal data, including a copy." xml:space="preserve">
+    <value>Demander des informations sur vos données personnelles et y accéder, notamment en obtenir une copie.</value>
+  </data>
+  <data name="Retention and Legal Basis" xml:space="preserve">
+    <value>Durée de conservation et base juridique</value>
+  </data>
+  <data name="Running apt update or apt upgrade does not send us telemetry or reports about how you use your computer. We do not retain HTTP access logs on the package origin servers behind packages.anduinos.com. This describes our origin servers; it does not mean that no connection information is processed along the delivery path." xml:space="preserve">
+    <value>L’exécution de `apt update` ou `apt upgrade` ne nous transmet aucune télémétrie ni aucun rapport sur la manière dont vous utilisez votre ordinateur. Nous ne conservons pas les journaux d’accès HTTP sur les serveurs d’origine des paquets derrière packages.anduinos.com. Cela décrit nos serveurs d’origine ; cela ne signifie pas qu’aucune information de connexion n’est traitée au cours de l’acheminement.</value>
+  </data>
   <data name="Security:" xml:space="preserve">
     <value>Sécurité :</value>
+  </data>
+  <data name="Service Providers and International Processing" xml:space="preserve">
+    <value>Prestataires de services et traitement international</value>
+  </data>
+  <data name="SimpleWeather" xml:space="preserve">
+    <value>SimpleWeather</value>
   </data>
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>Extension SimpleWeather</value>
@@ -333,11 +477,20 @@
   <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
     <value>Extension SimpleWeather (désactivée par défaut)</value>
   </data>
+  <data name="SimpleWeather source code" xml:space="preserve">
+    <value>Code source de SimpleWeather</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Démon Snap</value>
   </data>
   <data name="Snap store background services (if Snap is manually installed by users)" xml:space="preserve">
     <value>Services en arrière-plan du Snap Store (si Snap est installé manuellement par les utilisateurs)</value>
+  </data>
+  <data name="Software repositories and mirrors receive your IP address and request metadata when your device connects to them. Features such as software updates, time synchronization, connectivity checks, firmware updates, web browsing, and online accounts may require network access, depending on the software and configuration. Some connections can occur automatically in the background." xml:space="preserve">
+    <value>Les dépôts de logiciels et leurs miroirs reçoivent votre adresse IP et les métadonnées de vos requêtes lorsque votre appareil s’y connecte. Des fonctionnalités telles que les mises à jour logicielles, la synchronisation de l’heure, les vérifications de connectivité, les mises à jour du micrologiciel, la navigation sur le Web et les comptes en ligne peuvent nécessiter un accès réseau, selon les logiciels et la configuration. Certaines connexions peuvent s’établir automatiquement en arrière-plan.</value>
+  </data>
+  <data name="Some system features and third-party applications require network access. We keep website access logs for security and reliability, and our infrastructure providers process connection metadata when delivering our services. This statement explains these activities and their scope." xml:space="preserve">
+    <value>Certaines fonctionnalités du système et applications tierces nécessitent un accès au réseau. Nous conservons les journaux d’accès au site web pour garantir sa sécurité et sa fiabilité, et nos fournisseurs d’infrastructure traitent les métadonnées de connexion lorsqu’ils fournissent nos services. La présente déclaration explique ces activités et en précise le périmètre.</value>
   </data>
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>Certains composants en amont peuvent avoir des mécanismes indépendants de collecte de données.</value>
@@ -348,11 +501,20 @@
   <data name="such as:" xml:space="preserve">
     <value>par exemple :</value>
   </data>
+  <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
+    <value>Les dépôts de compilation et de maintenance des paquets d’AnduinOS publient notre code sous licence GPLv3, sauf indication contraire. Les composants tiers conservent leurs licences respectives. Leur inclusion dans la distribution ne soumet pas l’ensemble du système d’exploitation à une licence unique ; les autorisations d’utiliser, de modifier et de redistribuer chaque composant sont régies par les conditions de la licence qui lui est applicable.</value>
+  </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>L&apos;extension doit se connecter à</value>
   </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>La nature ouverte d&apos;AnduinOS permet aux utilisateurs de vérifier de manière indépendante que le système respecte leur vie privée.</value>
+  </data>
+  <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
+    <value>Les fournisseurs et les requêtes dépendent de la version de l’extension, de la configuration d’AnduinOS et de vos paramètres. Consultez les fournisseurs disponibles et les paramètres de localisation dans les préférences de l’extension, ainsi que les politiques de confidentialité des fournisseurs. Le code source en amont et notre empaquetage sont consultables :</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>L’extension de bureau SimpleWeather est désactivée par défaut dans AnduinOS. Si vous activez les fonctionnalités météo, elles peuvent contacter des services tiers pour la géolocalisation à partir de l’adresse IP, la recherche de lieux et les prévisions météorologiques. Les fournisseurs reçoivent l’adresse IP utilisée pour se connecter ainsi que les informations nécessaires à la requête, telles qu’un lieu recherché ou des coordonnées.</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>Il n&apos;y a aucun processus en arrière-plan caché ni communication réseau initiée par le système dans le but de collecter des informations utilisateur.</value>
@@ -360,11 +522,26 @@
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Il n&apos;y a pas de blobs propriétaires ni de modules fermés en dehors des dépendances en amont explicitement héritées d&apos;Ubuntu.</value>
   </data>
+  <data name="These checks provide evidence about the packages present in the tested image and installation. They are not a comprehensive audit of all network behavior or all possible reporting capabilities. Later updates, additional software, and configuration changes can alter the system&apos;s behavior." xml:space="preserve">
+    <value>Ces vérifications fournissent des éléments sur les paquets présents dans l’image et l’installation testées. Elles ne constituent pas un audit exhaustif de tous les comportements réseau ni de toutes les capacités de signalement possibles. Les mises à jour ultérieures, l’ajout de logiciels et les modifications de configuration peuvent altérer le comportement du système.</value>
+  </data>
   <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
     <value>Ces points de terminaison sont de simples serveurs de distribution de fichiers statiques. Ils ne disposent d&apos;aucune fonctionnalité de collecte de données, d&apos;analyse ou de profilage des utilisateurs.</value>
   </data>
+  <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
+    <value>Ces journaux contiennent les adresses IP, les horodatages des requêtes, les URL demandées, les informations sur le navigateur, le statut et la taille des réponses, ainsi que les temps de traitement. Nous les utilisons pour surveiller le service, déclencher des alertes automatisées, détecter et contrer les attaques, résoudre les problèmes et diagnostiquer les performances.</value>
+  </data>
   <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
     <value>ces packages ultérieurement, leurs mécanismes de télémétrie respectifs seront activés conformément aux politiques de Canonical.</value>
+  </data>
+  <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
+    <value>Ces enregistrements décrivent les requêtes adressées à nos sites web. Ils ne nous donnent pas accès à vos fichiers et ne nous renseignent pas sur vos activités ailleurs sur votre ordinateur. L’utilisation normale d’AnduinOS ne nous transmet aucune télémétrie du système d’exploitation.</value>
+  </data>
+  <data name="These rights are subject to the conditions and exceptions in applicable law. To exercise them, email leadership@aiursoft.com. Please identify the service and, for a website log request, the approximate time of your visit. We may need further information to locate the relevant records and verify the request while protecting other people&apos;s data. We will respond within the time limits required by applicable law." xml:space="preserve">
+    <value>L’exercice de ces droits est soumis aux conditions et exceptions prévues par la législation applicable. Pour les exercer, envoyez un e-mail à leadership@aiursoft.com. Veuillez préciser le service concerné et, pour une demande portant sur les journaux d’un site web, indiquer l’heure approximative de votre visite. Nous pourrions avoir besoin d’informations complémentaires pour retrouver les données concernées et vérifier votre demande, tout en protégeant les données d’autrui. Nous vous répondrons dans les délais prévus par la législation applicable.</value>
+  </data>
+  <data name="Third-party software and license references" xml:space="preserve">
+    <value>Références aux logiciels tiers et à leurs licences</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Cette connexion est essentielle pour maintenir votre système sécurisé et à jour. Comme pour toute connexion HTTPS standard, ce processus exposera votre adresse IP à notre serveur.</value>
@@ -380,6 +557,12 @@
   </data>
   <data name="This license guarantees:" xml:space="preserve">
     <value>Cette licence garantit :</value>
+  </data>
+  <data name="This period supports investigation of security incidents, recurring attacks, service errors, and performance problems. It describes the website logs we retain; it is not a statement of every independent provider&apos;s retention practices." xml:space="preserve">
+    <value>Cette durée permet d’enquêter sur les incidents de sécurité, les attaques récurrentes, les erreurs de service et les problèmes de performance. Elle concerne les journaux de notre site web que nous conservons ; elle ne décrit pas les pratiques de conservation de tous les prestataires indépendants.</value>
+  </data>
+  <data name="This statement covers AnduinOS, our official website and its redirects, our documentation and news websites, and our package and image download services. Section 4 distinguishes website visits from software downloads. Third-party applications, repositories, mirrors, and community platforms have their own privacy practices." xml:space="preserve">
+    <value>La présente déclaration couvre AnduinOS, notre site web officiel et ses redirections, nos sites web de documentation et d’actualités, ainsi que nos services de téléchargement de paquets et d’images. La section 4 distingue les visites du site web des téléchargements de logiciels. Les applications tierces, les dépôts, les miroirs et les plateformes communautaires ont leurs propres pratiques en matière de confidentialité.</value>
   </data>
   <data name="Thus, AnduinOS is fundamentally privacy-preserving by design." xml:space="preserve">
     <value>Ainsi, AnduinOS est fondamentalement conçu pour préserver la confidentialité par défaut.</value>
@@ -411,6 +594,15 @@
   <data name="Transparency:" xml:space="preserve">
     <value>Transparence :</value>
   </data>
+  <data name="Updates and Other Network Features" xml:space="preserve">
+    <value>Mises à jour et autres fonctionnalités réseau</value>
+  </data>
+  <data name="Vultr Privacy Policy" xml:space="preserve">
+    <value>Politique de confidentialité de Vultr</value>
+  </data>
+  <data name="We also use website access logs to produce aggregate traffic statistics, such as page views and estimates based on unique IP addresses, and use aggregated CDN metrics to understand download traffic and bandwidth usage." xml:space="preserve">
+    <value>Nous utilisons également les journaux d’accès au site web pour produire des statistiques de fréquentation agrégées, telles que le nombre de pages consultées et des estimations fondées sur les adresses IP uniques, ainsi que des indicateurs agrégés du CDN pour comprendre le trafic de téléchargement et l’utilisation de la bande passante.</value>
+  </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Nous nous engageons à protéger votre vie privée.</value>
   </data>
@@ -420,11 +612,32 @@
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>Nous ne pouvons pas contrôler les pratiques de confidentialité de</value>
   </data>
+  <data name="We publish revisions on this page and update the date above. Changes may reflect our services, technical practices, or legal requirements. Please review the current statement when using our services." xml:space="preserve">
+    <value>Nous publions les révisions sur cette page et mettons à jour la date indiquée ci-dessus. Les modifications peuvent concerner nos services, nos pratiques techniques ou les exigences légales. Veuillez consulter la version en vigueur de cette déclaration lorsque vous utilisez nos services.</value>
+  </data>
+  <data name="We retain the website access logs described in Section 4 for up to 120 days." xml:space="preserve">
+    <value>Nous conservons pendant 120 jours au maximum les journaux d’accès au site web décrits à la section 4.</value>
+  </data>
   <data name="We strongly recommend users review Canonical&apos;s" xml:space="preserve">
     <value>Nous recommandons vivement aux utilisateurs de consulter la politique de confidentialité de Canonical</value>
   </data>
+  <data name="Website Access Logs" xml:space="preserve">
+    <value>Journaux d’accès au site web</value>
+  </data>
+  <data name="When you browse our website, we keep access logs to maintain its security and reliability. This includes our main website, its redirect, documentation, and news:" xml:space="preserve">
+    <value>Lorsque vous consultez notre site web, nous conservons des journaux d’accès afin d’en garantir la sécurité et la fiabilité. Cela concerne notre site principal, sa redirection, notre documentation et notre site d’actualités :</value>
+  </data>
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>Lorsque votre système vérifie les mises à jour logicielles (par exemple, en utilisant</value>
+  </data>
+  <data name="Where account features are available, we process information such as usernames, email addresses, display names, and account identifiers to provide authentication and account management. If you choose to sign in through an identity provider, we may receive additional account information from that provider as part of the authentication process." xml:space="preserve">
+    <value>Lorsque des fonctionnalités de compte sont disponibles, nous traitons des informations telles que les noms d’utilisateur, les adresses e-mail, les noms d’affichage et les identifiants de compte afin de gérer l’authentification et les comptes. Si vous choisissez de vous connecter par l’intermédiaire d’un fournisseur d’identité, nous pouvons recevoir de sa part des informations de compte supplémentaires dans le cadre du processus d’authentification.</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, the legal basis for this logging is our legitimate interest in keeping our services secure and reliable, preventing abuse, investigating incidents, understanding website and download traffic, and planning service capacity, under Article 6(1)(f). This basis requires consideration of your interests, rights, and freedoms." xml:space="preserve">
+    <value>Lorsque le RGPD de l&apos;UE ou du Royaume-Uni s&apos;applique, la base juridique de cet enregistrement est notre intérêt légitime à maintenir la sécurité et la fiabilité de nos services, à prévenir les abus, à enquêter sur les incidents, à comprendre le trafic des sites web et des téléchargements et à planifier la capacité des services, conformément à l&apos;article 6(1)(f). Cette base exige de prendre en considération vos intérêts, vos droits et vos libertés.</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, we process account and authentication information on the basis of our legitimate interests in providing and securing the online services you choose to use and managing user accounts, under Article 6(1)(f). We rely on our legitimate interests in responding to enquiries and providing support when processing information you submit for those purposes. These interests must be balanced against your interests, rights, and freedoms. Where processing is necessary to comply with an applicable legal obligation, we rely on Article 6(1)(c)." xml:space="preserve">
+    <value>Lorsque le RGPD de l’UE ou du Royaume-Uni s’applique, nous traitons les informations relatives aux comptes et à l’authentification sur la base de nos intérêts légitimes à fournir et à sécuriser les services en ligne que vous choisissez d’utiliser, ainsi qu’à gérer les comptes utilisateurs, conformément à l’article 6, paragraphe 1, point f). Nous nous appuyons sur nos intérêts légitimes pour répondre aux demandes et fournir une assistance lorsque nous traitons les informations que vous nous soumettez à ces fins. Ces intérêts doivent être mis en balance avec vos intérêts, vos droits et vos libertés. Lorsque le traitement est nécessaire au respect d’une obligation légale applicable, nous nous appuyons sur l’article 6, paragraphe 1, point c).</value>
   </data>
   <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
     <value>Bien qu’AnduinOS soit conçu pour un fonctionnement prioritairement local, certaines fonctionnalités de base nécessitent un accès au réseau. Ces connexions sont strictement destinées à récupérer les mises à jour logicielles ou les données que vous avez demandées, et sont</value>
@@ -441,6 +654,9 @@
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Vous pouvez modifier le code selon vos besoins, y compris supprimer les composants que vous ne jugez pas fiables.</value>
   </data>
+  <data name="You can manage or delete cookies through your browser settings, although doing so may sign you out or reset your preferences. For questions about your account information or requests to access or delete personal data, contact us using the details in Section 8." xml:space="preserve">
+    <value>Vous pouvez gérer ou supprimer les cookies via les paramètres de votre navigateur, bien que cela puisse vous déconnecter ou réinitialiser vos préférences. Pour toute question concernant les informations de votre compte ou toute demande d&apos;accès ou de suppression de données personnelles, contactez-nous en utilisant les coordonnées indiquées dans la section 8.</value>
+  </data>
   <data name="You can review the source code to verify there are no hidden tracking mechanisms." xml:space="preserve">
     <value>Vous pouvez examiner le code source pour vérifier qu&apos;il n&apos;y a pas de mécanismes de suivi cachés.</value>
   </data>
@@ -449,6 +665,12 @@
   </data>
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>Vous conservez un contrôle total sur vos données personnelles.</value>
+  </data>
+  <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
+    <value>Vos fichiers, vos paramètres et les journaux système enregistrés localement sont stockés sur votre appareil dans le cadre de son fonctionnement normal. Ce stockage local ne signifie pas que ces données nous sont transmises. Si vous choisissez de nous envoyer un rapport de bogue, une demande d’assistance ou toute autre information, nous recevons les éléments que vous nous transmettez.</value>
+  </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>Vos droits</value>
   </data>
 
 </root>

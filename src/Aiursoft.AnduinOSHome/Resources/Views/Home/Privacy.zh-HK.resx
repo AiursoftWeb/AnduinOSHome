@@ -69,11 +69,20 @@
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. AnduinOS 嘅數據收集</value>
   </data>
+  <data name="1. Scope and Data Controller" xml:space="preserve">
+    <value>1. 範圍及資料控制者</value>
+  </data>
+  <data name="2. Operating System Telemetry" xml:space="preserve">
+    <value>2. 作業系統遙測</value>
+  </data>
   <data name="2. Why Local Execution Matters" xml:space="preserve">
     <value>2. 本地執行嘅重要性</value>
   </data>
   <data name="3. Essential Network Connections &amp; Third-Party Services" xml:space="preserve">
     <value>3. 必要的網絡連接與第三方服務</value>
+  </data>
+  <data name="3. Network Communications and Third-Party Software" xml:space="preserve">
+    <value>3. 網絡通訊及第三方軟件</value>
   </data>
   <data name="3. Open Source Guarantees Your Freedom" xml:space="preserve">
     <value>3. 開源保障你嘅自由</value>
@@ -83,6 +92,12 @@
   </data>
   <data name="4. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>4. 上游軟件與私隱考量</value>
+  </data>
+  <data name="4. Website and Download Services" xml:space="preserve">
+    <value>4. 網站及下載服務</value>
+  </data>
+  <data name="5. Data Retention and Your Rights" xml:space="preserve">
+    <value>5. 資料保存期限及你的權利</value>
   </data>
   <data name="5. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>5. 如何處理潛在的Ubuntu遙測數據</value>
@@ -96,8 +111,14 @@
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. 如何處理潛在的 Ubuntu 遙測數據</value>
   </data>
+  <data name="6. Open Source and Verifiable Build Policies" xml:space="preserve">
+    <value>6. 開源及可驗證的建置政策</value>
+  </data>
   <data name="6. Responsibility Clarification" xml:space="preserve">
     <value>6. 責任聲明</value>
+  </data>
+  <data name="7. Changes to This Statement" xml:space="preserve">
+    <value>7. 本聲明的修訂</value>
   </data>
   <data name="7. Contact Information" xml:space="preserve">
     <value>7. 聯絡資料</value>
@@ -107,6 +128,12 @@
   </data>
   <data name="8. Contact Information" xml:space="preserve">
     <value>8. 聯絡資料</value>
+  </data>
+  <data name="8. Contact Us" xml:space="preserve">
+    <value>8. 聯絡我們</value>
+  </data>
+  <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
+    <value>帳戶資料會保留至提供帳戶服務及遵守適用法律責任所需的期間，並須符合適用的刪除規定。驗證工作階段和偏好設定 Cookie 各有其有效期限。這些記錄與網站存取記錄分開，不受 120 日的網站記錄保留期限限制。</value>
   </data>
   <data name="Additionally, some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>此外，部分上游組件可能設有獨立的數據收集機制。</value>
@@ -123,6 +150,12 @@
   <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
     <value>並且不會與政府、企業或任何第三方分享任何資訊。</value>
   </data>
+  <data name="AnduinOS build repository license" xml:space="preserve">
+    <value>AnduinOS 建置儲存庫授權條款</value>
+  </data>
+  <data name="AnduinOS builds upon software from Ubuntu, Debian, GNOME, and other projects. Upstream components may be configured, patched, or packaged differently for AnduinOS. Third-party applications and services may have their own reporting or diagnostic features, settings, and consent requirements." xml:space="preserve">
+    <value>AnduinOS 建基於 Ubuntu、Debian、GNOME 及其他專案的軟件。上游元件在 AnduinOS 中可能會以不同方式設定、修補或封裝。第三方應用程式及服務可能有其自身的資料回報或診斷功能、設定及同意要求。</value>
+  </data>
   <data name="AnduinOS does" xml:space="preserve">
     <value>AnduinOS 並唔會</value>
   </data>
@@ -132,11 +165,17 @@
   <data name="AnduinOS does not include any telemetry, analytics, advertising, tracking, or behavior profiling mechanisms." xml:space="preserve">
     <value>AnduinOS 不包含任何遙測、分析、廣告、追蹤或行為分析機制。</value>
   </data>
+  <data name="AnduinOS does not include first-party operating-system telemetry that reports user activity, diagnostics, or usage statistics to AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS 不包含會向 AIURSOFT LIMITED 回報使用者活動、診斷資料或使用統計資料的第一方作業系統遙測功能。</value>
+  </data>
   <data name="AnduinOS does not participate in any system reporting, usage statistics submission, or automated crash reporting" xml:space="preserve">
     <value>AnduinOS 不會參與任何系統報告、使用統計提交或自動崩潰報告。</value>
   </data>
   <data name="AnduinOS does not preinstall any telemetry-related packages" xml:space="preserve">
     <value>AnduinOS 並無預裝任何與遙測相關嘅套件</value>
+  </data>
+  <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
+    <value>AnduinOS 採用本機優先的設計，但並非只能離線使用。更新、網絡服務和應用程式可能會與外部伺服器通訊。其運作方式取決於已安裝的軟件、相關設定，以及你使用的功能。</value>
   </data>
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>AnduinOS GitHub 討論區</value>
@@ -159,8 +198,14 @@
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS 係一個基於 Ubuntu 嘅免費同開源 Linux® 發行版。</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>AnduinOS 是一個以 Ubuntu 為基礎的 Linux 發行版，由總部位於香港的 AIURSOFT LIMITED 維護。在本聲明中，「我們」及「我們的」均指 AIURSOFT LIMITED，即負責處理我們透過下文所述服務處理的個人資料的資料控制者。</value>
+  </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS 承諾預設保持您的安裝純淨且無遙測功能。</value>
+  </data>
+  <data name="AnduinOS is designed to operate without first-party operating-system telemetry. We do not collect usage statistics, diagnostic reports, or behavioral data from AnduinOS installations through an AnduinOS telemetry service." xml:space="preserve">
+    <value>AnduinOS 的設計毋須使用第一方作業系統遙測服務。我們不會透過 AnduinOS 遙測服務，收集 AnduinOS 安裝版本的使用統計、診斷報告或行為數據。</value>
   </data>
   <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
     <value>AnduinOS 由 AIURSOFT LIMITED 開發及維護。</value>
@@ -171,6 +216,12 @@
   <data name="AnduinOS itself does not collect, transmit, or store any user data." xml:space="preserve">
     <value>AnduinOS 本身不會收集、傳輸或儲存任何用戶數據。</value>
   </data>
+  <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
+    <value>AnduinOS 套件維護儲存庫授權條款</value>
+  </data>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>AnduinOS SimpleWeather 套件封裝</value>
+  </data>
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>AnduinOS 更新服務</value>
   </data>
@@ -180,17 +231,41 @@
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>由於安裝媒體已徹底移除此等套件，AnduinOS</value>
   </data>
+  <data name="Build Checks and Their Scope" xml:space="preserve">
+    <value>建置檢查及其範圍</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Canonical Livepatch 服務</value>
+  </data>
+  <data name="Canonical&apos;s privacy information" xml:space="preserve">
+    <value>Canonical 的私隱資料</value>
+  </data>
+  <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
+    <value>Cloudflare 資料處理附錄</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Cloudflare 協助傳送及保護我們的網站、套件下載及映像檔下載服務。提供這些服務時，Cloudflare 會處理 IP 位址及要求中繼資料。我們亦使用 Vultr 提供主機託管服務。負責營運及保障這些服務的人員，會將網站記錄用於上述用途。</value>
+  </data>
+  <data name="Cloudflare Privacy Policy" xml:space="preserve">
+    <value>Cloudflare 私隱政策</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>社群：</value>
   </data>
+  <data name="Complain to the relevant data protection authority, including, where the GDPR applies, the authority in your place of habitual residence, work, or the alleged infringement." xml:space="preserve">
+    <value>向相關的個人資料保障機構提出投訴；如《一般資料保護規例》（GDPR）適用，亦可向您慣常居住地、工作地或涉嫌侵權發生地的監管機構提出投訴。</value>
+  </data>
   <data name="Control:" xml:space="preserve">
     <value>控制：</value>
   </data>
+  <data name="Cookies and Account Information" xml:space="preserve">
+    <value>Cookie 同帳戶資料</value>
+  </data>
   <data name="Data Exposure:" xml:space="preserve">
     <value>資料洩露：</value>
+  </data>
+  <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
+    <value>視乎適用於閣下的法律及相關處理方式，閣下可能享有以下權利：</value>
   </data>
   <data name="disabled by default" xml:space="preserve">
     <value>預設停用</value>
@@ -210,8 +285,17 @@
   <data name="for details." xml:space="preserve">
     <value>詳情。</value>
   </data>
+  <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
+    <value>如需一般社群討論，您可以使用我們的公開討論論壇。如涉及個人資料的請求，請使用電郵。</value>
+  </data>
   <data name="For privacy concerns related to third-party applications," xml:space="preserve">
     <value>就第三方應用程式相關嘅私隱問題，</value>
+  </data>
+  <data name="For privacy questions and personal-data requests, contact AIURSOFT LIMITED:" xml:space="preserve">
+    <value>如有私隱方面的疑問或個人資料查詢，請聯絡 AIURSOFT LIMITED：</value>
+  </data>
+  <data name="For privacy questions or requests concerning your personal data, contact us at:" xml:space="preserve">
+    <value>如有關於私隱的疑問，或就您的個人資料提出要求，請透過以下方式聯絡我們：</value>
   </data>
   <data name="Freedom to inspect:" xml:space="preserve">
     <value>查閱自由：</value>
@@ -240,6 +324,9 @@
   <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
     <value>如你選擇手動啟用該擴充功能以查看天氣狀況：</value>
   </data>
+  <data name="If you contact us, we use the information you provide to address your enquiry or request. We retain that correspondence for as long as needed to handle the matter and meet applicable legal obligations; the website log retention period does not describe that correspondence." xml:space="preserve">
+    <value>如你聯絡我們，我們會使用你提供的資料處理你的查詢或要求。我們會在處理該事宜及履行適用法律責任所需的期間內保留相關通信；網站記錄的保留期限並不適用於該等通信。</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>如對本私隱聲明或 AnduinOS 的私隱慣例有任何疑問，請聯絡：</value>
   </data>
@@ -251,6 +338,12 @@
   </data>
   <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
     <value>參與任何系統回報、使用統計數據提交或自動化崩潰回報。</value>
+  </data>
+  <data name="Inspect the current package policy and image assertions" xml:space="preserve">
+    <value>檢視目前的套件政策及映像檔斷言</value>
+  </data>
+  <data name="Installing a package does not necessarily enable reporting. Whether a reporting feature operates depends on its configuration and any applicable consent requirements. Consult the relevant provider&apos;s privacy information, including:" xml:space="preserve">
+    <value>安裝套件並不一定會啟用資料回報功能。回報功能是否運作，取決於其設定及任何適用的同意要求。請參閱相關供應商的私隱資料，包括：</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>簡介</value>
@@ -266,6 +359,12 @@
   </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>最後更新：2025年5月10日</value>
+  </data>
+  <data name="Last updated: October 25, 2026" xml:space="preserve">
+    <value>最後更新：2026年10月25日</value>
+  </data>
+  <data name="Licensing and Source Code" xml:space="preserve">
+    <value>授權及原始碼</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>本地執行意味著AnduinOS的所有功能與服務均於</value>
@@ -300,6 +399,12 @@
   <data name="Note:" xml:space="preserve">
     <value>注意：</value>
   </data>
+  <data name="Object to processing based on legitimate interests on grounds relating to your situation." xml:space="preserve">
+    <value>就基於與你情況相關的理由，反對以合法利益為依據的資料處理。</value>
+  </data>
+  <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
+    <value>作業系統映像檔透過 cf.anduinos.com，使用 Cloudflare 的儲存及傳送服務提供。下載映像檔或套件需要網絡連線，而處理該要求的服務供應商會收到連線中繼資料。瀏覽我們網站上的下載頁面，則會受上述網站記錄政策約束。</value>
+  </data>
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>或任何其使用嘅天氣數據供應商。連接至呢啲服務必然會將你嘅 IP 地址暴露俾佢哋。</value>
   </data>
@@ -309,11 +414,26 @@
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>源自 Ubuntu、Debian、GNOME、Flathub 及其他來源。</value>
   </data>
+  <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
+    <value>我們設有帳戶功能的網站及網上服務使用共用的身份識別提供者，以支援單一登入。當你登入這些服務時，身份識別提供者與你正在使用的服務可能會互相傳送建立及維持工作階段所需的帳戶識別碼和驗證資料。這些資料用於身份驗證及帳戶管理，而非用於作業系統遙測。</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>我們的自動化映像檔測試會將即時環境中的已安裝套件資料庫及已安裝系統，與一份持續維護的禁止套件及套件名稱模式清單進行比對。如發現任何禁止套件，測試便會失敗。清單包括部分回報及背景服務套件，例如 ubuntu-report、popularity-contest、apport、whoopsie、snapd，以及 Ubuntu Pro 元件。</value>
+  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>我哋嘅自動化 ISO 構建流程強制執行一</value>
   </data>
+  <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
+    <value>本公司以香港為基地，而我們的服務供應商則在國際各地營運。透過這些服務處理的個人資料，包括連線中繼資料、帳戶資料及通信內容，可能會在您所在國家／地區以外的地方處理，包括歐洲經濟區或英國以外的地方。Cloudflare 在其私隱政策及《資料處理附加條款》中，說明了其國際資料處理及傳輸保障措施，包括在適用情況下採用的標準合約條款。如欲了解與您資料相關的傳輸事宜，請聯絡我們。</value>
+  </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>我哋嘅團隊已經審查過呢個擴充功能嘅源始碼</value>
+  </data>
+  <data name="Our websites and online services, including our main website, documentation, and news services, use cookies to support authentication, security, and user preferences. Language and theme preferences may be stored in cookies for up to one year. Authentication cookies are used to maintain login sessions and protect user accounts." xml:space="preserve">
+    <value>我們的網站及網上服務，包括主網站、文件和新聞服務，會使用 Cookie 以支援身份驗證、保障安全及記錄使用者偏好設定。語言和主題偏好設定可能會以 Cookie 儲存，最長一年。身份驗證 Cookie 用於維持登入工作階段及保護使用者帳戶。</value>
+  </data>
+  <data name="Package Updates and Image Downloads" xml:space="preserve">
+    <value>套件更新及映像檔下載</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>請參考相關上游服務嘅私隱政策。</value>
@@ -330,11 +450,35 @@
   <data name="Privacy Statement" xml:space="preserve">
     <value>私隱聲明</value>
   </data>
+  <data name="Public source code allows independent review of our implementation and privacy-related claims. Its availability does not by itself establish that every component or released binary has undergone a complete privacy audit." xml:space="preserve">
+    <value>公開源碼讓外界可以獨立審視我們的實作及與私隱相關的聲明。僅僅提供源碼，並不代表每個元件或已發布的二進制檔案都經過全面的私隱審核。</value>
+  </data>
+  <data name="Receive portable data where the legal conditions for portability are met." xml:space="preserve">
+    <value>在符合法律規定的可攜性條件時，接收可攜資料。</value>
+  </data>
   <data name="Reducing external communications limits exposure to interception or exploitation risks." xml:space="preserve">
     <value>減少外部通訊可降低被攔截或利用嘅風險。</value>
   </data>
+  <data name="Request correction of inaccurate data, deletion, or restriction of processing." xml:space="preserve">
+    <value>要求更正不準確的資料、刪除資料或限制處理。</value>
+  </data>
+  <data name="Request information about and access to your personal data, including a copy." xml:space="preserve">
+    <value>要求查詢及查閱您的個人資料，包括索取副本。</value>
+  </data>
+  <data name="Retention and Legal Basis" xml:space="preserve">
+    <value>保留期限及法律依據</value>
+  </data>
+  <data name="Running apt update or apt upgrade does not send us telemetry or reports about how you use your computer. We do not retain HTTP access logs on the package origin servers behind packages.anduinos.com. This describes our origin servers; it does not mean that no connection information is processed along the delivery path." xml:space="preserve">
+    <value>執行 apt update 或 apt upgrade 不會向我們傳送遙測資料，亦不會回報你如何使用電腦。我們不會保留 packages.anduinos.com 背後套件來源伺服器上的 HTTP 存取記錄。這描述的是我們的來源伺服器；並不代表傳送途徑上不會處理任何連線資訊。</value>
+  </data>
   <data name="Security:" xml:space="preserve">
     <value>安全性：</value>
+  </data>
+  <data name="Service Providers and International Processing" xml:space="preserve">
+    <value>服務供應商及國際處理</value>
+  </data>
+  <data name="SimpleWeather" xml:space="preserve">
+    <value>SimpleWeather</value>
   </data>
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>SimpleWeather 擴充功能</value>
@@ -342,11 +486,20 @@
   <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
     <value>SimpleWeather 延伸模組（預設停用）</value>
   </data>
+  <data name="SimpleWeather source code" xml:space="preserve">
+    <value>SimpleWeather 原始碼</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Snap 守護進程</value>
   </data>
   <data name="Snap store background services (if Snap is manually installed by users)" xml:space="preserve">
     <value>Snap 商店背景服務（如用戶手動安裝 Snap）</value>
+  </data>
+  <data name="Software repositories and mirrors receive your IP address and request metadata when your device connects to them. Features such as software updates, time synchronization, connectivity checks, firmware updates, web browsing, and online accounts may require network access, depending on the software and configuration. Some connections can occur automatically in the background." xml:space="preserve">
+    <value>當你的裝置連接至軟件套件庫及鏡像站時，它們會收到你的 IP 位址及請求中繼資料。視乎軟件及其設定，軟件更新、時間同步、連線檢查、韌體更新、瀏覽網頁及網上帳戶等功能可能需要網絡連線。部分連線可能會在背景自動進行。</value>
+  </data>
+  <data name="Some system features and third-party applications require network access. We keep website access logs for security and reliability, and our infrastructure providers process connection metadata when delivering our services. This statement explains these activities and their scope." xml:space="preserve">
+    <value>部分系統功能及第三方應用程式需要網絡連線。我們會保留網站存取記錄，以維護安全及可靠性；我們的基礎設施服務供應商則會在提供服務時處理連線中繼資料。本聲明旨在說明這些活動及其範圍。</value>
   </data>
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>部分上游組件可能設有獨立嘅數據收集機制。</value>
@@ -357,11 +510,20 @@
   <data name="such as:" xml:space="preserve">
     <value>例如：</value>
   </data>
+  <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
+    <value>AnduinOS 建置及套件維護程式碼庫所發布的程式碼採用 GPLv3 授權，除非另有註明。第三方元件保留各自的授權。將它們納入發行版本，並不代表整個作業系統採用單一授權；每個元件的使用、修改及再分發權限，均受其適用條款規管。</value>
+  </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>擴充套件必須連線至</value>
   </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>AnduinOS 嘅開放性質讓用戶能夠獨立驗證系統係尊重佢哋嘅私隱。</value>
+  </data>
+  <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
+    <value>所使用的供應商及請求內容視乎擴充功能版本、AnduinOS 設定及你的設定而定。請在擴充功能的偏好設定中查看可用的供應商及位置設定，並閱讀各供應商的私隱政策。你可以查閱上游原始碼及我們的封裝方式：</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>在 AnduinOS 中，SimpleWeather 桌面擴充功能預設為停用。若啟用天氣功能，擴充功能可能會連接第三方服務，以根據 IP 地址定位、搜尋地點及取得天氣預報。服務供應商會收到用來連線的 IP 地址，以及處理請求所需的資料，例如地點搜尋字詞或座標。</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>系統不會為收集用戶資訊而啟動任何隱藏背景程序或網絡通訊。</value>
@@ -369,11 +531,26 @@
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>除咗明確繼承自Ubuntu嘅上游依賴之外，並冇任何專有二進制模組或封閉模組。</value>
   </data>
+  <data name="These checks provide evidence about the packages present in the tested image and installation. They are not a comprehensive audit of all network behavior or all possible reporting capabilities. Later updates, additional software, and configuration changes can alter the system&apos;s behavior." xml:space="preserve">
+    <value>這些檢查可提供證據，說明受測映像檔及已安裝系統中有哪些套件。這些檢查並非對所有網絡行為或所有可能的資料回報功能進行全面審核。日後的更新、新增軟件及設定變更都可能改變系統的行為。</value>
+  </data>
   <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
     <value>此類端點僅為純靜態檔案分發伺服器。它們完全不具备任何資料收集、分析或用戶畫像功能。</value>
   </data>
+  <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
+    <value>這些記錄包括 IP 地址、請求時間戳記、請求的 URL、瀏覽器資訊、回應狀態、回應大小及處理時間。我們會用這些記錄監察服務、發出自動警示、偵測及防禦攻擊、排解問題，以及診斷效能。</value>
+  </data>
   <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
     <value>日後安裝此等套件後，其相應的量度機制將按 Canonical 的政策啟用。</value>
+  </data>
+  <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
+    <value>這些紀錄描述的是對我們網站的請求。它們不會讓我們存取你的檔案，也不會記錄你在電腦其他地方的活動。正常使用 AnduinOS 不會向我們傳送作業系統遙測資料。</value>
+  </data>
+  <data name="These rights are subject to the conditions and exceptions in applicable law. To exercise them, email leadership@aiursoft.com. Please identify the service and, for a website log request, the approximate time of your visit. We may need further information to locate the relevant records and verify the request while protecting other people&apos;s data. We will respond within the time limits required by applicable law." xml:space="preserve">
+    <value>上述權利須遵守適用法律訂明的條件及例外情況。如欲行使上述權利，請電郵至 leadership@aiursoft.com。請註明所涉及的服務；如要求查閱網站記錄，請提供大約瀏覽時間。為找出相關記錄並在保障他人資料的同時核實要求，我們或需要向你索取更多資料。我們會在適用法律規定的時限內回覆。</value>
+  </data>
+  <data name="Third-party software and license references" xml:space="preserve">
+    <value>第三方軟件及授權參考資料</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>此連接對於保持系統安全及更新至關重要。如同任何標準 HTTPS 連接，此過程將會向我們的伺服器暴露你的 IP 地址。</value>
@@ -389,6 +566,12 @@
   </data>
   <data name="This license guarantees:" xml:space="preserve">
     <value>此許可證保證：</value>
+  </data>
+  <data name="This period supports investigation of security incidents, recurring attacks, service errors, and performance problems. It describes the website logs we retain; it is not a statement of every independent provider&apos;s retention practices." xml:space="preserve">
+    <value>此保留期限有助調查保安事故、反覆發生的攻擊、服務錯誤及效能問題。這段期限說明我們保留網站日誌的時間，並不代表每個獨立服務供應商的資料保留做法。</value>
+  </data>
+  <data name="This statement covers AnduinOS, our official website and its redirects, our documentation and news websites, and our package and image download services. Section 4 distinguishes website visits from software downloads. Third-party applications, repositories, mirrors, and community platforms have their own privacy practices." xml:space="preserve">
+    <value>本聲明涵蓋 AnduinOS、我們的官方網站及其重新導向頁面、文件和新聞網站，以及套件和映像檔下載服務。第 4 節會區分網站瀏覽與軟件下載。第三方應用程式、軟件庫、鏡像站和社群平台各自有其私隱政策。</value>
   </data>
   <data name="Thus, AnduinOS is fundamentally privacy-preserving by design." xml:space="preserve">
     <value>因此，AnduinOS 從設計根本上就係以保護私隱為原則。</value>
@@ -420,6 +603,15 @@
   <data name="Transparency:" xml:space="preserve">
     <value>透明度：</value>
   </data>
+  <data name="Updates and Other Network Features" xml:space="preserve">
+    <value>更新及其他網絡功能</value>
+  </data>
+  <data name="Vultr Privacy Policy" xml:space="preserve">
+    <value>Vultr 私隱政策</value>
+  </data>
+  <data name="We also use website access logs to produce aggregate traffic statistics, such as page views and estimates based on unique IP addresses, and use aggregated CDN metrics to understand download traffic and bandwidth usage." xml:space="preserve">
+    <value>我們亦會使用網站存取記錄製作整體流量統計資料，例如網頁瀏覽量及根據唯一 IP 位址估算的訪客數，並使用彙總的 CDN 指標了解下載流量及頻寬用量。</value>
+  </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>我們致力於保護您的私隱。</value>
   </data>
@@ -429,11 +621,32 @@
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>我們無法控制……的私隱慣例</value>
   </data>
+  <data name="We publish revisions on this page and update the date above. Changes may reflect our services, technical practices, or legal requirements. Please review the current statement when using our services." xml:space="preserve">
+    <value>我們會在此頁發佈修訂內容，並更新上方的日期。修訂內容可能反映我們的服務、技術措施或法律要求。使用我們的服務時，請查閱最新聲明。</value>
+  </data>
+  <data name="We retain the website access logs described in Section 4 for up to 120 days." xml:space="preserve">
+    <value>我們會保留第 4 節所述的網站存取記錄，最長為 120 日。</value>
+  </data>
   <data name="We strongly recommend users review Canonical&apos;s" xml:space="preserve">
     <value>我們強烈建議用戶查閱 Canonical 嘅</value>
   </data>
+  <data name="Website Access Logs" xml:space="preserve">
+    <value>網站存取記錄</value>
+  </data>
+  <data name="When you browse our website, we keep access logs to maintain its security and reliability. This includes our main website, its redirect, documentation, and news:" xml:space="preserve">
+    <value>當您瀏覽我們的網站時，我們會保留存取日誌以維持其安全性和可靠性。這包括我們的主要網站、其轉址、文件及新聞：</value>
+  </data>
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>當你嘅系統檢查軟件更新時（例如使用</value>
+  </data>
+  <data name="Where account features are available, we process information such as usernames, email addresses, display names, and account identifiers to provide authentication and account management. If you choose to sign in through an identity provider, we may receive additional account information from that provider as part of the authentication process." xml:space="preserve">
+    <value>如有提供帳戶功能，我們會處理用戶名稱、電郵地址、顯示名稱及帳戶識別碼等資料，以提供身份驗證及帳戶管理服務。如果你選擇透過身份識別服務提供者登入，我們可能會在身份驗證過程中，從該提供者接收額外的帳戶資料。</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, the legal basis for this logging is our legitimate interest in keeping our services secure and reliable, preventing abuse, investigating incidents, understanding website and download traffic, and planning service capacity, under Article 6(1)(f). This basis requires consideration of your interests, rights, and freedoms." xml:space="preserve">
+    <value>如適用歐盟或英國《一般資料保護規例》（GDPR），我們基於《規例》第 6(1)(f) 條所述的合法利益處理這些日誌，以確保服務安全可靠、防止濫用、調查事故、了解網站及下載流量，以及規劃服務容量。採用此法律基礎時，必須考慮你的利益、權利及自由。</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, we process account and authentication information on the basis of our legitimate interests in providing and securing the online services you choose to use and managing user accounts, under Article 6(1)(f). We rely on our legitimate interests in responding to enquiries and providing support when processing information you submit for those purposes. These interests must be balanced against your interests, rights, and freedoms. Where processing is necessary to comply with an applicable legal obligation, we rely on Article 6(1)(c)." xml:space="preserve">
+    <value>如適用歐盟或英國《一般資料保障規例》（GDPR），我們根據第 6(1)(f) 條，以提供及保障您選擇使用的網上服務，以及管理用戶帳戶的合法利益為依據，處理帳戶及身份驗證資料。當我們處理您為查詢及尋求支援而提交的資料時，亦會依據回覆查詢及提供支援的合法利益。這些利益必須與您的利益、權利及自由取得平衡。如為遵守適用的法律義務而有必要處理資料，我們會依據第 6(1)(c) 條。</value>
   </data>
   <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
     <value>雖然 AnduinOS 專為本地優先操作而設計，但某些基本功能需要網絡存取權。這些連線嚴格用於獲取軟件更新或您請求的數據，並且</value>
@@ -450,6 +663,9 @@
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>你可以調整代碼以符合你嘅需要，包括移除任何你唔信任嘅組件。</value>
   </data>
+  <data name="You can manage or delete cookies through your browser settings, although doing so may sign you out or reset your preferences. For questions about your account information or requests to access or delete personal data, contact us using the details in Section 8." xml:space="preserve">
+    <value>你可以透過瀏覽器設定管理或刪除 Cookie，但這樣可能會令你登出或重設偏好設定。如對你的帳戶資料有疑問，或想要求查閱或刪除個人資料，請使用第 8 節所列的聯絡資料與我們聯絡。</value>
+  </data>
   <data name="You can review the source code to verify there are no hidden tracking mechanisms." xml:space="preserve">
     <value>你可以查閱源代碼以確認當中沒有隱藏的追蹤機制。</value>
   </data>
@@ -458,6 +674,12 @@
   </data>
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>你完全保留對個人資料嘅控制權。</value>
+  </data>
+  <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
+    <value>作為正常運作的一部分，你的檔案、設定和本機系統記錄會儲存在你的裝置上。本機儲存並不代表這些記錄會傳送給我們。如果你選擇向我們提交錯誤報告、支援請求或其他資料，我們便會收到你提交的內容。</value>
+  </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>你的權利</value>
   </data>
 
 </root>
