@@ -66,11 +66,20 @@
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. AnduinOS Tarafından Veri Toplama</value>
   </data>
+  <data name="1. Scope and Data Controller" xml:space="preserve">
+    <value>1. Kapsam ve Veri Sorumlusu</value>
+  </data>
+  <data name="2. Operating System Telemetry" xml:space="preserve">
+    <value>2. İşletim Sistemi Telemetrisi</value>
+  </data>
   <data name="2. Why Local Execution Matters" xml:space="preserve">
     <value>2. Yerel Yürütmenin Önemi</value>
   </data>
   <data name="3. Essential Network Connections &amp; Third-Party Services" xml:space="preserve">
     <value>3. Temel Ağ Bağlantıları ve Üçüncü Taraf Hizmetler</value>
+  </data>
+  <data name="3. Network Communications and Third-Party Software" xml:space="preserve">
+    <value>3. Ağ İletişimleri ve Üçüncü Taraf Yazılımları</value>
   </data>
   <data name="3. Open Source Guarantees Your Freedom" xml:space="preserve">
     <value>3. Açık Kaynak Özgürlüğünüzü Garanti Eder</value>
@@ -80,6 +89,12 @@
   </data>
   <data name="4. Upstream Software and Privacy Considerations" xml:space="preserve">
     <value>4. Üst Yazılım ve Gizlilik Değerlendirmeleri</value>
+  </data>
+  <data name="4. Website and Download Services" xml:space="preserve">
+    <value>4. Web Sitesi ve İndirme Hizmetleri</value>
+  </data>
+  <data name="5. Data Retention and Your Rights" xml:space="preserve">
+    <value>5. Veri Saklama ve Haklarınız</value>
   </data>
   <data name="5. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>5. Potansiyel Ubuntu Telemetrisi Nasıl Ele Alınır</value>
@@ -93,8 +108,14 @@
   <data name="6. How to Handle Potential Ubuntu Telemetry" xml:space="preserve">
     <value>6. Potansiyel Ubuntu Telemetrisi Nasıl Ele Alınır</value>
   </data>
+  <data name="6. Open Source and Verifiable Build Policies" xml:space="preserve">
+    <value>6. Açık Kaynak ve Doğrulanabilir Derleme Politikaları</value>
+  </data>
   <data name="6. Responsibility Clarification" xml:space="preserve">
     <value>6. Sorumluluk Açıklaması</value>
+  </data>
+  <data name="7. Changes to This Statement" xml:space="preserve">
+    <value>7. Bu Bildirimde Yapılan Değişiklikler</value>
   </data>
   <data name="7. Contact Information" xml:space="preserve">
     <value>7. İletişim Bilgileri</value>
@@ -104,6 +125,12 @@
   </data>
   <data name="8. Contact Information" xml:space="preserve">
     <value>8. İletişim Bilgileri</value>
+  </data>
+  <data name="8. Contact Us" xml:space="preserve">
+    <value>8. Bize Ulaşın</value>
+  </data>
+  <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
+    <value>Hesap bilgileri, hesap hizmetlerini sunmak ve geçerli yasal yükümlülüklere uymak için gerekli olduğu sürece, geçerli silme gerekliliklerine tabi olarak saklanır. Kimlik doğrulama oturumlarının ve tercih çerezlerinin kendi sona erme süreleri vardır. Bu kayıtlar web sitesi erişim günlüklerinden ayrıdır ve 120 günlük web sitesi günlüğü saklama süresine tabi değildir.</value>
   </data>
   <data name="Additionally, some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>Ayrıca, bazı yukarı akış bileşenlerinin bağımsız veri toplama mekanizmaları olabilir.</value>
@@ -117,6 +144,12 @@
   <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
     <value>ve herhangi bir bilgiyi hükümetler, şirketler veya üçüncü taraflarla paylaşmaz.</value>
   </data>
+  <data name="AnduinOS build repository license" xml:space="preserve">
+    <value>AnduinOS derleme deposu lisansı</value>
+  </data>
+  <data name="AnduinOS builds upon software from Ubuntu, Debian, GNOME, and other projects. Upstream components may be configured, patched, or packaged differently for AnduinOS. Third-party applications and services may have their own reporting or diagnostic features, settings, and consent requirements." xml:space="preserve">
+    <value>AnduinOS, Ubuntu, Debian, GNOME ve diğer projelerin yazılımlarını temel alır. Üst kaynak bileşenleri AnduinOS için farklı şekilde yapılandırılabilir, yamalanabilir veya paketlenebilir. Üçüncü taraf uygulama ve hizmetlerin kendilerine ait raporlama ya da tanılama özellikleri, ayarları ve izin gereklilikleri olabilir.</value>
+  </data>
   <data name="AnduinOS does" xml:space="preserve">
     <value>AnduinOS yapar</value>
   </data>
@@ -126,11 +159,17 @@
   <data name="AnduinOS does not include any telemetry, analytics, advertising, tracking, or behavior profiling mechanisms." xml:space="preserve">
     <value>AnduinOS, herhangi bir telemetri, analiz, reklam, takip veya davranış profili oluşturma mekanizması içermez.</value>
   </data>
+  <data name="AnduinOS does not include first-party operating-system telemetry that reports user activity, diagnostics, or usage statistics to AIURSOFT LIMITED." xml:space="preserve">
+    <value>AnduinOS, kullanıcı etkinliği, tanılama verileri veya kullanım istatistiklerini AIURSOFT LIMITED&apos;e bildiren birinci taraf işletim sistemi telemetrisi içermez.</value>
+  </data>
   <data name="AnduinOS does not participate in any system reporting, usage statistics submission, or automated crash reporting" xml:space="preserve">
     <value>AnduinOS herhangi bir sistem raporlamasına, kullanım istatistikleri gönderimine veya otomatik çökme raporlamasına katılmaz.</value>
   </data>
   <data name="AnduinOS does not preinstall any telemetry-related packages" xml:space="preserve">
     <value>AnduinOS, herhangi bir telemetri ile ilgili paketi önceden yüklemez.</value>
+  </data>
+  <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
+    <value>AnduinOS yerel öncelikli bir tasarım benimser, ancak yalnızca çevrimdışı çalışan bir sistem değildir. Güncellemeler, ağ hizmetleri ve uygulamalar harici sunucularla iletişim kurabilir. Bunların davranışı, yüklenen yazılıma, ayarlarına ve kullandığınız özelliklere bağlıdır.</value>
   </data>
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>AnduinOS GitHub Tartışmaları</value>
@@ -153,8 +192,14 @@
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS, Ubuntu tabanlı ücretsiz ve açık kaynaklı bir Linux® dağıtımıdır.</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>AnduinOS, Hong Kong merkezli AIURSOFT LIMITED tarafından sürdürülen, Ubuntu tabanlı bir Linux dağıtımıdır. Bu metinde “biz”, “bize” ve “bizim” ifadeleri, aşağıda açıklanan hizmetler aracılığıyla işlediğimiz kişisel verilerden sorumlu veri sorumlusu AIURSOFT LIMITED’i ifade eder.</value>
+  </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS, varsayılan olarak kurulumunuzu temiz ve telemetri içermeyen bir şekilde tutmaya kararlıdır.</value>
+  </data>
+  <data name="AnduinOS is designed to operate without first-party operating-system telemetry. We do not collect usage statistics, diagnostic reports, or behavioral data from AnduinOS installations through an AnduinOS telemetry service." xml:space="preserve">
+    <value>AnduinOS, birinci taraf işletim sistemi telemetrisi olmadan çalışacak şekilde tasarlanmıştır. AnduinOS telemetri hizmeti aracılığıyla AnduinOS kurulumlarından kullanım istatistikleri, tanılama raporları veya davranış verileri toplamıyoruz.</value>
   </data>
   <data name="AnduinOS is developed and maintained by AIURSOFT LIMITED." xml:space="preserve">
     <value>AnduinOS, AIURSOFT LIMITED tarafından geliştirilmiş ve bakımı yapılmaktadır.</value>
@@ -165,6 +210,12 @@
   <data name="AnduinOS itself does not collect, transmit, or store any user data." xml:space="preserve">
     <value>AnduinOS, kullanıcı verilerini toplamaz, iletmez veya depolamaz.</value>
   </data>
+  <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
+    <value>AnduinOS paket bakım deposu lisansı</value>
+  </data>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>AnduinOS SimpleWeather paketlemesi</value>
+  </data>
   <data name="AnduinOS Update Service" xml:space="preserve">
     <value>AnduinOS Güncelleme Hizmeti</value>
   </data>
@@ -174,17 +225,41 @@
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>Bu paketler yükleme ortamından fiziksel olarak temizlendiğinden, AnduinOS</value>
   </data>
+  <data name="Build Checks and Their Scope" xml:space="preserve">
+    <value>Derleme Kontrolleri ve Kapsamı</value>
+  </data>
   <data name="Canonical Livepatch service" xml:space="preserve">
     <value>Canonical Livepatch hizmeti</value>
+  </data>
+  <data name="Canonical&apos;s privacy information" xml:space="preserve">
+    <value>Canonical&apos;ın gizlilik bilgileri</value>
+  </data>
+  <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
+    <value>Cloudflare Veri İşleme Eki</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Cloudflare, web sitelerimizin, paket indirmelerinin ve imaj indirmelerinin sunulmasına ve korunmasına yardımcı olur. Bu hizmetleri sunarken IP adreslerini ve istek üst verilerini işler. Barındırma için Vultr&apos;ı da kullanıyoruz. Bu hizmetleri işletmek ve güvenliğini sağlamakla sorumlu personelimiz, yukarıda açıklanan amaçlar doğrultusunda web sitesi günlüklerini kullanır.</value>
+  </data>
+  <data name="Cloudflare Privacy Policy" xml:space="preserve">
+    <value>Cloudflare Gizlilik Politikası</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>Topluluk:</value>
   </data>
+  <data name="Complain to the relevant data protection authority, including, where the GDPR applies, the authority in your place of habitual residence, work, or the alleged infringement." xml:space="preserve">
+    <value>İlgili veri koruma otoritesine şikâyette bulunma hakkınız vardır. GDPR’ın geçerli olduğu durumlarda, mutat ikamet yerinizin, çalıştığınız yerin veya iddia edilen ihlalin gerçekleştiği yerin yetkili otoritesine de şikâyette bulunabilirsiniz.</value>
+  </data>
   <data name="Control:" xml:space="preserve">
     <value>Kontrol:</value>
   </data>
+  <data name="Cookies and Account Information" xml:space="preserve">
+    <value>Çerezler ve Hesap Bilgileri</value>
+  </data>
   <data name="Data Exposure:" xml:space="preserve">
     <value>Veri Açıklığı:</value>
+  </data>
+  <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
+    <value>Sizin için geçerli olan hukuka ve söz konusu veri işleme faaliyetine bağlı olarak şu haklara sahip olabilirsiniz:</value>
   </data>
   <data name="disabled by default" xml:space="preserve">
     <value>varsayılan olarak devre dışı</value>
@@ -204,8 +279,17 @@
   <data name="for details." xml:space="preserve">
     <value>detaylar için.</value>
   </data>
+  <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
+    <value>Genel topluluk tartışmaları için herkese açık tartışma forumumuzu kullanabilirsiniz. Kişisel bilgiler içeren talepler için lütfen e-posta gönderin.</value>
+  </data>
   <data name="For privacy concerns related to third-party applications," xml:space="preserve">
     <value>Üçüncü taraf uygulamalarla ilgili gizlilik endişeleri için,</value>
+  </data>
+  <data name="For privacy questions and personal-data requests, contact AIURSOFT LIMITED:" xml:space="preserve">
+    <value>Gizlilik soruları ve kişisel veri talepleri için AIURSOFT LIMITED ile iletişime geçin:</value>
+  </data>
+  <data name="For privacy questions or requests concerning your personal data, contact us at:" xml:space="preserve">
+    <value>Kişisel verilerinizle ilgili gizlilik sorularınız veya talepleriniz için bize şu adresten ulaşabilirsiniz:</value>
   </data>
   <data name="Freedom to inspect:" xml:space="preserve">
     <value>İnceleme özgürlüğü:</value>
@@ -231,6 +315,9 @@
   <data name="If you choose to manually enable it to see weather conditions:" xml:space="preserve">
     <value>Hava durumunu görüntülemek için bunu manuel olarak etkinleştirmeyi seçerseniz:</value>
   </data>
+  <data name="If you contact us, we use the information you provide to address your enquiry or request. We retain that correspondence for as long as needed to handle the matter and meet applicable legal obligations; the website log retention period does not describe that correspondence." xml:space="preserve">
+    <value>Bizimle iletişime geçmeniz hâlinde, sorunuz veya talebinizle ilgilenmek için bize sağladığınız bilgileri kullanırız. Yazışmaları, konuyu ele almak ve geçerli yasal yükümlülükleri yerine getirmek için gerektiği süre boyunca saklarız; web sitesi günlükleri için geçerli saklama süresi bu yazışmaları kapsamaz.</value>
+  </data>
   <data name="If you have any questions regarding this Privacy Statement or AnduinOS&apos;s privacy practices, please contact:" xml:space="preserve">
     <value>Bu Gizlilik Bildirimi veya AnduinOS&apos;un gizlilik uygulamaları hakkında herhangi bir sorunuz varsa, lütfen iletişime geçin:</value>
   </data>
@@ -242,6 +329,12 @@
   </data>
   <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
     <value>herhangi bir sistem raporlaması, kullanım istatistikleri gönderimi veya otomatik çöküş raporlaması.</value>
+  </data>
+  <data name="Inspect the current package policy and image assertions" xml:space="preserve">
+    <value>Mevcut paket politikasını ve imaj doğrulamalarını inceleyin</value>
+  </data>
+  <data name="Installing a package does not necessarily enable reporting. Whether a reporting feature operates depends on its configuration and any applicable consent requirements. Consult the relevant provider&apos;s privacy information, including:" xml:space="preserve">
+    <value>Bir paketin yüklenmesi, raporlamanın mutlaka etkinleştirileceği anlamına gelmez. Bir raporlama özelliğinin çalışıp çalışmayacağı, yapılandırmasına ve geçerli olabilecek izin gerekliliklerine bağlıdır. İlgili sağlayıcının gizlilik bilgilerini inceleyin. Bunlar arasında şunlar yer alır:</value>
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Giriş</value>
@@ -257,6 +350,12 @@
   </data>
   <data name="Last updated: May 10, 2025" xml:space="preserve">
     <value>Son güncelleme: 10 Mayıs 2025</value>
+  </data>
+  <data name="Last updated: October 25, 2026" xml:space="preserve">
+    <value>Son güncelleme: 25 Ekim 2026</value>
+  </data>
+  <data name="Licensing and Source Code" xml:space="preserve">
+    <value>Lisanslama ve Kaynak Kodu</value>
   </data>
   <data name="Local execution means that all features and services of AnduinOS are performed" xml:space="preserve">
     <value>Yerel yürütme, AnduinOS&apos;un tüm özellik ve hizmetlerinin gerçekleştirildiği anlamına gelir</value>
@@ -291,6 +390,12 @@
   <data name="Note:" xml:space="preserve">
     <value>Not:</value>
   </data>
+  <data name="Object to processing based on legitimate interests on grounds relating to your situation." xml:space="preserve">
+    <value>Durumunuzla ilgili gerekçelerle meşru menfaatlere dayalı veri işlenmesine itiraz etme.</value>
+  </data>
+  <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
+    <value>İşletim sistemi imajları, Cloudflare’ın depolama ve dağıtım hizmetleri kullanılarak cf.anduinos.com üzerinden sunulur. Bir imajı veya paketi indirmek için ağ bağlantısı gerekir ve bu isteği işleyen sağlayıcılar bağlantı meta verilerini alır. Web sitemizdeki bir indirme sayfasını ziyaret etmeniz, yukarıda açıklanan web sitesi günlük kaydına tabidir.</value>
+  </data>
   <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
     <value>veya kullandığı herhangi bir hava durumu veri sağlayıcısının gizlilik uygulamalarını kontrol edemeyiz. Bu hizmetlere bağlanmak, IP adresinizi onlara gösterecektir.</value>
   </data>
@@ -300,11 +405,26 @@
   <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
     <value>Ubuntu, Debian, GNOME, Flathub ve diğer kaynaklardan gelen.</value>
   </data>
+  <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
+    <value>Hesap özelliği sunan web sitelerimiz ve çevrimiçi hizmetlerimiz, tek oturum açmayı desteklemek için ortak bir kimlik sağlayıcısı kullanır. Bu hizmetlerde oturum açtığınızda, kimlik sağlayıcısı ile eriştiğiniz hizmet, oturumunuzu başlatmak ve sürdürmek için gerekli hesap tanımlayıcılarını ve kimlik doğrulama bilgilerini paylaşabilir. Bu bilgiler, işletim sistemi telemetrisi için değil, kimlik doğrulama ve hesap yönetimi için kullanılır.</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>Otomatik imaj testlerimiz, canlı ortamdaki kurulu paket veritabanını ve kurulu sistemi, yasaklı paketler ile paket adı kalıplarından oluşan güncel bir listeye göre denetler. Yasaklı bir paket varsa denetim başarısız olur. Listede ubuntu-report, popularity-contest, apport, whoopsie, snapd ve Ubuntu Pro bileşenleri gibi belirli raporlama ve arka plan hizmeti paketleri bulunur.</value>
+  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>Otomatik ISO oluşturma işlem hattımız,</value>
   </data>
+  <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
+    <value>Şirketimiz Hong Kong&apos;da yerleşiktir ve hizmet sağlayıcılarımız uluslararası ölçekte faaliyet gösterir. Bağlantı meta verileri, hesap bilgileri ve yazışmalar dâhil olmak üzere bu hizmetler aracılığıyla işlenen kişisel veriler, Avrupa Ekonomik Alanı veya Birleşik Krallık dışı da dâhil olmak üzere ülkeniz dışında işlenebilir. Cloudflare, uygulanabildiği durumlarda standart sözleşme maddeleri de dâhil olmak üzere, uluslararası veri işleme ve aktarımına ilişkin güvencelerini gizlilik politikası ve Veri İşleme Eki&apos;nde açıklar. Verilerinizle ilgili aktarımlar hakkında bilgi almak için bizimle iletişime geçebilirsiniz.</value>
+  </data>
   <data name="Our team has reviewed the source code of this extension" xml:space="preserve">
     <value>Ekibimiz bu eklentinin kaynak kodunu inceledi</value>
+  </data>
+  <data name="Our websites and online services, including our main website, documentation, and news services, use cookies to support authentication, security, and user preferences. Language and theme preferences may be stored in cookies for up to one year. Authentication cookies are used to maintain login sessions and protect user accounts." xml:space="preserve">
+    <value>Ana web sitemiz, belgelerimiz ve haber hizmetlerimiz dâhil olmak üzere web sitelerimiz ve çevrimiçi hizmetlerimiz; kimlik doğrulama, güvenlik ve kullanıcı tercihlerini desteklemek için çerezler kullanır. Dil ve tema tercihleri, bir yıla kadar çerezlerde saklanabilir. Kimlik doğrulama çerezleri, oturum açma oturumlarını sürdürmek ve kullanıcı hesaplarını korumak için kullanılır.</value>
+  </data>
+  <data name="Package Updates and Image Downloads" xml:space="preserve">
+    <value>Paket Güncellemeleri ve Sistem Kalıbı İndirmeleri</value>
   </data>
   <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
     <value>lütfen ilgili üst akış gizlilik politikalarına başvurun.</value>
@@ -318,11 +438,35 @@
   <data name="Privacy Statement" xml:space="preserve">
     <value>Gizlilik Bildirimi</value>
   </data>
+  <data name="Public source code allows independent review of our implementation and privacy-related claims. Its availability does not by itself establish that every component or released binary has undergone a complete privacy audit." xml:space="preserve">
+    <value>Kaynak kodun kamuya açık olması, uygulamamızın ve gizlilikle ilgili iddialarımızın bağımsız olarak incelenmesine olanak tanır. Ancak kaynak kodun erişilebilir olması, her bileşenin veya yayımlanan ikili dosyanın kapsamlı bir gizlilik denetiminden geçtiğini tek başına göstermez.</value>
+  </data>
+  <data name="Receive portable data where the legal conditions for portability are met." xml:space="preserve">
+    <value>Veri taşınabilirliğine ilişkin yasal koşulların karşılanması hâlinde verilerinizi taşınabilir biçimde alma.</value>
+  </data>
   <data name="Reducing external communications limits exposure to interception or exploitation risks." xml:space="preserve">
     <value>Dış iletişimi azaltmak, dinleme veya sömürü risklerine maruz kalmayı sınırlar.</value>
   </data>
+  <data name="Request correction of inaccurate data, deletion, or restriction of processing." xml:space="preserve">
+    <value>Hatalı verilerin düzeltilmesini, silinmesini veya işlenmesinin kısıtlanmasını talep edin.</value>
+  </data>
+  <data name="Request information about and access to your personal data, including a copy." xml:space="preserve">
+    <value>Kişisel verileriniz hakkında bilgi ve bu verilere erişim talep edin; bir kopyasını da isteyebilirsiniz.</value>
+  </data>
+  <data name="Retention and Legal Basis" xml:space="preserve">
+    <value>Saklama Süresi ve Hukuki Dayanak</value>
+  </data>
+  <data name="Running apt update or apt upgrade does not send us telemetry or reports about how you use your computer. We do not retain HTTP access logs on the package origin servers behind packages.anduinos.com. This describes our origin servers; it does not mean that no connection information is processed along the delivery path." xml:space="preserve">
+    <value>apt update veya apt upgrade komutlarını çalıştırmak, bilgisayarınızı nasıl kullandığınıza dair bize telemetri ya da rapor göndermez. packages.anduinos.com arkasındaki paket kaynak sunucularında HTTP erişim günlüklerini saklamıyoruz. Bu açıklama kaynak sunucularımız için geçerlidir; teslimat yolu boyunca hiçbir bağlantı bilgisinin işlenmediği anlamına gelmez.</value>
+  </data>
   <data name="Security:" xml:space="preserve">
     <value>Güvenlik:</value>
+  </data>
+  <data name="Service Providers and International Processing" xml:space="preserve">
+    <value>Hizmet Sağlayıcıları ve Uluslararası Veri İşleme</value>
+  </data>
+  <data name="SimpleWeather" xml:space="preserve">
+    <value>SimpleWeather</value>
   </data>
   <data name="SimpleWeather Extension" xml:space="preserve">
     <value>SimpleWeather Eklentisi</value>
@@ -330,11 +474,20 @@
   <data name="SimpleWeather Extension (Disabled by Default)" xml:space="preserve">
     <value>SimpleWeather Uzantısı (Varsayılan Olarak Devre Dışı)</value>
   </data>
+  <data name="SimpleWeather source code" xml:space="preserve">
+    <value>SimpleWeather kaynak kodu</value>
+  </data>
   <data name="Snap daemon" xml:space="preserve">
     <value>Snap arka plan hizmeti</value>
   </data>
   <data name="Snap store background services (if Snap is manually installed by users)" xml:space="preserve">
     <value>Snap mağazası arka plan servisleri (Snap kullanıcılar tarafından manuel olarak yüklenmişse)</value>
+  </data>
+  <data name="Software repositories and mirrors receive your IP address and request metadata when your device connects to them. Features such as software updates, time synchronization, connectivity checks, firmware updates, web browsing, and online accounts may require network access, depending on the software and configuration. Some connections can occur automatically in the background." xml:space="preserve">
+    <value>Yazılım depoları ve yansıları, cihazınız bunlara bağlandığında IP adresinizi ve istek meta verilerini alır. Yazılım güncellemeleri, saat eşitleme, bağlantı denetimleri, ürün yazılımı güncellemeleri, web&apos;de gezinme ve çevrimiçi hesaplar gibi özellikler, yazılıma ve yapılandırmaya bağlı olarak ağ erişimi gerektirebilir. Bazı bağlantılar arka planda otomatik olarak kurulabilir.</value>
+  </data>
+  <data name="Some system features and third-party applications require network access. We keep website access logs for security and reliability, and our infrastructure providers process connection metadata when delivering our services. This statement explains these activities and their scope." xml:space="preserve">
+    <value>Bazı sistem özellikleri ve üçüncü taraf uygulamalar ağ erişimi gerektirir. Güvenlik ve hizmet sürekliliğini sağlamak amacıyla web sitesi erişim günlüklerini tutarız; altyapı sağlayıcılarımız da hizmetlerimizi sunarken bağlantı meta verilerini işler. Bu açıklama, söz konusu faaliyetleri ve kapsamlarını açıklar.</value>
   </data>
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>Bazı yukarı akış bileşenlerinin bağımsız veri toplama mekanizmaları olabilir.</value>
@@ -345,11 +498,20 @@
   <data name="such as:" xml:space="preserve">
     <value>örneğin:</value>
   </data>
+  <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
+    <value>AnduinOS derleme ve paket bakım depoları, farklı bir lisans belirtildiği durumlar dışında kodumuzu GPLv3 lisansı altında yayımlar. Üçüncü taraf bileşenler kendi lisanslarını korur. Bu bileşenlerin dağıtıma dahil edilmesi, işletim sisteminin tamamını tek bir lisans kapsamına sokmaz; her bir bileşeni kullanma, değiştirme ve yeniden dağıtma izinleri, o bileşene uygulanan lisans koşullarına tabidir.</value>
+  </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>Eklenti bağlanmalıdır</value>
   </data>
   <data name="The open nature of AnduinOS empowers users to independently verify that the system respects their privacy." xml:space="preserve">
     <value>AnduinOS&apos;un açık yapısı, kullanıcıların sistemin gizliliklerine saygı gösterdiğini bağımsız olarak doğrulamasını sağlar.</value>
+  </data>
+  <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
+    <value>Sağlayıcılar ve istekler; uzantı sürümüne, AnduinOS yapılandırmasına ve ayarlarınıza bağlıdır. Uzantının tercihlerinde kullanılabilir sağlayıcıları ve konum ayarlarını, sağlayıcıların gizlilik politikalarıyla birlikte inceleyin. Kaynak projenin kodu ve AnduinOS paketlememiz incelenebilir:</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>SimpleWeather masaüstü uzantısı, AnduinOS&apos;ta varsayılan olarak devre dışıdır. Hava durumu özelliklerini etkinleştirirseniz, IP tabanlı coğrafi konum belirleme, konum arama ve hava durumu tahminleri için üçüncü taraf hizmetlerle iletişim kurabilir. Sağlayıcılar, bağlantı kurmak için kullanılan IP adresini ve konum sorgusu veya koordinatlar gibi isteği işlemek için gereken bilgileri alır.</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>Sistem tarafından kullanıcı bilgilerini toplama amacıyla başlatılan gizli arka plan işlemleri veya ağ iletişimleri bulunmamaktadır.</value>
@@ -357,11 +519,26 @@
   <data name="There are no proprietary blobs or closed modules outside of upstream dependencies explicitly inherited from Ubuntu." xml:space="preserve">
     <value>Ubuntu&apos;dan açıkça miras alınan yukarı akış bağımlılıkları dışında hiçbir tescilli blob veya kapalı modül bulunmamaktadır.</value>
   </data>
+  <data name="These checks provide evidence about the packages present in the tested image and installation. They are not a comprehensive audit of all network behavior or all possible reporting capabilities. Later updates, additional software, and configuration changes can alter the system&apos;s behavior." xml:space="preserve">
+    <value>Bu kontroller, test edilen imajda ve kurulumda bulunan paketlere ilişkin kanıt sunar. Tüm ağ davranışlarının veya olası tüm raporlama özelliklerinin kapsamlı bir denetimi değildir. Sonraki güncellemeler, ek yazılımlar ve yapılandırma değişiklikleri sistemin davranışını değiştirebilir.</value>
+  </data>
   <data name="These endpoints are pure static file distribution servers. They have absolutely no data collection, analytics, or user-profiling capabilities." xml:space="preserve">
     <value>Bu uç noktalar saf statik dosya dağıtım sunucularıdır. Veri toplama, analiz veya kullanıcı profil oluşturma yeteneklerine kesinlikle sahip değillerdir.</value>
   </data>
+  <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
+    <value>Bu günlükler IP adreslerini, istek zaman damgalarını, istenen URL&apos;leri, tarayıcı bilgilerini, yanıt durumunu, yanıt boyutlarını ve işlem sürelerini içerir. Bunları hizmetleri izlemek, otomatik uyarılar oluşturmak, saldırıları tespit edip önlemek, sorunları gidermek ve performansı değerlendirmek için kullanırız.</value>
+  </data>
   <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
     <value>bu paketleri daha sonra kurmayı seçerseniz, Canonical&apos;ın politikalarına uygun olarak ilgili telemetri mekanizmaları etkinleştirilecektir.</value>
+  </data>
+  <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
+    <value>Bu kayıtlar web sitelerimize yapılan istekleri açıklar. Dosyalarınıza erişmemizi veya bilgisayarınızın başka yerlerindeki etkinliklerinizi izlememizi sağlamaz. AnduinOS&apos;u olağan şekilde kullanmanız, işletim sistemi telemetrisinin bize gönderilmesine neden olmaz.</value>
+  </data>
+  <data name="These rights are subject to the conditions and exceptions in applicable law. To exercise them, email leadership@aiursoft.com. Please identify the service and, for a website log request, the approximate time of your visit. We may need further information to locate the relevant records and verify the request while protecting other people&apos;s data. We will respond within the time limits required by applicable law." xml:space="preserve">
+    <value>Bu haklar, yürürlükteki mevzuatta belirtilen koşul ve istisnalara tabidir. Haklarınızı kullanmak için leadership@aiursoft.com adresine e-posta gönderin. Lütfen ilgili hizmeti, web sitesi kayıtlarıyla ilgili bir talepte bulunuyorsanız ziyaretinizin yaklaşık tarih ve saatini belirtin. İlgili kayıtları bulmak ve başvuruyu doğrularken başkalarının verilerini korumak için ek bilgiye ihtiyaç duyabiliriz. Yürürlükteki mevzuatta öngörülen süreler içinde yanıt vereceğiz.</value>
+  </data>
+  <data name="Third-party software and license references" xml:space="preserve">
+    <value>Üçüncü taraf yazılımlar ve lisans bilgileri</value>
   </data>
   <data name="This connection is essential for keeping your system secure and up-to-date. As with any standard HTTPS connection, this process will expose your IP address to our server." xml:space="preserve">
     <value>Bu bağlantı, sisteminizin güvenli ve güncel kalması için gereklidir. Standart bir HTTPS bağlantısında olduğu gibi, bu işlem IP adresinizi sunucumuza açığa çıkaracaktır.</value>
@@ -377,6 +554,12 @@
   </data>
   <data name="This license guarantees:" xml:space="preserve">
     <value>Bu lisans şunları garanti eder:</value>
+  </data>
+  <data name="This period supports investigation of security incidents, recurring attacks, service errors, and performance problems. It describes the website logs we retain; it is not a statement of every independent provider&apos;s retention practices." xml:space="preserve">
+    <value>Bu süre; güvenlik olaylarının, tekrarlanan saldırıların, hizmet hatalarının ve performans sorunlarının araştırılmasını destekler. Bu süre, sakladığımız web sitesi günlüklerini ifade eder; her bağımsız sağlayıcının saklama uygulamalarına ilişkin bir beyan değildir.</value>
+  </data>
+  <data name="This statement covers AnduinOS, our official website and its redirects, our documentation and news websites, and our package and image download services. Section 4 distinguishes website visits from software downloads. Third-party applications, repositories, mirrors, and community platforms have their own privacy practices." xml:space="preserve">
+    <value>Bu bildirim AnduinOS&apos;u, resmî web sitemizi ve yönlendirmelerini, belge ve haber sitelerimizi, paket ve imaj indirme hizmetlerimizi kapsar. 4. Bölüm, web sitesi ziyaretleri ile yazılım indirmelerini birbirinden ayırır. Üçüncü taraf uygulamaların, depoların, yansılarının ve topluluk platformlarının kendi gizlilik uygulamaları vardır.</value>
   </data>
   <data name="Thus, AnduinOS is fundamentally privacy-preserving by design." xml:space="preserve">
     <value>Bu nedenle, AnduinOS temelde tasarımı gereği gizliliği koruyan bir sistemdir.</value>
@@ -408,6 +591,15 @@
   <data name="Transparency:" xml:space="preserve">
     <value>Şeffaflık:</value>
   </data>
+  <data name="Updates and Other Network Features" xml:space="preserve">
+    <value>Güncellemeler ve Diğer Ağ Özellikleri</value>
+  </data>
+  <data name="Vultr Privacy Policy" xml:space="preserve">
+    <value>Vultr Gizlilik Politikası</value>
+  </data>
+  <data name="We also use website access logs to produce aggregate traffic statistics, such as page views and estimates based on unique IP addresses, and use aggregated CDN metrics to understand download traffic and bandwidth usage." xml:space="preserve">
+    <value>Ayrıca, sayfa görüntülemeleri ve benzersiz IP adreslerine dayalı tahminler gibi toplu trafik istatistikleri oluşturmak için web sitesi erişim günlüklerini kullanıyor; indirme trafiğini ve bant genişliği kullanımını anlamak için de toplulaştırılmış CDN ölçümlerinden yararlanıyoruz.</value>
+  </data>
   <data name="We are committed to protecting your privacy." xml:space="preserve">
     <value>Gizliliğinizi korumaya kararlıyız.</value>
   </data>
@@ -417,11 +609,32 @@
   <data name="We cannot control the privacy practices of" xml:space="preserve">
     <value>ipinfo.io` veya kullandığı herhangi bir hava durumu veri sağlayıcısının gizlilik uygulamalarını kontrol edemeyiz.</value>
   </data>
+  <data name="We publish revisions on this page and update the date above. Changes may reflect our services, technical practices, or legal requirements. Please review the current statement when using our services." xml:space="preserve">
+    <value>Bu sayfada değişiklikleri yayımlar ve yukarıdaki tarihi güncelleriz. Değişiklikler hizmetlerimizi, teknik uygulamalarımızı veya yasal gereklilikleri yansıtabilir. Hizmetlerimizi kullanırken güncel bildirimi inceleyin.</value>
+  </data>
+  <data name="We retain the website access logs described in Section 4 for up to 120 days." xml:space="preserve">
+    <value>4. Bölüm&apos;de açıklanan web sitesi erişim günlüklerini 120 güne kadar saklarız.</value>
+  </data>
   <data name="We strongly recommend users review Canonical&apos;s" xml:space="preserve">
     <value>Kullanıcıların Canonical&apos;ın</value>
   </data>
+  <data name="Website Access Logs" xml:space="preserve">
+    <value>Web Sitesi Erişim Kayıtları</value>
+  </data>
+  <data name="When you browse our website, we keep access logs to maintain its security and reliability. This includes our main website, its redirect, documentation, and news:" xml:space="preserve">
+    <value>Web sitemizde gezinirken güvenliğini ve güvenilirliğini sağlamak için erişim günlükleri tutuyoruz. Buna ana web sitemiz, yönlendirme adresi, dokümantasyon ve haber sitemiz dahildir:</value>
+  </data>
   <data name="When your system checks for software updates (e.g., using" xml:space="preserve">
     <value>Sisteminiz yazılım güncellemelerini kontrol ettiğinde (örneğin,</value>
+  </data>
+  <data name="Where account features are available, we process information such as usernames, email addresses, display names, and account identifiers to provide authentication and account management. If you choose to sign in through an identity provider, we may receive additional account information from that provider as part of the authentication process." xml:space="preserve">
+    <value>Hesap özelliklerinin sunulduğu durumlarda kimlik doğrulama ve hesap yönetimi sağlamak için kullanıcı adları, e-posta adresleri, görünen adlar ve hesap tanımlayıcıları gibi bilgileri işleriz. Bir kimlik sağlayıcısı üzerinden oturum açmayı tercih ederseniz, kimlik doğrulama sürecinin bir parçası olarak bu sağlayıcıdan ek hesap bilgileri alabiliriz.</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, the legal basis for this logging is our legitimate interest in keeping our services secure and reliable, preventing abuse, investigating incidents, understanding website and download traffic, and planning service capacity, under Article 6(1)(f). This basis requires consideration of your interests, rights, and freedoms." xml:space="preserve">
+    <value>AB veya Birleşik Krallık GDPR’ının geçerli olduğu durumlarda, bu kayıtların tutulmasının hukuki dayanağı, 6(1)(f) maddesi uyarınca hizmetlerimizi güvenli ve güvenilir tutma, kötüye kullanımı önleme, olayları soruşturma, web sitesi ve indirme trafiğini anlama ve hizmet kapasitesini planlama konularındaki meşru menfaatimizdir. Bu dayanak, menfaatlerinizin, haklarınızın ve özgürlüklerinizin dikkate alınmasını gerektirir.</value>
+  </data>
+  <data name="Where the EU or UK GDPR applies, we process account and authentication information on the basis of our legitimate interests in providing and securing the online services you choose to use and managing user accounts, under Article 6(1)(f). We rely on our legitimate interests in responding to enquiries and providing support when processing information you submit for those purposes. These interests must be balanced against your interests, rights, and freedoms. Where processing is necessary to comply with an applicable legal obligation, we rely on Article 6(1)(c)." xml:space="preserve">
+    <value>AB veya Birleşik Krallık GDPR’sinin geçerli olduğu durumlarda, hesap ve kimlik doğrulama bilgilerini, kullanmayı tercih ettiğiniz çevrimiçi hizmetleri sunma ve güvenliğini sağlama ve kullanıcı hesaplarını yönetme konusundaki meşru menfaatlerimiz doğrultusunda, 6(1)(f) maddesi uyarınca işleriz. Bu amaçlarla bize ilettiğiniz bilgileri işlerken sorularınızı yanıtlamak ve destek sağlamak konusundaki meşru menfaatlerimize dayanırız. Bu menfaatler, sizin menfaatleriniz, haklarınız ve özgürlüklerinizle dengelenmelidir. İşleme, geçerli bir yasal yükümlülüğe uymak için gerekliyse 6(1)(c) maddesine dayanırız.</value>
   </data>
   <data name="While AnduinOS is designed for local-first operation, certain basic functionalities require network access. These connections are strictly for fetching software updates or data you requested, and are" xml:space="preserve">
     <value>AnduinOS yerel öncelikli çalışma için tasarlanmış olsa da, belirli temel işlevler ağ erişimini gerektirir. Bu bağlantılar yalnızca yazılım güncellemelerini veya istediğiniz verileri almak içindir ve</value>
@@ -438,6 +651,9 @@
   <data name="You can adjust the code to suit your needs, including removing any components you distrust." xml:space="preserve">
     <value>Kodunuza ihtiyaçlarınıza uyacak şekilde, güvenmediğiniz bileşenleri kaldırma dahil olmak üzere, düzenleme yapabilirsiniz.</value>
   </data>
+  <data name="You can manage or delete cookies through your browser settings, although doing so may sign you out or reset your preferences. For questions about your account information or requests to access or delete personal data, contact us using the details in Section 8." xml:space="preserve">
+    <value>Çerezleri tarayıcı ayarlarınızdan yönetebilir veya silebilirsiniz; ancak bunu yapmanız oturumunuzu kapatabilir ya da tercihlerinizi sıfırlayabilir. Hesap bilgilerinizle ilgili sorularınız veya kişisel verilerinize erişme ya da bunları silme talepleriniz için 8. Bölümdeki iletişim bilgilerini kullanarak bizimle iletişime geçin.</value>
+  </data>
   <data name="You can review the source code to verify there are no hidden tracking mechanisms." xml:space="preserve">
     <value>Kaynak kodunu inceleyerek gizli izleme mekanizmaları olmadığını doğrulayabilirsiniz.</value>
   </data>
@@ -446,6 +662,12 @@
   </data>
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>Kişisel verileriniz üzerinde tam kontrol sizde kalır.</value>
+  </data>
+  <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
+    <value>Dosyalarınız, ayarlarınız ve yerel sistem günlükleriniz normal işleyişin bir parçası olarak cihazınızda saklanır. Bu kayıtların yerel olarak saklanması, bize gönderildikleri anlamına gelmez. Bir hata raporu, destek talebi veya başka bir bilgi göndermeyi seçerseniz, gönderdiğiniz bilgileri alırız.</value>
+  </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>Haklarınız</value>
   </data>
 
 </root>
