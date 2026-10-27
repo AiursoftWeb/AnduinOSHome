@@ -1,4 +1,3 @@
-@using Microsoft.AspNetCore.Localization
 @{
     var slogans = new[]
     {
@@ -208,14 +207,6 @@
     // Select a random slogan
     var random = new Random().Next(0, slogans.Length);
     var randomSlogan = Localizer[slogans[random]].Value;
-
-    // Get current Culture.
-    var currentCulture = ViewContext.HttpContext.Features
-        .Get<IRequestCultureFeature>()?
-        .RequestCulture.Culture.Name.ToLower().Trim().Replace('-', '_');
-
-    // Donate link.
-    var donateLink = currentCulture == "zh_cn" ? "/img/pay_anduin.png" : "https://ko-fi.com/anduinxue/goal?g=0";
 }
 
 
@@ -1642,11 +1633,6 @@
                                 @Localizer["AnduinOS is an Aiursoft driven project, where AIURSOFT LIMITED is founded by Anduin."]
                                 <a href="https://news.aiursoft.com/post/2025/5/6/story-behind-anduinos-a-letter-from-anduin"
                                    target="_blank">@Localizer["Read more"]</a>.
-                                <br><br>
-                                @Localizer["Aiursoft is funded by user donations. We are grateful for your support. And you can"] <a
-                                    href="@donateLink"
-                                    target="_blank">@Localizer["donate"]</a>
-                                @Localizer["to us."]
                             </div>
                         </div>
                     </div>
