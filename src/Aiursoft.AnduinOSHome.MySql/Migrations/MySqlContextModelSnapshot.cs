@@ -17,7 +17,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.12")
+                .HasAnnotation("ProductVersion", "10.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -260,6 +260,27 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                         .IsUnique();
 
                     b.ToTable("HardwareTranslations");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OobeRating", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Comment")
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("SubmitTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OobeRatings");
                 });
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.User", b =>

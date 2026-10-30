@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore;
 namespace Aiursoft.AnduinOSHome.Entities;
 
 [ExcludeFromCodeCoverage]
-
 public abstract class AnduinOSHomeDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
     public DbSet<Hardware> Hardware => Set<Hardware>();
     public DbSet<HardwareTranslation> HardwareTranslations => Set<HardwareTranslation>();
+    public DbSet<OobeRating> OobeRatings => Set<OobeRating>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -22,9 +22,9 @@ public abstract class AnduinOSHomeDbContext(DbContextOptions options) : Identity
             .HasForeignKey(x => x.HardwareId).OnDelete(DeleteBehavior.Cascade);
     }
 
-    public virtual  Task MigrateAsync(CancellationToken cancellationToken) =>
+    public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
 
-    public virtual  Task<bool> CanConnectAsync() =>
+    public virtual Task<bool> CanConnectAsync() =>
         Database.CanConnectAsync();
 }

@@ -15,7 +15,7 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.12");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.14");
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.GlobalSetting", b =>
                 {
@@ -251,6 +251,27 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                         .IsUnique();
 
                     b.ToTable("HardwareTranslations");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OobeRating", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Comment")
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("SubmitTime")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OobeRatings");
                 });
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.User", b =>
