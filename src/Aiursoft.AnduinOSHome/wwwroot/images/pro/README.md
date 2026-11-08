@@ -11,3 +11,7 @@ These are unedited captures of AnduinOS, not rendered product mockups.
 The page labels development and installation-layout limitations next to the images.
 These captures do not establish general availability or full Pro release acceptance.
 The hero reuses the site's existing `sc.webp` desktop screenshot.
+
+All product visuals use these actual captures. CSS adds frames, lighting and
+perspective around them; screenshot contents are not fabricated. No stock
+photography or generated device imagery is included.

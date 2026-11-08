@@ -15,7 +15,8 @@
 
     <div class="pro-page" id="pro-overview">
         <section class="pro-hero" aria-labelledby="pro-heading">
-            <div class="pro-container pro-hero-copy">
+            <div class="pro-hero-grid pro-container">
+            <div class="pro-hero-copy">
                 <p class="pro-eyebrow"><span class="pro-status-dot" aria-hidden="true"></span> @Localizer["Introducing AnduinOS Pro"] <span class="pro-preview-label">@Localizer["In development"]</span></p>
                 <h1 id="pro-heading">@Localizer["Everything you keep."]<br><span>@Localizer["Worth protecting."]</span></h1>
                 <p class="pro-lead">@Localizer["An operating system that puts your data first. More protection. A way back. And the freedom to make it yours."]</p>
@@ -33,8 +34,12 @@
                     <div class="pro-screen-foot" aria-hidden="true"></div>
                     <figcaption>@Localizer["The familiar AnduinOS desktop. A new layer of peace of mind."]</figcaption>
                 </figure>
-                <span class="pro-orbit pro-orbit-one" aria-hidden="true"></span>
-                <span class="pro-orbit pro-orbit-two" aria-hidden="true"></span>
+                <figure class="pro-hero-detail">
+                    <img src="~/images/pro/encryption-preview.png" width="1280" height="800"
+                         alt="@Localizer["Development build of Driver Center showing encrypted system files, Home and disk swap"]">
+                    <figcaption><i data-lucide="lock-keyhole" aria-hidden="true"></i>@Localizer["Disk encryption"]</figcaption>
+                </figure>
+            </div>
             </div>
             <div class="pro-container pro-hero-bottom">
                 <span>@Localizer["One free ISO. Optional Pro benefits."]</span>
