@@ -48,14 +48,12 @@
 
         if (reducedMotion.matches || window.innerWidth < 701) {
             desktop.style.removeProperty('--pro-desktop-y');
-            desktop.style.removeProperty('--pro-desktop-tilt');
             return;
         }
 
         const rect = stage.getBoundingClientRect();
         if (rect.bottom < 0 || rect.top > window.innerHeight) return;
         const position = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / (window.innerHeight + rect.height)));
-        desktop.style.setProperty('--pro-desktop-tilt', `${(1 - position) * 5}deg`);
         desktop.style.setProperty('--pro-desktop-y', `${(1 - position) * 10}px`);
     }
 
