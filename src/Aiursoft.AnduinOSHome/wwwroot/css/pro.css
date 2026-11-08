@@ -73,7 +73,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-screen-frame img { width: 100%; aspect-ratio: 16 / 9; }
 .pro-screen-foot { height: 13px; margin-inline: -36px; border-radius: 2px 2px 60% 60% / 2px 2px 12px 12px; background: linear-gradient(#b8bdc7 0%, #e4e6ea 25%, #9b9fa8 66%, #737b8a); box-shadow: 0 16px 30px -10px #283d6555; position: relative; }
 .pro-screen-foot::after { content: ""; position: absolute; top: 0; inset-inline-start: 42%; width: 16%; height: 5px; border-radius: 0 0 8px 8px; background: #858c99; }
-.pro-desktop figcaption { text-align: end; max-width: 100%; margin-left: 50%; color: #ecfaff; font-size: 11px; margin-top: 19px; text-shadow: 0 2px 8px #001e38; }
+.pro-desktop figcaption { text-align: end; max-width: 100%; margin-left: 50%; padding: 8px 12px; border-radius: 8px; background: #103b6b; color: #ecfaff; font-size: 11px; margin-top: 19px; text-shadow: 0 2px 8px #001e38; }
 .pro-hero-bottom { padding-block: 24px; border-top: 1px solid #ffffff45; display: flex; justify-content: space-between; gap: 25px; color: #fff; font-size: 11px; position: relative; z-index: 3; }
 .pro-hero-bottom > span:last-child { display: flex; align-items: center; gap: 14px; }
 .pro-hero-bottom svg { width: 15px; height: 15px; }
@@ -162,7 +162,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-open-symbol { display: flex; align-items: center; justify-content: center; gap: 24px; color: #c2ffc9; font-family: ui-monospace, monospace; font-size: 100px; font-weight: 200; }
 .pro-open-symbol svg { width: 70px; height: 70px; stroke-width: .85; color: #eaffec; }
 .pro-freedom-art > p { font-size: 31px; line-height: 1.2; letter-spacing: -.05em; margin-top: 26px; text-align: center; font-weight: 500; }
-.pro-freedom-art > span { font-size: 13px; font-family: ui-monospace, monospace; color: #f0ffdf; margin-top: 30px; }
+.pro-freedom-art > span { font-size: 13px; font-family: ui-monospace, monospace; color: #f0ffdf; margin-top: 30px; padding: 7px 13px; border-radius: 6px; background: #08443f; }
 
 /* Actual table semantics keep the comparison useful without JavaScript. */
 .pro-compare { background: #f3f8ff; padding: 80px 0 60px; }
