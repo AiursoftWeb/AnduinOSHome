@@ -17,7 +17,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-container { width: min(1240px, calc(100% - 80px)); margin-inline: auto; }
 .pro-page [id] { scroll-margin-top: 32px; }
 .pro-page h1, .pro-page h2, .pro-page h3, .pro-page p, .pro-page figure { margin: 0; }
-.pro-page h1, .pro-page h2, .pro-page h3 { color: inherit; font-weight: 650; letter-spacing: -.04em; text-wrap: balance; }
+.pro-page h1, .pro-page h2, .pro-page h3 { color: inherit; font-weight: 650; letter-spacing: -.04em; text-wrap: balance; overflow-wrap: anywhere; hyphens: auto; }
 .pro-page h2 { font-size: clamp(30px, 3.1vw, 44px); line-height: 1.13; }
 .pro-page h3 { font-size: 30px; line-height: 1.16; }
 .pro-page p { line-height: 1.65; }
