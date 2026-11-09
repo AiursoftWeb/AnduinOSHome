@@ -87,17 +87,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-encryption h2 > span { color: var(--pro-ice); }
 .pro-encryption .pro-eyebrow { color: var(--pro-on-blue); }
 .pro-encryption .pro-section-lead { color: var(--pro-on-blue); }
-.pro-encryption-visual { position: relative; min-width: 0; margin-top: 50px; padding-top: 40px; }
-.pro-lock-illustration { position: absolute; z-index: 2; width: 180px; top: -110px; right: 12px; aspect-ratio: 1; display: grid; place-items: center; }
-.pro-lock-ring { position: absolute; inset: 3%; border: 1px solid #c3ddfa55; border-radius: 50%; }
-.pro-lock-ring::after { content: ""; width: 5px; height: 5px; position: absolute; top: 14%; left: 14%; border-radius: 50%; background: #8eb4ec; box-shadow: 0 0 20px #7cafef; }
-.pro-lock-ring-inner { inset: 18%; border-style: dashed; border-color: #c3ddfa55; }
-.pro-lock-core { width: 47%; aspect-ratio: 1; border-radius: 24%; display: grid; place-items: center; color: #fff; border: 1px solid var(--pro-ice); background: linear-gradient(145deg, #91b9ed, #267bd4 70%); box-shadow: inset 0 1px 1px #e4effc, 0 18px 45px #001b6680, 0 0 60px #91b9ed44; }
-.pro-lock-core svg { width: 45%; height: 45%; stroke-width: 1.1; }
-.pro-key-fragment { position: absolute; font-family: ui-monospace, monospace; color: var(--pro-ice); font-size: 9px; letter-spacing: .1em; }
-.pro-key-one { top: 8%; right: 4%; }
-.pro-key-two { bottom: 15%; left: 0; }
-.pro-key-three { bottom: 8%; right: 2%; }
+.pro-encryption-visual { min-width: 0; }
 .pro-encryption-screen { min-width: 0; }
 .pro-encryption-screen img { width: 100%; border: 1px solid #ffffff70; border-radius: 13px; box-shadow: 0 30px 70px #00134999, 0 0 65px #91b9ed33; }
 .pro-encryption-screen figcaption { color: var(--pro-on-blue); margin-top: 16px; font-size: 11px; text-align: end; }
@@ -248,8 +238,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-hero-detail { width: 45%; bottom: -30px; left: -3%; }
     .pro-chapters { grid-template-columns: repeat(2, 1fr); }
     .pro-encryption > .pro-container, .pro-secure-boot > .pro-container { grid-template-columns: 1fr; gap: 30px; }
-    .pro-encryption-visual { margin-top: 25px; padding-top: 90px; }
-    .pro-lock-illustration { top: -60px; width: 180px; }
     .pro-encryption-screen { max-width: 730px; margin-inline: auto !important; }
     .pro-split-heading, .pro-freedom-grid { gap: 36px; }
     .pro-split-heading { grid-template-columns: 1fr 1fr; }
@@ -259,7 +247,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-open-symbol svg { width: 55px; height: 55px; }
     .pro-freedom-art > p { font-size: 26px; }
     .pro-feature-heading { max-width: 700px; }
-    .pro-key-fragment { font-size: 8px; }
     .pro-recovery-visual { padding-inline: 40px; }
 }
 
@@ -294,8 +281,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-feature { padding: 70px 0 38px; }
     .pro-eyebrow { font-size: 10px; }
     .pro-feature-heading .pro-section-lead { margin-top: 23px; }
-    .pro-encryption-visual { display: block; margin-top: 5px; padding-top: 95px; }
-    .pro-lock-illustration { width: 150px; top: -55px; right: 5%; }
     .pro-encryption-screen { transform: none; }
     .pro-encryption-screen figcaption { font-size: 9px; }
     .pro-feature-notes { grid-template-columns: 1fr; gap: 17px; margin-top: 36px; padding-top: 22px; }
