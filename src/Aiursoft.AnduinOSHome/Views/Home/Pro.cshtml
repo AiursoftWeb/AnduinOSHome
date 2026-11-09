@@ -119,11 +119,9 @@
         </section>
 
         <section class="pro-compare pro-container" id="pro-compare" aria-labelledby="pro-compare-heading">
-            <div class="pro-section-heading" data-pro-reveal>
-                <div>
-                    <p class="pro-eyebrow">@Localizer["Choose what works for you"]</p>
-                    <h2 id="pro-compare-heading">@Localizer["One AnduinOS. Your choice."]</h2>
-                </div>
+            <div class="pro-compare-heading" data-pro-reveal>
+                <p class="pro-eyebrow">@Localizer["Choose what works for you"]</p>
+                <h2 id="pro-compare-heading">@Localizer["One AnduinOS. Your choice."]</h2>
                 <p>@Localizer["The same free ISO. Optional Pro benefits."]</p>
             </div>
             <div class="pro-table-wrap" data-pro-reveal>
@@ -138,11 +136,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><th scope="row">@Localizer["Desktop, apps and ordinary updates"]</th><td>@Localizer["Included"]</td><td>@Localizer["Included"]</td></tr>
-                        <tr><th scope="row">@Localizer["Secure Boot and system recovery"]<small>@Localizer["On supported installations"]</small></th><td>@Localizer["Included"]</td><td>@Localizer["Included"]</td></tr>
-                        <tr><th scope="row">@Localizer["Freedom to modify your system"]</th><td>@Localizer["Included"]</td><td>@Localizer["Unchanged"]</td></tr>
-                        <tr><th scope="row">@Localizer["Disk encryption"]</th><td>@Localizer["Not in the standard installer"]</td><td><strong>@Localizer["In development"]</strong></td></tr>
-                        <tr><th scope="row">@Localizer["Installation and everyday help"]</th><td>@Localizer["Community resources"]</td><td><strong>@Localizer["One year of official support"]</strong></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Disk encryption"]</th><td>@Localizer["Not in the standard installer"]</td><td><strong>@Localizer["In development"]</strong></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Installation and everyday help"]</th><td>@Localizer["Community resources"]</td><td><strong>@Localizer["One year of official support"]</strong></td></tr>
+                        <tr><th scope="row">@Localizer["Desktop, apps and ordinary updates"]</th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td></tr>
+                        <tr><th scope="row">@Localizer["Secure Boot and system recovery"]<small>@Localizer["On supported installations"]</small></th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td></tr>
+                        <tr><th scope="row">@Localizer["Freedom to modify your system"]</th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Unchanged"]</span></td></tr>
                     </tbody>
                 </table>
             </div>

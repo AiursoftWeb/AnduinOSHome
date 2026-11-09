@@ -133,25 +133,34 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-terminal { margin-top: 24px; font: 12px ui-monospace, monospace; background: #12365f; border-radius: 5px; padding: 7px 12px; color: var(--pro-ice); }
 
 /* The real comparison is short enough to scan on a phone. */
-.pro-compare { padding-block: 55px 48px; border-top: 1px solid var(--pro-line); }
-.pro-compare h2 { font-size: 37px; }
-.pro-table-wrap { margin-top: 36px; }
+.pro-compare { padding-block: 82px 55px; }
+.pro-compare-heading { text-align: center; }
+.pro-compare-heading .pro-eyebrow { margin-bottom: 18px; }
+.pro-compare-heading h2 { max-width: 640px; margin-inline: auto; font-size: clamp(38px, 4.2vw, 56px); }
+.pro-compare-heading > p:last-child { margin: 22px auto 0; max-width: 540px; font-size: 16px; color: var(--pro-secondary); }
+.pro-table-wrap { margin-top: 50px; }
 .pro-comparison { border-collapse: separate; border-spacing: 0; table-layout: fixed; width: 100%; text-align: center; }
-.pro-feature-column { width: 42%; }
+.pro-feature-column { width: 40%; }
 .pro-paid-column { background: #e4effd; }
 .pro-comparison th, .pro-comparison td { border-bottom: 1px solid var(--pro-line); padding: 18px 20px; font-size: 13px; font-weight: 400; line-height: 1.6; }
 .pro-comparison tbody th { text-align: start; padding-inline-start: 0; font-weight: 500; }
 .pro-comparison tbody td { color: var(--pro-secondary); }
 .pro-comparison tbody td:last-child { color: #204f88; }
-.pro-comparison thead th { padding-block: 26px; vertical-align: top; }
-.pro-comparison thead th:last-child { border-radius: 18px 18px 0 0; background: #dbeaff; }
+.pro-comparison-check { display: inline-block; font-size: 20px; line-height: 1; vertical-align: middle; }
+.pro-comparison .pro-benefit-row td:last-child { background: #d8e9ff; color: #104fa6; }
+.pro-comparison .pro-benefit-row th { font-weight: 600; }
+.pro-comparison thead th { padding-block: 34px; vertical-align: middle; }
+.pro-comparison thead th:last-child { border-radius: 22px 22px 0 0; background: var(--pro-blue); color: #fff; border-bottom-color: var(--pro-blue); }
 .pro-comparison small { display: block; font-size: 10px; font-weight: 400; color: var(--pro-secondary); }
 .pro-edition { display: block; font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
 .pro-edition-price { display: block; font-size: 35px; font-weight: 550; letter-spacing: -.04em; margin-top: 8px; }
 .pro-edition-price small { display: inline; font-size: 11px; letter-spacing: 0; }
+.pro-comparison thead th:last-child .pro-edition-price { font-size: 68px; line-height: 1.1; font-weight: 600; margin-top: 18px; }
+.pro-comparison thead th:last-child .pro-edition-price small { color: var(--pro-ice); }
 .pro-comparison thead .pro-text-link { margin-top: 7px; font-size: 11px; }
 .pro-table-status { display: block; font-size: 11px; color: var(--pro-secondary); margin-top: 10px; }
-.pro-comparison tbody tr:last-child td:last-child { border-radius: 0 0 18px 18px; }
+.pro-comparison thead th:last-child .pro-table-status { color: #e2f0ff; margin-top: 14px; }
+.pro-comparison tbody tr:last-child td:last-child { border-radius: 0 0 22px 22px; }
 .pro-comparison strong { font-weight: 600; }
 .pro-table-note { font-size: 11px; color: var(--pro-secondary); text-align: center; margin-top: 22px !important; }
 
@@ -235,7 +244,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-hero-facts > span { font-size: 10px; padding-inline: 4px; }
     .pro-hero-facts { gap: 8px; }
     .pro-benefits { padding-top: 46px; }
-    .pro-section-heading h2, .pro-compare h2 { font-size: 30px; }
+    .pro-section-heading h2 { font-size: 30px; }
     .pro-section-heading > p { font-size: 13px; }
     .pro-benefit-grid { grid-template-columns: 1fr; margin-top: 27px; }
     .pro-card { border-radius: 20px; }
@@ -252,7 +261,11 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-foundation-copy h2 { font-size: 30px; max-width: 320px; }
     .pro-foundation-list { margin-top: 24px; }
     .pro-recovery { padding: 24px 16px 17px; border-radius: 20px; }
-    .pro-compare { padding-block: 42px 35px; }
+    .pro-compare { padding-block: 52px 35px; }
+    .pro-compare-heading h2 { font-size: 35px; max-width: 340px; }
+    .pro-compare-heading .pro-eyebrow { font-size: 10px; margin-bottom: 16px; }
+    .pro-compare-heading > p:last-child { font-size: 14px; margin-top: 18px; }
+    .pro-table-wrap { margin-top: 32px; }
     .pro-feature-column { width: 37%; }
     .pro-comparison th, .pro-comparison td { padding: 15px 9px; font-size: 10px; }
     .pro-comparison thead th { padding: 20px 8px; }
@@ -260,6 +273,9 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-comparison small { font-size: 9px; }
     .pro-edition { font-size: 13px; }
     .pro-edition-price { font-size: 28px; }
+    .pro-comparison thead th:last-child .pro-edition-price { font-size: clamp(38px, 10vw, 52px); margin-top: 15px; }
+    .pro-comparison thead th:last-child .pro-edition-price small { display: block; font-size: 9px; margin-top: 5px; }
+    .pro-comparison-check { font-size: 18px; }
     .pro-table-status { font-size: 9px; }
     .pro-table-note { font-size: 10px; }
     .pro-questions { grid-template-columns: 1fr; gap: 10px; padding-block: 12px 48px; }
