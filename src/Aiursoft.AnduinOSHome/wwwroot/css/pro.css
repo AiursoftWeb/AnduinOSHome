@@ -58,12 +58,13 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-hero-facts > span + span { border-inline-start: 1px solid #c8e3ff40; }
 .pro-hero-facts svg { width: 17px; height: 17px; color: var(--pro-ice); stroke-width: 1.5; }
 
-/* An emotional pause shares the hero's continuous background. */
-.pro-story { display: grid; grid-template-columns: 1.2fr 1fr; gap: 65px; align-items: center; padding-block: 90px 105px; border-top: 1px solid #c8e3ff40; }
-.pro-story h2 { font-size: clamp(42px, 4.5vw, 65px); line-height: 1.07; letter-spacing: -.045em; }
-.pro-story h2 span { color: var(--pro-ice); }
-.pro-story-copy p { font-size: 18px; color: #e2f0ff; text-wrap: pretty; }
-.pro-story-copy p + p { margin-top: 24px; color: #fff; font-weight: 500; }
+/* A light, centered pause separates the hero from the product benefits. */
+.pro-story { padding-block: 80px 35px; text-align: center; }
+.pro-story h2 { font-size: clamp(38px, 4.2vw, 60px); line-height: 1.07; letter-spacing: -.045em; color: var(--pro-ink); }
+.pro-story h2 span { color: var(--pro-blue); }
+.pro-story-copy { max-width: 730px; margin: 26px auto 0; }
+.pro-story-copy p { font-size: 17px; color: var(--pro-secondary); text-wrap: pretty; }
+.pro-story-copy p + p { margin-top: 16px; color: var(--pro-ink); font-weight: 500; }
 
 /* A compact feature pair, designed to accept more real features as Pro evolves. */
 .pro-benefits { padding-block: 78px 48px; }
@@ -211,10 +212,9 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-compare h2 { font-size: 34px; }
     .pro-get-inner { display: block; }
     .pro-get-actions { align-items: start; margin-top: 28px; }
-    .pro-story { grid-template-columns: 1fr; gap: 28px; padding-block: 65px 75px; }
-    .pro-story h2 { max-width: 650px; font-size: clamp(40px, 6vw, 58px); }
-    .pro-story-copy { max-width: 540px; }
-    .pro-story-copy p { font-size: 17px; }
+    .pro-story { padding-block: 65px 25px; }
+    .pro-story h2 { font-size: clamp(38px, 6vw, 54px); }
+    .pro-story-copy { max-width: 600px; }
     .pro-encryption { gap: 25px; }
     .pro-encryption h3 { font-size: 35px; }
     .pro-freedom-grid { gap: 30px; }
@@ -271,10 +271,10 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-get { padding-block: 45px; }
     .pro-get h2 { font-size: 29px; }
     .pro-get p:not(.pro-eyebrow) { font-size: 12px; }
-    .pro-story { padding-block: 48px 55px; gap: 25px; }
+    .pro-story { padding-block: 50px 20px; }
     .pro-story h2 { font-size: clamp(31px, 8.8vw, 46px); }
+    .pro-story-copy { margin-top: 22px; }
     .pro-story-copy p { font-size: 15px; }
-    .pro-story-copy p + p { margin-top: 19px; }
     .pro-encryption { grid-template-columns: 1fr; gap: 25px; }
     .pro-encryption h3 { font-size: 36px; }
     .pro-support { grid-template-columns: 1fr; gap: 28px; }
