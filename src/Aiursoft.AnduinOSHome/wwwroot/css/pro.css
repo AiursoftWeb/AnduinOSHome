@@ -86,7 +86,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-encryption figcaption, .pro-recovery figcaption { font-size: 10px; color: var(--pro-secondary); margin-top: 11px; text-align: center; }
 .pro-card-note { font-size: 11px; color: var(--pro-secondary); }
 .pro-encryption > .pro-card-note { margin-top: 17px; }
-.pro-encryption-technical { grid-column: 1 / -1; color: #e2f0ff; }
+.pro-encryption .pro-encryption-technical { grid-column: 1 / -1; color: #e2f0ff; }
 .pro-support { padding: 40px 52px; color: var(--pro-ink); background: #e4effd; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
 .pro-support .pro-eyebrow { color: var(--pro-blue); }
 .pro-support h3 { margin-top: 24px; }
