@@ -355,5 +355,5 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-notes ol { margin: 0; padding-inline-start: 20px; }
 .pro-notes li { padding-inline-start: 4px; line-height: 1.7; scroll-margin-top: 24px; }
 .pro-notes li + li { margin-top: 7px; }
-.pro-notes [role="doc-backlink"] { display: inline-block; padding-inline: 6px; }
+.pro-notes .pro-note-backlink { display: inline-block; padding-inline: 6px; }
 .pro-notes li:target { color: var(--pro-ink); }
