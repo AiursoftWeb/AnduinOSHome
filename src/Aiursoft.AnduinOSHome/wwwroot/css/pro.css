@@ -42,6 +42,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-hero h1 { font-size: clamp(40px, 3.4vw, 49px); line-height: 1.04; margin-top: 26px; }
 .pro-hero h1 span { color: var(--pro-ice); }
 .pro-lead { font-size: 17px; color: #e2f0ff; max-width: 370px; margin-top: 24px !important; text-wrap: balance; }
+.pro-lead:lang(zh) { word-break: keep-all; overflow-wrap: anywhere; }
 .pro-hero-price { display: flex; align-items: center; gap: 13px; margin-top: 23px !important; }
 .pro-hero-price strong { font-size: 31px; letter-spacing: -.035em; font-weight: 550; }
 .pro-hero-price > span { font-size: 11px; color: var(--pro-ice); max-width: 150px; }
