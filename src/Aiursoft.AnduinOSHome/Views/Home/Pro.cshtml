@@ -110,48 +110,51 @@
             </div>
         </section>
 
-        <section class="pro-feature pro-secure-boot" id="pro-secure-boot" aria-labelledby="pro-boot-heading">
-            <div class="pro-container">
-                <div class="pro-feature-heading" data-pro-reveal>
-                    <p class="pro-eyebrow"><span>03 /</span> Secure Boot</p>
-                    <h2 id="pro-boot-heading">@Localizer["Confidence."]<br><span>@Localizer["From the first moment."]</span></h2>
-                    <p class="pro-section-lead">@Localizer["Protection should start before your desktop does. AnduinOS brings signed boot components and a machine-local signing identity together, with a clear path to checking what your computer trusts."]</p>
+        <div class="pro-trust-story">
+            <section class="pro-feature pro-secure-boot" id="pro-secure-boot" aria-labelledby="pro-boot-heading">
+                <div class="pro-container">
+                    <div class="pro-feature-heading" data-pro-reveal>
+                        <p class="pro-eyebrow"><span>03 /</span> Secure Boot</p>
+                        <h2 id="pro-boot-heading">@Localizer["Confidence."]<br><span>@Localizer["From the first moment."]</span></h2>
+                        <p class="pro-section-lead">@Localizer["Protection should start before your desktop does. AnduinOS brings signed boot components and a machine-local signing identity together, with a clear path to checking what your computer trusts."]</p>
+                    </div>
+                    <div class="pro-trust-visual" data-pro-reveal>
+                        <div class="pro-trust-emblem" aria-hidden="true"><img src="~/logo.svg" width="70" height="70" alt=""><i data-lucide="shield-check"></i></div>
+                        <ol class="pro-trust-chain" aria-label="@Localizer["Simplified Secure Boot path"]">
+                            <li><i data-lucide="cpu" aria-hidden="true"></i><span>UEFI</span><small>@Localizer["Firmware"]</small></li>
+                            <li><i data-lucide="fingerprint" aria-hidden="true"></i><span>shim</span><small>@Localizer["Trust entry"]</small></li>
+                            <li><i data-lucide="shield-check" aria-hidden="true"></i><span>GRUB</span><small>@Localizer["Signed bootloader"]</small></li>
+                            <li><i data-lucide="terminal" aria-hidden="true"></i><span>Linux</span><small>@Localizer["Signed kernel"]</small></li>
+                        </ol>
+                    </div>
+                    <div class="pro-feature-notes" data-pro-reveal>
+                        <p><strong>@Localizer["Trust you can inspect."]</strong> @Localizer["See your Secure Boot state in Driver Center. Keep control of your machine's trust configuration."] <a href="https://docs.anduinos.com/Install/Secure-Boot-Signing-Architecture.html">@Localizer["Explore the boot architecture"] <span aria-hidden="true">↗</span></a></p>
+                        <p class="pro-fineprint">@Localizer["Secure Boot is also available in the community edition. Hardware, firmware and key enrollment requirements apply. End-to-end qualification of the encrypted Pro and recovery paths is still in progress; this diagram is not a claim that every system file is verified."]</p>
+                    </div>
                 </div>
-                <div class="pro-trust-visual" data-pro-reveal>
-                    <div class="pro-trust-emblem" aria-hidden="true"><img src="~/logo.svg" width="70" height="70" alt=""><i data-lucide="shield-check"></i></div>
-                    <ol class="pro-trust-chain" aria-label="@Localizer["Simplified Secure Boot path"]">
-                        <li><i data-lucide="cpu" aria-hidden="true"></i><span>UEFI</span><small>@Localizer["Firmware"]</small></li>
-                        <li><i data-lucide="fingerprint" aria-hidden="true"></i><span>shim</span><small>@Localizer["Trust entry"]</small></li>
-                        <li><i data-lucide="shield-check" aria-hidden="true"></i><span>GRUB</span><small>@Localizer["Signed bootloader"]</small></li>
-                        <li><i data-lucide="terminal" aria-hidden="true"></i><span>Linux</span><small>@Localizer["Signed kernel"]</small></li>
-                    </ol>
-                </div>
-                <div class="pro-feature-notes" data-pro-reveal>
-                    <p><strong>@Localizer["Trust you can inspect."]</strong> @Localizer["See your Secure Boot state in Driver Center. Keep control of your machine's trust configuration."] <a href="https://docs.anduinos.com/Install/Secure-Boot-Signing-Architecture.html">@Localizer["Explore the boot architecture"] <span aria-hidden="true">↗</span></a></p>
-                    <p class="pro-fineprint">@Localizer["Secure Boot is also available in the community edition. Hardware, firmware and key enrollment requirements apply. End-to-end qualification of the encrypted Pro and recovery paths is still in progress; this diagram is not a claim that every system file is verified."]</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="pro-feature pro-freedom" id="pro-freedom" aria-labelledby="pro-freedom-heading">
-            <div class="pro-container pro-freedom-grid">
-                <div class="pro-freedom-copy" data-pro-reveal>
-                    <p class="pro-eyebrow"><span>04 /</span> @Localizer["Freedom, protected"]</p>
-                    <h2 id="pro-freedom-heading">@Localizer["More secure."]<br><span class="pro-muted">@Localizer["Still completely yours."]</span></h2>
-                    <p class="pro-section-lead">@Localizer["A safer system should not be a locked-down system. Edit your files. Build your tools. Make the desktop your own. Pro does not take away the open-source freedoms that brought you here."]</p>
-                    <a class="pro-text-link" href="https://github.com/aiursoftweb/anduinos-2">@Localizer["Explore the source"] <span aria-hidden="true">↗</span></a>
+            <section class="pro-feature pro-freedom" id="pro-freedom" aria-labelledby="pro-freedom-heading">
+                <div class="pro-container pro-freedom-grid">
+                    <div class="pro-freedom-copy" data-pro-reveal>
+                        <p class="pro-eyebrow"><span>04 /</span> @Localizer["Freedom, protected"]</p>
+                        <h2 id="pro-freedom-heading">@Localizer["More secure."]<br><span class="pro-muted">@Localizer["Still completely yours."]</span></h2>
+                        <p class="pro-section-lead">@Localizer["A safer system should not be a locked-down system. Edit your files. Build your tools. Make the desktop your own. Pro does not take away the open-source freedoms that brought you here."]</p>
+                        <a class="pro-text-link" href="https://github.com/aiursoftweb/anduinos-2">@Localizer["Explore the source"] <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="pro-freedom-art" data-pro-reveal>
+                        <div class="pro-open-symbol" aria-hidden="true">{<i data-lucide="unlock-keyhole"></i>}</div>
+                        <p>@Localizer["Your machine."]<br>@Localizer["Your rules."]</p>
+                        <span>sudo <span aria-hidden="true">_</span></span>
+                    </div>
                 </div>
-                <div class="pro-freedom-art" data-pro-reveal>
-                    <div class="pro-open-symbol" aria-hidden="true">{<i data-lucide="unlock-keyhole"></i>}</div>
-                    <p>@Localizer["Your machine."]<br>@Localizer["Your rules."]</p>
-                    <span>sudo <span aria-hidden="true">_</span></span>
+                <div class="pro-container pro-feature-notes" data-pro-reveal>
+                    <p><strong>@Localizer["No read-only cage."]</strong> @Localizer["Encryption and recovery do not remove your ability to modify the system. Existing open-source licence rights remain unchanged."]</p>
+                    <p class="pro-fineprint">@Localizer["Changing boot components may require signing and key enrollment to keep Secure Boot enabled. Custom changes can affect bootability and support eligibility. Protection is not a promise that every modification is safe."]</p>
                 </div>
-            </div>
-            <div class="pro-container pro-feature-notes" data-pro-reveal>
-                <p><strong>@Localizer["No read-only cage."]</strong> @Localizer["Encryption and recovery do not remove your ability to modify the system. Existing open-source licence rights remain unchanged."]</p>
-                <p class="pro-fineprint">@Localizer["Changing boot components may require signing and key enrollment to keep Secure Boot enabled. Custom changes can affect bootability and support eligibility. Protection is not a promise that every modification is safe."]</p>
-            </div>
-        </section>
+            </section>
+
+        </div>
 
         <section class="pro-compare" id="pro-compare" aria-labelledby="pro-compare-heading">
             <div class="pro-container">

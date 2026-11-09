@@ -135,8 +135,10 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-recovery-visual img { width: 100%; border-radius: 10px; border: 4px solid #7387a0; box-shadow: 0 25px 45px #102f5988; }
 .pro-recovery-visual figcaption { text-align: center; font-size: 10px; color: #fff; margin-top: 20px; text-shadow: 0 1px 5px #102f59; }
 
+/* Adjacent blue chapters share one continuous gradient instead of restarting it. */
+.pro-trust-story { color: #fff; background: var(--pro-stage); }
+
 /* A restrained, scroll-activated diagram, not a simulated system status. */
-.pro-secure-boot { color: #fff; background: var(--pro-stage); }
 .pro-secure-boot .pro-eyebrow { color: var(--pro-ice); }
 .pro-secure-boot h2 > span { color: var(--pro-ice); }
 .pro-secure-boot .pro-section-lead { color: var(--pro-on-blue); }
@@ -158,7 +160,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-secure-boot .pro-feature-notes a { color: var(--pro-ice); }
 
 /* Freedom uses the language of a source file, without inventing product UI. */
-.pro-freedom { position: relative; color: #fff; background: var(--pro-stage); }
+.pro-freedom { position: relative; }
 .pro-freedom-grid { display: grid; grid-template-columns: 1.35fr 1fr; align-items: center; gap: 85px; }
 .pro-freedom .pro-eyebrow { margin-bottom: 23px; color: var(--pro-ice); }
 .pro-freedom-copy .pro-section-lead { margin: 26px 0 25px; font-size: 17px; color: var(--pro-on-blue); }
