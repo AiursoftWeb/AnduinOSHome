@@ -62,9 +62,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-story { padding-block: 80px 35px; text-align: center; }
 .pro-story h2 { font-size: clamp(38px, 4.2vw, 60px); line-height: 1.07; letter-spacing: -.045em; color: var(--pro-ink); }
 .pro-story h2 span { color: var(--pro-blue); }
-.pro-story-copy { max-width: 730px; margin: 26px auto 0; }
-.pro-story-copy p { font-size: 17px; color: var(--pro-secondary); text-wrap: pretty; }
-.pro-story-copy p + p { margin-top: 16px; color: var(--pro-ink); font-weight: 500; }
+.pro-story .pro-story-copy { max-width: 730px; margin: 26px auto 0; font-size: 17px; color: var(--pro-secondary); text-wrap: pretty; }
 
 /* A compact feature pair, designed to accept more real features as Pro evolves. */
 .pro-benefits { padding-block: 78px 48px; }
@@ -214,7 +212,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-get-actions { align-items: start; margin-top: 28px; }
     .pro-story { padding-block: 65px 25px; }
     .pro-story h2 { font-size: clamp(38px, 6vw, 54px); }
-    .pro-story-copy { max-width: 600px; }
+    .pro-story .pro-story-copy { max-width: 600px; }
     .pro-encryption { gap: 25px; }
     .pro-encryption h3 { font-size: 35px; }
     .pro-freedom-grid { gap: 30px; }
@@ -273,8 +271,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-get p:not(.pro-eyebrow) { font-size: 12px; }
     .pro-story { padding-block: 50px 20px; }
     .pro-story h2 { font-size: clamp(31px, 8.8vw, 46px); }
-    .pro-story-copy { margin-top: 22px; }
-    .pro-story-copy p { font-size: 15px; }
+    .pro-story .pro-story-copy { margin-top: 22px; font-size: 15px; }
     .pro-encryption { grid-template-columns: 1fr; gap: 25px; }
     .pro-encryption h3 { font-size: 36px; }
     .pro-support { grid-template-columns: 1fr; gap: 28px; }
