@@ -343,3 +343,17 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-page *, .pro-page *::before, .pro-page *::after { animation: none !important; transition: none !important; }
     .pro-motion [data-pro-reveal].pro-awaiting-reveal { opacity: 1; transform: none; }
 }
+
+/* Small image references lead to one quiet set of notes below the final call to action. */
+.pro-page .pro-figure-reference { margin-top: 3px; text-align: end; font-size: 10px; line-height: 1; }
+.pro-figure-reference sup { top: 0; font-size: inherit; }
+.pro-figure-reference a { display: inline-block; padding: 6px 8px; color: inherit; text-decoration: none; }
+.pro-figure-reference a:hover { text-decoration: underline; }
+.pro-encryption .pro-figure-reference { color: #e2f0ff; }
+.pro-notes { padding-block: 28px 36px; font-size: 11px; color: var(--pro-secondary); }
+.pro-notes h2 { font-size: 12px; font-weight: 600; letter-spacing: 0; margin-bottom: 12px; }
+.pro-notes ol { margin: 0; padding-inline-start: 20px; }
+.pro-notes li { padding-inline-start: 4px; line-height: 1.7; scroll-margin-top: 24px; }
+.pro-notes li + li { margin-top: 7px; }
+.pro-notes [role="doc-backlink"] { display: inline-block; padding-inline: 6px; }
+.pro-notes li:target { color: var(--pro-ink); }
