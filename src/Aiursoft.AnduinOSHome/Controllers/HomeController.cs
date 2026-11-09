@@ -33,6 +33,12 @@ public class HomeController : Controller
         return this.SimpleView(new CompareViewModel());
     }
 
+    [Route("/pro")]
+    public IActionResult Pro()
+    {
+        return this.SimpleView(new ProViewModel());
+    }
+
     [Route("/privacy.html")]
     public IActionResult Privacy()
     {
