@@ -95,6 +95,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Delete Account"];
     
         _ = localizer["Compare AnduinOS"];
+        _ = localizer["AnduinOS Pro"];
 
         _ = localizer["Hardware"];
         _ = localizer["Recommended hardware"];

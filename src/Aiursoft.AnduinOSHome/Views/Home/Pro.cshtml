@@ -1,0 +1,171 @@
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<div class="pro-experience">
+    <div class="pro-page" id="pro-overview">
+        <section class="pro-hero" aria-labelledby="pro-heading">
+            <div class="pro-container pro-hero-grid">
+                <div class="pro-hero-copy">
+                    <p class="pro-product-name"><img src="~/logo.svg" width="28" height="28" alt="">AnduinOS <span class="pro-wordmark">Pro</span></p>
+                    <p class="pro-status">@Localizer["In development"]</p>
+                    <h1 id="pro-heading">@Localizer["More possibilities."]<br><span>@Localizer["Same freedom."]</span></h1>
+                    <p class="pro-lead">@Localizer["Extra features and official support for your everyday desktop."]</p>
+                    <p class="pro-hero-price"><strong>$29</strong><span>USD · @Localizer["Planned one-time price"]</span></p>
+                    <div class="pro-actions">
+                        <a class="pro-button" href="#pro-benefits">@Localizer["Explore Pro"] <i data-lucide="arrow-down" aria-hidden="true"></i></a>
+                        <a class="pro-text-link" href="#pro-compare">@Localizer["Compare editions"] <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <figure class="pro-desktop">
+                    <div class="pro-screen-frame">
+                        <img src="~/sc.webp" width="2048" height="1152" fetchpriority="high"
+                             alt="@Localizer["The AnduinOS desktop with its blue wallpaper and application menu"]">
+                    </div>
+                    <figcaption>@Localizer["The desktop you love. With more possibilities."]</figcaption>
+                </figure>
+            </div>
+            <div class="pro-container pro-hero-facts">
+                <span><i data-lucide="lock-keyhole" aria-hidden="true"></i>@Localizer["Disk encryption"]</span>
+                <span><i data-lucide="headphones" aria-hidden="true"></i>@Localizer["One year of official support"]</span>
+                <span><i data-lucide="check" aria-hidden="true"></i>@Localizer["One purchase. No subscription."]</span>
+            </div>
+        </section>
+
+        <section class="pro-benefits pro-container" id="pro-benefits" aria-labelledby="pro-benefits-heading">
+            <div class="pro-section-heading" data-pro-reveal>
+                <div>
+                    <p class="pro-eyebrow">@Localizer["A first look at Pro"]</p>
+                    <h2 id="pro-benefits-heading">@Localizer["Why choose Pro?"]</h2>
+                </div>
+                <p>@Localizer["Useful extras. Help when you need it."]</p>
+            </div>
+            <div class="pro-benefit-grid">
+                <article class="pro-card pro-encryption" id="pro-encryption" data-pro-reveal>
+                    <div class="pro-card-copy">
+                        <p class="pro-eyebrow">@Localizer["Disk encryption"]</p>
+                        <h3>@Localizer["Your files. For your eyes only."]</h3>
+                        <p>@Localizer["Keep your data private if your computer is lost or stolen."]</p>
+                        <span class="pro-feature-status">@Localizer["In development"]</span>
+                    </div>
+                    <figure>
+                        <div class="pro-feature-screen">
+                            <img src="~/images/pro/encryption-preview.png" width="1280" height="800" loading="lazy"
+                                 alt="@Localizer["Development build of Driver Center showing disk encryption settings"]">
+                        </div>
+                        <figcaption>@Localizer["Real development build. Interface may change."]</figcaption>
+                    </figure>
+                    <p class="pro-card-note">@Localizer["Protects data when powered off. Encryption is not a backup."]</p>
+                </article>
+                <article class="pro-card pro-support" id="pro-support" data-pro-reveal>
+                    <p class="pro-eyebrow">@Localizer["Official support"]</p>
+                    <div class="pro-support-symbol" aria-hidden="true"><i data-lucide="headphones"></i></div>
+                    <h3>@Localizer["You don't have to figure it out alone."]</h3>
+                    <p>@Localizer["Get help with installing and using AnduinOS, from the team behind it."]</p>
+                    <div class="pro-support-term"><strong>1</strong><span>@Localizer["year of official support"]</span></div>
+                    <p class="pro-card-note">@Localizer["Up to seven eligible devices under one account."]</p>
+                    <a class="pro-text-link" href="#pro-questions">@Localizer["About your purchase"] <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <p class="pro-roadmap-note" data-pro-reveal><i data-lucide="plus" aria-hidden="true"></i><strong>@Localizer["And there's more to come."]</strong> @Localizer["The full Pro feature list will be announced before launch."]</p>
+        </section>
+
+        <section class="pro-foundation" id="pro-foundation" aria-labelledby="pro-foundation-heading">
+            <div class="pro-container pro-foundation-grid">
+                <figure class="pro-recovery" data-pro-reveal>
+                    <div class="pro-feature-screen">
+                        <img src="~/images/pro/recovery-preview.png" width="1280" height="800" loading="lazy"
+                             alt="@Localizer["AnduinOS Recovery Environment showing a system snapshot and the Roll Back action"]">
+                    </div>
+                    <figcaption>@Localizer["A real look at AnduinOS Recovery."]</figcaption>
+                </figure>
+                <div class="pro-foundation-copy" data-pro-reveal>
+                    <p class="pro-eyebrow">@Localizer["In Community and Pro"]</p>
+                    <h2 id="pro-foundation-heading">@Localizer["Still the AnduinOS you love."]</h2>
+                    <ul class="pro-foundation-list">
+                        <li><i data-lucide="rotate-ccw" aria-hidden="true"></i><div><h3>@Localizer["A way back."]</h3><p>@Localizer["Restore a system snapshot when your desktop won't start."]</p></div></li>
+                        <li><i data-lucide="shield-check" aria-hidden="true"></i><div><h3>Secure Boot.</h3><p>@Localizer["Protection from startup, on supported hardware."]</p></div></li>
+                        <li><i data-lucide="code-xml" aria-hidden="true"></i><div><h3>@Localizer["Yours to change."]</h3><p>@Localizer["Modify your system. Keep your open-source freedoms."]</p></div></li>
+                    </ul>
+                    <details class="pro-technical">
+                        <summary>@Localizer["Compatibility and technical details"]</summary>
+                        <p>@Localizer["Recovery needs a supported installation, readable storage and a usable snapshot. The encrypted Pro recovery path is still being validated. Keep independent backups."]</p>
+                        <p>@Localizer["Secure Boot may require key enrollment; modified boot components may need signing."] <a href="https://docs.anduinos.com/Install/Secure-Boot-Signing-Architecture.html">@Localizer["Read the documentation"] <span aria-hidden="true">↗</span></a></p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="pro-compare pro-container" id="pro-compare" aria-labelledby="pro-compare-heading">
+            <div class="pro-section-heading" data-pro-reveal>
+                <div>
+                    <p class="pro-eyebrow">@Localizer["Choose what works for you"]</p>
+                    <h2 id="pro-compare-heading">@Localizer["One AnduinOS. Your choice."]</h2>
+                </div>
+                <p>@Localizer["The same free ISO. Optional Pro benefits."]</p>
+            </div>
+            <div class="pro-table-wrap" data-pro-reveal>
+                <table class="pro-comparison">
+                    <caption class="pro-visually-hidden">@Localizer["Community and planned Pro benefits. Pro is not yet available to purchase."]</caption>
+                    <colgroup><col class="pro-feature-column"><col><col class="pro-paid-column"></colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="pro-visually-hidden">@Localizer["Features"]</span></th>
+                            <th scope="col"><span class="pro-edition">@Localizer["Community"]</span><span class="pro-edition-price">@Localizer["Free"]</span><a class="pro-text-link" href="/#download-links">@Localizer["Download"] <span aria-hidden="true">↗</span></a></th>
+                            <th scope="col"><span class="pro-edition">AnduinOS Pro</span><span class="pro-edition-price">$29 <small>USD</small></span><span class="pro-table-status">@Localizer["Planned one-time price"]</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">@Localizer["Desktop, apps and ordinary updates"]</th><td>@Localizer["Included"]</td><td>@Localizer["Included"]</td></tr>
+                        <tr><th scope="row">@Localizer["Secure Boot and system recovery"]<small>@Localizer["On supported installations"]</small></th><td>@Localizer["Included"]</td><td>@Localizer["Included"]</td></tr>
+                        <tr><th scope="row">@Localizer["Freedom to modify your system"]</th><td>@Localizer["Included"]</td><td>@Localizer["Unchanged"]</td></tr>
+                        <tr><th scope="row">@Localizer["Disk encryption"]</th><td>@Localizer["Not in the standard installer"]</td><td><strong>@Localizer["In development"]</strong></td></tr>
+                        <tr><th scope="row">@Localizer["Installation and everyday help"]</th><td>@Localizer["Community resources"]</td><td><strong>@Localizer["One year of official support"]</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="pro-table-note">@Localizer["Pro is in development. Final features, taxes and support terms will be confirmed before purchase."]</p>
+        </section>
+
+        <section class="pro-questions pro-container" id="pro-questions" aria-labelledby="pro-questions-heading">
+            <h2 id="pro-questions-heading">@Localizer["A few things to know."]</h2>
+            <div class="pro-faq-list">
+                <details><summary>@Localizer["Is Pro a subscription?"]</summary><p>@Localizer["No. The planned price is USD 29 once. Keep the local Pro features of the version you buy, with one year of official support. Future major versions may be sold separately."]</p></details>
+                <details><summary>@Localizer["Do I need a different download?"]</summary><p>@Localizer["No. Community and Pro use the same free ISO. Download without paying or signing in, then choose your edition during installation. Firefox and ordinary updates work without Pro activation."]</p></details>
+                <details><summary>@Localizer["What does official support cover?"]</summary><p>@Localizer["Installation and use of AnduinOS on up to seven eligible devices under one account. Support hours, response targets and detailed terms will be published before sales open."]</p></details>
+            </div>
+        </section>
+
+        <section class="pro-get" id="pro-get" aria-labelledby="pro-get-heading">
+            <div class="pro-container pro-get-inner" data-pro-reveal>
+                <div>
+                    <p class="pro-eyebrow">AnduinOS Pro</p>
+                    <h2 id="pro-get-heading">@Localizer["More is on the way."]<br><span>@Localizer["Your desktop is ready today."]</span></h2>
+                    <p>@Localizer["Pro is coming soon. Get to know AnduinOS with the free community edition."]</p>
+                </div>
+                <div class="pro-get-actions">
+                    <a class="pro-button" href="/#download-links">@Localizer["Try AnduinOS for free"] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <a class="pro-text-link" href="https://news.aiursoft.com">@Localizer["Follow the latest news"] <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="pro-bottom-note pro-container">
+            <a asp-controller="Home" asp-action="Terms">@Localizer["Terms of Service"]</a><span aria-hidden="true"> · </span><a asp-controller="Home" asp-action="Privacy">@Localizer["Privacy Policy"]</a>
+        </div>
+    </div>
+    <vc:marketing-footer></vc:marketing-footer>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <meta name="description" content="@Localizer["Meet AnduinOS Pro: extra features and one year of official support. Planned at USD 29, one-time. Explore the preview and try AnduinOS free today."]">
+    <meta property="og:title" content="AnduinOS Pro">
+    <meta property="og:description" content="@Localizer["More possibilities. Same freedom. Extra features and official support for your everyday desktop."]">
+    <meta property="og:image" content="https://www.anduinos.com/sc.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="~/css/pro.css" asp-append-version="true">
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/pro.js" asp-append-version="true" defer></script>
+}
