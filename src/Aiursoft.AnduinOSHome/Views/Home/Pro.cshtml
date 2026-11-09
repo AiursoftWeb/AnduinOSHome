@@ -58,6 +58,10 @@
                         </div>
                         <figcaption>@Localizer["Real development build. Interface may change."]</figcaption>
                     </figure>
+                    <details class="pro-technical pro-encryption-technical">
+                        <summary>@Localizer["Encryption details"]</summary>
+                        <p>@Localizer["The supported encrypted installation covers system files, personal files and disk swap. Store your recovery key separately and keep independent backups."]</p>
+                    </details>
                     <p class="pro-card-note">@Localizer["Protects data when powered off. Encryption is not a backup."]</p>
                 </article>
                 <article class="pro-card pro-support" id="pro-support" data-pro-reveal>
@@ -87,19 +91,41 @@
                     <figcaption>@Localizer["A real look at AnduinOS Recovery."]</figcaption>
                 </figure>
                 <div class="pro-foundation-copy" data-pro-reveal>
-                    <p class="pro-eyebrow">@Localizer["In Community and Pro"]</p>
+                    <p class="pro-eyebrow">@Localizer["Pro exclusive"]</p>
                     <h2 id="pro-foundation-heading">@Localizer["A fresh start."]<br><span>@Localizer["Not a blank slate."]</span></h2>
-                    <ul class="pro-foundation-list">
-                        <li><i data-lucide="rotate-ccw" aria-hidden="true"></i><div><h3>@Localizer["A way back."]</h3><p>@Localizer["Restore a system snapshot when your desktop won't start."]</p></div></li>
-                        <li><i data-lucide="shield-check" aria-hidden="true"></i><div><h3>Secure Boot.</h3><p>@Localizer["Protection from startup, on supported hardware."]</p></div></li>
-                    </ul>
+                    <p class="pro-recovery-description">@Localizer["An update goes wrong. Your desktop won't start. With Pro, an independent recovery environment gives you a way back. Restore a usable system snapshot without rolling back your personal files."]</p>
+                    <span class="pro-feature-status">@Localizer["In development"]</span>
                     <details class="pro-technical">
                         <summary>@Localizer["Compatibility and technical details"]</summary>
                         <p>@Localizer["Recovery needs a supported installation, readable storage and a usable snapshot. The encrypted Pro recovery path is still being validated. Keep independent backups."]</p>
-                        <p>@Localizer["Secure Boot may require key enrollment; modified boot components may need signing."] <a href="https://docs.anduinos.com/Install/Secure-Boot-Signing-Architecture.html">@Localizer["Read the documentation"] <span aria-hidden="true">↗</span></a></p>
                     </details>
                 </div>
             </div>
+        </section>
+
+        <section class="pro-everyday pro-container" aria-label="@Localizer["More with Pro"]">
+            <article class="pro-everyday-card pro-offline" data-pro-reveal>
+                <p class="pro-eyebrow">@Localizer["Offline update packages"]</p>
+                <h2>@Localizer["Stay up to date."]<br><span>@Localizer["Even offline."]</span></h2>
+                <p class="pro-everyday-description">@Localizer["Bring updates to computers without a live internet connection."]</p>
+                <span class="pro-feature-status">@Localizer["Planned"]</span>
+                <div class="pro-offline-visual" aria-hidden="true">
+                    <span class="pro-package-symbol"><i data-lucide="package"></i></span>
+                    <span class="pro-transfer-symbol"><i data-lucide="arrow-right"></i></span>
+                    <span class="pro-laptop-symbol"><i data-lucide="laptop-minimal"></i></span>
+                </div>
+            </article>
+            <article class="pro-everyday-card pro-personal" data-pro-reveal>
+                <p class="pro-eyebrow">@Localizer["Extra wallpapers"]</p>
+                <h2>@Localizer["Your desktop."]<br><span>@Localizer["A little more you."]</span></h2>
+                <p class="pro-everyday-description">@Localizer["More ways to make a familiar desktop your own, with an extra collection of wallpapers."]</p>
+                <span class="pro-feature-status">@Localizer["In development"]</span>
+                <figure class="pro-personal-preview">
+                    <img src="~/sc.webp" width="2048" height="1152" loading="lazy"
+                         alt="@Localizer["The AnduinOS desktop with its blue wallpaper and application menu"]">
+                    <figcaption>@Localizer["Current desktop. Extra wallpapers are in development."]</figcaption>
+                </figure>
+            </article>
         </section>
 
         <section class="pro-freedom" aria-labelledby="pro-freedom-heading">
@@ -109,6 +135,10 @@
                     <h2 id="pro-freedom-heading">@Localizer["More secure."]<br><span>@Localizer["Still completely yours."]</span></h2>
                     <p class="pro-freedom-description">@Localizer["Edit your files. Build your tools. Make the desktop your own."]</p>
                     <a class="pro-text-link" href="https://github.com/aiursoftweb/anduinos-2">@Localizer["Explore the source"] <span aria-hidden="true">↗</span></a>
+                    <details class="pro-technical pro-freedom-technical">
+                        <summary>@Localizer["Secure Boot compatibility"]</summary>
+                        <p>@Localizer["Secure Boot may require key enrollment; modified boot components may need signing."] <a href="https://docs.anduinos.com/Install/Secure-Boot-Signing-Architecture.html">@Localizer["Read the documentation"] <span aria-hidden="true">↗</span></a></p>
+                    </details>
                 </div>
                 <div class="pro-freedom-art" data-pro-reveal>
                     <div class="pro-open-symbol" aria-hidden="true"><span>{</span><i data-lucide="unlock-keyhole"></i><span>}</span></div>
@@ -136,10 +166,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Disk encryption"]</th><td>@Localizer["Not in the standard installer"]</td><td><strong>@Localizer["In development"]</strong></td></tr>
-                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Installation and everyday help"]</th><td>@Localizer["Community resources"]</td><td><strong>@Localizer["One year of official support"]</strong></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Independent Recovery Environment"]</th><td><span class="pro-comparison-unavailable" aria-hidden="true">—</span><span class="pro-visually-hidden">@Localizer["Not included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span><small>@Localizer["In development"]</small></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Disk encryption"]</th><td><span class="pro-comparison-unavailable" aria-hidden="true">—</span><span class="pro-visually-hidden">@Localizer["Not included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span><small>@Localizer["In development"]</small></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Offline update packages"]</th><td><span class="pro-comparison-unavailable" aria-hidden="true">—</span><span class="pro-visually-hidden">@Localizer["Not included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span><small>@Localizer["Planned"]</small></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Official support"]</th><td><span class="pro-comparison-unavailable" aria-hidden="true">—</span><span class="pro-visually-hidden">@Localizer["Not included"]</span></td><td><strong>@Localizer["One year of official support"]</strong></td></tr>
+                        <tr class="pro-benefit-row"><th scope="row">@Localizer["Extra wallpapers"]</th><td><span class="pro-comparison-unavailable" aria-hidden="true">—</span><span class="pro-visually-hidden">@Localizer["Not included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span><small>@Localizer["In development"]</small></td></tr>
                         <tr><th scope="row">@Localizer["Desktop, apps and ordinary updates"]</th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td></tr>
-                        <tr><th scope="row">@Localizer["Secure Boot and system recovery"]<small>@Localizer["On supported installations"]</small></th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td></tr>
+                        <tr><th scope="row">Secure Boot<small>@Localizer["On supported installations"]</small></th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td></tr>
                         <tr><th scope="row">@Localizer["Freedom to modify your system"]</th><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Included"]</span></td><td><span class="pro-comparison-check" aria-hidden="true">✓</span><span class="pro-visually-hidden">@Localizer["Unchanged"]</span></td></tr>
                     </tbody>
                 </table>

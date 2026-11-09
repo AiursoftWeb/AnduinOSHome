@@ -18,3 +18,7 @@ The hero reuses the site's existing `sc.webp` desktop screenshot.
 All product visuals use these actual captures. CSS adds frames and lighting
 around them; screenshot contents are not recolored or fabricated. No stock
 photography or generated device imagery is included.
+
+## Planned everyday benefits
+
+The extra-wallpaper section reuses the existing `wwwroot/sc.webp` capture of the current AnduinOS desktop. Its caption explicitly states that the extra wallpaper collection is in development; this image is not presented as the new collection. The offline-update visual is an HTML/CSS illustration using the existing Lucide icon library, not a screenshot of a completed updater.
