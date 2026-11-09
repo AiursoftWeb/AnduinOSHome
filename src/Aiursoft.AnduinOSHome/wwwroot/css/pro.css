@@ -75,8 +75,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-encryption .pro-eyebrow { color: var(--pro-ice); }
 .pro-encryption h3 { font-size: clamp(33px, 3.1vw, 44px); }
 .pro-encryption h3 span { color: var(--pro-ice); }
-.pro-encryption .pro-card-copy > p:not(.pro-eyebrow), .pro-encryption .pro-card-note, .pro-encryption figure figcaption { color: #e2f0ff; }
-.pro-encryption > .pro-card-note { grid-column: 1 / -1; border-top: 1px solid #c8e3ff40; padding-top: 18px; }
+.pro-encryption .pro-card-copy > p:not(.pro-eyebrow), .pro-encryption figure figcaption { color: #e2f0ff; }
 .pro-card h3 { margin-top: 16px; max-width: 420px; }
 .pro-card-copy > p:not(.pro-eyebrow) { font-size: 14px; color: var(--pro-secondary); margin-top: 16px; max-width: 380px; }
 .pro-feature-status { display: inline-block; font-size: 10px; font-weight: 550; color: #245a9b; border-radius: 30px; padding: 4px 9px; background: #d0e3ff; margin-top: 17px; }
@@ -84,9 +83,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-feature-screen { border: 1px solid #8fa4bb; border-radius: 10px; overflow: hidden; background: #202020; box-shadow: 0 16px 35px #122d4e25; }
 .pro-feature-screen img { width: 100%; }
 .pro-encryption figcaption, .pro-recovery figcaption { font-size: 10px; color: var(--pro-secondary); margin-top: 11px; text-align: center; }
-.pro-card-note { font-size: 11px; color: var(--pro-secondary); }
-.pro-encryption > .pro-card-note { margin-top: 17px; }
-.pro-encryption .pro-encryption-technical { grid-column: 1 / -1; color: #e2f0ff; }
 .pro-support { padding: 40px 52px; color: var(--pro-ink); background: #e4effd; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; }
 .pro-support .pro-eyebrow { color: var(--pro-blue); }
 .pro-support h3 { margin-top: 24px; }
@@ -96,7 +92,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-support-term { display: flex; align-items: center; gap: 18px; margin-top: auto; padding-top: 28px; }
 .pro-support-term > strong { font-size: 100px; line-height: 1.05; font-weight: 500; letter-spacing: -.06em; color: var(--pro-blue); }
 .pro-support-term > span { font-size: 17px; max-width: 145px; color: var(--pro-ink); text-align: start; }
-.pro-support-promise .pro-card-note { margin-top: 14px; }
 .pro-support .pro-text-link { margin-top: 24px; }
 .pro-roadmap-note { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 26px !important; color: var(--pro-secondary); font-size: 12px; text-align: center; }
 .pro-roadmap-note svg { width: 14px; height: 14px; color: var(--pro-blue); }
@@ -111,9 +106,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-foundation-copy h2 { font-size: 35px; max-width: 370px; }
 .pro-foundation-copy h2 span { color: var(--pro-blue); }
 .pro-foundation-copy .pro-recovery-description { font-size: 16px; color: var(--pro-secondary); margin-top: 25px; max-width: 440px; text-wrap: pretty; }
-.pro-technical { margin-top: 22px; font-size: 11px; color: var(--pro-secondary); }
-.pro-technical summary { cursor: pointer; padding-block: 5px; width: fit-content; }
-.pro-technical p { margin-top: 12px; }
 
 /* Planned everyday benefits use concise copy and honest previews. */
 .pro-everyday { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-bottom: 75px; }
@@ -143,8 +135,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-freedom h2 span { color: var(--pro-ice); }
 .pro-freedom-description { font-size: 17px; color: #e2f0ff; max-width: 410px; margin-top: 26px !important; }
 .pro-freedom .pro-text-link { color: #fff; margin-top: 24px; }
-.pro-freedom-technical { color: #e2f0ff; max-width: 440px; }
-.pro-freedom-technical a { color: var(--pro-ice); }
 .pro-freedom-art { min-height: 310px; padding: 35px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #c8e3ff70; border-radius: 30px; background: linear-gradient(135deg, #ffffff24, #c8e3ff0a); box-shadow: inset 0 1px #ffffff20, 0 25px 55px #082c5425; }
 .pro-open-symbol { display: flex; align-items: center; gap: 27px; font-size: 64px; font-weight: 300; line-height: 1; color: var(--pro-ice); }
 .pro-open-symbol svg { width: 48px; height: 48px; stroke-width: 1.25; }
@@ -184,7 +174,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-comparison tbody td:last-child { border-bottom-color: #c9dbf1; }
 .pro-comparison tbody tr:last-child td:last-child { border-radius: 0 0 22px 22px; border-bottom: 0; }
 .pro-comparison strong { font-weight: 600; }
-.pro-table-note { font-size: 11px; color: var(--pro-secondary); text-align: center; margin-top: 22px !important; }
 
 .pro-questions { display: grid; grid-template-columns: 1fr 1.2fr; gap: 65px; padding-block: 30px 85px; }
 .pro-questions h2 { font-size: 30px; margin-top: 17px; }
@@ -316,7 +305,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-comparison thead th:last-child .pro-edition-price small { display: block; font-size: 9px; margin-top: 5px; }
     .pro-comparison-check { font-size: 18px; }
     .pro-table-status { font-size: 9px; }
-    .pro-table-note { font-size: 10px; }
     .pro-questions { grid-template-columns: 1fr; gap: 10px; padding-block: 12px 48px; }
     .pro-questions h2 { font-size: 26px; }
     .pro-faq-list summary { font-size: 13px; }
@@ -344,7 +332,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
     .pro-motion [data-pro-reveal].pro-awaiting-reveal { opacity: 1; transform: none; }
 }
 
-/* Small image references lead to one quiet set of notes below the final call to action. */
+/* Quiet references keep secondary conditions together below the final call to action. */
 .pro-page .pro-figure-reference { margin-top: 3px; text-align: end; font-size: 10px; line-height: 1; }
 .pro-figure-reference sup { top: 0; font-size: inherit; }
 .pro-figure-reference a { display: inline-block; padding: 6px 8px; color: inherit; text-decoration: none; }
@@ -357,3 +345,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-notes li + li { margin-top: 7px; }
 .pro-notes .pro-note-backlink { display: inline-block; padding-inline: 6px; }
 .pro-notes li:target { color: var(--pro-ink); }
+
+.pro-inline-reference { font-size: 10px; line-height: 0; white-space: nowrap; margin-inline-start: 3px; }
+.pro-inline-reference .pro-note-link { color: inherit; padding: 4px 3px; text-decoration: none; }
+.pro-inline-reference .pro-note-link:hover { text-decoration: underline; }
