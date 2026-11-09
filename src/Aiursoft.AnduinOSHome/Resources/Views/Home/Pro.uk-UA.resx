@@ -1,195 +1,250 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:schema id="root">
-    <xs:element name="root" ns1:IsDataSet="true">
+<?xml version="1.0" encoding="utf-8"?>
 
-        </xs:element>
-  </xs:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>1.3</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="In development" xml:space="preserve">
-    <value>У розробці</value>
-  </data>
-  <data name="More possibilities." xml:space="preserve">
-    <value>Більше можливостей.</value>
-  </data>
-  <data name="Same freedom." xml:space="preserve">
-    <value>Така ж свобода.</value>
-  </data>
-  <data name="Extra features and official support for your everyday desktop." xml:space="preserve">
-    <value>Додаткові функції та офіційна підтримка для вашого щоденного робочого столу.</value>
-  </data>
-  <data name="Planned one-time price" xml:space="preserve">
-    <value>Запланована одноразова ціна</value>
-  </data>
-  <data name="Explore Pro" xml:space="preserve">
-    <value>Дослідити Pro</value>
-  </data>
-  <data name="Compare editions" xml:space="preserve">
-    <value>Порівняти версії</value>
-  </data>
-  <data name="The AnduinOS desktop with its blue wallpaper and application menu" xml:space="preserve">
-    <value>Робочий стіл AnduinOS із синім тлом та меню застосунків</value>
-  </data>
-  <data name="The desktop you love. With more possibilities." xml:space="preserve">
-    <value>Ваш улюблений робочий стіл. З більшими можливостями.</value>
-  </data>
-  <data name="Disk encryption" xml:space="preserve">
-    <value>Шифрування диска</value>
-  </data>
-  <data name="One year of official support" xml:space="preserve">
-    <value>Рік офіційної підтримки</value>
-  </data>
-  <data name="One purchase. No subscription." xml:space="preserve">
-    <value>Одна покупка. Без підписки.</value>
-  </data>
-  <data name="Life happens." xml:space="preserve">
-    <value>Життя таке.</value>
-  </data>
-  <data name="Your OS should be ready." xml:space="preserve">
-    <value>Ваша ОС має бути готова.</value>
-  </data>
-  <data name="Pro brings extra protection and official support to the desktop you already love." xml:space="preserve">
-    <value>Pro додає додатковий захист та офіційну підтримку для робочого столу, який ви вже любите.</value>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A few things to know." xml:space="preserve">
+    <value>Кілька важливих моментів.</value>
   </data>
   <data name="A first look at Pro" xml:space="preserve">
     <value>Перший погляд на Pro</value>
   </data>
-  <data name="Why choose Pro?" xml:space="preserve">
-    <value>Чому обрати Pro?</value>
-  </data>
-  <data name="Useful extras. Help when you need it." xml:space="preserve">
-    <value>Корисні додатки. Допомога, коли вона потрібна.</value>
-  </data>
-  <data name="Lose the laptop." xml:space="preserve">
-    <value>Втрата ноутбука.</value>
-  </data>
-  <data name="Keep your privacy." xml:space="preserve">
-    <value>Збережіть приватність.</value>
-  </data>
-  <data name="Keep your data private if your computer is lost or stolen." xml:space="preserve">
-    <value>Зберігайте свої дані в таємниці, якщо комп’ютер втрачено або викрадено.</value>
-  </data>
-  <data name="Development build of Driver Center showing disk encryption settings" xml:space="preserve">
-    <value>Розробоча збірка Driver Center, що демонструє налаштування шифрування диска</value>
-  </data>
-  <data name="Real development build. Interface may change." xml:space="preserve">
-    <value>Реальна розробоча збірка. Інтерфейс може змінюватися.</value>
-  </data>
-  <data name="Encryption details" xml:space="preserve">
-    <value>Деталі шифрування</value>
-  </data>
-  <data name="The supported encrypted installation covers system files, personal files and disk swap. Store your recovery key separately and keep independent backups." xml:space="preserve">
-    <value>Підтримуване шифроване встановлення покриває системні файли, особисті файли та резервну пам’ять диска. Зберігайте ключ відновлення окремо та створюйте незалежні резервні копії.</value>
-  </data>
-  <data name="Protects data when powered off. Encryption is not a backup." xml:space="preserve">
-    <value>Захищає дані при вимкненні живлення. Шифрування не є резервною копією.</value>
-  </data>
-  <data name="Official support" xml:space="preserve">
-    <value>Офіційна підтримка</value>
-  </data>
-  <data name="You don't have to figure it out alone." xml:space="preserve">
-    <value>Вам не доведеться розбиратися з цим самому.</value>
-  </data>
-  <data name="Get help with installing and using AnduinOS, from the team behind it." xml:space="preserve">
-    <value>Отримайте допомогу з встановленням та використанням AnduinOS від команди, яка його створила.</value>
-  </data>
-  <data name="About your purchase" xml:space="preserve">
-    <value>Про вашу покупку</value>
-  </data>
-  <data name="year of official support" xml:space="preserve">
-    <value>рік офіційної підтримки</value>
-  </data>
-  <data name="Up to seven eligible devices under one account." xml:space="preserve">
-    <value>До семи придатних пристроїв під одним обліковим записом.</value>
-  </data>
-  <data name="And there's more to come." xml:space="preserve">
-    <value>І це ще не все.</value>
-  </data>
-  <data name="The full Pro feature list will be announced before launch." xml:space="preserve">
-    <value>Повний список функцій Pro буде оголошено перед запуском.</value>
-  </data>
-  <data name="AnduinOS Recovery Environment showing a system snapshot and the Roll Back action" xml:space="preserve">
-    <value>Середовище відновлення AnduinOS, що демонструє знімок системи та дію «Відкотити»</value>
+  <data name="A little more you." xml:space="preserve">
+    <value>Трохи більше вас.</value>
   </data>
   <data name="A real look at AnduinOS Recovery." xml:space="preserve">
     <value>Реальний погляд на відновлення AnduinOS.</value>
   </data>
-  <data name="Pro exclusive" xml:space="preserve">
-    <value>Ексклюзивно для Pro</value>
+  <data name="About your purchase" xml:space="preserve">
+    <value>Про вашу покупку</value>
   </data>
-  <data name="Get back to your desktop." xml:space="preserve">
-    <value>Поверніться до свого робочого столу.</value>
+  <data name="And there&apos;s more to come." xml:space="preserve">
+    <value>І це ще не все.</value>
   </data>
-  <data name="Not back to square one." xml:space="preserve">
-    <value>А не до нуля.</value>
+  <data name="AnduinOS Recovery Environment showing a system snapshot and the Roll Back action" xml:space="preserve">
+    <value>Середовище відновлення AnduinOS, що демонструє знімок системи та дію «Відкотити»</value>
   </data>
-  <data name="When your system won’t start, Pro’s independent recovery environment helps you restore it to working order, while keeping your personal files in place." xml:space="preserve">
-    <value>Коли ваша система не запускається, незалежне середовище відновлення Pro допомагає відновити її робочий стан, зберігаючи ваші особисті файли на місці.</value>
+  <data name="Back to image" xml:space="preserve">
+    <value>Повернутися до зображення</value>
   </data>
-  <data name="Compatibility and technical details" xml:space="preserve">
-    <value>Сумісність та технічні деталі</value>
-  </data>
-  <data name="Recovery needs a supported installation, readable storage and a usable snapshot. The encrypted Pro recovery path is still being validated. Keep independent backups." xml:space="preserve">
-    <value>Для відновлення потрібне підтримуване встановлення, читабельний носій та придатний знімок. Шифрований шлях відновлення Pro все ще проходить валідацію. Створюйте незалежні резервні копії.</value>
-  </data>
-  <data name="More with Pro" xml:space="preserve">
-    <value>Більше з Pro</value>
-  </data>
-  <data name="Offline update packages" xml:space="preserve">
-    <value>Офлайн-пакети оновлень</value>
-  </data>
-  <data name="Stay up to date." xml:space="preserve">
-    <value>Залишайтеся в актуальному стані.</value>
-  </data>
-  <data name="Even offline." xml:space="preserve">
-    <value>Навіть офлайн.</value>
+  <data name="Back to reference" xml:space="preserve">
+    <value>Повернутися до посилання</value>
   </data>
   <data name="Bring updates to computers without a live internet connection." xml:space="preserve">
     <value>Переносьте оновлення на комп’ютери без активного з’єднання з інтернетом.</value>
   </data>
-  <data name="Planned" xml:space="preserve">
-    <value>Заплановано</value>
+  <data name="Choose what works for you" xml:space="preserve">
+    <value>Обирайте те, що працює для вас</value>
   </data>
-  <data name="Extra wallpapers" xml:space="preserve">
-    <value>Додаткові шпалери</value>
+  <data name="Community" xml:space="preserve">
+    <value>Community</value>
   </data>
-  <data name="Your desktop." xml:space="preserve">
-    <value>Ваш робочий стіл.</value>
+  <data name="Community and planned Pro benefits. Pro is not yet available to purchase." xml:space="preserve">
+    <value>Переваги Community та заплановані переваги Pro. Pro ще не доступний для покупки.</value>
   </data>
-  <data name="A little more you." xml:space="preserve">
-    <value>Трохи більше вас.</value>
+  <data name="Compare editions" xml:space="preserve">
+    <value>Порівняти версії</value>
   </data>
-  <data name="More ways to make a familiar desktop your own, with an extra collection of wallpapers." xml:space="preserve">
-    <value>Більше способів зробити знайомий робочий стіл своїм за допомогою додаткової колекції шпалер.</value>
+  <data name="Compatibility and technical details" xml:space="preserve">
+    <value>Сумісність та технічні деталі</value>
   </data>
   <data name="Current desktop. Extra wallpapers are in development." xml:space="preserve">
     <value>Поточний робочий стіл. Додаткові шпалери перебувають у розробці.</value>
   </data>
-  <data name="In Community and Pro" xml:space="preserve">
-    <value>У Community та Pro</value>
+  <data name="Desktop, apps and ordinary updates" xml:space="preserve">
+    <value>Робочий стіл, застосунки та звичайні оновлення</value>
   </data>
-  <data name="More secure." xml:space="preserve">
-    <value>Безпечніше.</value>
+  <data name="Development build of Driver Center showing disk encryption settings" xml:space="preserve">
+    <value>Розробоча збірка Driver Center, що демонструє налаштування шифрування диска</value>
   </data>
-  <data name="Still completely yours." xml:space="preserve">
-    <value>Водночас повністю ваш.</value>
+  <data name="Disk encryption" xml:space="preserve">
+    <value>Шифрування диска</value>
+  </data>
+  <data name="Disk encryption keeps your files unreadable without the key—even if someone removes the drive." xml:space="preserve">
+    <value>Шифрування диска робить ваші файли нечитабельними без ключа — навіть якщо хтось вийме диск.</value>
+  </data>
+  <data name="Do I need a different download?" xml:space="preserve">
+    <value>Чи мені потрібне інше завантаження?</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Завантажити</value>
   </data>
   <data name="Edit your files. Build your tools. Make the desktop your own." xml:space="preserve">
     <value>Редагуйте свої файли. Створюйте свої інструменти. Робіть робочий стіл своїм.</value>
   </data>
+  <data name="Encryption details" xml:space="preserve">
+    <value>Деталі шифрування</value>
+  </data>
+  <data name="Even offline." xml:space="preserve">
+    <value>Навіть офлайн.</value>
+  </data>
+  <data name="Explore Pro" xml:space="preserve">
+    <value>Дослідити Pro</value>
+  </data>
   <data name="Explore the source" xml:space="preserve">
     <value>Дослідити вихідний код</value>
+  </data>
+  <data name="Extra features and official support for your everyday desktop." xml:space="preserve">
+    <value>Додаткові функції та офіційна підтримка для вашого щоденного робочого столу.</value>
+  </data>
+  <data name="Extra wallpapers" xml:space="preserve">
+    <value>Додаткові шпалери</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Функції</value>
+  </data>
+  <data name="Follow the latest news" xml:space="preserve">
+    <value>Слідкуйте за останніми новинами</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Безкоштовно</value>
+  </data>
+  <data name="Freedom to modify your system" xml:space="preserve">
+    <value>Свобода модифікувати вашу систему</value>
+  </data>
+  <data name="Get back to your desktop." xml:space="preserve">
+    <value>Поверніться до свого робочого столу.</value>
+  </data>
+  <data name="Get help with installing and using AnduinOS, from the team behind it." xml:space="preserve">
+    <value>Отримайте допомогу з встановленням та використанням AnduinOS від команди, яка його створила.</value>
+  </data>
+  <data name="In Community and Pro" xml:space="preserve">
+    <value>У Community та Pro</value>
+  </data>
+  <data name="In development" xml:space="preserve">
+    <value>У розробці</value>
+  </data>
+  <data name="Included" xml:space="preserve">
+    <value>Включено</value>
+  </data>
+  <data name="Independent Recovery Environment" xml:space="preserve">
+    <value>Незалежне середовище відновлення</value>
+  </data>
+  <data name="Installation and use of AnduinOS on up to seven eligible devices under one account. Support hours, response targets and detailed terms will be published before sales open." xml:space="preserve">
+    <value>Встановлення та використання AnduinOS на до семи придатних пристроях під одним обліковим записом. Графіки підтримки, цілі щодо швидкості відповіді та детальні умови буде оприлюднено перед відкриттям продажів.</value>
+  </data>
+  <data name="Is Pro a subscription?" xml:space="preserve">
+    <value>Чи є Pro підпискою?</value>
+  </data>
+  <data name="Keep your data private if your computer is lost or stolen." xml:space="preserve">
+    <value>Зберігайте свої дані в таємниці, якщо комп’ютер втрачено або викрадено.</value>
+  </data>
+  <data name="Keep your privacy." xml:space="preserve">
+    <value>Збережіть приватність.</value>
+  </data>
+  <data name="Life happens." xml:space="preserve">
+    <value>Життя таке.</value>
+  </data>
+  <data name="Lose the laptop." xml:space="preserve">
+    <value>Втрата ноутбука.</value>
+  </data>
+  <data name="Meet AnduinOS Pro: extra features and one year of official support. Planned at USD 29, one-time. Explore the preview and try AnduinOS free today." xml:space="preserve">
+    <value>Познайомтеся з AnduinOS Pro: додаткові функції та рік офіційної підтримки. Запланована ціна 29 USD, одноразово. Дослідіть прев’ю та спробуйте AnduinOS безкоштовно сьогодні.</value>
+  </data>
+  <data name="More is on the way." xml:space="preserve">
+    <value>Більше вже в дорозі.</value>
+  </data>
+  <data name="More possibilities." xml:space="preserve">
+    <value>Більше можливостей.</value>
+  </data>
+  <data name="More possibilities. Same freedom. Extra features and official support for your everyday desktop." xml:space="preserve">
+    <value>Більше можливостей. Така ж свобода. Додаткові функції та офіційна підтримка для вашого щоденного робочого столу.</value>
+  </data>
+  <data name="More secure." xml:space="preserve">
+    <value>Безпечніше.</value>
+  </data>
+  <data name="More ways to make a familiar desktop your own, with an extra collection of wallpapers." xml:space="preserve">
+    <value>Більше способів зробити знайомий робочий стіл своїм за допомогою додаткової колекції шпалер.</value>
+  </data>
+  <data name="More with Pro" xml:space="preserve">
+    <value>Більше з Pro</value>
+  </data>
+  <data name="No. Community and Pro use the same free ISO. Download without paying or signing in, then choose your edition during installation. Firefox and ordinary updates work without Pro activation." xml:space="preserve">
+    <value>Ні. Community та Pro використовують той самий безкоштовний ISO. Завантажуйте без оплати або входу в обліковий запис, а потім обирайте вашу версію під час встановлення. Firefox та звичайні оновлення працюють без активації Pro.</value>
+  </data>
+  <data name="No. The planned price is USD 29 once. Keep the local Pro features of the version you buy, with one year of official support. Future major versions may be sold separately." xml:space="preserve">
+    <value>Ні. Запланована ціна становить 29 USD одноразово. Зберігайте локальні функції Pro версії, яку ви купуєте, разом з роком офіційної підтримки. Майбутні великі версії можуть продаватися окремо.</value>
+  </data>
+  <data name="Not back to square one." xml:space="preserve">
+    <value>А не до нуля.</value>
+  </data>
+  <data name="Not included" xml:space="preserve">
+    <value>Не включено</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Примітки</value>
+  </data>
+  <data name="Official support" xml:space="preserve">
+    <value>Офіційна підтримка</value>
+  </data>
+  <data name="Offline update packages" xml:space="preserve">
+    <value>Офлайн-пакети оновлень</value>
+  </data>
+  <data name="Offline updates" xml:space="preserve">
+    <value>Офлайн-оновлення</value>
+  </data>
+  <data name="On supported installations" xml:space="preserve">
+    <value>На підтримуваних встановленнях</value>
+  </data>
+  <data name="One AnduinOS. Your choice." xml:space="preserve">
+    <value>Одна AnduinOS. Ваш вибір.</value>
+  </data>
+  <data name="One purchase. No subscription." xml:space="preserve">
+    <value>Одна покупка. Без підписки.</value>
+  </data>
+  <data name="One year of official support" xml:space="preserve">
+    <value>Рік офіційної підтримки</value>
+  </data>
+  <data name="Planned" xml:space="preserve">
+    <value>Заплановано</value>
+  </data>
+  <data name="Planned one-time price" xml:space="preserve">
+    <value>Запланована одноразова ціна</value>
+  </data>
+  <data name="Pro brings extra protection and official support to the desktop you already love." xml:space="preserve">
+    <value>Pro додає додатковий захист та офіційну підтримку для робочого столу, який ви вже любите.</value>
+  </data>
+  <data name="Pro exclusive" xml:space="preserve">
+    <value>Ексклюзивно для Pro</value>
+  </data>
+  <data name="Pro is coming soon. Get to know AnduinOS with the free community edition." xml:space="preserve">
+    <value>Pro з’явиться незабаром. Знайомтеся з AnduinOS у безкоштовній версії Community.</value>
+  </data>
+  <data name="Pro is in development. Final features, taxes and support terms will be confirmed before purchase." xml:space="preserve">
+    <value>Pro перебуває у розробці. Остаточні функції, податки та умови підтримки буде підтверджено перед покупкою.</value>
+  </data>
+  <data name="Protects data when powered off. Encryption is not a backup." xml:space="preserve">
+    <value>Захищає дані при вимкненні живлення. Шифрування не є резервною копією.</value>
+  </data>
+  <data name="Read the documentation" xml:space="preserve">
+    <value>Прочитати документацію</value>
+  </data>
+  <data name="Real development build. Interface may change." xml:space="preserve">
+    <value>Реальна розробоча збірка. Інтерфейс може змінюватися.</value>
+  </data>
+  <data name="Recovery environment" xml:space="preserve">
+    <value>Середовище відновлення</value>
+  </data>
+  <data name="Recovery needs a supported installation, readable storage and a usable snapshot. The encrypted Pro recovery path is still being validated. Keep independent backups." xml:space="preserve">
+    <value>Для відновлення потрібне підтримуване встановлення, читабельний носій та придатний знімок. Шифрований шлях відновлення Pro все ще проходить валідацію. Створюйте незалежні резервні копії.</value>
+  </data>
+  <data name="Same freedom." xml:space="preserve">
+    <value>Така ж свобода.</value>
   </data>
   <data name="Secure Boot compatibility" xml:space="preserve">
     <value>Сумісність із Secure Boot</value>
@@ -197,121 +252,68 @@
   <data name="Secure Boot may require key enrollment; modified boot components may need signing." xml:space="preserve">
     <value>Secure Boot може вимагати реєстрації ключів; модифіковані компоненти завантаження можуть потребувати підпису.</value>
   </data>
-  <data name="Read the documentation" xml:space="preserve">
-    <value>Прочитати документацію</value>
+  <data name="Stay up to date." xml:space="preserve">
+    <value>Залишайтеся в актуальному стані.</value>
   </data>
-  <data name="Your machine." xml:space="preserve">
-    <value>Ваша машина.</value>
+  <data name="Still completely yours." xml:space="preserve">
+    <value>Водночас повністю ваш.</value>
   </data>
-  <data name="Your rules." xml:space="preserve">
-    <value>Ваші правила.</value>
+  <data name="The AnduinOS desktop with its blue wallpaper and application menu" xml:space="preserve">
+    <value>Робочий стіл AnduinOS із синім тлом та меню застосунків</value>
   </data>
-  <data name="Choose what works for you" xml:space="preserve">
-    <value>Обирайте те, що працює для вас</value>
+  <data name="The desktop you love. With more possibilities." xml:space="preserve">
+    <value>Ваш улюблений робочий стіл. З більшими можливостями.</value>
   </data>
-  <data name="One AnduinOS. Your choice." xml:space="preserve">
-    <value>Одна AnduinOS. Ваш вибір.</value>
+  <data name="The full Pro feature list will be announced before launch." xml:space="preserve">
+    <value>Повний список функцій Pro буде оголошено перед запуском.</value>
   </data>
   <data name="The same free ISO. Optional Pro benefits." xml:space="preserve">
     <value>Той самий безкоштовний ISO. Необов’язкові переваги Pro.</value>
   </data>
-  <data name="Community and planned Pro benefits. Pro is not yet available to purchase." xml:space="preserve">
-    <value>Переваги Community та заплановані переваги Pro. Pro ще не доступний для покупки.</value>
-  </data>
-  <data name="Features" xml:space="preserve">
-    <value>Функції</value>
-  </data>
-  <data name="Community" xml:space="preserve">
-    <value>Community</value>
-  </data>
-  <data name="Free" xml:space="preserve">
-    <value>Безкоштовно</value>
-  </data>
-  <data name="Download" xml:space="preserve">
-    <value>Завантажити</value>
-  </data>
-  <data name="Independent Recovery Environment" xml:space="preserve">
-    <value>Незалежне середовище відновлення</value>
-  </data>
-  <data name="Not included" xml:space="preserve">
-    <value>Не включено</value>
-  </data>
-  <data name="Included" xml:space="preserve">
-    <value>Включено</value>
-  </data>
-  <data name="Desktop, apps and ordinary updates" xml:space="preserve">
-    <value>Робочий стіл, застосунки та звичайні оновлення</value>
-  </data>
-  <data name="On supported installations" xml:space="preserve">
-    <value>На підтримуваних встановленнях</value>
-  </data>
-  <data name="Freedom to modify your system" xml:space="preserve">
-    <value>Свобода модифікувати вашу систему</value>
-  </data>
-  <data name="Unchanged" xml:space="preserve">
-    <value>Без змін</value>
-  </data>
-  <data name="Pro is in development. Final features, taxes and support terms will be confirmed before purchase." xml:space="preserve">
-    <value>Pro перебуває у розробці. Остаточні функції, податки та умови підтримки буде підтверджено перед покупкою.</value>
-  </data>
-  <data name="A few things to know." xml:space="preserve">
-    <value>Кілька важливих моментів.</value>
-  </data>
-  <data name="Is Pro a subscription?" xml:space="preserve">
-    <value>Чи є Pro підпискою?</value>
-  </data>
-  <data name="No. The planned price is USD 29 once. Keep the local Pro features of the version you buy, with one year of official support. Future major versions may be sold separately." xml:space="preserve">
-    <value>Ні. Запланована ціна становить 29 USD одноразово. Зберігайте локальні функції Pro версії, яку ви купуєте, разом з роком офіційної підтримки. Майбутні великі версії можуть продаватися окремо.</value>
-  </data>
-  <data name="Do I need a different download?" xml:space="preserve">
-    <value>Чи мені потрібне інше завантаження?</value>
-  </data>
-  <data name="No. Community and Pro use the same free ISO. Download without paying or signing in, then choose your edition during installation. Firefox and ordinary updates work without Pro activation." xml:space="preserve">
-    <value>Ні. Community та Pro використовують той самий безкоштовний ISO. Завантажуйте без оплати або входу в обліковий запис, а потім обирайте вашу версію під час встановлення. Firefox та звичайні оновлення працюють без активації Pro.</value>
-  </data>
-  <data name="What does official support cover?" xml:space="preserve">
-    <value>Що покриває офіційна підтримка?</value>
-  </data>
-  <data name="Installation and use of AnduinOS on up to seven eligible devices under one account. Support hours, response targets and detailed terms will be published before sales open." xml:space="preserve">
-    <value>Встановлення та використання AnduinOS на до семи придатних пристроях під одним обліковим записом. Графіки підтримки, цілі щодо швидкості відповіді та детальні умови буде оприлюднено перед відкриттям продажів.</value>
-  </data>
-  <data name="More is on the way." xml:space="preserve">
-    <value>Більше вже в дорозі.</value>
-  </data>
-  <data name="Your desktop is ready today." xml:space="preserve">
-    <value>Ваш робочий стіл готовий сьогодні.</value>
-  </data>
-  <data name="Pro is coming soon. Get to know AnduinOS with the free community edition." xml:space="preserve">
-    <value>Pro з’явиться незабаром. Знайомтеся з AnduinOS у безкоштовній версії Community.</value>
+  <data name="The supported encrypted installation covers system files, personal files and disk swap. Store your recovery key separately and keep independent backups." xml:space="preserve">
+    <value>Підтримуване шифроване встановлення покриває системні файли, особисті файли та резервну пам’ять диска. Зберігайте ключ відновлення окремо та створюйте незалежні резервні копії.</value>
   </data>
   <data name="Try AnduinOS for free" xml:space="preserve">
     <value>Спробуйте AnduinOS безкоштовно</value>
   </data>
-  <data name="Follow the latest news" xml:space="preserve">
-    <value>Слідкуйте за останніми новинами</value>
+  <data name="Unchanged" xml:space="preserve">
+    <value>Без змін</value>
   </data>
-  <data name="Meet AnduinOS Pro: extra features and one year of official support. Planned at USD 29, one-time. Explore the preview and try AnduinOS free today." xml:space="preserve">
-    <value>Познайомтеся з AnduinOS Pro: додаткові функції та рік офіційної підтримки. Запланована ціна 29 USD, одноразово. Дослідіть прев’ю та спробуйте AnduinOS безкоштовно сьогодні.</value>
+  <data name="Up to seven eligible devices under one account." xml:space="preserve">
+    <value>До семи придатних пристроїв під одним обліковим записом.</value>
   </data>
-  <data name="More possibilities. Same freedom. Extra features and official support for your everyday desktop." xml:space="preserve">
-    <value>Більше можливостей. Така ж свобода. Додаткові функції та офіційна підтримка для вашого щоденного робочого столу.</value>
+  <data name="Useful extras. Help when you need it." xml:space="preserve">
+    <value>Корисні додатки. Допомога, коли вона потрібна.</value>
   </data>
-  <data name="Back to image" xml:space="preserve">
-    <value>Повернутися до зображення</value>
+  <data name="What does official support cover?" xml:space="preserve">
+    <value>Що покриває офіційна підтримка?</value>
   </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Примітки</value>
+  <data name="When your system won’t start, Pro’s independent recovery environment helps you restore it to working order, while keeping your personal files in place." xml:space="preserve">
+    <value>Коли ваша система не запускається, незалежне середовище відновлення Pro допомагає відновити її робочий стан, зберігаючи ваші особисті файли на місці.</value>
   </data>
-  <data name="Back to reference" xml:space="preserve">
-    <value>Повернутися до посилання</value>
+  <data name="Why choose Pro?" xml:space="preserve">
+    <value>Чому обрати Pro?</value>
   </data>
-  <data name="Disk encryption keeps your files unreadable without the key—even if someone removes the drive." xml:space="preserve">
-    <value>Шифрування диска робить ваші файли нечитабельними без ключа — навіть якщо хтось вийме диск.</value>
+  <data name="year of official support" xml:space="preserve">
+    <value>рік офіційної підтримки</value>
   </data>
-  <data name="Recovery environment" xml:space="preserve">
-    <value>Середовище відновлення</value>
+  <data name="You don&apos;t have to figure it out alone." xml:space="preserve">
+    <value>Вам не доведеться розбиратися з цим самому.</value>
   </data>
-  <data name="Offline updates" xml:space="preserve">
-    <value>Офлайн-оновлення</value>
+  <data name="Your desktop is ready today." xml:space="preserve">
+    <value>Ваш робочий стіл готовий сьогодні.</value>
   </data>
+  <data name="Your desktop." xml:space="preserve">
+    <value>Ваш робочий стіл.</value>
+  </data>
+  <data name="Your machine." xml:space="preserve">
+    <value>Ваша машина.</value>
+  </data>
+  <data name="Your OS should be ready." xml:space="preserve">
+    <value>Ваша ОС має бути готова.</value>
+  </data>
+  <data name="Your rules." xml:space="preserve">
+    <value>Ваші правила.</value>
+  </data>
+
 </root>

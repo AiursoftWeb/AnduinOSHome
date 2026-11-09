@@ -1,23 +1,24 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:schema id="root">
-    <xs:element name="root" ns1:IsDataSet="true">
+<?xml version="1.0" encoding="utf-8"?>
 
-        </xs:element>
-  </xs:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>1.3</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="A few things to know." xml:space="preserve">
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A few things to know." xml:space="preserve">
     <value>你可能还想了解。</value>
   </data>
   <data name="A first look at Pro" xml:space="preserve">
@@ -32,7 +33,7 @@
   <data name="About your purchase" xml:space="preserve">
     <value>购买须知</value>
   </data>
-  <data name="And there's more to come." xml:space="preserve">
+  <data name="And there&apos;s more to come." xml:space="preserve">
     <value>更多精彩，敬请期待。</value>
   </data>
   <data name="AnduinOS Recovery Environment showing a system snapshot and the Roll Back action" xml:space="preserve">
@@ -40,6 +41,9 @@
   </data>
   <data name="Back to image" xml:space="preserve">
     <value>返回图片</value>
+  </data>
+  <data name="Back to reference" xml:space="preserve">
+    <value>返回正文</value>
   </data>
   <data name="Bring updates to computers without a live internet connection." xml:space="preserve">
     <value>电脑不联网，也能安装更新。</value>
@@ -70,6 +74,9 @@
   </data>
   <data name="Disk encryption" xml:space="preserve">
     <value>磁盘加密</value>
+  </data>
+  <data name="Disk encryption keeps your files unreadable without the key—even if someone removes the drive." xml:space="preserve">
+    <value>磁盘加密，让文件以密文保存。即使硬盘被拆走，没有密钥也无法直接读取。</value>
   </data>
   <data name="Do I need a different download?" xml:space="preserve">
     <value>需要另外下载安装镜像吗？</value>
@@ -188,6 +195,9 @@
   <data name="Offline update packages" xml:space="preserve">
     <value>离线更新包</value>
   </data>
+  <data name="Offline updates" xml:space="preserve">
+    <value>离线更新</value>
+  </data>
   <data name="On supported installations" xml:space="preserve">
     <value>适用于受支持的安装环境</value>
   </data>
@@ -226,6 +236,9 @@
   </data>
   <data name="Real development build. Interface may change." xml:space="preserve">
     <value>开发版实机画面，最终界面可能调整。</value>
+  </data>
+  <data name="Recovery environment" xml:space="preserve">
+    <value>恢复环境</value>
   </data>
   <data name="Recovery needs a supported installation, readable storage and a usable snapshot. The encrypted Pro recovery path is still being validated. Keep independent backups." xml:space="preserve">
     <value>恢复需要受支持的安装布局、可正常读取的存储设备和可用快照。Pro 加密系统的恢复流程仍在验证中。请另行保留备份。</value>
@@ -284,7 +297,7 @@
   <data name="year of official support" xml:space="preserve">
     <value>年官方支持</value>
   </data>
-  <data name="You don't have to figure it out alone." xml:space="preserve">
+  <data name="You don&apos;t have to figure it out alone." xml:space="preserve">
     <value>你不必独自摸索。</value>
   </data>
   <data name="Your desktop is ready today." xml:space="preserve">
@@ -302,16 +315,5 @@
   <data name="Your rules." xml:space="preserve">
     <value>由你做主。</value>
   </data>
-  <data name="Back to reference" xml:space="preserve">
-    <value>返回正文</value>
-  </data>
-  <data name="Disk encryption keeps your files unreadable without the key—even if someone removes the drive." xml:space="preserve">
-    <value>磁盘加密，让文件以密文保存。即使硬盘被拆走，没有密钥也无法直接读取。</value>
-  </data>
-  <data name="Recovery environment" xml:space="preserve">
-    <value>恢复环境</value>
-  </data>
-  <data name="Offline updates" xml:space="preserve">
-    <value>离线更新</value>
-  </data>
+
 </root>
