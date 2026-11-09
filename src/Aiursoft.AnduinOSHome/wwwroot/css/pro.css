@@ -1,4 +1,4 @@
-/* The product story is deliberately scoped to this page, including its shared navigation. */
+/* Product styling stays scoped below the shared website navigation. */
 .pro-experience {
     --pro-ink: #17335b;
     --pro-muted: #2d73c8;
@@ -16,24 +16,16 @@
 }
 
 .pro-experience *, .pro-experience *::before, .pro-experience *::after { box-sizing: border-box; }
-/* UiStack's narrow-screen scrolling container would otherwise capture sticky positioning. */
-.main:has(.pro-experience) { overflow: clip; }
 html:has(.pro-experience) { scroll-behavior: smooth; }
-.pro-experience .landing-navbar { position: relative; padding: 6px 0; border: 0; background: var(--pro-dark) !important; }
-.pro-experience .landing-navbar .container { max-width: 1200px; }
-.pro-experience .landing-navbar .nav-link { font-size: 12px !important; opacity: .82; }
-.pro-experience .landing-navbar .landing-brand { font-size: 17px; letter-spacing: -.5px; }
-.pro-experience .landing-navbar .btn { font-size: 12px; padding: 7px 14px; background: transparent; border-color: #555d6b; }
-.pro-experience .landing-navbar .btn:hover { background: #263143; }
 .pro-container { width: min(1200px, calc(100% - 80px)); margin-inline: auto; }
 .pro-page { overflow: clip; }
-.pro-page section[id] { scroll-margin-top: 95px; }
+.pro-page section[id] { scroll-margin-top: 24px; }
 .pro-page h1, .pro-page h2, .pro-page p, .pro-page figure { margin: 0; }
 .pro-page h1, .pro-page h2 { font-weight: 650; letter-spacing: -.045em; text-wrap: balance; }
 .pro-page h2 { font-size: clamp(38px, 4.2vw, 60px); line-height: 1.08; color: inherit; }
-.pro-page a, .pro-nav a { text-decoration: none; }
-.pro-page a:focus-visible, .pro-nav a:focus-visible { outline: 3px solid #4c99ff; outline-offset: 5px; }
-.pro-page a:hover, .pro-nav a:hover { text-decoration: none; }
+.pro-page a { text-decoration: none; }
+.pro-page a:focus-visible { outline: 3px solid #4c99ff; outline-offset: 5px; }
+.pro-page a:hover { text-decoration: none; }
 .pro-page img { max-width: 100%; height: auto; display: block; }
 .pro-page .pro-muted { color: var(--pro-muted); }
 .pro-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
@@ -47,19 +39,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 .pro-button { display: inline-flex; justify-content: center; align-items: center; gap: 14px; padding: 15px 24px; border-radius: 30px; background: var(--pro-blue); color: #fff; font-size: 14px; font-weight: 500; transition: background .2s ease, box-shadow .2s ease; }
 .pro-button:hover { color: #fff; background: #1357bd; box-shadow: 0 5px 22px #1767de22; }
 .pro-button svg { width: 17px; height: 17px; }
-.pro-button-small { padding: 9px 16px; font-size: 12px; gap: 10px; }
 .pro-status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #2574df; flex: 0 0 auto; }
-
-/* Local product navigation remains useful through the long-form story. */
-.pro-nav { position: sticky; top: 0; z-index: 30; background: rgb(8 39 68 / 92%); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid #ffffff20; }
-.pro-nav-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 20px; }
-.pro-wordmark { color: #fff; font-size: 20px; letter-spacing: -.7px; font-weight: 600; white-space: nowrap; }
-.pro-wordmark:hover { color: #ccefff; }
-.pro-wordmark span { padding: 2px 6px; margin-inline-start: 4px; border-radius: 5px; border: 1px solid #84bdd7; font-size: 13px; font-weight: 500; letter-spacing: 0; vertical-align: 2px; }
-.pro-nav-links { display: flex; gap: 28px; align-items: center; }
-.pro-nav-links > a:not(.pro-button) { color: #e2f3ff; font-size: 12px; }
-.pro-nav-links > a:not(.pro-button):hover { color: #fff; }
-.pro-reading-progress { position: absolute; inset-inline-start: 0; bottom: -1px; width: 100%; height: 2px; background: var(--pro-ice); transform: scaleX(var(--pro-reading-progress, 0)); transform-origin: left; }
 
 /* Intro: restrained typography and the real desktop, never a fabricated UI. */
 .pro-hero { position: relative; isolation: isolate; padding-top: 0; color: #fff; background: var(--pro-stage); }
@@ -285,16 +265,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 
 @media (max-width: 700px) {
     .pro-container { width: calc(100% - 40px); }
-    .pro-experience .landing-navbar .container { padding-inline: 20px; }
-    .pro-experience .landing-navbar .btn { padding-inline: 9px; font-size: 10px; margin-inline-start: 12px !important; }
-    .pro-experience .landing-navbar .landing-brand { font-size: 15px; }
-    .pro-nav-inner { min-height: 60px; gap: 12px; }
-    .pro-wordmark { font-size: 18px; }
-    .pro-wordmark span { font-size: 11px; }
-    .pro-nav-links { gap: 15px; }
-    .pro-nav-overview { display: none; }
-    .pro-nav-links > a:not(.pro-button) { font-size: 11px; }
-    .pro-button-small { font-size: 10px; padding: 8px 11px; gap: 5px; }
     .pro-hero-grid { padding-block: 40px 65px; gap: 35px; }
     .pro-hero .pro-eyebrow { font-size: 9px; gap: 6px; letter-spacing: .09em; }
     .pro-preview-label { font-size: 8px; padding-inline-start: 8px; }
@@ -369,10 +339,6 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 
 @media (max-width: 360px) {
     .pro-container { width: calc(100% - 32px); }
-    .pro-nav-links { gap: 10px; }
-    .pro-button-small > span { display: none; }
-    .pro-wordmark { font-size: 16px; }
-    .pro-wordmark span { margin-inline-start: 0; }
     .pro-page h2 { font-size: 35px; }
     .pro-hero h1 { font-size: 31px; }
     .pro-hero-bottom { flex-direction: column; gap: 8px; align-items: center; }
@@ -386,8 +352,7 @@ html:has(.pro-experience) { scroll-behavior: smooth; }
 }
 
 @media print {
-    .main:has(.pro-experience) { overflow: visible; }
-    .pro-experience .landing-navbar, .pro-nav, .pro-chapters, .pro-experience > footer { display: none; }
+    .pro-chapters, .pro-experience > footer { display: none; }
     .pro-motion [data-pro-reveal].pro-awaiting-reveal { opacity: 1; transform: none; }
     .pro-page { overflow: visible; }
     .pro-desktop, .pro-hero-detail, .pro-encryption-screen, .pro-freedom-art { transform: none; }

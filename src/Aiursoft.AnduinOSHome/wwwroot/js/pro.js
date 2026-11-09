@@ -42,10 +42,6 @@
 
     function updateScroll() {
         framePending = false;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        const progress = maxScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / maxScroll)) : 0;
-        root.style.setProperty('--pro-reading-progress', progress.toFixed(4));
-
         if (reducedMotion.matches || window.innerWidth < 701) {
             desktop.style.removeProperty('--pro-desktop-y');
             return;
