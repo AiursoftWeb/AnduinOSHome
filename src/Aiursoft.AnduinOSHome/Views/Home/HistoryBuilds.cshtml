@@ -1,3 +1,4 @@
+@using System.Globalization
 @using Aiursoft.AnduinOSHome.Models.HomeViewModels
 @using Newtonsoft.Json
 
@@ -58,9 +59,9 @@
                                         <span class="badge bg-danger ms-2 extra-small">@Localizer["EOL"]</span>
                                     }
                                 </td>
-                                <td>@v.Released.ToString("yyyy-MM-dd")</td>
+                                <td>@v.Released.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)</td>
                                 <td>@v.Codename</td>
-                                <td>@(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "—")</td>
+                                <td>@(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "—")</td>
                             </tr>
                         }
                     </tbody>
@@ -169,7 +170,7 @@
                                     <div class="col-md-6">
                                         <dl class="row mb-0">
                                             <dt class="col-sm-5 text-muted fw-normal">@Localizer["Released"]</dt>
-                                            <dd class="col-sm-7">@v.Released.ToString("yyyy-MM-dd")</dd>
+                                            <dd class="col-sm-7">@v.Released.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)</dd>
 
                                             <dt class="col-sm-5 text-muted fw-normal">@Localizer["Ubuntu Base"]</dt>
                                             <dd class="col-sm-7">Ubuntu @v.UbuntuBase</dd>
@@ -187,11 +188,11 @@
                                             <dd class="col-sm-7">
                                                 @if (v.Status == VersionStatus.Active)
                                                 {
-                                                    <span class="text-success">@Localizer["Supported until"] @(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "")</span>
+                                                    <span class="text-success">@Localizer["Supported until"] @(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "")</span>
                                                 }
                                                 else
                                                 {
-                                                    <span class="text-danger">@Localizer["End of Life (since"] @(v.EndsSupport?.ToString("yyyy-MM-dd") ?? "")@Localizer[")"]</span>
+                                                    <span class="text-danger">@Localizer["End of Life (since"] @(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "")@Localizer[")"]</span>
                                                 }
                                             </dd>
 
@@ -206,7 +207,7 @@
                                      data-version="@v.Version"
                                      data-latest="@v.LatestPatch"
                                      data-languages="@v.LanguageCodes"
-                                     data-provides-iso="@v.ProvidesIso.ToString().ToLower()"
+                                     data-provides-iso="@v.ProvidesIso.ToString().ToLowerInvariant()"
 >
                                     <label class="form-label fw-semibold">@Localizer["Language"]</label>
                                     <select class="form-select form-select-sm mb-3 history-lang-select"
