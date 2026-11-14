@@ -72,14 +72,8 @@
   <data name="AnduinOS Container shares the same foundation with AnduinOS desktop. Every package is hand-picked by developers who build microservices every day — no bloat, just the right tools for the job." xml:space="preserve">
     <value>AnduinOS Container 與 AnduinOS 桌面版共享相同的基礎架構。每個套件均由每日建構微服務的開發者精心挑選——沒有冗餘，只有恰到好處的工具。</value>
   </data>
-  <data name="anduinos-apt-config and archive keyring preconfigured — install AnduinOS packages immediately." xml:space="preserve">
-    <value>anduinos-apt-config 與檔案金鑰環已預先設定——立即安裝 AnduinOS 套件。</value>
-  </data>
   <data name="Apple Silicon" xml:space="preserve">
     <value>Apple Silicon</value>
-  </data>
-  <data name="atomic layer" xml:space="preserve">
-    <value>原子層</value>
   </data>
   <data name="Before — with Ubuntu" xml:space="preserve">
     <value>之前 — 使用 Ubuntu</value>
@@ -96,26 +90,11 @@
   <data name="Copy to clipboard" xml:space="preserve">
     <value>複製到剪貼簿</value>
   </data>
-  <data name="curated packages" xml:space="preserve">
-    <value>精選套件</value>
-  </data>
-  <data name="curl &amp; wget clients" xml:space="preserve">
-    <value>curl 與 wget 用戶端</value>
-  </data>
-  <data name="curl, wget, iproute2, iputils-ping, lsof — preinstalled and ready to debug." xml:space="preserve">
-    <value>curl、wget、iproute2、iputils-ping、lsof —— 已預先安裝，隨時可進行除錯。</value>
-  </data>
   <data name="Debian Bootstrap" xml:space="preserve">
     <value>Debian Bootstrap</value>
   </data>
-  <data name="declarative" xml:space="preserve">
-    <value>宣告式</value>
-  </data>
   <data name="Developer-First Philosophy" xml:space="preserve">
     <value>以開發者為先的理念</value>
-  </data>
-  <data name="disk space" xml:space="preserve">
-    <value>所需空間</value>
   </data>
   <data name="Docker Hub" xml:space="preserve">
     <value>Docker Hub</value>
@@ -132,26 +111,26 @@
   <data name="Everything you need. Nothing to install." xml:space="preserve">
     <value>所需一應俱全，無需安裝。</value>
   </data>
-  <data name="Full ecosystem access" xml:space="preserve">
-    <value>完整生態系存取權</value>
-  </data>
   <data name="Full GNOME desktop meta-package" xml:space="preserve">
     <value>完整的 GNOME 桌面環境套件</value>
-  </data>
-  <data name="Full gnupg suite, dirmngr, pinentry — verify signatures and encrypt data out of the box." xml:space="preserve">
-    <value>內建完整的 gnupg 套件、dirmngr 與 pinentry——開箱即可驗證簽章並加密資料。</value>
   </data>
   <data name="Full TLS/SSL stack" xml:space="preserve">
     <value>完整的 TLS/SSL 堆疊</value>
   </data>
-  <data name="Get Started" xml:space="preserve">
-    <value>開始使用</value>
+  <data name="Full ecosystem access" xml:space="preserve">
+    <value>完整生態系存取權</value>
+  </data>
+  <data name="Full gnupg suite, dirmngr, pinentry — verify signatures and encrypt data out of the box." xml:space="preserve">
+    <value>內建完整的 gnupg 套件、dirmngr 與 pinentry——開箱即可驗證簽章並加密資料。</value>
   </data>
   <data name="GPG &amp; Crypto Suite" xml:space="preserve">
     <value>GPG 與加密套件</value>
   </data>
   <data name="GPG signature tools" xml:space="preserve">
     <value>GPG 簽名工具</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>開始使用</value>
   </data>
   <data name="Graphical firewall manager" xml:space="preserve">
     <value>圖形化防火牆管理員</value>
@@ -162,14 +141,11 @@
   <data name="Image Layer Comparison" xml:space="preserve">
     <value>映像層比較</value>
   </data>
-  <data name="intermediate artifacts" xml:space="preserve">
-    <value>中繼檔案</value>
+  <data name="Join Discussion" xml:space="preserve">
+    <value>加入討論</value>
   </data>
   <data name="Join developers who have already switched to AnduinOS Container as their go-to base image. One command, ten fewer headaches." xml:space="preserve">
     <value>加入已將 AnduinOS Container 設為首選基礎映像檔的開發者行列。一道指令，減少十項煩惱。</value>
-  </data>
-  <data name="Join Discussion" xml:space="preserve">
-    <value>加入討論</value>
   </data>
   <data name="Just Code" xml:space="preserve">
     <value>輕鬆編寫程式</value>
@@ -210,17 +186,14 @@
   <data name="One line change. Ten fewer `apt install` calls." xml:space="preserve">
     <value>只需一行變更。減少十次 `apt install` 指令。</value>
   </data>
-  <data name="openssl and full TLS certificate stack included — secure connections without extra packages." xml:space="preserve">
-    <value>內建 OpenSSL 與完整的 TLS 憑證堆疊——無需額外套件即可建立安全連線。</value>
-  </data>
   <data name="Pre-trusted GPG keys" xml:space="preserve">
     <value>預先信任的 GPG 金鑰</value>
   </data>
-  <data name="Python 3.14 preinstalled. Run your Python microservices the moment the container starts." xml:space="preserve">
-    <value>預先安裝 Python 3.14。容器啟動時即可執行您的 Python 微服務。</value>
-  </data>
   <data name="Python 3.14 Ready" xml:space="preserve">
     <value>Python 3.14 已就緒</value>
+  </data>
+  <data name="Python 3.14 preinstalled. Run your Python microservices the moment the container starts." xml:space="preserve">
+    <value>預先安裝 Python 3.14。容器啟動時即可執行您的 Python 微服務。</value>
   </data>
   <data name="Python 3.14 runtime" xml:space="preserve">
     <value>Python 3.14 執行環境</value>
@@ -270,29 +243,11 @@
   <data name="Start from zero. Install everything yourself:" xml:space="preserve">
     <value>從零開始。自行安裝所有內容：</value>
   </data>
-  <data name="sudo &amp; user mgmt" xml:space="preserve">
-    <value>sudo 與使用者管理</value>
-  </data>
-  <data name="sudo and sudo-rs preconfigured — run privileged commands without extra setup." xml:space="preserve">
-    <value>sudo 與 sudo-rs 已預先設定，無需額外設定即可執行特權命令。</value>
-  </data>
-  <data name="sudo Out of the Box" xml:space="preserve">
-    <value>sudo 開箱即用</value>
-  </data>
   <data name="Switch Today" xml:space="preserve">
     <value>立即換用</value>
   </data>
   <data name="System theming &amp; customization" xml:space="preserve">
     <value>系統主題與自訂</value>
-  </data>
-  <data name="Terminal" xml:space="preserve">
-    <value>終端機</value>
-  </data>
-  <data name="The Difference" xml:space="preserve">
-    <value>差異之處</value>
-  </data>
-  <data name="time saved per deploy" xml:space="preserve">
-    <value>每次部署節省的時間</value>
   </data>
   <data name="TLS &amp; SSL Complete" xml:space="preserve">
     <value>TLS 與 SSL 完整支援</value>
@@ -300,17 +255,23 @@
   <data name="TLS, GPG, ca-certs preloaded" xml:space="preserve">
     <value>預先載入 TLS、GPG 及 ca-certs</value>
   </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>終端機</value>
+  </data>
+  <data name="The Difference" xml:space="preserve">
+    <value>差異之處</value>
+  </data>
   <data name="Tools you need are already there" xml:space="preserve">
     <value>所需工具一應俱全</value>
   </data>
   <data name="Ubuntu Container" xml:space="preserve">
     <value>Ubuntu 容器</value>
   </data>
-  <data name="Ubuntu provides a blank canvas. We provide a fully-equipped workshop." xml:space="preserve">
-    <value>Ubuntu 提供的是白畫布，我們提供的則是設備齊全的工作坊。</value>
-  </data>
   <data name="Ubuntu Sources" xml:space="preserve">
     <value>Ubuntu 套件來源</value>
+  </data>
+  <data name="Ubuntu provides a blank canvas. We provide a fully-equipped workshop." xml:space="preserve">
+    <value>Ubuntu 提供的是白畫布，我們提供的則是設備齊全的工作坊。</value>
   </data>
   <data name="Use as your daily driver container — all the essentials preloaded, ready to build." xml:space="preserve">
     <value>作為您的日常主力容器——預載所有必要工具，隨時準備開發。</value>
@@ -338,6 +299,45 @@
   </data>
   <data name="Zero-Layer Architecture" xml:space="preserve">
     <value>零層架構</value>
+  </data>
+  <data name="anduinos-apt-config and archive keyring preconfigured — install AnduinOS packages immediately." xml:space="preserve">
+    <value>anduinos-apt-config 與檔案金鑰環已預先設定——立即安裝 AnduinOS 套件。</value>
+  </data>
+  <data name="atomic layer" xml:space="preserve">
+    <value>原子層</value>
+  </data>
+  <data name="curated packages" xml:space="preserve">
+    <value>精選套件</value>
+  </data>
+  <data name="curl &amp; wget clients" xml:space="preserve">
+    <value>curl 與 wget 用戶端</value>
+  </data>
+  <data name="curl, wget, iproute2, iputils-ping, lsof — preinstalled and ready to debug." xml:space="preserve">
+    <value>curl、wget、iproute2、iputils-ping、lsof —— 已預先安裝，隨時可進行除錯。</value>
+  </data>
+  <data name="declarative" xml:space="preserve">
+    <value>宣告式</value>
+  </data>
+  <data name="disk space" xml:space="preserve">
+    <value>所需空間</value>
+  </data>
+  <data name="intermediate artifacts" xml:space="preserve">
+    <value>中繼檔案</value>
+  </data>
+  <data name="openssl and full TLS certificate stack included — secure connections without extra packages." xml:space="preserve">
+    <value>內建 OpenSSL 與完整的 TLS 憑證堆疊——無需額外套件即可建立安全連線。</value>
+  </data>
+  <data name="sudo &amp; user mgmt" xml:space="preserve">
+    <value>sudo 與使用者管理</value>
+  </data>
+  <data name="sudo Out of the Box" xml:space="preserve">
+    <value>sudo 開箱即用</value>
+  </data>
+  <data name="sudo and sudo-rs preconfigured — run privileged commands without extra setup." xml:space="preserve">
+    <value>sudo 與 sudo-rs 已預先設定，無需額外設定即可執行特權命令。</value>
+  </data>
+  <data name="time saved per deploy" xml:space="preserve">
+    <value>每次部署節省的時間</value>
   </data>
   <data name="zip, unzip, zstd, xz-utils — every compression format covered. Extract anything without `apt install` first." xml:space="preserve">
     <value>zip、unzip、zstd、xz-utils——支援所有壓縮格式。無需先執行 `apt install` 即可解壓縮任何檔案。</value>

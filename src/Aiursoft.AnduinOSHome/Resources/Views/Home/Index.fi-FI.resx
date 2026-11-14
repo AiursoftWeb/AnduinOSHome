@@ -18,8 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="." xml:space="preserve">
+      <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / ARM-yksilevytietokoneet)</value>
+  </data>
+  <data name="." xml:space="preserve">
     <value>.</value>
+  </data>
+  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
+    <value>...Meidän ei pidä unohtaa, että kyseessä on 1,8 GB:n levykuva. Se piristi mieltäni... Uskon todella, että se ansaitsee asennuksen, ja aika näyttää, oliko oikeassa....</value>
   </data>
   <data name="...if you&apos;re considering taking back your privacy and switching to Linux, Anduin OS is the perfect place to start your journey. It&apos;s clean, it&apos;s simple, and the transition is seamless. Anduin OS wasn&apos;t designed for the tech nerd. It was designed specifically for YOU. Make the switch. You won&apos;t regret it." xml:space="preserve">
     <value>...jos harkitset yksityisyytesi takaisin saamista ja siirtymistä Linuxiin, Anduin OS on täydellinen paikka aloittaa matkasi. Se on puhdas, yksinkertainen, ja siirtyminen on saumaton. Anduin OS:ää ei suunniteltu teknikkoudeille. Se suunniteltiin erityisesti SINULLE. Tee vaihto. Et tule katumaan sitä.</value>
@@ -30,18 +39,6 @@
   <data name="...it&apos;s pretty spectacular. It&apos;s also quite possibly one of the friendliest Linux distros I&apos;ve tried when it comes to folks who may well be moving over from Windows. Built by one person, it&apos;s pretty astonishing how good it is." xml:space="preserve">
     <value>...se on aika upeaa. Se on myös ehkä ystävällisin Linux-jakelu, jota olen kokeillut, kun kyse on ihmisistä, jotka saattavat siirtyä Windowsista. Yhden henkilön rakentama, on aika hämmästyttävää, kuinka hyvä se on.</value>
   </data>
-  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
-    <value>...Meidän ei pidä unohtaa, että kyseessä on 1,8 GB:n levykuva. Se piristi mieltäni... Uskon todella, että se ansaitsee asennuksen, ja aika näyttää, oliko oikeassa....</value>
-  </data>
-  <data name="(Intel / AMD)" xml:space="preserve">
-    <value>(Intel / AMD)</value>
-  </data>
-  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
-    <value>(Snapdragon / ARM-yksilevytietokoneet)</value>
-  </data>
-  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
-    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; on Ubuntun pakettipohja + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;-sovelluskokemus</value>
-  </data>
   <data name="27 inch" xml:space="preserve">
     <value>27 tuumaa</value>
   </data>
@@ -51,20 +48,11 @@
   <data name="7×24 on-call support where contracted" xml:space="preserve">
     <value>Sopimuksen mukaan ympärivuorokautinen päivystystuki (7 päivää viikossa, 24 tuntia vuorokaudessa)</value>
   </data>
-  <data name="a provider of top-tier hosting services" xml:space="preserve">
-    <value>huippuluokan hosting-palvelujen tarjoaja</value>
+  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
+    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; on Ubuntun pakettipohja + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt;-sovelluskokemus</value>
   </data>
   <data name="A Universe of Applications at Your Fingertips." xml:space="preserve">
     <value>Sovellusmaailma sormiesi ulottuvilla.</value>
-  </data>
-  <data name="Advanced" xml:space="preserve">
-    <value>Lisätiedot</value>
-  </data>
-  <data name="After downloading, you may want to learn how to" xml:space="preserve">
-    <value>Ladattuasi saatat haluta oppia, kuinka</value>
-  </data>
-  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
-    <value>Tekoälyagentit voivat SSH-yhteydellä asentaa paketteja, muokata asetuksia ja vianetsiä — natiivisti. Ei API-kääreitä. Ei hiekkalaatikkotiedostojärjestelmää. Pelkkä aito Linux.</value>
   </data>
   <data name="AI Fix" xml:space="preserve">
     <value>Tekoälykorjaus</value>
@@ -75,11 +63,23 @@
   <data name="AI Tool Environment" xml:space="preserve">
     <value>AI Tool Environment</value>
   </data>
-  <data name="AI-Native Environment" xml:space="preserve">
-    <value>AI-Native Environment</value>
+  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
+    <value>Tekoälyagentit voivat SSH-yhteydellä asentaa paketteja, muokata asetuksia ja vianetsiä — natiivisti. Ei API-kääreitä. Ei hiekkalaatikkotiedostojärjestelmää. Pelkkä aito Linux.</value>
   </data>
   <data name="AI&apos;s Ideal." xml:space="preserve">
     <value>Tekoälyn ihanteellinen.</value>
+  </data>
+  <data name="AI-Native Environment" xml:space="preserve">
+    <value>AI-Native Environment</value>
+  </data>
+  <data name="ARM64 Support" xml:space="preserve">
+    <value>ARM64-tuki</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Lisätiedot</value>
+  </data>
+  <data name="After downloading, you may want to learn how to" xml:space="preserve">
+    <value>Ladattuasi saatat haluta oppia, kuinka</value>
   </data>
   <data name="Aiursoft is funded by user donations. We are grateful for your support. And you can" xml:space="preserve">
     <value>Aiursoft rahoitetaan käyttäjien lahjoituksilla. Olemme kiitollisia tuestanne. Voit</value>
@@ -93,14 +93,14 @@
   <data name="All-in-Latest" xml:space="preserve">
     <value>Kaikki uusinta</value>
   </data>
-  <data name="and" xml:space="preserve">
-    <value>ja</value>
-  </data>
   <data name="AnduinOS 2 is an Aiursoft driven project, where AIURSOFT LIMITED is founded by Anduin." xml:space="preserve">
     <value>AnduinOS 2 on Aiursoftin ohjaama hanke, ja AIURSOFT LIMITED on perustettu Anduinin toimesta.</value>
   </data>
   <data name="AnduinOS Enterprise" xml:space="preserve">
     <value>AnduinOS Enterprise</value>
+  </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>AnduinOS:n päänäyttökuva</value>
   </data>
   <data name="AnduinOS has a clean, beautiful modern design, user-friendly interface, among so many distributions, this is the choice you can&apos;t miss. Trust me!!!" xml:space="preserve">
     <value>AnduinOS:lla on siisti, kaunis moderni muotoilu ja käyttäjäystävällinen käyttöliittymä. Lukemattomien jakeluiden joukossa tämä on valinta, jota et halua missata. Luota minuun!!!</value>
@@ -150,9 +150,6 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOS on sinun lopullinen Linux-jakelusi! Se on rakennettu kehittäjille ja on kevyt mutta silti tehokas. Sen hyvin suunniteltujen teemojen ja pikanäppäimien ansiosta Windows-käyttäjät voivat siirtyä sujuvasti AnduinOS:ään ja unohtaa järjestelmän asennuksen.</value>
   </data>
-  <data name="AnduinOS Main screenshot" xml:space="preserve">
-    <value>AnduinOS:n päänäyttökuva</value>
-  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>AnduinOSin asennus ja käyttöönotto kaikilla sovelluksilleni ja työkaluilleni kesti vähemmän kuin puoli tuntia. Jos etsit siistiyttävää ja vaivatonta Linux-työasema kokemusta, olet oikeassa paikassa.</value>
   </data>
@@ -168,9 +165,6 @@
   <data name="Architecture" xml:space="preserve">
     <value>Arkkitehtuuri</value>
   </data>
-  <data name="ARM64 Support" xml:space="preserve">
-    <value>ARM64-tuki</value>
-  </data>
   <data name="Bleeding-edge kernel, toolchains, and drivers — all pre-configured, zero friction. No Snap, no legacy dead weight, no compromises." xml:space="preserve">
     <value>Äärimmäisen uuden kernelin, työkaluketjujen ja ajurien — kaikki esiasennettuna, nollakierros. Ei Snapia, ei vanhentunutta kuormaa, ei kompromisseja.</value>
   </data>
@@ -183,20 +177,17 @@
   <data name="Built for the era of large models. Native Shell, native Docker, and an unrestrained Python experience." xml:space="preserve">
     <value>Suunniteltu suurten mallien aikakaudelle. Luonnollinen Shell, luonnollinen Docker ja rajoittamaton Python-kokemus.</value>
   </data>
-  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
-    <value>Rakennettu vankalle pohjalle. Suunniteltu kaikille.</value>
-  </data>
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Rakennettu Apkg-paketoimittajan päälle.</value>
+  </data>
+  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
+    <value>Rakennettu vankalle pohjalle. Suunniteltu kaikille.</value>
   </data>
   <data name="Burn our ultra-compact 2.38 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Polta ultra-konseptinen 2,38 gigatavun ISO-tiedosto mille tahansa USB-muistille ja kannata täysimittainen, nykyaikainen Linux-työasema avaimenperässänne. Käynnistä täysin laajennettu työpöytä vain 10 sekunnissa.</value>
   </data>
   <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Poltamme erittäin kompaktin 2,4 GB:n ISO:n mihin tahansa USB-tikuun ja voit kantaa täydellisen, nykyaikaisen Linux-työaseman avaimenperässään. Käynnisty täysin laitteistokiihdytetylle työpöydälle vain 10 sekunnissa.</value>
-  </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>polta ISO-kuva USB-tikulle</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>Lataamalla hyväksyt meidän</value>
@@ -285,20 +276,17 @@
   <data name="Discord channel" xml:space="preserve">
     <value>Discord channel</value>
   </data>
-  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
-    <value>Levä vaurioitunut? Unohditko salasanasi? Käynnistä AnduinOS muutamassa sekunnissa selataksesi internetiä, palauttaaksesi tiedostosi ja poimiesi kriittiset datan turvallisesti.</value>
-  </data>
   <data name="Disk Space" xml:space="preserve">
     <value>Kovalevyn tila</value>
+  </data>
+  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
+    <value>Levä vaurioitunut? Unohditko salasanasi? Käynnistä AnduinOS muutamassa sekunnissa selataksesi internetiä, palauttaaksesi tiedostosi ja poimiesi kriittiset datan turvallisesti.</value>
   </data>
   <data name="Display Server" xml:space="preserve">
     <value>Näyttöpalvelin</value>
   </data>
   <data name="Docs" xml:space="preserve">
     <value>Dokumentit</value>
-  </data>
-  <data name="donate" xml:space="preserve">
-    <value>lahjoita</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Lataa</value>
@@ -330,14 +318,11 @@
   <data name="Everything you do on Ubuntu, you can do it on AnduinOS. You can use it as a daily operating system, a development environment, a server, or a learning tool. It&apos;s up to you." xml:space="preserve">
     <value>Kaiken, mitä teet Ubuntussa, voit tehdä myös AnduinOS:ssa. Voit käyttää sitä päivittäisenä käyttöjärjestelmänä, kehitysympäristönä, palvelimena tai oppimistyökaluna. Valinta on sinun!</value>
   </data>
-  <data name="ext4 optional" xml:space="preserve">
-    <value>ext4 valinnainen</value>
+  <data name="FAQ" xml:space="preserve">
+    <value>UKK</value>
   </data>
   <data name="Familiar UX" xml:space="preserve">
     <value>Tuttu käyttöliittymä</value>
-  </data>
-  <data name="FAQ" xml:space="preserve">
-    <value>UKK</value>
   </data>
   <data name="Firmware" xml:space="preserve">
     <value>Laitteisto-ohjelmisto</value>
@@ -345,20 +330,11 @@
   <data name="First-class Python" xml:space="preserve">
     <value>Ensimmäisen luokan Python</value>
   </data>
-  <data name="for any questions." xml:space="preserve">
-    <value>kaikissa kysymyksissä.</value>
-  </data>
-  <data name="for any questions. Please join our" xml:space="preserve">
-    <value>kaikissa kysymyksissä. Liity meidän</value>
-  </data>
-  <data name="for community support." xml:space="preserve">
-    <value>yhteisötukea varten.</value>
+  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
+    <value>Snapdragon X -kannettaville tietokoneille, Windows Dev Kitille ja yleisille ARM64 UEFI -laitteille.</value>
   </data>
   <data name="For most Intel and AMD computers." xml:space="preserve">
     <value>Useimmille Intel- ja AMD-tietokoneille.</value>
-  </data>
-  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
-    <value>Snapdragon X -kannettaville tietokoneille, Windows Dev Kitille ja yleisille ARM64 UEFI -laitteille.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Ilmainen</value>
@@ -372,6 +348,9 @@
   <data name="Friendly interface" xml:space="preserve">
     <value>Käyttäjäystävällinen käyttöliittymä</value>
   </data>
+  <data name="GPL-v3 License" xml:space="preserve">
+    <value>GPL-v3-lisenssi</value>
+  </data>
   <data name="Gaming" xml:space="preserve">
     <value>Pelaaminen</value>
   </data>
@@ -381,17 +360,11 @@
   <data name="Go to Vultr" xml:space="preserve">
     <value>Mene Vultriin</value>
   </data>
-  <data name="GPL-v3 License" xml:space="preserve">
-    <value>GPL-v3-lisenssi</value>
-  </data>
   <data name="Graphical applications are installed via Flatpak, and keep themselves separate from the base system (Since 1.3). They also allow for fine-grained control over their permissions." xml:space="preserve">
     <value>Graafiset sovellukset asennetaan Flatpakin kautta ja ne pysyvät erillään perusjärjestelmästä (versiosta 1.3 alkaen). Ne myös mahdollistavat erittäin tarkkojen käyttöoikeuksien hallinnan.</value>
   </data>
   <data name="HDR Support" xml:space="preserve">
     <value>HDR-tuki</value>
-  </data>
-  <data name="here" xml:space="preserve">
-    <value>tässä</value>
   </data>
   <data name="Here are some of the answers you might be looking for." xml:space="preserve">
     <value>Tässä on muutamia vastauksia, joita saatat etsiä.</value>
@@ -417,17 +390,17 @@
   <data name="Ideal Toolset" xml:space="preserve">
     <value>Ihanteellinen työkalusetti</value>
   </data>
-  <data name="Image preview" xml:space="preserve">
-    <value>Kuvan esikatselu</value>
-  </data>
   <data name="Image Size" xml:space="preserve">
     <value>Kuvan koko</value>
   </data>
-  <data name="In fact, this is one of those &quot;set-it-and-forget-it&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
-    <value>Todellakin, tämä on yksi niistä &quot;aseta ja unohda&quot; -jakeluista, jotka tekevät Linuxin käytöstä iloa. Se on intuitiivinen, helppokäyttöinen ja hyvin suunniteltu.</value>
+  <data name="Image preview" xml:space="preserve">
+    <value>Kuvan esikatselu</value>
   </data>
   <data name="In Your Pocket." xml:space="preserve">
     <value>Taskussasi.</value>
+  </data>
+  <data name="In fact, this is one of those &quot;set-it-and-forget-it&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
+    <value>Todellakin, tämä on yksi niistä &quot;aseta ja unohda&quot; -jakeluista, jotka tekevät Linuxin käytöstä iloa. Se on intuitiivinen, helppokäyttöinen ja hyvin suunniteltu.</value>
   </data>
   <data name="Includes:" xml:space="preserve">
     <value>Sisältää:</value>
@@ -462,17 +435,23 @@
   <data name="Join Discussions" xml:space="preserve">
     <value>Liity keskusteluihin</value>
   </data>
-  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
-    <value>Liity yhteisöömme ja osallistu AnduinOS:iin!</value>
-  </data>
   <data name="Join Revolt channel" xml:space="preserve">
     <value>Liity Revolt-kanavalle</value>
   </data>
   <data name="Join Stoat channel" xml:space="preserve">
     <value>Liity Stoat-kanavalle</value>
   </data>
+  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
+    <value>Liity yhteisöömme ja osallistu AnduinOS:iin!</value>
+  </data>
   <data name="Kiosk device customization" xml:space="preserve">
     <value>Kyöskilaitteen mukauttaminen</value>
+  </data>
+  <data name="LTS Support" xml:space="preserve">
+    <value>LTS-tuki</value>
+  </data>
+  <data name="LTS and Standard" xml:space="preserve">
+    <value>LTS ja Standard</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Kieli</value>
@@ -495,17 +474,8 @@
   <data name="Live Boot" xml:space="preserve">
     <value>Suorakäynnistys</value>
   </data>
-  <data name="local LLM, one command away." xml:space="preserve">
-    <value>Paikallinen kielimalli yhdellä komennolla.</value>
-  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>Etsitkö vanhempiin versioita?</value>
-  </data>
-  <data name="LTS and Standard" xml:space="preserve">
-    <value>LTS ja Standard</value>
-  </data>
-  <data name="LTS Support" xml:space="preserve">
-    <value>LTS-tuki</value>
   </data>
   <data name="Memory Compression" xml:space="preserve">
     <value>Muistin pakkaus</value>
@@ -528,6 +498,9 @@
   <data name="Multi-language Ready" xml:space="preserve">
     <value>Valmis monikieliseen käyttöön</value>
   </data>
+  <data name="NVIDIA Graphics Support" xml:space="preserve">
+    <value>NVIDIA-grafiikkatuen tuki</value>
+  </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>Alkuperäinen shell-kokemus</value>
   </data>
@@ -537,20 +510,17 @@
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>Alkuperäisesti asennettu, järjestelmätasolla integroitu, valmiina käyttöön.</value>
   </data>
-  <data name="No execution signing or modification restrictions" xml:space="preserve">
-    <value>Ei suoritusallekirjoitus- tai muokkausrajoituksia</value>
-  </data>
   <data name="No Installation Needed" xml:space="preserve">
     <value>Asennusta ei tarvita</value>
+  </data>
+  <data name="No execution signing or modification restrictions" xml:space="preserve">
+    <value>Ei suoritusallekirjoitus- tai muokkausrajoituksia</value>
   </data>
   <data name="No telemetry at all! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>Ei telemetriaa lainkaan! Valitse &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; palauttaaksesi yksityisyytesi.</value>
   </data>
   <data name="No telemetry integrated! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>Ei telemetriaa! Valitse &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; palauttaaksesi yksityisyytesi.</value>
-  </data>
-  <data name="NVIDIA Graphics Support" xml:space="preserve">
-    <value>NVIDIA-grafiikkatuen tuki</value>
   </data>
   <data name="On Ask Ubuntu, you can search for and ask about very common issues. Solutions for almost all AnduinOS issues are identical to those for Ubuntu. You can rely entirely on Ubuntu&apos;s documentation and expertise to resolve problems with AnduinOS." xml:space="preserve">
     <value>Ask Ubuntu -sivustolta voit etsiä ja kysyä hyvin yleisistä ongelmista. Lähes kaikkiin AnduinOS-ongelmiin ratkaisut ovat samat kuin Ubuntussa. Voit luottaa täysin Ubuntun dokumentaatioon ja asiantuntemukseen AnduinOS-ongelmien ratkaisemisessa.</value>
@@ -561,17 +531,11 @@
   <data name="Open Source" xml:space="preserve">
     <value>Avoin lähdekoodi</value>
   </data>
-  <data name="or" xml:space="preserve">
-    <value>tai</value>
-  </data>
   <data name="Package Format" xml:space="preserve">
     <value>Pakkausmuoto</value>
   </data>
   <data name="Package Manager" xml:space="preserve">
     <value>Pakettienhallinta</value>
-  </data>
-  <data name="packages" xml:space="preserve">
-    <value>paketit</value>
   </data>
   <data name="Persistent on USB" xml:space="preserve">
     <value>Pysyvä USB-tallennus</value>
@@ -585,14 +549,14 @@
   <data name="Premier" xml:space="preserve">
     <value>Premier</value>
   </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Tietosuojakäytäntö</value>
+  </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS does not send usage statistics or diagnostic reports to any organization by default. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you." xml:space="preserve">
     <value>Yksityisyys ei ole enää valinnaista. Se on välttämätöntä. AnduinOS ei oletusarvoisesti lähetä käyttötilastoja tai diagnostiikkaraportteja millekään organisaatiolle. Emme seuraa sinua. Emme luo sinusta profiilia. Emme kohdista sinuun mainontaa.</value>
   </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS is designed to gather nothing from you. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you. You remain anonymous to the system." xml:space="preserve">
     <value>Yksityisyys ei ole enää valinnaista. Se on välttämätöntä. AnduinOS on suunniteltu keräämään mitään sinusta. Emme seuraa sinua. Emme luo profiilia sinusta. Emme kohdista sinua. Pysyt järjestelmälle nimettömänä.</value>
-  </data>
-  <data name="Privacy Policy" xml:space="preserve">
-    <value>Tietosuojakäytäntö</value>
   </data>
   <data name="Private package repository" xml:space="preserve">
     <value>Yksityinen pakettivarasto</value>
@@ -605,9 +569,6 @@
   </data>
   <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
     <value>Python → Rust → PNG. Yksi putki. Ei yhtään RPC-kutsua.</value>
-  </data>
-  <data name="quad-core" xml:space="preserve">
-    <value>neliydinydin</value>
   </data>
   <data name="RAM" xml:space="preserve">
     <value>RAM</value>
@@ -711,9 +672,6 @@
   <data name="The AnduinOS server is proudly sponsored by" xml:space="preserve">
     <value>AnduinOS-palvelimen ylpeänä sponsoroijana on</value>
   </data>
-  <data name="The base environment AI knows best" xml:space="preserve">
-    <value>Perusympäristö, jonka AI tuntee parhaiten</value>
-  </data>
   <data name="The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve." xml:space="preserve">
     <value>GNOME-pohjainen työpöytäympäristö tarjoaa kauniit käyttöliittymät ja käyttäjäystävälliset vuorovaikutustavat, jotka sopivat käyttäjien tottumuksiin, joten pääset nopeasti alkuun AnduinOS:n kanssa ilman suurta oppimiskurssia.</value>
   </data>
@@ -741,17 +699,14 @@
   <data name="The Ultimate Swiss Army Knife" xml:space="preserve">
     <value>Ultimaattinen Sveitsin huoltosakki</value>
   </data>
+  <data name="The base environment AI knows best" xml:space="preserve">
+    <value>Perusympäristö, jonka AI tuntee parhaiten</value>
+  </data>
   <data name="This is a referral link. If you become a paying Vultr customer, we may receive a referral reward at no additional cost to you." xml:space="preserve">
     <value>Tämä on suosituslinkki. Jos tulet maksavaksi Vultr-asiakkaaksi, voimme saada suosituskorvauksen ilman lisäkustannuksia sinulle.</value>
   </data>
   <data name="To download AnduinOS, select the correct edition below:" xml:space="preserve">
     <value>Ladataksesi AnduinOS:n, valitse alla oikea versio:</value>
-  </data>
-  <data name="to us via PayPal." xml:space="preserve">
-    <value>meille PayPalin kautta.</value>
-  </data>
-  <data name="to us." xml:space="preserve">
-    <value>meille.</value>
   </data>
   <data name="Today is the best day for you to switch to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;" xml:space="preserve">
     <value>Tänään on paras päivä vaihtaa käyttöjärjestelmäksi &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;</value>
@@ -762,14 +717,11 @@
   <data name="Transitioning to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; will be the best decision you&apos;ve ever made" xml:space="preserve">
     <value>Siirtyminen &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;:iin on paras päätös, jonka olet koskaan tehnyt</value>
   </data>
-  <data name="two version branches" xml:space="preserve">
-    <value>kaksi versiohaaraa</value>
+  <data name="UI Toolkit" xml:space="preserve">
+    <value>Käyttöliittymäkiti</value>
   </data>
   <data name="Ubuntu Base" xml:space="preserve">
     <value>Ubuntu-pohjainen</value>
-  </data>
-  <data name="UI Toolkit" xml:space="preserve">
-    <value>Käyttöliittymäkiti</value>
   </data>
   <data name="Unsigned" xml:space="preserve">
     <value>Allekirjoittamaton</value>
@@ -785,9 +737,6 @@
   </data>
   <data name="Using Flatpak for graphical applications." xml:space="preserve">
     <value>Graafisten sovellusten asentamiseen käytetään Flatpakia.</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>vahvista tarkistussumma</value>
   </data>
   <data name="Versions" xml:space="preserve">
     <value>Versiot</value>
@@ -816,9 +765,6 @@
   <data name="With AnduinOS, you can do more" xml:space="preserve">
     <value>AnduinOS:lla voit tehdä enemmän</value>
   </data>
-  <data name="with Secure Boot" xml:space="preserve">
-    <value>Secure Boot -toiminnolla</value>
-  </data>
   <data name="With Steam" xml:space="preserve">
     <value>Steamin kanssa</value>
   </data>
@@ -834,9 +780,6 @@
   <data name="Writing Code on AnduinOS" xml:space="preserve">
     <value>Koodin kirjoittaminen AnduinOSilla</value>
   </data>
-  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
-    <value>x86_64 + ARM64. Kaksi ISO-tiedostoa. Yksi käyttökokemus.</value>
-  </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>Kyllä, AnduinOS on ilmainen käyttää. Se on avoimen lähdekoodin projekti, joka noudattaa GPL-v3 -lisenssiä. Voit tarkastella lähdekoodia, muokata sitä ja jakaa sitä edelleen. Se on ilmainen ja tulee aina olemaan ilmainen.</value>
   </data>
@@ -848,6 +791,63 @@
   </data>
   <data name="Your Entire PC." xml:space="preserve">
     <value>Koko tietokoneesi.</value>
+  </data>
+  <data name="a provider of top-tier hosting services" xml:space="preserve">
+    <value>huippuluokan hosting-palvelujen tarjoaja</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>polta ISO-kuva USB-tikulle</value>
+  </data>
+  <data name="donate" xml:space="preserve">
+    <value>lahjoita</value>
+  </data>
+  <data name="ext4 optional" xml:space="preserve">
+    <value>ext4 valinnainen</value>
+  </data>
+  <data name="for any questions." xml:space="preserve">
+    <value>kaikissa kysymyksissä.</value>
+  </data>
+  <data name="for any questions. Please join our" xml:space="preserve">
+    <value>kaikissa kysymyksissä. Liity meidän</value>
+  </data>
+  <data name="for community support." xml:space="preserve">
+    <value>yhteisötukea varten.</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>tässä</value>
+  </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>Paikallinen kielimalli yhdellä komennolla.</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>tai</value>
+  </data>
+  <data name="packages" xml:space="preserve">
+    <value>paketit</value>
+  </data>
+  <data name="quad-core" xml:space="preserve">
+    <value>neliydinydin</value>
+  </data>
+  <data name="to us via PayPal." xml:space="preserve">
+    <value>meille PayPalin kautta.</value>
+  </data>
+  <data name="to us." xml:space="preserve">
+    <value>meille.</value>
+  </data>
+  <data name="two version branches" xml:space="preserve">
+    <value>kaksi versiohaaraa</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>vahvista tarkistussumma</value>
+  </data>
+  <data name="with Secure Boot" xml:space="preserve">
+    <value>Secure Boot -toiminnolla</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64. Kaksi ISO-tiedostoa. Yksi käyttökokemus.</value>
   </data>
 
 </root>

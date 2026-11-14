@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>Si coinciden, tu ISO es válida.</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>ISO de ~2,38 GB</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. Verifique la suma de comprobación</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. Crea un dispositivo USB arrancable</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Tras la instalación</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>Después de descargar el archivo ISO, verifica su integridad para asegurarte de que no haya sido alterado.</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Tras la descarga, es posible que desees aprender cómo</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>Tras la instalación</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>y</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>Instalador de AnduinOS</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS está respaldado por la comunidad. Tu donación ayuda a mantener el desarrollo activo e independiente.</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>Captura principal de AnduinOS</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS está respaldado por la comunidad. Tu donación ayuda a mantener el desarrollo activo e independiente.</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>Copia de seguridad</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>Consulta la documentación completa para obtener guías detalladas, consejos y solución de problemas.</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>grabar la ISO en una unidad USB</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>Cambiar el tamaño de LBA a 4K para un rendimiento óptimo</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>Haga clic en «Grabar desde archivo» y seleccione la ISO de AnduinOS.</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>haga clic aquí</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Cerrar</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Grabadora de ISO segura y multiplataforma</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>modo dd</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Documentación</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>Donar</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>Descargar e instalar</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>Descarga AnduinOS en tres pasos</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>Descargar Etcher</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>Descargar qBittorrent para Windows</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Descargar Rufus</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>Descarga iniciada</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>Descargar el ISO</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>Descargar Transmission para macOS</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Descargar Ventoy</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Descargar e instalar</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Descargar qBittorrent para Windows</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>Descargar el ISO</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>Descargar con BitTorrent</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>Obtener qBittorrent para Linux</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>El modo ISO puede hacer que AnduinOS no arranque.</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Si eres nuevo en AnduinOS, quizá también quieras echar un vistazo a los</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>Instala qBittorrent desde el centro de software de tu distribución o descárgalo desde el sitio web oficial, y luego abre el archivo .torrent descargado.</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>en lugar del modo ISO.</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>El modo ISO puede hacer que AnduinOS no arranque.</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>Participa en la discusión</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Solución USB multi-ISO y reutilizable</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>¡No es necesario volver a grabar ni borrar repetidamente!</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>¿SSD NVMe?</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>suma de verificación SHA256 oficial</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>¡No es necesario volver a grabar ni borrar repetidamente!</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>Código abierto</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>Abra el archivo .torrent de AnduinOS recién descargado con su cliente BitTorrent.</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Abrir el archivo Torrent</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Abra el archivo .torrent de AnduinOS recién descargado con su cliente BitTorrent.</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>Abriendo el archivo Torrent de AnduinOS en qBittorrent</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>Pasos de preinstalación opcionales</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>o</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>O utiliza la línea de comandos:</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Pulse inmediatamente la tecla del menú de arranque de su fabricante.</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent es un cliente BitTorrent gratuito y de código abierto sin anuncios. Instálalo y luego abre el archivo .torrent descargado.</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Lee primero la guía de arranque dual</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>Recomendado para Linux</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>Recomendado para macOS</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>Recomendado para Windows</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>Recomendado para macOS</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Informar de un problema</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>Cambiar idioma</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>Requisitos del sistema</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>Actualizaciones del sistema</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>Requisitos del sistema</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Echa un vistazo a la documentación, puede que encuentres tus respuestas allí.</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>El pequeño archivo .torrent contiene instrucciones de descarga, no la ISO de AnduinOS en sí. Instale un cliente y luego abra el archivo para descargar la ISO.</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>a tu unidad USB.</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>Actualice su sistema</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>¡Usa el modo dd, no el modo ISO!</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>Utilice Deja Dup para realizar copias de seguridad automáticas y cifradas en un dispositivo externo o almacenamiento en la nube. Configúrelo una vez y olvídelo.</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>¡Usa el modo dd, no el modo ISO!</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>Utilice el Centro de bienvenida para instalar los controladores NVIDIA, el soporte para el mando Xbox y otros controladores de hardware con un solo clic.</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>Verificar la suma de comprobación del ISO</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>verificar la suma de comprobación</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>Verificar la ISO</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>Tu aventura con AnduinOS comienza aquí. Sigue los pasos de abajo para empezar en menos de 30 minutos.</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>y</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>grabar la ISO en una unidad USB</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>haga clic aquí</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>modo dd</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>en lugar del modo ISO.</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>suma de verificación SHA256 oficial</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent es un cliente BitTorrent gratuito y de código abierto sin anuncios. Instálalo y luego abre el archivo .torrent descargado.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>a tu unidad USB.</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>verificar la suma de comprobación</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>ISO de ~2,38 GB</value>
   </data>
 
 </root>

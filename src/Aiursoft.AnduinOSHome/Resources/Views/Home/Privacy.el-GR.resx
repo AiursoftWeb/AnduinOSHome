@@ -18,28 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
-    <value>—εάν εντοπιστεί κάποιο από τα ακόλουθα πακέτα τηλεμετρίας ή υποβάθρου της Canonical κατά τη διαδικασία δημιουργίας, η διαδικασία διακόπτεται και απορρίπτεται άμεσα:</value>
-  </data>
-  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
-    <value>, με εξαίρεση συγκεκριμένες λειτουργίες που ενεργοποιούνται από τον χρήστη ή απαραίτητες υπηρεσίες που αναφέρονται λεπτομερώς παρακάτω.</value>
-  </data>
-  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
-    <value>, χωρίς να απαιτείται επικοινωνία με εξωτερικούς διακομιστές που ανήκουν σε εμάς ή σε τρίτους.</value>
-  </data>
-  <data name=": Automated error reporting services." xml:space="preserve">
-    <value>Αυτοματοποιημένες υπηρεσίες αναφοράς σφαλμάτων.</value>
-  </data>
-  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
-    <value>Συλλέγει βασικές πληροφορίες υλικού και λογισμικού κατά τη διάρκεια της εγκατάστασης.</value>
-  </data>
-  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
-    <value>: Περιοδικά υποβάλλει ανώνυμα στατιστικά χρήσης πακέτων.</value>
-  </data>
-  <data name="." xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+      <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
     <value>«αυστηρή» πολιτική</value>
   </data>
   <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
@@ -62,6 +41,15 @@
   </data>
   <data name="), your system connects to our official servers." xml:space="preserve">
     <value>), το σύστημά σας συνδέεται με τους επίσημους διακομιστές μας.</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+    <value>, με εξαίρεση συγκεκριμένες λειτουργίες που ενεργοποιούνται από τον χρήστη ή απαραίτητες υπηρεσίες που αναφέρονται λεπτομερώς παρακάτω.</value>
+  </data>
+  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
+    <value>, χωρίς να απαιτείται επικοινωνία με εξωτερικούς διακομιστές που ανήκουν σε εμάς ή σε τρίτους.</value>
+  </data>
+  <data name="." xml:space="preserve">
+    <value>.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. Συλλογή Δεδομένων από το AnduinOS</value>
@@ -129,6 +117,15 @@
   <data name="8. Contact Us" xml:space="preserve">
     <value>8. Επικοινωνία</value>
   </data>
+  <data name=": Automated error reporting services." xml:space="preserve">
+    <value>Αυτοματοποιημένες υπηρεσίες αναφοράς σφαλμάτων.</value>
+  </data>
+  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
+    <value>Συλλέγει βασικές πληροφορίες υλικού και λογισμικού κατά τη διάρκεια της εγκατάστασης.</value>
+  </data>
+  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
+    <value>: Περιοδικά υποβάλλει ανώνυμα στατιστικά χρήσης πακέτων.</value>
+  </data>
   <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
     <value>Τα στοιχεία του λογαριασμού διατηρούνται για όσο διάστημα είναι αναγκαίο για την παροχή υπηρεσιών λογαριασμού και τη συμμόρφωση με τις ισχύουσες νομικές υποχρεώσεις, με την επιφύλαξη των εφαρμοστέων απαιτήσεων διαγραφής. Οι περίοδοι σύνδεσης και τα cookies προτιμήσεων έχουν τις δικές τους περιόδους λήξης. Αυτά τα αρχεία είναι ξεχωριστά από τα αρχεία καταγραφής πρόσβασης στον ιστότοπο και δεν υπόκεινται στην περίοδο διατήρησης 120 ημερών για τα αρχεία καταγραφής του ιστότοπου.</value>
   </data>
@@ -138,11 +135,17 @@
   <data name="All system operations, configurations, and user activities take place locally on your own device (&quot;local execution&quot;)." xml:space="preserve">
     <value>Όλες οι λειτουργίες του συστήματος, οι ρυθμίσεις και οι δραστηριότητες των χρηστών εκτελούνται τοπικά στη δική σας συσκευή (&quot;τοπική εκτέλεση&quot;).</value>
   </data>
-  <data name="and confirmed it contains no telemetry." xml:space="preserve">
-    <value>και επιβεβαίωσε ότι δεν περιέχει τηλεμετρία.</value>
+  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
+    <value>AnduinOS Συζητήσεις GitHub</value>
   </data>
-  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
-    <value>και δεν μοιράζεται καμία πληροφορία με κυβερνήσεις, εταιρείες ή τρίτους.</value>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>Συσκευασία του SimpleWeather για το AnduinOS</value>
+  </data>
+  <data name="AnduinOS Update Service" xml:space="preserve">
+    <value>Υπηρεσία Ενημέρωσης AnduinOS</value>
+  </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>Ιστοσελίδα AnduinOS &amp; Αποθήκη APT</value>
   </data>
   <data name="AnduinOS build repository license" xml:space="preserve">
     <value>Άδεια χρήσης του αποθετηρίου κατασκευής του AnduinOS</value>
@@ -171,9 +174,6 @@
   <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
     <value>Το AnduinOS ακολουθεί μια προσέγγιση με προτεραιότητα στην τοπική λειτουργία, αλλά δεν είναι ένα σύστημα που λειτουργεί αποκλειστικά εκτός σύνδεσης. Οι ενημερώσεις, οι υπηρεσίες δικτύου και οι εφαρμογές μπορούν να επικοινωνούν με εξωτερικούς διακομιστές. Η συμπεριφορά τους εξαρτάται από το εγκατεστημένο λογισμικό, τις ρυθμίσεις του και τις λειτουργίες που χρησιμοποιείτε.</value>
   </data>
-  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
-    <value>AnduinOS Συζητήσεις GitHub</value>
-  </data>
   <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
     <value>Το AnduinOS καταβάλλει κάθε προσπάθεια ώστε η εγκατάστασή σας να είναι καθαρή και χωρίς telemetria κατά προεπιλογή.</value>
   </data>
@@ -183,6 +183,9 @@
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
     <value>Το AnduinOS περιλαμβάνει την επεκτασία GNOME «SimpleWeather».出于 εκτίμησης για την ιδιωτικότητά σας, αυτή η επεκτασία είναι</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>Το AnduinOS είναι μια διανομή Linux που βασίζεται στο Ubuntu και συντηρείται από την AIURSOFT LIMITED, εταιρεία με έδρα το Χονγκ Κονγκ. Στην παρούσα δήλωση, οι όροι «εμείς», «μας» και «δικός μας» αναφέρονται στην AIURSOFT LIMITED, τον υπεύθυνο επεξεργασίας που είναι αρμόδιος για τα προσωπικά δεδομένα τα οποία επεξεργαζόμαστε μέσω των υπηρεσιών που περιγράφονται παρακάτω.</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>Το AnduinOS είναι μια κοινότητα-οδηγούμενη, μη κερδοσκοπική πρωτοβουλία.</value>
   </data>
@@ -191,9 +194,6 @@
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>Το AnduinOS είναι μια δωρεάν και ανοικτού κώδικα διανομή Linux® βασισμένη στο Ubuntu.</value>
-  </data>
-  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
-    <value>Το AnduinOS είναι μια διανομή Linux που βασίζεται στο Ubuntu και συντηρείται από την AIURSOFT LIMITED, εταιρεία με έδρα το Χονγκ Κονγκ. Στην παρούσα δήλωση, οι όροι «εμείς», «μας» και «δικός μας» αναφέρονται στην AIURSOFT LIMITED, τον υπεύθυνο επεξεργασίας που είναι αρμόδιος για τα προσωπικά δεδομένα τα οποία επεξεργαζόμαστε μέσω των υπηρεσιών που περιγράφονται παρακάτω.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>Το AnduinOS δεσμεύεται να διατηρεί την εγκατάστασή σας καθαρή και χωρίς τηλεμετρία από προεπιλογή.</value>
@@ -213,15 +213,6 @@
   <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
     <value>Άδεια του αποθετηρίου συντήρησης πακέτων AnduinOS</value>
   </data>
-  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
-    <value>Συσκευασία του SimpleWeather για το AnduinOS</value>
-  </data>
-  <data name="AnduinOS Update Service" xml:space="preserve">
-    <value>Υπηρεσία Ενημέρωσης AnduinOS</value>
-  </data>
-  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
-    <value>Ιστοσελίδα AnduinOS &amp; Αποθήκη APT</value>
-  </data>
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>Επειδή αυτά τα πακέτα έχουν απομακρυνθεί φυσικά από τα μέσα εγκατάστασης, το AnduinOS</value>
   </data>
@@ -237,11 +228,11 @@
   <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
     <value>Προσθήκη Επεξεργασίας Δεδομένων της Cloudflare</value>
   </data>
-  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
-    <value>Η Cloudflare συμβάλλει στην παράδοση και την προστασία των ιστοτόπων μας, των λήψεων πακέτων και των λήψεων εικόνων. Κατά την παροχή αυτών των υπηρεσιών, επεξεργάζεται διευθύνσεις IP και μεταδεδομένα αιτημάτων. Χρησιμοποιούμε επίσης τη Vultr για τη φιλοξενία. Το προσωπικό μας που είναι υπεύθυνο για τη λειτουργία και την ασφάλεια αυτών των υπηρεσιών χρησιμοποιεί τα αρχεία καταγραφής του ιστοτόπου για τους σκοπούς που περιγράφονται παραπάνω.</value>
-  </data>
   <data name="Cloudflare Privacy Policy" xml:space="preserve">
     <value>Πολιτική απορρήτου της Cloudflare</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Η Cloudflare συμβάλλει στην παράδοση και την προστασία των ιστοτόπων μας, των λήψεων πακέτων και των λήψεων εικόνων. Κατά την παροχή αυτών των υπηρεσιών, επεξεργάζεται διευθύνσεις IP και μεταδεδομένα αιτημάτων. Χρησιμοποιούμε επίσης τη Vultr για τη φιλοξενία. Το προσωπικό μας που είναι υπεύθυνο για τη λειτουργία και την ασφάλεια αυτών των υπηρεσιών χρησιμοποιεί τα αρχεία καταγραφής του ιστοτόπου για τους σκοπούς που περιγράφονται παραπάνω.</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>Κοινότητα:</value>
@@ -261,17 +252,8 @@
   <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
     <value>Ανάλογα με τη νομοθεσία που εφαρμόζεται σε εσάς και τη συγκεκριμένη επεξεργασία, ενδέχεται να έχετε το δικαίωμα να:</value>
   </data>
-  <data name="disabled by default" xml:space="preserve">
-    <value>απενεργοποιημένο προεπιλεγμένα</value>
-  </data>
-  <data name="does not participate" xml:space="preserve">
-    <value>δεν συμμετέχει</value>
-  </data>
   <data name="Email:" xml:space="preserve">
     <value>Ηλεκτρονικό ταχυδρομείο:</value>
-  </data>
-  <data name="entirely on your computer" xml:space="preserve">
-    <value>εξ ολοκλήρου στον υπολογιστή σας</value>
   </data>
   <data name="Explanation:" xml:space="preserve">
     <value>Εξήγηση:</value>
@@ -279,20 +261,17 @@
   <data name="Firefox" xml:space="preserve">
     <value>Firefox</value>
   </data>
+  <data name="Firefox Privacy Notice" xml:space="preserve">
+    <value>Προειδοποίηση Απορρήτου Firefox</value>
+  </data>
   <data name="Firefox daily usage ping settings" xml:space="preserve">
     <value>Ρυθμίσεις ημερήσιων ping χρήσης του Firefox</value>
   </data>
   <data name="Firefox is provided by Mozilla and has its own data collection settings. Depending on its version, settings and any applicable consent requirements, it may send technical and interaction data or daily usage pings to Mozilla. You can review and manage these options in Firefox&apos;s privacy settings." xml:space="preserve">
     <value>Το Firefox παρέχεται από τη Mozilla και διαθέτει δικές του ρυθμίσεις συλλογής δεδομένων. Εξαρτώμενο από την έκδοσή του, τις ρυθμίσεις και τυχόν ισχύουσες απαιτήσεις συγκατάθεσης, μπορεί να αποστέλλει τεχνικά και δεδομένα αλληλεπίδρασης ή ημερήσια ping χρήσης στη Mozilla. Μπορείτε να εξετάσετε και να διαχειριστείτε αυτές τις επιλογές στις ρυθμίσεις απορρήτου του Firefox.</value>
   </data>
-  <data name="Firefox Privacy Notice" xml:space="preserve">
-    <value>Προειδοποίηση Απορρήτου Firefox</value>
-  </data>
   <data name="Firefox technical and interaction data settings" xml:space="preserve">
     <value>Ρυθμίσεις τεχνικών και δεδομένων αλληλεπίδρασης του Firefox</value>
-  </data>
-  <data name="for details." xml:space="preserve">
-    <value>για λεπτομέρειες.</value>
   </data>
   <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
     <value>Για γενική συζήτηση της κοινότητας, μπορείτε να χρησιμοποιήσετε το δημόσιο φόρουμ συζητήσεών μας. Για αιτήματα που αφορούν προσωπικά δεδομένα, παρακαλούμε επικοινωνήστε μέσω email.</value>
@@ -314,9 +293,6 @@
   </data>
   <data name="Freedom to redistribute:" xml:space="preserve">
     <value>Ελευθερία αναδιανομής:</value>
-  </data>
-  <data name="here" xml:space="preserve">
-    <value>εδώ</value>
   </data>
   <data name="However, if you manually install packages from Ubuntu repositories or enable certain Ubuntu-specific features, some of these telemetry mechanisms may be introduced." xml:space="preserve">
     <value>Ωστόσο, εάν εγκαταστήσετε χειροκίνητα πακέτα από τα αποθετήρια του Ubuntu ή ενεργοποιήσετε συγκεκριμένες λειτουργίες που είναι ειδικές για το Ubuntu, ορισμένοι από αυτούς τους μηχανισμούς τηλεμετρίας μπορεί να εισαχθούν.</value>
@@ -342,9 +318,6 @@
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>Σε έναν κόσμο όπου η τηλεμετρία από απόσταση έχει γίνει πανταχού παρούσα, το AnduinOS εσκεμμένα ελαχιστοποιεί τις εξωτερικές εξαρτήσεις για να προστατεύσει τους χρήστες.</value>
   </data>
-  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
-    <value>σε οποιαδήποτε αναφορά συστήματος, υποβολή στατιστικών χρήσης ή αυτόματη αναφορά καταστροφής.</value>
-  </data>
   <data name="Inspect the current package policy and image assertions" xml:space="preserve">
     <value>Ελέγξτε την τρέχουσα πολιτική πακέτων και τους ελέγχους της εικόνας</value>
   </data>
@@ -353,9 +326,6 @@
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>Εισαγωγή</value>
-  </data>
-  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
-    <value>ενσωματώνει ένα ευρύ φάσμα ανοικτού λογισμικού από προηγούμενες πηγές</value>
   </data>
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>Απλώς τα αναδιανέμει στην αρχική, αμετάβλητη μορφή τους.</value>
@@ -384,23 +354,11 @@
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>Η τοπική εκτέλεση σημαίνει ότι τα περισσότερα χαρακτηριστικά και οι υπηρεσίες του AnduinOS πραγματοποιούνται</value>
   </data>
-  <data name="maintained in spare time by volunteers." xml:space="preserve">
-    <value>διατηρείται στον ελεύθερο χρόνο από εθελοντές.</value>
-  </data>
-  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
-    <value>τροποποιήσει, βελτιώσει ή εισάγει επιπλέον τηλεμετρία σε αυτά τα upstream components.</value>
-  </data>
   <data name="No data leaves your machine without your explicit action or for essential functionality." xml:space="preserve">
     <value>Δεδομένα δεν εγκαταλείπουν τον υπολογιστή σας χωρίς τη ρητή δράση σας ή για απαραίτητη λειτουργικότητα.</value>
   </data>
   <data name="No data leaves your machine without your explicit action." xml:space="preserve">
     <value>Κανένα δεδομένο δεν εγκαταλείπει τη συσκευή σας χωρίς τη ρητή ενέργειά σας.</value>
-  </data>
-  <data name="not" xml:space="preserve">
-    <value>όχι</value>
-  </data>
-  <data name="not used for telemetry" xml:space="preserve">
-    <value>δεν χρησιμοποιούνται για τηλεμετρία</value>
   </data>
   <data name="Notably:" xml:space="preserve">
     <value>Σημειωτέον:</value>
@@ -414,23 +372,14 @@
   <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
     <value>Οι εικόνες λειτουργικών συστημάτων διατίθενται μέσω του cf.anduinos.com, με τη χρήση των υπηρεσιών αποθήκευσης και διανομής της Cloudflare. Για τη λήψη μιας εικόνας ή ενός πακέτου απαιτείται σύνδεση στο δίκτυο, και οι πάροχοι που διαχειρίζονται το σχετικό αίτημα λαμβάνουν μεταδεδομένα σύνδεσης. Η επίσκεψη σε σελίδα λήψης στον ιστότοπό μας υπόκειται στην καταγραφή επισκέψεων του ιστότοπου που περιγράφεται παραπάνω.</value>
   </data>
-  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
-    <value>ή οποιωνδήποτε παρόχων καιρικών δεδομένων που χρησιμοποιεί. Η σύνδεση με αυτές τις υπηρεσίες θα εκθέσει απαραίτητα τη διεύθυνση IP σας σε αυτές.</value>
-  </data>
-  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
-    <value>ή τους παρόχους καιρικών δεδομένων. Η ενεργοποίηση αυτής της λειτουργίας θα εκθέσει τη διεύθυνση IP σας σε αυτούς.</value>
-  </data>
-  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
-    <value>προέρχονται από το Ubuntu, το Debian, το GNOME, το Flathub και άλλες πηγές.</value>
-  </data>
   <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
     <value>Οι ιστότοποι και οι διαδικτυακές υπηρεσίες μας που υποστηρίζουν λογαριασμούς χρησιμοποιούν έναν κοινό πάροχο ταυτοτήτων για την υποστήριξη της ενιαίας σύνδεσης. Όταν συνδέεστε σε αυτές τις υπηρεσίες, ο πάροχος ταυτοτήτων και η υπηρεσία στην οποία αποκτάτε πρόσβαση ενδέχεται να ανταλλάσσουν τα αναγνωριστικά λογαριασμού και τις πληροφορίες ελέγχου ταυτότητας που είναι απαραίτητα για τη δημιουργία και τη διατήρηση της συνεδρίας σας. Αυτές οι πληροφορίες χρησιμοποιούνται για τον έλεγχο ταυτότητας και τη διαχείριση λογαριασμών, όχι για τηλεμετρία του λειτουργικού συστήματος.</value>
   </data>
-  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
-    <value>Οι αυτοματοποιημένες δοκιμές εικόνων ελέγχουν τη βάση δεδομένων των εγκατεστημένων πακέτων στο ζωντανό περιβάλλον και στο εγκατεστημένο σύστημα, συγκρίνοντάς την με έναν συντηρούμενο κατάλογο απαγορευμένων πακέτων και μοτίβων ονομάτων πακέτων. Ο έλεγχος αποτυγχάνει αν υπάρχει κάποιο απαγορευμένο πακέτο. Ο κατάλογος περιλαμβάνει επιλεγμένα πακέτα αναφοράς και υπηρεσιών παρασκηνίου, όπως ubuntu-report, popularity-contest, apport, whoopsie, snapd και στοιχεία του Ubuntu Pro.</value>
-  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>Η αυτόματη γραμμή κατασκευής ISO μας επιβάλλει ένα</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>Οι αυτοματοποιημένες δοκιμές εικόνων ελέγχουν τη βάση δεδομένων των εγκατεστημένων πακέτων στο ζωντανό περιβάλλον και στο εγκατεστημένο σύστημα, συγκρίνοντάς την με έναν συντηρούμενο κατάλογο απαγορευμένων πακέτων και μοτίβων ονομάτων πακέτων. Ο έλεγχος αποτυγχάνει αν υπάρχει κάποιο απαγορευμένο πακέτο. Ο κατάλογος περιλαμβάνει επιλεγμένα πακέτα αναφοράς και υπηρεσιών παρασκηνίου, όπως ubuntu-report, popularity-contest, apport, whoopsie, snapd και στοιχεία του Ubuntu Pro.</value>
   </data>
   <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
     <value>Η εταιρεία μας εδρεύει στο Χονγκ Κονγκ και οι πάροχοί μας δραστηριοποιούνται διεθνώς. Τα προσωπικά δεδομένα που υποβάλλονται σε επεξεργασία μέσω αυτών των υπηρεσιών, συμπεριλαμβανομένων των μεταδεδομένων σύνδεσης, των πληροφοριών λογαριασμού και της αλληλογραφίας, ενδέχεται να υποβάλλονται σε επεξεργασία εκτός της χώρας σας, μεταξύ άλλων εκτός του Ευρωπαϊκού Οικονομικού Χώρου ή του Ηνωμένου Βασιλείου. Η Cloudflare περιγράφει στην πολιτική απορρήτου της και στο Παράρτημα Επεξεργασίας Δεδομένων τα μέτρα προστασίας που εφαρμόζει για τη διεθνή επεξεργασία και διαβίβαση δεδομένων, συμπεριλαμβανομένων, όπου εφαρμόζονται, των τυποποιημένων συμβατικών ρητρών. Μπορείτε να επικοινωνήσετε μαζί μας για πληροφορίες σχετικά με τις διαβιβάσεις που αφορούν τα δεδομένα σας.</value>
@@ -443,9 +392,6 @@
   </data>
   <data name="Package Updates and Image Downloads" xml:space="preserve">
     <value>Ενημερώσεις πακέτων και λήψεις εικόνων</value>
-  </data>
-  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
-    <value>παρακαλούμε ανατρέξτε στις αντίστοιχες πολιτικές απορρήτου των upstream.</value>
   </data>
   <data name="Privacy Guarantee:" xml:space="preserve">
     <value>Εγγύηση Απορρήτου:</value>
@@ -510,14 +456,11 @@
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>Ορισμένα στοιχεία της ανωτέρω ροής ενδέχεται να διαθέτουν ανεξάρτητους μηχανισμούς συλλογής δεδομένων.</value>
   </data>
-  <data name="source" xml:space="preserve">
-    <value>Δήλωση Απορρήτου</value>
-  </data>
-  <data name="such as:" xml:space="preserve">
-    <value>όπως:</value>
-  </data>
   <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
     <value>Τα αποθετήρια κατασκευής και συντήρησης πακέτων του AnduinOS δημοσιεύουν τον κώδικά μας υπό την άδεια GPLv3, εκτός αν αναφέρεται διαφορετική άδεια. Τα στοιχεία τρίτων εξακολουθούν να διέπονται από τις αντίστοιχες άδειές τους. Η συμπερίληψή τους στη διανομή δεν υπάγει ολόκληρο το λειτουργικό σύστημα σε μία ενιαία άδεια· τα δικαιώματα χρήσης, τροποποίησης και αναδιανομής κάθε στοιχείου καθορίζονται από τους όρους της άδειας που εφαρμόζεται σε αυτό.</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>Η επέκταση επιφάνειας εργασίας SimpleWeather είναι απενεργοποιημένη από προεπιλογή στο AnduinOS. Αν ενεργοποιήσετε τις λειτουργίες καιρού, ενδέχεται να επικοινωνούν με υπηρεσίες τρίτων για γεωεντοπισμό βάσει διεύθυνσης IP, αναζήτηση τοποθεσίας και προγνώσεις καιρού. Οι πάροχοι λαμβάνουν τη διεύθυνση IP που χρησιμοποιείται για τη σύνδεση και τις πληροφορίες που απαιτούνται για το αίτημα, όπως ένα ερώτημα τοποθεσίας ή συντεταγμένες.</value>
   </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>Η επέκταση πρέπει να συνδεθεί με</value>
@@ -527,9 +470,6 @@
   </data>
   <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
     <value>Οι πάροχοι και τα αιτήματα εξαρτώνται από την έκδοση της επέκτασης, τη διαμόρφωση του AnduinOS και τις ρυθμίσεις σας. Ελέγξτε τους διαθέσιμους παρόχους και τις ρυθμίσεις τοποθεσίας στις προτιμήσεις της επέκτασης, καθώς και τις πολιτικές απορρήτου των παρόχων. Ο πηγαίος κώδικας του αρχικού έργου και η δική μας συσκευασία είναι διαθέσιμα για έλεγχο:</value>
-  </data>
-  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
-    <value>Η επέκταση επιφάνειας εργασίας SimpleWeather είναι απενεργοποιημένη από προεπιλογή στο AnduinOS. Αν ενεργοποιήσετε τις λειτουργίες καιρού, ενδέχεται να επικοινωνούν με υπηρεσίες τρίτων για γεωεντοπισμό βάσει διεύθυνσης IP, αναζήτηση τοποθεσίας και προγνώσεις καιρού. Οι πάροχοι λαμβάνουν τη διεύθυνση IP που χρησιμοποιείται για τη σύνδεση και τις πληροφορίες που απαιτούνται για το αίτημα, όπως ένα ερώτημα τοποθεσίας ή συντεταγμένες.</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>Δεν υπάρχουν κρυφές διεργασίες παρασκηνίου ή επικοινωνίες δικτύου που να ξεκινούν από το σύστημα με σκοπό τη συλλογή πληροφοριών χρηστών.</value>
@@ -545,9 +485,6 @@
   </data>
   <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
     <value>Αυτά τα αρχεία καταγραφής περιλαμβάνουν διευθύνσεις IP, χρονικές σημάνσεις αιτημάτων, URL που ζητήθηκαν, πληροφορίες προγράμματος περιήγησης, κατάσταση απόκρισης, μεγέθη αποκρίσεων και χρόνους επεξεργασίας. Τα χρησιμοποιούμε για την παρακολούθηση των υπηρεσιών, την αποστολή αυτοματοποιημένων ειδοποιήσεων, τον εντοπισμό και την αντιμετώπιση επιθέσεων, την επίλυση προβλημάτων και τη διάγνωση ζητημάτων απόδοσης.</value>
-  </data>
-  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
-    <value>αυτά τα πακέτα αργότερα, οι αντίστοιχοι μηχανισμοί συλλογής δεδομένων παρακολούθησης θα ενεργοποιηθούν σύμφωνα με τις πολιτικές της Canonical.</value>
   </data>
   <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
     <value>Αυτά τα αρχεία καταγραφής περιγράφουν αιτήματα προς τους ιστοτόπους μας. Δεν μας παρέχουν πρόσβαση στα αρχεία σας ούτε καταγράφουν τη δραστηριότητά σας σε άλλα σημεία του υπολογιστή σας. Η συνήθης χρήση του AnduinOS δεν μας αποστέλλει τηλεμετρία του λειτουργικού συστήματος.</value>
@@ -591,17 +528,8 @@
   <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
     <value>Για να παραδοθούν αυτά τα αρχεία παγκοσμίως με χαμηλή καθυστέρηση, η κίνηση διαδρομολογείται μέσω του Content Delivery Network (CDN) της Cloudflare. Όπως σε οποιοδήποτε τυπικό αίτημα ιστού, η διεύθυνση IP σας εκτίθεται στο CDN αποκλειστικά για σκοπούς διαδρομολόγησης και ασφαλείας (προστασία DDoS). Δεν καταγράφουμε ούτε αναλύουμε τα αιτήματα περιήγησης ή ενημέρωσης ιστού σας.</value>
   </data>
-  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
-    <value>για να καθορίσει τη θέση σας με βάση τη διεύθυνση IP σας, καθώς και προς τρίτους παρόχους καιρού για δεδομένα πρόγνωσης.</value>
-  </data>
-  <data name="to determine your location based on your IP address." xml:space="preserve">
-    <value>για να προσδιορίσει τη θέση σας με βάση τη διεύθυνση IP σας.</value>
-  </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>Για να εξασφαλίσετε την πλήρη εξαίρεση, μπορείτε να εξετάσετε και, εάν είναι απαραίτητο, να αφαιρέσετε αυτά τα πακέτα χρησιμοποιώντας:</value>
-  </data>
-  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
-    <value>για να εξασφαλίσουμε ότι δεν περιέχει κρυφές λειτουργίες τηλεμετρίας, δεν μπορούμε να ελέγξουμε τις πρακτικές απορρήτου των</value>
   </data>
   <data name="To provide our official website (" xml:space="preserve">
     <value>Για να παρέχουμε την επίσημη ιστοσελίδα μας (</value>
@@ -681,11 +609,83 @@
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>Διατηρείτε τον πλήρη έλεγχο των προσωπικών σας δεδομένων.</value>
   </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>Τα δικαιώματά σας</value>
+  </data>
   <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
     <value>Τα αρχεία σας, οι ρυθμίσεις και τα τοπικά αρχεία καταγραφής του συστήματος αποθηκεύονται στη συσκευή σας στο πλαίσιο της κανονικής λειτουργίας της. Η τοπική αυτή αποθήκευση δεν σημαίνει ότι τα συγκεκριμένα δεδομένα αποστέλλονται σε εμάς. Αν επιλέξετε να μας στείλετε μια αναφορά σφάλματος, ένα αίτημα υποστήριξης ή άλλες πληροφορίες, λαμβάνουμε όσα υποβάλετε.</value>
   </data>
-  <data name="Your Rights" xml:space="preserve">
-    <value>Τα δικαιώματά σας</value>
+  <data name="and confirmed it contains no telemetry." xml:space="preserve">
+    <value>και επιβεβαίωσε ότι δεν περιέχει τηλεμετρία.</value>
+  </data>
+  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
+    <value>και δεν μοιράζεται καμία πληροφορία με κυβερνήσεις, εταιρείες ή τρίτους.</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>απενεργοποιημένο προεπιλεγμένα</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>δεν συμμετέχει</value>
+  </data>
+  <data name="entirely on your computer" xml:space="preserve">
+    <value>εξ ολοκλήρου στον υπολογιστή σας</value>
+  </data>
+  <data name="for details." xml:space="preserve">
+    <value>για λεπτομέρειες.</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>εδώ</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>σε οποιαδήποτε αναφορά συστήματος, υποβολή στατιστικών χρήσης ή αυτόματη αναφορά καταστροφής.</value>
+  </data>
+  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
+    <value>ενσωματώνει ένα ευρύ φάσμα ανοικτού λογισμικού από προηγούμενες πηγές</value>
+  </data>
+  <data name="maintained in spare time by volunteers." xml:space="preserve">
+    <value>διατηρείται στον ελεύθερο χρόνο από εθελοντές.</value>
+  </data>
+  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
+    <value>τροποποιήσει, βελτιώσει ή εισάγει επιπλέον τηλεμετρία σε αυτά τα upstream components.</value>
+  </data>
+  <data name="not" xml:space="preserve">
+    <value>όχι</value>
+  </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>δεν χρησιμοποιούνται για τηλεμετρία</value>
+  </data>
+  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
+    <value>ή οποιωνδήποτε παρόχων καιρικών δεδομένων που χρησιμοποιεί. Η σύνδεση με αυτές τις υπηρεσίες θα εκθέσει απαραίτητα τη διεύθυνση IP σας σε αυτές.</value>
+  </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>ή τους παρόχους καιρικών δεδομένων. Η ενεργοποίηση αυτής της λειτουργίας θα εκθέσει τη διεύθυνση IP σας σε αυτούς.</value>
+  </data>
+  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
+    <value>προέρχονται από το Ubuntu, το Debian, το GNOME, το Flathub και άλλες πηγές.</value>
+  </data>
+  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
+    <value>παρακαλούμε ανατρέξτε στις αντίστοιχες πολιτικές απορρήτου των upstream.</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>Δήλωση Απορρήτου</value>
+  </data>
+  <data name="such as:" xml:space="preserve">
+    <value>όπως:</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>αυτά τα πακέτα αργότερα, οι αντίστοιχοι μηχανισμοί συλλογής δεδομένων παρακολούθησης θα ενεργοποιηθούν σύμφωνα με τις πολιτικές της Canonical.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>για να καθορίσει τη θέση σας με βάση τη διεύθυνση IP σας, καθώς και προς τρίτους παρόχους καιρού για δεδομένα πρόγνωσης.</value>
+  </data>
+  <data name="to determine your location based on your IP address." xml:space="preserve">
+    <value>για να προσδιορίσει τη θέση σας με βάση τη διεύθυνση IP σας.</value>
+  </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>για να εξασφαλίσουμε ότι δεν περιέχει κρυφές λειτουργίες τηλεμετρίας, δεν μπορούμε να ελέγξουμε τις πρακτικές απορρήτου των</value>
+  </data>
+  <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—εάν εντοπιστεί κάποιο από τα ακόλουθα πακέτα τηλεμετρίας ή υποβάθρου της Canonical κατά τη διαδικασία δημιουργίας, η διαδικασία διακόπτεται και απορρίπτεται άμεσα:</value>
   </data>
 
 </root>

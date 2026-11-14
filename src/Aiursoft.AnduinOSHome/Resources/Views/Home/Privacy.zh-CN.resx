@@ -49,6 +49,12 @@
 
 这些账户记录与网站访问日志相互独立，不适用网站访问日志的 120 天保留期限。</value>
   </data>
+  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
+    <value>AnduinOS GitHub Discussions</value>
+  </data>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>AnduinOS SimpleWeather 打包代码</value>
+  </data>
   <data name="AnduinOS build repository license" xml:space="preserve">
     <value>AnduinOS 系统构建仓库许可证</value>
   </data>
@@ -67,9 +73,6 @@
 
 软件更新、网络服务和应用程序都可能与外部服务器通信。这些通信的具体行为取决于已安装的软件、软件设置以及您选择使用的功能。</value>
   </data>
-  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
-    <value>AnduinOS GitHub Discussions</value>
-  </data>
   <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
     <value>AnduinOS 是一个基于 Ubuntu 的 Linux 发行版，由位于香港的 AIURSOFT LIMITED 公司维护。
 
@@ -81,9 +84,6 @@
   <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
     <value>AnduinOS 软件包维护仓库许可证</value>
   </data>
-  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
-    <value>AnduinOS SimpleWeather 打包代码</value>
-  </data>
   <data name="Build Checks and Their Scope" xml:space="preserve">
     <value>构建检查及其适用范围</value>
   </data>
@@ -93,6 +93,9 @@
   <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
     <value>Cloudflare 数据处理附录</value>
   </data>
+  <data name="Cloudflare Privacy Policy" xml:space="preserve">
+    <value>Cloudflare 隐私政策</value>
+  </data>
   <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
     <value>Cloudflare 协助我们分发和保护网站、软件包下载以及系统镜像下载服务。
 
@@ -101,9 +104,6 @@ Cloudflare 在提供这些服务时会处理 IP 地址和请求元数据。
 我们还使用 Vultr 提供托管服务。
 
 负责运营和保护这些服务的工作人员，会出于前文所述的目的使用网站访问日志。</value>
-  </data>
-  <data name="Cloudflare Privacy Policy" xml:space="preserve">
-    <value>Cloudflare 隐私政策</value>
   </data>
   <data name="Complain to the relevant data protection authority, including, where the GDPR applies, the authority in your place of habitual residence, work, or the alleged infringement." xml:space="preserve">
     <value>投诉权： 向相关数据保护监管机构提出投诉。在 GDPR 适用的情况下，包括您惯常居住地、工作所在地或涉嫌违法行为发生地的数据保护监管机构。</value>
@@ -117,14 +117,14 @@ Cloudflare 在提供这些服务时会处理 IP 地址和请求元数据。
   <data name="Firefox" xml:space="preserve">
     <value>Firefox</value>
   </data>
+  <data name="Firefox Privacy Notice" xml:space="preserve">
+    <value>Firefox 隐私声明</value>
+  </data>
   <data name="Firefox daily usage ping settings" xml:space="preserve">
     <value>Firefox 每日使用 Ping 设置</value>
   </data>
   <data name="Firefox is provided by Mozilla and has its own data collection settings. Depending on its version, settings and any applicable consent requirements, it may send technical and interaction data or daily usage pings to Mozilla. You can review and manage these options in Firefox&apos;s privacy settings." xml:space="preserve">
     <value>Firefox 由 Mozilla 提供，并拥有自己的数据收集设置。根据其版本、设置以及任何适用的同意要求，它可能会向 Mozilla 发送技术和交互数据或每日使用情况 ping。您可以在 Firefox 的隐私设置中查看和管理这些选项。</value>
-  </data>
-  <data name="Firefox Privacy Notice" xml:space="preserve">
-    <value>Firefox 隐私声明</value>
   </data>
   <data name="Firefox technical and interaction data settings" xml:space="preserve">
     <value>Firefox 技术和交互数据设置</value>
@@ -294,19 +294,19 @@ Cloudflare 在其隐私政策和数据处理附录中说明了国际数据处理
 
 使用、修改和再分发各个组件的权限，应遵循对应组件所适用的许可证条款。</value>
   </data>
-  <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
-    <value>实际使用的服务提供商和网络请求取决于扩展版本、AnduinOS 的配置以及您的个人设置。
-
-您可以在扩展的首选项设置中查看可用的服务提供商和位置设置，并查阅这些服务提供商各自的隐私政策。
-
-您还可以独立检查上游源代码以及我们的软件包构建实现：</value>
-  </data>
   <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
     <value>AnduinOS 默认禁用 SimpleWeather 桌面扩展。
 
 如果您启用天气功能，该扩展可能连接第三方服务，以获取基于 IP 地址的地理位置信息、搜索地点以及查询天气预报。
 
 这些服务提供商会收到建立网络连接所使用的 IP 地址，以及完成请求所需的信息，例如地点搜索内容或地理坐标。</value>
+  </data>
+  <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
+    <value>实际使用的服务提供商和网络请求取决于扩展版本、AnduinOS 的配置以及您的个人设置。
+
+您可以在扩展的首选项设置中查看可用的服务提供商和位置设置，并查阅这些服务提供商各自的隐私政策。
+
+您还可以独立检查上游源代码以及我们的软件包构建实现：</value>
   </data>
   <data name="These checks provide evidence about the packages present in the tested image and installation. They are not a comprehensive audit of all network behavior or all possible reporting capabilities. Later updates, additional software, and configuration changes can alter the system&apos;s behavior." xml:space="preserve">
     <value>这些检查能够为被测试的系统镜像及安装环境中实际存在的软件包提供可验证的证据。
@@ -446,15 +446,15 @@ leadership@aiursoft.com
 
 如果您对账户信息有疑问，或希望请求访问或删除个人数据，请使用第 8 节提供的联系方式与我们联系。</value>
   </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>您的权利</value>
+  </data>
   <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
     <value>作为正常系统运行的一部分，您的文件、设置以及本地系统日志会存储在您自己的设备上。
 
 这些数据在本地存储，并不意味着它们会被发送给我们。
 
 如果您主动向我们提交错误报告、技术支持请求或其他信息，我们将收到您选择提交的内容。</value>
-  </data>
-  <data name="Your Rights" xml:space="preserve">
-    <value>您的权利</value>
   </data>
 
 </root>

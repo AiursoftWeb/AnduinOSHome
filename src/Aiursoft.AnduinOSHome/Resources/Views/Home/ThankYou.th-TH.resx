@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>หากตรงกัน แสดงว่าไฟล์ ISO ของคุณถูกต้อง</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>~2.38 GB ISO</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. ตรวจสอบค่า checksum</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. สร้างไดรฟ์ USB ที่บูตได้</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>หลังการติดตั้ง</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>หลังจากดาวน์โหลดไฟล์ ISO แล้ว ให้ตรวจสอบความสมบูรณ์ของไฟล์เพื่อให้แน่ใจว่าไม่มีการดัดแปลงแก้ไข</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>หลังจากดาวน์โหลดแล้ว คุณอาจต้องการเรียนรู้วิธี</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>หลังการติดตั้ง</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>และ</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>โปรแกรมติดตั้ง AnduinOS</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS ได้รับการสนับสนุนจากชุมชน เงินบริจาคของคุณช่วยให้การพัฒนาอย่างต่อเนื่องและเป็นอิสระ</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>ภาพหน้าจอหลักของ AnduinOS</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS ได้รับการสนับสนุนจากชุมชน เงินบริจาคของคุณช่วยให้การพัฒนาอย่างต่อเนื่องและเป็นอิสระ</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>การสำรองข้อมูล</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>เรียกดูเอกสารฉบับเต็มสำหรับคู่มือที่ละเอียด เคล็ดลับ และการแก้ไขปัญหา</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>เขียนไฟล์ ISO ลง USB drive</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>เปลี่ยนขนาด LBA เป็น 4K เพื่อประสิทธิภาพสูงสุด</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>คลิก &quot;Flash from file&quot; แล้วเลือกไฟล์ ISO ของ AnduinOS</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>คลิกที่นี่</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>ปิด</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>เครื่องมือเขียนไฟล์ ISO ปลอดภัย รองรับหลายแพลตฟอร์ม</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>โหมด dd</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>เอกสารประกอบ</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>บริจาค</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>ดาวน์โหลดและติดตั้ง</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>ดาวน์โหลด AnduinOS ในสามขั้นตอน</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>ดาวน์โหลด Etcher</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>ดาวน์โหลด qBittorrent สำหรับ Windows</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>ดาวน์โหลด Rufus</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>เริ่มต้นดาวน์โหลดแล้ว</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>ดาวน์โหลดไฟล์ ISO</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>ดาวน์โหลด Transmission สำหรับ macOS</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>ดาวน์โหลด Ventoy</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>ดาวน์โหลดและติดตั้ง</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>ดาวน์โหลด qBittorrent สำหรับ Windows</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>ดาวน์โหลดไฟล์ ISO</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>ดาวน์โหลดด้วย BitTorrent</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>ดาวน์โหลด qBittorrent สำหรับ Linux</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>โหมด ISO อาจทำให้ AnduinOS ไม่สามารถบูตได้</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>หากคุณยังใหม่กับ AnduinOS คุณอาจต้องการดู</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>ติดตั้ง qBittorrent จากศูนย์ซอฟต์แวร์ของดิสทริบิวชันของคุณ หรือดาวน์โหลดจากเว็บไซต์ทางการ จากนั้นเปิดไฟล์ .torrent ที่ดาวน์โหลดมา</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>แทนที่จะใช้โหมด ISO</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>โหมด ISO อาจทำให้ AnduinOS ไม่สามารถบูตได้</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>ร่วมพูดคุย</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>โซลูชัน USB ที่รองรับ ISO หลายไฟล์และนำกลับมาใช้ซ้ำได้</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>ไม่ต้องแฟลชหรือล้างข้อมูลซ้ำๆ อีกต่อไป!</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>ใช้ NVMe SSD หรือไม่?</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>ค่า checksum SHA256 อย่างเป็นทางการ</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>ไม่ต้องแฟลชหรือล้างข้อมูลซ้ำๆ อีกต่อไป!</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>โอเพนซอร์ส</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>เปิดไฟล์ AnduinOS .torrent ที่เพิ่งดาวน์โหลดด้วยโปรแกรม BitTorrent ของคุณ</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>เปิดไฟล์ Torrent</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>เปิดไฟล์ AnduinOS .torrent ที่เพิ่งดาวน์โหลดด้วยโปรแกรม BitTorrent ของคุณ</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>เปิดไฟล์ Torrent ของ AnduinOS ใน qBittorrent</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>ขั้นตอนก่อนการติดตั้ง (แบบไม่บังคับ)</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>หรือ</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>หรือใช้คำสั่งบรรทัดคำสั่ง:</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>กดปุ่มเมนูบูตของแบรนด์ผู้ผลิตทันที</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent เป็นไคลเอนต์ BitTorrent แบบโอเพนซอร์สฟรี ไม่มีโฆษณา ติดตั้งแล้วเปิดไฟล์ .torrent ที่ดาวน์โหลดมา</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>อ่านคู่มือการติดตั้งระบบปฏิบัติการคู่ก่อน</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>แนะนำสำหรับ Linux</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>แนะนำสำหรับ macOS</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>แนะนำสำหรับ Windows</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>แนะนำสำหรับ macOS</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>รายงานปัญหา</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>เปลี่ยนภาษา</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>ความต้องการของระบบ</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>การอัปเดตระบบ</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>ความต้องการของระบบ</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>ลองดูเอกสารประกอบ คุณอาจพบคำตอบของคุณได้ที่นั่น</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>ไฟล์ .torrent ขนาดเล็กมีคำสั่งดาวน์โหลดเท่านั้น ไม่ใช่ไฟล์ ISO ของ AnduinOS โดยตรง ติดตั้งไคลเอนต์แล้วเปิดไฟล์เพื่อดาวน์โหลด ISO</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>ไปยังไดรฟ์ USB ของคุณ</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>อัปเดตระบบของคุณ</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>ใช้โหมด dd ไม่ใช่โหมด ISO!</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>ใช้ Deja Dup สำหรับการสำรองข้อมูลแบบอัตโนมัติและเข้ารหัสไปยังไดรฟ์ภายนอกหรือพื้นที่จัดเก็บข้อมูลบนคลาวด์ ตั้งค่าครั้งเดียว แล้วลืมไปได้เลย</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>ใช้โหมด dd ไม่ใช่โหมด ISO!</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>ใช้ Welcome Center เพื่อติดตั้งไดรเวอร์ NVIDIA การรองรับคอนโทรลเลอร์ Xbox และไดรเวอร์ฮาร์ดแวร์อื่นๆ ด้วยคลิกเดียว</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>ตรวจสอบค่า checksum ของไฟล์ ISO</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>ตรวจสอบค่าแฮช</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>ตรวจสอบไฟล์ ISO</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>เริ่มต้นการเดินทางกับ AnduinOS ของคุณได้ที่นี่ ปฏิบัติตามขั้นตอนด้านล่างเพื่อติดตั้งและใช้งานภายใน 30 นาที</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>และ</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>เขียนไฟล์ ISO ลง USB drive</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>คลิกที่นี่</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>โหมด dd</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>แทนที่จะใช้โหมด ISO</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>ค่า checksum SHA256 อย่างเป็นทางการ</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>หรือ</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent เป็นไคลเอนต์ BitTorrent แบบโอเพนซอร์สฟรี ไม่มีโฆษณา ติดตั้งแล้วเปิดไฟล์ .torrent ที่ดาวน์โหลดมา</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>ไปยังไดรฟ์ USB ของคุณ</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>ตรวจสอบค่าแฮช</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>~2.38 GB ISO</value>
   </data>
 
 </root>

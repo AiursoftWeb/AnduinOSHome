@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>Eşleşirlerse ISO&apos;nuz geçerlidir.</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>~2,38 GB ISO</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. Karmayı doğrulayın</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. Başlatılabilir bir USB sürücü oluşturun</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Kurulum Sonrası</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>ISO dosyasını indirdikten sonra, bozulmadığından emin olmak için bütünlüğünü doğrulayın.</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>İndirme işlemi tamamlandıktan sonra, nasıl yapılacağını öğrenmek isteyebilirsiniz.</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>Kurulum Sonrası</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>ve</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>AnduinOS Kurucusu</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS topluluk tarafından desteklenmektedir. Bağışlarınız, geliştirme çalışmalarının aktif ve bağımsız devam etmesini sağlar.</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>AnduinOS ana ekran görüntüsü</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS topluluk tarafından desteklenmektedir. Bağışlarınız, geliştirme çalışmalarının aktif ve bağımsız devam etmesini sağlar.</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>Yedekleme</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>Detaylı kılavuzlar, ipuçları ve sorun giderme için tam dokümantasyonu göz atın.</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>ISO&apos;yu bir USB sürücüsüne yazın</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>En iyi performans için LBA boyutunu 4K olarak değiştirin</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>&quot;Dosyadan flaşla&quot;yı tıklayın ve AnduinOS ISO&apos;sunu seçin.</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>buraya tıklayın</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Kapat</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Çapraz platformlu, güvenli ISO yazıcı</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>dd modu</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Dokümantasyon</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>Bağış Yap</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>İndir ve yükle</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>AnduinOS&apos;u üç adımda indirin</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>Etcher&apos;ı İndir</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>qBittorrent&apos;u Windows için indir</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Rufus&apos;u İndir</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>İndirme Başlatıldı</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>ISO&apos;yu indirin</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>macOS için Transmission&apos;ı İndir</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Ventoy&apos;u İndir</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>İndir ve yükle</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>qBittorrent&apos;u Windows için indir</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>ISO&apos;yu indirin</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>BitTorrent ile İndir</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>Linux için qBittorrent&apos;i alın</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO modu, AnduinOS&apos;un önyüklenememesine neden olabilir.</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>AnduinOS&apos;a yeniyseniz, ayrıca şunlara da göz atmak isteyebilirsiniz:</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>qBittorrent&apos;i dağıtımınızın yazılım merkezinden yükleyin veya resmî web sitesinden indirin, ardından indirilen .torrent dosyasını açın.</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>ISO modu yerine.</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>ISO modu, AnduinOS&apos;un önyüklenememesine neden olabilir.</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>Tartışmaya Katılın</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Çoklu ISO, yeniden kullanılabilir USB çözümü</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>Tekrarlanan yazma veya silme işlemi gerekmez!</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>NVMe SSD?</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>resmi SHA256 toplamları</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Tekrarlanan yazma veya silme işlemi gerekmez!</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>Açık kaynak</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>Yeni indirilen AnduinOS .torrent dosyasını BitTorrent istemcinizle açın.</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Torrent dosyasını açın</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Yeni indirilen AnduinOS .torrent dosyasını BitTorrent istemcinizle açın.</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>qBittorrent içinde AnduinOS Torrent dosyasını açma</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>İsteğe Bağlı Kurulum Öncesi Adımlar</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>veya</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Veya komut satırını kullanın:</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Üreticinizin önyükleme menüsü tuşuna hemen basın.</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent, reklamsız, ücretsiz ve açık kaynaklı bir BitTorrent istemcisidir. Yükleyin, ardından indirilen .torrent dosyasını açın.</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Çift önyükleme kılavuzunu önce okuyun</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>Linux için önerilir</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>macOS için önerilir</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>Windows için önerilen</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>macOS için önerilir</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Bir sorun bildir</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>Dili Değiştir</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>Sistem gereksinimleri</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>Sistem Güncellemeleri</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>Sistem gereksinimleri</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Belgelere bir göz atın, cevaplarınızı orada bulabilirsiniz.</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>Küçük .torrent dosyası, AnduinOS ISO&apos;sunun kendisi değil, indirme talimatlarını içerir. Bir istemci kurun, ardından ISO&apos;yu indirmek için dosyayı açın.</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>USB sürücünüze.</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>Sisteminizi Güncelleyin</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>ISO modu değil, dd modunu kullanın!</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>Deja Dup&apos;u harici bir sürücüye veya bulut depolama alanına otomatik, şifreli yedeklemeler yapmak için kullanın. Bir kez ayarlayın, unutun.</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>ISO modu değil, dd modunu kullanın!</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>Tek tıkla NVIDIA sürücüleri, Xbox oyun kolu desteği ve diğer donanım sürücülerini yüklemek için Karşılama Merkezini kullanın.</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>ISO karma doğrulamasını doğrula</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>sağlama toplamını doğrulayın</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>ISO&apos;yu Doğrula</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>AnduinOS yolculuğunuz burada başlıyor. 30 dakikadan kısa sürede işe başlamaya geçmek için aşağıdaki adımları izleyin.</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>ve</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>ISO&apos;yu bir USB sürücüsüne yazın</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>buraya tıklayın</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd modu</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>ISO modu yerine.</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>resmi SHA256 toplamları</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>veya</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent, reklamsız, ücretsiz ve açık kaynaklı bir BitTorrent istemcisidir. Yükleyin, ardından indirilen .torrent dosyasını açın.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>USB sürücünüze.</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>sağlama toplamını doğrulayın</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>~2,38 GB ISO</value>
   </data>
 
 </root>

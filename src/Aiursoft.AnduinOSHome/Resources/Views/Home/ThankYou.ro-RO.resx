@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>Dacă se potrivesc, ISO-ul dvs. este valid.</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>~2,38 GB ISO</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. Verificați suma de control</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. Creați un disc USB bootabil</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>După instalare</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>După descărcarea fișierului ISO, verificați integritatea acestuia pentru a vă asigura că nu a fost modificat.</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>După descărcare, poate doriți să aflați cum să</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>După instalare</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>și</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>Programul de instalare AnduinOS</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS este susținut de comunitate. Donația dumneavoastră ajută la menținerea dezvoltării active și independente.</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>Captură de ecran principală AnduinOS</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS este susținut de comunitate. Donația dumneavoastră ajută la menținerea dezvoltării active și independente.</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>Copie de rezervă</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>Răsfoiți documentația completă pentru ghiduri detaliate, sfaturi și depanare.</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>scrieți ISO-ul pe o unitate USB</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>Modificați dimensiunea LBA la 4K pentru performanță optimă</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>Faceți clic pe „Flash from file” și selectați ISO-ul AnduinOS.</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>faceți clic aici</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Închide</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Instrument multiplataformă pentru scrierea sigură a fișierelor ISO</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>modul dd</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Documentație</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>Donează</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>Descărcați și instalați</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>Descarcă AnduinOS în trei pași</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>Descarcă Etcher</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>Descarcă qBittorrent pentru Windows</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Descarcă Rufus</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>Descărcarea a început</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>Descărcați ISO</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>Descarcă Transmission pentru macOS</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Descarcă Ventoy</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Descărcați și instalați</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Descarcă qBittorrent pentru Windows</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>Descărcați ISO</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>Descărcare cu BitTorrent</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>Obțineți qBittorrent pentru Linux</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>Modul ISO poate determina ca AnduinOS să nu pornească.</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Dacă ești nou în AnduinOS, poți să consulți și</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>Instalați qBittorrent din centrul de software al distribuției dvs. sau descărcați-l de pe site-ul oficial, apoi deschideți fișierul .torrent descărcat.</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>în loc de modul ISO.</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>Modul ISO poate determina ca AnduinOS să nu pornească.</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>Alătură-te discuției</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Soluție USB multi-ISO, reutilizabilă</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>Nu este nevoie de flashare sau ștergere repetate!</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>SSD NVMe?</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>suma de control SHA256 oficială</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Nu este nevoie de flashare sau ștergere repetate!</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>Sursă deschisă</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>Deschideți fișierul .torrent AnduinOS descărcat recent cu clientul BitTorrent.</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Deschideți fișierul Torrent</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Deschideți fișierul .torrent AnduinOS descărcat recent cu clientul BitTorrent.</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>Deschiderea fișierului Torrent AnduinOS în qBittorrent</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>Pași opționali de preinstalare</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>sau</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Sau utilizați linia de comandă:</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Apăsați imediat tasta meniului de boot al producătorului dvs.</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent este un client BitTorrent gratuit, cu sursă deschisă, fără reclame. Instalați-l, apoi deschideți fișierul .torrent descărcat.</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Citiți mai întâi ghidul de pornire duală</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>Recomandat pentru Linux</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>Recomandat pentru macOS</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>Recomandat pentru Windows</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>Recomandat pentru macOS</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Raportează o problemă</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>Schimbă limba</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>Cerințe de sistem</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>Actualizări sistem</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>Cerințe de sistem</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Consultați documentația, s-ar putea să găsiți răspunsurile acolo.</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>Fișierul .torrent mic conține instrucțiuni de descărcare, nu ISO-ul propriu-zis al AnduinOS. Instalați un client, apoi deschideți fișierul pentru a descărca ISO-ul.</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>pe unitatea USB.</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>Actualizează sistemul</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>Folosiți modul dd, nu modul ISO!</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>Folosiți Deja Dup pentru copii de siguranță automate și criptate pe un disc extern sau stocare în cloud. Configurați-l o dată și uitați-vă de el.</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Folosiți modul dd, nu modul ISO!</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>Folosiți Welcome Center pentru a instala driverele NVIDIA, suportul pentru controllerul Xbox și alte drivere hardware cu un singur clic.</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>Verifică suma de control ISO</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>verifică suma de control</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>Verifica ISO</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>Călătoria ta cu AnduinOS începe aici. Urmărește pașii de mai jos pentru a fi operational în mai puțin de 30 de minute.</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>și</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>scrieți ISO-ul pe o unitate USB</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>faceți clic aici</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>modul dd</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>în loc de modul ISO.</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>suma de control SHA256 oficială</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>sau</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent este un client BitTorrent gratuit, cu sursă deschisă, fără reclame. Instalați-l, apoi deschideți fișierul .torrent descărcat.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>pe unitatea USB.</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>verifică suma de control</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>~2,38 GB ISO</value>
   </data>
 
 </root>

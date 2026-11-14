@@ -18,8 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="." xml:space="preserve">
+      <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / ARM-SBCs)</value>
+  </data>
+  <data name="." xml:space="preserve">
     <value>.</value>
+  </data>
+  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
+    <value>...Wir dürfen nicht vergessen, dass es ein 1,8 GB großes Image ist. Es hat meine Stimmung gehoben... Ich denke wirklich, es verdient eine Installation, die Zeit wird es sicherlich zeigen.</value>
   </data>
   <data name="...if you&apos;re considering taking back your privacy and switching to Linux, Anduin OS is the perfect place to start your journey. It&apos;s clean, it&apos;s simple, and the transition is seamless. Anduin OS wasn&apos;t designed for the tech nerd. It was designed specifically for YOU. Make the switch. You won&apos;t regret it." xml:space="preserve">
     <value>...wenn du darüber nachdenkst, deine Privatsphäre zurückzugewinnen und zu Linux zu wechseln, ist Anduin OS der perfekte Ort, um deine Reise zu beginnen. Es ist sauber, es ist einfach und der Übergang ist nahtlos. Anduin OS wurde nicht für den Technik-Nerd entwickelt. Es wurde speziell für DICH entworfen. Mach den Wechsel. Du wirst es nicht bereuen.</value>
@@ -30,18 +39,6 @@
   <data name="...it&apos;s pretty spectacular. It&apos;s also quite possibly one of the friendliest Linux distros I&apos;ve tried when it comes to folks who may well be moving over from Windows. Built by one person, it&apos;s pretty astonishing how good it is." xml:space="preserve">
     <value>...es ist ziemlich spektakulär. Es ist auch möglicherweise eine der freundlichsten Linux-Distributionen, die ich ausprobiert habe, besonders für Leute, die von Windows wechseln. Dass es von einer einzelnen Person entwickelt wurde, ist erstaunlich gut gelungen.</value>
   </data>
-  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
-    <value>...Wir dürfen nicht vergessen, dass es ein 1,8 GB großes Image ist. Es hat meine Stimmung gehoben... Ich denke wirklich, es verdient eine Installation, die Zeit wird es sicherlich zeigen.</value>
-  </data>
-  <data name="(Intel / AMD)" xml:space="preserve">
-    <value>(Intel / AMD)</value>
-  </data>
-  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
-    <value>(Snapdragon / ARM-SBCs)</value>
-  </data>
-  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
-    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; ist Ubuntus Paket-Basis + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; App-Erfahrung</value>
-  </data>
   <data name="27 inch" xml:space="preserve">
     <value>27 Zoll</value>
   </data>
@@ -51,20 +48,11 @@
   <data name="7×24 on-call support where contracted" xml:space="preserve">
     <value>Rufbereitschaft rund um die Uhr, sofern vertraglich vereinbart</value>
   </data>
-  <data name="a provider of top-tier hosting services" xml:space="preserve">
-    <value>einem Anbieter erstklassiger Hosting-Dienste</value>
+  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
+    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; ist Ubuntus Paket-Basis + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; App-Erfahrung</value>
   </data>
   <data name="A Universe of Applications at Your Fingertips." xml:space="preserve">
     <value>Ein Universum von Anwendungen an deinen Fingerspitzen.</value>
-  </data>
-  <data name="Advanced" xml:space="preserve">
-    <value>Erweitert</value>
-  </data>
-  <data name="After downloading, you may want to learn how to" xml:space="preserve">
-    <value>Nach dem Download möchtest du vielleicht lernen, wie du</value>
-  </data>
-  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
-    <value>KI-Agenten können sich per SSH verbinden, Pakete installieren, Konfigurationen bearbeiten und Probleme beheben – nativ. Keine API-Wrapper. Kein sandboxed Dateisystem. Einfach echtes Linux.</value>
   </data>
   <data name="AI Fix" xml:space="preserve">
     <value>KI-Fix</value>
@@ -75,11 +63,23 @@
   <data name="AI Tool Environment" xml:space="preserve">
     <value>KI-Tool-Umgebung</value>
   </data>
-  <data name="AI-Native Environment" xml:space="preserve">
-    <value>KI-native Umgebung</value>
+  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
+    <value>KI-Agenten können sich per SSH verbinden, Pakete installieren, Konfigurationen bearbeiten und Probleme beheben – nativ. Keine API-Wrapper. Kein sandboxed Dateisystem. Einfach echtes Linux.</value>
   </data>
   <data name="AI&apos;s Ideal." xml:space="preserve">
     <value>Das Ideal der KI.</value>
+  </data>
+  <data name="AI-Native Environment" xml:space="preserve">
+    <value>KI-native Umgebung</value>
+  </data>
+  <data name="ARM64 Support" xml:space="preserve">
+    <value>ARM64-Unterstützung</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Erweitert</value>
+  </data>
+  <data name="After downloading, you may want to learn how to" xml:space="preserve">
+    <value>Nach dem Download möchtest du vielleicht lernen, wie du</value>
   </data>
   <data name="Aiursoft is funded by user donations. We are grateful for your support. And you can" xml:space="preserve">
     <value>Aiursoft wird durch Spenden der Nutzer finanziert. Wir sind dankbar für Ihre Unterstützung. Und Sie können</value>
@@ -93,9 +93,6 @@
   <data name="All-in-Latest" xml:space="preserve">
     <value>Alles auf dem neuesten Stand</value>
   </data>
-  <data name="and" xml:space="preserve">
-    <value>und</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
@@ -104,6 +101,9 @@
   </data>
   <data name="AnduinOS Enterprise" xml:space="preserve">
     <value>AnduinOS Enterprise</value>
+  </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>AnduinOS Haupt-Screenshot</value>
   </data>
   <data name="AnduinOS has a clean, beautiful modern design, user-friendly interface, among so many distributions, this is the choice you can&apos;t miss. Trust me!!!" xml:space="preserve">
     <value>AnduinOS hat ein sauberes, schönes modernes Design, eine benutzerfreundliche Oberfläche. Unter so vielen Distributionen ist dies die Wahl, die du nicht verpassen darfst. Vertraue mir!!!</value>
@@ -153,9 +153,6 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOS ist deine finale Linux-Distribution! Sie ist für Entwickler gebaut und ist leichtgewichtig, aber dennoch leistungsstark. Mit ihren gut konstruierten Themes und Tastenkombinationen können Windows-Benutzer nahtlos zu AnduinOS wechseln und das Einrichten ihres Systems vergessen.</value>
   </data>
-  <data name="AnduinOS Main screenshot" xml:space="preserve">
-    <value>AnduinOS Haupt-Screenshot</value>
-  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>Die Installation und Einrichtung von AnduinOS mit allen meinen Anwendungen und Tools dauerte weniger als eine halbe Stunde. Wenn Sie eine saubere und stressfreie Desktop-Erfahrung mit Linux suchen, sind Sie hier genau richtig.</value>
   </data>
@@ -174,9 +171,6 @@
   <data name="Architecture" xml:space="preserve">
     <value>Architektur</value>
   </data>
-  <data name="ARM64 Support" xml:space="preserve">
-    <value>ARM64-Unterstützung</value>
-  </data>
   <data name="Bleeding-edge kernel, toolchains, and drivers — all pre-configured, zero friction. No Snap, no legacy dead weight, no compromises." xml:space="preserve">
     <value>Hochmoderne Kernel, Toolchains und Treiber – alles vorkonfiguriert, ohne Reibungsverluste. Kein Snap, kein veraltetes Ballastgewicht, keine Kompromisse.</value>
   </data>
@@ -189,20 +183,17 @@
   <data name="Built for the era of large models. Native Shell, native Docker, and an unrestrained Python experience." xml:space="preserve">
     <value>Entwickelt für die Ära großer Modelle. Native Shell, native Docker und eine ungehinderte Python-Erfahrung.</value>
   </data>
-  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
-    <value>Auf einem stabilen Fundament aufgebaut. Für alle entwickelt.</value>
-  </data>
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>Basierend auf dem Apkg-Paketmanager.</value>
+  </data>
+  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
+    <value>Auf einem stabilen Fundament aufgebaut. Für alle entwickelt.</value>
   </data>
   <data name="Burn our ultra-compact 2.38 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Brennen Sie unser ultrakompaktes 2,38-GB-ISO-Abbild auf ein beliebiges USB-Laufwerk und nehmen Sie eine vollständige, moderne Linux-Arbeitsstation als Schlüsselanhänger mit sich. Starten Sie in nur 10 Sekunden einen Desktop mit vollständiger Hardwarebeschleunigung.</value>
   </data>
   <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>Schreiben Sie unser ultra-kompaktes 2,4-GB-ISO auf einen beliebigen USB-Stick und tragen Sie einen vollständigen, modernen Linux-Arbeitsplatz an Ihrem Schlüsselbund. Starten Sie in nur 10 Sekunden einen vollständig hardwarebeschleunigten Desktop.</value>
-  </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>die ISO auf einen USB-Stick brennen</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>Durch das Herunterladen stimmst du unseren</value>
@@ -294,20 +285,17 @@
   <data name="Discord channel" xml:space="preserve">
     <value>Discord channel</value>
   </data>
-  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
-    <value>Festplatte beschädigt? Passwort vergessen? Starten Sie AnduinOS innerhalb weniger Sekunden, um sofort ins Internet zu gehen, Ihre Dateien wiederherzustellen und Ihre wichtigen Daten sicher zu extrahieren.</value>
-  </data>
   <data name="Disk Space" xml:space="preserve">
     <value>Festplattenspeicher</value>
+  </data>
+  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
+    <value>Festplatte beschädigt? Passwort vergessen? Starten Sie AnduinOS innerhalb weniger Sekunden, um sofort ins Internet zu gehen, Ihre Dateien wiederherzustellen und Ihre wichtigen Daten sicher zu extrahieren.</value>
   </data>
   <data name="Display Server" xml:space="preserve">
     <value>Displayserver</value>
   </data>
   <data name="Docs" xml:space="preserve">
     <value>Dokumentation</value>
-  </data>
-  <data name="donate" xml:space="preserve">
-    <value>spenden</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Herunterladen</value>
@@ -339,14 +327,11 @@
   <data name="Everything you do on Ubuntu, you can do it on AnduinOS. You can use it as a daily operating system, a development environment, a server, or a learning tool. It&apos;s up to you." xml:space="preserve">
     <value>Alles, was du auf Ubuntu tun, kannst du auch auf AnduinOS tun. Du kannst es als tägliches Betriebssystem, Entwicklungsumgebung, Server oder Lernwerkzeug verwenden. Es liegt an dir.</value>
   </data>
-  <data name="ext4 optional" xml:space="preserve">
-    <value>ext4 optional</value>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
   </data>
   <data name="Familiar UX" xml:space="preserve">
     <value>Vertraute Bedienung</value>
-  </data>
-  <data name="FAQ" xml:space="preserve">
-    <value>FAQ</value>
   </data>
   <data name="Firmware" xml:space="preserve">
     <value>Firmware</value>
@@ -354,20 +339,11 @@
   <data name="First-class Python" xml:space="preserve">
     <value>Erstklassiges Python</value>
   </data>
-  <data name="for any questions." xml:space="preserve">
-    <value>für alle Fragen.</value>
-  </data>
-  <data name="for any questions. Please join our" xml:space="preserve">
-    <value>für alle Fragen. Bitte tritt unserem</value>
-  </data>
-  <data name="for community support." xml:space="preserve">
-    <value>bei für Community-Support.</value>
+  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
+    <value>Für Snapdragon X-Laptops, Windows Dev Kit und generische ARM64-UEFI-Geräte.</value>
   </data>
   <data name="For most Intel and AMD computers." xml:space="preserve">
     <value>Für die meisten Intel- und AMD-Computer.</value>
-  </data>
-  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
-    <value>Für Snapdragon X-Laptops, Windows Dev Kit und generische ARM64-UEFI-Geräte.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Kostenlos</value>
@@ -381,6 +357,9 @@
   <data name="Friendly interface" xml:space="preserve">
     <value>Benutzerfreundliche Oberfläche</value>
   </data>
+  <data name="GPL-v3 License" xml:space="preserve">
+    <value>GPL-v3-Lizenz</value>
+  </data>
   <data name="Gaming" xml:space="preserve">
     <value>Gaming</value>
   </data>
@@ -390,17 +369,11 @@
   <data name="Go to Vultr" xml:space="preserve">
     <value>Zu Vultr</value>
   </data>
-  <data name="GPL-v3 License" xml:space="preserve">
-    <value>GPL-v3-Lizenz</value>
-  </data>
   <data name="Graphical applications are installed via Flatpak, and keep themselves separate from the base system (Since 1.3). They also allow for fine-grained control over their permissions." xml:space="preserve">
     <value>Grafische Anwendungen werden über Flatpak installiert und halten sich vom Basissystem getrennt (seit 1.3). Sie ermöglichen auch eine feinabgestimmte Kontrolle über ihre Berechtigungen.</value>
   </data>
   <data name="HDR Support" xml:space="preserve">
     <value>HDR-Unterstützung</value>
-  </data>
-  <data name="here" xml:space="preserve">
-    <value>hier</value>
   </data>
   <data name="Here are some of the answers you might be looking for." xml:space="preserve">
     <value>Hier sind einige Antworten, nach denen du möglicherweise suchst.</value>
@@ -426,17 +399,17 @@
   <data name="Ideal Toolset" xml:space="preserve">
     <value>Ideales Werkzeugset</value>
   </data>
-  <data name="Image preview" xml:space="preserve">
-    <value>Bildvorschau</value>
-  </data>
   <data name="Image Size" xml:space="preserve">
     <value>Abbildgröße</value>
   </data>
-  <data name="In fact, this is one of those &quot;set-it-and-forget-it&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
-    <value>Tatsächlich ist dies eine jener &quot;Einrichten-und-Vergessen&quot;-Distributionen, die die Nutzung von Linux zu einem Vergnügen macht. Sie ist intuitiv, einfach zu verwenden und gut gestaltet.</value>
+  <data name="Image preview" xml:space="preserve">
+    <value>Bildvorschau</value>
   </data>
   <data name="In Your Pocket." xml:space="preserve">
     <value>In deiner Tasche.</value>
+  </data>
+  <data name="In fact, this is one of those &quot;set-it-and-forget-it&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
+    <value>Tatsächlich ist dies eine jener &quot;Einrichten-und-Vergessen&quot;-Distributionen, die die Nutzung von Linux zu einem Vergnügen macht. Sie ist intuitiv, einfach zu verwenden und gut gestaltet.</value>
   </data>
   <data name="Includes:" xml:space="preserve">
     <value>Enthält:</value>
@@ -471,17 +444,23 @@
   <data name="Join Discussions" xml:space="preserve">
     <value>Diskussionen beitreten</value>
   </data>
-  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
-    <value>Tritt unserer Community bei und engagiere dich mit AnduinOS!</value>
-  </data>
   <data name="Join Revolt channel" xml:space="preserve">
     <value>Revolt-Kanal beitreten</value>
   </data>
   <data name="Join Stoat channel" xml:space="preserve">
     <value>Stoat-Kanal beitreten</value>
   </data>
+  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
+    <value>Tritt unserer Community bei und engagiere dich mit AnduinOS!</value>
+  </data>
   <data name="Kiosk device customization" xml:space="preserve">
     <value>Anpassung von Kiosksystemen</value>
+  </data>
+  <data name="LTS Support" xml:space="preserve">
+    <value>LTS-Support</value>
+  </data>
+  <data name="LTS and Standard" xml:space="preserve">
+    <value>LTS und Standard</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Sprache</value>
@@ -504,17 +483,8 @@
   <data name="Live Boot" xml:space="preserve">
     <value>Live-Start</value>
   </data>
-  <data name="local LLM, one command away." xml:space="preserve">
-    <value>lokales LLM, nur ein Befehl entfernt.</value>
-  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>Auf der Suche nach älteren Versionen?</value>
-  </data>
-  <data name="LTS and Standard" xml:space="preserve">
-    <value>LTS und Standard</value>
-  </data>
-  <data name="LTS Support" xml:space="preserve">
-    <value>LTS-Support</value>
   </data>
   <data name="Memory Compression" xml:space="preserve">
     <value>Speicherkomprimierung</value>
@@ -537,6 +507,9 @@
   <data name="Multi-language Ready" xml:space="preserve">
     <value>Mehrsprachig</value>
   </data>
+  <data name="NVIDIA Graphics Support" xml:space="preserve">
+    <value>Unterstützung für NVIDIA-Grafikkarten</value>
+  </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>Native Shell Experience</value>
   </data>
@@ -546,20 +519,17 @@
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>Nativ vorinstalliert, Systemebenen-Integration, sofort einsatzbereit.</value>
   </data>
-  <data name="No execution signing or modification restrictions" xml:space="preserve">
-    <value>Keine Ausführungssignierungs- oder Modifizierungsbeschränkungen</value>
-  </data>
   <data name="No Installation Needed" xml:space="preserve">
     <value>Keine Installation erforderlich</value>
+  </data>
+  <data name="No execution signing or modification restrictions" xml:space="preserve">
+    <value>Keine Ausführungssignierungs- oder Modifizierungsbeschränkungen</value>
   </data>
   <data name="No telemetry at all! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>Keine Telemetrie überhaupt! Wähle &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;, um deine Privatsphäre zurückzugewinnen</value>
   </data>
   <data name="No telemetry integrated! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>Keine Telemetrie integriert! Wähle &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;, um deine Privatsphäre zurückzugewinnen.</value>
-  </data>
-  <data name="NVIDIA Graphics Support" xml:space="preserve">
-    <value>Unterstützung für NVIDIA-Grafikkarten</value>
   </data>
   <data name="On Ask Ubuntu, you can search for and ask about very common issues. Solutions for almost all AnduinOS issues are identical to those for Ubuntu. You can rely entirely on Ubuntu&apos;s documentation and expertise to resolve problems with AnduinOS." xml:space="preserve">
     <value>Auf Ask Ubuntu kannst du nach sehr häufigen Problemen suchen und danach fragen. Lösungen für fast alle AnduinOS-Probleme sind identisch mit denen für Ubuntu. Du kannst dich vollständig auf Ubuntus Dokumentation und Expertise verlassen, um Probleme mit AnduinOS zu lösen.</value>
@@ -570,17 +540,11 @@
   <data name="Open Source" xml:space="preserve">
     <value>Open Source</value>
   </data>
-  <data name="or" xml:space="preserve">
-    <value>oder</value>
-  </data>
   <data name="Package Format" xml:space="preserve">
     <value>Paketformat</value>
   </data>
   <data name="Package Manager" xml:space="preserve">
     <value>Paketmanager</value>
-  </data>
-  <data name="packages" xml:space="preserve">
-    <value>Pakete</value>
   </data>
   <data name="Persistent on USB" xml:space="preserve">
     <value>Persistenz auf USB</value>
@@ -594,14 +558,14 @@
   <data name="Premier" xml:space="preserve">
     <value>Premier</value>
   </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Datenschutzrichtlinie</value>
+  </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS does not send usage statistics or diagnostic reports to any organization by default. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you." xml:space="preserve">
     <value>Datenschutz ist keine Option mehr, sondern unverzichtbar. AnduinOS sendet standardmäßig keine Nutzungsstatistiken oder Diagnoseberichte an Organisationen. Wir verfolgen dich nicht. Wir erstellen kein Profil von dir. Wir richten keine Werbung gezielt an dich.</value>
   </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS is designed to gather nothing from you. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you. You remain anonymous to the system." xml:space="preserve">
     <value>Privatsphäre ist nicht mehr optional. Sie ist unerlässlich. AnduinOS ist darauf ausgelegt, nichts von dir zu sammeln. Wir verfolgen dich nicht. Wir erstellen keine Nutzerprofile von dir. Wir nutzen keine personalisierte Werbung. Du bleibst dem System gegenüber anonym.</value>
-  </data>
-  <data name="Privacy Policy" xml:space="preserve">
-    <value>Datenschutzrichtlinie</value>
   </data>
   <data name="Private package repository" xml:space="preserve">
     <value>Privates Paket-Repository</value>
@@ -614,9 +578,6 @@
   </data>
   <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
     <value>Python → Rust → PNG. Ein Pipe. Null RPC.</value>
-  </data>
-  <data name="quad-core" xml:space="preserve">
-    <value>Vier-Kern</value>
   </data>
   <data name="RAM" xml:space="preserve">
     <value>RAM</value>
@@ -723,9 +684,6 @@
   <data name="The AnduinOS server is proudly sponsored by" xml:space="preserve">
     <value>Der AnduinOS-Server wird stolz gesponsert von</value>
   </data>
-  <data name="The base environment AI knows best" xml:space="preserve">
-    <value>Die Basisumgebung, die der AI am besten bekannt ist</value>
-  </data>
   <data name="The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve." xml:space="preserve">
     <value>Die GNOME-basierte Desktop-Umgebung bietet schöne Oberflächen und eine intuitive Benutzererfahrung, die zu den Gewohnheiten der Nutzer passt und es dir ermöglicht, schnell mit AnduinOS zu beginnen, ohne viel lernen zu müssen.</value>
   </data>
@@ -753,17 +711,14 @@
   <data name="The Ultimate Swiss Army Knife" xml:space="preserve">
     <value>Das ultimative Schweizer Taschenmesser</value>
   </data>
+  <data name="The base environment AI knows best" xml:space="preserve">
+    <value>Die Basisumgebung, die der AI am besten bekannt ist</value>
+  </data>
   <data name="This is a referral link. If you become a paying Vultr customer, we may receive a referral reward at no additional cost to you." xml:space="preserve">
     <value>Dieser Link ist ein Empfehlungslink. Wenn Sie ein zahlender Vultr-Kunde werden, erhalten wir möglicherweise eine Empfehlungsprämie, ohne dass Ihnen zusätzliche Kosten entstehen.</value>
   </data>
   <data name="To download AnduinOS, select the correct edition below:" xml:space="preserve">
     <value>Um AnduinOS herunterzuladen, wähle unten die richtige Edition aus:</value>
-  </data>
-  <data name="to us via PayPal." xml:space="preserve">
-    <value>an uns über PayPal.</value>
-  </data>
-  <data name="to us." xml:space="preserve">
-    <value>an uns.</value>
   </data>
   <data name="Today is the best day for you to switch to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;" xml:space="preserve">
     <value>Heute ist der beste Tag für dich, um zu &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; zu wechseln</value>
@@ -774,14 +729,11 @@
   <data name="Transitioning to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; will be the best decision you&apos;ve ever made" xml:space="preserve">
     <value>Der Wechsel zu &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; wird die beste Entscheidung sein, die du je getroffen hast</value>
   </data>
-  <data name="two version branches" xml:space="preserve">
-    <value>zwei Versionszweigen</value>
+  <data name="UI Toolkit" xml:space="preserve">
+    <value>UI-Toolkit</value>
   </data>
   <data name="Ubuntu Base" xml:space="preserve">
     <value>Ubuntu-Basis</value>
-  </data>
-  <data name="UI Toolkit" xml:space="preserve">
-    <value>UI-Toolkit</value>
   </data>
   <data name="Unsigned" xml:space="preserve">
     <value>Unsigniert</value>
@@ -800,9 +752,6 @@
   </data>
   <data name="Using Flatpak for graphical applications." xml:space="preserve">
     <value>Verwendung von Flatpak für grafische Anwendungen.</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>die Prüfsumme verifizieren</value>
   </data>
   <data name="Versions" xml:space="preserve">
     <value>Versionen</value>
@@ -831,9 +780,6 @@
   <data name="With AnduinOS, you can do more" xml:space="preserve">
     <value>Mit AnduinOS kannst du mehr tun</value>
   </data>
-  <data name="with Secure Boot" xml:space="preserve">
-    <value>mit Secure Boot</value>
-  </data>
   <data name="With Steam" xml:space="preserve">
     <value>Mit Steam</value>
   </data>
@@ -849,9 +795,6 @@
   <data name="Writing Code on AnduinOS" xml:space="preserve">
     <value>Programmieren mit AnduinOS</value>
   </data>
-  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
-    <value>x86_64 + ARM64. Zwei ISOs. Ein Erlebnis.</value>
-  </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>Ja, AnduinOS ist kostenlos zu verwenden. Es ist ein Open-Source-Projekt, das der GPL-v3-Lizenz folgt. Du kannst den Quellcode einsehen, modifizieren und weiterverteilen. Es ist kostenlos und wird immer kostenlos bleiben.</value>
   </data>
@@ -863,6 +806,63 @@
   </data>
   <data name="Your Entire PC." xml:space="preserve">
     <value>Dein gesamter PC.</value>
+  </data>
+  <data name="a provider of top-tier hosting services" xml:space="preserve">
+    <value>einem Anbieter erstklassiger Hosting-Dienste</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>und</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>die ISO auf einen USB-Stick brennen</value>
+  </data>
+  <data name="donate" xml:space="preserve">
+    <value>spenden</value>
+  </data>
+  <data name="ext4 optional" xml:space="preserve">
+    <value>ext4 optional</value>
+  </data>
+  <data name="for any questions." xml:space="preserve">
+    <value>für alle Fragen.</value>
+  </data>
+  <data name="for any questions. Please join our" xml:space="preserve">
+    <value>für alle Fragen. Bitte tritt unserem</value>
+  </data>
+  <data name="for community support." xml:space="preserve">
+    <value>bei für Community-Support.</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>hier</value>
+  </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>lokales LLM, nur ein Befehl entfernt.</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>oder</value>
+  </data>
+  <data name="packages" xml:space="preserve">
+    <value>Pakete</value>
+  </data>
+  <data name="quad-core" xml:space="preserve">
+    <value>Vier-Kern</value>
+  </data>
+  <data name="to us via PayPal." xml:space="preserve">
+    <value>an uns über PayPal.</value>
+  </data>
+  <data name="to us." xml:space="preserve">
+    <value>an uns.</value>
+  </data>
+  <data name="two version branches" xml:space="preserve">
+    <value>zwei Versionszweigen</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>die Prüfsumme verifizieren</value>
+  </data>
+  <data name="with Secure Boot" xml:space="preserve">
+    <value>mit Secure Boot</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64. Zwei ISOs. Ein Erlebnis.</value>
   </data>
 
 </root>

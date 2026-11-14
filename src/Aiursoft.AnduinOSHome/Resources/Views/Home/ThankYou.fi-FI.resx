@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>Jos ne täsmäävät, ISO-tiedostosi on kelvollinen.</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>~2,38 Gt:n ISO-levykuva</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. Varmista tarkiste</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. Luo käynnistettävä USB-muistilaite</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>Asennuksen jälkeen</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>Tarkista ISO-tiedoston eheys lataamisen jälkeen varmistaaksesi, että sitä ei ole muutettu.</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>Latauksen jälkeen saatat haluta oppia, miten</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>Asennuksen jälkeen</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>ja</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>AnduinOS-asennusohjelma</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS on yhteisön tukema. Lahjoituksesi auttaa pitämään kehitystyön aktiivisena ja itsenäisenä.</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>AnduinOS:n pääkuvakaappaus</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS on yhteisön tukema. Lahjoituksesi auttaa pitämään kehitystyön aktiivisena ja itsenäisenä.</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>Varmuuskopiointi</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>Selaa koko dokumentaatiota löytääksesi yksityiskohtaiset ohjeet, vinkit ja virheenkorjaustiedot.</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>polta ISO-kuva USB-tikulle</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>Muuta LBA-koko 4K:n parhaan suorituskyvyn saavuttamiseksi</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>Napsauta &quot;Flash from file&quot; ja valitse AnduinOS-ISO.</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>napsauta tästä</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Sulje</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Alustariippumaton, turvallinen ISO-työkalu</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>dd-tila</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Dokumentaatio</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>Lahjoita</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>Lataa ja asenna</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>Lataa AnduinOS kolmessa vaiheessa</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>Lataa Etcher</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>Lataa qBittorrent Windowsille</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>Lataa Rufus</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>Lataus aloitettu</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>Lataa ISO</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>Lataa Transmission macOS:lle</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>Lataa Ventoy</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>Lataa ja asenna</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>Lataa qBittorrent Windowsille</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>Lataa ISO</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>Lataa BitTorrentilla</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>Hae qBittorrent -ohjelma Linux-järjestelmälle</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO-tila voi aiheuttaa AnduinOS:n käynnistymisen epäonnistumisen.</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Jos olet uusi AnduinOS-käyttäjä, saatat haluta myös tutustua</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>Asenna qBittorrent jakelusi ohjelmakeskuksesta tai lataa se viralliselta verkkosivustolta, ja avaa sitten ladattu .torrent-tiedosto.</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>sen sijaan kuin ISO-tila.</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>ISO-tila voi aiheuttaa AnduinOS:n käynnistymisen epäonnistumisen.</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>Liity keskusteluun</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Moni-ISO-, uudelleenkäytettävä USB-ratkaisu</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>Toistuva kirjoittaminen tai tyhjentäminen ei ole tarpeen!</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>NVMe-SSD?</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>virallinen SHA256-tarkiste</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>Toistuva kirjoittaminen tai tyhjentäminen ei ole tarpeen!</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>Avoin lähdekoodi</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>Avaa juuri ladattu AnduinOS-tiedosto (.torrent) BitTorrent-asiakasohjelluksellasi.</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Avaa Torrent-tiedosto</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>Avaa juuri ladattu AnduinOS-tiedosto (.torrent) BitTorrent-asiakasohjelluksellasi.</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>Avataan AnduinOS-tiedosto qBittorrentissa</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>Valinnaiset asennusta edeltävät vaiheet</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>tai</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Tai käytä komentoriviä:</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>Paina valmistajan käynnistysvalikkonäppäintä välittömästi.</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent on ilmainen, avoimen lähdekoodin BitTorrent-asiakasohjelma ilman mainoksia. Asenna se ja avaa ladattu .torrent-tiedosto.</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>Lue kaksoiskäynnistysopas ensin</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>Suositeltu Linuxille</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>Suositeltu macOS:lle</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>Suositeltu Windowsille</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>Suositeltu macOS:lle</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>Ilmoita ongelmasta</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>Vaihda kieli</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>Järjestelmävaatimukset</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>Järjestelmäpäivitykset</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>Järjestelmävaatimukset</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>Tutustu dokumentaatioon, saatat löytää sieltä vastauksia kysymyksiisi.</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>Pieni .torrent-tiedosto sisältää latausohjeet, ei itse AnduinOS ISO -tiedostoa. Asenna asiakasohjelma ja avaa tiedosto ISO-tiedoston lataamiseksi.</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>USB-muistilaitteeseesi.</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>Päivitä järjestelmäsi</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>Käytä dd-tilaa, ei ISO-tilaa!</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>Käytä Deja Dupia automatisoituja ja salattuja varmuuskopioita ulkoiselle levylle tai pilvipalveluun varten. Aseta se kerran, ja unohda sitten.</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>Käytä dd-tilaa, ei ISO-tilaa!</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>Asenna NVIDIA-ajurit, Xbox-ohjaintuki ja muut laiteohjaimet yhdellä napsautuksella Tervetuloa-keskuksen avulla.</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>Varmista ISO-tarkiste</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>vahvista tarkistussumma</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>Tarkista ISO</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>AnduinOS-matka alkaa täältä. Noudata alla olevia ohjeita päästäksesi alkuun alle 30 minuutissa.</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>ja</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>polta ISO-kuva USB-tikulle</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>napsauta tästä</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd-tila</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>sen sijaan kuin ISO-tila.</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>virallinen SHA256-tarkiste</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>tai</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent on ilmainen, avoimen lähdekoodin BitTorrent-asiakasohjelma ilman mainoksia. Asenna se ja avaa ladattu .torrent-tiedosto.</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>USB-muistilaitteeseesi.</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>vahvista tarkistussumma</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>~2,38 Gt:n ISO-levykuva</value>
   </data>
 
 </root>
