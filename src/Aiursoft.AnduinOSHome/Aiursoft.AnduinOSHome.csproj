@@ -31,4 +31,7 @@
     <ProjectReference Include="..\Aiursoft.AnduinOSHome.MySql\Aiursoft.AnduinOSHome.MySql.csproj" />
     <ProjectReference Include="..\Aiursoft.AnduinOSHome.Sqlite\Aiursoft.AnduinOSHome.Sqlite.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="4.0.104.12" />
+  </ItemGroup>
 </Project>

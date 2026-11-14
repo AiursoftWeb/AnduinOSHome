@@ -8,6 +8,7 @@ namespace Aiursoft.AnduinOSHome.Entities;
 [ExcludeFromCodeCoverage]
 public abstract class AnduinOSHomeDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
+    public DbSet<OfflineUpdate> OfflineUpdates => Set<OfflineUpdate>();
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
     public DbSet<Hardware> Hardware => Set<Hardware>();
     public DbSet<HardwareTranslation> HardwareTranslations => Set<HardwareTranslation>();
@@ -16,6 +17,8 @@ public abstract class AnduinOSHomeDbContext(DbContextOptions options) : Identity
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+        builder.Entity<OfflineUpdate>().HasIndex(x => new { x.ReleaseLine, x.Suite, x.Architecture });
+        builder.Entity<OfflineUpdate>().Ignore(x => x.ObjectKey).Ignore(x => x.FileName);
         builder.Entity<Hardware>().HasIndex(x => x.Slug).IsUnique();
         builder.Entity<HardwareTranslation>().HasIndex(x => new { x.HardwareId, x.Culture }).IsUnique();
         builder.Entity<Hardware>().HasMany(x => x.Translations).WithOne()

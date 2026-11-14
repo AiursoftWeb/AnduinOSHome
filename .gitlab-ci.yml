@@ -34,7 +34,7 @@ before_script:
       <configuration>
           <packageSources>
               <clear />
-              <add key="aiursoft" value="https://nuget.aiursoft.com/v3/index.json" />
+              <add key="aiursoft" value="https://nupkg.aiursoft.com/v3/index.json" />
           </packageSources>
       </configuration>
       NUGETEOF

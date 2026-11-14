@@ -1,0 +1,23 @@
+.offline-downloads { background: #f5f8fc; color: #172c46; min-height: 85vh; padding: 5rem 0; }
+.offline-downloads .container { max-width: 1050px; padding-inline: 24px; }
+.offline-heading { max-width: 740px; margin: 0 auto 3.5rem; text-align: center; }
+.offline-heading h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.08; margin-bottom: 1.5rem; }
+.offline-heading > p:last-child { font-size: 1.15rem; color: #4b6078; }
+.offline-eyebrow { color: #2860a6; font-weight: 700; font-size: .85rem; letter-spacing: .06em; margin-bottom: .8rem; }
+.offline-release { background: white; border: 1px solid #dce5ef; border-radius: 24px; padding: 2.5rem; margin-bottom: 1.5rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem 2rem; box-shadow: 0 10px 36px rgb(22 58 101 / 5%); }
+.offline-release h2 { font-weight: 700; }
+.offline-summary { white-space: pre-line; }
+.offline-meta { color: #52677e; margin-bottom: .35rem; font-size: .9rem; }
+.offline-download-button { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; align-self: center; padding: 1rem 1.5rem; border-radius: 30px; background: #205bb0; color: white; text-decoration: none; font-weight: 600; }
+.offline-download-button:hover, .offline-download-button:focus { background: #17498f; color: white; }
+.offline-download-button svg { width: 20px; height: 20px; }
+.offline-details { grid-column: 1 / -1; border-top: 1px solid #e5ebf2; padding-top: 1.2rem; margin-top: .7rem; font-size: .85rem; color: #52677e; }
+.offline-history { margin-top: 1rem; }
+.offline-history code { overflow-wrap: anywhere; color: inherit; }
+.offline-help { max-width: 740px; margin: 3.5rem auto 0; }
+.offline-help h2 { font-size: 1.5rem; font-weight: 700; }
+.offline-help p { color: #52677e; }
+.offline-empty { text-align: center; padding: 3rem 1rem; }
+.offline-empty > svg { width: 56px; height: 56px; color: #2860a6; margin-bottom: 1.5rem; }
+.offline-empty h2 { font-size: 1.7rem; }
+@media (max-width: 640px) { .offline-downloads { padding: 3rem 0; } .offline-release { grid-template-columns: 1fr; padding: 1.5rem; } .offline-download-button { justify-self: start; } }

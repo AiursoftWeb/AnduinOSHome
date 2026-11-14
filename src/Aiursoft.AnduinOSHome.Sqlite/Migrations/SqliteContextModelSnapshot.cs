@@ -15,7 +15,7 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.14");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.15");
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.GlobalSetting", b =>
                 {
@@ -251,6 +251,74 @@ namespace Aiursoft.AnduinOSHome.Sqlite.Migrations
                         .IsUnique();
 
                     b.ToTable("HardwareTranslations");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OfflineUpdate", b =>
+                {
+                    b.Property<string>("BatchId")
+                        .HasMaxLength(64)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Architecture")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedUtc")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MinimumVersion")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("PublishedUtc")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ReleaseLine")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Sha256")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SigningFingerprint")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("TEXT");
+
+                    b.Property<long>("Size")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Suite")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TargetPatch")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("TargetVersion")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("Withdrawn")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("BatchId");
+
+                    b.HasIndex("ReleaseLine", "Suite", "Architecture");
+
+                    b.ToTable("OfflineUpdates");
                 });
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OobeRating", b =>

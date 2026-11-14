@@ -27,6 +27,9 @@ public class Startup : IWebStartup
 {
     public void ConfigureServices(IConfiguration configuration, IWebHostEnvironment environment, IServiceCollection services)
     {
+        services.Configure<OfflineUpdatesOptions>(configuration.GetSection("OfflineUpdates"));
+        services.AddScoped<Services.OfflineUpdates.IOfflineUpdateStorage, Services.OfflineUpdates.R2UpdateStorage>();
+
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
         services.Configure<List<string>>(configuration.GetSection("UpgradeScriptEndpoints"));

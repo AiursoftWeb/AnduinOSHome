@@ -17,7 +17,7 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.14")
+                .HasAnnotation("ProductVersion", "10.0.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -260,6 +260,74 @@ namespace Aiursoft.AnduinOSHome.MySql.Migrations
                         .IsUnique();
 
                     b.ToTable("HardwareTranslations");
+                });
+
+            modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OfflineUpdate", b =>
+                {
+                    b.Property<string>("BatchId")
+                        .HasMaxLength(64)
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("Architecture")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("varchar(16)");
+
+                    b.Property<DateTime>("CreatedUtc")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("MinimumVersion")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<DateTime>("PublishedUtc")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ReleaseLine")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("varchar(16)");
+
+                    b.Property<string>("Sha256")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<string>("SigningFingerprint")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("varchar(64)");
+
+                    b.Property<long>("Size")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Suite")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<int>("TargetPatch")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TargetVersion")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
+
+                    b.Property<bool>("Withdrawn")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("BatchId");
+
+                    b.HasIndex("ReleaseLine", "Suite", "Architecture");
+
+                    b.ToTable("OfflineUpdates");
                 });
 
             modelBuilder.Entity("Aiursoft.AnduinOSHome.Entities.OobeRating", b =>
