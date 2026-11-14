@@ -18,8 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="." xml:space="preserve">
+      <data name="(Intel / AMD)" xml:space="preserve">
+    <value>(Intel / AMD)</value>
+  </data>
+  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
+    <value>(Snapdragon / ARM 單板電腦)</value>
+  </data>
+  <data name="." xml:space="preserve">
     <value>。</value>
+  </data>
+  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
+    <value>...我們不能忘記這是一個 1.8 GB 的映像檔。它振奮了我的精神...我真的認為它值得安裝，時間會證明一切。</value>
   </data>
   <data name="...if you&apos;re considering taking back your privacy and switching to Linux, Anduin OS is the perfect place to start your journey. It&apos;s clean, it&apos;s simple, and the transition is seamless. Anduin OS wasn&apos;t designed for the tech nerd. It was designed specifically for YOU. Make the switch. You won&apos;t regret it." xml:space="preserve">
     <value>...如果你正考慮奪回隱私並轉向 Linux，Anduin OS 是你展開旅程的完美起點。它簡潔、直觀，轉換過程無縫流暢。Anduin OS 不是為科技狂熱者設計，而是專為「你」打造。現在就轉換吧，你不會後悔的。</value>
@@ -30,18 +39,6 @@
   <data name="...it&apos;s pretty spectacular. It&apos;s also quite possibly one of the friendliest Linux distros I&apos;ve tried when it comes to folks who may well be moving over from Windows. Built by one person, it&apos;s pretty astonishing how good it is." xml:space="preserve">
     <value>...它相當出色。對於那些可能從 Windows 轉換過來的用戶來說，它可能是我試過最友善的 Linux 發行版之一。由一個人打造，它的優秀程度令人驚嘆。</value>
   </data>
-  <data name="...We must not forget that it is a 1.8 GB image. It lifted my spirits... I really think it deserves an installation, surely time will tell." xml:space="preserve">
-    <value>...我們不能忘記這是一個 1.8 GB 的映像檔。它振奮了我的精神...我真的認為它值得安裝，時間會證明一切。</value>
-  </data>
-  <data name="(Intel / AMD)" xml:space="preserve">
-    <value>(Intel / AMD)</value>
-  </data>
-  <data name="(Snapdragon / ARM SBCs)" xml:space="preserve">
-    <value>(Snapdragon / ARM 單板電腦)</value>
-  </data>
-  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
-    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 是 Ubuntu 套件基礎 + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; 應用程式體驗</value>
-  </data>
   <data name="27 inch" xml:space="preserve">
     <value>27 吋</value>
   </data>
@@ -51,20 +48,11 @@
   <data name="7×24 on-call support where contracted" xml:space="preserve">
     <value>依合約提供全年無休的待命支援</value>
   </data>
-  <data name="a provider of top-tier hosting services" xml:space="preserve">
-    <value>提供頂級主機服務</value>
+  <data name="&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; is Ubuntu&apos;s package base + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; app experience" xml:space="preserve">
+    <value>&lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 是 Ubuntu 套件基礎 + &lt;span class=&apos;text-primary&apos;&gt;Flatpak&lt;/span&gt; 應用程式體驗</value>
   </data>
   <data name="A Universe of Applications at Your Fingertips." xml:space="preserve">
     <value>觸手可及的應用程式宇宙。</value>
-  </data>
-  <data name="Advanced" xml:space="preserve">
-    <value>進階</value>
-  </data>
-  <data name="After downloading, you may want to learn how to" xml:space="preserve">
-    <value>下載後，您可能會想了解如何</value>
-  </data>
-  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
-    <value>AI 智能體可透過 SSH 連線，原生執行套件安裝、設定檔編輯與除錯。無需 API 包裝層。無沙盒檔案系統。就是純粹的 Linux。</value>
   </data>
   <data name="AI Fix" xml:space="preserve">
     <value>AI 修復</value>
@@ -75,11 +63,23 @@
   <data name="AI Tool Environment" xml:space="preserve">
     <value>AI Tool Environment</value>
   </data>
-  <data name="AI-Native Environment" xml:space="preserve">
-    <value>面向 AI 用戶的開發環境</value>
+  <data name="AI agents can SSH in, install packages, edit configs, and debug — natively. No API wrappers. No sandboxed filesystem. Just real Linux." xml:space="preserve">
+    <value>AI 智能體可透過 SSH 連線，原生執行套件安裝、設定檔編輯與除錯。無需 API 包裝層。無沙盒檔案系統。就是純粹的 Linux。</value>
   </data>
   <data name="AI&apos;s Ideal." xml:space="preserve">
     <value>AI 的理想。</value>
+  </data>
+  <data name="AI-Native Environment" xml:space="preserve">
+    <value>面向 AI 用戶的開發環境</value>
+  </data>
+  <data name="ARM64 Support" xml:space="preserve">
+    <value>支援 ARM64</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>進階</value>
+  </data>
+  <data name="After downloading, you may want to learn how to" xml:space="preserve">
+    <value>下載後，您可能會想了解如何</value>
   </data>
   <data name="Aiursoft is funded by user donations. We are grateful for your support. And you can" xml:space="preserve">
     <value>Aiursoft 的營運資金來自使用者的捐款。我們非常感謝您的支持，您可以</value>
@@ -93,9 +93,6 @@
   <data name="All-in-Latest" xml:space="preserve">
     <value>最新全配備</value>
   </data>
-  <data name="and" xml:space="preserve">
-    <value>和</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
@@ -104,6 +101,9 @@
   </data>
   <data name="AnduinOS Enterprise" xml:space="preserve">
     <value>AnduinOS 企業版</value>
+  </data>
+  <data name="AnduinOS Main screenshot" xml:space="preserve">
+    <value>AnduinOS 主截圖</value>
   </data>
   <data name="AnduinOS has a clean, beautiful modern design, user-friendly interface, among so many distributions, this is the choice you can&apos;t miss. Trust me!!!" xml:space="preserve">
     <value>AnduinOS 擁有乾淨、美麗的現代設計和使用者友善的介面，在眾多發行版中，這是您不能錯過的選擇。相信我！！！</value>
@@ -153,9 +153,6 @@
   <data name="AnduinOS is your final Linux distribution! It&apos;s built for developers and is lightweight yet still powerful. With its well-constructed themes and shortcuts, Windows users can smoothly transition to AnduinOS and forget about setting up your system." xml:space="preserve">
     <value>AnduinOS 是您最終的 Linux 發行版！它為開發者而建，輕量級但仍然強大。憑藉其精心構建的主題和快捷鍵，Windows 使用者可以順利轉換到 AnduinOS，忘記設定系統的煩惱。</value>
   </data>
-  <data name="AnduinOS Main screenshot" xml:space="preserve">
-    <value>AnduinOS 主截圖</value>
-  </data>
   <data name="AnduinOS took less than half an hour to install and set up with all my applications and tools. If you&apos;re looking for a clean, stress-free Linux desktop experience, you are in the right place." xml:space="preserve">
     <value>安裝 AnduinOS 並設定好我所有的應用程式和工具，耗時不到半小時。如果您尋求乾淨且無壓力的 Linux 桌面體驗，這裡就是您的最佳選擇。</value>
   </data>
@@ -174,9 +171,6 @@
   <data name="Architecture" xml:space="preserve">
     <value>架構</value>
   </data>
-  <data name="ARM64 Support" xml:space="preserve">
-    <value>支援 ARM64</value>
-  </data>
   <data name="Bleeding-edge kernel, toolchains, and drivers — all pre-configured, zero friction. No Snap, no legacy dead weight, no compromises." xml:space="preserve">
     <value>採用最新核心、工具鏈與驅動程式——全數預先設定，零阻礙。無 Snap、無傳統包袱、絕不妥協。</value>
   </data>
@@ -189,20 +183,17 @@
   <data name="Built for the era of large models. Native Shell, native Docker, and an unrestrained Python experience." xml:space="preserve">
     <value>為大型模型時代而生。原生 Shell、原生 Docker，以及無拘無束的 Python 體驗。</value>
   </data>
-  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
-    <value>建構於堅實基礎，為所有人設計。</value>
-  </data>
   <data name="Built on Apkg package manager." xml:space="preserve">
     <value>基於 Apkg 套件管理員開發。</value>
+  </data>
+  <data name="Built on a rock-solid foundation. Designed for everyone." xml:space="preserve">
+    <value>建構於堅實基礎，為所有人設計。</value>
   </data>
   <data name="Burn our ultra-compact 2.38 GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>將我們體積僅 2.38 GB 的超薄 ISO 映像檔燒錄至任意 USB 隨身碟，即可將一台完整且現代化的 Linux 工作站隨身攜帶在鑰匙圈上。僅需 10 秒即可啟動具備完整硬體加速功能的桌面環境。</value>
   </data>
   <data name="Burn our ultra-compact 2.4GB ISO to any USB drive and carry a complete, modern Linux workstation on your keychain. Boot into a fully hardware-accelerated desktop in just 10 seconds." xml:space="preserve">
     <value>將我們體積僅 2.4GB 的超輕量 ISO 寫入任意 USB 隨身碟，即可在鑰匙圈上隨身攜帶一台功能完整且現代的 Linux 工作站。僅需 10 秒即可啟動具備完整硬體加速的桌面環境。</value>
-  </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>將 ISO 燒錄到 USB 隨身碟</value>
   </data>
   <data name="By downloading, you agree to our" xml:space="preserve">
     <value>下載即表示您同意我們的</value>
@@ -294,20 +285,17 @@
   <data name="Discord channel" xml:space="preserve">
     <value>Discord 頻道</value>
   </data>
-  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
-    <value>硬碟損毀？忘記密碼？只需幾秒啟動 AnduinOS，即可立即瀏覽網頁、復原檔案，並安全提取重要資料。</value>
-  </data>
   <data name="Disk Space" xml:space="preserve">
     <value>硬碟空間</value>
+  </data>
+  <data name="Disk corrupted? Forgot your password? Boot AnduinOS in seconds to instantly browse the web, recover your files, and securely extract your crucial data." xml:space="preserve">
+    <value>硬碟損毀？忘記密碼？只需幾秒啟動 AnduinOS，即可立即瀏覽網頁、復原檔案，並安全提取重要資料。</value>
   </data>
   <data name="Display Server" xml:space="preserve">
     <value>顯示伺服器</value>
   </data>
   <data name="Docs" xml:space="preserve">
     <value>文檔</value>
-  </data>
-  <data name="donate" xml:space="preserve">
-    <value>捐款</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>下載</value>
@@ -339,14 +327,11 @@
   <data name="Everything you do on Ubuntu, you can do it on AnduinOS. You can use it as a daily operating system, a development environment, a server, or a learning tool. It&apos;s up to you." xml:space="preserve">
     <value>您在 Ubuntu 上做的所有事情，都可以在 AnduinOS 上完成。您可以將其用作日常作業系統、開發環境、伺服器或學習工具。由您決定。</value>
   </data>
-  <data name="ext4 optional" xml:space="preserve">
-    <value>ext4 可選</value>
+  <data name="FAQ" xml:space="preserve">
+    <value>常見問題</value>
   </data>
   <data name="Familiar UX" xml:space="preserve">
     <value>熟悉的用戶體驗</value>
-  </data>
-  <data name="FAQ" xml:space="preserve">
-    <value>常見問題</value>
   </data>
   <data name="Firmware" xml:space="preserve">
     <value>韌體</value>
@@ -354,20 +339,11 @@
   <data name="First-class Python" xml:space="preserve">
     <value>第一流的 Python</value>
   </data>
-  <data name="for any questions." xml:space="preserve">
-    <value>聯繫我們以解答任何問題。</value>
-  </data>
-  <data name="for any questions. Please join our" xml:space="preserve">
-    <value>如有任何問題。請加入我們的</value>
-  </data>
-  <data name="for community support." xml:space="preserve">
-    <value>以獲得社群支援。</value>
+  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
+    <value>適用於 Snapdragon X 筆記型電腦、Windows Dev Kit，以及一般 ARM64 UEFI 裝置。</value>
   </data>
   <data name="For most Intel and AMD computers." xml:space="preserve">
     <value>適用於大多數 Intel 與 AMD 電腦。</value>
-  </data>
-  <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
-    <value>適用於 Snapdragon X 筆記型電腦、Windows Dev Kit，以及一般 ARM64 UEFI 裝置。</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>免費</value>
@@ -381,6 +357,9 @@
   <data name="Friendly interface" xml:space="preserve">
     <value>友善介面</value>
   </data>
+  <data name="GPL-v3 License" xml:space="preserve">
+    <value>GPL-v3 授權</value>
+  </data>
   <data name="Gaming" xml:space="preserve">
     <value>遊戲</value>
   </data>
@@ -390,17 +369,11 @@
   <data name="Go to Vultr" xml:space="preserve">
     <value>前往 Vultr</value>
   </data>
-  <data name="GPL-v3 License" xml:space="preserve">
-    <value>GPL-v3 授權</value>
-  </data>
   <data name="Graphical applications are installed via Flatpak, and keep themselves separate from the base system (Since 1.3). They also allow for fine-grained control over their permissions." xml:space="preserve">
     <value>圖形化應用程式透過 Flatpak 安裝，與基礎系統保持分離（自 1.3 版起）。它們也允許對權限進行細緻的控制。</value>
   </data>
   <data name="HDR Support" xml:space="preserve">
     <value>HDR 支援</value>
-  </data>
-  <data name="here" xml:space="preserve">
-    <value>這裡</value>
   </data>
   <data name="Here are some of the answers you might be looking for." xml:space="preserve">
     <value>以下是您可能正在尋找的一些答案。</value>
@@ -426,20 +399,20 @@
   <data name="Ideal Toolset" xml:space="preserve">
     <value>理想工具組</value>
   </data>
+  <data name="Image Size" xml:space="preserve">
+    <value>映像檔大小</value>
+  </data>
   <data name="Image preview" xml:space="preserve">
     <value>圖片預覽</value>
   </data>
-  <data name="Image Size" xml:space="preserve">
-    <value>映像檔大小</value>
+  <data name="In Your Pocket." xml:space="preserve">
+    <value>隨身攜帶。</value>
   </data>
   <data name="In fact, this is one of those &quot;set-it-and-forget-it&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
     <value>事實上，這是那些「設定後即可忘記」的發行版之一，讓使用 Linux 成為一種樂趣。它直觀、易於使用且設計精良。</value>
   </data>
   <data name="In fact, this is one of those \&quot;set-it-and-forget-it\&quot; distributions that makes using Linux a delight. It&apos;s intuitive, simple to use, and well-designed." xml:space="preserve">
     <value>事實上，這正是那種「設定後即可忘卻」的 Linux 發行版，讓使用體驗充滿樂趣。它直觀易用，且設計精良。</value>
-  </data>
-  <data name="In Your Pocket." xml:space="preserve">
-    <value>隨身攜帶。</value>
   </data>
   <data name="Includes:" xml:space="preserve">
     <value>包含：</value>
@@ -474,17 +447,23 @@
   <data name="Join Discussions" xml:space="preserve">
     <value>加入討論</value>
   </data>
-  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
-    <value>加入我們的社群並參與 AnduinOS！</value>
-  </data>
   <data name="Join Revolt channel" xml:space="preserve">
     <value>加入 Revolt 頻道</value>
   </data>
   <data name="Join Stoat channel" xml:space="preserve">
     <value>加入 Stoat 頻道</value>
   </data>
+  <data name="Join our community and get involved with AnduinOS!" xml:space="preserve">
+    <value>加入我們的社群並參與 AnduinOS！</value>
+  </data>
   <data name="Kiosk device customization" xml:space="preserve">
     <value>Kiosk 設備客製化</value>
+  </data>
+  <data name="LTS Support" xml:space="preserve">
+    <value>LTS 支援</value>
+  </data>
+  <data name="LTS and Standard" xml:space="preserve">
+    <value>LTS 和標準版</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>語言</value>
@@ -507,17 +486,8 @@
   <data name="Live Boot" xml:space="preserve">
     <value>即時啟動</value>
   </data>
-  <data name="local LLM, one command away." xml:space="preserve">
-    <value>本地 LLM，一鍵即達。</value>
-  </data>
   <data name="Looking for older versions?" xml:space="preserve">
     <value>尋找較舊版本？</value>
-  </data>
-  <data name="LTS and Standard" xml:space="preserve">
-    <value>LTS 和標準版</value>
-  </data>
-  <data name="LTS Support" xml:space="preserve">
-    <value>LTS 支援</value>
   </data>
   <data name="Memory Compression" xml:space="preserve">
     <value>記憶體壓縮</value>
@@ -543,6 +513,9 @@
   <data name="Multi-language Ready" xml:space="preserve">
     <value>支援多國語言</value>
   </data>
+  <data name="NVIDIA Graphics Support" xml:space="preserve">
+    <value>NVIDIA 繪圖支援</value>
+  </data>
   <data name="Native Shell Experience" xml:space="preserve">
     <value>原生 Shell 經驗</value>
   </data>
@@ -552,20 +525,17 @@
   <data name="Natively pre-installed, system-level integration, out-of-the-box." xml:space="preserve">
     <value>原生預安裝、系統層級整合、開箱即用。</value>
   </data>
-  <data name="No execution signing or modification restrictions" xml:space="preserve">
-    <value>無執行簽章或修改限制</value>
-  </data>
   <data name="No Installation Needed" xml:space="preserve">
     <value>無需安裝</value>
+  </data>
+  <data name="No execution signing or modification restrictions" xml:space="preserve">
+    <value>無執行簽章或修改限制</value>
   </data>
   <data name="No telemetry at all! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>完全沒有遙測！選擇 &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 來重獲您的隱私</value>
   </data>
   <data name="No telemetry integrated! Choose &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; to regain your privacy" xml:space="preserve">
     <value>無遙測數據收集！選擇 &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 來重獲您的隱私權</value>
-  </data>
-  <data name="NVIDIA Graphics Support" xml:space="preserve">
-    <value>NVIDIA 繪圖支援</value>
   </data>
   <data name="On Ask Ubuntu, you can search for and ask about very common issues. Solutions for almost all AnduinOS issues are identical to those for Ubuntu. You can rely entirely on Ubuntu&apos;s documentation and expertise to resolve problems with AnduinOS." xml:space="preserve">
     <value>在 Ask Ubuntu 上，您可以搜尋和詢問非常常見的問題。幾乎所有 AnduinOS 問題的解決方案都與 Ubuntu 的解決方案相同。您可以完全依賴 Ubuntu 的文檔和專業知識來解決 AnduinOS 的問題。</value>
@@ -576,17 +546,11 @@
   <data name="Open Source" xml:space="preserve">
     <value>開源</value>
   </data>
-  <data name="or" xml:space="preserve">
-    <value>或</value>
-  </data>
   <data name="Package Format" xml:space="preserve">
     <value>套件格式</value>
   </data>
   <data name="Package Manager" xml:space="preserve">
     <value>套件管理員</value>
-  </data>
-  <data name="packages" xml:space="preserve">
-    <value>套件</value>
   </data>
   <data name="Persistent on USB" xml:space="preserve">
     <value>USB 資料保留功能</value>
@@ -600,14 +564,14 @@
   <data name="Premier" xml:space="preserve">
     <value>首選</value>
   </data>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>隱私政策</value>
+  </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS does not send usage statistics or diagnostic reports to any organization by default. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you." xml:space="preserve">
     <value>隱私不再是可有可無，而是不可或缺。AnduinOS 預設不會向任何組織傳送使用統計資料或診斷報告。我們不會追蹤您、不會建立您的使用者輪廓，也不會向您投放目標式內容。</value>
   </data>
   <data name="Privacy is no longer optional. It&apos;s essential. AnduinOS is designed to gather nothing from you. We don&apos;t track you. We don&apos;t profile you. We don&apos;t target you. You remain anonymous to the system." xml:space="preserve">
     <value>隱私不再是可選的，而是必需的。AnduinOS 設計為不收集您的任何資料。我們不追蹤您、不分析您、不針對您。您在系統中保持匿名。</value>
-  </data>
-  <data name="Privacy Policy" xml:space="preserve">
-    <value>隱私政策</value>
   </data>
   <data name="Private package repository" xml:space="preserve">
     <value>私有套件存放庫</value>
@@ -620,9 +584,6 @@
   </data>
   <data name="Python → Rust → PNG. One pipe. Zero RPC." xml:space="preserve">
     <value>Python → Rust → PNG。一條管線。零 RPC。</value>
-  </data>
-  <data name="quad-core" xml:space="preserve">
-    <value>四核心</value>
   </data>
   <data name="RAM" xml:space="preserve">
     <value>記憶體</value>
@@ -729,9 +690,6 @@
   <data name="The AnduinOS server is proudly sponsored by" xml:space="preserve">
     <value>AnduinOS 伺服器由</value>
   </data>
-  <data name="The base environment AI knows best" xml:space="preserve">
-    <value>AI最熟悉的基礎環境</value>
-  </data>
   <data name="The GNOME-based desktop environment has a beautiful interface and intuitive human-computer interactions that fit user habits, allowing you to quickly get started with AnduinOS without a steep learning curve." xml:space="preserve">
     <value>基於 GNOME 的桌面環境擁有美麗的介面和符合使用者習慣的人機互動，讓您可以快速上手 AnduinOS，無需太多學習成本。</value>
   </data>
@@ -759,17 +717,14 @@
   <data name="The Ultimate Swiss Army Knife" xml:space="preserve">
     <value>終極瑞士刀</value>
   </data>
+  <data name="The base environment AI knows best" xml:space="preserve">
+    <value>AI最熟悉的基礎環境</value>
+  </data>
   <data name="This is a referral link. If you become a paying Vultr customer, we may receive a referral reward at no additional cost to you." xml:space="preserve">
     <value>這是一條推薦連結。如果您成為 Vultr 的付費客戶，我們可能會獲得推薦獎勵，且不會對您產生任何額外費用。</value>
   </data>
   <data name="To download AnduinOS, select the correct edition below:" xml:space="preserve">
     <value>若要下載 AnduinOS，請從下方選擇正確的版本：</value>
-  </data>
-  <data name="to us via PayPal." xml:space="preserve">
-    <value>透過 PayPal 給我們。</value>
-  </data>
-  <data name="to us." xml:space="preserve">
-    <value>給我們。</value>
   </data>
   <data name="Today is the best day for you to switch to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt;" xml:space="preserve">
     <value>今天是您切換到 &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 的最佳時機</value>
@@ -780,14 +735,11 @@
   <data name="Transitioning to &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; will be the best decision you&apos;ve ever made" xml:space="preserve">
     <value>轉換到 &lt;span class=&apos;text-primary&apos;&gt;AnduinOS&lt;/span&gt; 將是您做過最好的決定</value>
   </data>
-  <data name="two version branches" xml:space="preserve">
-    <value>兩個版本分支</value>
+  <data name="UI Toolkit" xml:space="preserve">
+    <value>UI 工具組</value>
   </data>
   <data name="Ubuntu Base" xml:space="preserve">
     <value>Ubuntu 基礎</value>
-  </data>
-  <data name="UI Toolkit" xml:space="preserve">
-    <value>UI 工具組</value>
   </data>
   <data name="Unsigned" xml:space="preserve">
     <value>未簽章</value>
@@ -806,9 +758,6 @@
   </data>
   <data name="Using Flatpak for graphical applications." xml:space="preserve">
     <value>使用 Flatpak 來安裝圖形應用程式。</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>驗證校驗碼</value>
   </data>
   <data name="Versions" xml:space="preserve">
     <value>版本</value>
@@ -837,9 +786,6 @@
   <data name="With AnduinOS, you can do more" xml:space="preserve">
     <value>使用 AnduinOS，您可以做得更多</value>
   </data>
-  <data name="with Secure Boot" xml:space="preserve">
-    <value>搭配 Secure Boot</value>
-  </data>
   <data name="With Steam" xml:space="preserve">
     <value>使用 Steam</value>
   </data>
@@ -855,9 +801,6 @@
   <data name="Writing Code on AnduinOS" xml:space="preserve">
     <value>在 AnduinOS 上撰寫程式碼</value>
   </data>
-  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
-    <value>x86_64 + ARM64。兩份 ISO 映像檔。一致的體驗。</value>
-  </data>
   <data name="Yes, AnduinOS is free to use. It is an open-source project that follows the GPL-v3 license. You can view the source code, modify it, and redistribute it. It&apos;s free and will always be free." xml:space="preserve">
     <value>是的，AnduinOS 是免費使用的。它是一個遵循 GPL-v3 授權的開源專案。您可以查看原始碼、修改並重新分發。它是免費的，永遠都會是免費的。</value>
   </data>
@@ -869,6 +812,63 @@
   </data>
   <data name="Your Entire PC." xml:space="preserve">
     <value>整台電腦，</value>
+  </data>
+  <data name="a provider of top-tier hosting services" xml:space="preserve">
+    <value>提供頂級主機服務</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>和</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>將 ISO 燒錄到 USB 隨身碟</value>
+  </data>
+  <data name="donate" xml:space="preserve">
+    <value>捐款</value>
+  </data>
+  <data name="ext4 optional" xml:space="preserve">
+    <value>ext4 可選</value>
+  </data>
+  <data name="for any questions." xml:space="preserve">
+    <value>聯繫我們以解答任何問題。</value>
+  </data>
+  <data name="for any questions. Please join our" xml:space="preserve">
+    <value>如有任何問題。請加入我們的</value>
+  </data>
+  <data name="for community support." xml:space="preserve">
+    <value>以獲得社群支援。</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>這裡</value>
+  </data>
+  <data name="local LLM, one command away." xml:space="preserve">
+    <value>本地 LLM，一鍵即達。</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>或</value>
+  </data>
+  <data name="packages" xml:space="preserve">
+    <value>套件</value>
+  </data>
+  <data name="quad-core" xml:space="preserve">
+    <value>四核心</value>
+  </data>
+  <data name="to us via PayPal." xml:space="preserve">
+    <value>透過 PayPal 給我們。</value>
+  </data>
+  <data name="to us." xml:space="preserve">
+    <value>給我們。</value>
+  </data>
+  <data name="two version branches" xml:space="preserve">
+    <value>兩個版本分支</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>驗證校驗碼</value>
+  </data>
+  <data name="with Secure Boot" xml:space="preserve">
+    <value>搭配 Secure Boot</value>
+  </data>
+  <data name="x86_64 + ARM64. Two ISOs. One experience." xml:space="preserve">
+    <value>x86_64 + ARM64。兩份 ISO 映像檔。一致的體驗。</value>
   </data>
 
 </root>

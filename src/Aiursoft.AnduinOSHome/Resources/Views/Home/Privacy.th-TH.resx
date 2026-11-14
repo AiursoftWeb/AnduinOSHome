@@ -18,28 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
-    <value>—หากระบบตรวจพบแพ็คเกจการวัดผลการใช้งานหรือแพ็คเกจพื้นหลังของ Canonical รายการใดรายการหนึ่งต่อไปนี้ระหว่างกระบวนการสร้าง ระบบจะยกเลิกการสร้างและปฏิเสธทันที</value>
-  </data>
-  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
-    <value>, ยกเว้นคุณลักษณะเฉพาะที่ผู้ใช้เป็นผู้เริ่มต้นหรือบริการที่จำเป็นซึ่งระบุรายละเอียดไว้ด้านล่าง</value>
-  </data>
-  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
-    <value>โดยไม่จำเป็นต้องมีการสื่อสารกับเซิร์ฟเวอร์ภายนอกใด ๆ ที่เป็นของเราหรือบุคคลที่สาม</value>
-  </data>
-  <data name=": Automated error reporting services." xml:space="preserve">
-    <value>บริการรายงานข้อผิดพลาดอัตโนมัติ</value>
-  </data>
-  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
-    <value>เก็บรวบรวมรายละเอียดพื้นฐานของฮาร์ดแวร์และซอฟต์แวร์ในระหว่างการติดตั้ง</value>
-  </data>
-  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
-    <value>ส่งสถิติการใช้งานแพ็กเกจแบบไม่ระบุตัวตนเป็นระยะๆ</value>
-  </data>
-  <data name="." xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+      <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
     <value>นโยบาย &quot;ล้มเหลวทันที&quot; ที่เข้มงวด</value>
   </data>
   <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
@@ -62,6 +41,15 @@
   </data>
   <data name="), your system connects to our official servers." xml:space="preserve">
     <value>), ระบบของคุณจะเชื่อมต่อกับเซิร์ฟเวอร์ทางการของเรา</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+    <value>, ยกเว้นคุณลักษณะเฉพาะที่ผู้ใช้เป็นผู้เริ่มต้นหรือบริการที่จำเป็นซึ่งระบุรายละเอียดไว้ด้านล่าง</value>
+  </data>
+  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
+    <value>โดยไม่จำเป็นต้องมีการสื่อสารกับเซิร์ฟเวอร์ภายนอกใด ๆ ที่เป็นของเราหรือบุคคลที่สาม</value>
+  </data>
+  <data name="." xml:space="preserve">
+    <value>.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. การเก็บข้อมูลโดย AnduinOS</value>
@@ -129,6 +117,15 @@
   <data name="8. Contact Us" xml:space="preserve">
     <value>8. ติดต่อเรา</value>
   </data>
+  <data name=": Automated error reporting services." xml:space="preserve">
+    <value>บริการรายงานข้อผิดพลาดอัตโนมัติ</value>
+  </data>
+  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
+    <value>เก็บรวบรวมรายละเอียดพื้นฐานของฮาร์ดแวร์และซอฟต์แวร์ในระหว่างการติดตั้ง</value>
+  </data>
+  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
+    <value>ส่งสถิติการใช้งานแพ็กเกจแบบไม่ระบุตัวตนเป็นระยะๆ</value>
+  </data>
   <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
     <value>ข้อมูลบัญชีจะถูกเก็บรักษาไว้เท่าที่จำเป็นต่อการให้บริการบัญชีและการปฏิบัติตามข้อผูกพันทางกฎหมายที่เกี่ยวข้อง ทั้งนี้ขึ้นอยู่กับข้อกำหนดเกี่ยวกับการลบข้อมูลที่เกี่ยวข้อง เซสชันการยืนยันตัวตนและคุกกี้การตั้งค่ามีกำหนดหมดอายุของตนเอง ข้อมูลเหล่านี้แยกจากบันทึกการเข้าใช้งานเว็บไซต์ และไม่อยู่ภายใต้ระยะเวลาเก็บรักษาบันทึกเว็บไซต์ 120 วัน</value>
   </data>
@@ -138,11 +135,17 @@
   <data name="All system operations, configurations, and user activities take place locally on your own device (&quot;local execution&quot;)." xml:space="preserve">
     <value>การดำเนินการของระบบ การกำหนดค่า และกิจกรรมของผู้ใช้ทั้งหมดเกิดขึ้นภายในอุปกรณ์ของคุณเอง (&quot;local execution&quot;)</value>
   </data>
-  <data name="and confirmed it contains no telemetry." xml:space="preserve">
-    <value>และยืนยันว่ามันไม่มีระบบเทเลเมตรี</value>
+  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
+    <value>AnduinOS GitHub Discussions</value>
   </data>
-  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
-    <value>และไม่แบ่งปันข้อมูลใด ๆ ให้กับรัฐบาล บริษัท หรือบุคคลที่สามใด ๆ</value>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>การจัดทำแพ็กเกจ SimpleWeather ของ AnduinOS</value>
+  </data>
+  <data name="AnduinOS Update Service" xml:space="preserve">
+    <value>บริการอัปเดต AnduinOS</value>
+  </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>เว็บไซต์ AnduinOS และ APT Repository</value>
   </data>
   <data name="AnduinOS build repository license" xml:space="preserve">
     <value>ใบอนุญาตของคลังซอร์สโค้ด AnduinOS</value>
@@ -171,9 +174,6 @@
   <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
     <value>AnduinOS ใช้แนวทางการออกแบบที่ให้ความสำคัญกับการทำงานในเครื่องเป็นหลัก แต่ไม่ได้เป็นระบบที่ทำงานแบบออฟไลน์เท่านั้น การอัปเดต บริการเครือข่าย และแอปพลิเคชันสามารถสื่อสารกับเซิร์ฟเวอร์ภายนอกได้ พฤติกรรมเหล่านี้ขึ้นอยู่กับซอฟต์แวร์ที่ติดตั้ง การตั้งค่า และฟีเจอร์ที่คุณใช้งาน</value>
   </data>
-  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
-    <value>AnduinOS GitHub Discussions</value>
-  </data>
   <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS ได้ใช้ความพยายามอย่างมากเพื่อให้แน่ใจว่าการติดตั้งของคุณจะสะอาดและปราศจากการเก็บข้อมูลการใช้งาน (telemetry) โดยค่าเริ่มต้น</value>
   </data>
@@ -183,6 +183,9 @@
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
     <value>AnduinOS มีส่วนขยาย &apos;SimpleWeather&apos; ของ GNOME ออกมาด้วยความเคารพต่อความเป็นส่วนตัวของคุณ ส่วนขยายนี้จะ</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>AnduinOS เป็นระบบปฏิบัติการ Linux ที่พัฒนาบนพื้นฐานของ Ubuntu โดยได้รับการดูแลจาก AIURSOFT LIMITED ซึ่งเป็นบริษัทที่ตั้งอยู่ในฮ่องกง ในเอกสารฉบับนี้ คำว่า &apos;เรา&apos;, &apos;พวกเรา&apos;, และ &apos;ของเรา&apos; หมายถึง AIURSOFT LIMITED ซึ่งเป็นผู้ควบคุมข้อมูลส่วนบุคคลที่เราประมวลผลผ่านบริการที่อธิบายไว้ด้านล่าง</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS เป็นโครงการที่ไม่แสวงหาผลกำไรและขับเคลื่อนโดยชุมชน</value>
   </data>
@@ -191,9 +194,6 @@
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS คือระบบปฏิบัติการ Linux® แบบเปิดเผยซอร์สโค้ดและให้ใช้ฟรี โดยมีพื้นฐานมาจาก Ubuntu</value>
-  </data>
-  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
-    <value>AnduinOS เป็นระบบปฏิบัติการ Linux ที่พัฒนาบนพื้นฐานของ Ubuntu โดยได้รับการดูแลจาก AIURSOFT LIMITED ซึ่งเป็นบริษัทที่ตั้งอยู่ในฮ่องกง ในเอกสารฉบับนี้ คำว่า &apos;เรา&apos;, &apos;พวกเรา&apos;, และ &apos;ของเรา&apos; หมายถึง AIURSOFT LIMITED ซึ่งเป็นผู้ควบคุมข้อมูลส่วนบุคคลที่เราประมวลผลผ่านบริการที่อธิบายไว้ด้านล่าง</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS มุ่งมั่นที่จะรักษาการติดตั้งของคุณให้สะอาดและปราศจากระบบเก็บข้อมูลระยะไกลโดยค่าเริ่มต้น</value>
@@ -213,15 +213,6 @@
   <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
     <value>ใบอนุญาตของที่เก็บการดูแลแพ็กเกจ AnduinOS</value>
   </data>
-  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
-    <value>การจัดทำแพ็กเกจ SimpleWeather ของ AnduinOS</value>
-  </data>
-  <data name="AnduinOS Update Service" xml:space="preserve">
-    <value>บริการอัปเดต AnduinOS</value>
-  </data>
-  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
-    <value>เว็บไซต์ AnduinOS และ APT Repository</value>
-  </data>
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>เนื่องจากแพ็กเกจเหล่านี้ถูกลบออกจากสื่อดิโนสเทรชันแล้ว AnduinOS</value>
   </data>
@@ -237,11 +228,11 @@
   <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
     <value>เอกสารแนบท้ายการประมวลผลข้อมูลของ Cloudflare</value>
   </data>
-  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
-    <value>Cloudflare ช่วยให้เว็บไซต์ การดาวน์โหลดแพ็กเกจ และการดาวน์โหลดอิมเมจของเราเข้าถึงได้และปลอดภัย โดยประมวลผลที่อยู่ IP และข้อมูลเมตาของคำขอเมื่อให้บริการดังกล่าว นอกจากนี้ เรายังใช้ Vultr สำหรับโฮสติ้ง บุคลากรของเราที่รับผิดชอบการดำเนินงานและรักษาความปลอดภัยของบริการเหล่านี้ใช้บันทึกการเข้าใช้งานเว็บไซต์ตามวัตถุประสงค์ที่ระบุไว้ข้างต้น</value>
-  </data>
   <data name="Cloudflare Privacy Policy" xml:space="preserve">
     <value>นโยบายความเป็นส่วนตัวของ Cloudflare</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Cloudflare ช่วยให้เว็บไซต์ การดาวน์โหลดแพ็กเกจ และการดาวน์โหลดอิมเมจของเราเข้าถึงได้และปลอดภัย โดยประมวลผลที่อยู่ IP และข้อมูลเมตาของคำขอเมื่อให้บริการดังกล่าว นอกจากนี้ เรายังใช้ Vultr สำหรับโฮสติ้ง บุคลากรของเราที่รับผิดชอบการดำเนินงานและรักษาความปลอดภัยของบริการเหล่านี้ใช้บันทึกการเข้าใช้งานเว็บไซต์ตามวัตถุประสงค์ที่ระบุไว้ข้างต้น</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>ชุมชน:</value>
@@ -261,17 +252,8 @@
   <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
     <value>ทั้งนี้ ขึ้นอยู่กับกฎหมายที่ใช้บังคับกับคุณและการประมวลผลข้อมูลที่เกี่ยวข้อง คุณอาจมีสิทธิที่จะ:</value>
   </data>
-  <data name="disabled by default" xml:space="preserve">
-    <value>ปิดใช้งานตามค่าเริ่มต้น</value>
-  </data>
-  <data name="does not participate" xml:space="preserve">
-    <value>ไม่เข้าร่วม</value>
-  </data>
   <data name="Email:" xml:space="preserve">
     <value>อีเมล:</value>
-  </data>
-  <data name="entirely on your computer" xml:space="preserve">
-    <value>ทั้งหมดบนคอมพิวเตอร์ของคุณ</value>
   </data>
   <data name="Explanation:" xml:space="preserve">
     <value>คำอธิบาย:</value>
@@ -279,20 +261,17 @@
   <data name="Firefox" xml:space="preserve">
     <value>Firefox</value>
   </data>
+  <data name="Firefox Privacy Notice" xml:space="preserve">
+    <value>นโยบายความเป็นส่วนตัวของ Firefox</value>
+  </data>
   <data name="Firefox daily usage ping settings" xml:space="preserve">
     <value>การตั้งค่า ping การใช้งานรายวันของ Firefox</value>
   </data>
   <data name="Firefox is provided by Mozilla and has its own data collection settings. Depending on its version, settings and any applicable consent requirements, it may send technical and interaction data or daily usage pings to Mozilla. You can review and manage these options in Firefox&apos;s privacy settings." xml:space="preserve">
     <value>Firefox จัดจำหน่ายโดย Mozilla และมีตัวเลือกการเก็บข้อมูลเป็นของตนเอง ขึ้นอยู่กับเวอร์ชัน การตั้งค่า และข้อกำหนดการให้ความยินยอมที่อาจมีอยู่ อาจส่งข้อมูลทางเทคนิคและข้อมูลการโต้ตอบ หรือสัญญาณการใช้งานรายวันไปยัง Mozilla คุณสามารถตรวจสอบและจัดการตัวเลือกเหล่านี้ในการตั้งค่าความเป็นส่วนตัวของ Firefox ได้</value>
   </data>
-  <data name="Firefox Privacy Notice" xml:space="preserve">
-    <value>นโยบายความเป็นส่วนตัวของ Firefox</value>
-  </data>
   <data name="Firefox technical and interaction data settings" xml:space="preserve">
     <value>การตั้งค่าข้อมูลทางเทคนิคและการมีปฏิสัมพันธ์ของ Firefox</value>
-  </data>
-  <data name="for details." xml:space="preserve">
-    <value>สำหรับรายละเอียด</value>
   </data>
   <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
     <value>สำหรับการพูดคุยทั่วไปในชุมชน คุณสามารถใช้ฟอรัมสาธารณะของเราได้ โปรดติดต่อทางอีเมลสำหรับคำขอที่เกี่ยวข้องกับข้อมูลส่วนบุคคล</value>
@@ -314,9 +293,6 @@
   </data>
   <data name="Freedom to redistribute:" xml:space="preserve">
     <value>เสรีภาพในการแจกจ่าย:</value>
-  </data>
-  <data name="here" xml:space="preserve">
-    <value>ที่นี่</value>
   </data>
   <data name="However, if you manually install packages from Ubuntu repositories or enable certain Ubuntu-specific features, some of these telemetry mechanisms may be introduced." xml:space="preserve">
     <value>อย่างไรก็ตาม หากคุณติดตั้งแพ็กเกจจากที่เก็บ Ubuntu ด้วยตนเองหรือเปิดใช้คุณสมบัติเฉพาะบางอย่างของ Ubuntu กลไกการเก็บข้อมูลบางส่วนเหล่านี้อาจถูกนำเข้ามา</value>
@@ -342,9 +318,6 @@
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>ในโลกที่การตรวจวัดระยะไกลได้กลายเป็นสิ่งแพร่หลาย AnduinOS จงใจลดการพึ่งพาภายนอกเพื่อปกป้องผู้ใช้</value>
   </data>
-  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
-    <value>ในระบบการรายงานใดๆ การส่งสถิติการใช้งาน หรือการรายงานข้อผิดพลาดอัตโนมัติ</value>
-  </data>
   <data name="Inspect the current package policy and image assertions" xml:space="preserve">
     <value>ตรวจสอบนโยบายแพ็กเกจปัจจุบันและข้อยืนยันของอิมเมจ</value>
   </data>
@@ -353,9 +326,6 @@
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>บทนำ</value>
-  </data>
-  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
-    <value>มันรวมซอฟต์แวร์โอเพนซอร์สต้นทางที่หลากหลาย</value>
   </data>
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>มันเพียงแค่กระจายซอฟต์แวร์เหล่านั้นในสภาพเดิมที่ไม่ได้ถูกดัดแปลง</value>
@@ -384,23 +354,11 @@
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>การทำงานในพื้นที่หมายความว่าฟีเจอร์และบริการส่วนใหญ่ของ AnduinOS จะถูกดำเนินการ</value>
   </data>
-  <data name="maintained in spare time by volunteers." xml:space="preserve">
-    <value>ดูแลโดยอาสาสมัครในช่วงเวลาว่าง</value>
-  </data>
-  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
-    <value>แก้ไข ปรับปรุง หรือเพิ่มระบบเก็บข้อมูลเพิ่มเติมเข้าไปในส่วนประกอบต้นทางเหล่านี้</value>
-  </data>
   <data name="No data leaves your machine without your explicit action or for essential functionality." xml:space="preserve">
     <value>จะไม่มีข้อมูลใดออกจากเครื่องของคุณโดยปราศจากการกระทำที่ชัดเจนของคุณหรือเพื่อการทำงานที่จำเป็น</value>
   </data>
   <data name="No data leaves your machine without your explicit action." xml:space="preserve">
     <value>จะไม่มีข้อมูลใดถูกส่งออกจากเครื่องของคุณหากคุณไม่ได้ดำเนินการอย่างชัดเจน</value>
-  </data>
-  <data name="not" xml:space="preserve">
-    <value>ไม่</value>
-  </data>
-  <data name="not used for telemetry" xml:space="preserve">
-    <value>ไม่ใช้สำหรับการรวบรวมข้อมูล telemetrics</value>
   </data>
   <data name="Notably:" xml:space="preserve">
     <value>โดยเฉพาะ:</value>
@@ -414,23 +372,14 @@
   <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
     <value>อิมเมจระบบปฏิบัติการให้บริการผ่าน cf.anduinos.com โดยใช้บริการจัดเก็บและส่งมอบข้อมูลของ Cloudflare การดาวน์โหลดอิมเมจหรือแพ็กเกจจำเป็นต้องเชื่อมต่อเครือข่าย และผู้ให้บริการที่จัดการคำขอดังกล่าวจะได้รับข้อมูลเมตาของการเชื่อมต่อ การเข้าชมหน้าดาวน์โหลดบนเว็บไซต์ของเราอยู่ภายใต้การบันทึกข้อมูลเว็บไซต์ตามที่อธิบายไว้ข้างต้น</value>
   </data>
-  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
-    <value>หรือผู้ให้บริการข้อมูลสภาพอากาศใดๆ ที่มันใช้ การเชื่อมต่อกับบริการเหล่านี้จะทำให้ที่อยู่ IP ของคุณเปิดเผยต่อพวกเขาโดยจำเป็น</value>
-  </data>
-  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
-    <value>หรือผู้ให้บริการข้อมูลสภาพอากาศ การเปิดใช้งานคุณสมบัตินี้จะเปิดเผยที่อยู่ IP ของคุณไปยังพวกเขา</value>
-  </data>
-  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
-    <value>ซึ่งมีต้นกำเนิดมาจาก Ubuntu, Debian, GNOME, Flathub และแหล่งอื่นๆ</value>
-  </data>
   <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
     <value>เว็บไซต์และบริการออนไลน์ของเราที่รองรับบัญชีผู้ใช้ใช้ผู้ให้บริการยืนยันตัวตนร่วมกันเพื่อรองรับการลงชื่อเข้าใช้ครั้งเดียว เมื่อคุณลงชื่อเข้าใช้บริการเหล่านี้ ผู้ให้บริการยืนยันตัวตนและบริการที่คุณเข้าใช้อาจแลกเปลี่ยนตัวระบุบัญชีและข้อมูลการยืนยันตัวตนที่จำเป็นต่อการสร้างและรักษาเซสชันของคุณ ข้อมูลนี้ใช้เพื่อยืนยันตัวตนและจัดการบัญชี ไม่ใช่เพื่อเก็บข้อมูลการใช้งานระบบปฏิบัติการ</value>
   </data>
-  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
-    <value>การทดสอบอิมเมจแบบอัตโนมัติของเราจะตรวจสอบฐานข้อมูลแพ็กเกจที่ติดตั้งในสภาพแวดล้อมแบบ Live และระบบที่ติดตั้งแล้ว โดยเทียบกับรายการแพ็กเกจและรูปแบบชื่อแพ็กเกจต้องห้ามที่มีการดูแลปรับปรุงอยู่ หากพบแพ็กเกจต้องห้าม การตรวจสอบจะไม่ผ่าน รายการดังกล่าวประกอบด้วยแพ็กเกจบางรายการที่ใช้รายงานข้อมูลและบริการเบื้องหลัง เช่น ubuntu-report, popularity-contest, apport, whoopsie, snapd และองค์ประกอบของ Ubuntu Pro</value>
-  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>ระบบสร้างไฟล์ ISO แบบอัตโนมัติของเราจะบังคับใช้กฎ</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>การทดสอบอิมเมจแบบอัตโนมัติของเราจะตรวจสอบฐานข้อมูลแพ็กเกจที่ติดตั้งในสภาพแวดล้อมแบบ Live และระบบที่ติดตั้งแล้ว โดยเทียบกับรายการแพ็กเกจและรูปแบบชื่อแพ็กเกจต้องห้ามที่มีการดูแลปรับปรุงอยู่ หากพบแพ็กเกจต้องห้าม การตรวจสอบจะไม่ผ่าน รายการดังกล่าวประกอบด้วยแพ็กเกจบางรายการที่ใช้รายงานข้อมูลและบริการเบื้องหลัง เช่น ubuntu-report, popularity-contest, apport, whoopsie, snapd และองค์ประกอบของ Ubuntu Pro</value>
   </data>
   <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
     <value>บริษัทของเราตั้งอยู่ในฮ่องกง และผู้ให้บริการของเราดำเนินงานในระดับนานาชาติ ข้อมูลส่วนบุคคลที่ประมวลผลผ่านบริการเหล่านี้ ซึ่งรวมถึงข้อมูลเมตาของการเชื่อมต่อ ข้อมูลบัญชี และการติดต่อสื่อสาร อาจถูกประมวลผลนอกประเทศของคุณ รวมถึงนอกเขตเศรษฐกิจยุโรปหรือสหราชอาณาจักร Cloudflare อธิบายเกี่ยวกับการประมวลผลข้อมูลระหว่างประเทศและมาตรการคุ้มครองการโอนข้อมูล ซึ่งรวมถึงข้อสัญญามาตรฐานในกรณีที่เกี่ยวข้อง ไว้ในนโยบายความเป็นส่วนตัวและภาคผนวกการประมวลผลข้อมูลของบริษัท คุณสามารถติดต่อเราเพื่อสอบถามข้อมูลเกี่ยวกับการโอนข้อมูลที่เกี่ยวข้องกับข้อมูลของคุณ</value>
@@ -443,9 +392,6 @@
   </data>
   <data name="Package Updates and Image Downloads" xml:space="preserve">
     <value>การอัปเดตแพ็กเกจและการดาวน์โหลดอิมเมจ</value>
-  </data>
-  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
-    <value>กรุณาอ่านนโยบายความเป็นส่วนตัวของซอฟต์แวร์ต้นทางแต่ละรายการ</value>
   </data>
   <data name="Privacy Guarantee:" xml:space="preserve">
     <value>การรับประกันความเป็นส่วนตัว:</value>
@@ -510,14 +456,11 @@
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>ส่วนประกอบต้นทางบางส่วนอาจมีกลไกการเก็บรวบรวมข้อมูลที่เป็นอิสระ</value>
   </data>
-  <data name="source" xml:space="preserve">
-    <value>นโยบายความเป็นส่วนตัว</value>
-  </data>
-  <data name="such as:" xml:space="preserve">
-    <value>เช่น:</value>
-  </data>
   <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
     <value>ที่เก็บซอร์สสำหรับสร้าง AnduinOS และดูแลแพ็กเกจเผยแพร่โค้ดของเราภายใต้สัญญาอนุญาต GPLv3 เว้นแต่จะระบุสัญญาอนุญาตอื่นไว้ ส่วนประกอบจากบุคคลที่สามยังคงอยู่ภายใต้สัญญาอนุญาตของตนเอง การรวมส่วนประกอบเหล่านั้นไว้ในการแจกจ่ายไม่ได้ทำให้ระบบปฏิบัติการทั้งหมดอยู่ภายใต้สัญญาอนุญาตฉบับเดียว สิทธิ์ในการใช้งาน แก้ไข และแจกจ่ายต่อส่วนประกอบแต่ละรายการเป็นไปตามข้อกำหนดของสัญญาอนุญาตที่ใช้กับส่วนประกอบนั้น</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>ส่วนขยายเดสก์ท็อป SimpleWeather ถูกปิดใช้งานไว้เป็นค่าเริ่มต้นใน AnduinOS หากคุณเปิดใช้ฟีเจอร์พยากรณ์อากาศ ฟีเจอร์เหล่านี้อาจติดต่อบริการของบุคคลที่สามเพื่อระบุตำแหน่งทางภูมิศาสตร์จาก IP ค้นหาตำแหน่ง และรับพยากรณ์อากาศ ผู้ให้บริการจะได้รับที่อยู่ IP ที่ใช้เชื่อมต่อและข้อมูลที่จำเป็นสำหรับคำขอ เช่น คำค้นหาตำแหน่งหรือพิกัด</value>
   </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>ส่วนขยายจำเป็นต้องเชื่อมต่อกับ</value>
@@ -527,9 +470,6 @@
   </data>
   <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
     <value>ผู้ให้บริการและคำขอที่ส่งจะขึ้นอยู่กับเวอร์ชันของส่วนขยาย การกำหนดค่าของ AnduinOS และการตั้งค่าของคุณ โปรดตรวจสอบผู้ให้บริการและการตั้งค่าตำแหน่งที่มีให้ในหน้าการตั้งค่าของส่วนขยาย รวมถึงนโยบายความเป็นส่วนตัวของผู้ให้บริการ คุณสามารถตรวจสอบซอร์สโค้ดต้นฉบับและแพ็กเกจที่เราจัดทำได้ที่:</value>
-  </data>
-  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
-    <value>ส่วนขยายเดสก์ท็อป SimpleWeather ถูกปิดใช้งานไว้เป็นค่าเริ่มต้นใน AnduinOS หากคุณเปิดใช้ฟีเจอร์พยากรณ์อากาศ ฟีเจอร์เหล่านี้อาจติดต่อบริการของบุคคลที่สามเพื่อระบุตำแหน่งทางภูมิศาสตร์จาก IP ค้นหาตำแหน่ง และรับพยากรณ์อากาศ ผู้ให้บริการจะได้รับที่อยู่ IP ที่ใช้เชื่อมต่อและข้อมูลที่จำเป็นสำหรับคำขอ เช่น คำค้นหาตำแหน่งหรือพิกัด</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>ระบบไม่มีกระบวนการทำงานในพื้นหลังหรือการสื่อสารผ่านเครือข่ายที่ถูกซ่อนไว้ ซึ่งถูกเริ่มต้นโดยระบบเพื่อวัตถุประสงค์ในการรวบรวมข้อมูลผู้ใช้</value>
@@ -545,9 +485,6 @@
   </data>
   <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
     <value>บันทึกเหล่านี้ประกอบด้วยที่อยู่ IP เวลาที่ส่งคำขอ URL ที่ร้องขอ ข้อมูลเบราว์เซอร์ สถานะการตอบกลับ ขนาดข้อมูลที่ตอบกลับ และเวลาในการประมวลผล เราใช้ข้อมูลเหล่านี้เพื่อตรวจสอบบริการ ส่งการแจ้งเตือนอัตโนมัติ ตรวจจับและป้องกันการโจมตี แก้ไขปัญหา และวิเคราะห์ประสิทธิภาพ</value>
-  </data>
-  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
-    <value>ชุดแพ็กเกจเหล่านี้ในภายหลัง กลไกการรวบรวมข้อมูลของแพ็กเกจแต่ละตัวจะถูกเปิดใช้งานตามนโยบายของ Canonical</value>
   </data>
   <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
     <value>บันทึกเหล่านี้แสดงรายละเอียดคำขอที่ส่งมายังเว็บไซต์ของเรา แต่ไม่ได้ทำให้เราเข้าถึงไฟล์ของคุณหรือรายงานกิจกรรมอื่น ๆ บนคอมพิวเตอร์ของคุณ การใช้งาน AnduinOS ตามปกติจะไม่ส่งข้อมูลการวัดและส่งข้อมูลทางไกลของระบบปฏิบัติการมายังเรา</value>
@@ -591,17 +528,8 @@
   <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
     <value>เพื่อให้การส่งไฟล์เหล่านี้ไปยังทั่วโลกมีความหน่วงเวลาต่ำ จะมีการกำหนดเส้นทางผ่านเครือข่ายจัดส่งเนื้อหา (CDN) ของ Cloudflare เช่นเดียวกับการร้องขอเว็บมาตรฐาน ที่อยู่ IP ของคุณจะถูกเปิดเผยต่อ CDN อย่างเคร่งครัดเพื่อวัตถุประสงค์ในการกำหนดเส้นทางและความปลอดภัย (การป้องกัน DDoS) เท่านั้น เราไม่บันทึกหรือวิเคราะห์การท่องเว็บหรือคำขออัปเดตของคุณ</value>
   </data>
-  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
-    <value>เพื่อระบุตำแหน่งของคุณจากที่อยู่ IP และเพื่อเชื่อมต่อกับผู้ให้บริการสภาพอากาศของบุคคลที่สามสำหรับข้อมูลการทำนายสภาพอากาศ</value>
-  </data>
-  <data name="to determine your location based on your IP address." xml:space="preserve">
-    <value>เพื่อระบุตำแหน่งที่ตั้งของคุณตามที่อยู่ IP ของคุณ</value>
-  </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>เพื่อให้มั่นใจว่าคุณจะไม่เข้าร่วมการเก็บข้อมูลใด ๆ คุณสามารถตรวจสอบและหากจำเป็นให้ลบแพ็กเกจเหล่านี้โดยใช้:</value>
-  </data>
-  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
-    <value>เพื่อให้แน่ใจว่าไม่มีตัววัดประสิทธิภาพที่ซ่อนอยู่ เราไม่สามารถควบคุมแนวปฏิบัติด้านความเป็นส่วนตัวของ</value>
   </data>
   <data name="To provide our official website (" xml:space="preserve">
     <value>เพื่อให้เว็บไซต์ของเราอย่างเป็นทางการ (</value>
@@ -681,11 +609,83 @@
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>คุณยังคงควบคุมข้อมูลส่วนบุคคลของคุณได้อย่างสมบูรณ์</value>
   </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>สิทธิของคุณ</value>
+  </data>
   <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
     <value>ไฟล์ การตั้งค่า และบันทึกการทำงานของระบบที่จัดเก็บไว้ในอุปกรณ์ของคุณ เป็นส่วนหนึ่งของการทำงานตามปกติ การจัดเก็บข้อมูลไว้ในอุปกรณ์ไม่ได้หมายความว่าข้อมูลเหล่านั้นจะถูกส่งมาให้เรา หากคุณเลือกส่งรายงานข้อบกพร่อง คำขอรับการสนับสนุน หรือข้อมูลอื่น ๆ มาให้เรา เราจะได้รับข้อมูลตามที่คุณส่งมา</value>
   </data>
-  <data name="Your Rights" xml:space="preserve">
-    <value>สิทธิของคุณ</value>
+  <data name="and confirmed it contains no telemetry." xml:space="preserve">
+    <value>และยืนยันว่ามันไม่มีระบบเทเลเมตรี</value>
+  </data>
+  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
+    <value>และไม่แบ่งปันข้อมูลใด ๆ ให้กับรัฐบาล บริษัท หรือบุคคลที่สามใด ๆ</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>ปิดใช้งานตามค่าเริ่มต้น</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>ไม่เข้าร่วม</value>
+  </data>
+  <data name="entirely on your computer" xml:space="preserve">
+    <value>ทั้งหมดบนคอมพิวเตอร์ของคุณ</value>
+  </data>
+  <data name="for details." xml:space="preserve">
+    <value>สำหรับรายละเอียด</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>ที่นี่</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>ในระบบการรายงานใดๆ การส่งสถิติการใช้งาน หรือการรายงานข้อผิดพลาดอัตโนมัติ</value>
+  </data>
+  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
+    <value>มันรวมซอฟต์แวร์โอเพนซอร์สต้นทางที่หลากหลาย</value>
+  </data>
+  <data name="maintained in spare time by volunteers." xml:space="preserve">
+    <value>ดูแลโดยอาสาสมัครในช่วงเวลาว่าง</value>
+  </data>
+  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
+    <value>แก้ไข ปรับปรุง หรือเพิ่มระบบเก็บข้อมูลเพิ่มเติมเข้าไปในส่วนประกอบต้นทางเหล่านี้</value>
+  </data>
+  <data name="not" xml:space="preserve">
+    <value>ไม่</value>
+  </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>ไม่ใช้สำหรับการรวบรวมข้อมูล telemetrics</value>
+  </data>
+  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
+    <value>หรือผู้ให้บริการข้อมูลสภาพอากาศใดๆ ที่มันใช้ การเชื่อมต่อกับบริการเหล่านี้จะทำให้ที่อยู่ IP ของคุณเปิดเผยต่อพวกเขาโดยจำเป็น</value>
+  </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>หรือผู้ให้บริการข้อมูลสภาพอากาศ การเปิดใช้งานคุณสมบัตินี้จะเปิดเผยที่อยู่ IP ของคุณไปยังพวกเขา</value>
+  </data>
+  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
+    <value>ซึ่งมีต้นกำเนิดมาจาก Ubuntu, Debian, GNOME, Flathub และแหล่งอื่นๆ</value>
+  </data>
+  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
+    <value>กรุณาอ่านนโยบายความเป็นส่วนตัวของซอฟต์แวร์ต้นทางแต่ละรายการ</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>นโยบายความเป็นส่วนตัว</value>
+  </data>
+  <data name="such as:" xml:space="preserve">
+    <value>เช่น:</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>ชุดแพ็กเกจเหล่านี้ในภายหลัง กลไกการรวบรวมข้อมูลของแพ็กเกจแต่ละตัวจะถูกเปิดใช้งานตามนโยบายของ Canonical</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>เพื่อระบุตำแหน่งของคุณจากที่อยู่ IP และเพื่อเชื่อมต่อกับผู้ให้บริการสภาพอากาศของบุคคลที่สามสำหรับข้อมูลการทำนายสภาพอากาศ</value>
+  </data>
+  <data name="to determine your location based on your IP address." xml:space="preserve">
+    <value>เพื่อระบุตำแหน่งที่ตั้งของคุณตามที่อยู่ IP ของคุณ</value>
+  </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>เพื่อให้แน่ใจว่าไม่มีตัววัดประสิทธิภาพที่ซ่อนอยู่ เราไม่สามารถควบคุมแนวปฏิบัติด้านความเป็นส่วนตัวของ</value>
+  </data>
+  <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—หากระบบตรวจพบแพ็คเกจการวัดผลการใช้งานหรือแพ็คเกจพื้นหลังของ Canonical รายการใดรายการหนึ่งต่อไปนี้ระหว่างกระบวนการสร้าง ระบบจะยกเลิกการสร้างและปฏิเสธทันที</value>
   </data>
 
 </root>

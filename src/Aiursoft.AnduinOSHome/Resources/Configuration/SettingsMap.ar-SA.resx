@@ -45,14 +45,17 @@
   <data name="Project Name" xml:space="preserve">
     <value>اسم المشروع</value>
   </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>رقم ترخيص ICP للمستخدمين في الصين القارية. اتركه فارغًا لإخفائه.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>نقطة نهاية لإكمال المحادثات متوافقة مع OpenAI وتُستخدم لترجمة الأجهزة. يجب أن يكون الرابط كاملًا، بما في ذلك ‎/v1/chat/completions‎. اتركه فارغًا لتعطيل الترجمة التلقائية.</value>
+  </data>
   <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
     <value>رمز الدخول الحامل لواجهة الترجمة. اتركه فارغًا إذا لم تتطلب الواجهة المصادقة.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>اسم العلامة التجارية المُعرض في التذييل.</value>
-  </data>
-  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
-    <value>رقم ترخيص ICP للمستخدمين في الصين القارية. اتركه فارغًا لإخفائه.</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>الشعار الخاص بالمشروع يتم عرضه في شريط التنقل والقدم. يدعم jpg، png، svg.</value>
@@ -62,9 +65,6 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>اسم المشروع المُعرض في الواجهة الأمامية.</value>
-  </data>
-  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
-    <value>نقطة نهاية لإكمال المحادثات متوافقة مع OpenAI وتُستخدم لترجمة الأجهزة. يجب أن يكون الرابط كاملًا، بما في ذلك ‎/v1/chat/completions‎. اتركه فارغًا لتعطيل الترجمة التلقائية.</value>
   </data>
   <data name="Translation API Token" xml:space="preserve">
     <value>رمز واجهة برمجة تطبيقات الترجمة</value>

@@ -18,17 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="." xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name=". You may freely modify and redistribute the code under the GPL-v3 license, but you may not copy, reproduce, or distribute our non-code branding elements to pass off modified versions as official products without our explicit permission." xml:space="preserve">
-    <value>. Puteți modifica și redistribui liber codul sub licența GPL-v3, însă nu aveți voie să copiați, să reproduci sau să distribuiți elementele noastre de branding ne-includând codul pentru a prezenta versiunile modificate ca produse oficiale fără permisiunea noastră explicită.</value>
-  </data>
-  <data name="&quot;AnduinOS&quot; name, logos, Website design, branding materials, and other non-software content are the exclusive intellectual property and trademarks of AIURSOFT LIMITED" xml:space="preserve">
+      <data name="&quot;AnduinOS&quot; name, logos, Website design, branding materials, and other non-software content are the exclusive intellectual property and trademarks of AIURSOFT LIMITED" xml:space="preserve">
     <value>numele „AnduinOS”, logo-urile, designul site-ului, materialele de branding și alte conținuturi nesoftware sunt proprietatea intelectuală exclusivă și mărcile comerciale ale AIURSOFT LIMITED</value>
   </data>
   <data name="&quot;as is&quot; and &quot;as available,&quot;" xml:space="preserve">
     <value>&quot;așa cum este&quot; și &quot;așa cum este disponibil&quot;,</value>
+  </data>
+  <data name="." xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name=". You may freely modify and redistribute the code under the GPL-v3 license, but you may not copy, reproduce, or distribute our non-code branding elements to pass off modified versions as official products without our explicit permission." xml:space="preserve">
+    <value>. Puteți modifica și redistribui liber codul sub licența GPL-v3, însă nu aveți voie să copiați, să reproduci sau să distribuiți elementele noastre de branding ne-includând codul pentru a prezenta versiunile modificate ca produse oficiale fără permisiunea noastră explicită.</value>
   </data>
   <data name="1. Acceptance of Terms" xml:space="preserve">
     <value>1. Acceptarea Termenilor</value>
@@ -90,11 +90,11 @@
   <data name="Accuracy or completeness" xml:space="preserve">
     <value>Acuratețe sau exhaustivitate</value>
   </data>
-  <data name="AnduinOS combines components under different licenses, as described in Section 4." xml:space="preserve">
-    <value>AnduinOS combină componente distribuite sub licențe diferite, după cum este descris în secțiunea 4.</value>
-  </data>
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>Discuții GitHub AnduinOS</value>
+  </data>
+  <data name="AnduinOS combines components under different licenses, as described in Section 4." xml:space="preserve">
+    <value>AnduinOS combină componente distribuite sub licențe diferite, după cum este descris în secțiunea 4.</value>
   </data>
   <data name="AnduinOS is a free and open-source project distributed under the" xml:space="preserve">
     <value>AnduinOS este un proiect gratuit și open-source distribuit sub licența</value>
@@ -155,9 +155,6 @@
   </data>
   <data name="If you obtain AnduinOS from any source other than the official channels listed above," xml:space="preserve">
     <value>Dacă obțineți AnduinOS de la orice altă sursă în afară de canalele oficiale enumerate mai sus,</value>
-  </data>
-  <data name="including:" xml:space="preserve">
-    <value>inclusiv:</value>
   </data>
   <data name="Indirect, incidental, special, consequential, or punitive damages;" xml:space="preserve">
     <value>Daune indirecte, accidentale, speciale, consecvente sau punitive;</value>
@@ -246,9 +243,6 @@
   <data name="We are not responsible for the content, privacy policies, or practices of any third-party sites or upstream software providers." xml:space="preserve">
     <value>Nu suntem responsabili pentru conținutul, politicile de confidențialitate sau practicile niciunui site terț sau al furnizorilor de software upstream.</value>
   </data>
-  <data name="we are only responsible for the versions officially distributed through our official channels, " xml:space="preserve">
-    <value>noi suntem responsabili doar pentru versiunile distribuite oficial prin canalele noastre oficiale,</value>
-  </data>
   <data name="We disclaim any responsibility for any harm, damage, loss, or security vulnerabilities caused by unofficial or modified versions of AnduinOS." xml:space="preserve">
     <value>Declinăm orice responsabilitate pentru orice prejudiciu, daune, pierderi sau vulnerabilități de securitate cauzate de versiunile neoficiale sau modificate ale AnduinOS.</value>
   </data>
@@ -279,17 +273,11 @@
   <data name="While the software is open-source, the Website design, branding materials, and other non-software content may be subject to separate intellectual property rights." xml:space="preserve">
     <value>Deși software-ul este open-source, designul Website-ului, materialele de branding și alte conținuturi care nu sunt software pot fi supuse unor drepturi de proprietate intelectuală separate.</value>
   </data>
-  <data name="without any warranties of any kind, whether express or implied." xml:space="preserve">
-    <value>fără nicio garanție de orice fel, fie expresă sau implicită.</value>
-  </data>
   <data name="You agree to use the Website and Services only for lawful purposes and in compliance with all applicable laws and regulations." xml:space="preserve">
     <value>Sunteți de acord să utilizați Site-ul și Serviciile doar în scopuri legale și în conformitate cu toate legile și reglementările aplicabile.</value>
   </data>
   <data name="You are encouraged to review these Terms periodically." xml:space="preserve">
     <value>Vi se recomandă să revizuiți periodic acești Termeni.</value>
-  </data>
-  <data name="you do so entirely at your own risk." xml:space="preserve">
-    <value>o faci în întregime pe propriul risc.</value>
   </data>
   <data name="You may not copy, reproduce, or distribute non-code elements of the Website without explicit permission." xml:space="preserve">
     <value>Nu aveți dreptul să copiați, reproduceți sau distribuiți elementele non-cod ale Site-ului fără permisiune explicită.</value>
@@ -302,6 +290,18 @@
   </data>
   <data name="Your continued use of the Website or Services after any changes constitutes acceptance of the new Terms." xml:space="preserve">
     <value>Utilizarea continuată a Site-ului sau a Serviciilor după orice modificare constituie acceptarea noilor Termeni.</value>
+  </data>
+  <data name="including:" xml:space="preserve">
+    <value>inclusiv:</value>
+  </data>
+  <data name="we are only responsible for the versions officially distributed through our official channels, " xml:space="preserve">
+    <value>noi suntem responsabili doar pentru versiunile distribuite oficial prin canalele noastre oficiale,</value>
+  </data>
+  <data name="without any warranties of any kind, whether express or implied." xml:space="preserve">
+    <value>fără nicio garanție de orice fel, fie expresă sau implicită.</value>
+  </data>
+  <data name="you do so entirely at your own risk." xml:space="preserve">
+    <value>o faci în întregime pe propriul risc.</value>
   </data>
 
 </root>

@@ -72,14 +72,8 @@
   <data name="AnduinOS Container shares the same foundation with AnduinOS desktop. Every package is hand-picked by developers who build microservices every day — no bloat, just the right tools for the job." xml:space="preserve">
     <value>تشارك حاوية AnduinOS نفس الأساس مع سطح مكتب AnduinOS. كل حزمة يتم اختيارها بعناية من قبل مطورين يبنون الخدمات المصغرة كل يوم - بدون أي تحميل زائد، مجرد الأدوات المناسبة للعمل.</value>
   </data>
-  <data name="anduinos-apt-config and archive keyring preconfigured — install AnduinOS packages immediately." xml:space="preserve">
-    <value>تم إعداد anduinos-apt-config ومجموعة مفاتيح الأرشيف مسبقاً — قم بتثبيت حزم AnduinOS فوراً.</value>
-  </data>
   <data name="Apple Silicon" xml:space="preserve">
     <value>Apple Silicon</value>
-  </data>
-  <data name="atomic layer" xml:space="preserve">
-    <value>طبقة وحيدة</value>
   </data>
   <data name="Before — with Ubuntu" xml:space="preserve">
     <value>قبل ذلك — باستخدام Ubuntu</value>
@@ -96,26 +90,11 @@
   <data name="Copy to clipboard" xml:space="preserve">
     <value>نسخ إلى الحافظة</value>
   </data>
-  <data name="curated packages" xml:space="preserve">
-    <value>حزم مختارة بعناية</value>
-  </data>
-  <data name="curl &amp; wget clients" xml:space="preserve">
-    <value>عميلَي curl وwget</value>
-  </data>
-  <data name="curl, wget, iproute2, iputils-ping, lsof — preinstalled and ready to debug." xml:space="preserve">
-    <value>curl, wget, iproute2, iputils-ping, lsof — مُثبَّتة مسبقًا وجاهزة لتصحيح الأخطاء.</value>
-  </data>
   <data name="Debian Bootstrap" xml:space="preserve">
     <value>تهيئة Debian</value>
   </data>
-  <data name="declarative" xml:space="preserve">
-    <value>إعلاني</value>
-  </data>
   <data name="Developer-First Philosophy" xml:space="preserve">
     <value>فلسفة المطور أولاً</value>
-  </data>
-  <data name="disk space" xml:space="preserve">
-    <value>مساحة القرص</value>
   </data>
   <data name="Docker Hub" xml:space="preserve">
     <value>دوكر هب</value>
@@ -132,26 +111,26 @@
   <data name="Everything you need. Nothing to install." xml:space="preserve">
     <value>كل ما تحتاجه. لا شيء للتثبيت.</value>
   </data>
-  <data name="Full ecosystem access" xml:space="preserve">
-    <value>الوصول الكامل إلى النظام البيئي</value>
-  </data>
   <data name="Full GNOME desktop meta-package" xml:space="preserve">
     <value>حزمة شاملة لسطح مكتب GNOME</value>
-  </data>
-  <data name="Full gnupg suite, dirmngr, pinentry — verify signatures and encrypt data out of the box." xml:space="preserve">
-    <value>مجموعة gnupg الكاملة، وdirmngr، وpinentry — للتحقق من التواقيع وتشفير البيانات دون إعدادات إضافية.</value>
   </data>
   <data name="Full TLS/SSL stack" xml:space="preserve">
     <value>مكدس TLS/SSL كامل</value>
   </data>
-  <data name="Get Started" xml:space="preserve">
-    <value>ابدأ الآن</value>
+  <data name="Full ecosystem access" xml:space="preserve">
+    <value>الوصول الكامل إلى النظام البيئي</value>
+  </data>
+  <data name="Full gnupg suite, dirmngr, pinentry — verify signatures and encrypt data out of the box." xml:space="preserve">
+    <value>مجموعة gnupg الكاملة، وdirmngr، وpinentry — للتحقق من التواقيع وتشفير البيانات دون إعدادات إضافية.</value>
   </data>
   <data name="GPG &amp; Crypto Suite" xml:space="preserve">
     <value>حزمة GPG والتشفير</value>
   </data>
   <data name="GPG signature tools" xml:space="preserve">
     <value>أدوات توقيعات GPG</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>ابدأ الآن</value>
   </data>
   <data name="Graphical firewall manager" xml:space="preserve">
     <value>مدير جدار الحماية بواجهة رسومية</value>
@@ -162,14 +141,11 @@
   <data name="Image Layer Comparison" xml:space="preserve">
     <value>مقارنة طبقات الصورة</value>
   </data>
-  <data name="intermediate artifacts" xml:space="preserve">
-    <value>المخلفات الوسيطة</value>
+  <data name="Join Discussion" xml:space="preserve">
+    <value>انضم إلى النقاش</value>
   </data>
   <data name="Join developers who have already switched to AnduinOS Container as their go-to base image. One command, ten fewer headaches." xml:space="preserve">
     <value>انضم إلى المطورين الذين انتقلوا بالفعل إلى AnduinOS Container كصورة أساسية مفضلة. أمر واحد يعني عشرة أوجاع رأس أقل.</value>
-  </data>
-  <data name="Join Discussion" xml:space="preserve">
-    <value>انضم إلى النقاش</value>
   </data>
   <data name="Just Code" xml:space="preserve">
     <value>برمجة فقط</value>
@@ -210,17 +186,14 @@
   <data name="One line change. Ten fewer `apt install` calls." xml:space="preserve">
     <value>تغيير سطر واحد. عشر عمليات تثبيت `apt install` أقل.</value>
   </data>
-  <data name="openssl and full TLS certificate stack included — secure connections without extra packages." xml:space="preserve">
-    <value>يتم تضمين openssl والمجموعة الكاملة لشهادات TLS — اتصالات آمنة دون حزم إضافية.</value>
-  </data>
   <data name="Pre-trusted GPG keys" xml:space="preserve">
     <value>مفاتيح GPG موثقة مسبقاً</value>
   </data>
-  <data name="Python 3.14 preinstalled. Run your Python microservices the moment the container starts." xml:space="preserve">
-    <value>تم تثبيت Python 3.14 مسبقاً. قم بتشغيل خدمات الميكرو الخاصة بك بلغة Python فور بدء تشغيل الحاوية.</value>
-  </data>
   <data name="Python 3.14 Ready" xml:space="preserve">
     <value>بايثون 3.14 جاهزة</value>
+  </data>
+  <data name="Python 3.14 preinstalled. Run your Python microservices the moment the container starts." xml:space="preserve">
+    <value>تم تثبيت Python 3.14 مسبقاً. قم بتشغيل خدمات الميكرو الخاصة بك بلغة Python فور بدء تشغيل الحاوية.</value>
   </data>
   <data name="Python 3.14 runtime" xml:space="preserve">
     <value>بيئة تشغيل Python 3.14</value>
@@ -270,29 +243,11 @@
   <data name="Start from zero. Install everything yourself:" xml:space="preserve">
     <value>ابدأ من الصفر. قم بتثبيت كل شيء بنفسك:</value>
   </data>
-  <data name="sudo &amp; user mgmt" xml:space="preserve">
-    <value>أدوات sudo وإدارة المستخدمين</value>
-  </data>
-  <data name="sudo and sudo-rs preconfigured — run privileged commands without extra setup." xml:space="preserve">
-    <value>تم ضبط sudo و sudo-rs مسبقاً — نفذ الأوامر المميزة دون إعداد إضافي.</value>
-  </data>
-  <data name="sudo Out of the Box" xml:space="preserve">
-    <value>سودو جاهز للعمل فوراً</value>
-  </data>
   <data name="Switch Today" xml:space="preserve">
     <value>احل اليوم</value>
   </data>
   <data name="System theming &amp; customization" xml:space="preserve">
     <value>تخصيص مظهر النظام وإعداداته</value>
-  </data>
-  <data name="Terminal" xml:space="preserve">
-    <value>الطرفية</value>
-  </data>
-  <data name="The Difference" xml:space="preserve">
-    <value>الفرق</value>
-  </data>
-  <data name="time saved per deploy" xml:space="preserve">
-    <value>الوقت الموفَّر في كل نشر</value>
   </data>
   <data name="TLS &amp; SSL Complete" xml:space="preserve">
     <value>تغطية شاملة لبروتوكولات TLS و SSL</value>
@@ -300,17 +255,23 @@
   <data name="TLS, GPG, ca-certs preloaded" xml:space="preserve">
     <value>مُحَمَّل مسبقاً بـ TLS وGPG وشهادات ca-certs</value>
   </data>
+  <data name="Terminal" xml:space="preserve">
+    <value>الطرفية</value>
+  </data>
+  <data name="The Difference" xml:space="preserve">
+    <value>الفرق</value>
+  </data>
   <data name="Tools you need are already there" xml:space="preserve">
     <value>الأدوات التي تحتاجها متاحة بالفعل</value>
   </data>
   <data name="Ubuntu Container" xml:space="preserve">
     <value>حاوية أوبونتو</value>
   </data>
-  <data name="Ubuntu provides a blank canvas. We provide a fully-equipped workshop." xml:space="preserve">
-    <value>يوفر Ubuntu لوحة فارغة. نحن نوفر ورشة عمل مجهزة بالكامل.</value>
-  </data>
   <data name="Ubuntu Sources" xml:space="preserve">
     <value>مصادر Ubuntu</value>
+  </data>
+  <data name="Ubuntu provides a blank canvas. We provide a fully-equipped workshop." xml:space="preserve">
+    <value>يوفر Ubuntu لوحة فارغة. نحن نوفر ورشة عمل مجهزة بالكامل.</value>
   </data>
   <data name="Use as your daily driver container — all the essentials preloaded, ready to build." xml:space="preserve">
     <value>استخدمه كوحدك اليومي — كل الأساسيات جاهزة مسبقًا، مستعد للبناء.</value>
@@ -338,6 +299,45 @@
   </data>
   <data name="Zero-Layer Architecture" xml:space="preserve">
     <value>هيكلية الطبقة الصفرية</value>
+  </data>
+  <data name="anduinos-apt-config and archive keyring preconfigured — install AnduinOS packages immediately." xml:space="preserve">
+    <value>تم إعداد anduinos-apt-config ومجموعة مفاتيح الأرشيف مسبقاً — قم بتثبيت حزم AnduinOS فوراً.</value>
+  </data>
+  <data name="atomic layer" xml:space="preserve">
+    <value>طبقة وحيدة</value>
+  </data>
+  <data name="curated packages" xml:space="preserve">
+    <value>حزم مختارة بعناية</value>
+  </data>
+  <data name="curl &amp; wget clients" xml:space="preserve">
+    <value>عميلَي curl وwget</value>
+  </data>
+  <data name="curl, wget, iproute2, iputils-ping, lsof — preinstalled and ready to debug." xml:space="preserve">
+    <value>curl, wget, iproute2, iputils-ping, lsof — مُثبَّتة مسبقًا وجاهزة لتصحيح الأخطاء.</value>
+  </data>
+  <data name="declarative" xml:space="preserve">
+    <value>إعلاني</value>
+  </data>
+  <data name="disk space" xml:space="preserve">
+    <value>مساحة القرص</value>
+  </data>
+  <data name="intermediate artifacts" xml:space="preserve">
+    <value>المخلفات الوسيطة</value>
+  </data>
+  <data name="openssl and full TLS certificate stack included — secure connections without extra packages." xml:space="preserve">
+    <value>يتم تضمين openssl والمجموعة الكاملة لشهادات TLS — اتصالات آمنة دون حزم إضافية.</value>
+  </data>
+  <data name="sudo &amp; user mgmt" xml:space="preserve">
+    <value>أدوات sudo وإدارة المستخدمين</value>
+  </data>
+  <data name="sudo Out of the Box" xml:space="preserve">
+    <value>سودو جاهز للعمل فوراً</value>
+  </data>
+  <data name="sudo and sudo-rs preconfigured — run privileged commands without extra setup." xml:space="preserve">
+    <value>تم ضبط sudo و sudo-rs مسبقاً — نفذ الأوامر المميزة دون إعداد إضافي.</value>
+  </data>
+  <data name="time saved per deploy" xml:space="preserve">
+    <value>الوقت الموفَّر في كل نشر</value>
   </data>
   <data name="zip, unzip, zstd, xz-utils — every compression format covered. Extract anything without `apt install` first." xml:space="preserve">
     <value>zip, unzip, zstd, xz-utils — تغطية شاملة لكل صيغ الضغط. استخرج أي ملف دون الحاجة لتنفيذ أمر `apt install` مسبقاً.</value>

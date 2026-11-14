@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name=", including:" xml:space="preserve">
+      <data name="&quot;AnduinOS&quot; name, logos, Website design, branding materials, and other non-software content are the exclusive intellectual property and trademarks of AIURSOFT LIMITED" xml:space="preserve">
+    <value>el nombre &quot;AnduinOS&quot;, los logotipos, el diseño del sitio web, los materiales de marca y otros contenidos que no sean software son la propiedad intelectual exclusiva y las marcas comerciales de AIURSOFT LIMITED</value>
+  </data>
+  <data name="&quot;as is&quot; and &quot;as available,&quot;" xml:space="preserve">
+    <value>&quot;tal cual&quot; y &quot;según disponibilidad&quot;,</value>
+  </data>
+  <data name=", including:" xml:space="preserve">
     <value>, incluyendo:</value>
   </data>
   <data name="." xml:space="preserve">
@@ -26,12 +32,6 @@
   </data>
   <data name=". You may freely modify and redistribute the code under the GPL-v3 license, but you may not copy, reproduce, or distribute our non-code branding elements to pass off modified versions as official products without our explicit permission." xml:space="preserve">
     <value>. Puede modificar y redistribuir libremente el código bajo la licencia GPL-v3, pero no podrá copiar, reproducir ni distribuir nuestros elementos de identidad corporativa no relacionados con el código para presentar versiones modificadas como productos oficiales sin nuestro permiso explícito.</value>
-  </data>
-  <data name="&quot;AnduinOS&quot; name, logos, Website design, branding materials, and other non-software content are the exclusive intellectual property and trademarks of AIURSOFT LIMITED" xml:space="preserve">
-    <value>el nombre &quot;AnduinOS&quot;, los logotipos, el diseño del sitio web, los materiales de marca y otros contenidos que no sean software son la propiedad intelectual exclusiva y las marcas comerciales de AIURSOFT LIMITED</value>
-  </data>
-  <data name="&quot;as is&quot; and &quot;as available,&quot;" xml:space="preserve">
-    <value>&quot;tal cual&quot; y &quot;según disponibilidad&quot;,</value>
   </data>
   <data name="1. Acceptance of Terms" xml:space="preserve">
     <value>1. Aceptación de los Términos</value>
@@ -93,11 +93,11 @@
   <data name="Accuracy or completeness" xml:space="preserve">
     <value>Exactitud o exhaustividad</value>
   </data>
-  <data name="AnduinOS combines components under different licenses, as described in Section 4." xml:space="preserve">
-    <value>AnduinOS combina componentes sujetos a distintas licencias, tal y como se describe en la sección 4.</value>
-  </data>
   <data name="AnduinOS GitHub Discussions" xml:space="preserve">
     <value>Debates de AnduinOS en GitHub</value>
+  </data>
+  <data name="AnduinOS combines components under different licenses, as described in Section 4." xml:space="preserve">
+    <value>AnduinOS combina componentes sujetos a distintas licencias, tal y como se describe en la sección 4.</value>
   </data>
   <data name="AnduinOS is a free and open-source project distributed under the" xml:space="preserve">
     <value>AnduinOS es un proyecto gratuito y de código abierto distribuido bajo la</value>
@@ -158,9 +158,6 @@
   </data>
   <data name="If you obtain AnduinOS from any source other than the official channels listed above," xml:space="preserve">
     <value>Si obtienes AnduinOS de cualquier fuente que no sean los canales oficiales enumerados anteriormente,</value>
-  </data>
-  <data name="including:" xml:space="preserve">
-    <value>incluyendo:</value>
   </data>
   <data name="Indirect, incidental, special, consequential, or punitive damages;" xml:space="preserve">
     <value>Daños indirectos, incidentales, especiales, consecuenciales o punitivos;</value>
@@ -249,12 +246,6 @@
   <data name="We are not responsible for the content, privacy policies, or practices of any third-party sites or upstream software providers." xml:space="preserve">
     <value>No nos hacemos responsables del contenido, las políticas de privacidad ni las prácticas de ningún sitio de terceros o proveedores de software upstream.</value>
   </data>
-  <data name="we are only responsible for the versions officially distributed through our official channels" xml:space="preserve">
-    <value>solo somos responsables de las versiones distribuidas oficialmente a través de nuestros canales oficiales</value>
-  </data>
-  <data name="we are only responsible for the versions officially distributed through our official channels, " xml:space="preserve">
-    <value>solo somos responsables de las versiones distribuidas oficialmente a través de nuestros canales oficiales,</value>
-  </data>
   <data name="We disclaim any responsibility for any harm, damage, loss, or security vulnerabilities caused by unofficial or modified versions of AnduinOS." xml:space="preserve">
     <value>Declinamos cualquier responsabilidad por daños, perjuicios, pérdidas o vulnerabilidades de seguridad causados por versiones no oficiales o modificadas de AnduinOS.</value>
   </data>
@@ -288,17 +279,11 @@
   <data name="While the software is open-source, the Website design, branding materials, and other non-software content may be subject to separate intellectual property rights." xml:space="preserve">
     <value>Aunque el software es de código abierto, el diseño del sitio web, los materiales de marca y otros contenidos no relacionados con el software pueden estar sujetos a derechos de propiedad intelectual independientes.</value>
   </data>
-  <data name="without any warranties of any kind, whether express or implied." xml:space="preserve">
-    <value>sin garantías de ningún tipo, ya sean expresas o implícitas.</value>
-  </data>
   <data name="You agree to use the Website and Services only for lawful purposes and in compliance with all applicable laws and regulations." xml:space="preserve">
     <value>Usted acepta utilizar el Sitio Web y los Servicios únicamente para fines legales y en cumplimiento de todas las leyes y regulaciones aplicables.</value>
   </data>
   <data name="You are encouraged to review these Terms periodically." xml:space="preserve">
     <value>Se recomienda revisar estos Términos periódicamente.</value>
-  </data>
-  <data name="you do so entirely at your own risk." xml:space="preserve">
-    <value>lo haces enteramente bajo tu propio riesgo.</value>
   </data>
   <data name="You may not copy, reproduce, or distribute non-code elements of the Website without explicit permission." xml:space="preserve">
     <value>No está permitido copiar, reproducir o distribuir elementos no relacionados con el código del sitio web sin permiso explícito.</value>
@@ -311,6 +296,21 @@
   </data>
   <data name="Your continued use of the Website or Services after any changes constitutes acceptance of the new Terms." xml:space="preserve">
     <value>El uso continuado del Sitio Web o los Servicios después de cualquier cambio constituye la aceptación de los nuevos Términos.</value>
+  </data>
+  <data name="including:" xml:space="preserve">
+    <value>incluyendo:</value>
+  </data>
+  <data name="we are only responsible for the versions officially distributed through our official channels" xml:space="preserve">
+    <value>solo somos responsables de las versiones distribuidas oficialmente a través de nuestros canales oficiales</value>
+  </data>
+  <data name="we are only responsible for the versions officially distributed through our official channels, " xml:space="preserve">
+    <value>solo somos responsables de las versiones distribuidas oficialmente a través de nuestros canales oficiales,</value>
+  </data>
+  <data name="without any warranties of any kind, whether express or implied." xml:space="preserve">
+    <value>sin garantías de ningún tipo, ya sean expresas o implícitas.</value>
+  </data>
+  <data name="you do so entirely at your own risk." xml:space="preserve">
+    <value>lo haces enteramente bajo tu propio riesgo.</value>
   </data>
 
 </root>

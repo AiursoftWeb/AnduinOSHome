@@ -18,28 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
-    <value>—빌드 과정에서 다음 Canonical 원격 분석 또는 백그라운드 패키지 중 하나라도 감지되면 빌드가 즉시 중단되고 거부됩니다:</value>
-  </data>
-  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
-    <value>, 아래에 상세히 설명된 특정 사용자 개시 기능 또는 필수 서비스를 제외하고.</value>
-  </data>
-  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
-    <value>, 저희 또는 제3자가 소유한 외부 서버와의 통신 없이도 가능합니다.</value>
-  </data>
-  <data name=": Automated error reporting services." xml:space="preserve">
-    <value>자동 오류 보고 서비스.</value>
-  </data>
-  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
-    <value>설치 시 기본 하드웨어 및 소프트웨어 정보를 수집합니다.</value>
-  </data>
-  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
-    <value>주기적으로 익명의 패키지 사용 통계를 제출합니다.</value>
-  </data>
-  <data name="." xml:space="preserve">
-    <value>.</value>
-  </data>
-  <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
+      <data name="&quot;hard-fail&quot; strict policy" xml:space="preserve">
     <value>&quot;즉시 실패(hard-fail)&quot; 엄격 정책</value>
   </data>
   <data name="(Canonical Livepatch / Pro services)" xml:space="preserve">
@@ -62,6 +41,15 @@
   </data>
   <data name="), your system connects to our official servers." xml:space="preserve">
     <value>), 시스템에서 저희 공식 서버에 연결됩니다.</value>
+  </data>
+  <data name=", with the exception of specific, user-initiated features or essential services detailed below." xml:space="preserve">
+    <value>, 아래에 상세히 설명된 특정 사용자 개시 기능 또는 필수 서비스를 제외하고.</value>
+  </data>
+  <data name=", without requiring communication with any external servers owned by us or third parties." xml:space="preserve">
+    <value>, 저희 또는 제3자가 소유한 외부 서버와의 통신 없이도 가능합니다.</value>
+  </data>
+  <data name="." xml:space="preserve">
+    <value>.</value>
   </data>
   <data name="1. Data Collection by AnduinOS" xml:space="preserve">
     <value>1. AnduinOS의 데이터 수집</value>
@@ -129,6 +117,15 @@
   <data name="8. Contact Us" xml:space="preserve">
     <value>8. 문의하기</value>
   </data>
+  <data name=": Automated error reporting services." xml:space="preserve">
+    <value>자동 오류 보고 서비스.</value>
+  </data>
+  <data name=": Collects basic hardware and software details at installation time." xml:space="preserve">
+    <value>설치 시 기본 하드웨어 및 소프트웨어 정보를 수집합니다.</value>
+  </data>
+  <data name=": Periodically submits anonymous package usage statistics." xml:space="preserve">
+    <value>주기적으로 익명의 패키지 사용 통계를 제출합니다.</value>
+  </data>
   <data name="Account information is retained for as long as necessary to provide account services and comply with applicable legal obligations, subject to applicable deletion requirements. Authentication sessions and preference cookies have their own expiration periods. These records are separate from website access logs and are not subject to the 120-day website log retention period." xml:space="preserve">
     <value>계정 정보는 계정 서비스를 제공하고 관련 법적 의무를 준수하는 데 필요한 기간 동안 보관하며, 관련 삭제 요건을 따릅니다. 인증 세션과 환경 설정 쿠키에는 각각 별도의 만료 기간이 적용됩니다. 이러한 기록은 웹사이트 접속 로그와 별개이며, 웹사이트 로그의 120일 보관 기간이 적용되지 않습니다.</value>
   </data>
@@ -141,11 +138,17 @@
   <data name="All system operations, configurations, and user activities take place locally on your own device (\&quot;local execution\&quot;)." xml:space="preserve">
     <value>모든 시스템 작업, 구성 및 사용자 활동은 사용자 자신의 기기에서 로컬로 실행됩니다(&quot;로컬 실행&quot;).</value>
   </data>
-  <data name="and confirmed it contains no telemetry." xml:space="preserve">
-    <value>텔레메트리가 포함되어 있지 않음을 확인했습니다.</value>
+  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
+    <value>AnduinOS GitHub 토론</value>
   </data>
-  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
-    <value>그리고 정부, 기업 또는 제3자와 어떠한 정보도 공유하지 않습니다.</value>
+  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
+    <value>AnduinOS SimpleWeather 패키징</value>
+  </data>
+  <data name="AnduinOS Update Service" xml:space="preserve">
+    <value>안두인OS 업데이트 서비스</value>
+  </data>
+  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
+    <value>AnduinOS 웹사이트 및 APT 리포지토리</value>
   </data>
   <data name="AnduinOS build repository license" xml:space="preserve">
     <value>AnduinOS 빌드 저장소 라이선스</value>
@@ -174,9 +177,6 @@
   <data name="AnduinOS follows a local-first design, but it is not an offline-only system. Updates, network services, and applications can communicate with external servers. Their behavior depends on the installed software, its settings, and the features you use." xml:space="preserve">
     <value>AnduinOS는 로컬 우선 설계를 따르지만, 오프라인 전용 시스템은 아닙니다. 업데이트, 네트워크 서비스 및 애플리케이션은 외부 서버와 통신할 수 있습니다. 이러한 동작은 설치된 소프트웨어와 해당 설정, 그리고 사용자가 이용하는 기능에 따라 달라집니다.</value>
   </data>
-  <data name="AnduinOS GitHub Discussions" xml:space="preserve">
-    <value>AnduinOS GitHub 토론</value>
-  </data>
   <data name="AnduinOS goes to great lengths to ensure your installation is clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS는 설치 환경이 기본적으로 깔끔하고 원격 분석(telemetry) 요소가 전혀 없도록 최선을 다해 보장합니다.</value>
   </data>
@@ -186,6 +186,9 @@
   <data name="AnduinOS includes the &apos;SimpleWeather&apos; GNOME extension. Out of respect for your privacy, this extension is" xml:space="preserve">
     <value>AnduinOS에는 &apos;SimpleWeather&apos; GNOME 확장이 포함되어 있습니다. 사용자의 개인정보를 존중하기 위해 이 확장은</value>
   </data>
+  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
+    <value>AnduinOS는 Ubuntu를 기반으로 한 Linux 배포판으로, 홍콩에 소재한 회사인 AIURSOFT LIMITED가 관리합니다. 본 개인정보 처리방침에서 ‘당사’, ‘당사를’ 및 ‘당사의’는 아래에 설명된 서비스를 통해 당사가 처리하는 개인정보의 관리자인 AIURSOFT LIMITED를 의미합니다.</value>
+  </data>
   <data name="AnduinOS is a community-driven, non-profit project" xml:space="preserve">
     <value>AnduinOS는 커뮤니티 주도적이며 비영리적인 프로젝트입니다.</value>
   </data>
@@ -194,9 +197,6 @@
   </data>
   <data name="AnduinOS is a free and open-source Linux distribution based on Ubuntu." xml:space="preserve">
     <value>AnduinOS는 Ubuntu 기반의 무료 오픈 소스 Linux® 배포판입니다.</value>
-  </data>
-  <data name="AnduinOS is a Linux distribution based on Ubuntu, maintained by AIURSOFT LIMITED, a company based in Hong Kong. In this statement, &apos;we&apos;, &apos;us&apos;, and &apos;our&apos; refer to AIURSOFT LIMITED, the controller responsible for the personal data we process through the services described below." xml:space="preserve">
-    <value>AnduinOS는 Ubuntu를 기반으로 한 Linux 배포판으로, 홍콩에 소재한 회사인 AIURSOFT LIMITED가 관리합니다. 본 개인정보 처리방침에서 ‘당사’, ‘당사를’ 및 ‘당사의’는 아래에 설명된 서비스를 통해 당사가 처리하는 개인정보의 관리자인 AIURSOFT LIMITED를 의미합니다.</value>
   </data>
   <data name="AnduinOS is committed to keeping your installation clean and telemetry-free by default." xml:space="preserve">
     <value>AnduinOS는 기본적으로 사용자의 설치 환경을 깨끗하게 유지하고 원격 측정 기능이 없도록 최선을 다하고 있습니다.</value>
@@ -216,15 +216,6 @@
   <data name="AnduinOS package-maintenance repository license" xml:space="preserve">
     <value>AnduinOS 패키지 유지 관리 저장소 라이선스</value>
   </data>
-  <data name="AnduinOS SimpleWeather packaging" xml:space="preserve">
-    <value>AnduinOS SimpleWeather 패키징</value>
-  </data>
-  <data name="AnduinOS Update Service" xml:space="preserve">
-    <value>안두인OS 업데이트 서비스</value>
-  </data>
-  <data name="AnduinOS Website &amp; APT Repository" xml:space="preserve">
-    <value>AnduinOS 웹사이트 및 APT 리포지토리</value>
-  </data>
   <data name="Because these packages are physically eradicated from the installation media, AnduinOS" xml:space="preserve">
     <value>이 패키지들이 설치 미디어에서 물리적으로 제거되기 때문에, AnduinOS는</value>
   </data>
@@ -240,11 +231,11 @@
   <data name="Cloudflare Data Processing Addendum" xml:space="preserve">
     <value>Cloudflare 데이터 처리 부속서</value>
   </data>
-  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
-    <value>Cloudflare는 당사 웹사이트, 패키지 다운로드 및 이미지 다운로드의 전송과 보안을 지원합니다. 이러한 서비스를 제공하는 과정에서 IP 주소와 요청 메타데이터를 처리합니다. 또한 호스팅에 Vultr를 사용합니다. 이러한 서비스를 운영하고 보호하는 담당 직원은 위에서 설명한 목적으로 웹사이트 로그를 사용합니다.</value>
-  </data>
   <data name="Cloudflare Privacy Policy" xml:space="preserve">
     <value>Cloudflare 개인정보처리방침</value>
+  </data>
+  <data name="Cloudflare helps deliver and protect our websites, package downloads, and image downloads. It processes IP addresses and request metadata when providing those services. We also use Vultr for hosting. Our personnel responsible for operating and securing these services use the website logs for the purposes described above." xml:space="preserve">
+    <value>Cloudflare는 당사 웹사이트, 패키지 다운로드 및 이미지 다운로드의 전송과 보안을 지원합니다. 이러한 서비스를 제공하는 과정에서 IP 주소와 요청 메타데이터를 처리합니다. 또한 호스팅에 Vultr를 사용합니다. 이러한 서비스를 운영하고 보호하는 담당 직원은 위에서 설명한 목적으로 웹사이트 로그를 사용합니다.</value>
   </data>
   <data name="Community:" xml:space="preserve">
     <value>커뮤니티:</value>
@@ -264,17 +255,8 @@
   <data name="Depending on the law applicable to you and the processing concerned, you may have the right to:" xml:space="preserve">
     <value>귀하에게 적용되는 법률과 해당 처리의 내용에 따라 다음과 같은 권리를 행사할 수 있습니다:</value>
   </data>
-  <data name="disabled by default" xml:space="preserve">
-    <value>기본적으로 비활성화됨</value>
-  </data>
-  <data name="does not participate" xml:space="preserve">
-    <value>참여하지 않습니다</value>
-  </data>
   <data name="Email:" xml:space="preserve">
     <value>이메일:</value>
-  </data>
-  <data name="entirely on your computer" xml:space="preserve">
-    <value>완전히 사용자의 컴퓨터에서</value>
   </data>
   <data name="Explanation:" xml:space="preserve">
     <value>설명:</value>
@@ -282,20 +264,17 @@
   <data name="Firefox" xml:space="preserve">
     <value>Firefox</value>
   </data>
+  <data name="Firefox Privacy Notice" xml:space="preserve">
+    <value>Firefox 개인정보 처리방침</value>
+  </data>
   <data name="Firefox daily usage ping settings" xml:space="preserve">
     <value>Firefox 일일 사용량 핑 설정</value>
   </data>
   <data name="Firefox is provided by Mozilla and has its own data collection settings. Depending on its version, settings and any applicable consent requirements, it may send technical and interaction data or daily usage pings to Mozilla. You can review and manage these options in Firefox&apos;s privacy settings." xml:space="preserve">
     <value>Firefox는 Mozilla에서 제공하며 자체 데이터 수집 설정을 갖추고 있습니다. 버전, 설정 및 적용되는 동의 요구 사항에 따라 기술 및 상호작용 데이터 또는 일일 사용량 핑을 Mozilla로 전송할 수 있습니다. 이러한 옵션은 Firefox의 개인정보 보호 설정에서 검토하고 관리할 수 있습니다.</value>
   </data>
-  <data name="Firefox Privacy Notice" xml:space="preserve">
-    <value>Firefox 개인정보 처리방침</value>
-  </data>
   <data name="Firefox technical and interaction data settings" xml:space="preserve">
     <value>Firefox 기술 및 상호작용 데이터 설정</value>
-  </data>
-  <data name="for details." xml:space="preserve">
-    <value>자세한 내용은</value>
   </data>
   <data name="For general community discussion, you can use our public discussion forum. Please use email for requests involving personal information." xml:space="preserve">
     <value>일반적인 커뮤니티 논의는 공개 토론 포럼을 이용해 주세요. 개인정보와 관련된 요청은 이메일로 보내 주세요.</value>
@@ -321,9 +300,6 @@
   <data name="GNU General Public License v3.0 (GPL-v3)" xml:space="preserve">
     <value>GNU 일반 공중 라이선스 v3.0 (GPL-v3)</value>
   </data>
-  <data name="here" xml:space="preserve">
-    <value>여기</value>
-  </data>
   <data name="However, if you manually install packages from Ubuntu repositories or enable certain Ubuntu-specific features, some of these telemetry mechanisms may be introduced." xml:space="preserve">
     <value>하지만, Ubuntu 저장소에서 패키지를 수동으로 설치하거나 Ubuntu 전용 기능을 활성화하는 경우 이러한 원격 측정 메커니즘 중 일부가 도입될 수 있습니다.</value>
   </data>
@@ -348,9 +324,6 @@
   <data name="In a world where remote telemetry has become ubiquitous, AnduinOS deliberately minimizes external dependencies to protect users." xml:space="preserve">
     <value>원격 원격 측정이 보편화된 세상에서 AnduinOS는 사용자를 보호하기 위해 의도적으로 외부 의존성을 최소화합니다.</value>
   </data>
-  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
-    <value>임의의 시스템 리포팅, 사용 통계 제출 또는 자동 충돌 리포팅에 참여하지 않습니다.</value>
-  </data>
   <data name="Inspect the current package policy and image assertions" xml:space="preserve">
     <value>현재 패키지 정책 및 이미지 어설션 확인</value>
   </data>
@@ -359,9 +332,6 @@
   </data>
   <data name="Introduction" xml:space="preserve">
     <value>소개</value>
-  </data>
-  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
-    <value>이는 광범위한 업스트림 오픈 소스 소프트웨어를 통합합니다.</value>
   </data>
   <data name="It merely redistributes them in their original, unmodified state." xml:space="preserve">
     <value>단순히 원본 그대로의 상태로 재배포할 뿐입니다.</value>
@@ -390,23 +360,11 @@
   <data name="Local execution means that most features and services of AnduinOS are performed" xml:space="preserve">
     <value>로컬 실행은 AnduinOS의 대부분의 기능과 서비스가 수행됨을 의미합니다</value>
   </data>
-  <data name="maintained in spare time by volunteers." xml:space="preserve">
-    <value>자원봉사자들이 여가 시간에 유지보수합니다.</value>
-  </data>
-  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
-    <value>이러한 업스트림 구성 요소를 수정, 개선하거나 추가적인 원격 측정 기능을 도입하지 않습니다.</value>
-  </data>
   <data name="No data leaves your machine without your explicit action or for essential functionality." xml:space="preserve">
     <value>사용자의 명시적인 조치 없이 또는 필수 기능을 위해 사용자의 데이터가 기기를 벗어나지 않습니다.</value>
   </data>
   <data name="No data leaves your machine without your explicit action." xml:space="preserve">
     <value>사용자의 명시적인 동작 없이는 어떤 데이터도 기기에서 유출되지 않습니다.</value>
-  </data>
-  <data name="not" xml:space="preserve">
-    <value>아니요</value>
-  </data>
-  <data name="not used for telemetry" xml:space="preserve">
-    <value>텔리메트리에 사용되지 않습니다</value>
   </data>
   <data name="Notably:" xml:space="preserve">
     <value>특히:</value>
@@ -420,23 +378,14 @@
   <data name="Operating-system images are delivered through cf.anduinos.com using Cloudflare&apos;s storage and delivery services. Downloading an image or a package requires a network connection, and the providers handling that request receive connection metadata. Visiting a download page on our website is subject to the website logging described above." xml:space="preserve">
     <value>운영체제 이미지는 Cloudflare의 저장소 및 배포 서비스를 사용하여 cf.anduinos.com을 통해 전달됩니다. 이미지나 패키지를 다운로드하려면 네트워크 연결이 필요하며, 해당 요청을 처리하는 제공자는 연결 메타데이터를 수신합니다. 저희 웹사이트의 다운로드 페이지 방문은前述의 웹사이트 로깅에 적용됩니다.</value>
   </data>
-  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
-    <value>또는 이 서비스가 사용하는 기상 데이터 제공업체의 개인정보 보호 관행도 통제할 수 없습니다. 이러한 서비스에 연결하면 필연적으로 귀하의 IP 주소가 해당 업체에 노출됩니다.</value>
-  </data>
-  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
-    <value>또는 날씨 제공업체에 노출됩니다. 이 기능을 활성화하면 IP 주소가 해당 업체에 공개됩니다.</value>
-  </data>
-  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
-    <value>Ubuntu, Debian, GNOME, Flathub 및 기타 소스에서 유래한</value>
-  </data>
   <data name="Our account-enabled websites and online services use a shared identity provider to support single sign-on. When you sign in to these services, the identity provider and the service you access may exchange the account identifiers and authentication information necessary to establish and maintain your session. This information is used for authentication and account management, not for operating-system telemetry." xml:space="preserve">
     <value>계정 기능을 제공하는 당사 웹사이트와 온라인 서비스는 통합 로그인을 지원하기 위해 공통 ID 공급자를 사용합니다. 이러한 서비스에 로그인하면 ID 공급자와 이용 중인 서비스가 세션을 설정하고 유지하는 데 필요한 계정 식별자와 인증 정보를 주고받을 수 있습니다. 이 정보는 인증 및 계정 관리에 사용되며, 운영 체제 원격 측정에는 사용되지 않습니다.</value>
   </data>
-  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
-    <value>자동화된 이미지 테스트에서는 실행 환경의 설치된 패키지 데이터베이스와 설치된 시스템을 유지 관리되는 금지 패키지 및 패키지 이름 패턴 목록과 대조합니다. 금지된 패키지가 있으면 검사가 실패합니다. 이 목록에는 ubuntu-report, popularity-contest, apport, whoopsie, snapd 및 Ubuntu Pro 구성 요소와 같은 일부 보고 및 백그라운드 서비스 패키지가 포함됩니다.</value>
-  </data>
   <data name="Our automated ISO build pipeline enforces a" xml:space="preserve">
     <value>당사의 자동화된 ISO 빌드 파이프라인은 ...을 적용합니다.</value>
+  </data>
+  <data name="Our automated image tests check the installed package database in the live environment and the installed system against a maintained list of prohibited packages and package-name patterns. The check fails if a prohibited package is present. The list includes selected reporting and background-service packages, such as ubuntu-report, popularity-contest, apport, whoopsie, snapd, and Ubuntu Pro components." xml:space="preserve">
+    <value>자동화된 이미지 테스트에서는 실행 환경의 설치된 패키지 데이터베이스와 설치된 시스템을 유지 관리되는 금지 패키지 및 패키지 이름 패턴 목록과 대조합니다. 금지된 패키지가 있으면 검사가 실패합니다. 이 목록에는 ubuntu-report, popularity-contest, apport, whoopsie, snapd 및 Ubuntu Pro 구성 요소와 같은 일부 보고 및 백그라운드 서비스 패키지가 포함됩니다.</value>
   </data>
   <data name="Our company is based in Hong Kong and our providers operate internationally. Personal data processed through these services, including connection metadata, account information, and correspondence, may be processed outside your country, including outside the European Economic Area or the United Kingdom. Cloudflare describes its international processing and transfer safeguards, including standard contractual clauses where applicable, in its privacy policy and Data Processing Addendum. You can contact us for information about the transfers relevant to your data." xml:space="preserve">
     <value>당사는 홍콩에 소재하며 서비스 제공업체들은 여러 국가에서 운영됩니다. 연결 메타데이터, 계정 정보 및 서신을 포함하여 이러한 서비스를 통해 처리되는 개인정보는 귀하의 국가 외부에서, 유럽경제지역 또는 영국 외부를 포함하여 처리될 수 있습니다. Cloudflare는 개인정보 처리방침과 데이터 처리 부록에서 해당되는 경우 표준 계약 조항을 포함한 국제적 처리 및 이전 보호 조치를 설명합니다. 귀하의 데이터와 관련된 이전에 대한 정보가 필요하시면 당사에 문의하실 수 있습니다.</value>
@@ -449,12 +398,6 @@
   </data>
   <data name="Package Updates and Image Downloads" xml:space="preserve">
     <value>패키지 업데이트 및 이미지 다운로드</value>
-  </data>
-  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
-    <value>각각의 상위 스트림(upstream) 개인정보 처리방침을 참조해 주시기 바랍니다.</value>
-  </data>
-  <data name="popularity-contest" xml:space="preserve">
-    <value>인기 투표</value>
   </data>
   <data name="Privacy Guarantee:" xml:space="preserve">
     <value>개인정보 보호 보장:</value>
@@ -519,14 +462,11 @@
   <data name="Some upstream components may have independent data collection mechanisms." xml:space="preserve">
     <value>일부 상위 구성 요소는 독립적인 데이터 수집 메커니즘을 가질 수 있습니다.</value>
   </data>
-  <data name="source" xml:space="preserve">
-    <value>개인정보 처리방침</value>
-  </data>
-  <data name="such as:" xml:space="preserve">
-    <value>예를 들어:</value>
-  </data>
   <data name="The AnduinOS build and package-maintenance repositories publish our code under GPLv3, except where a different license is stated. Third-party components retain their respective licenses. Including them in the distribution does not place the entire operating system under one license; permissions to use, modify, and redistribute each component follow its applicable terms." xml:space="preserve">
     <value>AnduinOS 빌드 및 패키지 유지 관리 저장소는 별도의 라이선스가 명시된 경우를 제외하고 GPLv3에 따라 코드를 공개합니다. 타사 구성 요소에는 각 구성 요소의 라이선스가 그대로 적용됩니다. 이러한 구성 요소를 배포판에 포함한다고 해서 운영 체제 전체에 하나의 라이선스가 적용되는 것은 아닙니다. 각 구성 요소의 사용, 수정 및 재배포 권한은 해당 구성 요소에 적용되는 라이선스 조건을 따릅니다.</value>
+  </data>
+  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
+    <value>AnduinOS에서는 SimpleWeather 데스크톱 확장 프로그램이 기본적으로 비활성화되어 있습니다. 날씨 기능을 활성화하면 IP 기반 위치 확인, 위치 검색 및 일기 예보를 위해 타사 서비스에 연결할 수 있습니다. 서비스 제공업체는 연결에 사용된 IP 주소와 위치 검색어 또는 좌표와 같이 요청에 필요한 정보를 받습니다.</value>
   </data>
   <data name="The extension must connect to" xml:space="preserve">
     <value>확장 프로그램이 연결해야 합니다.</value>
@@ -536,9 +476,6 @@
   </data>
   <data name="The providers and requests depend on the extension version, the AnduinOS configuration, and your settings. Review the available providers and location settings in the extension&apos;s preferences, together with the providers&apos; privacy policies. The upstream source and our packaging are available for inspection:" xml:space="preserve">
     <value>제공업체와 요청 내용은 확장 프로그램 버전, AnduinOS 구성 및 사용자 설정에 따라 달라집니다. 확장 프로그램 환경설정에서 이용 가능한 제공업체와 위치 설정을 확인하고, 각 제공업체의 개인정보 처리방침도 함께 검토하세요. 업스트림 소스 코드와 AnduinOS 패키징은 다음에서 확인할 수 있습니다:</value>
-  </data>
-  <data name="The SimpleWeather desktop extension is disabled by default in AnduinOS. If you enable weather features, they may contact third-party services for IP-based geolocation, location search, and weather forecasts. Providers receive the IP address used to connect and the information needed for the request, such as a location query or coordinates." xml:space="preserve">
-    <value>AnduinOS에서는 SimpleWeather 데스크톱 확장 프로그램이 기본적으로 비활성화되어 있습니다. 날씨 기능을 활성화하면 IP 기반 위치 확인, 위치 검색 및 일기 예보를 위해 타사 서비스에 연결할 수 있습니다. 서비스 제공업체는 연결에 사용된 IP 주소와 위치 검색어 또는 좌표와 같이 요청에 필요한 정보를 받습니다.</value>
   </data>
   <data name="There are no hidden background processes or network communications initiated by the system for the purpose of gathering user information." xml:space="preserve">
     <value>사용자 정보 수집을 목적으로 시스템에서 시작되는 숨겨진 백그라운드 프로세스나 네트워크 통신이 없습니다.</value>
@@ -554,9 +491,6 @@
   </data>
   <data name="These logs include IP addresses, request timestamps, requested URLs, browser information, response status, response sizes, and processing times. We use them for service monitoring, automated alerts, attack detection and defense, troubleshooting, and performance diagnosis." xml:space="preserve">
     <value>이 로그에는 IP 주소, 요청 시각, 요청된 URL, 브라우저 정보, 응답 상태, 응답 크기 및 처리 시간이 포함됩니다. 당사는 서비스 모니터링, 자동 알림, 공격 탐지 및 방어, 문제 해결, 성능 진단을 위해 이 로그를 사용합니다.</value>
-  </data>
-  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
-    <value>나중에 이 패키지들을 설치하면 Canonical의 정책에 따라 해당 원격 측정 기능이 활성화됩니다.</value>
   </data>
   <data name="These records describe requests to our websites. They do not give us access to your files or report your activity elsewhere on your computer. Ordinary use of AnduinOS does not send us operating-system telemetry." xml:space="preserve">
     <value>이 기록은 당사 웹사이트에 대한 요청을 나타냅니다. 이 기록을 통해 당사가 귀하의 파일에 접근하거나 컴퓨터의 다른 곳에서 이루어지는 활동을 파악할 수 있는 것은 아닙니다. AnduinOS를 일반적으로 사용한다고 해서 운영체제 원격 측정 데이터가 당사에 전송되지는 않습니다.</value>
@@ -600,17 +534,8 @@
   <data name="To deliver these files globally with low latency, the traffic is routed through Cloudflare&apos;s Content Delivery Network (CDN). As with any standard web request, your IP address is exposed to the CDN strictly for routing and security (DDoS protection) purposes. We do not log or analyze your web browsing or update requests." xml:space="preserve">
     <value>이 파일들을 전 세계적으로 저지연으로 제공하기 위해 트래픽은 Cloudflare의 콘텐츠 전송 네트워크(CDN)를 통해 라우팅됩니다. 표준 웹 요청과 마찬가지로 사용자의 IP 주소는 라우팅 및 보안(DDoS 보호) 목적으로만 CDN에 노출됩니다. 당사는 사용자의 웹 브라우징이나 업데이트 요청을 기록하거나 분석하지 않습니다.</value>
   </data>
-  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
-    <value>IP 주소를 기반으로 위치를 확인하고, 제3자 날씨 제공업체로부터 예측 데이터를 받기 위해 사용합니다.</value>
-  </data>
-  <data name="to determine your location based on your IP address." xml:space="preserve">
-    <value>귀하의 IP 주소를 기반으로 위치를 확인하기 위해</value>
-  </data>
   <data name="To ensure full opt-out, you can review and, if necessary, remove these packages using:" xml:space="preserve">
     <value>완전한 옵트아웃을 보장하기 위해, 필요한 경우 다음 명령을 사용하여 해당 패키지를 검토하고 제거할 수 있습니다:</value>
-  </data>
-  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
-    <value>숨겨진 원격 측정 기능이 포함되지 않았는지 확인했지만, 우리는 다음 서비스의 개인정보 처리 방법을 통제할 수 없습니다.</value>
   </data>
   <data name="To provide our official website (" xml:space="preserve">
     <value>공식 웹사이트(</value>
@@ -690,11 +615,86 @@
   <data name="You retain complete control over your personal data." xml:space="preserve">
     <value>귀하는 개인 데이터에 대한 완전한 통제권을 유지합니다.</value>
   </data>
+  <data name="Your Rights" xml:space="preserve">
+    <value>귀하의 권리</value>
+  </data>
   <data name="Your files, settings, and local system logs are stored on your device as part of normal operation. This local storage does not mean that those records are sent to us. If you choose to send us a bug report, support request, or other information, we receive what you submit." xml:space="preserve">
     <value>일반적인 작동 과정에서 파일, 설정 및 로컬 시스템 로그는 기기에 저장됩니다. 이러한 로컬 저장이 해당 기록을 당사에 전송한다는 의미는 아닙니다. 버그 보고서, 지원 요청 또는 기타 정보를 당사에 보내기로 선택하면 제출하신 내용을 당사가 받게 됩니다.</value>
   </data>
-  <data name="Your Rights" xml:space="preserve">
-    <value>귀하의 권리</value>
+  <data name="and confirmed it contains no telemetry." xml:space="preserve">
+    <value>텔레메트리가 포함되어 있지 않음을 확인했습니다.</value>
+  </data>
+  <data name="and does not share any information with governments, corporations, or any third parties." xml:space="preserve">
+    <value>그리고 정부, 기업 또는 제3자와 어떠한 정보도 공유하지 않습니다.</value>
+  </data>
+  <data name="disabled by default" xml:space="preserve">
+    <value>기본적으로 비활성화됨</value>
+  </data>
+  <data name="does not participate" xml:space="preserve">
+    <value>참여하지 않습니다</value>
+  </data>
+  <data name="entirely on your computer" xml:space="preserve">
+    <value>완전히 사용자의 컴퓨터에서</value>
+  </data>
+  <data name="for details." xml:space="preserve">
+    <value>자세한 내용은</value>
+  </data>
+  <data name="here" xml:space="preserve">
+    <value>여기</value>
+  </data>
+  <data name="in any system reporting, usage statistics submission, or automated crash reporting." xml:space="preserve">
+    <value>임의의 시스템 리포팅, 사용 통계 제출 또는 자동 충돌 리포팅에 참여하지 않습니다.</value>
+  </data>
+  <data name="it integrates a wide range of upstream open-source software" xml:space="preserve">
+    <value>이는 광범위한 업스트림 오픈 소스 소프트웨어를 통합합니다.</value>
+  </data>
+  <data name="maintained in spare time by volunteers." xml:space="preserve">
+    <value>자원봉사자들이 여가 시간에 유지보수합니다.</value>
+  </data>
+  <data name="modify, enhance, or introduce additional telemetry into these upstream components." xml:space="preserve">
+    <value>이러한 업스트림 구성 요소를 수정, 개선하거나 추가적인 원격 측정 기능을 도입하지 않습니다.</value>
+  </data>
+  <data name="not" xml:space="preserve">
+    <value>아니요</value>
+  </data>
+  <data name="not used for telemetry" xml:space="preserve">
+    <value>텔리메트리에 사용되지 않습니다</value>
+  </data>
+  <data name="or any weather data providers it uses. Connecting to these services will necessarily expose your IP address to them." xml:space="preserve">
+    <value>또는 이 서비스가 사용하는 기상 데이터 제공업체의 개인정보 보호 관행도 통제할 수 없습니다. 이러한 서비스에 연결하면 필연적으로 귀하의 IP 주소가 해당 업체에 노출됩니다.</value>
+  </data>
+  <data name="or the weather providers. Enabling this feature will expose your IP address to them." xml:space="preserve">
+    <value>또는 날씨 제공업체에 노출됩니다. 이 기능을 활성화하면 IP 주소가 해당 업체에 공개됩니다.</value>
+  </data>
+  <data name="originating from Ubuntu, Debian, GNOME, Flathub, and other sources." xml:space="preserve">
+    <value>Ubuntu, Debian, GNOME, Flathub 및 기타 소스에서 유래한</value>
+  </data>
+  <data name="please refer to their respective upstream privacy policies." xml:space="preserve">
+    <value>각각의 상위 스트림(upstream) 개인정보 처리방침을 참조해 주시기 바랍니다.</value>
+  </data>
+  <data name="popularity-contest" xml:space="preserve">
+    <value>인기 투표</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>개인정보 처리방침</value>
+  </data>
+  <data name="such as:" xml:space="preserve">
+    <value>예를 들어:</value>
+  </data>
+  <data name="these packages later, their respective telemetry mechanisms will be activated according to Canonical&apos;s policies." xml:space="preserve">
+    <value>나중에 이 패키지들을 설치하면 Canonical의 정책에 따라 해당 원격 측정 기능이 활성화됩니다.</value>
+  </data>
+  <data name="to determine your location based on your IP address, and to third-party weather providers for forecasting data." xml:space="preserve">
+    <value>IP 주소를 기반으로 위치를 확인하고, 제3자 날씨 제공업체로부터 예측 데이터를 받기 위해 사용합니다.</value>
+  </data>
+  <data name="to determine your location based on your IP address." xml:space="preserve">
+    <value>귀하의 IP 주소를 기반으로 위치를 확인하기 위해</value>
+  </data>
+  <data name="to ensure it contains no hidden telemetry, we cannot control the privacy practices of" xml:space="preserve">
+    <value>숨겨진 원격 측정 기능이 포함되지 않았는지 확인했지만, 우리는 다음 서비스의 개인정보 처리 방법을 통제할 수 없습니다.</value>
+  </data>
+  <data name="—if any of the following Canonical telemetry or background packages are detected during the build process, the build is immediately aborted and rejected:" xml:space="preserve">
+    <value>—빌드 과정에서 다음 Canonical 원격 분석 또는 백그라운드 패키지 중 하나라도 감지되면 빌드가 즉시 중단되고 거부됩니다:</value>
   </data>
 
 </root>

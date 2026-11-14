@@ -45,14 +45,17 @@
   <data name="Project Name" xml:space="preserve">
     <value>Projektname</value>
   </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Die ICP-Lizenznummer für Nutzer in der VR China. Leer lassen, um sie auszublenden.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Der OpenAI-kompatible Chat-Completions-Endpunkt für die Übersetzung von Hardwareinhalten. Muss die vollständige URL einschließlich /v1/chat/completions sein. Leer lassen, um die automatische Übersetzung zu deaktivieren.</value>
+  </data>
   <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
     <value>Das Bearer-Token für den Übersetzungsendpunkt. Leer lassen, wenn für den Endpunkt keine Authentifizierung erforderlich ist.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Der Markenname, der im Footer angezeigt wird.</value>
-  </data>
-  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
-    <value>Die ICP-Lizenznummer für Nutzer in der VR China. Leer lassen, um sie auszublenden.</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Das Logo des Projekts wird in der Navigationsleiste und im Footer angezeigt. Unterstützt jpg, png, svg.</value>
@@ -62,9 +65,6 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Der Name des Projekts, der im Frontend angezeigt wird.</value>
-  </data>
-  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
-    <value>Der OpenAI-kompatible Chat-Completions-Endpunkt für die Übersetzung von Hardwareinhalten. Muss die vollständige URL einschließlich /v1/chat/completions sein. Leer lassen, um die automatische Übersetzung zu deaktivieren.</value>
   </data>
   <data name="Translation API Token" xml:space="preserve">
     <value>Übersetzungs-API-Token</value>

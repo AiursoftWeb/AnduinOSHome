@@ -45,14 +45,17 @@
   <data name="Project Name" xml:space="preserve">
     <value>Όνομα Έργου</value>
   </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Ο αριθμός άδειας ICP για χρήστες της κύριας Κίνας. Αφήστε κενό για να κρυφτεί.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Το συμβατό με το OpenAI endpoint συνομιλιών για τη μετάφραση υλικού. Πρέπει να είναι το πλήρες URL, συμπεριλαμβανομένου του /v1/chat/completions. Αφήστε το κενό για να απενεργοποιήσετε την αυτόματη μετάφραση.</value>
+  </data>
   <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
     <value>Το διακριτικό Bearer για το τελικό σημείο μετάφρασης. Αφήστε το κενό αν το τελικό σημείο δεν απαιτεί έλεγχο ταυτότητας.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Το όνομα της εταιρείας που εμφανίζεται στον ποδόσκαλο.</value>
-  </data>
-  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
-    <value>Ο αριθμός άδειας ICP για χρήστες της κύριας Κίνας. Αφήστε κενό για να κρυφτεί.</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Το λογότυπο του έργου που εμφανίζεται στην ναβιγατόρια και τον ποδόσκαλο. Υποστηρίζει jpg, png, svg.</value>
@@ -62,9 +65,6 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Το όνομα του έργου που εμφανίζεται στην εμφάνιση της εφαρμογής.</value>
-  </data>
-  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
-    <value>Το συμβατό με το OpenAI endpoint συνομιλιών για τη μετάφραση υλικού. Πρέπει να είναι το πλήρες URL, συμπεριλαμβανομένου του /v1/chat/completions. Αφήστε το κενό για να απενεργοποιήσετε την αυτόματη μετάφραση.</value>
   </data>
   <data name="Translation API Token" xml:space="preserve">
     <value>Διακριτικό API μετάφρασης</value>

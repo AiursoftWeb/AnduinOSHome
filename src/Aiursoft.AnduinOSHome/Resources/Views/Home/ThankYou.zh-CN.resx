@@ -27,14 +27,14 @@
   <data name=". If they match, your ISO is valid." xml:space="preserve">
     <value>如果一致，则说明您的 ISO 文件有效。</value>
   </data>
-  <data name="~2.38 GB ISO" xml:space="preserve">
-    <value>约 2.38 GB ISO</value>
-  </data>
   <data name="1. Verify the checksum" xml:space="preserve">
     <value>1. 校验校验和</value>
   </data>
   <data name="2. Create a bootable USB drive" xml:space="preserve">
     <value>2. 制作可启动的 USB 驱动器</value>
+  </data>
+  <data name="After Installation" xml:space="preserve">
+    <value>安装完成后</value>
   </data>
   <data name="After downloading the ISO file, verify its integrity to ensure it has not been tampered with." xml:space="preserve">
     <value>下载 ISO 文件后，请验证其完整性以确保文件未被篡改。</value>
@@ -42,23 +42,17 @@
   <data name="After downloading, you may want to learn how to" xml:space="preserve">
     <value>下载完成后，您可能需要了解如何</value>
   </data>
-  <data name="After Installation" xml:space="preserve">
-    <value>安装完成后</value>
-  </data>
-  <data name="and" xml:space="preserve">
-    <value>以及</value>
-  </data>
   <data name="AnduinOS" xml:space="preserve">
     <value>AnduinOS</value>
   </data>
   <data name="AnduinOS Installer" xml:space="preserve">
     <value>AnduinOS 安装程序</value>
   </data>
-  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
-    <value>AnduinOS 由社区支持。您的捐赠有助于保持开发的活跃和独立。</value>
-  </data>
   <data name="AnduinOS Main screenshot" xml:space="preserve">
     <value>AnduinOS 主截图</value>
+  </data>
+  <data name="AnduinOS is community-supported. Your donation helps keep development active and independent." xml:space="preserve">
+    <value>AnduinOS 由社区支持。您的捐赠有助于保持开发的活跃和独立。</value>
   </data>
   <data name="Backup" xml:space="preserve">
     <value>备份</value>
@@ -90,9 +84,6 @@
   <data name="Browse the full documentation for detailed guides, tips, and troubleshooting." xml:space="preserve">
     <value>浏览完整文档，获取详细指南、技巧及故障排除方法。</value>
   </data>
-  <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>将ISO镜像烧录到U盘</value>
-  </data>
   <data name="Change LBA size to 4K for optimal performance" xml:space="preserve">
     <value>将 LBA 大小更改为 4K 以获得最佳性能</value>
   </data>
@@ -107,9 +98,6 @@
   </data>
   <data name="Click &quot;Flash from file&quot; and select the AnduinOS ISO." xml:space="preserve">
     <value>点击“从文件写入”并选择 AnduinOS ISO。</value>
-  </data>
-  <data name="click here" xml:space="preserve">
-    <value>点击此处</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>关闭</value>
@@ -135,17 +123,11 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>跨平台、安全的 ISO 写入工具</value>
   </data>
-  <data name="dd mode" xml:space="preserve">
-    <value>dd 模式</value>
-  </data>
   <data name="Documentation" xml:space="preserve">
     <value>文档</value>
   </data>
   <data name="Donate" xml:space="preserve">
     <value>捐赠</value>
-  </data>
-  <data name="Download and install" xml:space="preserve">
-    <value>下载并安装</value>
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>三步下载 AnduinOS</value>
@@ -153,23 +135,26 @@
   <data name="Download Etcher" xml:space="preserve">
     <value>下载 Etcher</value>
   </data>
-  <data name="Download qBittorrent for Windows" xml:space="preserve">
-    <value>下载 Windows 版 qBittorrent</value>
-  </data>
   <data name="Download Rufus" xml:space="preserve">
     <value>下载 Rufus</value>
   </data>
   <data name="Download Started" xml:space="preserve">
     <value>下载已开始</value>
   </data>
-  <data name="Download the ISO" xml:space="preserve">
-    <value>下载 ISO 镜像</value>
-  </data>
   <data name="Download Transmission for macOS" xml:space="preserve">
     <value>下载适用于 macOS 的 Transmission</value>
   </data>
   <data name="Download Ventoy" xml:space="preserve">
     <value>下载 Ventoy</value>
+  </data>
+  <data name="Download and install" xml:space="preserve">
+    <value>下载并安装</value>
+  </data>
+  <data name="Download qBittorrent for Windows" xml:space="preserve">
+    <value>下载 Windows 版 qBittorrent</value>
+  </data>
+  <data name="Download the ISO" xml:space="preserve">
+    <value>下载 ISO 镜像</value>
   </data>
   <data name="Download with BitTorrent" xml:space="preserve">
     <value>使用 BitTorrent 下载</value>
@@ -222,6 +207,9 @@
   <data name="Get qBittorrent for Linux" xml:space="preserve">
     <value>获取适用于 Linux 的 qBittorrent</value>
   </data>
+  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
+    <value>ISO 模式可能导致 AnduinOS 无法启动。</value>
+  </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>如果您是AnduinOS的新用户，可能还需要查看</value>
   </data>
@@ -255,12 +243,6 @@
   <data name="Install qBittorrent from your distribution&apos;s software center or download it from the official website, then open the downloaded .torrent file." xml:space="preserve">
     <value>从您发行版的软件中心安装 qBittorrent，或从官方网站下载，然后打开已下载的 .torrent 文件。</value>
   </data>
-  <data name="instead of ISO mode." xml:space="preserve">
-    <value>而非 ISO 模式。</value>
-  </data>
-  <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
-    <value>ISO 模式可能导致 AnduinOS 无法启动。</value>
-  </data>
   <data name="Join the Discussion" xml:space="preserve">
     <value>参与讨论</value>
   </data>
@@ -276,38 +258,29 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
-  <data name="macOS" xml:space="preserve">
-    <value>macOS</value>
-  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>多 ISO、可重复使用的 USB 解决方案</value>
-  </data>
-  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
-    <value>无需反复刷写或擦除！</value>
   </data>
   <data name="NVMe SSD?" xml:space="preserve">
     <value>NVMe SSD？</value>
   </data>
-  <data name="official SHA256 checksum" xml:space="preserve">
-    <value>官方 SHA256 校验和</value>
+  <data name="No repeated flashing or erasing needed!" xml:space="preserve">
+    <value>无需反复刷写或擦除！</value>
   </data>
   <data name="Open Source" xml:space="preserve">
     <value>开源</value>
   </data>
-  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
-    <value>使用您的 BitTorrent 客户端打开新下载的 AnduinOS .torrent 文件。</value>
-  </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>打开 Torrent 文件</value>
+  </data>
+  <data name="Open the newly downloaded AnduinOS .torrent file with your BitTorrent client." xml:space="preserve">
+    <value>使用您的 BitTorrent 客户端打开新下载的 AnduinOS .torrent 文件。</value>
   </data>
   <data name="Opening the AnduinOS Torrent file in qBittorrent" xml:space="preserve">
     <value>在 qBittorrent 中打开 AnduinOS 的 Torrent 文件</value>
   </data>
   <data name="Optional Pre-installation Steps" xml:space="preserve">
     <value>可选的安装前步骤</value>
-  </data>
-  <data name="or" xml:space="preserve">
-    <value>或</value>
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>或使用命令行：</value>
@@ -327,23 +300,17 @@
   <data name="Press your manufacturer&apos;s boot menu key immediately." xml:space="preserve">
     <value>请立即按下您设备制造商的启动菜单键。</value>
   </data>
-  <data name="qBittorrent" xml:space="preserve">
-    <value>qBittorrent</value>
-  </data>
-  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
-    <value>qBittorrent 是一款免费、开源的 BitTorrent 客户端，不含广告。安装后，打开下载的 .torrent 文件即可。</value>
-  </data>
   <data name="Read the dual-boot guide first" xml:space="preserve">
     <value>请先阅读双系统安装指南</value>
   </data>
   <data name="Recommended for Linux" xml:space="preserve">
     <value>推荐用于 Linux</value>
   </data>
-  <data name="Recommended for macOS" xml:space="preserve">
-    <value>macOS 推荐</value>
-  </data>
   <data name="Recommended for Windows" xml:space="preserve">
     <value>Windows 推荐</value>
+  </data>
+  <data name="Recommended for macOS" xml:space="preserve">
+    <value>macOS 推荐</value>
   </data>
   <data name="Report a problem" xml:space="preserve">
     <value>报告问题</value>
@@ -396,11 +363,11 @@
   <data name="Switch Language" xml:space="preserve">
     <value>切换语言</value>
   </data>
-  <data name="System requirement" xml:space="preserve">
-    <value>系统要求</value>
-  </data>
   <data name="System Updates" xml:space="preserve">
     <value>系统更新</value>
+  </data>
+  <data name="System requirement" xml:space="preserve">
+    <value>系统要求</value>
   </data>
   <data name="Take a look at documentation, you may find your answers there." xml:space="preserve">
     <value>查阅文档，您可能会在那里找到答案。</value>
@@ -420,9 +387,6 @@
   <data name="The small .torrent file contains download instructions, not the AnduinOS ISO itself. Install a client, then open the file to download the ISO." xml:space="preserve">
     <value>小的 .torrent 文件包含的是下载说明，而非 AnduinOS ISO 镜像本身。请安装客户端，然后打开该文件以下载 ISO。</value>
   </data>
-  <data name="to your USB drive." xml:space="preserve">
-    <value>到您的 USB 驱动器。</value>
-  </data>
   <data name="Transmission" xml:space="preserve">
     <value>Transmission</value>
   </data>
@@ -438,20 +402,17 @@
   <data name="Update Your System" xml:space="preserve">
     <value>更新您的系统</value>
   </data>
-  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
-    <value>请使用 dd 模式，而非 ISO 模式！</value>
-  </data>
   <data name="Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it." xml:space="preserve">
     <value>使用 Deja Dup 将数据自动加密备份到外部驱动器或云存储。只需设置一次，便可一劳永逸。</value>
+  </data>
+  <data name="Use dd mode, not ISO mode!" xml:space="preserve">
+    <value>请使用 dd 模式，而非 ISO 模式！</value>
   </data>
   <data name="Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click." xml:space="preserve">
     <value>使用欢迎中心一键安装 NVIDIA 驱动程序、Xbox 控制器支持以及其他硬件驱动程序。</value>
   </data>
   <data name="Verify ISO checksum" xml:space="preserve">
     <value>验证 ISO 校验和</value>
-  </data>
-  <data name="verify the checksum" xml:space="preserve">
-    <value>验证校验和</value>
   </data>
   <data name="Verify the ISO" xml:space="preserve">
     <value>验证 ISO 文件</value>
@@ -485,6 +446,45 @@
   </data>
   <data name="Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes." xml:space="preserve">
     <value>您的 AnduinOS 之旅由此开始。请按照以下步骤操作，30 分钟内即可上手使用。</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>以及</value>
+  </data>
+  <data name="burn the ISO to a USB drive" xml:space="preserve">
+    <value>将ISO镜像烧录到U盘</value>
+  </data>
+  <data name="click here" xml:space="preserve">
+    <value>点击此处</value>
+  </data>
+  <data name="dd mode" xml:space="preserve">
+    <value>dd 模式</value>
+  </data>
+  <data name="instead of ISO mode." xml:space="preserve">
+    <value>而非 ISO 模式。</value>
+  </data>
+  <data name="macOS" xml:space="preserve">
+    <value>macOS</value>
+  </data>
+  <data name="official SHA256 checksum" xml:space="preserve">
+    <value>官方 SHA256 校验和</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>或</value>
+  </data>
+  <data name="qBittorrent" xml:space="preserve">
+    <value>qBittorrent</value>
+  </data>
+  <data name="qBittorrent is a free, open-source BitTorrent client without advertisements. Install it, then open the downloaded .torrent file." xml:space="preserve">
+    <value>qBittorrent 是一款免费、开源的 BitTorrent 客户端，不含广告。安装后，打开下载的 .torrent 文件即可。</value>
+  </data>
+  <data name="to your USB drive." xml:space="preserve">
+    <value>到您的 USB 驱动器。</value>
+  </data>
+  <data name="verify the checksum" xml:space="preserve">
+    <value>验证校验和</value>
+  </data>
+  <data name="~2.38 GB ISO" xml:space="preserve">
+    <value>约 2.38 GB ISO</value>
   </data>
 
 </root>

@@ -45,14 +45,17 @@
   <data name="Project Name" xml:space="preserve">
     <value>Projectnaam</value>
   </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Het ICP-licentienummer voor gebruikers uit het Chinese vasteland. Laat leeg om te verbergen.</value>
+  </data>
+  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
+    <value>Het OpenAI-compatibele chatcompletionseindpunt dat wordt gebruikt voor hardwarevertaling. Dit moet de volledige URL zijn, inclusief /v1/chat/completions. Laat dit leeg om automatische vertaling uit te schakelen.</value>
+  </data>
   <data name="The bearer token for the Translation Endpoint. Leave empty if the endpoint does not require authentication." xml:space="preserve">
     <value>Het bearer-token voor het vertaalendpoint. Laat dit leeg als het endpoint geen authenticatie vereist.</value>
   </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>De merknaam die wordt weergegeven in de voettekst.</value>
-  </data>
-  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
-    <value>Het ICP-licentienummer voor gebruikers uit het Chinese vasteland. Laat leeg om te verbergen.</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Het logo van het project dat wordt weergegeven in de navigatiebalk en voettekst. Ondersteunt jpg, png, svg.</value>
@@ -62,9 +65,6 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>De naam van het project dat wordt weergegeven in de frontend.</value>
-  </data>
-  <data name="The OpenAI-compatible chat completions endpoint used for hardware translation. Must be the full URL including /v1/chat/completions. Leave empty to disable automatic translation." xml:space="preserve">
-    <value>Het OpenAI-compatibele chatcompletionseindpunt dat wordt gebruikt voor hardwarevertaling. Dit moet de volledige URL zijn, inclusief /v1/chat/completions. Laat dit leeg om automatische vertaling uit te schakelen.</value>
   </data>
   <data name="Translation API Token" xml:space="preserve">
     <value>API-token voor vertalingen</value>
