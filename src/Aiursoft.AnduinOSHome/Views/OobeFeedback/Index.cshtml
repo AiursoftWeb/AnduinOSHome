@@ -78,7 +78,7 @@
                 <div class="card-body">
                     <div class="metric-icon"><i data-lucide="users-round"></i></div>
                     <div class="text-muted mb-2">@Localizer["Rating submissions"]</div>
-                    <div class="metric-number" data-testid="rating-count">@Model.Summary.Count.ToString("N0")</div>
+                    <div class="metric-number" data-testid="rating-count">@Model.Summary.Count.ToString("N0", CultureInfo.CurrentCulture)</div>
                     <div class="small text-muted mt-2">@Localizer["Submissions, not unique people"]</div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                                     var value = max * tick / 4;
                                     <g>
                                         <line x1="52" y1="@Number(Y(value))" x2="872" y2="@Number(Y(value))" class="chart-grid" />
-                                        <text x="40" y="@Number(Y(value) + 4)" text-anchor="end">@value.ToString("0.##")</text>
+                                        <text x="40" y="@Number(Y(value) + 4)" text-anchor="end">@value.ToString("0.##", CultureInfo.CurrentCulture)</text>
                                     </g>
                                 }
                                 <path d="@path" class="chart-line" />
@@ -162,7 +162,7 @@
                                     if (value.HasValue)
                                     {
                                         <circle cx="@Number(X(i))" cy="@Number(Y(value.Value))" r="4" class="chart-point" tabindex="0">
-                                            <title>@bucket.Date.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture): @value.Value.ToString("0.##") · @Localizer["Submissions"]: @bucket.Summary.Count</title>
+                                            <title>@bucket.Date.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture): @value.Value.ToString("0.##", CultureInfo.CurrentCulture) · @Localizer["Submissions"]: @bucket.Summary.Count</title>
                                         </circle>
                                     }
                                 }
@@ -196,7 +196,7 @@
                             <div class="progress flex-grow-1" role="progressbar" aria-label="@star / 5" aria-valuenow="@Number(percent)" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: @Number(percent)%"></div>
                             </div>
-                            <span class="rating-share text-end">@count.ToString("N0") <small class="text-muted">(@percent.ToString("0")%)</small></span>
+                            <span class="rating-share text-end">@count.ToString("N0", CultureInfo.CurrentCulture) <small class="text-muted">(@percent.ToString("0", CultureInfo.CurrentCulture)%)</small></span>
                         </div>
                     }
                     <div class="border-top pt-3 small text-muted">@Localizer["Ratings are voluntary and anonymous. They reflect respondents, not a representative survey of all users."]</div>
@@ -211,7 +211,7 @@
                 <h2 class="h5 mb-1">@Localizer["What users are saying"]</h2>
                 <span class="text-muted small">@Localizer["Newest first · submission time in UTC"]</span>
             </div>
-            <span class="badge bg-primary-subtle text-primary">@Localizer["With comments"]: @Model.CommentCount.ToString("N0")</span>
+            <span class="badge bg-primary-subtle text-primary">@Localizer["With comments"]: @Model.CommentCount.ToString("N0", CultureInfo.CurrentCulture)</span>
         </div>
         <div class="table-responsive">
             <table class="table table-hover align-middle mb-0 feedback-table">
@@ -233,7 +233,7 @@
             </table>
         </div>
         <div class="card-footer d-flex flex-wrap align-items-center justify-content-between gap-3">
-            <span class="small text-muted">@Localizer["Page"] @Model.Page / @Model.TotalPages · @Model.Summary.Count.ToString("N0") @Localizer["Submissions"]</span>
+            <span class="small text-muted">@Localizer["Page"] @Model.Page / @Model.TotalPages · @Model.Summary.Count.ToString("N0", CultureInfo.CurrentCulture) @Localizer["Submissions"]</span>
             <nav aria-label="@Localizer["Feedback pages"]" class="d-flex gap-2">
                 @if (Model.Page > 1)
                 {
