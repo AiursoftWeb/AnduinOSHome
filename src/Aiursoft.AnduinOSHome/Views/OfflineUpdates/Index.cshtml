@@ -1,0 +1,66 @@
+@using System.Globalization
+@using Aiursoft.AnduinOSHome.Models.OfflineUpdates
+@model OfflineUpdatesViewModel
+
+<vc:marketing-navbar></vc:marketing-navbar>
+<section class="offline-downloads">
+    <div class="container">
+        <header class="offline-heading">
+            <p class="offline-eyebrow">AnduinOS Pro</p>
+            <h1>@Localizer["Stay up to date. Even offline."]</h1>
+            <p>@Localizer["Download here. Open in Offline Updater. Update without an Internet connection."]</p>
+        </header>
+        @if (!Model.Available)
+        {
+            <div class="offline-empty" role="status">
+                <h2>@Localizer["Downloads are temporarily unavailable."]</h2>
+                <p>@Localizer["Please try again in a few moments."]</p>
+            </div>
+        }
+        else if (Model.Releases.Count == 0)
+        {
+            <div class="offline-empty">
+                <i data-lucide="package" aria-hidden="true"></i>
+                <h2>@Localizer["Your next update is on its way."]</h2>
+                <p>@Localizer["Offline update packages will appear here when they are ready."]</p>
+            </div>
+        }
+        @foreach (var group in Model.Releases.GroupBy(x => (x.Update.ReleaseLine, x.Update.Suite, x.Update.Architecture)))
+        {
+            var release = group.First();
+            var latest = release.Update;
+            <article class="offline-release">
+                <div>
+                    <p class="offline-eyebrow">AnduinOS @latest.ReleaseLine · @(latest.Architecture == "amd64" ? "Intel / AMD (x64)" : "ARM64")</p>
+                    <h2>AnduinOS @latest.TargetVersion</h2>
+                    <p class="offline-summary">@Localizer["System and security updates in one download."]</p>
+                    <p class="offline-meta">@((latest.Size / 1_000_000_000d).ToString("0.00", CultureInfo.CurrentCulture)) GB · <time datetime="@latest.CreatedUtc.ToString("O", CultureInfo.InvariantCulture)">@latest.CreatedUtc.ToString("d", CultureInfo.CurrentCulture)</time></p>
+                    <p class="offline-meta">@string.Format(@Localizer["For AnduinOS {0} to {1} ({2})."].Value, latest.MinimumVersion, latest.TargetVersion, latest.Suite)</p>
+                </div>
+                <a class="offline-download-button" href="@release.DownloadUrl">@Localizer["Download update"] <i data-lucide="download" aria-hidden="true"></i></a>
+                <details class="offline-details">
+                    <summary>@Localizer["Package details and earlier downloads"]</summary>
+                    @foreach (var item in group)
+                    {
+                        var update = item.Update;
+                        <div class="offline-history">
+                            <a href="@item.DownloadUrl">AnduinOS @update.TargetVersion · @update.CreatedUtc.ToString("d", CultureInfo.CurrentCulture)</a>
+                            <div>SHA256 <code>@update.Sha256</code></div>
+                        </div>
+                    }
+                </details>
+            </article>
+        }
+        <section class="offline-help">
+            <h2>@Localizer["Ready when you are."]</h2>
+            <p>@Localizer["Copy the file to your AnduinOS computer, then open Offline Updater in Settings and choose the file. The app will check compatibility before you start."]</p>
+            <p>@Localizer["Each package is cumulative. You do not need to download every earlier update."]</p>
+        </section>
+    </div>
+</section>
+<vc:marketing-footer></vc:marketing-footer>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/css/offline-downloads.css" asp-append-version="true" />
+}
