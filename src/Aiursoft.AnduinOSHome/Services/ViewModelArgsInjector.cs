@@ -38,6 +38,7 @@ public class ViewModelArgsInjector(
     {
         // Titles, navbar strings.
         _ = localizer["Features"];
+        _ = localizer["OOBE Feedback"];
         _ = localizer["Index"];
         _ = localizer["Directory"];
         _ = localizer["Users"];

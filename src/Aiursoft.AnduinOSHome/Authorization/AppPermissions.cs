@@ -25,6 +25,9 @@ public class AppPermissions
         var localizer = new FakeLocalizer();
         List<PermissionDescriptor> allPermission =
         [
+            new(AppPermissionNames.ViewOobeFeedbackData,
+                localizer["View OOBE Feedback Data"],
+                localizer["Allows viewing anonymous first-run ratings, statistics, and feedback comments."]),
             new(AppPermissionNames.CanManageHardware,
                 localizer["Manage recommended hardware"],
                 localizer["Allows editing and publishing hardware compatibility reports."]),

@@ -1,0 +1,26 @@
+.oobe-feedback .metric-card { overflow: hidden; border-top: 3px solid var(--metric-color); }
+.oobe-feedback .metric-primary { --metric-color: #3b7ddd; --metric-tint: rgba(59,125,221,.12); }
+.oobe-feedback .metric-gold { --metric-color: #b7791f; --metric-tint: rgba(183,121,31,.12); }
+.oobe-feedback .metric-teal { --metric-color: #168779; --metric-tint: rgba(22,135,121,.12); }
+.oobe-feedback .metric-violet { --metric-color: #8b5cf6; --metric-tint: rgba(139,92,246,.12); }
+.oobe-feedback .metric-icon { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: .8rem; color: var(--metric-color); background: var(--metric-tint); margin-bottom: 1rem; }
+.oobe-feedback .metric-icon svg { width: 1.2rem; height: 1.2rem; }
+.oobe-feedback .metric-number { font-size: clamp(1.65rem, 2.5vw, 2.5rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.oobe-feedback .metric-unit { font-size: .9rem; font-weight: 400; letter-spacing: normal; opacity: .55; }
+.oobe-feedback .feedback-chart-scroll { overflow-x: auto; }
+.oobe-feedback .feedback-chart { display: block; width: 100%; min-width: 640px; min-height: 220px; color: inherit; }
+.oobe-feedback .feedback-chart text { fill: currentColor; opacity: .65; font-size: 16px; }
+.oobe-feedback .chart-grid { stroke: currentColor; stroke-opacity: .1; stroke-dasharray: 3 5; }
+.oobe-feedback .chart-line { fill: none; stroke: #3b7ddd; stroke-width: 2.5; stroke-linejoin: round; }
+.oobe-feedback .chart-point { fill: #3b7ddd; stroke: var(--bs-body-bg, #fff); stroke-width: 1.5; }
+.oobe-feedback .chart-point:hover, .oobe-feedback .chart-point:focus { r: 6; stroke-width: 3; }
+.oobe-feedback .rating-label { min-width: 2rem; }
+.oobe-feedback .rating-share { min-width: 5rem; font-variant-numeric: tabular-nums; }
+.oobe-feedback .progress { height: .65rem; }
+.oobe-feedback .progress-bar { background: #3b7ddd; border-radius: .5rem; }
+.oobe-feedback .feedback-table th { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; }
+.oobe-feedback .feedback-comment { min-width: 16rem; max-width: 48rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 575px) {
+    .oobe-feedback .feedback-chart { min-height: 150px; }
+    .oobe-feedback .metric-card .card-body { padding: 1rem; }
+}
