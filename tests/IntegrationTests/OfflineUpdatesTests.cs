@@ -56,9 +56,9 @@ public class OfflineUpdatesTests : TestBase
             {
                 BatchId = id, ReleaseLine = "2.0", Suite = "resolute", Architecture = architecture,
                 TargetVersion = $"2.0.{patch}", MinimumVersion = "2.0.0", Sha256 = new string('a', 64),
-                Size = 2_000_000_000, CreatedUtc = DateTimeOffset.Parse("2026-11-15T08:00:00Z").AddHours(batch)
+                Size = 2_000_000_000, CreatedUtc = new DateTimeOffset(2026, 11, 15, 8, 0, 0, TimeSpan.Zero).AddHours(batch)
             },
-            PublishedUtc = DateTimeOffset.Parse("2026-11-15T09:00:00Z").AddHours(batch),
+            PublishedUtc = new DateTimeOffset(2026, 11, 15, 9, 0, 0, TimeSpan.Zero).AddHours(batch),
             ObjectKey = $"offline/resolute/2.0/{architecture}/{id}/{new string('a', 64)}.atgz"
         };
     }
