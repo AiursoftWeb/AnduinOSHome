@@ -30,3 +30,5 @@ public sealed class OfflinePackage
     public long Size { get; init; }
     public DateTimeOffset CreatedUtc { get; init; }
 }
+
+public sealed record OfflineCatalogResult(bool Available, IReadOnlyList<OfflineRelease> Releases);

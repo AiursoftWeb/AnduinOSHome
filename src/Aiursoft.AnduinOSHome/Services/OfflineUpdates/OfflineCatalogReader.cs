@@ -10,9 +10,9 @@ public sealed class OfflineCatalogReader(HttpClient http, IMemoryCache cache, IL
     public const string CatalogUrl = "https://offline-update-packages.anduinos.com/offline/catalog.json";
     private static readonly JsonSerializerOptions JsonOptions = new() { PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
 
-    public async Task<OfflineUpdatesViewModel> ReadAsync(CancellationToken token)
+    public async Task<OfflineCatalogResult> ReadAsync(CancellationToken token)
     {
-        if (cache.TryGetValue<OfflineUpdatesViewModel>(CatalogUrl, out var cached) && cached != null) return cached;
+        if (cache.TryGetValue<OfflineCatalogResult>(CatalogUrl, out var cached) && cached != null) return cached;
         try
         {
             using var response = await http.GetAsync(CatalogUrl, token);
@@ -27,13 +27,13 @@ public sealed class OfflineCatalogReader(HttpClient http, IMemoryCache cache, IL
                 .SelectMany(g => g.OrderByDescending(x => Version.Parse(x.Update.TargetVersion))
                     .ThenByDescending(x => x.PublishedUtc).ThenByDescending(x => x.Update.CreatedUtc)
                     .DistinctBy(x => x.Update.BatchId).Take(3)).ToList();
-            return cache.Set(CatalogUrl, new OfflineUpdatesViewModel { Releases = releases }, TimeSpan.FromMinutes(5));
+            return cache.Set(CatalogUrl, new OfflineCatalogResult(true, releases), TimeSpan.FromMinutes(5));
         }
         catch (Exception error) when (error is HttpRequestException or JsonException ||
                                       error is OperationCanceledException && !token.IsCancellationRequested)
         {
             logger.LogWarning(error, "Could not read the offline update catalog.");
-            return cache.Set(CatalogUrl, new OfflineUpdatesViewModel { Available = false }, TimeSpan.FromSeconds(15));
+            return cache.Set(CatalogUrl, new OfflineCatalogResult(false, []), TimeSpan.FromSeconds(15));
         }
     }
 

@@ -15,7 +15,7 @@ public class OfflineUpdatesTests : TestBase
     {
         var cache = Server!.Services.GetRequiredService<IMemoryCache>();
         var release = Release(5, 1);
-        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineUpdatesViewModel { Releases = [release] });
+        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineCatalogResult(true, [release]));
         var response = await Http.GetAsync("/pro/offline-update-package");
         Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         var html = await response.Content.ReadAsStringAsync();
@@ -23,6 +23,10 @@ public class OfflineUpdatesTests : TestBase
         Assert.Contains("Intel / AMD (x64)", html);
         Assert.Contains("2.0.5", html);
         Assert.Contains("no-store", response.Headers.CacheControl!.ToString());
+        using var chinese = await Http.GetAsync("/pro/offline-update-package?culture=zh-CN&ui-culture=zh-CN");
+        Assert.Contains("离线更新", WebUtility.HtmlDecode(await chinese.Content.ReadAsStringAsync()));
+        using var englishAgain = await Http.GetAsync("/pro/offline-update-package?culture=en-US&ui-culture=en-US");
+        Assert.Contains("Offline updates", await englishAgain.Content.ReadAsStringAsync());
         using var publication = await Http.PostAsync("/api/offline-updates", new StringContent("{}"));
         Assert.AreEqual(HttpStatusCode.NotFound, publication.StatusCode);
     }
@@ -31,11 +35,11 @@ public class OfflineUpdatesTests : TestBase
     public async Task UnavailableAndEmptyCatalogHaveDifferentMessages()
     {
         var cache = Server!.Services.GetRequiredService<IMemoryCache>();
-        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineUpdatesViewModel { Available = false });
+        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineCatalogResult(false, []));
         using var unavailable = await Http.GetAsync("/pro/offline-update-package");
         Assert.AreEqual(HttpStatusCode.ServiceUnavailable, unavailable.StatusCode);
         Assert.Contains("Downloads are temporarily unavailable.", await unavailable.Content.ReadAsStringAsync());
-        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineUpdatesViewModel());
+        cache.Set(OfflineCatalogReader.CatalogUrl, new OfflineCatalogResult(true, []));
         using var empty = await Http.GetAsync("/pro/offline-update-package");
         Assert.AreEqual(HttpStatusCode.OK, empty.StatusCode);
         Assert.Contains("Your next update is on its way.", await empty.Content.ReadAsStringAsync());
