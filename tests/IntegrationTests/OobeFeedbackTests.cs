@@ -108,6 +108,16 @@ public class OobeFeedbackTests : TestBase
     }
 
     [TestMethod]
+    public async Task DateInputsKeepIsoCalendarInArabicCulture()
+    {
+        await LoginAsAdmin();
+        await Http.GetAsync("/Culture/Set?culture=ar-SA&returnUrl=%2FOobeFeedback");
+        var html = await Http.GetStringAsync("/OobeFeedback?from=2026-11-01&to=2026-11-15");
+        Assert.Contains("value=\"2026-11-01\"", html);
+        Assert.Contains("value=\"2026-11-15\"", html);
+    }
+
+    [TestMethod]
     public async Task RejectsMalformedAndUnboundedFilters()
     {
         await LoginAsAdmin();

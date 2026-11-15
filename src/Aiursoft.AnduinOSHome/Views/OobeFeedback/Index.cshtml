@@ -31,11 +31,11 @@
             <form method="get" class="row g-3 align-items-end">
                 <div class="col-6 col-lg-2">
                     <label for="from" class="form-label">@Localizer["From (UTC)"]</label>
-                    <input id="from" name="from" type="date" class="form-control" value="@Model.From.ToString("yyyy-MM-dd")" required />
+                    <input id="from" name="from" type="date" class="form-control" value="@Model.From.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" required />
                 </div>
                 <div class="col-6 col-lg-2">
                     <label for="to" class="form-label">@Localizer["Through (UTC)"]</label>
-                    <input id="to" name="to" type="date" class="form-control" value="@Model.To.ToString("yyyy-MM-dd")" required />
+                    <input id="to" name="to" type="date" class="form-control" value="@Model.To.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" required />
                 </div>
                 <div class="col-6 col-lg-2">
                     <label for="interval" class="form-label">@Localizer["Group trend by"]</label>
@@ -162,13 +162,13 @@
                                     if (value.HasValue)
                                     {
                                         <circle cx="@Number(X(i))" cy="@Number(Y(value.Value))" r="4" class="chart-point" tabindex="0">
-                                            <title>@bucket.Date.ToString("yyyy-MM-dd"): @value.Value.ToString("0.##") · @Localizer["Submissions"]: @bucket.Summary.Count</title>
+                                            <title>@bucket.Date.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture): @value.Value.ToString("0.##") · @Localizer["Submissions"]: @bucket.Summary.Count</title>
                                         </circle>
                                     }
                                 }
                                 @foreach (var i in Enumerable.Range(0, Math.Min(5, Model.Trend.Count)).Select(i => (int)Math.Round(i * (Model.Trend.Count - 1d) / Math.Max(1, Math.Min(5, Model.Trend.Count) - 1))))
                                 {
-                                    <g><text x="@Number(X(i))" y="246" text-anchor="middle">@Model.Trend[i].Date.ToString("yyyy-MM-dd")</text></g>
+                                    <g><text x="@Number(X(i))" y="246" text-anchor="middle">@Model.Trend[i].Date.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)</text></g>
                                 }
                             </svg>
                         </div>
@@ -220,7 +220,7 @@
                 @foreach (var item in Model.Feedback)
                 {
                     <tr>
-                        <td class="text-nowrap"><time datetime="@item.SubmitTime.ToString("yyyy-MM-ddTHH:mm:ssZ")">@item.SubmitTime.ToString("yyyy-MM-dd HH:mm")</time></td>
+                        <td class="text-nowrap"><time datetime="@item.SubmitTime.ToString("yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture)">@item.SubmitTime.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)</time></td>
                         <td class="text-nowrap"><span class="badge @(item.Stars >= 4 ? "bg-success-subtle text-success" : item.Stars == 3 ? "bg-warning-subtle text-warning" : "bg-danger-subtle text-danger")">@item.Stars / 5 <span aria-hidden="true">★</span></span></td>
                         <td class="feedback-comment">@if (string.IsNullOrWhiteSpace(item.Comment)) { <span class="text-muted">@Localizer["No comment"]</span> } else { @item.Comment }</td>
                     </tr>
@@ -237,11 +237,11 @@
             <nav aria-label="@Localizer["Feedback pages"]" class="d-flex gap-2">
                 @if (Model.Page > 1)
                 {
-                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd")" asp-route-to="@Model.To.ToString("yyyy-MM-dd")" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page - 1)">@Localizer["Previous"]</a>
+                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" asp-route-to="@Model.To.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page - 1)">@Localizer["Previous"]</a>
                 }
                 @if (Model.Page < Model.TotalPages)
                 {
-                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd")" asp-route-to="@Model.To.ToString("yyyy-MM-dd")" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page + 1)">@Localizer["Next"]</a>
+                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" asp-route-to="@Model.To.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page + 1)">@Localizer["Next"]</a>
                 }
             </nav>
         </div>
