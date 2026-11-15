@@ -59,6 +59,12 @@ public class Startup : IWebStartup
         // Services
         services.AddMemoryCache();
         services.AddHttpClient();
+        services.AddHttpClient<Services.OfflineUpdates.OfflineCatalogReader>(client =>
+        {
+            client.Timeout = TimeSpan.FromSeconds(10);
+            client.MaxResponseContentBufferSize = 1024 * 1024;
+            client.DefaultRequestHeaders.UserAgent.ParseAdd("AnduinOSHome/1.0");
+        });
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 

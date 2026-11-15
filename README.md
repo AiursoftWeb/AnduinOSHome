@@ -15,6 +15,16 @@ AnduinOS-Home is the home page of AnduinOS, which is an Ubuntu based operating s
 
 Try a running AnduinOS-Home [here](https://www.anduinos.com/).
 
+## Offline update downloads
+
+`/pro/offline-update-package` reads the public R2 catalog at
+`https://offline-update-packages.anduinos.com/offline/catalog.json` (schema version 1).
+It shows up to three published batches per release line, suite and architecture,
+with direct R2 downloads. No publisher API, database table or storage credentials
+are required. The page caches the catalog for five minutes; an unavailable or
+invalid catalog displays a temporary-unavailability message instead of an empty release list.
+The Offline Updater verifies package signatures and compatibility before installation.
+
 ## Install with Docker
 
 Run the installer with the desired port (omit it to choose an available port):

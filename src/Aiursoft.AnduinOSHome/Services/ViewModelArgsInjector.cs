@@ -96,6 +96,7 @@ public class ViewModelArgsInjector(
     
         _ = localizer["Compare AnduinOS"];
         _ = localizer["AnduinOS Pro"];
+        _ = localizer["Offline updates"];
 
         _ = localizer["Hardware"];
         _ = localizer["Recommended hardware"];
