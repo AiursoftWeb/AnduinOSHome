@@ -23,9 +23,11 @@ public class OfflineUpdatesTests : TestBase
         Assert.Contains("Intel / AMD (x64)", html);
         Assert.Contains("2.0.5", html);
         Assert.Contains("no-store", response.Headers.CacheControl!.ToString());
-        using var chinese = await Http.GetAsync("/pro/offline-update-package?culture=zh-CN&ui-culture=zh-CN");
+        using var chineseRequest = new HttpRequestMessage(HttpMethod.Get, "/pro/offline-update-package");
+        chineseRequest.Headers.AcceptLanguage.ParseAdd("zh-CN");
+        using var chinese = await Http.SendAsync(chineseRequest);
         Assert.Contains("离线更新", WebUtility.HtmlDecode(await chinese.Content.ReadAsStringAsync()));
-        using var englishAgain = await Http.GetAsync("/pro/offline-update-package?culture=en-US&ui-culture=en-US");
+        using var englishAgain = await Http.GetAsync("/pro/offline-update-package");
         Assert.Contains("Offline updates", await englishAgain.Content.ReadAsStringAsync());
         using var publication = await Http.PostAsync("/api/offline-updates", new StringContent("{}"));
         Assert.AreEqual(HttpStatusCode.NotFound, publication.StatusCode);
