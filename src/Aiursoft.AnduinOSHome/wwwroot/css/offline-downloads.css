@@ -1,7 +1,7 @@
 .offline-downloads { background: #f5f8fc; color: #172c46; min-height: 85vh; padding: 5rem 0; }
 .offline-downloads .container { max-width: 1050px; padding-inline: 24px; }
 .offline-heading { max-width: 740px; margin: 0 auto 3.5rem; text-align: center; }
-.offline-heading h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.08; margin-bottom: 1.5rem; }
+.offline-heading h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.15; text-wrap: balance; color: #172c46; margin-bottom: 1.5rem; }
 .offline-heading > p:last-child { font-size: 1.15rem; color: #4b6078; }
 .offline-eyebrow { color: #2860a6; font-weight: 700; font-size: .85rem; letter-spacing: .06em; margin-bottom: .8rem; }
 .offline-release { background: white; border: 1px solid #dce5ef; border-radius: 24px; padding: 2.5rem; margin-bottom: 1.5rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem 2rem; box-shadow: 0 10px 36px rgb(22 58 101 / 5%); }
