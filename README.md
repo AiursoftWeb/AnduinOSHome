@@ -102,6 +102,22 @@ refreshes all outdated languages; the public site shows the source while replace
 are pending. A language is saved only after all fields succeed, and results are discarded if the
 source changes during translation. Manual edits saved during a translation are not overwritten.
 
+## First-run feedback dashboard
+
+`/OobeFeedback` summarizes the existing anonymous OOBE ratings. Viewing the page and
+its navigation entry requires the `ViewOobeFeedbackData` permission. Assign it through
+the existing role/permission management UI; existing roles are not silently granted access.
+
+The dashboard offers inclusive UTC date filters, rating/comment search, daily/weekly/monthly
+trends, a five-star distribution, and a paginated response list. Counts are submissions,
+not unique people. Means and medians are weighted by submission count; variance is the
+population variance. Empty periods have no score. All filters apply to both statistics
+and the list. The voluntary responses cannot identify users, installations, or OS versions
+and should not be treated as a representative survey of all users.
+
+The dashboard only reads the existing ratings table. The public submission API and
+its rate limits remain unchanged; no new data collection or database migration is needed.
+
 ## How to contribute
 
 There are many ways to contribute to the project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.

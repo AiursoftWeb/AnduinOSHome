@@ -5,6 +5,7 @@ namespace Aiursoft.AnduinOSHome.Authorization;
 /// </summary>
 public static class AppPermissionNames
 {
+    public const string ViewOobeFeedbackData = nameof(ViewOobeFeedbackData);
     public const string CanManageHardware = nameof(CanManageHardware);
     // User Management
     public const string CanReadUsers = nameof(CanReadUsers);

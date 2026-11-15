@@ -1,0 +1,254 @@
+@using System.Globalization
+@using Aiursoft.AnduinOSHome.Services
+@model Aiursoft.AnduinOSHome.Models.OobeFeedbackViewModels.IndexViewModel
+@functions {
+    private static string Number(double value) => value.ToString("0.###", CultureInfo.InvariantCulture);
+    private static string Score(double? value) => value?.ToString("0.00", CultureInfo.CurrentCulture) ?? "—";
+    private static double? Metric(RatingSummary summary, string metric) => metric switch
+    {
+        "count" => summary.Count,
+        "average" => summary.Average,
+        "variance" => summary.Variance,
+        _ => summary.Median
+    };
+}
+<link rel="stylesheet" href="~/css/oobe-feedback.css" asp-append-version="true" />
+
+<div class="container-fluid p-3 p-lg-4 oobe-feedback">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div>
+            <div class="text-primary fw-semibold small text-uppercase mb-2">AnduinOS · @Localizer["First-run experience"]</div>
+            <h1 class="h2 mb-2">@Localizer["OOBE Feedback"]</h1>
+            <p class="text-muted mb-0">@Localizer["Understand first impressions. Find the next improvement."]</p>
+        </div>
+        <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">
+            <i data-lucide="shield-check" class="align-middle me-1"></i> @Localizer["Anonymous feedback"]
+        </span>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3 align-items-end">
+                <div class="col-6 col-lg-2">
+                    <label for="from" class="form-label">@Localizer["From (UTC)"]</label>
+                    <input id="from" name="from" type="date" class="form-control" value="@Model.From.ToString("yyyy-MM-dd")" required />
+                </div>
+                <div class="col-6 col-lg-2">
+                    <label for="to" class="form-label">@Localizer["Through (UTC)"]</label>
+                    <input id="to" name="to" type="date" class="form-control" value="@Model.To.ToString("yyyy-MM-dd")" required />
+                </div>
+                <div class="col-6 col-lg-2">
+                    <label for="interval" class="form-label">@Localizer["Group trend by"]</label>
+                    <select id="interval" name="interval" class="form-select">
+                        <option value="day" selected="@(Model.Interval == "day")">@Localizer["Day"]</option>
+                        <option value="week" selected="@(Model.Interval == "week")">@Localizer["Week (Monday)"]</option>
+                        <option value="month" selected="@(Model.Interval == "month")">@Localizer["Month"]</option>
+                    </select>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <label for="stars" class="form-label">@Localizer["Rating"]</label>
+                    <select id="stars" name="stars" class="form-select">
+                        <option value="">@Localizer["All ratings"]</option>
+                        @foreach (var star in new[] { 5, 4, 3, 2, 1 })
+                        {
+                            <option value="@star" selected="@(Model.Stars == star)">@star / 5</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <label for="search" class="form-label">@Localizer["Search feedback"]</label>
+                    <input id="search" name="search" class="form-control" value="@Model.Search" maxlength="200" placeholder="@Localizer["Find a word or phrase"]" />
+                </div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                    <div class="form-check me-auto">
+                        <input id="commentsOnly" type="checkbox" name="commentsOnly" value="true" class="form-check-input" checked="@Model.CommentsOnly" />
+                        <label for="commentsOnly" class="form-check-label">@Localizer["Only ratings with comments"]</label>
+                    </div>
+                    <a asp-action="Index" class="btn btn-outline-secondary">@Localizer["Reset"]</a>
+                    <button type="submit" class="btn btn-primary"><i data-lucide="filter" class="align-middle me-1"></i> @Localizer["Apply filters"]</button>
+                </div>
+            </form>
+            <div class="small text-muted mt-3">@Localizer["All cards, charts, and comments follow these filters. Dates include the entire selected day in UTC."]</div>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-xl-3">
+            <div class="card h-100 mb-0 metric-card metric-primary">
+                <div class="card-body">
+                    <div class="metric-icon"><i data-lucide="users-round"></i></div>
+                    <div class="text-muted mb-2">@Localizer["Rating submissions"]</div>
+                    <div class="metric-number" data-testid="rating-count">@Model.Summary.Count.ToString("N0")</div>
+                    <div class="small text-muted mt-2">@Localizer["Submissions, not unique people"]</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3">
+            <div class="card h-100 mb-0 metric-card metric-gold">
+                <div class="card-body">
+                    <div class="metric-icon"><i data-lucide="star"></i></div>
+                    <div class="text-muted mb-2">@Localizer["Average rating"]</div>
+                    <div class="metric-number" data-testid="rating-average">@Score(Model.Summary.Average)<span class="metric-unit"> / 5</span></div>
+                    <div class="small text-muted mt-2">@Localizer["Mean of all matching ratings"]</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3">
+            <div class="card h-100 mb-0 metric-card metric-teal">
+                <div class="card-body">
+                    <div class="metric-icon"><i data-lucide="equal"></i></div>
+                    <div class="text-muted mb-2">@Localizer["Median rating"]</div>
+                    <div class="metric-number" data-testid="rating-median">@Score(Model.Summary.Median)<span class="metric-unit"> / 5</span></div>
+                    <div class="small text-muted mt-2">@Localizer["Middle rating, averaging the middle pair"]</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-xl-3">
+            <div class="card h-100 mb-0 metric-card metric-violet">
+                <div class="card-body">
+                    <div class="metric-icon"><i data-lucide="activity"></i></div>
+                    <div class="text-muted mb-2">@Localizer["Rating variance"]</div>
+                    <div class="metric-number" data-testid="rating-variance">@Score(Model.Summary.Variance)</div>
+                    <div class="small text-muted mt-2">@Localizer["Population variance · lower means more agreement"]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-12 col-xl-8">
+            <div class="card h-100 mb-0">
+                <div class="card-header border-0 pb-0">
+                    <h2 class="h5 mb-1">@Localizer["Feedback over time"]</h2>
+                    <p class="text-muted small mb-3">@Localizer["Each point summarizes its period. Empty periods have no score, rather than a zero-star rating."]</p>
+                    <div class="d-flex flex-wrap gap-2" role="tablist" aria-label="@Localizer["Trend metric"]" id="feedback-tabs">
+                        <button type="button" role="tab" id="tab-count" class="btn btn-sm btn-primary" aria-controls="trend-count" aria-selected="true" data-metric="count">@Localizer["Submissions"]</button>
+                        <button type="button" role="tab" id="tab-average" class="btn btn-sm btn-outline-secondary" aria-controls="trend-average" aria-selected="false" tabindex="-1" data-metric="average">@Localizer["Average"]</button>
+                        <button type="button" role="tab" id="tab-median" class="btn btn-sm btn-outline-secondary" aria-controls="trend-median" aria-selected="false" tabindex="-1" data-metric="median">@Localizer["Median"]</button>
+                        <button type="button" role="tab" id="tab-variance" class="btn btn-sm btn-outline-secondary" aria-controls="trend-variance" aria-selected="false" tabindex="-1" data-metric="variance">@Localizer["Variance"]</button>
+                    </div>
+                </div>
+                <div class="card-body pt-2">
+                    @foreach (var metric in new[] { "count", "average", "median", "variance" })
+                    {
+                        var max = metric == "count" ? Math.Max(5, Math.Ceiling(Model.Trend.Max(x => x.Summary.Count) / 5d) * 5) : metric == "variance" ? 4 : 5;
+                        double X(int i) => 52 + i * 820d / Math.Max(1, Model.Trend.Count - 1);
+                        double Y(double value) => 218 - value / max * 180;
+                        var path = new System.Text.StringBuilder();
+                        var connected = false;
+                        for (var i = 0; i < Model.Trend.Count; i++)
+                        {
+                            var value = Metric(Model.Trend[i].Summary, metric);
+                            if (!value.HasValue) { connected = false; continue; }
+                            path.Append($"{(connected ? "L" : "M")}{Number(X(i))},{Number(Y(value.Value))} ");
+                            connected = true;
+                        }
+                        <div id="trend-@metric" role="tabpanel" aria-labelledby="tab-@metric" hidden="@(metric != "count")">
+                            <svg viewBox="0 0 910 262" class="feedback-chart" role="img" aria-labelledby="chart-title-@metric">
+                                <title id="chart-title-@metric">@(metric switch { "count" => @Localizer["Rating submissions over time"], "average" => @Localizer["Average rating over time"], "median" => @Localizer["Median rating over time"], _ => @Localizer["Population variance over time"] })</title>
+                                @for (var tick = 0; tick <= 4; tick++)
+                                {
+                                    var value = max * tick / 4;
+                                    <g>
+                                        <line x1="52" y1="@Number(Y(value))" x2="872" y2="@Number(Y(value))" class="chart-grid" />
+                                        <text x="40" y="@Number(Y(value) + 4)" text-anchor="end">@value.ToString("0.##")</text>
+                                    </g>
+                                }
+                                <path d="@path" class="chart-line" />
+                                @for (var i = 0; i < Model.Trend.Count; i++)
+                                {
+                                    var bucket = Model.Trend[i];
+                                    var value = Metric(bucket.Summary, metric);
+                                    if (value.HasValue)
+                                    {
+                                        <circle cx="@Number(X(i))" cy="@Number(Y(value.Value))" r="4" class="chart-point" tabindex="0">
+                                            <title>@bucket.Date.ToString("yyyy-MM-dd"): @value.Value.ToString("0.##") · @Localizer["Submissions"]: @bucket.Summary.Count</title>
+                                        </circle>
+                                    }
+                                }
+                                @foreach (var i in Enumerable.Range(0, Math.Min(5, Model.Trend.Count)).Select(i => (int)Math.Round(i * (Model.Trend.Count - 1d) / Math.Max(1, Math.Min(5, Model.Trend.Count) - 1))))
+                                {
+                                    <g><text x="@Number(X(i))" y="246" text-anchor="middle">@Model.Trend[i].Date.ToString("yyyy-MM-dd")</text></g>
+                                }
+                            </svg>
+                        </div>
+                    }
+                    @if (Model.Summary.Count == 0)
+                    {
+                        <p class="text-muted text-center mb-0">@Localizer["No ratings match these filters."]</p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-4">
+            <div class="card h-100 mb-0">
+                <div class="card-header border-0">
+                    <h2 class="h5 mb-1">@Localizer["Rating distribution"]</h2>
+                    <span class="text-muted small">@Localizer["Share of matching submissions"]</span>
+                </div>
+                <div class="card-body pt-0">
+                    @for (var star = 5; star >= 1; star--)
+                    {
+                        var count = Model.Summary.Distribution[star - 1];
+                        var percent = Model.Summary.Count == 0 ? 0 : count * 100d / Model.Summary.Count;
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <span class="rating-label">@star <span class="text-warning" aria-hidden="true">★</span></span>
+                            <div class="progress flex-grow-1" role="progressbar" aria-label="@star / 5" aria-valuenow="@Number(percent)" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: @Number(percent)%"></div>
+                            </div>
+                            <span class="rating-share text-end">@count.ToString("N0") <small class="text-muted">(@percent.ToString("0")%)</small></span>
+                        </div>
+                    }
+                    <div class="border-top pt-3 small text-muted">@Localizer["Ratings are voluntary and anonymous. They reflect respondents, not a representative survey of all users."]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-0">
+        <div class="card-header d-flex flex-wrap align-items-center justify-content-between gap-2">
+            <div>
+                <h2 class="h5 mb-1">@Localizer["What users are saying"]</h2>
+                <span class="text-muted small">@Localizer["Newest first · submission time in UTC"]</span>
+            </div>
+            <span class="badge bg-primary-subtle text-primary">@Localizer["With comments"]: @Model.CommentCount.ToString("N0")</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0 feedback-table">
+                <thead><tr><th scope="col">@Localizer["Submitted (UTC)"]</th><th scope="col">@Localizer["Rating"]</th><th scope="col">@Localizer["Feedback"]</th></tr></thead>
+                <tbody>
+                @foreach (var item in Model.Feedback)
+                {
+                    <tr>
+                        <td class="text-nowrap"><time datetime="@item.SubmitTime.ToString("yyyy-MM-ddTHH:mm:ssZ")">@item.SubmitTime.ToString("yyyy-MM-dd HH:mm")</time></td>
+                        <td class="text-nowrap"><span class="badge @(item.Stars >= 4 ? "bg-success-subtle text-success" : item.Stars == 3 ? "bg-warning-subtle text-warning" : "bg-danger-subtle text-danger")">@item.Stars / 5 <span aria-hidden="true">★</span></span></td>
+                        <td class="feedback-comment">@if (string.IsNullOrWhiteSpace(item.Comment)) { <span class="text-muted">@Localizer["No comment"]</span> } else { @item.Comment }</td>
+                    </tr>
+                }
+                @if (Model.Feedback.Count == 0)
+                {
+                    <tr><td colspan="3" class="text-center text-muted py-5">@Localizer["No ratings match these filters."]</td></tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <span class="small text-muted">@Localizer["Page"] @Model.Page / @Model.TotalPages · @Model.Summary.Count.ToString("N0") @Localizer["Submissions"]</span>
+            <nav aria-label="@Localizer["Feedback pages"]" class="d-flex gap-2">
+                @if (Model.Page > 1)
+                {
+                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd")" asp-route-to="@Model.To.ToString("yyyy-MM-dd")" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page - 1)">@Localizer["Previous"]</a>
+                }
+                @if (Model.Page < Model.TotalPages)
+                {
+                    <a class="btn btn-sm btn-outline-secondary" asp-action="Index" asp-route-from="@Model.From.ToString("yyyy-MM-dd")" asp-route-to="@Model.To.ToString("yyyy-MM-dd")" asp-route-interval="@Model.Interval" asp-route-stars="@Model.Stars" asp-route-search="@Model.Search" asp-route-commentsOnly="@Model.CommentsOnly" asp-route-page="@(Model.Page + 1)">@Localizer["Next"]</a>
+                }
+            </nav>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/oobe-feedback.js" asp-append-version="true" defer></script>
+}
