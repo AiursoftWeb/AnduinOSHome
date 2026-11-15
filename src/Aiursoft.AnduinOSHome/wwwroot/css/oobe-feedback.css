@@ -7,8 +7,9 @@
 .oobe-feedback .metric-icon svg { width: 1.2rem; height: 1.2rem; }
 .oobe-feedback .metric-number { font-size: clamp(1.65rem, 2.5vw, 2.5rem); font-weight: 700; letter-spacing: -.04em; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .oobe-feedback .metric-unit { font-size: .9rem; font-weight: 400; letter-spacing: normal; opacity: .55; }
-.oobe-feedback .feedback-chart { display: block; width: 100%; min-height: 220px; color: inherit; }
-.oobe-feedback .feedback-chart text { fill: currentColor; opacity: .65; font-size: 11px; }
+.oobe-feedback .feedback-chart-scroll { overflow-x: auto; }
+.oobe-feedback .feedback-chart { display: block; width: 100%; min-width: 640px; min-height: 220px; color: inherit; }
+.oobe-feedback .feedback-chart text { fill: currentColor; opacity: .65; font-size: 16px; }
 .oobe-feedback .chart-grid { stroke: currentColor; stroke-opacity: .1; stroke-dasharray: 3 5; }
 .oobe-feedback .chart-line { fill: none; stroke: #3b7ddd; stroke-width: 2.5; stroke-linejoin: round; }
 .oobe-feedback .chart-point { fill: #3b7ddd; stroke: var(--bs-body-bg, #fff); stroke-width: 1.5; }

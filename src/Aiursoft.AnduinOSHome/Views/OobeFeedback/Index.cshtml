@@ -143,8 +143,8 @@
                             path.Append($"{(connected ? "L" : "M")}{Number(X(i))},{Number(Y(value.Value))} ");
                             connected = true;
                         }
-                        <div id="trend-@metric" role="tabpanel" aria-labelledby="tab-@metric" hidden="@(metric != "count")">
-                            <svg viewBox="0 0 910 262" class="feedback-chart" role="img" aria-labelledby="chart-title-@metric">
+                        <div id="trend-@metric" class="feedback-chart-scroll" role="tabpanel" tabindex="0" aria-labelledby="tab-@metric" hidden="@(metric != "count")">
+                            <svg viewBox="0 0 940 262" class="feedback-chart" role="img" aria-labelledby="chart-title-@metric">
                                 <title id="chart-title-@metric">@(metric switch { "count" => @Localizer["Rating submissions over time"], "average" => @Localizer["Average rating over time"], "median" => @Localizer["Median rating over time"], _ => @Localizer["Population variance over time"] })</title>
                                 @for (var tick = 0; tick <= 4; tick++)
                                 {
