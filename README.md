@@ -1,4 +1,6 @@
-# AnduinOS Home
+# Aiursoft AnduinOS Home
+
+<a name="anduinos-home"></a>
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/aiursoftweb/AnduinOS-Home/blob/master/LICENSE)
 [![Pipeline stat](https://badge-proxy.aiursoft.com/aiursoft/anduinoshome/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/anduinoshome/-/pipelines)
@@ -11,19 +13,15 @@ AnduinOS-Home is the home page of AnduinOS, which is an Ubuntu based operating s
 
 ![screenshot](./screenshot.png)
 
+## Overview
+
+### What is AnduinOS Home?
+
+AnduinOS-Home is the home page of AnduinOS, which is an Ubuntu based operating system. It hosts as the home page of the website, including downloading ISO files, read document and join community.
+
 ## Try
 
 Try a running AnduinOS-Home [here](https://www.anduinos.com/).
-
-## Offline update downloads
-
-`/pro/offline-update-package` reads the public R2 catalog at
-`https://offline-update-packages.anduinos.com/offline/catalog.json` (schema version 1).
-It shows up to three published batches per release line, suite and architecture,
-with direct R2 downloads. No publisher API, database table or storage credentials
-are required. The page caches the catalog for five minutes; an unavailable or
-invalid catalog displays a temporary-unavailability message instead of an empty release list.
-The Offline Updater verifies package signatures and compatibility before installation.
 
 ## Install with Docker
 
@@ -74,7 +72,19 @@ The docker image has the following context:
 | Data path   | /data                  |
 | Config path | /data/appsettings.json |
 
-## Automatic hardware content translation
+## Usage
+
+### Offline update downloads
+
+`/pro/offline-update-package` reads the public R2 catalog at
+`https://offline-update-packages.anduinos.com/offline/catalog.json` (schema version 1).
+It shows up to three published batches per release line, suite and architecture,
+with direct R2 downloads. No publisher API, database table or storage credentials
+are required. The page caches the catalog for five minutes; an unavailable or
+invalid catalog displays a temporary-unavailability message instead of an empty release list.
+The Offline Updater verifies package signatures and compatibility before installation.
+
+### Automatic hardware content translation
 
 Hardware reviews use the existing `HardwareTranslations` table. New reviews default to English;
 write the original review once and Dotlang generates the other site languages in the background.
@@ -112,7 +122,7 @@ refreshes all outdated languages; the public site shows the source while replace
 are pending. A language is saved only after all fields succeed, and results are discarded if the
 source changes during translation. Manual edits saved during a translation are not overwritten.
 
-## First-run feedback dashboard
+### First-run feedback dashboard
 
 `/OobeFeedback` summarizes the existing anonymous OOBE ratings. Viewing the page and
 its navigation entry requires the `ViewOobeFeedbackData` permission. Assign it through
@@ -128,6 +138,100 @@ and should not be treated as a representative survey of all users.
 The dashboard only reads the existing ratings table. The public submission API and
 its rate limits remain unchanged; no new data collection or database migration is needed.
 
+## Configuration
+
+The application defaults are defined in [`src/Aiursoft.AnduinOSHome/appsettings.json`](src/Aiursoft.AnduinOSHome/appsettings.json). The Docker image initializes `/data/appsettings.json` on its first start and keeps it for later starts; persist `/data`. Override nested values with double-underscore environment variables, such as `Logging__LogLevel__Default`.
+
+```jsonc
+{
+  "ConnectionStrings": {
+    "AllowCache": "True",
+
+    "DbType": "Sqlite",
+    "DefaultConnection": "DataSource=app.db;Cache=Shared"
+
+    // sudo docker run -d --name db -e MYSQL_RANDOM_ROOT_PASSWORD=true -e MYSQL_DATABASE=template -e MYSQL_USER=template -e MYSQL_PASSWORD=template_password -p 3306:3306 hub.aiursoft.com/mysql
+    //"DbType": "MySql",
+    //"DefaultConnection": "Server=localhost;Database=template;Uid=template;Pwd=template_password;"
+  },
+  "Storage": {
+    "Path": "/tmp/data",
+    "PublicOrigin": "",
+    "RequireDedicatedInlineOrigin": false,
+    "AllowArbitraryInlineOnDedicatedOrigin": false,
+    "SafeInlineMediaExtensions": ["svg"],
+    "SafeInlineSvgSubfolders": ["project-logo"],
+    "UploadPolicy": {
+      "RequireAuthenticatedUser": false,
+      "ReplaceSpacesWithHyphens": false
+    }
+  },
+  "AppSettings": {
+    "AuthProvider": "Local", // OIDC or Local
+    "DefaultRole": "",
+    "PersistsSignIn": false,
+    "OIDC": {
+      // https://auth.aiursoft.com/application/o/template
+      "Authority": "https://auth.aiursoft.com/application/o/template",
+      "ClientId": "",
+      "ClientSecret": "",
+      "RolePropertyName": "groups",
+      "UsernamePropertyName": "preferred_username",
+      "UserDisplayNamePropertyName": "name",
+      "EmailPropertyName": "email",
+      "UserIdentityPropertyName": "sub"
+    },
+    "Local": {
+      "AllowRegister": true,
+      "AllowWeakPassword": true
+    }
+  },
+  "GlobalSettings": {
+    "OpenAiInstance": "",
+    "OpenAiLocalizationModel": "",
+    "OpenAiApiToken": ""
+  },
+  "UpgradeScriptEndpoints": [
+    "https://raw.githubusercontent.com/Anduin2017/AnduinOS/refs/heads/{Branch}/src/upgrade.sh"
+  ],
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    },
+    "Clickhouse": {
+      "Enabled": false,
+      "ConnectionString": "Host=localhost;Protocol=http;Port=8123;User=default;Password=;Database=AspNetCoreLogs",
+      "TableName": "AnduinOSHomeLogs"
+    }
+  },
+  "ReleaseArtifacts": {
+    "Architectures": {
+      "amd64": {
+        "IsoUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.iso",
+        "TorrentUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.torrent",
+        "ChecksumUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.sha256"
+      },
+      "arm64": {
+        "IsoUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.iso",
+        "TorrentUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.torrent",
+        "ChecksumUrl": "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.sha256"
+      }
+    }
+  },
+  "AllowedHosts": "*"
+}
+```
+
+### Shared settings
+
+- `ConnectionStrings` selects the database provider and connection. Prepare the external database before choosing MySQL; keep the SQLite file persistent when using SQLite.
+- `Storage` configures local application files. Keep the storage directory persistent and use the documented hostname and upload policies for shared downloads.
+- `AppSettings` controls authentication and account synchronization. Choose local accounts or configure the OIDC authority, client and `/signin-oidc` callback; use environment variables for credentials.
+- Uncommented `GlobalSettings` entries override the database-backed administration settings. Leave entries commented to use the stored values or application defaults.
+- `Logging:LogLevel` controls application and framework verbosity. Configure the optional ClickHouse exporter only when its server and credentials are ready.
+- `AllowedHosts` is the ASP.NET Core Host-header allowlist, not a CORS setting.
+
 ## How to contribute
 
 There are many ways to contribute to the project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
@@ -135,3 +239,7 @@ There are many ways to contribute to the project: logging bugs, submitting pull 
 Even if you with push rights on the repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your workflow cruft out of sight.
 
 We're also interested in your feedback on the future of this project. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.
+
+## License
+
+Licensed under the [MIT License](LICENSE).
