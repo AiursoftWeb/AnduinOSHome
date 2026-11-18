@@ -1,19 +1,18 @@
+using Aiursoft.AnduinOSHome.Models.HomeViewModels;
+
 namespace Aiursoft.AnduinOSHome.Configuration;
 
 public sealed class ReleaseArtifactsOptions
 {
     public const string SectionName = "ReleaseArtifacts";
-    public const string FastTrackChannel = "fast-track";
-
-    public Dictionary<string, ReleaseArtifact> Architectures { get; init; } =
-        new(StringComparer.OrdinalIgnoreCase);
-
-    public Dictionary<string, ReleaseArtifact> FastTrackArchitectures { get; init; } =
-        new(StringComparer.OrdinalIgnoreCase);
+    public Dictionary<string, Dictionary<string, ReleaseArtifact>> Versions { get; init; } =
+        new(StringComparer.Ordinal);
 
     public bool IsValid()
     {
-        return IsValidRelease(Architectures) && IsValidRelease(FastTrackArchitectures);
+        return Versions.ContainsKey(VersionData.Resolute.LatestPatch) &&
+               Versions.ContainsKey(VersionData.Stonking.LatestPatch) &&
+               Versions.Values.All(IsValidRelease);
     }
 
     private static bool IsValidRelease(Dictionary<string, ReleaseArtifact> architectures)
