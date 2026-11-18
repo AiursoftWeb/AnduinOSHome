@@ -1,21 +1,20 @@
 @model Aiursoft.AnduinOSHome.Models.HomeViewModels.DownloadDialogViewModel
 
 @{
-    var localizer = Model.Localizer;
     var titleId = $"{Model.Id}-title";
     var images = new[]
     {
         (
             Arch: "amd64",
             Label: "x86-64",
-            Hardware: localizer["(Intel / AMD)"],
-            Description: localizer["For most Intel and AMD computers."]
+            Hardware: @Localizer["(Intel / AMD)"],
+            Description: @Localizer["For most Intel and AMD computers."]
         ),
         (
             Arch: "arm64",
             Label: "ARM64",
-            Hardware: localizer["(Snapdragon / ARM SBCs)"],
-            Description: localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]
+            Hardware: @Localizer["(Snapdragon / ARM SBCs)"],
+            Description: @Localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]
         )
     };
 }
@@ -24,14 +23,14 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 id="@titleId" class="modal-title">@localizer["Download AnduinOS"] @Model.Version</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@localizer["Close"]"></button>
+                <h5 id="@titleId" class="modal-title">@Localizer["Download AnduinOS"] @Model.Version</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
             </div>
             <div class="modal-body">
                 @if (Model.ShowNonLtsWarning)
                 {
-                    <p class="text-muted">@localizer["Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting."]</p>
-                    <p class="text-muted">@localizer["Use a new USB installer. Back up your files before installing."]</p>
+                    <p class="text-muted">@Localizer["Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting."]</p>
+                    <p class="text-muted">@Localizer["Use a new USB installer. Back up your files before installing."]</p>
                 }
 
                 @foreach (var image in images)
@@ -43,11 +42,11 @@
                             <p class="card-text text-muted small mb-2">@image.Description</p>
                             <div class="d-flex flex-wrap align-items-center gap-2">
                                 <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@image.Arch"
-                                   asp-route-version="@Model.Version" class="btn btn-pill btn-primary">@localizer["Direct (HTTP)"]</a>
+                                   asp-route-version="@Model.Version" class="btn btn-pill btn-primary">@Localizer["Direct (HTTP)"]</a>
                                 <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@(image.Arch + "-torrent")"
-                                   asp-route-version="@Model.Version" class="btn btn-sm btn-pill btn-outline-secondary">@localizer["Torrent"]</a>
+                                   asp-route-version="@Model.Version" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Torrent"]</a>
                                 <a id="@($"{Model.Id}-{image.Arch}-checksum-link")" href="@artifact.ChecksumUrl"
-                                   target="_blank" rel="noopener" class="btn btn-sm btn-pill btn-outline-secondary">@localizer["Checksum"]</a>
+                                   target="_blank" rel="noopener" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Checksum"]</a>
                             </div>
                         </div>
                     </div>
@@ -57,17 +56,32 @@
                 {
                     <div class="card border mb-3 shadow-none">
                         <div class="card-body">
-                            <h6 class="card-title mb-1">@localizer["Container Edition"]</h6>
-                            <p class="card-text text-muted small mb-2">@localizer["Run AnduinOS in Docker or Podman."]</p>
-                            <a href="/Container.html" class="btn btn-pill btn-outline-success">@localizer["Container"]</a>
+                            <h6 class="card-title mb-1">@Localizer["Container Edition"]</h6>
+                            <p class="card-text text-muted small mb-2">@Localizer["Run AnduinOS in Docker or Podman."]</p>
+                            <a href="/Container.html" class="btn btn-pill btn-outline-success">@Localizer["Container"]</a>
                         </div>
                     </div>
                 }
 
-                <partial name="_DownloadDialogNotices" model="localizer" />
+                <div class="mt-3">
+                    <p class="text-muted">
+                        @Localizer["By downloading, you agree to our"]
+                        <a asp-controller="Home" asp-action="Terms">@Localizer["Terms of Service"]</a>
+                        @Localizer["and"]
+                        <a asp-controller="Home" asp-action="Privacy">@Localizer["Privacy Policy"]</a>
+                        @Localizer["."]
+                    </p>
+                    <p class="text-muted">
+                        @Localizer["After downloading, you may want to learn how to"]
+                        <a href="https://docs.anduinos.com/Install/Download-AnduinOS.html">@Localizer["verify the checksum"]</a>
+                        @Localizer["and"]
+                        <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html">@Localizer["burn the ISO to a USB drive"]</a>
+                        @Localizer["."]
+                    </p>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">@localizer["Close"]</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">@Localizer["Close"]</button>
             </div>
         </div>
     </div>
