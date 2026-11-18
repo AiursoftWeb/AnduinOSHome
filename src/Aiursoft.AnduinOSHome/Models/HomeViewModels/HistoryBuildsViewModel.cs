@@ -1,3 +1,4 @@
+using System.Globalization;
 using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.AnduinOSHome.Models.HomeViewModels;
@@ -27,8 +28,14 @@ public record VersionInfo(
     string Gnome,
     string UbuntuBase,
     string? SpecialNote,
-    bool ProvidesIso = false
-);
+    bool ProvidesIso = false,
+    string? DownloadAnchor = null,
+    string? SupportEndMonth = null
+)
+{
+    public string SupportEndLabel => SupportEndMonth ??
+        EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "—";
+}
 
 public static class VersionData
 {
@@ -39,21 +46,41 @@ public static class VersionData
     private const string WithEnGb = Base20 + ",en_GB";
     private const string WithRoRo = WithEnGb + ",ro_RO";
 
+    public static readonly VersionInfo Resolute = new(
+        Version:       "2.0",
+        LatestPatch:   "2.0.6",
+        Codename:      "Resolute Raccoon",
+        Released:      new DateOnly(2026, 6, 30),
+        EndsSupport:   new DateOnly(2031, 4, 1),
+        Status:        VersionStatus.Active,
+        LanguageCodes: "",
+        Kernel:        "7.0",
+        Gnome:         "50",
+        UbuntuBase:    "26.04",
+        SpecialNote:   null,
+        DownloadAnchor: "release-2-0"
+    );
+
+    public static readonly VersionInfo Stonking = new(
+        Version:       "2.1",
+        LatestPatch:   "2.1.0",
+        Codename:      "Stonking Stingray",
+        Released:      new DateOnly(2026, 11, 18),
+        EndsSupport:   null,
+        Status:        VersionStatus.Active,
+        LanguageCodes: "",
+        Kernel:        "7.3",
+        Gnome:         "51",
+        UbuntuBase:    "26.10",
+        SpecialNote:   null,
+        DownloadAnchor: "release-2-1",
+        SupportEndMonth: "Jul 2027"
+    );
+
     public static readonly IReadOnlyList<VersionInfo> All = new List<VersionInfo>
     {
-        new(
-            Version:         "2.0",
-            LatestPatch:     "2.0.6",
-            Codename:        "Resolute Raccoon",
-            Released:        new DateOnly(2026, 6, 30),
-            EndsSupport:     new DateOnly(2031, 4, 1),
-            Status:          VersionStatus.Active,
-            LanguageCodes:   "",
-            Kernel:          "7.0",
-            Gnome:           "50",
-            UbuntuBase:      "26.04",
-            SpecialNote:     null
-        ),
+        Stonking,
+        Resolute,
         new(
             Version:         "1.4",
             LatestPatch:     "1.4.2",

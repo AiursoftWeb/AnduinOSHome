@@ -23,7 +23,8 @@ public class HomeController : Controller
         return this.SimpleView(new IndexViewModel
         {
             Amd64ChecksumUrl = _releaseArtifacts.Architectures["amd64"].ChecksumUrl,
-            Arm64ChecksumUrl = _releaseArtifacts.Architectures["arm64"].ChecksumUrl
+            Arm64ChecksumUrl = _releaseArtifacts.Architectures["arm64"].ChecksumUrl,
+            FastTrackArchitectures = _releaseArtifacts.FastTrackArchitectures
         });
     }
 
@@ -52,16 +53,22 @@ public class HomeController : Controller
     }
 
     [Route("/thankyou.html")]
-    public IActionResult ThankYou([FromQuery] string? download)
+    public IActionResult ThankYou([FromQuery] string? download, [FromQuery] string? channel)
     {
-        if (string.IsNullOrWhiteSpace(download))
+        var artifacts = channel switch
+        {
+            null or "lts" => _releaseArtifacts.Architectures,
+            ReleaseArtifactsOptions.FastTrackChannel => _releaseArtifacts.FastTrackArchitectures,
+            _ => null
+        };
+        if (artifacts is null || string.IsNullOrWhiteSpace(download))
         {
             return NotFound();
         }
 
         var isTorrent = download.EndsWith(TorrentSuffix, StringComparison.OrdinalIgnoreCase);
         var architecture = isTorrent ? download[..^TorrentSuffix.Length] : download;
-        if (!_releaseArtifacts.Architectures.TryGetValue(architecture, out var artifact))
+        if (!artifacts.TryGetValue(architecture, out var artifact))
         {
             return NotFound();
         }
@@ -71,6 +78,10 @@ public class HomeController : Controller
             DownloadUrl = isTorrent ? artifact.TorrentUrl : artifact.IsoUrl,
             ChecksumUrl = artifact.ChecksumUrl,
             IsoFileName = artifact.IsoFileName,
+            IsoSize = artifact.IsoSize,
+            ReleaseVersion = channel == ReleaseArtifactsOptions.FastTrackChannel
+                ? VersionData.Stonking.LatestPatch
+                : VersionData.Resolute.LatestPatch,
             IsTorrent = isTorrent
         };
         return this.SimpleView(model);

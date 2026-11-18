@@ -23,12 +23,12 @@
         <span data-key="System foundation">@Localizer["System foundation"]</span>
         <span data-key="Ubuntu version and Linux kernel">@Localizer["Ubuntu version and Linux kernel"]</span>
         <span data-key="Ubuntu 26.04 LTS · Linux 7.0">@Localizer["Ubuntu 26.04 LTS · Linux 7.0"]</span>
-        <span data-key="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image.">@Localizer["AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image."]</span>
+        <span data-key="AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image.">@Localizer["AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image."]</span>
         <span data-key="Ubuntu 24.04 · Linux 6.17">@Localizer["Ubuntu 24.04 · Linux 6.17"]</span>
         <span data-key="Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50.">@Localizer["Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50."]</span>
         <span data-key="Ubuntu 24.04 · Linux 6.14 or 7.0 HWE">@Localizer["Ubuntu 24.04 · Linux 6.14 or 7.0 HWE"]</span>
         <span data-key="Linux Mint 22.3 launched with Linux 6.14. It also offers tested HWE images with Linux 7.0 for newer hardware. HWE means hardware enablement: check which installation image you download, because the included kernel differs.">@Localizer["Linux Mint 22.3 launched with Linux 6.14. It also offers tested HWE images with Linux 7.0 for newer hardware. HWE means hardware enablement: check which installation image you download, because the included kernel differs."]</span>
-        <span data-key="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based.">@Localizer["Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based."]</span>
+        <span data-key="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based.">@Localizer["Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based."]</span>
         <span data-key="Wayland desktop">@Localizer["Wayland desktop"]</span>
         <span data-key="How apps display windows on your screen">@Localizer["How apps display windows on your screen"]</span>
         <span data-key="Wayland desktop only">@Localizer["Wayland desktop only"]</span>
@@ -284,7 +284,7 @@
                                 </span>
                                 <span>
                                     <span class="comparison-heading-eyebrow">@Localizer["Our system"]</span>
-                                    <strong>AnduinOS 2</strong>
+                                    <strong>AnduinOS 2.0 LTS</strong>
                                 </span>
                             </span>
                             <span class="comparison-reference-badge">@Localizer["Built in and ready to use"]</span>
@@ -311,7 +311,7 @@
                     </div>
 
                     <div class="comparison-mobile-columns" aria-hidden="true">
-                        <span>AnduinOS 2</span>
+                        <span>AnduinOS 2.0 LTS</span>
                         <span data-comparison-mobile-selected-label>Zorin OS 18.1</span>
                     </div>
 
@@ -333,7 +333,7 @@
                                 </div>
 
                                 <div class="comparison-result-cell comparison-result-cell--anduinos" role="cell">
-                                    @RenderStatusButton(item, "anduinos", "AnduinOS 2", item.AnduinOs)
+                                    @RenderStatusButton(item, "anduinos", "AnduinOS 2.0 LTS", item.AnduinOs)
                                 </div>
 
                                 <div class="comparison-result-cell comparison-result-cell--competitor" role="cell">
@@ -378,7 +378,7 @@
     {
         foreach (var project in new[]
                  {
-                     (Key: "anduinos", Name: "AnduinOS 2", Cell: item.AnduinOs),
+                     (Key: "anduinos", Name: "AnduinOS 2.0 LTS", Cell: item.AnduinOs),
                      (Key: "zorin", Name: "Zorin OS 18.1", Cell: item.Zorin),
                      (Key: "mint", Name: "Linux Mint 22.3", Cell: item.Mint),
                      (Key: "ubuntu", Name: "Ubuntu 26.04 LTS", Cell: item.Ubuntu)

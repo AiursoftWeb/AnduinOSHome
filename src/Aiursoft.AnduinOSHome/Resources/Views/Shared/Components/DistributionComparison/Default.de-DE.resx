@@ -77,8 +77,8 @@ Das unterscheidet sich vom installierten Ubuntu-System, bei dem standardmäßig 
   <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
     <value>Eine initramfs ist die kleine Umgebung, die vor dem normalen Start Treiber lädt und das System findet. Zorin erstellt sie mit initramfs-tools aus Ubuntu 24.04 und verwendet Casper für Live-USB. Das ist eine andere Werkzeugwahl als Dracut, keine fehlende Startunterstützung.</value>
   </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 basiert auf Ubuntu 26.04 LTS und dessen Linux-7.0-Kernel. Der Kernel verbindet Software und Hardware. Diese Grundlage bleibt bei der Installation und normalen Updates erhalten, statt nur im Installationsabbild angepasst zu werden.</value>
+  <data name="AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2.0 LTS basiert auf Ubuntu 26.04 LTS und dessen Linux-7.0-Kernel. Der Kernel verbindet Software und Hardware. Diese Grundlage bleibt bei der Installation und normalen Updates erhalten, statt nur im Installationsabbild angepasst zu werden.</value>
   </data>
   <data name="AnduinOS Snapshot Manager" xml:space="preserve">
     <value>AnduinOS-Snapshot-Verwaltung</value>
@@ -564,7 +564,7 @@ AnduinOS verwendet Dracut sowohl für das installierte System als auch für den 
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based." xml:space="preserve">
     <value>Ubuntu 26.04 LTS bietet den Linux-7.0-Kernel und fünf Jahre reguläre LTS-Wartung. LTS bedeutet Langzeitunterstützung. Auf dieser Ubuntu-Version basiert AnduinOS 2.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">

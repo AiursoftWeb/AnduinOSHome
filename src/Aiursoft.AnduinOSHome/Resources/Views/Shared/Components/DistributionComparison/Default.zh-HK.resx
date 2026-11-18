@@ -77,8 +77,8 @@ Dracut 的 dmsquash-live 負責載入映像。AnduinOS Live Layers 會管理一�
   <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
     <value>initramfs 是在系統正式啓動前加載驅動程式、找到系統檔案的小型環境。Zorin 使用 Ubuntu 24.04 的 initramfs-tools 生成它，並通過 Casper 支援 Live USB 手指。這裡比較的是啓動工具的選擇，並不代表缺少啓動功能。</value>
   </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 基於 Ubuntu 26.04 LTS，使用 Linux 7.0 核心。核心負責連接軟件和硬件。安裝系統和日常更新時都會沿用這一基礎，而不只是修改安裝映像檔中的核心。</value>
+  <data name="AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2.0 LTS 基於 Ubuntu 26.04 LTS，使用 Linux 7.0 核心。核心負責連接軟件和硬件。安裝系統和日常更新時都會沿用這一基礎，而不只是修改安裝映像檔中的核心。</value>
   </data>
   <data name="AnduinOS Snapshot Manager" xml:space="preserve">
     <value>AnduinOS 快照管理器</value>
@@ -564,8 +564,8 @@ AnduinOS 在已安裝的系統和 Live USB 上都使用 Dracut。其核心套件
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS 提供 Linux 7.0 核心和五年的標準 LTS 維護。LTS 即長期支援。AnduinOS 2 正是基於這一 Ubuntu 版本建置的。</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS 提供 Linux 7.0 核心和五年的標準 LTS 維護。LTS 即長期支援。AnduinOS 2.0 LTS 正是基於這一 Ubuntu 版本建置的。</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>

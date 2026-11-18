@@ -1,4 +1,3 @@
-using Aiursoft.AnduinOSHome.Models.HomeViewModels;
 using Aiursoft.AnduinOSHome.Views.Shared.Components.DistributionComparison;
 using Microsoft.AspNetCore.Mvc.ViewComponents;
 
@@ -146,7 +145,14 @@ public class HomeControllerTests : TestBase
         Assert.Contains("data-key=\"checksum\"", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("2.0"));
         Assert.IsTrue(html.Contains("Resolute Raccoon"));
-        Assert.AreEqual("2.0.6", VersionData.All[0].LatestPatch);
+        Assert.Contains("AnduinOS 2.0.6", html, StringComparison.Ordinal);
+        Assert.Contains("AnduinOS 2.1.0", html, StringComparison.Ordinal);
+        Assert.Contains("Stonking Stingray", html, StringComparison.Ordinal);
+        Assert.Contains("2026-11-18", html, StringComparison.Ordinal);
+        Assert.Contains("Jul 2027", html, StringComparison.Ordinal);
+        Assert.Contains("href=\"/#release-2-0\"", html, StringComparison.Ordinal);
+        Assert.Contains("href=\"/#release-2-1\"", html, StringComparison.Ordinal);
+        Assert.DoesNotContain("Back to latest version (2.0)", html, StringComparison.Ordinal);
         Assert.IsTrue(html.Contains("1.0"));
     }
 
@@ -159,6 +165,14 @@ public class HomeControllerTests : TestBase
         "AnduinOS-2.0.6-arm64.iso", false)]
     [DataRow("arm64-torrent", "https://cf.anduinos.com/AnduinOS-2.0.6-arm64.torrent", Arm64ChecksumUrl,
         "AnduinOS-2.0.6-arm64.iso", true)]
+    [DataRow("amd64&channel=fast-track", "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.iso",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.sha256", "AnduinOS-2.1.0-amd64.iso", false)]
+    [DataRow("amd64-torrent&channel=fast-track", "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.torrent",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.sha256", "AnduinOS-2.1.0-amd64.iso", true)]
+    [DataRow("arm64&channel=fast-track", "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.iso",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.sha256", "AnduinOS-2.1.0-arm64.iso", false)]
+    [DataRow("arm64-torrent&channel=fast-track", "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.torrent",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.sha256", "AnduinOS-2.1.0-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
@@ -192,6 +206,9 @@ public class HomeControllerTests : TestBase
         Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
 
         response = await Http.GetAsync("/thankyou.html?download=unknown");
+        Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
+
+        response = await Http.GetAsync("/thankyou.html?download=amd64&channel=unknown");
         Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
     }
 

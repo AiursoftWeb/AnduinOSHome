@@ -3,15 +3,24 @@ namespace Aiursoft.AnduinOSHome.Configuration;
 public sealed class ReleaseArtifactsOptions
 {
     public const string SectionName = "ReleaseArtifacts";
+    public const string FastTrackChannel = "fast-track";
 
     public Dictionary<string, ReleaseArtifact> Architectures { get; init; } =
         new(StringComparer.OrdinalIgnoreCase);
 
+    public Dictionary<string, ReleaseArtifact> FastTrackArchitectures { get; init; } =
+        new(StringComparer.OrdinalIgnoreCase);
+
     public bool IsValid()
     {
+        return IsValidRelease(Architectures) && IsValidRelease(FastTrackArchitectures);
+    }
+
+    private static bool IsValidRelease(Dictionary<string, ReleaseArtifact> architectures)
+    {
         string[] requiredArchitectures = ["amd64", "arm64"];
-        return requiredArchitectures.All(Architectures.ContainsKey) &&
-               Architectures.Values.All(artifact => artifact.HasValidUrls());
+        return requiredArchitectures.All(architectures.ContainsKey) &&
+               architectures.Values.All(artifact => artifact.HasValidUrls());
     }
 }
 
@@ -20,6 +29,7 @@ public sealed class ReleaseArtifact
     public string IsoUrl { get; init; } = string.Empty;
     public string TorrentUrl { get; init; } = string.Empty;
     public string ChecksumUrl { get; init; } = string.Empty;
+    public string IsoSize { get; init; } = string.Empty;
 
     public string IsoFileName => Uri.TryCreate(IsoUrl, UriKind.Absolute, out var uri)
         ? Path.GetFileName(uri.LocalPath)

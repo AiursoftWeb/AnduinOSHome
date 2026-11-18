@@ -12,5 +12,7 @@ public class ThankYouViewModel : UiStackLayoutViewModel
     public string DownloadUrl { get; init; } = string.Empty;
     public string ChecksumUrl { get; init; } = string.Empty;
     public string IsoFileName { get; init; } = string.Empty;
+    public string ReleaseVersion { get; init; } = string.Empty;
+    public string IsoSize { get; init; } = string.Empty;
     public bool IsTorrent { get; init; }
 }

@@ -1,3 +1,4 @@
+using Aiursoft.AnduinOSHome.Configuration;
 using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.AnduinOSHome.Models.HomeViewModels;
@@ -11,4 +12,5 @@ public class IndexViewModel : UiStackLayoutViewModel
 
     public string Amd64ChecksumUrl { get; init; } = string.Empty;
     public string Arm64ChecksumUrl { get; init; } = string.Empty;
+    public required IReadOnlyDictionary<string, ReleaseArtifact> FastTrackArchitectures { get; init; }
 }

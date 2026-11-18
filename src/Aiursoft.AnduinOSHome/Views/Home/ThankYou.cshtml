@@ -9,12 +9,12 @@
                     <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-3 py-2 me-2">
                         <i data-lucide="check-circle" style="width: 14px; height: 14px;" class="me-1"></i>@Localizer["Download Started"]
                     </span>
-                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">@Localizer["~2.4 GB ISO"]</span>
+                    <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-50 px-3 py-2 me-2">@(string.IsNullOrWhiteSpace(Model.IsoSize) ? Localizer["~2.4 GB ISO"].Value : $"{Model.IsoSize} ISO")</span>
                     <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-50 px-3 py-2">@Localizer["Open Source"]</span>
                 </div>
                 <h1 class="my-4 text-white" style="font-size: 3rem; font-weight: 800; line-height: 1.15;">
                     @Localizer["Thank you for downloading"]
-                    <span class="text-primary">@Localizer["AnduinOS"]</span>
+                    <span class="text-primary">@Localizer["AnduinOS"] @Model.ReleaseVersion</span>
                 </h1>
                 <p class="text-lg text-white-50 mb-4" style="font-size: 1.25rem; max-width: 540px;">
                     @Localizer["Your AnduinOS journey starts here. Follow the steps below to get up and running in under 30 minutes."]
