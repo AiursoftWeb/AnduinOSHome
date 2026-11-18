@@ -77,8 +77,8 @@ Bu, varsayılan olarak Dracut kullanan kurulu Ubuntu sisteminden farklıdır. An
   <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
     <value>initramfs, normal açılıştan önce sürücüleri yükleyen ve sistemi bulan küçük bir ortamdır. Zorin, bu ortamı oluşturmak için Ubuntu 24.04&apos;ün initramfs-tools araçlarını, Live USB ortamı içinse Casper&apos;ı kullanır. Bu, Dracut&apos;tan farklı bir açılış aracı tercihidir; açılış desteğinin olmadığı anlamına gelmez.</value>
   </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2, Ubuntu 26.04 LTS ve Linux 7.0 çekirdeği temel alınarak geliştirilmiştir. Çekirdek, yazılımları donanımınıza bağlar. AnduinOS, bu temeli yalnızca kurulum imajında değiştirmek yerine kurulum sırasında ve olağan güncellemelerde korur.</value>
+  <data name="AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2.0 LTS, Ubuntu 26.04 LTS ve Linux 7.0 çekirdeği temel alınarak geliştirilmiştir. Çekirdek, yazılımları donanımınıza bağlar. AnduinOS, bu temeli yalnızca kurulum imajında değiştirmek yerine kurulum sırasında ve olağan güncellemelerde korur.</value>
   </data>
   <data name="AnduinOS Snapshot Manager" xml:space="preserve">
     <value>AnduinOS Anlık Görüntü Yöneticisi</value>
@@ -564,8 +564,8 @@ AnduinOS, hem kurulu sistem hem de Live USB için Dracut kullanır. Temel paketi
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
-    <value>Ubuntu 26.04 LTS, Linux 7.0 çekirdeğini ve beş yıl boyunca standart LTS bakımını sunar. LTS, uzun süreli destek anlamına gelir. AnduinOS 2&apos;nin temel aldığı Ubuntu sürümü budur.</value>
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based." xml:space="preserve">
+    <value>Ubuntu 26.04 LTS, Linux 7.0 çekirdeğini ve beş yıl boyunca standart LTS bakımını sunar. LTS, uzun süreli destek anlamına gelir. AnduinOS 2.0 LTS&apos;nin temel aldığı Ubuntu sürümü budur.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">
     <value>Ubuntu 26.04 LTS · Linux 7.0</value>

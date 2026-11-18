@@ -43,7 +43,7 @@ public class DistributionComparison : ViewComponent
             new ComparisonItem(
                 "platform", "crown", "System foundation", "Ubuntu version and Linux kernel", true,
                 Cell(ComparisonLevel.FirstClass, "Ubuntu 26.04 LTS · Linux 7.0",
-                    "AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image.",
+                    "AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image.",
                     Source("AnduinOS packages and source code", AnduinPackages)),
                 Cell(ComparisonLevel.DefaultProvided, "Ubuntu 24.04 · Linux 6.17",
                     "Zorin OS 18.1 uses Ubuntu 24.04 LTS and Linux 6.17. Its desktop and system software follow the Ubuntu 24.04 base; a newer kernel does not by itself bring the desktop features of Ubuntu 26.04 or GNOME 50.",
@@ -52,7 +52,7 @@ public class DistributionComparison : ViewComponent
                     "Linux Mint 22.3 launched with Linux 6.14. It also offers tested HWE images with Linux 7.0 for newer hardware. HWE means hardware enablement: check which installation image you download, because the included kernel differs.",
                     Source("Linux Mint 22.3 release notes", MintRelease), Source("Mint images for newer hardware", MintHwe)),
                 Cell(ComparisonLevel.FirstClass, "Ubuntu 26.04 LTS · Linux 7.0",
-                    "Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based.",
+                    "Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based.",
                     Source("Ubuntu 26.04 release notes", UbuntuRelease))),
 
             new ComparisonItem(

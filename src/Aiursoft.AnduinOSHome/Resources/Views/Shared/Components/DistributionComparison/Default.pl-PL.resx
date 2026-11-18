@@ -77,8 +77,8 @@ Różni się to od zainstalowanego systemu Ubuntu, który domyślnie korzysta z 
   <data name="An initramfs is the small environment that loads drivers and finds the system before normal startup. Zorin uses initramfs-tools from Ubuntu 24.04 to generate it, with Casper for the Live USB environment. This is a different boot-tool choice from Dracut, not the absence of boot support." xml:space="preserve">
     <value>Initramfs to małe środowisko, które przed zwykłym startem ładuje sterowniki i znajduje system. Zorin tworzy je za pomocą initramfs-tools z Ubuntu 24.04, a na USB Live korzysta z Casper. To inny wybór narzędzi niż Dracut, a nie brak obsługi rozruchu.</value>
   </data>
-  <data name="AnduinOS 2 is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
-    <value>AnduinOS 2 bazuje na Ubuntu 26.04 LTS i jądrze Linux 7.0. Jądro łączy oprogramowanie ze sprzętem. Ten zestaw pozostaje podstawą systemu po instalacji i zwykłych aktualizacjach, a nie tylko w obrazie instalacyjnym.</value>
+  <data name="AnduinOS 2.0 LTS is based on Ubuntu 26.04 LTS and its Linux 7.0 kernel. The kernel connects software to your hardware. AnduinOS keeps this foundation through installation and normal updates, rather than changing it only in the installation image." xml:space="preserve">
+    <value>AnduinOS 2.0 LTS bazuje na Ubuntu 26.04 LTS i jądrze Linux 7.0. Jądro łączy oprogramowanie ze sprzętem. Ten zestaw pozostaje podstawą systemu po instalacji i zwykłych aktualizacjach, a nie tylko w obrazie instalacyjnym.</value>
   </data>
   <data name="AnduinOS Snapshot Manager" xml:space="preserve">
     <value>Menedżer migawek AnduinOS</value>
@@ -564,7 +564,7 @@ AnduinOS używa Dracut zarówno w zainstalowanym systemie, jak i w systemie Live
   <data name="Ubuntu 24.04 · Linux 6.17" xml:space="preserve">
     <value>Ubuntu 24.04 · Linux 6.17</value>
   </data>
-  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2 is based." xml:space="preserve">
+  <data name="Ubuntu 26.04 LTS provides the Linux 7.0 kernel and five years of standard LTS maintenance. LTS means long-term support. It is the Ubuntu release on which AnduinOS 2.0 LTS is based." xml:space="preserve">
     <value>Ubuntu 26.04 LTS zapewnia jądro Linux 7.0 i pięć lat standardowej opieki technicznej LTS. Skrót LTS oznacza długoterminowe wsparcie. Na tej wersji Ubuntu bazuje AnduinOS 2.</value>
   </data>
   <data name="Ubuntu 26.04 LTS · Linux 7.0" xml:space="preserve">

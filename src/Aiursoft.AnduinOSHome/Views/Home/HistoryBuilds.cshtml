@@ -9,25 +9,14 @@
 
         @* ── Back link ── *@
         <div class="mb-4">
-            <a href="/" class="text-decoration-none">
-                <i class="fas fa-arrow-left me-1"></i>@Localizer["Back to latest version (2.0)"]
+            <a href="/#download-links" class="text-decoration-none">
+                <i class="fas fa-arrow-left me-1"></i>@Localizer["Choose your AnduinOS version"]
             </a>
         </div>
 
         @* ── Header ── *@
         <div class="text-center mb-5">
             <h1 class="display-4 fw-bold">@Localizer["Historical Builds"]</h1>
-
-<div class="alert alert-warning alert-outline alert-dismissible" role="alert">
-<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@Localizer["Close"]"></button>
-<div class="alert-icon">
-<i class="far fa-fw fa-bell"></i>
-</div>
-<div class="alert-message">
-@Localizer["These are legacy versions of AnduinOS. We strongly recommend downloading the latest version instead."]
-</div>
-</div>
-
 
         </div>
 
@@ -61,7 +50,7 @@
                                 </td>
                                 <td>@v.Released.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)</td>
                                 <td>@v.Codename</td>
-                                <td>@(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "—")</td>
+                                <td>@v.SupportEndLabel</td>
                             </tr>
                         }
                     </tbody>
@@ -70,34 +59,37 @@
         </div>
 
         @* ── Download Accordion Cards ── *@
-        <h2 class="h4 mb-3">@Localizer["Downloads for Historical Versions"]</h2>
+        <h2 class="h4 mb-3">@Localizer["Downloads"]</h2>
         <p class="text-muted mb-4">
-            @Localizer["Expand a version to see details and download torrent files. Only torrents and checksums are available for historical versions."]
+            @Localizer["Choose a current release to download an ISO. Expand an older version to browse its archived builds."]
         </p>
 
         <div class="accordion" id="historyAccordion">
             @foreach (var v in HistoryBuildsViewModel.AllVersions)
             {
-                var isCurrent = v.Version == "2.0";
+                var isCurrent = v.DownloadAnchor is not null;
                 var collapseId = $"collapse{v.Version.Replace(".", "")}";
                 var headingId = $"heading{v.Version.Replace(".", "")}";
 
                 <div class="card border mb-3">
                     @if (isCurrent)
                     {
-                        @* ── 2.0: entire header links to home page ── *@
-                        <a href="/"
+                        <a href="/#@v.DownloadAnchor"
                            class="card-header text-decoration-none d-flex justify-content-between align-items-center history-card-header"
                            style="cursor: pointer;">
                             <div>
-                                <strong>AnduinOS @v.Version</strong>
+                                <strong>AnduinOS @v.LatestPatch</strong>
                                 <span class="ms-2 text-muted">@v.Codename</span>
-                                @if (v.Version == "2.0" || v.Version == "1.1")
+                                @if (v.Version == VersionData.Resolute.Version)
                                 {
                                     <span class="badge bg-primary ms-2 extra-small">LTS</span>
                                 }
+                                else
+                                {
+                                    <span class="badge bg-primary ms-2 extra-small">Latest</span>
+                                }
                             </div>
-                            <span class="badge bg-success">@Localizer["Active"] &mdash; @Localizer["Go to latest version"]</span>
+                            <span class="badge bg-success">@Localizer["Download"]</span>
                         </a>
                     }
                     else
@@ -188,11 +180,11 @@
                                             <dd class="col-sm-7">
                                                 @if (v.Status == VersionStatus.Active)
                                                 {
-                                                    <span class="text-success">@Localizer["Supported until"] @(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "")</span>
+                                                    <span class="text-success">@Localizer["Supported until"] @v.SupportEndLabel</span>
                                                 }
                                                 else
                                                 {
-                                                    <span class="text-danger">@Localizer["End of Life (since"] @(v.EndsSupport?.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) ?? "")@Localizer[")"]</span>
+                                                    <span class="text-danger">@Localizer["End of Life (since"] @v.SupportEndLabel@Localizer[")"]</span>
                                                 }
                                             </dd>
 

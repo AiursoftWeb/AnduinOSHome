@@ -1,4 +1,10 @@
+@using System.Globalization
+@using Aiursoft.AnduinOSHome.Configuration
+@using Aiursoft.AnduinOSHome.Models.HomeViewModels
+
 @{
+    var resolute = VersionData.Resolute;
+    var stonking = VersionData.Stonking;
     var slogans = new[]
     {
         Localizer["No telemetry integrated! Choose <span class='text-primary'>AnduinOS</span> to regain your privacy"].Value,
@@ -258,7 +264,7 @@
                 <p class="text-lg text-white-50">@Localizer["AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and easy-to-use experience for anyone moving to Linux."]</p>
 
                 <div class="my-4">
-                    <span class="badge badge-subtle-primary p-1">v2.0.6</span>
+                    <span class="badge badge-subtle-primary p-1">v@(resolute.LatestPatch)</span>
                 </div>
                 <div class="my-4 d-flex gap-2 flex-wrap">
                     <a class="btn btn-primary btn-lg btn-pill" href="#download-links">@Localizer["Download"]</a>
@@ -269,7 +275,7 @@
                     <a href="/HistoryBuilds.html" class="">
                         @Localizer["Historical versions"]
                     </a>
-                    <a href="https://docs.anduinos.com/Release-Notes/2.0.6.html" target="_blank"
+                    <a href="https://docs.anduinos.com/Release-Notes/@(resolute.LatestPatch).html" target="_blank"
                        class="ms-2">
                         @Localizer["Change Log"]
                     </a>
@@ -373,14 +379,11 @@
                     <span
                         class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Versions"]</span>
                     <h2 class="h1">@Localizer["Choose your AnduinOS version"]</h2>
-                    <p class="text-muted fs-lg">@Localizer["AnduinOS is available in"] <a
-                            href="/HistoryBuilds.html">@Localizer["two version branches"]</a>: @Localizer["LTS and Standard"]@Localizer["."]
-                        @Localizer["The LTS version is recommended for users need a stable long-term support, while the Standard version is recommended for users with newer devices and want to explore the latest features."]
-                    </p>
+                    <p class="text-muted fs-lg">@Localizer["Choose LTS for your main computer, or try 2.1 for newer features."]</p>
                 </div>
                 <div class="row py-4">
                         @* ── Left: Upgrade from 1.x ── *@
-                        <div class="col-sm-3 mb-5 mb-md-0">
+                        <div class="col-lg-3 mb-4 mb-lg-0">
                             <div class="card text-center h-100">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-4">
@@ -405,13 +408,13 @@
                         </div>
 
                         @* ── Center: latest 2.0 release ── *@
-                        <div class="col-sm-6 mb-5 mb-md-0">
+                        <div class="col-lg-6 mb-4 mb-lg-0" id="@resolute.DownloadAnchor">
                             <div class="card text-center h-100 middle-card">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-4">
-                                        <h5>Resolute Raccoon</h5>
+                                        <h5>@resolute.Codename</h5>
                                         <span class="display-2">
-                                            2.0
+                                            @resolute.Version
                                         </span><br/>
                                         <span class="d-inline-flex gap-2 mt-2">
                                             <span class="badge bg-primary">LTS</span>
@@ -421,13 +424,13 @@
 
                                     <h6 class="mt-3">@Localizer["Includes:"]</h6>
                                     <ul class="list-unstyled">
-                                        <li class="mb-2">@Localizer["Support till"] Apr 2031</li>
-									<li class="mb-2">GNOME 50</li>
-                                        <li class="mb-2">Ubuntu 26.04 @Localizer["packages"]</li>
-                                        <li class="mb-2">Linux kernel 7.0</li>
-                                        <li class="mb-2">@Localizer["Released on"] 2026.06.30</li>
+                                        <li class="mb-2">@Localizer["Support till"] @(resolute.EndsSupport?.ToString("MMM yyyy", CultureInfo.InvariantCulture))</li>
+									<li class="mb-2">GNOME @resolute.Gnome</li>
+                                        <li class="mb-2">Ubuntu @resolute.UbuntuBase @Localizer["packages"]</li>
+                                        <li class="mb-2">Linux kernel @resolute.Kernel</li>
+                                        <li class="mb-2">@Localizer["Released on"] @resolute.Released.ToString("yyyy.MM.dd", CultureInfo.InvariantCulture)</li>
                                         <li class="mb-2">
-                                            @Localizer["Latest version"] 2.0.6
+                                            @Localizer["Latest version"] @resolute.LatestPatch
                                         </li>
                                     </ul>
 
@@ -436,8 +439,8 @@
                                                 class="btn btn-lg btn-pill btn-primary"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#download-modal"
-                                                data-version="2.0"
-                                                data-latest="2.0.6"
+                                                data-version="@resolute.Version"
+                                                data-latest="@resolute.LatestPatch"
                                                 data-size="2.42 GB">
                                             @Localizer["Download"]
                                         </button>
@@ -446,28 +449,39 @@
                             </div>
                         </div>
 
-                        @* ── Right: Enterprise ── *@
-                        <div class="col-sm-3 mb-5 mb-md-0">
+                        <div class="col-lg-3" id="@stonking.DownloadAnchor">
                             <div class="card text-center h-100">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-4">
-                                        <i class="fas fa-building fa-3x text-primary mb-3"></i>
-                                        <h5>@Localizer["AnduinOS Enterprise"]</h5>
+                                        <h5>@stonking.Codename</h5>
+                                        <span class="display-2">@stonking.Version</span><br/>
+                                        <span class="d-inline-flex flex-wrap justify-content-center gap-2 mt-2">
+                                            <span class="badge bg-primary">Latest</span>
+                                            <span class="badge bg-warning text-dark">@Localizer["For technical users"]</span>
+                                        </span>
                                     </div>
-                                    <ul class="list-unstyled text-start px-3">
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Custom branding"]</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Cluster management"]</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Rapid deployment"]</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["7×24 on-call support where contracted"]</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Kiosk device customization"]</li>
-                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>@Localizer["Private package repository"]</li>
+
+                                    <p class="text-muted">@Localizer["Try newer desktop and system components."]</p>
+                                    <h6 class="mt-3">@Localizer["Includes:"]</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">@Localizer["Support till"] @stonking.SupportEndLabel</li>
+                                        <li class="mb-2">GNOME @stonking.Gnome</li>
+                                        <li class="mb-2">Ubuntu @stonking.UbuntuBase @Localizer["packages"]</li>
+                                        <li class="mb-2">Linux kernel @stonking.Kernel</li>
+                                        <li class="mb-2">@Localizer["Released on"] @stonking.Released.ToString("yyyy.MM.dd", CultureInfo.InvariantCulture)</li>
+                                        <li class="mb-2">@Localizer["Latest version"] @stonking.LatestPatch</li>
                                     </ul>
-                                    <p class="text-muted small">@Localizer["Enterprise deployment, management integrations, and support are scoped in your service agreement. AnduinOS 2.0 standard support ends in April 2031 for both editions."]</p>
+
                                     <div class="mt-auto">
-                                        <a href="https://www.aiursoft.com/anduinos"
-                                           target="_blank"
-                                           class="btn btn-lg btn-pill btn-outline-primary">
-                                            @Localizer["Learn more"]
+                                        <button type="button"
+                                                class="btn btn-pill btn-outline-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#download-fast-track-modal">
+                                            @Localizer["Download"] @stonking.LatestPatch
+                                        </button>
+                                        <a href="https://docs.anduinos.com/Release-Notes/@(stonking.LatestPatch).html"
+                                           class="btn btn-sm btn-link d-block mt-2">
+                                            @Localizer["What's new and known issues"]
                                         </a>
                                     </div>
                                 </div>
@@ -1686,6 +1700,38 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="download-fast-track-modal" tabindex="-1" role="dialog"
+     aria-labelledby="download-fast-track-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="download-fast-track-title" class="modal-title">@Localizer["Download AnduinOS"] @stonking.LatestPatch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted">@Localizer["Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting."]</p>
+                <p class="text-muted">@Localizer["Use a new USB installer. Back up your files before installing."]</p>
+                @foreach (var image in new[] { (Arch: "amd64", Label: "x86-64"), (Arch: "arm64", Label: "ARM64") })
+                {
+                    var artifact = Model.FastTrackArchitectures[image.Arch];
+                    <div class="card border mb-3 shadow-none">
+                        <div class="card-body">
+                            <h6 class="card-title">@image.Label ISO <small class="text-muted fw-normal">· @artifact.IsoSize</small></h6>
+                            <div class="d-flex flex-wrap align-items-center gap-2">
+                                <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@image.Arch"
+                                   asp-route-channel="@ReleaseArtifactsOptions.FastTrackChannel" class="btn btn-pill btn-primary">@Localizer["Direct (HTTP)"]</a>
+                                <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@(image.Arch + "-torrent")"
+                                   asp-route-channel="@ReleaseArtifactsOptions.FastTrackChannel" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Torrent"]</a>
+                                <a href="@artifact.ChecksumUrl" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Checksum"]</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
 @* modal for download links *@
 <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
