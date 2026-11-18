@@ -11,6 +11,7 @@ namespace Aiursoft.AnduinOSHome.Controllers;
 public class HomeController : Controller
 {
     private const string TorrentSuffix = "-torrent";
+    private const string LegacyFastTrackChannel = "fast-track";
     private readonly ReleaseArtifactsOptions _releaseArtifacts;
 
     public HomeController(IOptions<ReleaseArtifactsOptions> releaseArtifacts)
@@ -20,11 +21,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        var resolute = _releaseArtifacts.Versions[VersionData.Resolute.LatestPatch];
         return this.SimpleView(new IndexViewModel
         {
-            Amd64ChecksumUrl = _releaseArtifacts.Architectures["amd64"].ChecksumUrl,
-            Arm64ChecksumUrl = _releaseArtifacts.Architectures["arm64"].ChecksumUrl,
-            FastTrackArchitectures = _releaseArtifacts.FastTrackArchitectures
+            Amd64ChecksumUrl = resolute["amd64"].ChecksumUrl,
+            Arm64ChecksumUrl = resolute["arm64"].ChecksumUrl,
+            StonkingArtifacts = _releaseArtifacts.Versions[VersionData.Stonking.LatestPatch]
         });
     }
 
@@ -53,15 +55,16 @@ public class HomeController : Controller
     }
 
     [Route("/thankyou.html")]
-    public IActionResult ThankYou([FromQuery] string? download, [FromQuery] string? channel)
+    public IActionResult ThankYou([FromQuery] string? download, [FromQuery] string? version, [FromQuery] string? channel)
     {
-        var artifacts = channel switch
+        version ??= channel switch
         {
-            null or "lts" => _releaseArtifacts.Architectures,
-            ReleaseArtifactsOptions.FastTrackChannel => _releaseArtifacts.FastTrackArchitectures,
+            null or "lts" => VersionData.Resolute.LatestPatch,
+            LegacyFastTrackChannel => VersionData.Stonking.LatestPatch,
             _ => null
         };
-        if (artifacts is null || string.IsNullOrWhiteSpace(download))
+        if (version is null || !_releaseArtifacts.Versions.TryGetValue(version, out var artifacts) ||
+            string.IsNullOrWhiteSpace(download))
         {
             return NotFound();
         }
@@ -79,9 +82,7 @@ public class HomeController : Controller
             ChecksumUrl = artifact.ChecksumUrl,
             IsoFileName = artifact.IsoFileName,
             IsoSize = artifact.IsoSize,
-            ReleaseVersion = channel == ReleaseArtifactsOptions.FastTrackChannel
-                ? VersionData.Stonking.LatestPatch
-                : VersionData.Resolute.LatestPatch,
+            ReleaseVersion = version,
             IsTorrent = isTorrent
         };
         return this.SimpleView(model);

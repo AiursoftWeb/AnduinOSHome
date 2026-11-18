@@ -173,6 +173,18 @@ public class HomeControllerTests : TestBase
         "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.sha256", "AnduinOS-2.1.0-arm64.iso", false)]
     [DataRow("arm64-torrent&channel=fast-track", "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.torrent",
         "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.sha256", "AnduinOS-2.1.0-arm64.iso", true)]
+    [DataRow("amd64&version=2.0.5", "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.iso",
+        "https://cf.anduinos.com/AnduinOS-2.0.5-amd64.sha256", "AnduinOS-2.0.5-amd64.iso", false)]
+    [DataRow("arm64-torrent&version=2.0.5", "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.torrent",
+        "https://cf.anduinos.com/AnduinOS-2.0.5-arm64.sha256", "AnduinOS-2.0.5-arm64.iso", true)]
+    [DataRow("amd64&version=2.0.6", "https://cf.anduinos.com/AnduinOS-2.0.6-amd64.iso",
+        "https://cf.anduinos.com/AnduinOS-2.0.6-amd64.sha256", "AnduinOS-2.0.6-amd64.iso", false)]
+    [DataRow("arm64-torrent&version=2.0.6", "https://cf.anduinos.com/AnduinOS-2.0.6-arm64.torrent",
+        "https://cf.anduinos.com/AnduinOS-2.0.6-arm64.sha256", "AnduinOS-2.0.6-arm64.iso", true)]
+    [DataRow("amd64&version=2.1.0", "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.iso",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-amd64.sha256", "AnduinOS-2.1.0-amd64.iso", false)]
+    [DataRow("arm64-torrent&version=2.1.0", "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.torrent",
+        "https://cf.anduinos.com/AnduinOS-2.1.0-arm64.sha256", "AnduinOS-2.1.0-arm64.iso", true)]
     public async Task GetThankYouWithDownloadParam(
         string download,
         string expectedDownloadUrl,
@@ -209,6 +221,9 @@ public class HomeControllerTests : TestBase
         Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
 
         response = await Http.GetAsync("/thankyou.html?download=amd64&channel=unknown");
+        Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
+
+        response = await Http.GetAsync("/thankyou.html?download=amd64&version=2.0.2");
         Assert.AreEqual(System.Net.HttpStatusCode.NotFound, response.StatusCode);
     }
 

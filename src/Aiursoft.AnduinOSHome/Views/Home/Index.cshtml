@@ -1,5 +1,4 @@
 @using System.Globalization
-@using Aiursoft.AnduinOSHome.Configuration
 @using Aiursoft.AnduinOSHome.Models.HomeViewModels
 
 @{
@@ -1714,20 +1713,21 @@
                 <p class="text-muted">@Localizer["Use a new USB installer. Back up your files before installing."]</p>
                 @foreach (var image in new[] { (Arch: "amd64", Label: "x86-64"), (Arch: "arm64", Label: "ARM64") })
                 {
-                    var artifact = Model.FastTrackArchitectures[image.Arch];
+                    var artifact = Model.StonkingArtifacts[image.Arch];
                     <div class="card border mb-3 shadow-none">
                         <div class="card-body">
                             <h6 class="card-title">@image.Label ISO <small class="text-muted fw-normal">· @artifact.IsoSize</small></h6>
                             <div class="d-flex flex-wrap align-items-center gap-2">
                                 <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@image.Arch"
-                                   asp-route-channel="@ReleaseArtifactsOptions.FastTrackChannel" class="btn btn-pill btn-primary">@Localizer["Direct (HTTP)"]</a>
+                                   asp-route-version="@stonking.LatestPatch" class="btn btn-pill btn-primary">@Localizer["Direct (HTTP)"]</a>
                                 <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@(image.Arch + "-torrent")"
-                                   asp-route-channel="@ReleaseArtifactsOptions.FastTrackChannel" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Torrent"]</a>
+                                   asp-route-version="@stonking.LatestPatch" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Torrent"]</a>
                                 <a href="@artifact.ChecksumUrl" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Checksum"]</a>
                             </div>
                         </div>
                     </div>
                 }
+                <partial name="_DownloadDialogNotices" model="Localizer" />
             </div>
         </div>
     </div>
@@ -1748,11 +1748,13 @@
                         <h6 class="card-title mb-1">x86-64 ISO <small class="text-muted fw-normal">@Localizer["(Intel / AMD)"] · 2.40 GB</small></h6>
                         <p class="card-text text-muted small mb-2">@Localizer["For most Intel and AMD computers."]</p>
                         <div class="d-flex flex-wrap align-items-center gap-2">
-                            <a href="/thankyou.html?download=amd64"
+                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="amd64"
+                               asp-route-version="@resolute.LatestPatch"
                                class="btn btn-pill btn-primary">
                                 @Localizer["Direct (HTTP)"]
                             </a>
-                            <a href="/thankyou.html?download=amd64-torrent"
+                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="amd64-torrent"
+                               asp-route-version="@resolute.LatestPatch"
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Torrent"]
                             </a>
@@ -1771,11 +1773,13 @@
                         <h6 class="card-title mb-1">ARM64 ISO <small class="text-muted fw-normal">@Localizer["(Snapdragon / ARM SBCs)"] · 2.42 GB</small></h6>
                         <p class="card-text text-muted small mb-2">@Localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]</p>
                         <div class="d-flex flex-wrap align-items-center gap-2">
-                            <a href="/thankyou.html?download=arm64"
+                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="arm64"
+                               asp-route-version="@resolute.LatestPatch"
                                class="btn btn-pill btn-primary">
                                 @Localizer["Direct (HTTP)"]
                             </a>
-                            <a href="/thankyou.html?download=arm64-torrent"
+                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="arm64-torrent"
+                               asp-route-version="@resolute.LatestPatch"
                                class="btn btn-sm btn-pill btn-outline-secondary">
                                 @Localizer["Torrent"]
                             </a>
@@ -1799,22 +1803,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="mt-3">
-                    <p class="text-muted">
-                        @Localizer["By downloading, you agree to our"]
-                        <a asp-controller="Home" asp-action="Terms">@Localizer["Terms of Service"]</a>
-                        @Localizer["and"]
-                        <a asp-controller="Home" asp-action="Privacy">@Localizer["Privacy Policy"]</a>
-                        @Localizer["."]
-                    </p>
-                    <p class="text-muted">
-                        @Localizer["After downloading, you may want to learn how to"]
-                        <a href="https://docs.anduinos.com/Install/Download-AnduinOS.html">@Localizer["verify the checksum"]</a>
-                        @Localizer["and"]
-                        <a href="https://docs.anduinos.com/Install/Burn-A-USB-Stick.html">@Localizer["burn the ISO to a USB drive"]</a>
-                        @Localizer["."]
-                    </p>
-                </div>
+                <partial name="_DownloadDialogNotices" model="Localizer" />
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">@Localizer["Close"]</button>
