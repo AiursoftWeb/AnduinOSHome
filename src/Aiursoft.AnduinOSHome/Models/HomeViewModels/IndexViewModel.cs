@@ -10,7 +10,6 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Open Source & Linux";
     }
 
-    public string Amd64ChecksumUrl { get; init; } = string.Empty;
-    public string Arm64ChecksumUrl { get; init; } = string.Empty;
+    public required IReadOnlyDictionary<string, ReleaseArtifact> ResoluteArtifacts { get; init; }
     public required IReadOnlyDictionary<string, ReleaseArtifact> StonkingArtifacts { get; init; }
 }

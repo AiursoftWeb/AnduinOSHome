@@ -10,6 +10,7 @@ public class ThankYouViewModel : UiStackLayoutViewModel
     }
 
     public string DownloadUrl { get; init; } = string.Empty;
+    public string IsoUrl { get; init; } = string.Empty;
     public string ChecksumUrl { get; init; } = string.Empty;
     public string IsoFileName { get; init; } = string.Empty;
     public string ReleaseVersion { get; init; } = string.Empty;

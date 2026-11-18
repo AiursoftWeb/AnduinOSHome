@@ -21,11 +21,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var resolute = _releaseArtifacts.Versions[VersionData.Resolute.LatestPatch];
         return this.SimpleView(new IndexViewModel
         {
-            Amd64ChecksumUrl = resolute["amd64"].ChecksumUrl,
-            Arm64ChecksumUrl = resolute["arm64"].ChecksumUrl,
+            ResoluteArtifacts = _releaseArtifacts.Versions[VersionData.Resolute.LatestPatch],
             StonkingArtifacts = _releaseArtifacts.Versions[VersionData.Stonking.LatestPatch]
         });
     }
@@ -79,6 +77,7 @@ public class HomeController : Controller
         var model = new ThankYouViewModel
         {
             DownloadUrl = isTorrent ? artifact.TorrentUrl : artifact.IsoUrl,
+            IsoUrl = artifact.IsoUrl,
             ChecksumUrl = artifact.ChecksumUrl,
             IsoFileName = artifact.IsoFileName,
             IsoSize = artifact.IsoSize,

@@ -24,8 +24,8 @@ public class HomeControllerTests : TestBase
         var response = await Http.GetAsync(url);
         response.EnsureSuccessStatusCode();
         var html = await response.Content.ReadAsStringAsync();
-        Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "amd64-checksum-link"));
-        Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "arm64-checksum-link"));
+        Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "download-modal-amd64-checksum-link"));
+        Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "download-modal-arm64-checksum-link"));
         Assert.AreEqual("/Compare.html", GetAnchorHrefById(html, "compare-distributions-link"));
         Assert.DoesNotContain("class=\"text-center mt-5\" style=\"display: none;\"", html, StringComparison.Ordinal);
         Assert.Contains("Technical Specifications", html, StringComparison.Ordinal);
@@ -201,6 +201,12 @@ public class HomeControllerTests : TestBase
         Assert.IsTrue(html.Contains($"sha256sum ./{expectedIsoFileName}", StringComparison.Ordinal));
         Assert.IsFalse(html.Contains("https://cf.anduinos.com/\"", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-guide\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"direct-iso-download-link\"", StringComparison.Ordinal));
+        if (expectedTorrentGuide)
+        {
+            Assert.AreEqual(new Uri(new Uri(expectedDownloadUrl), expectedIsoFileName).AbsoluteUri,
+                GetAnchorHrefById(html, "direct-iso-download-link"));
+        }
         Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-platform-tabs\"", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/open-torrent.png", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/download-iso.png", StringComparison.Ordinal));
