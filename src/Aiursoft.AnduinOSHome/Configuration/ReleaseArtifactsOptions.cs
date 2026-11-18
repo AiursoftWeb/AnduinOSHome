@@ -5,6 +5,8 @@ namespace Aiursoft.AnduinOSHome.Configuration;
 public sealed class ReleaseArtifactsOptions
 {
     public const string SectionName = "ReleaseArtifacts";
+    // The configuration binder populates the versions from appsettings.
+    // ReSharper disable once CollectionNeverUpdated.Global
     public Dictionary<string, Dictionary<string, ReleaseArtifact>> Versions { get; init; } =
         new(StringComparer.Ordinal);
 
