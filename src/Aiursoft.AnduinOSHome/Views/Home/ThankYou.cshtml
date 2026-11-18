@@ -449,150 +449,109 @@
                     <li>@Localizer["Select the USB drive in the boot menu."]</li>
                     <li>@Localizer["In GRUB, select your language and choose"] <strong>@Localizer["Install AnduinOS"]</strong>.</li>
                 </ol>
+
+                <div class="bg-white border-start border-4 border-primary rounded-2 p-3 small">
+                    <h5 class="h6 mb-2">@Localizer["Secure Boot Enrollment"]</h5>
+                    <p class="mb-2">@Localizer["If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot."]</p>
+                    <a href="https://docs.anduinos.com/Install/First-Boot-For-Secure-Boot.html">@Localizer["Secure Boot Guide"]</a>
+                </div>
             </div>
 
-            @* Right: Installer screenshot *@
+            @* Right: First-restart Secure Boot tutorial *@
             <div class="col-lg-6 text-center">
-                <div class="card border-0 shadow-lg">
+                <figure class="card border-0 shadow-lg mb-0">
                     <div class="card-body p-3">
-                        <img src="~/images/run_installer.webp"
-                             alt="@Localizer["AnduinOS Installer"]"
-                             class="img-fluid rounded-3"
-                             loading="lazy" />
+                        <picture>
+                            <source media="(prefers-reduced-motion: reduce)" srcset="@Url.Content("~/images/after-installation/mok-enrollment-still.png")" />
+                            <img src="~/images/after-installation/mok-enrollment.gif"
+                                 alt="@Localizer["MOK Manager showing the Secure Boot enrollment steps after the first restart"]"
+                                 class="img-fluid rounded-3 w-100 h-auto"
+                                 width="1280" height="800"
+                                 loading="lazy" />
+                        </picture>
                     </div>
-                    <div class="card-footer bg-light border-0 text-muted small py-2">
-                        <i data-lucide="info" style="width: 14px; height: 14px;" class="me-1"></i>
-                        @Localizer["The AnduinOS graphical installer — straightforward and guided."]
-                    </div>
-                </div>
+                    <figcaption class="card-footer bg-light border-0 small py-2">
+                        <a href="~/images/after-installation/mok-enrollment.gif" target="_blank" rel="noopener">@Localizer["Open the MOK enrollment animation"]</a>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
 </section>
 
 @* ── Phase 3: First Boot Setup ── *@
-<section class="py-6 bg-white">
+<section class="py-6 bg-white" id="after-installation">
     <div class="container">
         <div class="text-center mb-5">
             <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Phase 3"]</span>
             <h2 class="h1">@Localizer["After Installation"]</h2>
-            <p class="text-muted fs-lg">@Localizer["First things to set up when you boot into AnduinOS."]</p>
         </div>
 
         <div class="row g-4">
-            @* Secure Boot *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-success bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="shield-check" class="text-success" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Secure Boot Enrollment"]</h5>
-                        </div>
-                        <img src="~/images/set-secure-boot-password.webp" alt="@Localizer["Secure Boot"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers."]</p>
-                        <a href="https://docs.anduinos.com/Install/First-Boot-For-Secure-Boot.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Secure Boot Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100 border-0 shadow-sm">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="h5 mb-3">@Localizer["Start with Welcome Center"]</h3>
+                        <a href="~/images/after-installation/welcome-complete-en.webp" target="_blank" rel="noopener"
+                           class="d-block rounded-3 mb-3" aria-label="@Localizer["View full-size screenshot: Welcome Center"]">
+                            <img src="~/images/after-installation/welcome-complete-en.webp" alt="@Localizer["Welcome Center with the Start Setup button"]"
+                                 class="img-fluid rounded-3 w-100 h-auto" width="1600" height="1200" loading="lazy" />
                         </a>
+                        <p class="text-muted small mb-3">@Localizer["Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu."]</p>
+                        <div class="mt-auto">
+                            <a href="https://docs.anduinos.com/Applications/System/Welcome-Center/Welcome-Center.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                @Localizer["Welcome Center Guide"] <i data-lucide="arrow-right" class="ms-1" width="14" height="14" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
 
-            @* Switch Language *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-primary bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="languages" class="text-primary" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Switch Language"]</h5>
-                        </div>
-                        <img src="~/images/settings-region-language.webp" alt="@Localizer["Language Settings"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy."]</p>
-                        <a href="https://docs.anduinos.com/Install/Switch-To-Your-Language.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Language Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100 border-0 shadow-sm">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="h5 mb-3">@Localizer["Update Your System"]</h3>
+                        <a href="~/images/after-installation/control-panel-updates-en.webp" target="_blank" rel="noopener"
+                           class="d-block rounded-3 mb-3" aria-label="@Localizer["View full-size screenshot: System updates"]">
+                            <img src="~/images/after-installation/control-panel-updates-en.webp" alt="@Localizer["Software Source in Control Panel with the Check for Updates button"]"
+                                 class="img-fluid rounded-3 w-100 h-auto" width="1600" height="1200" loading="lazy" />
                         </a>
+                        <p class="text-muted small mb-3">@Localizer["Connect to the internet, then open Control Panel → Programs → Software Source and choose Check for Updates. You can also check the Updates tab in App Store."]</p>
+                        <div class="mt-auto">
+                            <a href="https://docs.anduinos.com/Install/Update-Your-System.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                @Localizer["Update Guide"] <i data-lucide="arrow-right" class="ms-1" width="14" height="14" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
 
-            @* Update System *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-info bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="refresh-cw" class="text-info" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Update Your System"]</h5>
-                        </div>
-                        <img src="~/images/app-store-updates.webp" alt="@Localizer["System Updates"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Security patches are applied automatically. For feature updates, use the App Store's offline update mechanism."]</p>
-                        <a href="https://docs.anduinos.com/Install/Update-Your-System.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Update Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100 border-0 shadow-sm">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="h5 mb-3">@Localizer["Check Your Btrfs Snapshots"]</h3>
+                        <a href="~/images/after-installation/btrfs-snapshots.webp" target="_blank" rel="noopener"
+                           class="d-block rounded-3 mb-3" aria-label="@Localizer["View full-size screenshot: Disk Snapshots Manager"]">
+                            <img src="~/images/after-installation/btrfs-snapshots.webp" alt="@Localizer["Disk Snapshots Manager showing System Recovery and Personal Files Recovery"]"
+                                 class="img-fluid rounded-3 w-100 h-auto" style="aspect-ratio: 4 / 3; object-fit: contain; background: #000;"
+                                 width="970" height="770" loading="lazy" />
                         </a>
+                        <p class="text-muted small mb-2">@Localizer["On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file."]</p>
+                        <p class="text-muted small mb-3">@Localizer["Keep an external backup for protection against disk failure."]</p>
+                        <div class="mt-auto d-flex flex-wrap align-items-center gap-2">
+                            <a href="https://docs.anduinos.com/Skills/System-Management/Btrfs-Backup-and-Recovery.html" class="btn btn-outline-primary btn-sm btn-pill">
+                                @Localizer["Snapshot Guide"] <i data-lucide="arrow-right" class="ms-1" width="14" height="14" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://docs.anduinos.com/Install/Backup-And-Restore.html" class="small">@Localizer["External Backup Guide"]</a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
+        </div>
 
-            @* Firewall *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-danger bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="shield" class="text-danger" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Enable Firewall"]</h5>
-                        </div>
-                        <img src="~/images/ufwall-gtk-main.webp" alt="@Localizer["Firewall"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Check your firewall status in the Welcome Center or Firewall app, and enable it when needed."]</p>
-                        <a href="https://docs.anduinos.com/Install/Enable-Firewall.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Firewall Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            @* Drivers *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-warning bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="cpu" class="text-warning" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Install Drivers"]</h5>
-                        </div>
-                        <img src="~/images/anduinos-oobe-nvidia.webp" alt="@Localizer["Drivers"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Use the Welcome Center to install NVIDIA drivers, Xbox controller support, and other hardware drivers with one click."]</p>
-                        <a href="https://docs.anduinos.com/Install/Install-Drivers.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Drivers Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            @* Backup *@
-            <div class="col-md-4 col-sm-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-3 bg-secondary bg-opacity-10" style="width: 48px; height: 48px; min-width: 48px;">
-                                <i data-lucide="hard-drive" class="text-secondary" style="width: 22px; height: 22px;"></i>
-                            </div>
-                            <h5 class="mb-0">@Localizer["Setup Backup"]</h5>
-                        </div>
-                        <img src="~/images/deja-dup-backups.webp" alt="@Localizer["Backup"]" class="img-fluid rounded-3 mb-3" style="width: 100%; height: 120px; object-fit: cover;" loading="lazy" />
-                        <p class="text-muted small mb-3">@Localizer["Use Deja Dup for automated, encrypted backups to an external drive or cloud storage. Set it once, forget about it."]</p>
-                        <a href="https://docs.anduinos.com/Install/Backup-And-Restore.html" class="btn btn-outline-primary btn-sm btn-pill stretched-link">
-                            @Localizer["Backup Guide"] <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4 small">
+            <a href="https://docs.anduinos.com/Install/Switch-To-Your-Language.html">@Localizer["Switch Language"]</a>
+            <a href="https://docs.anduinos.com/Install/Install-Drivers.html">@Localizer["Install Drivers"]</a>
         </div>
     </div>
 </section>
