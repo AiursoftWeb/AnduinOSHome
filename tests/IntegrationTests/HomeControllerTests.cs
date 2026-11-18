@@ -201,6 +201,12 @@ public class HomeControllerTests : TestBase
         Assert.IsTrue(html.Contains($"sha256sum ./{expectedIsoFileName}", StringComparison.Ordinal));
         Assert.IsFalse(html.Contains("https://cf.anduinos.com/\"", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-guide\"", StringComparison.Ordinal));
+        Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"direct-iso-download-link\"", StringComparison.Ordinal));
+        if (expectedTorrentGuide)
+        {
+            Assert.AreEqual(new Uri(new Uri(expectedDownloadUrl), expectedIsoFileName).AbsoluteUri,
+                GetAnchorHrefById(html, "direct-iso-download-link"));
+        }
         Assert.AreEqual(expectedTorrentGuide, html.Contains("id=\"torrent-platform-tabs\"", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/open-torrent.png", StringComparison.Ordinal));
         Assert.AreEqual(expectedTorrentGuide, html.Contains("/images/torrent/download-iso.png", StringComparison.Ordinal));

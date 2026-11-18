@@ -77,6 +77,7 @@ public class HomeController : Controller
         var model = new ThankYouViewModel
         {
             DownloadUrl = isTorrent ? artifact.TorrentUrl : artifact.IsoUrl,
+            IsoUrl = artifact.IsoUrl,
             ChecksumUrl = artifact.ChecksumUrl,
             IsoFileName = artifact.IsoFileName,
             IsoSize = artifact.IsoSize,
