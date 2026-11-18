@@ -24,8 +24,8 @@ public class HomeControllerTests : TestBase
         var response = await Http.GetAsync(url);
         response.EnsureSuccessStatusCode();
         var html = await response.Content.ReadAsStringAsync();
-        Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "amd64-checksum-link"));
-        Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "arm64-checksum-link"));
+        Assert.AreEqual(Amd64ChecksumUrl, GetAnchorHrefById(html, "download-modal-amd64-checksum-link"));
+        Assert.AreEqual(Arm64ChecksumUrl, GetAnchorHrefById(html, "download-modal-arm64-checksum-link"));
         Assert.AreEqual("/Compare.html", GetAnchorHrefById(html, "compare-distributions-link"));
         Assert.DoesNotContain("class=\"text-center mt-5\" style=\"display: none;\"", html, StringComparison.Ordinal);
         Assert.Contains("Technical Specifications", html, StringComparison.Ordinal);

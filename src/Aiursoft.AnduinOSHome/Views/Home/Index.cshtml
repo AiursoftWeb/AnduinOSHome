@@ -1700,117 +1700,12 @@
     </div>
 </section>
 
-<div class="modal fade" id="download-fast-track-modal" tabindex="-1" role="dialog"
-     aria-labelledby="download-fast-track-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 id="download-fast-track-title" class="modal-title">@Localizer["Download AnduinOS"] @stonking.LatestPatch</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
-            </div>
-            <div class="modal-body">
-                <p class="text-muted">@Localizer["Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting."]</p>
-                <p class="text-muted">@Localizer["Use a new USB installer. Back up your files before installing."]</p>
-                @foreach (var image in new[] { (Arch: "amd64", Label: "x86-64"), (Arch: "arm64", Label: "ARM64") })
-                {
-                    var artifact = Model.StonkingArtifacts[image.Arch];
-                    <div class="card border mb-3 shadow-none">
-                        <div class="card-body">
-                            <h6 class="card-title">@image.Label ISO <small class="text-muted fw-normal">· @artifact.IsoSize</small></h6>
-                            <div class="d-flex flex-wrap align-items-center gap-2">
-                                <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@image.Arch"
-                                   asp-route-version="@stonking.LatestPatch" class="btn btn-pill btn-primary">@Localizer["Direct (HTTP)"]</a>
-                                <a asp-controller="Home" asp-action="ThankYou" asp-route-download="@(image.Arch + "-torrent")"
-                                   asp-route-version="@stonking.LatestPatch" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Torrent"]</a>
-                                <a href="@artifact.ChecksumUrl" class="btn btn-sm btn-pill btn-outline-secondary">@Localizer["Checksum"]</a>
-                            </div>
-                        </div>
-                    </div>
-                }
-                <partial name="_DownloadDialogNotices" model="Localizer" />
-            </div>
-        </div>
-    </div>
-</div>
-
-@* modal for download links *@
-<div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 id="download-modal-title" class="modal-title">@Localizer["Download AnduinOS"]</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
-            </div>
-            <div class="modal-body">
-                @* ── amd64 ── *@
-                <div class="card border mb-3 shadow-none">
-                    <div class="card-body">
-                        <h6 class="card-title mb-1">x86-64 ISO <small class="text-muted fw-normal">@Localizer["(Intel / AMD)"] · 2.40 GB</small></h6>
-                        <p class="card-text text-muted small mb-2">@Localizer["For most Intel and AMD computers."]</p>
-                        <div class="d-flex flex-wrap align-items-center gap-2">
-                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="amd64"
-                               asp-route-version="@resolute.LatestPatch"
-                               class="btn btn-pill btn-primary">
-                                @Localizer["Direct (HTTP)"]
-                            </a>
-                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="amd64-torrent"
-                               asp-route-version="@resolute.LatestPatch"
-                               class="btn btn-sm btn-pill btn-outline-secondary">
-                                @Localizer["Torrent"]
-                            </a>
-                            <a id="amd64-checksum-link"
-                               href="@Model.Amd64ChecksumUrl"
-                               target="_blank"
-                               class="btn btn-sm btn-pill btn-outline-secondary">
-                                @Localizer["Checksum"]
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @* ── arm64 ── *@
-                <div class="card border mb-3 shadow-none">
-                    <div class="card-body">
-                        <h6 class="card-title mb-1">ARM64 ISO <small class="text-muted fw-normal">@Localizer["(Snapdragon / ARM SBCs)"] · 2.42 GB</small></h6>
-                        <p class="card-text text-muted small mb-2">@Localizer["For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices."]</p>
-                        <div class="d-flex flex-wrap align-items-center gap-2">
-                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="arm64"
-                               asp-route-version="@resolute.LatestPatch"
-                               class="btn btn-pill btn-primary">
-                                @Localizer["Direct (HTTP)"]
-                            </a>
-                            <a asp-controller="Home" asp-action="ThankYou" asp-route-download="arm64-torrent"
-                               asp-route-version="@resolute.LatestPatch"
-                               class="btn btn-sm btn-pill btn-outline-secondary">
-                                @Localizer["Torrent"]
-                            </a>
-                            <a id="arm64-checksum-link"
-                               href="@Model.Arm64ChecksumUrl"
-                               target="_blank"
-                               class="btn btn-sm btn-pill btn-outline-secondary">
-                                @Localizer["Checksum"]
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @* ── Docker / Podman ── *@
-                <div class="card border mb-3 shadow-none">
-                    <div class="card-body">
-                        <h6 class="card-title mb-1">@Localizer["Container Edition"]</h6>
-                        <p class="card-text text-muted small mb-2">@Localizer["Run AnduinOS in Docker or Podman."]</p>
-                        <a href="/Container.html"
-                           class="btn btn-pill btn-outline-success">
-                            @Localizer["Container"]
-                        </a>
-                    </div>
-                </div>
-                <partial name="_DownloadDialogNotices" model="Localizer" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">@Localizer["Close"]</button>
-            </div>
-        </div>
-    </div>
-</div>
+<partial name="_DownloadDialog"
+         model='new DownloadDialogViewModel("download-modal", resolute.LatestPatch, Model.ResoluteArtifacts, Localizer,
+             IncludeContainer: true, ShowNonLtsWarning: false)' />
+<partial name="_DownloadDialog"
+         model='new DownloadDialogViewModel("download-fast-track-modal", stonking.LatestPatch, Model.StonkingArtifacts, Localizer,
+             IncludeContainer: false, ShowNonLtsWarning: true)' />
 
 <vc:marketing-footer></vc:marketing-footer>
 
