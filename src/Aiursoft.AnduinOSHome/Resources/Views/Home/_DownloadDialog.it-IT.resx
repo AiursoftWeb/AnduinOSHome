@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -62,13 +69,20 @@
   <data name="Torrent" xml:space="preserve">
     <value>Torrent</value>
   </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>Prova i componenti desktop e di sistema più recenti in questa release non-LTS. Per appassionati abituati a un&apos;installazione pulita e alla risoluzione dei problemi.</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>Utilizza un nuovo installatore USB. Esegui il backup dei file prima dell&apos;installazione.</value>
+  </data>
   <data name="and" xml:space="preserve">
     <value>e</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>masterizzare l'ISO su una chiavetta USB</value>
+    <value>masterizzare l&apos;ISO su una chiavetta USB</value>
   </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>verificare il checksum</value>
   </data>
-  </root>
+
+</root>

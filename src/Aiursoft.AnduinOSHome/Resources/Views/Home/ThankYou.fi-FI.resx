@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>Muuta järjestelmän kieltä, alueellisia muotoja ja lisää syöttötapoja kuten kiinalainen Pinyin tai japanilainen Anthy.</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>Tarkista Btrfs-kuvauksesi</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>Tarkista palomuurin tila Tervetuloa-keskuksessa tai Palomuuri-sovelluksessa ja ota palomuuri tarvittaessa käyttöön.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Alustariippumaton, turvallinen ISO-työkalu</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>Levykuvien hallinta, jossa näkyy järjestelmän palautus ja henkilökohtaisten tiedostojen palautus</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Dokumentaatio</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>Lataa ja asenna</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>Lataa suoraan HTTPS:ää käyttäen</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>Lataa qBittorrent Windowsille</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>AnduinOS-ISO-tiedoston lataaminen qBittorrentilla</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>Kuljettajakeskuksen etusivu, jossa näkyy laitteiston ja kuljettajien tila</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>Kuljettimet</value>
@@ -179,6 +191,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Nauti uudesta käyttöjärjestelmästäsi!</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>Ulkoisen varmuuskopion ohje</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Tunnetko anteliaisuutta? AnduinOS toimii käyttäjien lahjoituksilla. Olemme kiitollisia tuestasi.</value>
@@ -209,6 +224,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>ISO-tila voi aiheuttaa AnduinOS:n käynnistymisen epäonnistumisen.</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>Jos sininen MOK Manager -näyttö näkyy ensimmäisellä uudelleenkäynnistyksellä, paina mitä tahansa näppäintä, kun siihen pyydetään. Valitse Enroll MOK → Continue → Yes, syötä 123456 ja valitse Reboot.</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Jos olet uusi AnduinOS-käyttäjä, saatat haluta myös tutustua</value>
@@ -246,6 +264,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>Liity keskusteluun</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>Pidä ulkoinen varmuuskopio suojana levyn hajoamiselta.</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>Pidä asiakasohjelma auki, kunnes AnduinOS-ISO on saavuttanut 100 %.</value>
   </data>
@@ -258,6 +279,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>MOK Manager, joka näyttää Secure Boot -rekisteröintivaiheet ensimmäisen uudelleenkäynnistyksen jälkeen</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Moni-ISO-, uudelleenkäytettävä USB-ratkaisu</value>
   </data>
@@ -267,8 +291,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>Toistuva kirjoittaminen tai tyhjentäminen ei ole tarpeen!</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>Btrfs-tiedostojärjestelmässä avaa Ohjauspaneeli → Varmuuskopiointi ja palautus → Järjestelmätilannekuvat tarkistaaksesi palautuspisteet. Copy-on-write-tilannekuvat mahdollistavat virheellisen päivityksen kumoamisen tai tiedoston aiemman version palauttamisen.</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>Avaa Komentokeskus sovellusvalikosta tarkistaaksesi laitteistosi. Jos se suosittaa ajurina, valitse se ja noudata ruudulla näkyviä ohjeita.</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>Avoin lähdekoodi</value>
+  </data>
+  <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
+    <value>Avaa .torrent-tiedosto BitTorrent-asiakasohjelmassa ladataksesi ISO-tiedoston.</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>Avaa MOK-rekisteröinnin animaatio</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Avaa Torrent-tiedosto</value>
@@ -284,6 +320,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Tai käytä komentoriviä:</value>
+  </data>
+  <data name="Other peers can see your IP address, and your client may upload data to them." xml:space="preserve">
+    <value>Muut vertaiset voivat nähdä IP-osoitteesi, ja asiakkuusi voi ladata dataa heille.</value>
   </data>
   <data name="Phase 0" xml:space="preserve">
     <value>Vaihe 0</value>
@@ -342,11 +381,17 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>Yksinkertainen, moderni ISO-levyjen poltto-ohjelma</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>Välikuvien opas</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>Ei toimi? Onko sinulla ehdotus? Liity keskusteluun GitHubissa.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Jotain ei toimi? Sinulla ehdotus? Kirjoita siitä keskusteluun.</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>Aloita Tervetuloakeskuksella</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>Vaihe 1</value>
@@ -420,8 +465,14 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>Vahvista lataus ja luo käynnistettävä USB-muisti.</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>Näytä koko kokoinen ruutukaappaus: Levykuvien hallinta</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>Näytä koko kokoinen kuvakaappaus: Lataa ISO</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>Näytä koko kokoinen ruutukaappaus: Driver Center</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>Näytä koko kuvakaappaus: Avaa Torrent-tiedosto</value>
@@ -429,11 +480,23 @@
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>Näytä täysikokoinen kaappaus: Tarkista ISO</value>
   </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>Näytä koko kokoelma: Welcome Center</value>
+  </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>Vol Down + Virtua</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>Suosittelemme Rufuksen käyttöä käynnistettävän USB-tiukkeen luomiseen. Varmista, että valitset</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>Tervetuloakeskuksen ohje</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>Tervetuloa-keskus avautuu ensimmäisessä kirjautumisessasi. Voit käyttää sitä ulkonäön, tehtäväpalkin asettelun ja palomuurin asetusten valintaan. Voit avata sen uudelleen sovellusvalikosta.</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>Tervetuloakeskus, jossa on Aloita asennus -painike</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Mitä seuraavaksi?</value>

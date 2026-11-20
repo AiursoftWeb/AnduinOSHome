@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -42,7 +49,7 @@
     <value>Doğrudan (HTTP)</value>
   </data>
   <data name="Download AnduinOS" xml:space="preserve">
-    <value>AnduinOS'u İndir</value>
+    <value>AnduinOS&apos;u İndir</value>
   </data>
   <data name="For Snapdragon X laptops, Windows Dev Kit, and generic ARM64 UEFI devices." xml:space="preserve">
     <value>Snapdragon X dizüstü bilgisayarları, Windows Dev Kit ve genel ARM64 UEFI cihazları için.</value>
@@ -54,7 +61,7 @@
     <value>Gizlilik Politikamızı</value>
   </data>
   <data name="Run AnduinOS in Docker or Podman." xml:space="preserve">
-    <value>AnduinOS'u Docker veya Podman'da çalıştırın.</value>
+    <value>AnduinOS&apos;u Docker veya Podman&apos;da çalıştırın.</value>
   </data>
   <data name="Terms of Service" xml:space="preserve">
     <value>Hizmet Şartlarımızı</value>
@@ -62,13 +69,20 @@
   <data name="Torrent" xml:space="preserve">
     <value>Torrent</value>
   </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>Bu LTS olmayan sürümde en yeni masaüstü ve sistem bileşenlerini deneyin. Taze kurulum ve sorun giderme konusunda rahat olan meraklılar içindir.</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>Yeni bir USB kurulum sürücüsü kullanın. Kurulumdan önce dosyalarınızı yedekleyin.</value>
+  </data>
   <data name="and" xml:space="preserve">
     <value>ve</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>ISO'yu bir USB sürücüsüne yazın</value>
+    <value>ISO&apos;yu bir USB sürücüsüne yazın</value>
   </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>sağlama toplamını doğrulayın</value>
   </data>
-  </root>
+
+</root>

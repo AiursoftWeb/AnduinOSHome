@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -62,6 +69,12 @@
   <data name="Torrent" xml:space="preserve">
     <value>Tải xuống qua Torrent</value>
   </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>Hãy thử nghiệm các thành phần desktop và hệ thống mới nhất trong bản phát hành non-LTS này. Dành cho những người đam mê công nghệ thoải mái với việc cài đặt mới và khắc phục sự cố.</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>Hãy sử dụng bộ cài đặt USB mới. Sao lưu các tệp của bạn trước khi cài đặt.</value>
+  </data>
   <data name="and" xml:space="preserve">
     <value>và</value>
   </data>
@@ -71,4 +84,5 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>kiểm tra checksum</value>
   </data>
-  </root>
+
+</root>

@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -57,18 +64,25 @@
     <value>Exécutez AnduinOS dans Docker ou Podman.</value>
   </data>
   <data name="Terms of Service" xml:space="preserve">
-    <value>Conditions d'utilisation</value>
+    <value>Conditions d&apos;utilisation</value>
   </data>
   <data name="Torrent" xml:space="preserve">
     <value>Torrent</value>
+  </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>Essaie les derniers composants du bureau et du système dans cette version non-LTS. Destiné aux passionnés à l&apos;aise avec une installation propre et le dépannage.</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>Utilisez un nouvel installateur USB. Sauvegardez vos fichiers avant l&apos;installation.</value>
   </data>
   <data name="and" xml:space="preserve">
     <value>et</value>
   </data>
   <data name="burn the ISO to a USB drive" xml:space="preserve">
-    <value>graver l'ISO sur une clé USB</value>
+    <value>graver l&apos;ISO sur une clé USB</value>
   </data>
   <data name="verify the checksum" xml:space="preserve">
     <value>vérifier la somme de contrôle</value>
   </data>
-  </root>
+
+</root>

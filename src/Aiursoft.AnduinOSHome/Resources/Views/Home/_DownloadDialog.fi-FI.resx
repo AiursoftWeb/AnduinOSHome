@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -62,6 +69,12 @@
   <data name="Torrent" xml:space="preserve">
     <value>Torrentti</value>
   </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>Kokeile uusin työpöytä- ja järjestelmäkomponentit tässä ei-LTS-julkaisussa. Sovii harrastajille, jotka ovat mukavia tekemään uuden asennuksen ja vianmäärityksen.</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>Käytä uutta USB-asennuslevyä. Varmuuskopioi tiedostosi ennen asennusta.</value>
+  </data>
   <data name="and" xml:space="preserve">
     <value>ja</value>
   </data>
@@ -71,4 +84,5 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>vahvista tarkistussumma</value>
   </data>
-  </root>
+
+</root>
