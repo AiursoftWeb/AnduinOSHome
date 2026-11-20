@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>更改系统语言、区域格式，并添加中文拼音或日本 Anthy 等输入法。</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>检查 Btrfs 快照</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>请在“欢迎中心”或“防火墙”应用中查看防火墙状态，并在需要时启用防火墙。</value>
   </data>
@@ -114,6 +117,9 @@
   <data name="Complete the MOK enrollment on first boot to enable third-party drivers like NVIDIA and Xbox controllers." xml:space="preserve">
     <value>在首次启动时完成 MOK 注册，以启用 NVIDIA 显卡和 Xbox 手柄等第三方驱动程序。</value>
   </data>
+  <data name="Connect to the internet, then open Control Panel → Programs → Software Source and choose Check for Updates. You can also check the Updates tab in App Store." xml:space="preserve">
+    <value>连接互联网，然后打开 控制面板 → 应用程序 → 软件源，并选择 检查更新。你也可以在 App Store 中查看更新选项卡。</value>
+  </data>
   <data name="Copy the AnduinOS ISO onto the drive like a regular file." xml:space="preserve">
     <value>像普通文件一样将 AnduinOS ISO 复制到驱动器中。</value>
   </data>
@@ -123,6 +129,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>跨平台、安全的 ISO 写入工具</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>显示系统恢复和个人文件恢复的磁盘快照管理器</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>文档</value>
   </data>
@@ -131,9 +140,6 @@
   </data>
   <data name="Download AnduinOS in three steps" xml:space="preserve">
     <value>三步下载 AnduinOS</value>
-  </data>
-  <data name="Download directly via HTTPS" xml:space="preserve">
-    <value>通过 HTTPS 直接下载</value>
   </data>
   <data name="Download Etcher" xml:space="preserve">
     <value>下载 Etcher</value>
@@ -153,6 +159,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>下载并安装</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>通过 HTTPS 直接下载</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>下载 Windows 版 qBittorrent</value>
   </data>
@@ -164,6 +173,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>使用 qBittorrent 下载 AnduinOS ISO</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>驱动中心主页，显示硬件和驱动程序状态</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>驱动程序</value>
@@ -182,6 +194,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>尽情享受您的新操作系统吧！</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>外部备份指南</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>想要支持我们？AnduinOS 的运营依赖用户捐赠。感谢您的慷慨相助！</value>
@@ -212,6 +227,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>ISO 模式可能导致 AnduinOS 无法启动。</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>如果第一次重启时出现蓝色的 MOK Manager 界面，请在提示时按任意键。选择“Enroll MOK → Continue → Yes”，输入 123456，然后选择“Reboot”。</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>如果您是AnduinOS的新用户，可能还需要查看</value>
@@ -249,6 +267,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>参与讨论</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>请保留一份外部备份，以防范磁盘故障。</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>请保持客户端开启，直到 AnduinOS ISO 下载进度达到 100%。</value>
   </data>
@@ -261,6 +282,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>首次重启后，MOK Manager 显示 Secure Boot 注册步骤</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>多 ISO、可重复使用的 USB 解决方案</value>
   </data>
@@ -270,11 +294,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>无需反复刷写或擦除！</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>在 Btrfs 上，打开“控制面板 → 备份和恢复 → 系统快照”以查看恢复点。写时复制快照可让你回滚有问题的更新或恢复文件的较早版本。</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>从应用菜单打开 驱动中心 以检查硬件。如果有推荐的驱动，选择该驱动并按屏幕提示操作。</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>开源</value>
   </data>
   <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
     <value>使用 BitTorrent 客户端打开 .torrent 文件以下载 ISO。</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>打开 MOK 注册动画</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>打开 Torrent 文件</value>
@@ -351,11 +384,20 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>简单、现代的 ISO 写入工具</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>快照指南</value>
+  </data>
+  <data name="Software Source in Control Panel with the Check for Updates button" xml:space="preserve">
+    <value>控制面板中的“软件源”及“检查更新”按钮</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>遇到问题？有建议？欢迎加入 GitHub 讨论。</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>遇到问题或有建议？欢迎到讨论区发帖交流！</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>从欢迎中心开始</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>步骤 1</value>
@@ -429,20 +471,41 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>验证您的下载并创建可启动 USB 驱动器。</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>查看完整截图：磁盘快照管理器</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>查看完整截图：下载 ISO</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>查看完整屏幕截图：驱动中心</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>查看完整尺寸截图：打开 Torrent 文件</value>
   </data>
+  <data name="View full-size screenshot: System updates" xml:space="preserve">
+    <value>查看完整尺寸截图：系统更新</value>
+  </data>
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>查看完整截图：验证 ISO</value>
+  </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>查看完整截图：欢迎中心</value>
   </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>音量减 + 电源键</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>我们建议使用 Rufus 来创建可启动的 USB 驱动器。请确保选择</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>欢迎中心指南</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>欢迎中心会在您首次登录时打开。您可以使用它来选择外观、任务栏布局和防火墙设置。您也可以从应用菜单中再次打开它。</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>带有“开始设置”按钮的欢迎中心</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>接下来做什么？</value>
@@ -496,67 +559,4 @@
     <value>约 2.4 GB ISO</value>
   </data>
 
-  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
-    <value>如果第一次重启时出现蓝色的 MOK Manager 界面，请在提示时按任意键。选择“Enroll MOK → Continue → Yes”，输入 123456，然后选择“Reboot”。</value>
-  </data>
-  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
-    <value>首次重启后，MOK Manager 显示 Secure Boot 注册步骤</value>
-  </data>
-  <data name="Open the MOK enrollment animation" xml:space="preserve">
-    <value>打开 MOK 注册动画</value>
-  </data>
-  <data name="Start with Welcome Center" xml:space="preserve">
-    <value>从欢迎中心开始</value>
-  </data>
-  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
-    <value>查看完整截图：欢迎中心</value>
-  </data>
-  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
-    <value>带有“开始设置”按钮的欢迎中心</value>
-  </data>
-  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
-    <value>欢迎中心会在您首次登录时打开。您可以使用它来选择外观、任务栏布局和防火墙设置。您也可以从应用菜单中再次打开它。</value>
-  </data>
-  <data name="Welcome Center Guide" xml:space="preserve">
-    <value>欢迎中心指南</value>
-  </data>
-  <data name="View full-size screenshot: System updates" xml:space="preserve">
-    <value>查看完整尺寸截图：系统更新</value>
-  </data>
-  <data name="Software Source in Control Panel with the Check for Updates button" xml:space="preserve">
-    <value>控制面板中的“软件源”及“检查更新”按钮</value>
-  </data>
-  <data name="Connect to the internet, then open Control Panel → Programs → Software Source and choose Check for Updates. You can also check the Updates tab in App Store." xml:space="preserve">
-    <value>连接互联网，然后打开 控制面板 → 应用程序 → 软件源，并选择 检查更新。你也可以在 App Store 中查看更新选项卡。</value>
-  </data>
-  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
-    <value>检查 Btrfs 快照</value>
-  </data>
-  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
-    <value>查看完整截图：磁盘快照管理器</value>
-  </data>
-  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
-    <value>显示系统恢复和个人文件恢复的磁盘快照管理器</value>
-  </data>
-  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
-    <value>在 Btrfs 上，打开“控制面板 → 备份和恢复 → 系统快照”以查看恢复点。写时复制快照可让你回滚有问题的更新或恢复文件的较早版本。</value>
-  </data>
-  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
-    <value>请保留一份外部备份，以防范磁盘故障。</value>
-  </data>
-  <data name="Snapshot Guide" xml:space="preserve">
-    <value>快照指南</value>
-  </data>
-  <data name="External Backup Guide" xml:space="preserve">
-    <value>外部备份指南</value>
-  </data>
-  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
-    <value>查看完整屏幕截图：驱动中心</value>
-  </data>
-  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
-    <value>驱动中心主页，显示硬件和驱动程序状态</value>
-  </data>
-  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
-    <value>从应用菜单打开 驱动中心 以检查硬件。如果有推荐的驱动，选择该驱动并按屏幕提示操作。</value>
-  </data>
 </root>

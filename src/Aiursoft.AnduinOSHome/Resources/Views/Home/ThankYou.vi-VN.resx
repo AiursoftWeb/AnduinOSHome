@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>Thay đổi ngôn ngữ hệ thống, định dạng khu vực và thêm phương thức nhập liệu như Pinyin tiếng Trung hoặc Anthy tiếng Nhật.</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>Kiểm tra bản sao lưu Btrfs của bạn</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>Kiểm tra trạng thái tường lửa trong Trung tâm Chào mừng hoặc ứng dụng Tường lửa, và bật tường lửa khi cần.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Công cụ ghi ISO đa nền tảng, an toàn</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>Trình quản lý Snapshot ổ đĩa hiển thị Khôi phục Hệ thống và Khôi phục Tệp cá nhân</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Tài liệu</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>Tải xuống và cài đặt</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>Tải xuống trực tiếp qua HTTPS</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>Tải xuống qBittorrent cho Windows</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>Tải xuống ISO của AnduinOS bằng qBittorrent</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>Trang chủ Trung tâm Driver hiển thị trạng thái phần cứng và driver</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>Trình điều khiển</value>
@@ -179,6 +191,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Chúc bạn trải nghiệm hệ điều hành mới thật vui!</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>Hướng dẫn Sao lưu Ngoại vi</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Bạn muốn đóng góp? AnduinOS hoạt động dựa trên sự hỗ trợ từ người dùng. Chúng tôi vô cùng biết ơn sự giúp đỡ của bạn.</value>
@@ -209,6 +224,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>Chế độ ISO có thể khiến AnduinOS không khởi động được.</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>Nếu màn hình MOK Manager màu xanh dương xuất hiện khi khởi động lại lần đầu, hãy nhấn bất kỳ phím nào khi được yêu cầu. Chọn Enroll MOK → Continue → Yes, nhập 123456, sau đó chọn Reboot.</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Nếu bạn mới làm quen với AnduinOS, bạn cũng có thể muốn xem qua</value>
@@ -246,6 +264,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>Tham gia thảo luận</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>Giữ một bản sao lưu bên ngoài để bảo vệ khỏi sự cố ổ đĩa.</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>Giữ cho trình khách hàng mở cho đến khi ISO AnduinOS đạt 100%.</value>
   </data>
@@ -258,6 +279,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>MOK Manager hiển thị các bước đăng ký Secure Boot sau lần khởi động lại đầu tiên</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Giải pháp USB tái sử dụng, hỗ trợ đa ISO</value>
   </data>
@@ -267,8 +291,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>Không cần ghi hoặc xóa đi xóa lại!</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>Trên Btrfs, mở Control Panel → Backup and Recovery → System Snapshots để kiểm tra các điểm khôi phục của bạn. Các bản sao lưu copy-on-write cho phép bạn hoàn tác một bản cập nhật lỗi hoặc khôi phục phiên bản trước đó của một tệp.</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>Mở Driver Center từ menu ứng dụng để kiểm tra phần cứng của bạn. Nếu nó đề xuất một trình điều khiển, hãy chọn nó và làm theo các bước trên màn hình.</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>Mã nguồn mở</value>
+  </data>
+  <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
+    <value>Mở tệp .torrent trong một trình khách BitTorrent để tải xuống ISO.</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>Mở hoạt hình đăng ký MOK</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Mở tệp Torrent</value>
@@ -284,6 +320,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Hoặc sử dụng dòng lệnh:</value>
+  </data>
+  <data name="Other peers can see your IP address, and your client may upload data to them." xml:space="preserve">
+    <value>Các đối tác khác có thể xem địa chỉ IP của bạn, và ứng dụng của bạn có thể tải dữ liệu lên cho họ.</value>
   </data>
   <data name="Phase 0" xml:space="preserve">
     <value>Giai đoạn 0</value>
@@ -342,11 +381,17 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>Công cụ ghi ISO đơn giản, hiện đại</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>Hướng dẫn chụp ảnh nhanh</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>Gặp sự cố? Có đề xuất? Tham gia thảo luận trên GitHub.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Gặp sự cố? Có đề xuất? Hãy đăng thảo luận về nó.</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>Bắt đầu với Trung tâm Chào mừng</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>Bước 1</value>
@@ -420,8 +465,14 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>Xác minh bản tải xuống và tạo ổ USB khởi động.</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>Xem ảnh chụp màn hình kích thước đầy đủ: Trình quản lý bản chụp đĩa</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>Xem ảnh chụp màn hình kích thước đầy đủ: Tải xuống ISO</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>Xem ảnh chụp màn hình kích thước đầy đủ: Driver Center</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>Xem ảnh chụp màn hình kích thước đầy đủ: Mở tệp Torrent</value>
@@ -429,11 +480,23 @@
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>Xem ảnh chụp màn hình kích thước đầy đủ: Xác minh ISO</value>
   </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>Xem ảnh chụp màn hình đầy đủ: Welcome Center</value>
+  </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>Giảm âm + Nguồn</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>Chúng tôi khuyên bạn nên sử dụng Rufus để tạo thiết bị USB khởi động. Hãy chắc chắn chọn</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>Hướng dẫn Trung tâm Chào mừng</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>Trung tâm Chào mừng sẽ mở khi bạn đăng nhập lần đầu tiên. Hãy sử dụng nó để chọn giao diện, bố cục thanh tác vụ và cài đặt tường lửa. Bạn có thể mở lại từ menu ứng dụng.</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>Trung tâm Chào mừng với nút Bắt đầu Cài đặt</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>Bước tiếp theo là gì?</value>

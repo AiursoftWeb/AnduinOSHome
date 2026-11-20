@@ -1,5 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root><resheader name="resmimetype">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
     <resheader name="version">
@@ -62,6 +69,12 @@
   <data name="Torrent" xml:space="preserve">
     <value>BT 種子</value>
   </data>
+  <data name="Try the newest desktop and system components in this non-LTS release. For enthusiasts comfortable with a fresh install and troubleshooting." xml:space="preserve">
+    <value>在此非 LTS 版本中體驗最新的桌面與系統元件。適合熟悉全新安裝與問題排除的愛好者。</value>
+  </data>
+  <data name="Use a new USB installer. Back up your files before installing." xml:space="preserve">
+    <value>請使用新的 USB 安裝媒體。安裝前請先備份您的檔案。</value>
+  </data>
   <data name="and" xml:space="preserve">
     <value>和</value>
   </data>
@@ -71,4 +84,5 @@
   <data name="verify the checksum" xml:space="preserve">
     <value>驗證校驗碼</value>
   </data>
-  </root>
+
+</root>

@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>เปลี่ยนภาษาของระบบ รูปแบบภูมิภาค และเพิ่มวิธีการป้อนข้อมูล เช่น Pinyin ภาษาจีนหรือ Anthy ภาษาญี่ปุ่น</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>ตรวจสอบ Btrfs Snapshots ของคุณ</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>ตรวจสอบสถานะไฟร์วอลล์ได้ที่ Welcome Center หรือแอป Firewall และเปิดใช้งานเมื่อต้องการ</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>เครื่องมือเขียนไฟล์ ISO ปลอดภัย รองรับหลายแพลตฟอร์ม</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>โปรแกรมจัดการภาพดิสก์ แสดงการกู้คืนระบบและการกู้คืนไฟล์ส่วนตัว</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>เอกสารประกอบ</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>ดาวน์โหลดและติดตั้ง</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>ดาวน์โหลดโดยตรงผ่าน HTTPS</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>ดาวน์โหลด qBittorrent สำหรับ Windows</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>การดาวน์โหลด ISO ของ AnduinOS ด้วย qBittorrent</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>หน้าหลักของศูนย์ไดรเวอร์ แสดงสถานะฮาร์ดแวร์และไดรเวอร์</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>ไดรเวอร์</value>
@@ -179,6 +191,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>สนุกไปกับระบบปฏิบัติการใหม่ของคุณ!</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>คู่มือการสำรองข้อมูลภายนอก</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>รู้สึกอยากช่วยเหลือไหม? AnduinOS ดำเนินงานได้ด้วยการสนับสนุนจากผู้ใช้ เราขอขอบคุณสำหรับการสนับสนุนของคุณ</value>
@@ -209,6 +224,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>โหมด ISO อาจทำให้ AnduinOS ไม่สามารถบูตได้</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>หากหน้าจอ MOK Manager สีน้ำเงินปรากฏขึ้นในการรีสตาร์ทครั้งแรก ให้กดปุ่มใดก็ได้เมื่อมีข้อความแจ้ง เลือก Enroll MOK → Continue → Yes ใส่ 123456 จากนั้นเลือก Reboot</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>หากคุณยังใหม่กับ AnduinOS คุณอาจต้องการดู</value>
@@ -246,6 +264,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>ร่วมพูดคุย</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>สำรองข้อมูลภายนอกไว้เพื่อป้องกันความเสียหายของดิสก์</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>เปิดโปรแกรม BitTorrent ไว้จนกว่าการดาวน์โหลดไฟล์ ISO ของ AnduinOS จะเสร็จสมบูรณ์ 100%</value>
   </data>
@@ -258,6 +279,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>MOK Manager แสดงขั้นตอนการลงทะเบียน Secure Boot หลังจากการรีสตาร์ทครั้งแรก</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>โซลูชัน USB ที่รองรับ ISO หลายไฟล์และนำกลับมาใช้ซ้ำได้</value>
   </data>
@@ -267,8 +291,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>ไม่ต้องแฟลชหรือล้างข้อมูลซ้ำๆ อีกต่อไป!</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>ใน Btrfs ให้เปิด Control Panel → Backup and Recovery → System Snapshots เพื่อตรวจสอบจุดกู้คืนของคุณ สแนปช็อตแบบ Copy-on-write ช่วยให้คุณสามารถย้อนกลับการอัปเดตที่ผิดพลาดหรือกู้คืนเวอร์ชันก่อนหน้าของไฟล์ได้</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>เปิด Driver Center จากเมนูแอปเพื่อตรวจสอบฮาร์ดแวร์ของคุณ หากมีการแนะนำไดรเวอร์ ให้เลือกแล้วทำตามขั้นตอนบนหน้าจอ</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>โอเพนซอร์ส</value>
+  </data>
+  <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
+    <value>เปิดไฟล์ .torrent ในโปรแกรม BitTorrent client เพื่อดาวน์โหลดไฟล์ ISO</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>เปิดแอนิเมชันการลงทะเบียน MOK</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>เปิดไฟล์ Torrent</value>
@@ -284,6 +320,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>หรือใช้คำสั่งบรรทัดคำสั่ง:</value>
+  </data>
+  <data name="Other peers can see your IP address, and your client may upload data to them." xml:space="preserve">
+    <value>ผู้ใช้คนอื่นสามารถดูที่อยู่ IP ของคุณได้ และไคลเอนต์ของคุณอาจอัปโหลดข้อมูลไปยังพวกเขา</value>
   </data>
   <data name="Phase 0" xml:space="preserve">
     <value>เฟส 0</value>
@@ -342,11 +381,17 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>เครื่องมือเขียนไฟล์ ISO ที่เรียบง่ายและทันสมัย</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>คู่มือสแนปช็อต</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>ใช้งานไม่ได้? มีข้อเสนอแนะ? ร่วมพูดคุยบน GitHub ได้เลย</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>มีปัญหาหรือมีข้อเสนอแนะไหม? โพสต์เกี่ยวกับเรื่องนี้ในห้องสนทนาได้เลย</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>เริ่มต้นด้วย Welcome Center</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>ขั้นตอนที่ 1</value>
@@ -420,8 +465,14 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>ตรวจสอบการดาวน์โหลดและสร้างไดรฟ์ USB ที่บูตได้</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>ดูภาพหน้าจอขนาดเต็ม: Disk Snapshots Manager</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>ดูภาพหน้าจอแบบเต็ม: ดาวน์โหลดไฟล์ ISO</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>ดูภาพหน้าจอขนาดเต็ม: ศูนย์ไดรเวอร์</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>ดูภาพหน้าจอขนาดเต็ม: เปิดไฟล์ Torrent</value>
@@ -429,11 +480,23 @@
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>ดูภาพหน้าจอขนาดเต็ม: ตรวจสอบ ISO</value>
   </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>ดูภาพหน้าจอขนาดเต็ม: Welcome Center</value>
+  </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>ปุ่มลดเสียง + ปุ่มเปิด/ปิดเครื่อง</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>เราแนะนำให้ใช้ Rufus ในการสร้างไดรฟ์ USB ที่บูตได้ ตรวจสอบให้แน่ใจว่าได้เลือก</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>คู่มือ Welcome Center</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>ศูนย์ต้อนรับจะเปิดขึ้นเมื่อคุณเข้าสู่ระบบเป็นครั้งแรก ใช้เลือกการแสดงผล การจัดเรียงแถบงาน และการตั้งค่าไฟร์วอลล์ คุณสามารถเปิดอีกครั้งจากเมนูแอป</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>ศูนย์ต้อนรับพร้อมปุ่มเริ่มต้นการตั้งค่า</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>ขั้นต่อไปคืออะไร?</value>

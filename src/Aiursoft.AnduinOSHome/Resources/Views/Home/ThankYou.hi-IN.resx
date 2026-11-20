@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>सिस्टम भाषा और क्षेत्रीय प्रारूप बदलें, और चीनी पिनिन या जापानी एन्थी जैसे इनपुट विधियां जोड़ें।</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>अपने Btrfs स्नैपशॉट जांचें</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>वेलकम सेंटर या फ़ायरवॉल ऐप में अपने फ़ायरवॉल की स्थिति जाँचें और ज़रूरत पड़ने पर इसे चालू करें।</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>क्रॉस-प्लेटफ़ॉर्म, सुरक्षित ISO फ्लैशर</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>डिस्क स्नैपशॉट मैनेजर जिसमें सिस्टम रिकवरी और व्यक्तिगत फ़ाइलें रिकवरी दिखाई दे रही हैं</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>प्रलेखन</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>डाउनलोड और इंस्टॉल करें</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>HTTPS के माध्यम से सीधे डाउनलोड करें</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>Windows के लिए qBittorrent डाउनलोड करें</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>qBittorrent से AnduinOS ISO डाउनलोड करना</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>ड्राइवर सेंटर होम पेज जिसमें हार्डवेयर और ड्राइवर स्थिति दिखाई दे रही है</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>ड्राइवर</value>
@@ -179,6 +191,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>अपने नए OS का आनंद लें!</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>बाहरी बैकअप गाइड</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>उदार महसूस कर रहे हैं? AnduinOS उपयोगकर्ताओं के दान पर आधारित है। हम आपके समर्थन के लिए आभारी हैं।</value>
@@ -209,6 +224,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>ISO मोड AnduinOS को बूट होने से रोक सकता है।</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>यदि पहले रीस्टार्ट पर नीला MOK Manager स्क्रीन दिखाई देता है, तो प्रॉम्प्ट होने पर कोई भी कुंजी दबाएं। Enroll MOK → Continue → Yes चुनें, 123456 दर्ज करें, फिर Reboot चुनें।</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>यदि आप AnduinOS के लिए नए हैं, तो आप शायद यह भी देखना चाहेंगे</value>
@@ -246,6 +264,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>चर्चा में शामिल हों</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>डिस्क विफलता से सुरक्षा के लिए एक बाहरी बैकअप रखें।</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>जब तक AnduinOS ISO 100% पर नहीं पहुँच जाता, तब तक क्लाइंट को खुला रखें।</value>
   </data>
@@ -258,6 +279,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>पहली पुनःप्रारंभ के बाद MOK Manager Secure Boot पंजीकरण चरण दिखा रहा है</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>बहु-ISO, पुनः उपयोग योग्य USB समाधान</value>
   </data>
@@ -267,8 +291,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>बार-बार फ्लैश या मिटाने की आवश्यकता नहीं!</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>Btrfs पर, अपने रिकवरी पॉइंट्स की जाँच करने के लिए Control Panel → Backup and Recovery → System Snapshots खोलें। Copy-on-write स्नैपशॉट आपको एक खराब अपडेट को रोल बैक करने या किसी फ़ाइल के पहले संस्करण को रिकवर करने की अनुमति देते हैं।</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>अपने हार्डवेयर की जाँच करने के लिए ऐप मेनू से ड्राइवर सेंटर खोलें। यदि यह किसी ड्राइवर की सिफारिश करता है, तो उसे चुनें और स्क्रीन पर दिख रहे चरणों का पालन करें।</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>ओपन सोर्स</value>
+  </data>
+  <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
+    <value>ISO डाउनलोड करने के लिए .torrent फ़ाइल को किसी BitTorrent क्लाइंट में खोलें।</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>MOK एनरोलमेंट एनिमेशन खोलें</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>टॉरेंट फ़ाइल खोलें</value>
@@ -284,6 +320,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>या कमांड लाइन का उपयोग करें:</value>
+  </data>
+  <data name="Other peers can see your IP address, and your client may upload data to them." xml:space="preserve">
+    <value>अन्य पीयर आपका IP पता देख सकते हैं, और आपका क्लाइंट उनसे डेटा अपलोड कर सकता है।</value>
   </data>
   <data name="Phase 0" xml:space="preserve">
     <value>फेज़ 0</value>
@@ -342,11 +381,17 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>सरल, आधुनिक ISO फ्लैशिंग टूल</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>स्नैपशॉट गाइड</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>कुछ काम नहीं कर रहा है? कोई सुझाव है? GitHub पर चर्चा में शामिल हों।</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>कुछ काम नहीं कर रहा? कोई सुझाव है? इसके बारे में चर्चा में पोस्ट करें।</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>स्वागत केंद्र से शुरुआत करें</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>चरण 1</value>
@@ -420,8 +465,14 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>अपनी डाउनलोड की सत्यापन करें और एक बूटेबल USB ड्राइव बनाएं।</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>पूर्ण-आकार स्क्रीनशॉट देखें: डिस्क स्नैपशॉट प्रबंधक</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>पूर्ण-आकार स्क्रीनशॉट देखें: ISO डाउनलोड करें</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>पूरे आकार की स्क्रीनशॉट देखें: ड्राइवर सेंटर</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>पूर्ण-आकार स्क्रीनशॉट देखें: टोरेंट फ़ाइल खोलें</value>
@@ -429,11 +480,23 @@
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>पूर्ण-आकार स्क्रीनशॉट देखें: ISO सत्यापित करें</value>
   </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>पूर्ण-आकार स्क्रीनशॉट देखें: वेलकम सेंटर</value>
+  </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>वॉल्यूम नीचे + पावर</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>बूटेबल USB ड्राइव बनाने के लिए Rufus का उपयोग करने की हमारी सिफारिश है। सुनिश्चित करें कि चुनें</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>स्वागत केंद्र मार्गदर्शिका</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>वेलकम सेंटर आपकी पहली साइन-इन पर खुलता है। इसका उपयोग अपनी दिखावट, टास्कबार लेआउट और फायरवॉल सेटिंग्स चुनने के लिए करें। आप इसे फिर से ऐप मेनू से खोल सकते हैं।</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>स्टार्ट सेटअप बटन के साथ वेलकम सेंटर</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>आगे क्या है?</value>

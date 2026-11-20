@@ -90,6 +90,9 @@
   <data name="Change the system language, regional formats, and add input methods like Chinese Pinyin or Japanese Anthy." xml:space="preserve">
     <value>Modifica la lingua di sistema, i formati regionali e aggiungi metodi di input come Pinyin cinese o Anthy giapponese.</value>
   </data>
+  <data name="Check Your Btrfs Snapshots" xml:space="preserve">
+    <value>Verifica i tuoi snapshot Btrfs</value>
+  </data>
   <data name="Check your firewall status in the Welcome Center or Firewall app, and enable it when needed." xml:space="preserve">
     <value>Controlla lo stato del firewall nel Centro di benvenuto o nell’app Firewall e attivalo se necessario.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Cross-platform, safe ISO flasher" xml:space="preserve">
     <value>Strumento di scrittura ISO multipiattaforma e sicuro</value>
   </data>
+  <data name="Disk Snapshots Manager showing System Recovery and Personal Files Recovery" xml:space="preserve">
+    <value>Gestore snapshot del disco con ripristino di sistema e ripristino dei file personali</value>
+  </data>
   <data name="Documentation" xml:space="preserve">
     <value>Documentazione</value>
   </data>
@@ -150,6 +156,9 @@
   <data name="Download and install" xml:space="preserve">
     <value>Scarica e installa</value>
   </data>
+  <data name="Download directly via HTTPS" xml:space="preserve">
+    <value>Scarica direttamente tramite HTTPS</value>
+  </data>
   <data name="Download qBittorrent for Windows" xml:space="preserve">
     <value>Scarica qBittorrent per Windows</value>
   </data>
@@ -161,6 +170,9 @@
   </data>
   <data name="Downloading the AnduinOS ISO with qBittorrent" xml:space="preserve">
     <value>Download dell&apos;ISO di AnduinOS con qBittorrent</value>
+  </data>
+  <data name="Driver Center home page showing hardware and driver status" xml:space="preserve">
+    <value>Pagina iniziale di Driver Center che mostra lo stato dell&apos;hardware e dei driver</value>
   </data>
   <data name="Drivers" xml:space="preserve">
     <value>Driver</value>
@@ -179,6 +191,9 @@
   </data>
   <data name="Enjoy your new OS!" xml:space="preserve">
     <value>Goditi il tuo nuovo OS!</value>
+  </data>
+  <data name="External Backup Guide" xml:space="preserve">
+    <value>Guida al backup esterno</value>
   </data>
   <data name="Feeling generous? AnduinOS works based on donations from users. We are grateful for your support." xml:space="preserve">
     <value>Ti senti generoso? AnduinOS funziona grazie alle donazioni degli utenti. Siamo grati per il tuo supporto.</value>
@@ -209,6 +224,9 @@
   </data>
   <data name="ISO mode may cause AnduinOS to fail to boot." xml:space="preserve">
     <value>La modalità ISO potrebbe impedire l&apos;avvio di AnduinOS.</value>
+  </data>
+  <data name="If the blue MOK Manager screen appears on the first restart, press any key when prompted. Choose Enroll MOK → Continue → Yes, enter 123456, then choose Reboot." xml:space="preserve">
+    <value>Se lo schermo blu di MOK Manager appare al primo riavvio, premi un tasto quando richiesto. Scegli Enroll MOK → Continue → Yes, inserisci 123456, quindi scegli Reboot.</value>
   </data>
   <data name="If you are new to AnduinOS, you may also want to check out the" xml:space="preserve">
     <value>Se sei nuovo ad AnduinOS, potresti anche voler dare un&apos;occhiata al</value>
@@ -246,6 +264,9 @@
   <data name="Join the Discussion" xml:space="preserve">
     <value>Unisciti alla discussione</value>
   </data>
+  <data name="Keep an external backup for protection against disk failure." xml:space="preserve">
+    <value>Mantieni un backup esterno per la protezione contro il guasto del disco.</value>
+  </data>
   <data name="Keep the client open until the AnduinOS ISO reaches 100%." xml:space="preserve">
     <value>Mantieni il client aperto finché l&apos;ISO di AnduinOS non raggiunge il 100%.</value>
   </data>
@@ -258,6 +279,9 @@
   <data name="Linux" xml:space="preserve">
     <value>Linux</value>
   </data>
+  <data name="MOK Manager showing the Secure Boot enrollment steps after the first restart" xml:space="preserve">
+    <value>MOK Manager che mostra i passaggi di registrazione Secure Boot dopo il primo riavvio</value>
+  </data>
   <data name="Multi-ISO, reusable USB solution" xml:space="preserve">
     <value>Soluzione USB riutilizzabile multi-ISO</value>
   </data>
@@ -267,8 +291,20 @@
   <data name="No repeated flashing or erasing needed!" xml:space="preserve">
     <value>Nessuna necessità di flashare o cancellare ripetutamente!</value>
   </data>
+  <data name="On Btrfs, open Control Panel → Backup and Recovery → System Snapshots to check your recovery points. Copy-on-write snapshots let you roll back a bad update or recover an earlier version of a file." xml:space="preserve">
+    <value>Su Btrfs, apri Pannello di controllo → Backup e ripristino → Snapshot di sistema per verificare i tuoi punti di ripristino. Gli snapshot copy-on-write ti consentono di annullare un aggiornamento problematico o di recuperare una versione precedente di un file.</value>
+  </data>
+  <data name="Open Driver Center from the app menu to check your hardware. If it recommends a driver, select it and follow the on-screen steps." xml:space="preserve">
+    <value>Apri Driver Center dal menu delle app per verificare l&apos;hardware. Se consiglia un driver, selezionalo e segui le istruzioni visualizzate sullo schermo.</value>
+  </data>
   <data name="Open Source" xml:space="preserve">
     <value>Open Source</value>
+  </data>
+  <data name="Open the .torrent file in a BitTorrent client to download the ISO." xml:space="preserve">
+    <value>Apri il file .torrent in un client BitTorrent per scaricare l&apos;ISO.</value>
+  </data>
+  <data name="Open the MOK enrollment animation" xml:space="preserve">
+    <value>Apri l&apos;animazione di registrazione MOK</value>
   </data>
   <data name="Open the Torrent file" xml:space="preserve">
     <value>Apri il file Torrent</value>
@@ -284,6 +320,9 @@
   </data>
   <data name="Or use the command line:" xml:space="preserve">
     <value>Oppure usa la riga di comando:</value>
+  </data>
+  <data name="Other peers can see your IP address, and your client may upload data to them." xml:space="preserve">
+    <value>Altri peer possono vedere il tuo indirizzo IP e il tuo client potrebbe caricare dati su di essi.</value>
   </data>
   <data name="Phase 0" xml:space="preserve">
     <value>Fase 0</value>
@@ -342,11 +381,17 @@
   <data name="Simple, modern ISO flashing tool" xml:space="preserve">
     <value>Strumento semplice e moderno per la scrittura di immagini ISO</value>
   </data>
+  <data name="Snapshot Guide" xml:space="preserve">
+    <value>Guida agli snapshot</value>
+  </data>
   <data name="Something not working? Have a suggestion? Join the discussion on GitHub." xml:space="preserve">
     <value>Qualcosa non funziona? Hai un suggerimento? Unisciti alla discussione su GitHub.</value>
   </data>
   <data name="Something not working? Have a suggestion? Post about it to discussion." xml:space="preserve">
     <value>Qualcosa non funziona? Hai un suggerimento? Pubblicane una discussione.</value>
+  </data>
+  <data name="Start with Welcome Center" xml:space="preserve">
+    <value>Inizia con Welcome Center</value>
   </data>
   <data name="Step 1" xml:space="preserve">
     <value>Passaggio 1</value>
@@ -420,8 +465,14 @@
   <data name="Verify your download and create a bootable USB drive." xml:space="preserve">
     <value>Verifica il download e crea un&apos;unità USB avviabile.</value>
   </data>
+  <data name="View full-size screenshot: Disk Snapshots Manager" xml:space="preserve">
+    <value>Visualizza screenshot a dimensione intera: Gestore snapshot del disco</value>
+  </data>
   <data name="View full-size screenshot: Download the ISO" xml:space="preserve">
     <value>Visualizza la schermata a schermo intero: Scarica l&apos;ISO</value>
+  </data>
+  <data name="View full-size screenshot: Driver Center" xml:space="preserve">
+    <value>Visualizza screenshot a schermo intero: Driver Center</value>
   </data>
   <data name="View full-size screenshot: Open the Torrent file" xml:space="preserve">
     <value>Visualizza la schermata completa: Apri il file Torrent</value>
@@ -429,11 +480,23 @@
   <data name="View full-size screenshot: Verify the ISO" xml:space="preserve">
     <value>Visualizza screenshot a schermo intero: Verifica l&apos;ISO</value>
   </data>
+  <data name="View full-size screenshot: Welcome Center" xml:space="preserve">
+    <value>Visualizza screenshot a schermo intero: Welcome Center</value>
+  </data>
   <data name="Vol Down + Power" xml:space="preserve">
     <value>Vol Giù + Accensione</value>
   </data>
   <data name="We recommend using Rufus to create the bootable USB drive. Make sure to select" xml:space="preserve">
     <value>Ti consigliamo di utilizzare Rufus per creare la chiavetta USB avviabile. Assicurati di selezionare</value>
+  </data>
+  <data name="Welcome Center Guide" xml:space="preserve">
+    <value>Guida al Centro di Benvenuto</value>
+  </data>
+  <data name="Welcome Center opens at your first sign-in. Use it to choose your appearance, taskbar layout, and firewall settings. You can open it again from the app menu." xml:space="preserve">
+    <value>Il Centro di benvenuto si apre al primo accesso. Utilizzalo per scegliere l&apos;aspetto, il layout della barra delle applicazioni e le impostazioni del firewall. Puoi riaprirlo dal menu delle app.</value>
+  </data>
+  <data name="Welcome Center with the Start Setup button" xml:space="preserve">
+    <value>Centro di Benvenuto con il pulsante Avvia configurazione</value>
   </data>
   <data name="What&apos;s next?" xml:space="preserve">
     <value>E ora?</value>
