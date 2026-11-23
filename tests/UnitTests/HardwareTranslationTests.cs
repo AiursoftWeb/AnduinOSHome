@@ -3,7 +3,6 @@ using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.BackgroundJobs;
 using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Caching.Memory;
 
