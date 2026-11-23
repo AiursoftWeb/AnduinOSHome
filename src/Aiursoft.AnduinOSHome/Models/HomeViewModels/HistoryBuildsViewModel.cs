@@ -165,6 +165,7 @@ public static class LanguageData
         { "en_US", "English (United States)" },
         { "es_ES", "Español" },
         { "fr_FR", "Français" },
+        { "hr_HR", "Hrvatski" },
         { "it_IT", "Italiano" },
         { "ja_JP", "日本語" },
         { "ko_KR", "한국어" },
