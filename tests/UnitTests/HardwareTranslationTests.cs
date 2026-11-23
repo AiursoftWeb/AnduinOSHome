@@ -3,6 +3,7 @@ using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.BackgroundJobs;
 using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -14,6 +15,7 @@ public class HardwareTranslationTests
     private SqliteContext db = null!;
     private Hardware device = null!;
     private FakeTranslator translator = null!;
+    private ServiceProvider services = null!;
     private HardwareTranslationService service = null!;
 
     [TestInitialize]
@@ -31,11 +33,16 @@ public class HardwareTranslationTests
         db.Hardware.Add(device);
         await db.SaveChangesAsync();
         translator = new FakeTranslator();
-        service = new HardwareTranslationService(db, translator, NullLogger<HardwareTranslationService>.Instance);
+        services = new ServiceCollection().BuildServiceProvider();
+        service = new HardwareTranslationService(db, translator, NullLogger<HardwareTranslationService>.Instance, services);
     }
 
     [TestCleanup]
-    public async Task Cleanup() => await db.DisposeAsync();
+    public async Task Cleanup()
+    {
+        await db.DisposeAsync();
+        await services.DisposeAsync();
+    }
 
     private async Task<Hardware> Read()
     {
@@ -48,7 +55,7 @@ public class HardwareTranslationTests
     {
         await service.TranslateAsync(device.Id);
         var result = await Read();
-        var targets = HardwareTranslationService.TargetCultures("en").ToArray();
+        var targets = service.TargetCultures("en").ToArray();
         Assert.AreEqual(targets.Length * 13, translator.Calls);
         Assert.AreEqual(targets.Length + 1, result.Translations.Count);
         var fields = typeof(HardwareTranslation).GetProperties()
@@ -111,7 +118,7 @@ public class HardwareTranslationTests
     [TestMethod]
     public async Task ManualEditDuringTranslationIsNotOverwritten()
     {
-        var first = HardwareTranslationService.TargetCultures("en").First();
+        var first = service.TargetCultures("en").First();
         db.HardwareTranslations.Add(new HardwareTranslation { HardwareId = device.Id, Culture = first,
             BasedOnSourceRevision = 0, Description = "Old" });
         await db.SaveChangesAsync();
@@ -134,7 +141,7 @@ public class HardwareTranslationTests
         source.FirmwareNotes = " ";
         await db.SaveChangesAsync();
         await service.TranslateAsync(device.Id);
-        Assert.AreEqual(HardwareTranslationService.TargetCultures("en").Count(), translator.Calls);
+        Assert.AreEqual(service.TargetCultures("en").Count(), translator.Calls);
         Assert.IsNull((await Read()).Translations.First(x => x.Culture != "en").KnownIssues);
     }
 

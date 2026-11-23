@@ -25,7 +25,7 @@ public class HardwareTranslationJob(
                 .OrderBy(x => x.Id).Take(20).ToListAsync();
             if (devices.Count == 0) break;
             lastId = devices[^1].Id;
-            foreach (var device in devices.Where(x => HardwareTranslationService.TargetCultures(x.SourceCulture)
+            foreach (var device in devices.Where(x => translations.TargetCultures(x.SourceCulture)
                          .Any(culture => !x.Translations.Any(t => t.Culture == culture &&
                              t.BasedOnSourceRevision == x.SourceRevision))))
             {

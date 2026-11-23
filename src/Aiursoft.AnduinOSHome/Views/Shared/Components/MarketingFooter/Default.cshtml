@@ -2,6 +2,11 @@
 @using Microsoft.AspNetCore.Localization
 
 @* Footer *@
+@using Aiursoft.WebTools.OfficialPlugins
+@{
+    var cultureOptions = Context.RequestServices.GetKeyedService<IReadOnlyDictionary<string, string>>(typeof(LocalizationPlugin))
+        ?? LocalizationPlugin.SupportedCultures;
+}
 <footer class="py-5 bg-dark">
     <div class="container">
         <div class="row mb-4">
@@ -20,7 +25,7 @@
                     }
                     <form asp-controller="Culture" asp-action="Set" method="post" class="d-inline" asp-route-returnUrl="@(Context.Request.Path + Context.Request.QueryString)">
                         <select name="culture" class="form-select form-select-sm w-auto auto-submit-select">
-                            @foreach (var culture in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures)
+                            @foreach (var culture in cultureOptions)
                             {
                                 <option value="@culture.Key"
                                         selected="@(culture.Key == currentCulture ? "selected" : null)">

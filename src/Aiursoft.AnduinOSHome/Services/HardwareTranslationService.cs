@@ -12,14 +12,18 @@ namespace Aiursoft.AnduinOSHome.Services;
 public class HardwareTranslationService(
     AnduinOSHomeDbContext db,
     IHardwareTextTranslator translator,
-    ILogger<HardwareTranslationService> logger) : IScopedDependency
+    ILogger<HardwareTranslationService> logger,
+    IServiceProvider services) : IScopedDependency
 {
     private static readonly PropertyInfo[] TextFields = typeof(HardwareTranslation).GetProperties()
         .Where(x => x.PropertyType == typeof(string) && x.Name != nameof(HardwareTranslation.Culture)).ToArray();
 
-    public static IEnumerable<string> TargetCultures(string sourceCulture) =>
-        LocalizationPlugin.SupportedCultures.Keys
-            .Where(x => !SameLanguage(x, sourceCulture)).Distinct(StringComparer.OrdinalIgnoreCase);
+    public IEnumerable<string> TargetCultures(string sourceCulture)
+    {
+        var cultures = services.GetKeyedService<IReadOnlyDictionary<string, string>>(typeof(LocalizationPlugin))
+            ?? LocalizationPlugin.SupportedCultures;
+        return cultures.Keys.Where(x => !SameLanguage(x, sourceCulture)).Distinct(StringComparer.OrdinalIgnoreCase);
+    }
 
     private static bool SameLanguage(string a, string b) =>
         a.Equals(b, StringComparison.OrdinalIgnoreCase) ||

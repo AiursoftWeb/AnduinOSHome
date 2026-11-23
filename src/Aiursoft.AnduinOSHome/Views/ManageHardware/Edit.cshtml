@@ -30,8 +30,13 @@ else
 {
     <div class="col-md-6 mb-3">
         <label asp-for="Device.SourceCulture">@Localizer["Source language"]</label>
+        @{
+            var cultures = Context.RequestServices.GetKeyedService<IReadOnlyDictionary<string, string>>(
+                typeof(Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin))
+                ?? Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures;
+        }
         <select asp-for="Device.SourceCulture" class="form-select">
-            @foreach (var code in Aiursoft.WebTools.OfficialPlugins.LocalizationPlugin.SupportedCultures.Keys)
+            @foreach (var code in cultures.Keys)
             {
                 <option value="@(code)">@(System.Globalization.CultureInfo.GetCultureInfo(code).NativeName)</option>
             }

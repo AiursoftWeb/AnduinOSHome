@@ -71,7 +71,8 @@ public class ManageHardwareController(
             .SingleOrDefaultAsync(x => x.Id == id);
         if (device == null) return NotFound();
 
-        var supported = LocalizationPlugin.SupportedCultures;
+        var supported = HttpContext.RequestServices
+            .GetKeyedService<IReadOnlyDictionary<string, string>>(typeof(LocalizationPlugin)) ?? LocalizationPlugin.SupportedCultures;
         var cultures = supported.Keys.Where(x =>
                 !x.Equals(device.SourceCulture, StringComparison.OrdinalIgnoreCase) &&
                 !(device.SourceCulture == "en" && x.Equals("en-US", StringComparison.OrdinalIgnoreCase)))
