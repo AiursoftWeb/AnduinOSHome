@@ -21,4 +21,9 @@
   <ItemGroup>
     <ProjectReference Include="..\src\Aiursoft.AnduinOSHome\Aiursoft.AnduinOSHome.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="../src/Aiursoft.AnduinOSHome/wwwroot/js/file-upload.js" TargetPath="wwwroot/js/file-upload.js" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../src/Aiursoft.AnduinOSHome/wwwroot/scripts/uploader.js" TargetPath="wwwroot/scripts/uploader.js" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../src/Aiursoft.AnduinOSHome/wwwroot/styles/uploader.css" TargetPath="wwwroot/styles/uploader.css" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>
