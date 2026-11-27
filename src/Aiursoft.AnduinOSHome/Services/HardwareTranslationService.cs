@@ -43,8 +43,7 @@ public class HardwareTranslationService(
             if (previous != null && previous.BasedOnSourceRevision == device.SourceRevision) continue;
             try
             {
-                var translated = new HardwareTranslation { HardwareId = hardwareId, Culture = culture,
-                    BasedOnSourceRevision = device.SourceRevision };
+                var translatedValues = new Dictionary<PropertyInfo, string?>(TextFields.Length);
                 foreach (var field in TextFields)
                 {
                     var original = (string?)field.GetValue(source);
@@ -53,30 +52,46 @@ public class HardwareTranslationService(
                     var limit = field.GetCustomAttribute<MaxLengthAttribute>()!.Length;
                     if (!string.IsNullOrWhiteSpace(original) && (string.IsNullOrWhiteSpace(value) || value.Length > limit))
                         throw new InvalidOperationException($"Invalid translated field: {field.Name} ({culture}).");
-                    field.SetValue(translated, value);
+                    translatedValues[field] = value;
                 }
 
                 // Do not hold a database transaction during the network calls. Check the source again
-                // inside a short serializable transaction before publishing the complete language.
-                db.ChangeTracker.Clear();
-                await using var transaction = db.Database.IsRelational()
-                    ? await db.Database.BeginTransactionAsync(IsolationLevel.Serializable) : null;
-                var current = await db.Hardware.SingleOrDefaultAsync(x => x.Id == hardwareId);
-                if (current == null || current.SourceRevision != device.SourceRevision ||
-                    current.Publication == HardwarePublication.Archived) return;
-                var target = await db.HardwareTranslations
-                    .SingleOrDefaultAsync(x => x.HardwareId == hardwareId && x.Culture == culture);
-                if (target == null)
-                    db.HardwareTranslations.Add(translated);
-                else if (target.BasedOnSourceRevision == previous?.BasedOnSourceRevision &&
-                         TextFields.All(x => Equals(x.GetValue(target), x.GetValue(previous))))
+                // inside a short serializable transaction wrapped in the configured execution strategy
+                // so retrying providers (such as Pomelo MySQL) can execute user-initiated transactions.
+                var strategy = db.Database.CreateExecutionStrategy();
+                var shouldContinue = await strategy.ExecuteAsync(async () =>
                 {
-                    foreach (var field in TextFields) field.SetValue(target, field.GetValue(translated));
-                    target.BasedOnSourceRevision = device.SourceRevision;
-                }
-                else continue; // An editor saved this language while translation was running.
-                await db.SaveChangesAsync();
-                if (transaction != null) await transaction.CommitAsync();
+                    db.ChangeTracker.Clear();
+                    await using var transaction = db.Database.IsRelational()
+                        ? await db.Database.BeginTransactionAsync(IsolationLevel.Serializable) : null;
+                    var current = await db.Hardware.SingleOrDefaultAsync(x => x.Id == hardwareId);
+                    if (current == null || current.SourceRevision != device.SourceRevision ||
+                        current.Publication == HardwarePublication.Archived) return false;
+                    var target = await db.HardwareTranslations
+                        .SingleOrDefaultAsync(x => x.HardwareId == hardwareId && x.Culture == culture);
+                    if (target == null)
+                    {
+                        var translated = new HardwareTranslation
+                        {
+                            HardwareId = hardwareId,
+                            Culture = culture,
+                            BasedOnSourceRevision = device.SourceRevision
+                        };
+                        foreach (var (field, value) in translatedValues) field.SetValue(translated, value);
+                        db.HardwareTranslations.Add(translated);
+                    }
+                    else if (target.BasedOnSourceRevision == previous?.BasedOnSourceRevision &&
+                             TextFields.All(x => Equals(x.GetValue(target), x.GetValue(previous))))
+                    {
+                        foreach (var (field, value) in translatedValues) field.SetValue(target, value);
+                        target.BasedOnSourceRevision = device.SourceRevision;
+                    }
+                    else return true; // An editor saved this language while translation was running.
+                    await db.SaveChangesAsync();
+                    if (transaction != null) await transaction.CommitAsync();
+                    return true;
+                });
+                if (!shouldContinue) return;
             }
             catch (Exception ex)
             {
