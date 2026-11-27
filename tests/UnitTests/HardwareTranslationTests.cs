@@ -3,6 +3,7 @@ using Aiursoft.AnduinOSHome.Services;
 using Aiursoft.AnduinOSHome.Services.BackgroundJobs;
 using Aiursoft.AnduinOSHome.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -147,6 +148,58 @@ public class HardwareTranslationTests
         var job = new HardwareTranslationJob(db, service, settings);
         await job.ExecuteAsync();
         Assert.AreEqual(0, translator.Calls);
+    }
+
+    [TestMethod]
+    public async Task TranslateWorksWithRetryingExecutionStrategy()
+    {
+        var options = new DbContextOptionsBuilder<SqliteContext>()
+            .UseSqlite("DataSource=:memory:", sqlite => sqlite.ExecutionStrategy(d => new RetryingTestExecutionStrategy(d)))
+            .Options;
+        await using var retryingDb = new SqliteContext(options);
+        await retryingDb.Database.OpenConnectionAsync();
+        await retryingDb.Database.EnsureCreatedAsync();
+
+        var hw = new Hardware
+        {
+            Slug = "retrying-test",
+            Brand = "Example",
+            Model = "Desktop",
+            Architecture = "AMD64",
+            SourceRevision = 1,
+            Translations =
+            [
+                new HardwareTranslation
+                {
+                    Culture = "en",
+                    BasedOnSourceRevision = 1,
+                    Description = "Description"
+                }
+            ]
+        };
+        retryingDb.Hardware.Add(hw);
+        await retryingDb.SaveChangesAsync();
+
+        var retryingTranslator = new FakeTranslator();
+        var retryingService = new HardwareTranslationService(
+            retryingDb,
+            retryingTranslator,
+            NullLogger<HardwareTranslationService>.Instance);
+
+        await retryingService.TranslateAsync(hw.Id);
+
+        retryingDb.ChangeTracker.Clear();
+        var saved = await retryingDb.Hardware.Include(x => x.Translations).SingleAsync(x => x.Id == hw.Id);
+        var targets = HardwareTranslationService.TargetCultures("en").ToArray();
+        Assert.AreEqual(targets.Length, retryingTranslator.Calls);
+        Assert.AreEqual(targets.Length + 1, saved.Translations.Count);
+        Assert.AreEqual("[hr-HR] Description", saved.Translations.Single(x => x.Culture == "hr-HR").Description);
+    }
+
+    private sealed class RetryingTestExecutionStrategy(ExecutionStrategyDependencies dependencies)
+        : ExecutionStrategy(dependencies, maxRetryCount: 3, maxRetryDelay: TimeSpan.FromMilliseconds(10))
+    {
+        protected override bool ShouldRetryOn(Exception exception) => false;
     }
 
     private sealed class FakeTranslator : IHardwareTextTranslator
